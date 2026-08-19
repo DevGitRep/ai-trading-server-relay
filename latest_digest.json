@@ -1,22 +1,16 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-19T19:32:03.159362+00:00",
-  "run_id": "20260819T193201Z",
-  "step": "INDICATOR_WARMUP_TAIL_AUDIT",
+  "published_at_utc": "2026-08-19T19:38:04.729557+00:00",
+  "run_id": "20260819T193802Z",
+  "step": "ECON_C0_COST_BASELINE_AUDIT",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "CONTIGUOUS_WARMUP_STILL_ACCUMULATING",
-  "next_gate": "WAIT_FOR_CONTIGUOUS_WARMUP",
+  "verdict": "COST_BASELINE_EVIDENCE_COLLECTED",
+  "next_gate": "ECON_C0_COST_CONTRACT",
   "facts": {
-    "CONTIGUOUS_TAIL_ROWS": "1161",
-    "EST_READY_UTC": "2026-08-19T20:11:01Z",
+    "AUDIT_MODE": "READ_ONLY",
     "EXECUTION_CHANGED": "NO",
-    "GAP_DELTA_SECONDS": "360",
-    "GAP_NEWER_EPOCH": "1787098320",
-    "GAP_OLDER_EPOCH": "1787097960",
     "H15_ACTIVATED": "NO",
-    "MANUAL_SCORER_TRIGGER": "NO",
-    "REMAINING_TO_1200": "39",
-    "SCORE_DB_PRESENT": "FALSE"
+    "MODEL_CHANGED": "NO"
   }
 }
