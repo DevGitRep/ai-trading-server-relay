@@ -1,24 +1,22 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-19T19:40:24.294662+00:00",
-  "run_id": "20260819T194022Z",
-  "step": "ECON_C0_COST_BASELINE_SUMMARY",
+  "published_at_utc": "2026-08-19T19:46:59.293921+00:00",
+  "run_id": "20260819T194657Z",
+  "step": "ECON_C0_MEXC_COST_CONTRACT",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "COST_BASELINE_SUMMARIZED",
-  "next_gate": "ECON_C0_COST_CONTRACT",
+  "verdict": "ECONOMIC_COST_MEASUREMENT_CONTRACT_FROZEN",
+  "next_gate": "EMPIRICAL_SPREAD_SLIPPAGE_MEASUREMENT",
   "facts": {
-    "AUDIT_MODE": "READ_ONLY",
-    "COMMISSION_DB_COLUMNS": "0",
-    "COST_CODE_REFERENCES": "219",
-    "EXCHANGES": "binance_gateio_hyperliquid_kraken_kucoin_kucoinfutures_mexc_okx",
+    "CONTRACT_FILE": "econ_c0_mexc_cost_measurement_contract_20260819_194657.json",
+    "CONTRACT_SHA256": "00e5531d19712eb0e78cd2f09d5860cb616d4faf8d9cf84586f6d00bd9f08dec",
+    "ECONOMIC_AUTHORITY": "NONE",
+    "EXCHANGE": "MEXC",
     "EXECUTION_CHANGED": "NO",
-    "FEE_DB_COLUMNS": "0",
-    "FEE_VALUES": "0.0008",
+    "FEE_PER_SIDE_BP": "8.0",
     "H15_ACTIVATED": "NO",
-    "MAKER_FEE_VALUES": "NONE",
-    "SLIPPAGE_DB_COLUMNS": "0",
-    "SLIPPAGE_VALUES": "NONE",
-    "TAKER_FEE_VALUES": "NONE"
+    "ROUNDTRIP_FEE_BP": "16.0",
+    "SLIPPAGE_STATUS": "EMPIRICAL_PENDING",
+    "SPREAD_STATUS": "EMPIRICAL_PENDING"
   }
 }
