@@ -1,16 +1,24 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-19T19:06:15.076903+00:00",
-  "run_id": "20260819T190612Z",
-  "step": "DUAL_BRIDGE_SELF_TEST",
+  "published_at_utc": "2026-08-19T19:29:14.075786+00:00",
+  "run_id": "20260819T192911Z",
+  "step": "H6B_INDICATOR_CAUSALITY_PREFLIGHT",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "DUAL_PUBLISH_READY",
-  "next_gate": "GV_PUBLIC_READ_TEST",
+  "verdict": "INDICATOR_SOURCE_WARMUP_NOT_READY",
+  "next_gate": "WAIT_FOR_1200_CONTIGUOUS_ROWS",
   "facts": {
-    "FDI_RUNTIME": "UNCHANGED",
-    "PRIVATE_BRIDGE": "PASS",
-    "PUBLIC_RELAY": "PASS",
-    "TRADING_RUNTIME": "UNCHANGED"
+    "AVAILABILITY_COLUMNS": "NONE",
+    "EXECUTION_CHANGED": "NO",
+    "H15_ACTIVATED": "NO",
+    "LATEST_AVAIL_LAG_S": "UNKNOWN",
+    "LATEST_SCORE_EPOCH": "NONE",
+    "MANUAL_SCORER_TRIGGER": "NO",
+    "SCORE_DB_PRESENT": "FALSE",
+    "SCORE_ROWS": "0",
+    "SCORE_TABLE": "NONE",
+    "SOURCE_BAD_GAPS": "1",
+    "SOURCE_CONTIGUOUS": "FALSE",
+    "SOURCE_ROWS": "1200"
   }
 }
