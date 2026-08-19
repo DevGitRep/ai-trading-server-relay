@@ -1,15 +1,16 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-19T19:02:04.950382+00:00",
-  "run_id": "20260819T190001Z",
-  "step": "RELAY_V0B_SELF_TEST",
+  "published_at_utc": "2026-08-19T19:06:15.076903+00:00",
+  "run_id": "20260819T190612Z",
+  "step": "DUAL_BRIDGE_SELF_TEST",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "PUBLIC_RELAY_READY",
-  "next_gate": "DUAL_PUBLISH_INTEGRATION",
+  "verdict": "DUAL_PUBLISH_READY",
+  "next_gate": "GV_PUBLIC_READ_TEST",
   "facts": {
-    "PRIVATE_BRIDGE": "UNCHANGED",
-    "REDACTION_GUARD": "PASS",
+    "FDI_RUNTIME": "UNCHANGED",
+    "PRIVATE_BRIDGE": "PASS",
+    "PUBLIC_RELAY": "PASS",
     "TRADING_RUNTIME": "UNCHANGED"
   }
 }
