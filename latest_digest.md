@@ -1,9 +1,9 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-08-20T19:14:46.386700+00:00`
-- Run ID: `20260820T191444Z`
-- Step: `DIRECTION_P3D_MA_WARMUP_MATURITY`
+- Published UTC: `2026-08-20T19:17:03.570709+00:00`
+- Run ID: `20260820T191701Z`
+- Step: `DIRECTION_P3E_MA_32_CANDLE_READINESS`
 - Status: `SUCCESS`
 - Exit code: `0`
 - Verdict: `DIRECTION_MA_BOUNDARY_HEALTHY_STILL_ACCUMULATING`
@@ -11,12 +11,12 @@
 
 ## Facts
 
-- `ACCEPTED`: `5`
+- `ACCEPTED`: `7`
 - `ACTIVATION_EPOCH`: `1787252896`
 - `AUDIT`: `READ_ONLY`
 - `BAD_RUNS`: `0`
 - `CLOSE_READ`: `NO`
-- `CONSECUTIVE`: `5`
+- `CONSECUTIVE`: `7`
 - `DB_QC`: `OK`
 - `EARLY_VIOL`: `0`
 - `ECON`: `NO`
@@ -29,11 +29,10 @@
 - `MA_READY`: `FALSE`
 - `MA_VALUES`: `NO`
 - `META_VIOL`: `0`
-- `ONLY_EPOCH_METADATA`: `YES`
 - `PREACT_REJECTS`: `1`
 - `PREACT_VIOL`: `0`
 - `PRICE_VALUES`: `NO`
-- `RUNS`: `6`
+- `RUNS`: `8`
 - `SPACING_VIOL`: `0`
 - `SYSTEMD_MUT`: `NO`
 - `TARGETS`: `NO`
