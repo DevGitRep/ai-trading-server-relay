@@ -1,8 +1,8 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-08-20T19:13:25.711171+00:00`
-- Run ID: `20260820T191323Z`
+- Published UTC: `2026-08-20T19:14:46.386700+00:00`
+- Run ID: `20260820T191444Z`
 - Step: `DIRECTION_P3D_MA_WARMUP_MATURITY`
 - Status: `SUCCESS`
 - Exit code: `0`
@@ -11,12 +11,12 @@
 
 ## Facts
 
-- `ACCEPTED`: `4`
+- `ACCEPTED`: `5`
 - `ACTIVATION_EPOCH`: `1787252896`
 - `AUDIT`: `READ_ONLY`
 - `BAD_RUNS`: `0`
 - `CLOSE_READ`: `NO`
-- `CONSECUTIVE`: `4`
+- `CONSECUTIVE`: `5`
 - `DB_QC`: `OK`
 - `EARLY_VIOL`: `0`
 - `ECON`: `NO`
@@ -33,7 +33,7 @@
 - `PREACT_REJECTS`: `1`
 - `PREACT_VIOL`: `0`
 - `PRICE_VALUES`: `NO`
-- `RUNS`: `5`
+- `RUNS`: `6`
 - `SPACING_VIOL`: `0`
 - `SYSTEMD_MUT`: `NO`
 - `TARGETS`: `NO`
