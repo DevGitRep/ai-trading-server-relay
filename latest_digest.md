@@ -1,8 +1,8 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-08-20T15:21:10.789980+00:00`
-- Run ID: `20260820T152108Z`
+- Published UTC: `2026-08-20T15:58:24.373667+00:00`
+- Run ID: `20260820T155822Z`
 - Step: `MA_P4R1_NUMERICAL_RECONCILIATION_CORRECTED_SANITY`
 - Status: `SUCCESS`
 - Exit code: `0`
