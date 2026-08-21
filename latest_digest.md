@@ -1,76 +1,62 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-08-21T09:38:36.437653+00:00`
-- Run ID: `20260821T093834Z`
-- Step: `DIRECTION_P4C_SCORE_PATH_REACHABILITY_CAUSAL_AUDIT`
+- Published UTC: `2026-08-21T09:40:01.448700+00:00`
+- Run ID: `20260821T093959Z`
+- Step: `DIRECTION_P4C_TARGET_AND_FUTURE_OHLC_SEMANTIC_AUDIT`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `DIRECTION_P4C_SCORE_PATH_CONTAINS_FORBIDDEN_SEMANTICS`
+- Verdict: `DIRECTION_P4C_TARGET_SEMANTICS_STILL_UNRESOLVED`
 - Next gate: `DO_NOT_BUILD_MINUTE_Q80_PRODUCER`
 
 ## Facts
 
 - `AUC`: `NO`
-- `AUDIT`: `STATIC_SCORE_REACHABILITY_ONLY`
+- `AUDIT`: `STATIC_TARGET_AND_FUTURE_OHLC_ONLY`
+- `BUILD_FUTURE_CONTEXT_COUNT`: `0`
 - `DATABASE_OPENED`: `NO`
 - `DIRECTION_TIMER_STATE`: `INACTIVE`
-- `FORBID1_FUNCTION`: `target_is_name`
-- `FORBID1_KIND`: `TARGET`
-- `FORBID1_LINE`: `117`
-- `FORBID1_TEXT`: `def target_is_name(`
-- `FORBID2_FUNCTION`: `build_exact_features`
-- `FORBID2_KIND`: `TARGET`
-- `FORBID2_LINE`: `817`
-- `FORBID2_TEXT`: `if target_is_name(`
-- `FORBID3_FUNCTION`: `build_exact_features`
-- `FORBID3_KIND`: `TARGET`
-- `FORBID3_LINE`: `825`
-- `FORBID3_TEXT`: `elif target_is_name(`
 - `FORWARD_RETURNS`: `NO`
-- `LOCAL_FUNCTION_COUNT`: `13`
-- `MODEL1_CALL`: `joblib.load`
-- `MODEL1_FUNCTION`: `score`
-- `MODEL1_LINE`: `1183`
-- `MODEL2_CALL`: `breakout_model.predict_proba`
-- `MODEL2_FUNCTION`: `score`
-- `MODEL2_LINE`: `1353`
-- `MODULE_SCORE_CALL_COUNT`: `0`
+- `FUTBIN1_EXPR`: `frame[&#x27;candle_epoch&#x27;] - 60`
+- `FUTBIN1_LINE`: `505`
+- `FUTCALL1_EXPR`: `load_future_ohlc(db, activation)`
+- `FUTCALL1_LINE`: `1240`
+- `FUTCALL1_OWNER`: `score`
+- `FUTSQL1_LINE`: `403`
+- `FUTSQL1_TEXT`: `SELECT candle_epoch, open, high, low, close FROM order_scalper_training_samples WHERE pair=&#x27;SOL_USDT&#x27; AND live_orderflow=1 AND feature_complete=1 AND candle_epoch&gt;=? ORDER BY candle_epoch ASC`
+- `FUTURE_ASSIGNMENT_NAMES`: `NONE`
+- `FUTURE_BINOP_COUNT`: `1`
+- `FUTURE_COMPARE_COUNT`: `0`
+- `FUTURE_OHLC_ARGS`: `db,activation`
+- `FUTURE_OHLC_CALL_COUNT`: `1`
+- `FUTURE_OHLC_REACHABLE`: `TRUE`
+- `FUTURE_OUTPUT_REF_COUNT`: `0`
+- `FUTURE_SQL_COUNT`: `1`
 - `OUTCOMES_READ`: `NO`
 - `PRICE_VALUES`: `NO`
 - `PROBABILITY_VALUES_READ`: `NO`
 - `Q80_VALUES_READ`: `NO`
-- `REACHABLE_FORBIDDEN_HIT_COUNT`: `3`
-- `REACHABLE_MODEL_CALL_COUNT`: `2`
-- `REACHABLE_SELECT_COUNT`: `4`
-- `REACHABLE_SELECT_FORBIDDEN_COLUMN_COUNT`: `0`
-- `REACHABLE_SQL_COUNT`: `5`
-- `SCORE_REACHABLE_FUNCTIONS`: `build_exact_features,compile_single_node,contiguous_suffix,find_function_nodes,is_feature_assignment,is_htf_mapping_loop,load_future_ohlc,load_source_program,make_full_htf,score,sha256,target_is_name`
-- `SCORE_REACHABLE_FUNCTION_COUNT`: `12`
-- `SELECT1_COLS`: `candle_epoch, open, high, low, close`
-- `SELECT1_FORBIDDEN_COLUMNS`: `FALSE`
-- `SELECT1_FUNCTION`: `load_future_ohlc`
-- `SELECT1_LINE`: `403`
-- `SELECT1_TABLE`: `order_scalper_training_samples`
-- `SELECT2_COLS`: `breakout_probability, q80_active, q90_active, q95_active, model_sha256, source_sha256, fusion_manifest_sha256`
-- `SELECT2_FORBIDDEN_COLUMNS`: `FALSE`
-- `SELECT2_FUNCTION`: `score`
-- `SELECT2_LINE`: `1479`
-- `SELECT2_TABLE`: `breakout_scores_v2`
-- `SELECT3_COLS`: `COUNT(*)`
-- `SELECT3_FORBIDDEN_COLUMNS`: `FALSE`
-- `SELECT3_FUNCTION`: `score`
-- `SELECT3_LINE`: `1628`
-- `SELECT3_TABLE`: `breakout_scores_v2`
-- `SELECT4_COLS`: `COUNT(*)`
-- `SELECT4_FORBIDDEN_COLUMNS`: `FALSE`
-- `SELECT4_FUNCTION`: `score`
-- `SELECT4_LINE`: `1636`
-- `SELECT4_TABLE`: `breakout_scores_v2`
 - `SOURCE_EXECUTED`: `NO`
+- `SQL_BETWEEN_EPOCH`: `FALSE`
+- `SQL_GTE_EPOCH`: `TRUE`
+- `SQL_GT_EPOCH`: `FALSE`
+- `SQL_LTE_EPOCH`: `FALSE`
+- `SQL_LT_EPOCH`: `FALSE`
+- `SQL_ORDER_ASC`: `TRUE`
+- `SQL_ORDER_DESC`: `FALSE`
+- `TARGETCALL1_EXPR`: `target_is_name(node, &#x27;SAMPLE_NS&#x27;)`
+- `TARGETCALL1_LINE`: `817`
+- `TARGETCALL1_OWNER`: `build_exact_features`
+- `TARGETCALL2_EXPR`: `target_is_name(node, &#x27;HTF_MAP&#x27;)`
+- `TARGETCALL2_LINE`: `825`
+- `TARGETCALL2_OWNER`: `build_exact_features`
+- `TARGET_AST_SYMBOL_COUNT`: `3`
+- `TARGET_CALL_COUNT`: `2`
+- `TARGET_DATA_TERM_COUNT`: `1`
+- `TARGET_FUNCTION_BODY`: `def target_is_name(node, name): if not isinstance(node, ast.Assign): return False for target in node.targets: if isinstance(target, ast.Name) and target.id == name: return True return False`
+- `TARGET_IS_AST_HELPER`: `FALSE`
 - `TRADE`: `NO`
 - `TRAINING_EXECUTED`: `NO`
 - `TUNING`: `NO`
-- `UNREACHABLE_FORBIDDEN_HIT_COUNT`: `0`
 - `WRITER_SHA_OK`: `TRUE`
 - `WRITES`: `NO`
