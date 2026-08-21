@@ -1,68 +1,65 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-08-21T09:18:24.836984+00:00`
-- Run ID: `20260821T091822Z`
-- Step: `DIRECTION_P4C_TRACE_FEATURES_INPUT_ARTIFACT_AND_BUILD_FUNCTION`
+- Published UTC: `2026-08-21T09:19:22.436359+00:00`
+- Run ID: `20260821T091920Z`
+- Step: `DIRECTION_P4C_AUDIT_EXACT_Q80_PROVENANCE_NODE`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `DIRECTION_P4C_FEATURE_TABLE_PROVENANCE_DIRECTLY_REFERENCES_Q80`
-- Next gate: `AUDIT_EXACT_Q80_PROVENANCE_NODE`
+- Verdict: `DIRECTION_P4C_FEATURE_DATASET_CONSTRUCTOR_RESOLVED_PATH_INDIRECT`
+- Next gate: `TRACE_DATASET_PATH_VARIABLE_ONE_LEVEL_DEEPER`
 
 ## Facts
 
 - `AUC`: `NO`
 - `AUDIT`: `STATIC_SOURCE_ONLY`
-- `BUILDER_Q80_REF_COUNT`: `0`
+- `DATASET_CALL1_ARG1`: `str(INPUTS[&#x27;FEATURES&#x27;][0])`
+- `DATASET_CALL1_LINE`: `686`
+- `DATASET_CALL1_NAME`: `ds.dataset`
+- `DATASET_CALL_COUNT`: `1`
+- `DATASET_OPENED`: `NO`
 - `ECON`: `NO`
 - `EXTERNAL_DATA_OPENED`: `NO`
-- `FEATURES_FROM_TABLE_LINE`: `717`
-- `FEATURE_TABLE_ASSIGN_COUNT`: `1`
+- `FEATURE_DATASET_BASES`: `INPUTS,ds,str`
+- `FEATURE_DATASET_CALLS`: `ds.dataset,str`
+- `FEATURE_DATASET_EXPR`: `ds.dataset(str(INPUTS[&#x27;FEATURES&#x27;][0]), format=&#x27;ipc&#x27;)`
+- `FEATURE_DATASET_LINE`: `686`
 - `FORWARD_RETURNS`: `NO`
 - `H15_PEEK`: `NO`
-- `LOADER1_BASENAME`: `NONE`
-- `LOADER1_CALL`: `feature_dataset.to_table`
-- `LOADER1_LINE`: `696`
-- `LOADER1_SCOPE`: `MODULE`
-- `LOCAL_BUILDER_COUNT`: `0`
 - `OUTCOMES_READ`: `NO`
+- `PATH_HINT_COUNT`: `0`
 - `PRICE_VALUES`: `NO`
 - `Q80_VALUES_READ`: `NO`
-- `RELEVANT_LOADER_COUNT`: `1`
 - `SOURCE_EXECUTED`: `NO`
 - `SOURCE_SHA_OK`: `TRUE`
-- `TABLE_ASSIGN1_BASES`: `M01,M06,P,Q,ds,feature_dataset`
-- `TABLE_ASSIGN1_CALLS`: `ds.field,feature_dataset.to_table`
-- `TABLE_ASSIGN1_EXPR`: `feature_dataset.to_table(columns=[&#x27;candle_epoch&#x27;, &#x27;observation_epoch&#x27;, &#x27;development_period&#x27;, &#x27;indicator_fold&#x27;, P, Q, M01, M06], filter=ds.field(&#x27;development_per`
-- `TABLE_ASSIGN1_LINE`: `696`
+- `TERMINAL_PATH_COUNT`: `0`
 - `TIMER_STATE`: `INACTIVE`
-- `TRACE1_CALLS`: `ds.field,feature_dataset.to_table`
-- `TRACE1_DEPTH`: `0`
-- `TRACE1_EXPR`: `feature_dataset.to_table(columns=[&#x27;candle_epoch&#x27;, &#x27;observation_epoch&#x27;, &#x27;development_period&#x27;, &#x27;indicator_fold&#x27;, P, Q, M01, M06], filter=ds.field(&#x27;devel`
-- `TRACE1_LINE`: `696`
-- `TRACE1_VAR`: `feature_table`
+- `TRACE1_CALLS`: `Path`
+- `TRACE1_DEPTH`: `1`
+- `TRACE1_EXPR`: `{&#x27;G1_RUNNER&#x27;: (Path(os.environ[&#x27;G1_RUNNER&#x27;]), os.environ[&#x27;G1_RUNNER_SHA&#x27;]), &#x27;G1_CON&#x27;: (Path(os.environ[&#x27;G1_CON&#x27;]), os.environ[&#x27;G1_CON_SHA&#x27;])`
+- `TRACE1_LINE`: `20`
+- `TRACE1_VAR`: `INPUTS`
 - `TRACE2_CALLS`: `NONE`
 - `TRACE2_DEPTH`: `1`
-- `TRACE2_EXPR`: `&#x27;MS_DIR_M01_H120&#x27;`
-- `TRACE2_LINE`: `680`
-- `TRACE2_VAR`: `M01`
+- `TRACE2_EXPR`: `NO_PRIOR_ASSIGNMENT`
+- `TRACE2_LINE`: `NONE`
+- `TRACE2_VAR`: `ds`
 - `TRACE3_CALLS`: `NONE`
 - `TRACE3_DEPTH`: `1`
-- `TRACE3_EXPR`: `&#x27;MS_DIR_M06_H15&#x27;`
-- `TRACE3_LINE`: `681`
-- `TRACE3_VAR`: `M06`
+- `TRACE3_EXPR`: `NO_PRIOR_ASSIGNMENT`
+- `TRACE3_LINE`: `NONE`
+- `TRACE3_VAR`: `str`
 - `TRACE4_CALLS`: `NONE`
-- `TRACE4_DEPTH`: `1`
-- `TRACE4_EXPR`: `&#x27;IND_BREAKOUT_PROBABILITY&#x27;`
-- `TRACE4_LINE`: `677`
-- `TRACE4_VAR`: `P`
+- `TRACE4_DEPTH`: `2`
+- `TRACE4_EXPR`: `NO_PRIOR_ASSIGNMENT`
+- `TRACE4_LINE`: `NONE`
+- `TRACE4_VAR`: `Path`
 - `TRACE5_CALLS`: `NONE`
-- `TRACE5_DEPTH`: `1`
-- `TRACE5_EXPR`: `&#x27;IND_BREAKOUT_Q80_ACTIVE&#x27;`
-- `TRACE5_LINE`: `678`
-- `TRACE5_VAR`: `Q`
+- `TRACE5_DEPTH`: `2`
+- `TRACE5_EXPR`: `NO_PRIOR_ASSIGNMENT`
+- `TRACE5_LINE`: `NONE`
+- `TRACE5_VAR`: `os`
 - `TRACE_NODE_COUNT`: `5`
-- `TRACE_Q80_REF_COUNT`: `2`
 - `TRADE`: `NO`
 - `TRAINING`: `NO`
 - `TUNING`: `NO`
