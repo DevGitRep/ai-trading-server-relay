@@ -1,77 +1,76 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-08-21T09:37:03.473193+00:00`
-- Run ID: `20260821T093701Z`
-- Step: `DIRECTION_P4C_MINUTE_CAUSAL_Q80_DESIGN_PREFLIGHT`
+- Published UTC: `2026-08-21T09:38:36.437653+00:00`
+- Run ID: `20260821T093834Z`
+- Step: `DIRECTION_P4C_SCORE_PATH_REACHABILITY_CAUSAL_AUDIT`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `DIRECTION_P4C_MINUTE_Q80_DESIGN_FAIL_FORBIDDEN_SEMANTICS`
-- Next gate: `DO_NOT_BUILD_MINUTE_PRODUCER`
+- Verdict: `DIRECTION_P4C_SCORE_PATH_CONTAINS_FORBIDDEN_SEMANTICS`
+- Next gate: `DO_NOT_BUILD_MINUTE_Q80_PRODUCER`
 
 ## Facts
 
-- `APPEND_ONLY_CANDIDATE`: `TRUE`
-- `ARTLOAD1_CALL`: `joblib.load`
-- `ARTLOAD1_LINE`: `1183`
 - `AUC`: `NO`
-- `AUDIT`: `STATIC_DESIGN_PREFLIGHT_ONLY`
+- `AUDIT`: `STATIC_SCORE_REACHABILITY_ONLY`
 - `DATABASE_OPENED`: `NO`
-- `DB_LITERAL_COUNT`: `0`
 - `DIRECTION_TIMER_STATE`: `INACTIVE`
-- `ECON`: `NO`
-- `FORBIDDEN_AUC`: `FALSE`
-- `FORBIDDEN_FORWARD_RETURN`: `FALSE`
-- `FORBIDDEN_H15`: `FALSE`
-- `FORBIDDEN_TARGET`: `TRUE`
-- `FORBIDDEN_TRADE`: `FALSE`
+- `FORBID1_FUNCTION`: `target_is_name`
+- `FORBID1_KIND`: `TARGET`
+- `FORBID1_LINE`: `117`
+- `FORBID1_TEXT`: `def target_is_name(`
+- `FORBID2_FUNCTION`: `build_exact_features`
+- `FORBID2_KIND`: `TARGET`
+- `FORBID2_LINE`: `817`
+- `FORBID2_TEXT`: `if target_is_name(`
+- `FORBID3_FUNCTION`: `build_exact_features`
+- `FORBID3_KIND`: `TARGET`
+- `FORBID3_LINE`: `825`
+- `FORBID3_TEXT`: `elif target_is_name(`
 - `FORWARD_RETURNS`: `NO`
-- `FUNCTION_COUNT`: `13`
-- `H15_PEEK`: `NO`
-- `INSERT_PLAIN`: `TRUE`
-- `INSERT_REPLACE`: `FALSE`
-- `INSERT_SQL_COUNT`: `1`
-- `MAIN_GUARD`: `TRUE`
-- `MODEL_ARTIFACT_LOAD_COUNT`: `1`
-- `ON_CONFLICT_UPDATE`: `FALSE`
+- `LOCAL_FUNCTION_COUNT`: `13`
+- `MODEL1_CALL`: `joblib.load`
+- `MODEL1_FUNCTION`: `score`
+- `MODEL1_LINE`: `1183`
+- `MODEL2_CALL`: `breakout_model.predict_proba`
+- `MODEL2_FUNCTION`: `score`
+- `MODEL2_LINE`: `1353`
+- `MODULE_SCORE_CALL_COUNT`: `0`
 - `OUTCOMES_READ`: `NO`
 - `PRICE_VALUES`: `NO`
 - `PROBABILITY_VALUES_READ`: `NO`
 - `Q80_VALUES_READ`: `NO`
-- `SCORE_FN1_ARGS`: `db,v2_path,expected_v2_sha,model_path,expected_model_sha,source_path,expected_source_sha,score_db`
-- `SCORE_FN1_LINE`: `1034`
-- `SCORE_FN1_NAME`: `score`
-- `SCORE_FN1_SEMANTIC_HITS`: `4`
-- `SCORE_FUNCTION_COUNT`: `1`
-- `SELECT1_CALL`: `ast.fix_missing_locations`
-- `SELECT1_EXPR`: `ast.fix_missing_locations(module)`
-- `SELECT1_LINE`: `99`
-- `SELECT2_CALL`: `fetchall`
-- `SELECT2_EXPR`: `conn.execute(&quot;\n SELECT\n candle_epoch,\n open,\n high,\n low,\n close\n\n FROM order_scalper_training_samples\n\n WHERE pair=&#x27;SOL_USDT&#x27;\n A`
-- `SELECT2_LINE`: `402`
-- `SELECT3_CALL`: `RuntimeError`
-- `SELECT3_EXPR`: `RuntimeError(&#x27;Frozen V1D1 functions missing: &#x27; + repr(missing_functions))`
-- `SELECT3_LINE`: `607`
-- `SELECT4_CALL`: `conn.execute`
-- `SELECT4_EXPR`: `conn.execute(&quot;\n SELECT\n candle_epoch,\n open,\n high,\n low,\n close\n\n FROM order_scalper_training_samples\n\n WHERE pair=&#x27;SOL_USDT&#x27;\n A`
-- `SELECT4_LINE`: `402`
-- `SELECTION_HINT_COUNT`: `5`
+- `REACHABLE_FORBIDDEN_HIT_COUNT`: `3`
+- `REACHABLE_MODEL_CALL_COUNT`: `2`
+- `REACHABLE_SELECT_COUNT`: `4`
+- `REACHABLE_SELECT_FORBIDDEN_COLUMN_COUNT`: `0`
+- `REACHABLE_SQL_COUNT`: `5`
+- `SCORE_REACHABLE_FUNCTIONS`: `build_exact_features,compile_single_node,contiguous_suffix,find_function_nodes,is_feature_assignment,is_htf_mapping_loop,load_future_ohlc,load_source_program,make_full_htf,score,sha256,target_is_name`
+- `SCORE_REACHABLE_FUNCTION_COUNT`: `12`
+- `SELECT1_COLS`: `candle_epoch, open, high, low, close`
+- `SELECT1_FORBIDDEN_COLUMNS`: `FALSE`
+- `SELECT1_FUNCTION`: `load_future_ohlc`
+- `SELECT1_LINE`: `403`
+- `SELECT1_TABLE`: `order_scalper_training_samples`
+- `SELECT2_COLS`: `breakout_probability, q80_active, q90_active, q95_active, model_sha256, source_sha256, fusion_manifest_sha256`
+- `SELECT2_FORBIDDEN_COLUMNS`: `FALSE`
+- `SELECT2_FUNCTION`: `score`
+- `SELECT2_LINE`: `1479`
+- `SELECT2_TABLE`: `breakout_scores_v2`
+- `SELECT3_COLS`: `COUNT(*)`
+- `SELECT3_FORBIDDEN_COLUMNS`: `FALSE`
+- `SELECT3_FUNCTION`: `score`
+- `SELECT3_LINE`: `1628`
+- `SELECT3_TABLE`: `breakout_scores_v2`
+- `SELECT4_COLS`: `COUNT(*)`
+- `SELECT4_FORBIDDEN_COLUMNS`: `FALSE`
+- `SELECT4_FUNCTION`: `score`
+- `SELECT4_LINE`: `1636`
+- `SELECT4_TABLE`: `breakout_scores_v2`
 - `SOURCE_EXECUTED`: `NO`
-- `SQL1_LINE`: `403`
-- `SQL1_TEXT`: `SELECT candle_epoch, open, high, low, close FROM order_scalper_training_samples WHERE pair=&#x27;SOL_USDT&#x27; AND live_orderflow=1 AND feature_complete=1 AND`
-- `SQL2_LINE`: `1479`
-- `SQL2_TEXT`: `SELECT breakout_probability, q80_active, q90_active, q95_active, model_sha256, source_sha256, fusion_manifest_sha256 FROM breakout_scores_v2 WHERE can`
-- `SQL_HINT_COUNT`: `2`
-- `SYSTEMD_UNIT_COUNT`: `2`
-- `TABLE_LITERAL_COUNT`: `19`
 - `TRADE`: `NO`
-- `TRAINING`: `NO`
+- `TRAINING_EXECUTED`: `NO`
 - `TUNING`: `NO`
-- `UNIT1_EXEC_HAS_WRITER`: `FALSE`
-- `UNIT1_FILE`: `orderflow-fusion-v2-breakout-scorer.timer`
-- `UNIT1_ONCALENDAR`: `hourly`
-- `UNIT2_EXEC_HAS_WRITER`: `FALSE`
-- `UNIT2_FILE`: `orderflow-fusion-v2-breakout-scorer.service`
-- `UNIT2_ONCALENDAR`: `NONE`
+- `UNREACHABLE_FORBIDDEN_HIT_COUNT`: `0`
 - `WRITER_SHA_OK`: `TRUE`
 - `WRITES`: `NO`
