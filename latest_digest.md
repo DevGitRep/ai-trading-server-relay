@@ -1,88 +1,77 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-08-21T09:35:49.588762+00:00`
-- Run ID: `20260821T093547Z`
-- Step: `DIRECTION_P4C_LIVE_Q80_WRITER_TRIGGER_TIMING_AUDIT`
+- Published UTC: `2026-08-21T09:37:03.473193+00:00`
+- Run ID: `20260821T093701Z`
+- Step: `DIRECTION_P4C_MINUTE_CAUSAL_Q80_DESIGN_PREFLIGHT`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `DIRECTION_P4C_LIVE_Q80_WRITER_EFFECTIVELY_BATCHED`
-- Next gate: `DESIGN_FUTURE_ACTIVATED_MINUTE_CAUSAL_Q80_PRODUCER`
+- Verdict: `DIRECTION_P4C_MINUTE_Q80_DESIGN_FAIL_FORBIDDEN_SEMANTICS`
+- Next gate: `DO_NOT_BUILD_MINUTE_PRODUCER`
 
 ## Facts
 
+- `APPEND_ONLY_CANDIDATE`: `TRUE`
+- `ARTLOAD1_CALL`: `joblib.load`
+- `ARTLOAD1_LINE`: `1183`
 - `AUC`: `NO`
-- `AUDIT`: `READ_ONLY_TRIGGER_TIMING`
-- `BATCH_CANDLE_SPAN_P50_SEC`: `3540`
-- `BATCH_GAP_MAX_SEC`: `3600`
-- `BATCH_GAP_MIN_SEC`: `3600`
-- `BATCH_GAP_P50_SEC`: `3600`
-- `BATCH_SIZE_MAX`: `61`
-- `BATCH_SIZE_P50`: `60`
-- `DB_QC`: `OK`
+- `AUDIT`: `STATIC_DESIGN_PREFLIGHT_ONLY`
+- `DATABASE_OPENED`: `NO`
+- `DB_LITERAL_COUNT`: `0`
 - `DIRECTION_TIMER_STATE`: `INACTIVE`
 - `ECON`: `NO`
-- `EFFECTIVE_HOURLY_OR_BATCHED`: `TRUE`
-- `EXPLICIT_HOURLY_HINT`: `FALSE`
+- `FORBIDDEN_AUC`: `FALSE`
+- `FORBIDDEN_FORWARD_RETURN`: `FALSE`
+- `FORBIDDEN_H15`: `FALSE`
+- `FORBIDDEN_TARGET`: `TRUE`
+- `FORBIDDEN_TRADE`: `FALSE`
 - `FORWARD_RETURNS`: `NO`
+- `FUNCTION_COUNT`: `13`
 - `H15_PEEK`: `NO`
-- `INVOKER1_DB_REF`: `TRUE`
-- `INVOKER1_FILE`: `fdi_v0h2r3_shared_causal_context_feed_20260819_113943.py`
-- `INVOKER1_IS_TIMER`: `FALSE`
-- `INVOKER1_ONCALENDAR`: `FALSE`
-- `INVOKER1_TABLE_REF`: `TRUE`
-- `INVOKER1_WRITER_REF`: `FALSE`
-- `INVOKER2_DB_REF`: `TRUE`
-- `INVOKER2_FILE`: `fdi_v0h3a_shared_context_runtime_updater_20260819_114220.py`
-- `INVOKER2_IS_TIMER`: `FALSE`
-- `INVOKER2_ONCALENDAR`: `FALSE`
-- `INVOKER2_TABLE_REF`: `TRUE`
-- `INVOKER2_WRITER_REF`: `FALSE`
-- `INVOKER3_DB_REF`: `TRUE`
-- `INVOKER3_FILE`: `fdi_v0h2_shared_causal_context_feed_20260819_113044.py`
-- `INVOKER3_IS_TIMER`: `FALSE`
-- `INVOKER3_ONCALENDAR`: `FALSE`
-- `INVOKER3_TABLE_REF`: `TRUE`
-- `INVOKER3_WRITER_REF`: `FALSE`
-- `INVOKER4_DB_REF`: `TRUE`
-- `INVOKER4_FILE`: `fdi_v0h2r2_shared_causal_context_feed_20260819_113728.py`
-- `INVOKER4_IS_TIMER`: `FALSE`
-- `INVOKER4_ONCALENDAR`: `FALSE`
-- `INVOKER4_TABLE_REF`: `TRUE`
-- `INVOKER4_WRITER_REF`: `FALSE`
-- `INVOKER5_DB_REF`: `FALSE`
-- `INVOKER5_FILE`: `fdi_v0h0c1_prospective_collector.py`
-- `INVOKER5_IS_TIMER`: `FALSE`
-- `INVOKER5_ONCALENDAR`: `FALSE`
-- `INVOKER5_TABLE_REF`: `TRUE`
-- `INVOKER5_WRITER_REF`: `FALSE`
-- `INVOKER6_DB_REF`: `FALSE`
-- `INVOKER6_FILE`: `candidate-20260819-220215.sh`
-- `INVOKER6_IS_TIMER`: `FALSE`
-- `INVOKER6_ONCALENDAR`: `FALSE`
-- `INVOKER6_TABLE_REF`: `FALSE`
-- `INVOKER6_WRITER_REF`: `TRUE`
-- `INVOKER_COUNT`: `16`
-- `LARGE_BATCH_COUNT`: `12`
-- `NEAR_HOUR_BATCH_GAP_COUNT`: `12`
+- `INSERT_PLAIN`: `TRUE`
+- `INSERT_REPLACE`: `FALSE`
+- `INSERT_SQL_COUNT`: `1`
+- `MAIN_GUARD`: `TRUE`
+- `MODEL_ARTIFACT_LOAD_COUNT`: `1`
+- `ON_CONFLICT_UPDATE`: `FALSE`
 - `OUTCOMES_READ`: `NO`
 - `PRICE_VALUES`: `NO`
 - `PROBABILITY_VALUES_READ`: `NO`
-- `PUBLICATION_BATCH_COUNT`: `13`
-- `PUBLICATION_MINUTE_UTC_MODE`: `0`
 - `Q80_VALUES_READ`: `NO`
-- `RECENT12H_ROW_COUNT`: `721`
-- `RELEVANT_SYSTEMD_TIMER_COUNT`: `2`
-- `TIMER1_UNIT`: `orderflow-fusion-v2-breakout-scorer.timer`
-- `TIMER2_UNIT`: `orderflow-fusion-v2-evaluator.timer`
+- `SCORE_FN1_ARGS`: `db,v2_path,expected_v2_sha,model_path,expected_model_sha,source_path,expected_source_sha,score_db`
+- `SCORE_FN1_LINE`: `1034`
+- `SCORE_FN1_NAME`: `score`
+- `SCORE_FN1_SEMANTIC_HITS`: `4`
+- `SCORE_FUNCTION_COUNT`: `1`
+- `SELECT1_CALL`: `ast.fix_missing_locations`
+- `SELECT1_EXPR`: `ast.fix_missing_locations(module)`
+- `SELECT1_LINE`: `99`
+- `SELECT2_CALL`: `fetchall`
+- `SELECT2_EXPR`: `conn.execute(&quot;\n SELECT\n candle_epoch,\n open,\n high,\n low,\n close\n\n FROM order_scalper_training_samples\n\n WHERE pair=&#x27;SOL_USDT&#x27;\n A`
+- `SELECT2_LINE`: `402`
+- `SELECT3_CALL`: `RuntimeError`
+- `SELECT3_EXPR`: `RuntimeError(&#x27;Frozen V1D1 functions missing: &#x27; + repr(missing_functions))`
+- `SELECT3_LINE`: `607`
+- `SELECT4_CALL`: `conn.execute`
+- `SELECT4_EXPR`: `conn.execute(&quot;\n SELECT\n candle_epoch,\n open,\n high,\n low,\n close\n\n FROM order_scalper_training_samples\n\n WHERE pair=&#x27;SOL_USDT&#x27;\n A`
+- `SELECT4_LINE`: `402`
+- `SELECTION_HINT_COUNT`: `5`
+- `SOURCE_EXECUTED`: `NO`
+- `SQL1_LINE`: `403`
+- `SQL1_TEXT`: `SELECT candle_epoch, open, high, low, close FROM order_scalper_training_samples WHERE pair=&#x27;SOL_USDT&#x27; AND live_orderflow=1 AND feature_complete=1 AND`
+- `SQL2_LINE`: `1479`
+- `SQL2_TEXT`: `SELECT breakout_probability, q80_active, q90_active, q95_active, model_sha256, source_sha256, fusion_manifest_sha256 FROM breakout_scores_v2 WHERE can`
+- `SQL_HINT_COUNT`: `2`
+- `SYSTEMD_UNIT_COUNT`: `2`
+- `TABLE_LITERAL_COUNT`: `19`
 - `TRADE`: `NO`
 - `TRAINING`: `NO`
 - `TUNING`: `NO`
-- `WRITER_BATCH_HINT`: `TRUE`
-- `WRITER_HOUR_HINT`: `FALSE`
-- `WRITER_LOOP_COUNT`: `9`
-- `WRITER_MINUTE_HINT`: `FALSE`
-- `WRITER_SCHED_NUMERIC_HINTS`: `5,30,60`
+- `UNIT1_EXEC_HAS_WRITER`: `FALSE`
+- `UNIT1_FILE`: `orderflow-fusion-v2-breakout-scorer.timer`
+- `UNIT1_ONCALENDAR`: `hourly`
+- `UNIT2_EXEC_HAS_WRITER`: `FALSE`
+- `UNIT2_FILE`: `orderflow-fusion-v2-breakout-scorer.service`
+- `UNIT2_ONCALENDAR`: `NONE`
 - `WRITER_SHA_OK`: `TRUE`
-- `WRITER_SLEEP_CALL_COUNT`: `0`
 - `WRITES`: `NO`
