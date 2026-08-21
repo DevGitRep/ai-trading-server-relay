@@ -1,56 +1,47 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-08-21T09:15:45.922735+00:00`
-- Run ID: `20260821T091543Z`
-- Step: `DIRECTION_P4C_AUDIT_RESOLVED_FRAME_PRODUCER_SEMANTICS`
+- Published UTC: `2026-08-21T09:17:14.707617+00:00`
+- Run ID: `20260821T091712Z`
+- Step: `DIRECTION_P4C_TRACE_TEST_BASE_CONTAINER_TO_Q80_PRODUCER`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `DIRECTION_P4C_Q80_PRESENT_UPSTREAM_BEFORE_TEST`
-- Next gate: `TRACE_TEST_BASE_CONTAINER_TO_Q80_PRODUCER`
+- Verdict: `DIRECTION_P4C_Q80_PRECOMPUTED_OR_INHERITED_IN_FEATURES`
+- Next gate: `TRACE_FEATURES_INPUT_ARTIFACT_AND_BUILD_FUNCTION`
 
 ## Facts
 
 - `AUC`: `NO`
 - `AUDIT`: `STATIC_SOURCE_ONLY`
 - `ECON`: `NO`
+- `EXTERNAL_DATA_OPENED`: `NO`
+- `FEATURES_DIRECT_Q80_WRITES`: `0`
+- `FEATURE_ASSIGN1_CALLS`: `feature_table.to_pandas`
+- `FEATURE_ASSIGN1_EXPR`: `feature_table.to_pandas()`
+- `FEATURE_ASSIGN1_LINE`: `717`
+- `FEATURE_ASSIGN2_CALLS`: `copy,reset_index,sort_values`
+- `FEATURE_ASSIGN2_EXPR`: `features.loc[common_support].copy().sort_values(&#x27;candle_epoch&#x27;).reset_index(drop=True)`
+- `FEATURE_ASSIGN2_LINE`: `947`
+- `FEATURE_ASSIGN_COUNT`: `2`
+- `FEATURE_LOCAL_FUNCTIONS`: `NONE`
+- `FEATURE_LOCAL_FUNCTION_COUNT`: `0`
 - `FORWARD_RETURNS`: `NO`
 - `H15_PEEK`: `NO`
+- `LOADER1_BASENAME`: `NONE`
 - `LOADER1_CALL`: `pd.read_feather`
 - `LOADER1_LINE`: `1814`
-- `LOADER_CALL_COUNT`: `1`
+- `LOADER1_TARGET`: `reloaded`
+- `LOADER_COUNT`: `1`
 - `OUTCOMES_READ`: `NO`
 - `PRICE_VALUES`: `NO`
-- `Q80_DIRECT_TEST_WRITE_COUNT`: `0`
-- `Q80_REF1_EXPR`: `def block_bootstrap_contrast(frame, label_column, positive_class): &quot;&quot;&quot; Whole-calendar-7-day-block paired bootstrap. Contrast: expected-sign rate in Q8`
-- `Q80_REF1_LINE`: `149`
-- `Q80_REF1_TYPE`: `FunctionDef`
-- `Q80_REF2_EXPR`: `q = frame[&#x27;IND_BREAKOUT_Q80_ACTIVE&#x27;].to_numpy(dtype=np.int8)`
-- `Q80_REF2_LINE`: `169`
-- `Q80_REF2_TYPE`: `Assign`
-- `Q80_REF3_EXPR`: `frame[&#x27;IND_BREAKOUT_Q80_ACTIVE&#x27;].to_numpy(dtype=np.int8)`
-- `Q80_REF3_LINE`: `169`
-- `Q80_REF3_TYPE`: `Call`
-- `Q80_REF4_EXPR`: `frame[&#x27;IND_BREAKOUT_Q80_ACTIVE&#x27;].to_numpy`
-- `Q80_REF4_LINE`: `169`
-- `Q80_REF4_TYPE`: `Attribute`
-- `Q80_REF_BEFORE_TEST_COUNT`: `13`
-- `Q80_REF_COUNT`: `13`
+- `Q80_REFERENCE_FUNCTIONS`: `block_bootstrap_contrast`
 - `Q80_VALUES_READ`: `NO`
+- `Q80_WRITE_COUNT`: `0`
+- `Q80_WRITE_FUNCTIONS`: `NONE`
 - `SOURCE_EXECUTED`: `NO`
 - `SOURCE_SHA_OK`: `TRUE`
-- `TEST_ASSIGN1_BASES`: `M01,M06,features`
-- `TEST_ASSIGN1_CALLS`: `copy,reset_index`
-- `TEST_ASSIGN1_EXPR`: `features.loc[(features[M01] != 0) | (features[M06] != 0)].copy().reset_index(drop=True)`
-- `TEST_ASSIGN1_LINE`: `1214`
-- `TEST_ASSIGN_COUNT`: `1`
-- `TEST_COLUMN_WRITE_COUNT`: `6`
+- `TEST_LINE`: `1214`
 - `TIMER_STATE`: `INACTIVE`
-- `TRACE1_CALLS`: `NONE`
-- `TRACE1_EXPR`: `&#x27;MS_DIR_M01_H120&#x27;`
-- `TRACE1_LINE`: `680`
-- `TRACE1_VAR`: `M01`
-- `TRACE_DEPTH`: `1`
 - `TRADE`: `NO`
 - `TRAINING`: `NO`
 - `TUNING`: `NO`
