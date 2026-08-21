@@ -1,60 +1,66 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-08-21T09:40:01.448700+00:00`
-- Run ID: `20260821T093959Z`
-- Step: `DIRECTION_P4C_TARGET_AND_FUTURE_OHLC_SEMANTIC_AUDIT`
+- Published UTC: `2026-08-21T09:41:23.161844+00:00`
+- Run ID: `20260821T094121Z`
+- Step: `DIRECTION_P4C_FUTURE_OHLC_SCORE_DATAFLOW_AUDIT`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `DIRECTION_P4C_TARGET_SEMANTICS_STILL_UNRESOLVED`
-- Next gate: `DO_NOT_BUILD_MINUTE_Q80_PRODUCER`
+- Verdict: `DIRECTION_P4C_FUTURE_OHLC_RESULT_ENTERS_SCORE_DATAFLOW`
+- Next gate: `AUDIT_EXACT_PER_CANDLE_BOUNDING_BEFORE_BUILD`
 
 ## Facts
 
+- `ACT1_EXPR`: `activation = int(spec[&#x27;prospective_activation&#x27;][&#x27;activation_epoch&#x27;])`
+- `ACT1_LINE`: `1129`
+- `ACTIVATION_ASSIGNMENT_COUNT`: `1`
+- `ACTIVATION_REF_COUNT`: `3`
 - `AUC`: `NO`
-- `AUDIT`: `STATIC_TARGET_AND_FUTURE_OHLC_ONLY`
-- `BUILD_FUTURE_CONTEXT_COUNT`: `0`
+- `AUDIT`: `STATIC_FUTURE_DATAFLOW_ONLY`
+- `CALL1_ASSIGNED`: `frame`
+- `CALL1_LINE`: `1240`
+- `CALL1_STATEMENT`: `frame = load_future_ohlc(db, activation)`
+- `CALL1_STATEMENT_TYPE`: `Assign`
+- `CHECK1_EXPR`: `if frame.empty: return frame`
+- `CHECK1_LINE`: `444`
+- `CHECK2_EXPR`: `if frame[&#x27;candle_epoch&#x27;].duplicated().any(): raise RuntimeError(&#x27;Duplicate prospective candle_epoch&#x27;)`
+- `CHECK2_LINE`: `449`
 - `DATABASE_OPENED`: `NO`
 - `DIRECTION_TIMER_STATE`: `INACTIVE`
 - `FORWARD_RETURNS`: `NO`
-- `FUTBIN1_EXPR`: `frame[&#x27;candle_epoch&#x27;] - 60`
-- `FUTBIN1_LINE`: `505`
-- `FUTCALL1_EXPR`: `load_future_ohlc(db, activation)`
-- `FUTCALL1_LINE`: `1240`
-- `FUTCALL1_OWNER`: `score`
-- `FUTSQL1_LINE`: `403`
-- `FUTSQL1_TEXT`: `SELECT candle_epoch, open, high, low, close FROM order_scalper_training_samples WHERE pair=&#x27;SOL_USDT&#x27; AND live_orderflow=1 AND feature_complete=1 AND candle_epoch&gt;=? ORDER BY candle_epoch ASC`
-- `FUTURE_ASSIGNMENT_NAMES`: `NONE`
-- `FUTURE_BINOP_COUNT`: `1`
-- `FUTURE_COMPARE_COUNT`: `0`
-- `FUTURE_OHLC_ARGS`: `db,activation`
-- `FUTURE_OHLC_CALL_COUNT`: `1`
-- `FUTURE_OHLC_REACHABLE`: `TRUE`
-- `FUTURE_OUTPUT_REF_COUNT`: `0`
+- `FUTREF1_LINE`: `1240`
+- `FUTREF1_NAME`: `load_future_ohlc`
+- `FUTURE_CALL_EXPR_ONLY`: `FALSE`
+- `FUTURE_CHECK_COUNT`: `2`
+- `FUTURE_FILE_WRITE_COUNT`: `0`
+- `FUTURE_GLOBAL_NONLOCAL_COUNT`: `0`
+- `FUTURE_HAS_VALUE_RETURN`: `TRUE`
+- `FUTURE_RAISE_COUNT`: `2`
+- `FUTURE_READ_ONLY`: `TRUE`
+- `FUTURE_RESULT_ASSIGNED`: `TRUE`
+- `FUTURE_RETURN_COUNT`: `2`
 - `FUTURE_SQL_COUNT`: `1`
+- `FUTURE_WRITE_SQL_COUNT`: `0`
 - `OUTCOMES_READ`: `NO`
 - `PRICE_VALUES`: `NO`
 - `PROBABILITY_VALUES_READ`: `NO`
 - `Q80_VALUES_READ`: `NO`
+- `RAISE1_EXPR`: `raise RuntimeError(&#x27;Duplicate prospective candle_epoch&#x27;)`
+- `RAISE1_LINE`: `456`
+- `RAISE2_EXPR`: `raise RuntimeError(&#x27;DB integrity failed: &#x27; + str(integrity))`
+- `RAISE2_LINE`: `393`
+- `RETURN1_EXPR`: `frame`
+- `RETURN1_LINE`: `515`
+- `RETURN2_EXPR`: `frame`
+- `RETURN2_LINE`: `446`
+- `SCORE_FUTURE_CALL_COUNT`: `1`
+- `SCORE_FUTURE_NAMED_REF_COUNT`: `1`
 - `SOURCE_EXECUTED`: `NO`
-- `SQL_BETWEEN_EPOCH`: `FALSE`
-- `SQL_GTE_EPOCH`: `TRUE`
-- `SQL_GT_EPOCH`: `FALSE`
-- `SQL_LTE_EPOCH`: `FALSE`
-- `SQL_LT_EPOCH`: `FALSE`
-- `SQL_ORDER_ASC`: `TRUE`
-- `SQL_ORDER_DESC`: `FALSE`
-- `TARGETCALL1_EXPR`: `target_is_name(node, &#x27;SAMPLE_NS&#x27;)`
-- `TARGETCALL1_LINE`: `817`
-- `TARGETCALL1_OWNER`: `build_exact_features`
-- `TARGETCALL2_EXPR`: `target_is_name(node, &#x27;HTF_MAP&#x27;)`
-- `TARGETCALL2_LINE`: `825`
-- `TARGETCALL2_OWNER`: `build_exact_features`
-- `TARGET_AST_SYMBOL_COUNT`: `3`
-- `TARGET_CALL_COUNT`: `2`
-- `TARGET_DATA_TERM_COUNT`: `1`
-- `TARGET_FUNCTION_BODY`: `def target_is_name(node, name): if not isinstance(node, ast.Assign): return False for target in node.targets: if isinstance(target, ast.Name) and target.id == name: return True return False`
-- `TARGET_IS_AST_HELPER`: `FALSE`
+- `TARGET_AST_ASSIGN`: `TRUE`
+- `TARGET_AST_NAME`: `TRUE`
+- `TARGET_HAS_DB_CALL`: `FALSE`
+- `TARGET_HAS_MODEL_CALL`: `FALSE`
+- `TARGET_IS_AST_HELPER`: `TRUE`
 - `TRADE`: `NO`
 - `TRAINING_EXECUTED`: `NO`
 - `TUNING`: `NO`
