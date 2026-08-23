@@ -1,20 +1,20 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-23T08:40:54.549589+00:00",
-  "run_id": "20260823T084052Z",
-  "step": "SCALPER_UNSMOOTHED_V3_POPULATION_CAUSAL_AUDIT",
+  "published_at_utc": "2026-08-23T08:47:06.813831+00:00",
+  "run_id": "20260823T084704Z",
+  "step": "ENTRY_CHALLENGER_BENCHMARK_V1_DELIVERY_AUDIT",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "SCALPER_V3_POPULATION_CAUSALLY_CLEAN",
-  "next_gate": "ENABLE_PROSPECTIVE_OUTCOME_TRACKING",
+  "verdict": "NO_BENCHMARK_POSTS_REACHED_SERVER",
+  "next_gate": "VERIFY_OR_RECREATE_TRADINGVIEW_BENCHMARK_ALERTS",
   "facts": {
-    "BAD_BARS_BACK": "0",
-    "BAD_ENTRY_REFERENCE": "0",
-    "BAD_SCHEMA": "0",
     "DB_MUTATION": "NO",
-    "DUPLICATE_SIGNAL_KEYS": "0",
-    "PRECLOSE_DETECTION": "0",
-    "ROWS": "107",
+    "DB_SIGNALS": "0",
+    "HTTP_200": "0",
+    "HTTP_400": "0",
+    "HTTP_401": "0",
+    "HTTP_500": "0",
+    "HTTP_REQUESTS": "0",
     "WRITES": "NO"
   }
 }
