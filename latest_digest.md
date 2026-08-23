@@ -1,8 +1,8 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-08-23T08:47:06.813831+00:00`
-- Run ID: `20260823T084704Z`
+- Published UTC: `2026-08-23T16:21:48.929919+00:00`
+- Run ID: `20260823T162146Z`
 - Step: `ENTRY_CHALLENGER_BENCHMARK_V1_DELIVERY_AUDIT`
 - Status: `SUCCESS`
 - Exit code: `0`
