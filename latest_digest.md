@@ -1,8 +1,8 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-08-24T10:38:13.287191+00:00`
-- Run ID: `20260824T103810Z`
+- Published UTC: `2026-08-24T10:41:35.988204+00:00`
+- Run ID: `20260824T104133Z`
 - Step: `SCALPER_V3_PINE_EXPRESSION_AND_SIGNAL_TIME_CAUSAL_TRACE`
 - Status: `SUCCESS`
 - Exit code: `0`
