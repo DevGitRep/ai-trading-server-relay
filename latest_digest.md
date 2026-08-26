@@ -1,33 +1,30 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-08-26T14:20:05.009689+00:00`
-- Run ID: `20260826T142002Z`
-- Step: `ICL_TARGET_ENGINE_LINEAGE_V1`
+- Published UTC: `2026-08-26T14:22:26.944194+00:00`
+- Run ID: `20260826T142224Z`
+- Step: `ICL_GLOBAL_PRECUT_GIT_V1`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `TARGET_ENGINE_LINEAGE_AUDITED`
-- Next gate: `REVIEW_TARGET_ENGINE_LINEAGE`
+- Verdict: `GLOBAL_PRECUT_ENGINE_GIT_AUDITED`
+- Next gate: `TRACE_MANIFEST_AND_CURRENT_CODE_PROVENANCE`
 
 ## Facts
 
-- `BENCHSHA`: `4a608c20eff83d31be77124fda0394d1eedc3609cccf64b9f6a1465b87103bad`
-- `CONFSHA`: `2526bc07648534c326f4c31832d065df34d62131d0ac3d9ee93d783abc2e23f5`
+- `BOTHSRC`: `NO`
 - `DBWRITE`: `NO`
-- `MARA_CLASS`: `CURRENT_CANONICAL_ENGINE_SOURCE_ONLY`
+- `MARA_CLASS`: `PRECUT_GLOBAL_IDENTITY_NOT_FOUND`
 - `MARA_COMMIT`: `NONE`
-- `MARA_GIT`: `0`
-- `MARA_PATH`: `user_data/orderflow_dashboard/indicator_lab_v1.py`
-- `MARA_REFS`: `11`
+- `MARA_META`: `0`
+- `MARA_PATH`: `NONE`
 - `MARA_SHA`: `NONE`
-- `MARA_SRC`: `3`
+- `MARA_SRC`: `0`
 - `MUTATION`: `NO`
 - `OUTCOME`: `NO`
 - `PERF`: `NO`
-- `SQZ_CLASS`: `CURRENT_CANONICAL_ENGINE_SOURCE_ONLY`
+- `SQZ_CLASS`: `PRECUT_GLOBAL_IDENTITY_NOT_FOUND`
 - `SQZ_COMMIT`: `NONE`
-- `SQZ_GIT`: `0`
-- `SQZ_PATH`: `user_data/orderflow_dashboard/indicator_lab_v1.py`
-- `SQZ_REFS`: `11`
+- `SQZ_META`: `0`
+- `SQZ_PATH`: `NONE`
 - `SQZ_SHA`: `NONE`
-- `SQZ_SRC`: `3`
+- `SQZ_SRC`: `0`
