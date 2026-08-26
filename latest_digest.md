@@ -1,37 +1,40 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-08-26T21:46:00.340372+00:00`
-- Run ID: `20260826T214558Z`
-- Step: `ENGREM_V1`
+- Published UTC: `2026-08-26T21:47:44.799424+00:00`
+- Run ID: `20260826T214742Z`
+- Step: `ENGPLAN_V1F`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `ENG_REMAINDER_DIAG_RESOLVED`
-- Next gate: `BUILD_ENGLISH_UI_PLAN_FINAL_V1F`
+- Verdict: `ENGLISH_UI_FINAL_PLAN_V1F_FROZEN`
+- Next gate: `APPLY_PINECAT_ENGLISH_UI_TRANSLATION_V1F`
 
 ## Facts
 
 - `BACKENDWRITE`: `NO`
-- `CONTEXT`: `class_&quot;pinecat-section-label&quot;&gt;Warnings &#x27; + &#x27; &#x27; + warningHtml + &#x27; &#x27; + &#x27; Classificaties &#x27; + &#x27; &#x27; + classHtml + &#x27; &#x27; + &#x27; Brain roles &#x27; + &#x27; &#x27; +`
 - `DBWRITE`: `NO`
-- `F04MODE`: `WITH_CONTINUATION`
+- `DUTCHLEFT`: `0`
+- `DYNAMIC`: `CLASSIFICATIONS_RESOLVED`
 - `INDICATORLABWRITE`: `NO`
+- `LANG`: `ENGLISH_ONLY`
 - `MANUALWRITE`: `NO`
+- `MASTEROBS`: `bbeaa43904eea4c718bcd3afff62965ca999b96f15c6cf6e983b8916463d7128`
 - `OUTCOME`: `NO`
-- `PERF`: `NO`
+- `PERF`: `BLOCKED`
 - `PID`: `701383`
-- `PLAN`: `ABSENT`
-- `PLANWRITE`: `NO`
+- `PLAN`: `FROZEN`
+- `PLANSH`: `31964a00b066df9b622087a2521f820505056fb5ac18c40e5bc41278a093cbba`
+- `PLANWRITE`: `YES`
 - `POLICYWRITE`: `NO`
-- `READONLY`: `YES`
+- `REPL`: `24`
+- `RESTART`: `NO`
+- `RULES`: `23`
 - `RUNTIME`: `LIVE_VERIFIED`
 - `RUNTIMESTART`: `NO`
 - `RUNTIMESTOP`: `NO`
 - `SIGNALS`: `NO`
-- `SRCCOUNT`: `2`
-- `SRCLINE`: `323`
-- `SRCTEXT`: `parameters, classificaties, Brain roles en waarschuwingen komen hier`
+- `TECHOBS`: `cb6aeecd2a95605dd48ff76b98d7d51328c5c1f5750cc12007230097819aa8b9`
 - `TESTRUNS`: `NO`
-- `TOKEN`: `classificaties`
-- `UISHA`: `74eb0c7024a0e544d5f10ca20d573f63cf2f721bd6502e5f10a8072cd82c3dd0`
+- `UIAFTER`: `3dfa7141864dda1c316c30b8c30637d15af25d61028685a04e16e21488593858`
+- `UIBEFORE`: `74eb0c7024a0e544d5f10ca20d573f63cf2f721bd6502e5f10a8072cd82c3dd0`
 - `UIWRITE`: `NO`
