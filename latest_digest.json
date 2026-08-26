@@ -1,24 +1,26 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-26T14:38:32.084375+00:00",
-  "run_id": "20260826T143830Z",
-  "step": "ICL_ROADMAP_RESUME_V1",
+  "published_at_utc": "2026-08-26T14:40:07.508473+00:00",
+  "run_id": "20260826T144005Z",
+  "step": "ICL_ACTIONABLE_REVIEW_V1",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "EXISTING_ACTIONABLE_CANDIDATE_WORK_PRESENT",
-  "next_gate": "REVIEW_EXISTING_ACTIONABLE_CANDIDATES",
+  "verdict": "TRUE_ACTIONABLE_CANDIDATE_PRESENT",
+  "next_gate": "REVIEW_ACTIONABLE_CANDIDATE_PROVENANCE",
   "facts": {
+    "ACTID": "ICL_NAME_25577A4EE5E423D4",
     "ACTION": "1",
-    "AUTODISC": "YES",
     "CANDS": "4",
     "DBWRITE": "NO",
-    "DISCOVERY": "YES",
+    "MARA": "PROTECTED_BLIND_PROSPECTIVE",
     "MUTATION": "NO",
     "OUTCOME": "NO",
     "PERF": "NO",
+    "PIP": "TERMINAL",
     "PROSCNT": "2",
-    "PROVV2": "YES",
+    "SQZ": "PROTECTED_BLIND_PROSPECTIVE",
     "TERMINAL": "1",
-    "TESTRUNS": "NO"
+    "TESTRUNS": "NO",
+    "VIP": "ACTIONABLE"
   }
 }
