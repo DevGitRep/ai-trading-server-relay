@@ -1,33 +1,38 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-08-26T17:08:13.741297+00:00`
-- Run ID: `20260826T170811Z`
-- Step: `ICL_PINECAT_MANUAL_ROUTE_RESOLVE_V1`
+- Published UTC: `2026-08-26T17:12:23.098548+00:00`
+- Run ID: `20260826T171221Z`
+- Step: `ICL_PINECAT_MANUAL_ROUTE_CONTEXT_V1`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `MANUAL_ADD_INDICATORS_BACKEND_ROUTE_RESOLVED`
-- Next gate: `WIRE_EXISTING_ADD_INDICATORS_ROUTE_V1`
+- Verdict: `MANUAL_ADD_INDICATORS_HANDLER_EXACTLY_RESOLVED`
+- Next gate: `WIRE_EXISTING_ADD_INDICATORS_ROUTE_V1_EXACT`
 
 ## Facts
 
+- `ALREADYWIRED`: `NO`
 - `BACKEND`: `indicator_lab_v1.py`
-- `BACKENDSCORE`: `340`
+- `BACKENDSHA`: `080f8d4ea91c1ebc6128423ae583b8dcf30d2bc3c733215e34ba0477c28e170b`
 - `BENCH`: `NO`
-- `CONTROLLERSHA`: `383791c0bf9fa40fdca50067a45e49fb0fd74141d7f4e8a0742508551cc5dd45`
+- `CANDIDATES`: `1`
 - `DBSHA`: `961bbbb3f3a7809197de88e1a00dba62fe1abf58ef0cb043a091b08ef79609c8`
 - `DBWRITE`: `NO`
 - `FIELDS`: `name,pine_source,source_author,source_url`
 - `FILEWRITE`: `NO`
-- `FORMACTION`: `/indicator-lab/intake/paste-pine`
-- `FORMMETHOD`: `POST`
+- `FUNCTIONSHA`: `2881b18cbcaac3e8947edb2358a116b86c0962c2f18c01173bcb4a7cc537cb76`
+- `HANDLER`: `indicator_lab_paste_pine`
+- `HANDLERSHA`: `4af1b6ca6f9776089c7184bc3fdd859676ee67082d005830a1933328bda47030`
 - `LIVE`: `NO`
 - `MANUALROUTE`: `READY`
+- `METHOD`: `POST`
+- `OCCURRENCES`: `1`
+- `OUTCOME`: `NO`
 - `PERF`: `NO`
 - `READONLY`: `YES`
-- `RESULTS`: `0`
-- `ROUTES`: `/indicator-lab,/indicator-lab/add,/indicator-lab/strategy/&lt;candidate_id&gt;,/indicator-lab/intake/auto-discover,/indicator-lab/intake/find-by-name,/indicator-lab/intake/paste-pine,/ap`
-- `SCRIPTS`: `0`
+- `RETURNS`: `5`
+- `ROUTESTYLE`: `DECORATOR_ROUTE`
 - `TESTRUNS`: `NO`
+- `TRIES`: `1`
 - `TVREQ`: `0`
 - `WRAPPERSHA`: `99ca778139c916d75b218cabd4b46d7aadcaeb80e718d824eb900f24442612e0`
