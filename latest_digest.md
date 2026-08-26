@@ -1,19 +1,19 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-08-26T21:39:19.540973+00:00`
-- Run ID: `20260826T213917Z`
-- Step: `ENGPLAN_V1C`
+- Published UTC: `2026-08-26T21:41:13.615060+00:00`
+- Run ID: `20260826T214111Z`
+- Step: `ENGPLAN_V1D`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `ENGLISH_UI_PLAN_V1C_FAILED`
-- Next gate: `REVIEW_ENGLISH_UI_PLAN_V1C`
+- Verdict: `ENGLISH_UI_PLAN_V1D_FAILED`
+- Next gate: `REVIEW_ENGLISH_UI_PLAN_V1D`
 
 ## Facts
 
 - `BACKENDWRITE`: `NO`
 - `DBWRITE`: `NO`
-- `ERROR`: `RuntimeError_R1_COUNT_0_EXPECTED_1`
+- `ERROR`: `RuntimeError_F04_COUNT_0_EXPECTED_1`
 - `INDICATORLABWRITE`: `NO`
 - `MANUALWRITE`: `NO`
 - `OUTCOME`: `NO`
