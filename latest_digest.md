@@ -1,40 +1,33 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-08-26T17:04:41.412751+00:00`
-- Run ID: `20260826T170439Z`
-- Step: `ICL_PINECAT_MCP_CONTROLLER_V1`
+- Published UTC: `2026-08-26T17:08:13.741297+00:00`
+- Run ID: `20260826T170811Z`
+- Step: `ICL_PINECAT_MANUAL_ROUTE_RESOLVE_V1`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `PINECAT_MCP_GOVERNED_CONTROLLER_BUILT`
-- Next gate: `WIRE_MANUAL_AND_FIRST_MCP_LIVE_PILOT`
+- Verdict: `MANUAL_ADD_INDICATORS_BACKEND_ROUTE_RESOLVED`
+- Next gate: `WIRE_EXISTING_ADD_INDICATORS_ROUTE_V1`
 
 ## Facts
 
+- `BACKEND`: `indicator_lab_v1.py`
+- `BACKENDSCORE`: `340`
 - `BENCH`: `NO`
-- `BUDGET`: `2000`
-- `CLIENT`: `PASS`
-- `CLIENTSHA`: `2126d5f4a2375ca1ae803da6954adfca957f9bb68a33ebcf6b823ec2906e9710`
-- `CONTROLLER`: `PASS`
 - `CONTROLLERSHA`: `383791c0bf9fa40fdca50067a45e49fb0fd74141d7f4e8a0742508551cc5dd45`
-- `DAILYCAP`: `1000`
 - `DBSHA`: `961bbbb3f3a7809197de88e1a00dba62fe1abf58ef0cb043a091b08ef79609c8`
 - `DBWRITE`: `NO`
+- `FIELDS`: `name,pine_source,source_author,source_url`
+- `FILEWRITE`: `NO`
+- `FORMACTION`: `/indicator-lab/intake/paste-pine`
+- `FORMMETHOD`: `POST`
 - `LIVE`: `NO`
-- `LIVEAUTH`: `REQUIRED`
-- `MANUALUI`: `PENDING`
-- `MANUALWRAP`: `PASS`
-- `MASTERSHA`: `ef59424492c6cdb558ec05815e4568fd6a5e9e64e958041f7b3dd01e0bd390ad`
-- `OUTCOME`: `NO`
-- `PAIR`: `SOL_USDT`
-- `PANEL`: `PENDING_AUDIT`
+- `MANUALROUTE`: `READY`
 - `PERF`: `NO`
-- `PILOTMAX`: `1`
-- `RANK`: `UNRANKED`
+- `READONLY`: `YES`
 - `RESULTS`: `0`
+- `ROUTES`: `/indicator-lab,/indicator-lab/add,/indicator-lab/strategy/&lt;candidate_id&gt;,/indicator-lab/intake/auto-discover,/indicator-lab/intake/find-by-name,/indicator-lab/intake/paste-pine,/ap`
 - `SCRIPTS`: `0`
-- `SDK`: `PASS`
-- `TECHSHA`: `21290d0d89724c9e7dfeba05bdd0047e2b7da4e8cca075ac25c80f15f08ec85d`
 - `TESTRUNS`: `NO`
-- `TF`: `1M`
 - `TVREQ`: `0`
+- `WRAPPERSHA`: `99ca778139c916d75b218cabd4b46d7aadcaeb80e718d824eb900f24442612e0`
