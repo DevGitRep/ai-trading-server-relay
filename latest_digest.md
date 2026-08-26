@@ -1,26 +1,36 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-08-26T15:27:01.955060+00:00`
-- Run ID: `20260826T152659Z`
-- Step: `ICL_PV2_RUN4_RUNNER_SELFTEST_V1`
+- Published UTC: `2026-08-26T15:32:33.571208+00:00`
+- Run ID: `20260826T153231Z`
+- Step: `ICL_PV2_RUN4_CALLTARGET_AUDIT_V1`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `RUN4_RUNNER_SELFTEST_BLOCKED_FAIL_CLOSED`
-- Next gate: `AUDIT_RUN4_RUNNER_SELFTEST_BLOCK`
+- Verdict: `RUN4_PROVIDER_CALL_PATH_REQUIRES_EXPLICIT_ADAPTER`
+- Next gate: `DESIGN_PROVIDER_V2_RUN4_EXPLICIT_CALL_ADAPTER`
 
 ## Facts
 
-- `BLOCK`: `PROVIDER_CALL_TARGET_NOT_UNIQUE`
+- `CALLS`: `6`
+- `CANDHINTS`: `4`
+- `CONTRACTHINTS`: `3`
 - `DBWRITE`: `NO`
-- `EXTCALLS`: `0`
+- `DYNAMIC`: `32:load_frozen_run2_runner:importlib.import_module:-`
+- `DYNHINTS`: `1`
+- `ENCLOSING`: `NONE`
+- `IMPORTS`: `4`
+- `LINE`: `NONE`
 - `LIVE`: `NO`
+- `LOCALFUNCS`: `2`
+- `LOCALS`: `19:load_frozen_run2_runner:2,37:run_recovery_1:1`
+- `MUTATION`: `NO`
 - `NETWORK`: `NO`
 - `OUTCOME`: `NO`
 - `PERF`: `NO`
-- `PREFERRED`: `0`
 - `PROVIDER`: `NO`
 - `RESERVE`: `NO`
+- `RESOLUTION`: `EXPLICIT_ADAPTER_REQUIRED`
 - `RUNNER`: `NO`
-- `SELFTEST`: `BLOCKED`
+- `SYMBOL`: `NONE`
 - `TESTRUNS`: `NO`
+- `TOP`: `32:load_frozen_run2_runner:importlib.import_module:5,50:run_recovery_1:runner.run_provider_v2_run2:4,8:_module_:Path:3,30:load_frozen_run2_runner:sys.path.insert:3`
