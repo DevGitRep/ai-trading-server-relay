@@ -1,36 +1,37 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-08-26T15:32:33.571208+00:00`
-- Run ID: `20260826T153231Z`
-- Step: `ICL_PV2_RUN4_CALLTARGET_AUDIT_V1`
+- Published UTC: `2026-08-26T16:19:35.235920+00:00`
+- Run ID: `20260826T161933Z`
+- Step: `ICL_PINECAT_MCP_V1_PIVOT`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `RUN4_PROVIDER_CALL_PATH_REQUIRES_EXPLICIT_ADAPTER`
-- Next gate: `DESIGN_PROVIDER_V2_RUN4_EXPLICIT_CALL_ADAPTER`
+- Verdict: `PINE_CATALOG_MCP_V1_PIVOT_FROZEN`
+- Next gate: `VENDOR_PINNED_TRADINGVIEW_MCP_V1`
 
 ## Facts
 
-- `CALLS`: `6`
-- `CANDHINTS`: `4`
-- `CONTRACTHINTS`: `3`
+- `ACTIVE`: `PINE_CATALOG_MCP_V1`
+- `BREAK`: `25`
+- `BREAKER`: `3`
+- `BREAKMS`: `20000_60000`
+- `BUDGET`: `2000`
+- `COOLDOWN`: `900000`
+- `DAILYCAP`: `1000`
 - `DBWRITE`: `NO`
-- `DYNAMIC`: `32:load_frozen_run2_runner:importlib.import_module:-`
-- `DYNHINTS`: `1`
-- `ENCLOSING`: `NONE`
-- `IMPORTS`: `4`
-- `LINE`: `NONE`
-- `LIVE`: `NO`
-- `LOCALFUNCS`: `2`
-- `LOCALS`: `19:load_frozen_run2_runner:2,37:run_recovery_1:1`
-- `MUTATION`: `NO`
+- `DELAY`: `1500_4500`
+- `DELETE`: `NO`
+- `MANUAL`: `RETAINED`
+- `MASTERSHA`: `2b75845f9f8f58a8c8bb6cccb42b27da9b2842bfe110ca3499974b962d94c72a`
 - `NETWORK`: `NO`
 - `OUTCOME`: `NO`
+- `PAIR`: `SOL_USDT`
 - `PERF`: `NO`
+- `PIVOTSHA`: `354a37659ca75cb3fd02129986d5fffa3e98927c463d04dbac0e13fcb32ab3f0`
 - `PROVIDER`: `NO`
-- `RESERVE`: `NO`
-- `RESOLUTION`: `EXPLICIT_ADAPTER_REQUIRED`
-- `RUNNER`: `NO`
-- `SYMBOL`: `NONE`
+- `PV2`: `SUPERSEDED_PRELIVE`
+- `RETRIES`: `4`
+- `RUN4`: `NO_LIVE`
+- `TECHSHA`: `fe7413f41d3fdc993648fdf9a1d2ab54e4735197d514c03512c1ab0479ae4371`
 - `TESTRUNS`: `NO`
-- `TOP`: `32:load_frozen_run2_runner:importlib.import_module:5,50:run_recovery_1:runner.run_provider_v2_run2:4,8:_module_:Path:3,30:load_frozen_run2_runner:sys.path.insert:3`
+- `VENDOR`: `PENDING`
