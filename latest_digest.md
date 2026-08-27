@@ -1,34 +1,32 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-08-27T23:43:33.909058+00:00`
-- Run ID: `20260827T234331Z`
-- Step: `BENCHMARKEXISTINGPINETSMULTICONFIG_V1`
+- Published UTC: `2026-08-27T23:54:30.332227+00:00`
+- Run ID: `20260827T235428Z`
+- Step: `BENCHMARKTWOWORKERFULLYEARPINETSCAPACITY_V1`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `NO_SAFE_RESIDENT_PINETS_SPEEDUP_CONFIRMED`
-- Next gate: `BENCHMARK_TWO_WORKER_MEMORY_SAFE_FULL_YEAR_EXECUTION_V1`
+- Verdict: `TWO_WORKER_FULL_YEAR_PINETS_CAPACITY_BENCHMARK_FAILED`
+- Next gate: `EXECUTE_REMAINING_210_JURIK_DISCOVERY_SINGLE_WORKER_RESUMABLE_V1`
 
 ## Facts
 
 - `ARTIFACTCOMMITTED`: `NO`
-- `BASELINE_SEC`: `39.11`
-- `BENCHCONFIGS`: `009,010`
-- `BENCHMARKONLY`: `YES`
-- `BENCHROWS`: `60000`
+- `BENCHROWS`: `525600`
 - `BRAININTEGRATION`: `DEFERRED`
+- `CONFIGTYPE`: `ENGINEERING_ONLY_NON_GRID`
 - `DBACCESS`: `YES`
 - `DBMUTATION`: `NO`
 - `DISCOVERYCOMPLETE`: `8`
 - `DISCOVERYREMAINING`: `210`
+- `ERROR`: `RuntimeError_ENG_A_RuntimeError_ &lt;--- Last few GCs ---&gt;  [952871:0x1324f000]   225711 ms: Scavenge (interleaved) 5623.6 (5631.2) -&gt;`
 - `NETWORKCALL`: `NO`
-- `NEW_INSTANCE_ERROR`: `file://&lt;PROJECT&gt;/user_data/orderflow_dashboard/tools/pinets_library_reference_v1/node_modules/pinets/dist/pinets.min.es.js:124 ; return _r;`)(this);re`
-- `NEW_INSTANCE_OK`: `NO`
+- `NODEHEAP_PER_WORKER`: `5632MB`
 - `PAIR`: `SOLUSDT`
-- `PERFORMANCEMETRICS`: `NO`
 - `READONLY`: `YES`
 - `RESULTSELECTION`: `NO`
 - `RESULTVALUESREAD`: `NO`
-- `SHARED_INSTANCE_ERROR`: `file://&lt;PROJECT&gt;/user_data/orderflow_dashboard/tools/pinets_library_reference_v1/node_modules/pinets/dist/pinets.min.es.js:124 ; return _r;`)(this);re`
-- `SHARED_INSTANCE_OK`: `NO`
+- `START_MEMAVAILABLE_GB`: `14.19`
 - `TIMEFRAME`: `1m`
+- `TIMEOUT_SEC`: `720`
+- `WORKERS`: `2`
