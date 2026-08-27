@@ -1,8 +1,8 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-08-27T14:24:04.191888+00:00`
-- Run ID: `20260827T142402Z`
+- Published UTC: `2026-08-27T14:26:50.452153+00:00`
+- Run ID: `20260827T142648Z`
 - Step: `OLLAMAGUARDRUNTIMEINTERFACE_V2`
 - Status: `SUCCESS`
 - Exit code: `0`
