@@ -1,13 +1,13 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-08-27T20:37:31.289754+00:00`
-- Run ID: `20260827T203729Z`
-- Step: `PINE_LIBRARY_REUSABLE_EVALUATOR_INSPECTION_V1`
+- Published UTC: `2026-08-27T20:39:46.958586+00:00`
+- Run ID: `20260827T203944Z`
+- Step: `FREEZEPINELIBRARYSCORINGSTORAGE_V1`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `EXISTING_EVALUATION_FUNCTIONS_FOR_PINE_LIBRARY_INSPECTED`
-- Next gate: `FREEZE_PINE_LIBRARY_TEST_SCORING_AND_PARAMETER_STORAGE_V1`
+- Verdict: `PINE_LIBRARY_TEST_SCORING_AND_PARAMETER_STORAGE_V1_FAILED`
+- Next gate: `REVIEW_PINE_LIBRARY_SCORING_STORAGE_FREEZE_V1`
 
 ## Facts
 
@@ -15,26 +15,10 @@
 - `BRAININTEGRATION`: `DEFERRED`
 - `BRAINVALUEEXEC`: `NO`
 - `DBACCESS`: `NO`
-- `FUNC01A`: `user_data/indicator_brain/src/sol_indicator_ai_brain_v1d1_20260818_150847.py:classification_metrics:L1704-1750:ARGS_y,probability`
-- `FUNC01B`: `RET_accuracy,auc,brier,n,positive_rate:MARK_RETURNS,CLASSIFICATION`
-- `FUNC02A`: `user_data/indicator_brain/src/sol_indicator_ai_brain_v1d1_20260818_150847.py:profit_factor:L1759-1791:ARGS_net`
-- `FUNC02B`: `RET_NONE:MARK_RETURNS`
-- `FUNC03A`: `user_data/indicator_brain/src/sol_indicator_ai_brain_v1d1_20260818_150847.py:economic_metrics:L1794-1951:ARGS_gross,dates,cost_bp`
-- `FUNC03B`: `RET_avg_gross_bp,avg_net_bp,break_even_cost_bp,positive_time_blocks,profit_factor,time_blocks,total_net_bp,trades:MARK_RETURNS,COST`
-- `FUNC04A`: `user_data/indicator_brain/src/sol_indicator_breakout_conditioned_ma_direction_v1f_20260818_164820.py:evaluate_rule:L1734-1857:ARGS_subset,score,active`
-- `FUNC04B`: `RET_accuracy,aligned_mean_bp,aligned_median_bp,auc,long_signal_rate,n:MARK_RETURNS,CLASSIFICATION`
-- `FUNC05A`: `user_data/strategies/NostalgiaForInfinity/tests/backtests/test_winrate_and_drawdown.py:backtest:L61-62:ARGS_request`
-- `FUNC05B`: `RET_NONE:MARK_RETURNS`
-- `FUNCTIONCOUNT`: `5`
-- `GEN01`: `user_data/indicator_brain/src/sol_indicator_ai_brain_v1d1_20260818_150847.py:economic_metrics:L1794-1951`
-- `GEN02`: `user_data/indicator_brain/src/sol_indicator_ai_brain_v1d1_20260818_150847.py:classification_metrics:L1704-1750`
-- `GEN03`: `user_data/indicator_brain/src/sol_indicator_ai_brain_v1d1_20260818_150847.py:profit_factor:L1759-1791`
-- `GEN04`: `user_data/indicator_brain/src/sol_indicator_breakout_conditioned_ma_direction_v1f_20260818_164820.py:evaluate_rule:L1734-1857`
-- `GEN05`: `user_data/strategies/NostalgiaForInfinity/tests/backtests/test_winrate_and_drawdown.py:backtest:L61-62`
-- `GENERICCOUNT`: `5`
+- `ERROR`: `RuntimeError_FREQTRADE_MAX_DRAWDOWN_NOT_FOUND`
 - `LIBRARYFIRST`: `YES`
+- `MASTERUPDATED`: `NO`
 - `NETWORKCALL`: `NO`
 - `PERF`: `NO`
 - `PINETSEXEC`: `NO`
-- `READONLY`: `YES`
 - `RESULTROWSREAD`: `NO`
