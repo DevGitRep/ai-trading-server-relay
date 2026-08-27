@@ -1,24 +1,25 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-27T22:02:31.598470+00:00",
-  "run_id": "20260827T220229Z",
-  "step": "REGISTERANDRUNFIRST8REALJURIKDISCOVERY_V3",
+  "published_at_utc": "2026-08-27T22:08:11.269085+00:00",
+  "run_id": "20260827T220809Z",
+  "step": "EXECUTEFIRST8REALJURIKDISCOVERY_V4",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "REGISTER_OR_FIRST_8_REAL_JURIK_DISCOVERY_V3_FAILED",
-  "next_gate": "REVIEW_FIRST_REAL_JURIK_DISCOVERY_V3",
+  "verdict": "FIRST_8_REAL_JURIK_DISCOVERY_V4_FAILED",
+  "next_gate": "REVIEW_FIRST_8_REAL_JURIK_DISCOVERY_V4",
   "facts": {
     "BRAININTEGRATION": "DEFERRED",
-    "CANDIDATEID": "ICL_SRC_FD95B3D18254030E",
+    "CANDIDATE": "ICL_SRC_FD95B3D18254030E",
+    "CANDIDATEREGISTERED": "YES",
     "DBACCESS": "YES",
     "ERROR": "RuntimeError_OUTPUT_LIMIT_KEY_NOT_UNIQUE_",
+    "LIMIT01": "async getMarketData(_ticker, _tf, limit) {",
+    "LIMIT02": "if (!limit __ limit &gt;_ candles.length) return candles;",
+    "LIMIT03": "return candles.slice(candles.length - limit);",
+    "LIMITLINES": "3",
     "NETWORKCALL": "NO",
     "PAIR": "SOLUSDT",
-    "REGISTEREDNOW": "YES",
-    "REGISTRATION": "EXISTING_ROUTE",
-    "REGROUTE": "/indicator-lab/intake/paste-pine",
     "RESULTSELECTION": "NO",
-    "TIMEFRAME": "1m",
-    "WORKERIMPORT": "PASS"
+    "TIMEFRAME": "1m"
   }
 }
