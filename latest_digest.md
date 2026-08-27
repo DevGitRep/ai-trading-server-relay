@@ -1,55 +1,86 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-08-27T19:09:11.662314+00:00`
-- Run ID: `20260827T190909Z`
-- Step: `PINECATJURIKEXISTINGIMPLEMENTATIONREVIEW_V1`
+- Published UTC: `2026-08-27T19:11:35.529157+00:00`
+- Run ID: `20260827T191133Z`
+- Step: `PINECATEXACTCORESOURCEREVIEW_V1`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `PINECAT_JURIK_EXISTING_IMPLEMENTATION_COMPATIBILITY_REVIEW_COMPLETE`
-- Next gate: `DECIDE_PANDASTA_JMA_REUSE_V1`
+- Verdict: `PINECAT_EXACT_CORE_SOURCE_REVIEW_V1_COMPLETE`
+- Next gate: `BUILD_MINIMAL_EXACT_PYTHON_PORT_FROM_ORIGINAL_SOURCE_V1`
 
 ## Facts
 
-- `ALPHACOUNT`: `25`
 - `ARTIFACTCOMMITTED`: `NO`
 - `BENCHMARK`: `NO`
-- `BETACOUNT`: `25`
+- `CORE01B64`: `TDQyOmF0cl9tdWx0aXBsaWVyID0gaW5wdXQuZmxvYXQoMS41LCAnQVRSIE11bHRpcGxpZXInLCBtaW52YWwgPSAwLjEsIHN0ZXAgPSAwLjEsIGdyb3VwID0gc3RhdGVfc2V0dGluZ3MsIHRvb2x0aXAgPSB0b29sdGlwX2F0cl9tdWx0KQ==`
+- `CORE02B64`: `TDQzOndhcm11cF9iYXJzICAgID0gaW5wdXQuaW50KDEwMCwgJ1dhcm0tdXAgQmFycycsIG1pbnZhbCA9IDAsIGdyb3VwID0gc3RhdGVfc2V0dGluZ3MsIHRvb2x0aXAgPSB0b29sdGlwX3dhcm11cCk=`
+- `CORE03B64`: `TDQ0Og==`
+- `CORE04B64`: `TDc4Omp1cmlrQ29lZmZpY2llbnRzKHNyYywgbGVuZ3RoLCBwb3dlciwgYWRhcHRpdmUpID0-`
+- `CORE05B64`: `TDc5OiAgICBiZXRhICAgICAgICAgPSAwLjQ1ICogKGxlbmd0aCAtIDEpIC8gKDAuNDUgKiAobGVuZ3RoIC0gMSkgKyAyLjAp`
+- `CORE06B64`: `TDgwOiAgICBsZW5ndGhfc2NhbGUgPSBtYXRoLnNxcnQoMC41ICogKGxlbmd0aCAtIDEpKQ==`
+- `CORE07B64`: `TDgxOiAgICBleHBfYmFzZSAgICAgPSBtYXRoLm1heChtYXRoLmxvZyhsZW5ndGhfc2NhbGUpIC8gbWF0aC5sb2coMi4wKSArIDIuMCwgMC4wKQ==`
+- `CORE08B64`: `TDgyOiAgICB2b2x0eV9leHAgICAgPSBtYXRoLm1heChleHBfYmFzZSAtIDIuMCwgMC41KQ==`
+- `CORE09B64`: `TDgzOiAgICBiYW5kX2xlbmd0aCAgPSBsZW5ndGhfc2NhbGUgKiBleHBfYmFzZQ==`
+- `CORE10B64`: `TDg0OiAgICBiYW5kX2JldGEgICAgPSBiYW5kX2xlbmd0aCAvIChiYW5kX2xlbmd0aCArIDEuMCk=`
+- `CORE11B64`: `TDg1OiAgICByYXRpb19jYXAgICAgPSBtYXRoLnBvdyhleHBfYmFzZSwgMS4wIC8gdm9sdHlfZXhwKQ==`
+- `CORE12B64`: `TDg2Og==`
+- `CORE13B64`: `TDg3OiAgICB2YXIgZmxvYXQgdXBwZXJfdm9sdHkgPSBuYQ==`
+- `CORE14B64`: `TDg4OiAgICB2YXIgZmxvYXQgbG93ZXJfdm9sdHkgPSBuYQ==`
+- `CORE15B64`: `TDg5OiAgICBwcmlvcl91cHBlciA9IG5hKHVwcGVyX3ZvbHR5KSA_IHNyYyA6IHVwcGVyX3ZvbHR5`
+- `CORE16B64`: `TDkwOiAgICBwcmlvcl9sb3dlciA9IG5hKGxvd2VyX3ZvbHR5KSA_IHNyYyA6IGxvd2VyX3ZvbHR5`
+- `CORE17B64`: `TDkxOiAgICB1cHBlcl9kZWx0YSA9IHNyYyAtIHByaW9yX3VwcGVy`
+- `CORE18B64`: `TDkyOiAgICBsb3dlcl9kZWx0YSA9IHNyYyAtIHByaW9yX2xvd2Vy`
+- `CORE19B64`: `TDkzOiAgICBhYnNfdXBwZXIgICA9IG1hdGguYWJzKHVwcGVyX2RlbHRhKQ==`
+- `CORE20B64`: `TDk0OiAgICBhYnNfbG93ZXIgICA9IG1hdGguYWJzKGxvd2VyX2RlbHRhKQ==`
+- `CORE21B64`: `TDk1OiAgICB2b2x0eV9yYXcgICA9IGFic191cHBlciA9PSBhYnNfbG93ZXIgPyAwLjAgOiBtYXRoLm1heChhYnNfdXBwZXIsIGFic19sb3dlcik=`
+- `CORE22B64`: `TDk2Og==`
+- `CORE23B64`: `TDk3OiAgICB2b2x0eV9zaG9ydCAgICA9IHRhLnNtYSh2b2x0eV9yYXcsIDEwKQ==`
+- `CORE24B64`: `TDk4OiAgICB2b2x0eV9iYXNlbGluZSA9IHRhLnNtYSh2b2x0eV9zaG9ydCwgNjUp`
+- `CORE25B64`: `TDk5OiAgICB2b2x0eV9yYXRpbyAgICA9IG1hdGgubWF4KDEuMCwgbWF0aC5taW4ocmF0aW9fY2FwLCBueih2b2x0eV9iYXNlbGluZSkgPiAwID8gdm9sdHlfcmF3IC8gdm9sdHlfYmFzZWxpbmUgOiAxLjApKQ==`
+- `CORE26B64`: `TDEwMDogICAgZHluYW1pY19leHAgICAgPSBtYXRoLnBvdyh2b2x0eV9yYXRpbywgdm9sdHlfZXhwKQ==`
+- `CORE27B64`: `TDEwMTogICAgYmFuZF9mYWN0b3IgICAgPSBtYXRoLnBvdyhiYW5kX2JldGEsIG1hdGguc3FydChkeW5hbWljX2V4cCkp`
+- `CORE28B64`: `TDEwMjo=`
+- `CORE29B64`: `TDEwMzogICAgdXBwZXJfdm9sdHkgOj0gdXBwZXJfZGVsdGEgPiAwID8gc3JjIDogc3JjIC0gYmFuZF9mYWN0b3IgKiB1cHBlcl9kZWx0YQ==`
+- `CORE30B64`: `TDEwNDogICAgbG93ZXJfdm9sdHkgOj0gbG93ZXJfZGVsdGEgPCAwID8gc3JjIDogc3JjIC0gYmFuZF9mYWN0b3IgKiBsb3dlcl9kZWx0YQ==`
+- `CORE31B64`: `TDEwNTo=`
+- `CORE32B64`: `TDEwNjogICAgW2FkYXB0aXZlID8gbWF0aC5wb3coYmV0YSwgZHluYW1pY19leHApIDogbWF0aC5wb3coYmV0YSwgcG93ZXIpLCBiZXRhXQ==`
+- `CORE33B64`: `TDEwNzo=`
+- `CORE34B64`: `TDEwODpqdXJpa0ZpbHRlcihzcmMsIGFscGhhLCBiZXRhLCBwaGFzZSkgPT4=`
+- `CORE35B64`: `TDEwOTogICAgcGhhc2VfcmF0aW8gPSBtYXRoLm1heCgwLjUsIG1hdGgubWluKDIuNSwgcGhhc2UgLyAxMDAuMCArIDEuNSkp`
+- `CORE36B64`: `TDExMDogICAgaW52X2FscGhhICAgPSAxLjAgLSBhbHBoYQ==`
+- `CORE37B64`: `TDExMTogICAgdmFyIGZsb2F0IHN0YWdlX29uZSAgID0gbmE=`
+- `CORE38B64`: `TDExMjogICAgdmFyIGZsb2F0IGRldHJlbmQgICAgID0gMC4w`
+- `CORE39B64`: `TDExMzogICAgdmFyIGZsb2F0IHN0YWdlX3RocmVlID0gMC4w`
+- `CORE40B64`: `TDExNDogICAgdmFyIGZsb2F0IHJlc3VsdCAgICAgID0gbmE=`
+- `CORE41B64`: `TDExNTogICAgaWYgbmEocmVzdWx0KQ==`
+- `CORE42B64`: `TDExNjogICAgICAgIHN0YWdlX29uZSA6PSBzcmM=`
+- `CORE43B64`: `TDExNzogICAgICAgIHJlc3VsdCAgICA6PSBzcmM=`
+- `CORE44B64`: `TDExODogICAgZWxzZQ==`
+- `CORE45B64`: `TDExOTogICAgICAgIHN0YWdlX29uZSAgIDo9IGludl9hbHBoYSAqIHNyYyArIGFscGhhICogc3RhZ2Vfb25l`
+- `CORE46B64`: `TDEyMDogICAgICAgIGRldHJlbmQgICAgIDo9IChzcmMgLSBzdGFnZV9vbmUpICogKDEuMCAtIGJldGEpICsgYmV0YSAqIGRldHJlbmQ=`
+- `CORE47B64`: `TDEyMTogICAgICAgIHBoYXNlX3NoaWZ0ID0gc3RhZ2Vfb25lICsgcGhhc2VfcmF0aW8gKiBkZXRyZW5k`
+- `CORE48B64`: `TDEyMjogICAgICAgIHN0YWdlX3RocmVlIDo9IChwaGFzZV9zaGlmdCAtIHJlc3VsdCkgKiBpbnZfYWxwaGEgKiBpbnZfYWxwaGEgKyBhbHBoYSAqIGFscGhhICogc3RhZ2VfdGhyZWU=`
+- `CORE49B64`: `TDEyMzogICAgICAgIHJlc3VsdCAgICAgIDo9IHJlc3VsdCArIHN0YWdlX3RocmVl`
+- `CORE50B64`: `TDEyNDogICAgcmVzdWx0`
+- `CORE51B64`: `TDEyNTo=`
+- `CORE52B64`: `TDE0Mzo=`
+- `CORE53B64`: `TDE0NDpkZXZpYXRpb24gICA9IHRhLmF0cihhdHJfbGVuZ3RoKSAqIGF0cl9tdWx0aXBsaWVy`
+- `CORE54B64`: `TDE0NTp1cHBlcl9ib3VuZCA9IGFuY2hvciArIGRldmlhdGlvbg==`
+- `CORE55B64`: `TDE0Njpsb3dlcl9ib3VuZCA9IGFuY2hvciAtIGRldmlhdGlvbg==`
+- `CORE56B64`: `TDE0Nzo=`
+- `CORE57B64`: `TDE0ODp2YXIgZmxvYXQgcmF0Y2hldCAgID0gbmE=`
+- `CORE58B64`: `TDE0OTp2YXIgaW50ICAgdHJlbmRfZGlyID0gMA==`
+- `CORE59B64`: `TDE1MDo=`
+- `CORE60B64`: `TDE1MTppZiBuYShyYXRjaGV0KQ==`
+- `CORELINECOUNT`: `60`
 - `DBACCESS`: `NO`
-- `DET0COUNT`: `0`
-- `DET1COUNT`: `0`
-- `E0COUNT`: `0`
-- `E1COUNT`: `0`
-- `E2COUNT`: `0`
-- `FUNCTIONCOUNT`: `5`
-- `FUNCTIONNAMES`: `jurikCoefficients,jurikFilter,transpOf,bandGradient,scaleBand`
-- `JESSEAVAILABLE`: `NO`
-- `JMACOUNT`: `0`
-- `JURIKCOUNT`: `85`
-- `KALMANCOUNT`: `0`
-- `MATCH1`: `L6:indicator(&#x27;Jurik Trend Ribbon [QuantAlgo]&#x27;, overlay _ true)`
-- `MATCH10`: `L36:jurik_source   _ input.source(close, &#x27;Price Source&#x27;, group _ filter_settings, tooltip _ tooltip_src)`
-- `MATCH11`: `L37:jurik_length   _ input.int(14, &#x27;Length&#x27;, minval _ 2, group _ filter_settings, tooltip _ tooltip_length)`
-- `MATCH12`: `L39:jurik_power    _ input.float(1.5, &#x27;Power&#x27;, minval _ 0.1, maxval _ 4.0, step _ 0.1, group _ filter_settings, tooltip _ tooltip_power)`
-- `MATCH2`: `L12:var string filter_settings _ &#x27;???????? Jurik Filter ????????&#x27;`
-- `MATCH3`: `L16:tooltip_preset     _ &#x27;Select a predefined configuration optimized for different trading styles and timeframes.\n\nImportant: selecting any preset other than Default overrides every Jurik Filter and Trend State settin`
-- `MATCH4`: `L17:tooltip_preset_det _ &#x27;Default (Length 14, Power 1.5, ATR 14, Multiplier 1.5): Balanced configuration for swing trading on 1H to daily charts. Requires roughly three ATR of filter displacement before the trend state r`
-- `MATCH5`: `L18:tooltip_src        _ &#x27;Price data passed through the Jurik filter. Close is standard and works well in most conditions. hl2 incorporates the bar range and can reduce wick-driven noise. hlc3 adds further stability by a`
-- `MATCH6`: `L19:tooltip_length     _ &#x27;Sampling length of the Jurik filter in bars. This is the primary smoothness control. Shorter lengths track price more tightly and open the ribbon sooner. Longer lengths suppress noise and delay`
-- `MATCH7`: `L20:tooltip_mode       _ &#x27;Classic holds the smoothing exponent fixed at the Power setting below, matching the standard Jurik formulation. Adaptive replaces it with an exponent scaled by normalized realized volatility, ti`
-- `MATCH8`: `L21:tooltip_power      _ &#x27;Fixed smoothing exponent applied to the filter coefficient. Only applies when Smoothing Mode is set to Classic. Lower values produce a faster, noisier filter. Higher values produce a slower, cle`
-- `MATCH9`: `L24:tooltip_warmup     _ &#x27;Suppresses all output while the recursive filters settle. The Jurik cascade, the ATR, and the Adaptive volatility baseline each need history before their values are meaningful.&#x27;`
-- `MATCHLINECOUNT`: `60`
 - `NETWORKCALL`: `NO`
-- `NUMPYAVAILABLE`: `NO`
 - `OLLAMACALL`: `NO`
-- `PANDASAVAILABLE`: `NO`
-- `PANDASTAAVAILABLE`: `NO`
 - `PERF`: `NO`
-- `PHASECOUNT`: `6`
 - `PINETSEXEC`: `NO`
-- `POWERCOUNT`: `13`
 - `PYTHONPORTEXEC`: `NO`
 - `READONLY`: `YES`
+- `REFERENCEEXEC`: `NO`
+- `SOURCEEXEC`: `NO`
 - `TESTRUNS`: `NO`
-- `VOLTYCOUNT`: `21`
