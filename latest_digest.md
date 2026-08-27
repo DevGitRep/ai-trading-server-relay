@@ -1,49 +1,22 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-08-27T19:34:54.676793+00:00`
-- Run ID: `20260827T193452Z`
-- Step: `JURIKFREQTRADEPIPELINEDISCOVERY_V1`
+- Published UTC: `2026-08-27T19:51:01.969750+00:00`
+- Run ID: `20260827T195059Z`
+- Step: `PINELIBRARYPARAMETERRUNNER_V1`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `JURIK_FREQTRADE_EXISTING_SIGNAL_PIPELINE_DISCOVERY_V1_COMPLETE`
-- Next gate: `WIRE_JURIK_PINETS_ADAPTER_TO_IDENTIFIED_EXISTING_PIPELINE_V1`
+- Verdict: `PINE_LIBRARY_PARAMETER_RUNNER_V1_FAILED`
+- Next gate: `REVIEW_PINE_LIBRARY_PARAMETER_RUNNER_V1_FAILURE`
 
 ## Facts
 
-- `ADAPTERBASELINE`: `VERIFIED`
 - `ARTIFACTCOMMITTED`: `NO`
-- `BENCHMARK`: `NO`
-- `CAND01PATHB64`: `dXNlcl9kYXRhL3N0cmF0ZWdpZXMvQWxsaWdhdG9yQVRSU3RyYXRlZ3kucHk=`
-- `CAND01TAGS`: `enter_long,populate_entry_trend,populate_exit_trend,populate_indicators`
-- `CAND02PATHB64`: `dXNlcl9kYXRhL3N0cmF0ZWdpZXMvQWxsaWdhdG9yQVRSU3RyYXRlZ3lfdGVzdC5weQ==`
-- `CAND02TAGS`: `enter_long,populate_entry_trend,populate_exit_trend,populate_indicators`
-- `CAND03PATHB64`: `dXNlcl9kYXRhL3N0cmF0ZWdpZXMvRGF2aWRkVGVjaFVsdGltYXRlU2NhbHBlcjVtVjEucHk=`
-- `CAND03TAGS`: `enter_long,enter_short,populate_entry_trend,populate_exit_trend,populate_indicators`
-- `CAND04PATHB64`: `dXNlcl9kYXRhL3N0cmF0ZWdpZXMvR2F1c3NpYW5DaGFubmVsU3RyYXRlZ3kucHk=`
-- `CAND04TAGS`: `enter_long,populate_entry_trend,populate_exit_trend,populate_indicators`
-- `CAND05PATHB64`: `dXNlcl9kYXRhL3N0cmF0ZWdpZXMvTm9zdGFsZ2lhRm9ySW5maW5pdHkvTm9zdGFsZ2lhRm9ySW5maW5pdHlYLnB5`
-- `CAND05TAGS`: `enter_long,populate_entry_trend,populate_exit_trend,populate_indicators,sell_signal`
-- `CAND06PATHB64`: `dXNlcl9kYXRhL3N0cmF0ZWdpZXMvTm9zdGFsZ2lhRm9ySW5maW5pdHkvTm9zdGFsZ2lhRm9ySW5maW5pdHlYMi5weQ==`
-- `CAND06TAGS`: `enter_long,populate_entry_trend,populate_exit_trend,populate_indicators`
-- `CAND07PATHB64`: `dXNlcl9kYXRhL3N0cmF0ZWdpZXMvTm9zdGFsZ2lhRm9ySW5maW5pdHkvTm9zdGFsZ2lhRm9ySW5maW5pdHlYMy5weQ==`
-- `CAND07TAGS`: `enter_long,enter_short,populate_entry_trend,populate_exit_trend,populate_indicators`
-- `CAND08PATHB64`: `dXNlcl9kYXRhL3N0cmF0ZWdpZXMvTm9zdGFsZ2lhRm9ySW5maW5pdHkvTm9zdGFsZ2lhRm9ySW5maW5pdHlYNC5weQ==`
-- `CAND08TAGS`: `enter_long,enter_short,populate_entry_trend,populate_exit_trend,populate_indicators`
-- `CAND09PATHB64`: `dXNlcl9kYXRhL3N0cmF0ZWdpZXMvTm9zdGFsZ2lhRm9ySW5maW5pdHkvTm9zdGFsZ2lhRm9ySW5maW5pdHlYNS5weQ==`
-- `CAND09TAGS`: `enter_long,enter_short,populate_entry_trend,populate_exit_trend,populate_indicators`
-- `CAND10PATHB64`: `dXNlcl9kYXRhL3N0cmF0ZWdpZXMvTm9zdGFsZ2lhRm9ySW5maW5pdHkvTm9zdGFsZ2lhRm9ySW5maW5pdHlYNi5weQ==`
-- `CAND10TAGS`: `enter_long,enter_short,populate_entry_trend,populate_exit_trend,populate_indicators`
-- `CAND11PATHB64`: `dXNlcl9kYXRhL3N0cmF0ZWdpZXMvTm9zdGFsZ2lhRm9ySW5maW5pdHkvdXNlcl9kYXRhL3N0cmF0ZWdpZXMvTm9zdGFsZ2lhRm9ySW5maW5pdHlYLnB5`
-- `CAND11TAGS`: `enter_long,populate_entry_trend,populate_exit_trend,populate_indicators,sell_signal`
-- `CAND12PATHB64`: `dXNlcl9kYXRhL3N0cmF0ZWdpZXMvTm9zdGFsZ2lhRm9ySW5maW5pdHkvdXNlcl9kYXRhL3N0cmF0ZWdpZXMvTm9zdGFsZ2lhRm9ySW5maW5pdHlYMi5weQ==`
-- `CAND12TAGS`: `enter_long,populate_entry_trend,populate_exit_trend,populate_indicators`
-- `CANDIDATECOUNT`: `162`
-- `CONFIGCOUNT`: `0`
 - `DBACCESS`: `NO`
+- `ERROR`: `TypeError_unhashable_type:_&#x27;dict&#x27;`
+- `EXISTINGSOLUTION`: `PINETS_INDICATOR_NATIVE_INPUT_OVERRIDE`
 - `INDICATORLOGICREIMPLEMENTED`: `NO`
 - `NETWORKCALL`: `NO`
-- `PERF`: `NO`
-- `PINETSEXEC`: `NO`
-- `READONLY`: `YES`
-- `TESTRUNS`: `NO`
+- `OLLAMACALL`: `NO`
+- `ORIGINALSOURCEREWRITTEN`: `NO`
+- `PERFORMANCETEST`: `NO`
