@@ -1,47 +1,51 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-08-27T05:28:48.473248+00:00`
-- Run ID: `20260827T052846Z`
-- Step: `CONVDISC_V1`
+- Published UTC: `2026-08-27T05:31:34.328743+00:00`
+- Run ID: `20260827T053132Z`
+- Step: `CONVDISC_V1B`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `PINE_CONVERSION_PATH_DISCOVERY_RESOLVED`
-- Next gate: `FREEZE_PINE_CONVERSION_REUSE_INTEGRATION_PLAN_V1`
+- Verdict: `FIRST_PARTY_PINE_CONVERSION_DISCOVERY_RESOLVED`
+- Next gate: `INSPECT_FIRST_PARTY_PINE_CONVERTER_REUSE_V1`
 
 ## Facts
 
 - `BACKENDWRITE`: `NO`
 - `BENCHMARK`: `NO`
-- `C1`: `freqtrade-venv_lib_python3.12_site-packages_torch__export_converter.py_S271_F41`
-- `C2`: `freqtrade-venv_lib_python3.12_site-packages_attr__make.py_S256_F6`
-- `C3`: `freqtrade-venv_lib_python3.12_site-packages_pandas_io_stata.py_S214_F10`
-- `CLASS`: `REUSABLE_CONVERSION_IMPLEMENTATION_FOUND`
+- `C1`: `user_data_orderflow_dashboard_indicator_lab_conversion_result_commit_v1.py_S61_F1_commit_conversion_result`
+- `C2`: `user_data_orderflow_dashboard_indicator_lab_worker_v1.py_S52_F5_fetch_exact_pine_source,extract_pine_title`
+- `C3`: `user_data_orderflow_dashboard_indicator_lab_openai_conversion_provider_v1.py_S30_F1_request_conversion`
+- `C4`: `user_data_orderflow_dashboard_indicator_lab_v1.py_S23_F2_indicator_lab_paste_pine,indicator_lab_pine_c`
+- `CLASS`: `FIRST_PARTY_REUSABLE_PINE_CONVERTER_FOUND`
 - `CONVERSION`: `NO`
-- `DATAFLOW`: `592`
+- `DATAFLOW`: `6`
 - `DBWRITE`: `NO`
-- `FILES`: `2957`
+- `EXCLUDED`: `20198`
+- `FILES`: `19`
 - `FOUNDATIONWRITE`: `NO`
-- `FUNCS`: `2098`
 - `INDICATORLABWRITE`: `NO`
 - `LABCONVSTATUS`: `5`
 - `LABFUNCS`: `2`
 - `LABGENPY`: `0`
-- `LEGACYSTATUS`: `0`
+- `LABPYSRC`: `0`
+- `LABSTRONG`: `0`
 - `MANUALWRITE`: `NO`
 - `OUTCOME`: `NO`
 - `PACKAGEINSTALL`: `NO`
 - `PERF`: `BLOCKED`
 - `PID`: `721686`
 - `POLICYWRITE`: `NO`
-- `PRIMARY`: `freqtrade-venv_lib_python3.12_site-packages_ccxt_base_exchange.py`
-- `PRIMARYSH`: `f1d2967f99e98227b5531eefbb2c84feaa7a2198f9b882834c6843c2f18130c1`
+- `PRIMARY`: `user_data_orderflow_dashboard_indicator_lab_ollama_conversion_provider_v1.py`
+- `PRIMARYFN`: `request_conversion`
+- `PRIMARYLINE`: `411`
+- `PRIMARYSH`: `10483ab8f252d05cb1ec5caa13ab7fbaf6af90976d3bf3c6d04da983d2c5ff40`
 - `READONLY`: `YES`
-- `REUSABLE`: `11`
+- `REUSABLE`: `2`
 - `RUNTIME`: `UNCHANGED`
 - `RUNTIMESTART`: `NO`
 - `RUNTIMESTOP`: `NO`
-- `SCANNED`: `14360`
+- `SCANNED`: `431`
 - `SIGNALS`: `NO`
 - `TESTRUNS`: `NO`
 - `UIWRITE`: `NO`
