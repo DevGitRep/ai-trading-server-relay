@@ -1,32 +1,24 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-08-27T21:28:53.346030+00:00`
-- Run ID: `20260827T212851Z`
-- Step: `RESOLVEINDICATORLABPERSISTENCEAUTHORITY_V1`
+- Published UTC: `2026-08-27T21:30:48.837978+00:00`
+- Run ID: `20260827T213046Z`
+- Step: `BUILDJURIK218BATCHPERSISTENCE_V1B`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `INDICATOR_LAB_TEST_RUNS_DB_AUTHORITY_AMBIGUOUS`
-- Next gate: `REVIEW_INDICATOR_LAB_DB_AUTHORITY_V1`
+- Verdict: `JURIK_218_GRID_BATCH_RUNNER_AND_PERSISTENCE_V1B_FAILED`
+- Next gate: `REVIEW_JURIK_BATCH_V1B`
 
 ## Facts
 
 - `ARTIFACTCOMMITTED`: `NO`
-- `CALL01`: `L428:initialize_indicator_lab_v1()`
-- `DB01`: `user_data/orderflow_dashboard/data/manual_support/pine_catalog_v1.db:pine_scripts`
-- `DB02`: `user_data/orderflow_dashboard/data/manual_support/indicator_challenger_lab_v1.db:candidate_events,candidates,intake_jobs,test_runs`
-- `DB03`: `user_data/orderflow_dashboard/data/manual_support/archive/indicator_challenger_lab_v1_PRE_VIPRASOL_DISCOVERY_V2_LIVE_20260825T111017Z.db:candidate_events,candidates,intake_jobs,tes`
+- `BRAININTEGRATION`: `DEFERRED`
 - `DBACCESS`: `SCHEMA_ONLY`
-- `DBMUTATION`: `NO`
-- `INITCALLS`: `1`
-- `INITCREATESTESTRUNS`: `YES`
-- `INITDBREFS`: `0`
-- `INITLINES`: `68-260`
-- `INITSIG`: `initialize_indicator_lab_v1()`
+- `DBMUTATION`: `SCHEMA_ONLY`
+- `ERROR`: `RuntimeError_TWO_CONFIG_BATCH_SMOKE_FAILED_`
 - `NETWORKCALL`: `NO`
+- `PAIR`: `SOLUSDT`
 - `PERF`: `NO`
-- `PINETSEXEC`: `NO`
-- `READONLY`: `YES`
-- `RELEVANTDBS`: `3`
+- `PINETSEXEC`: `SMOKE_ONLY`
 - `RESULTROWSREAD`: `NO`
-- `TESTRUNSDBS`: `2`
+- `TIMEFRAME`: `1m`
