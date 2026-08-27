@@ -1,18 +1,18 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-27T13:20:05.350905+00:00",
-  "run_id": "20260827T132003Z",
-  "step": "OLLAMARUNTIMEBINDINGSREVIEW_V1B",
+  "published_at_utc": "2026-08-27T13:25:00.093611+00:00",
+  "run_id": "20260827T132458Z",
+  "step": "OLLAMARUNTIMEBINDINGSFREEZE_V1C",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "PINECAT_OLLAMA_PROVIDER_V2_RUNTIME_BINDINGS_V1B_REVIEW_FAILED",
-  "next_gate": "REVIEW_PINECAT_OLLAMA_PROVIDER_V2_RUNTIME_BINDINGS_V1B",
+  "verdict": "PINECAT_OLLAMA_PROVIDER_V2_RUNTIME_BINDINGS_V1C_FREEZE_FAILED",
+  "next_gate": "SELECT_AND_FREEZE_PINECAT_OLLAMA_PROVIDER_V2_RUNTIME_BINDINGS_V1C",
   "facts": {
     "ADAPTERIMPORT": "NO",
     "ARTIFACTCOMMITTED": "NO",
     "COMMITWRITE": "NO",
     "DBWRITE": "NO",
-    "ERROR": "PermissionError_[Errno_13]_Permission_denied:_&#x27;_usr_share_ollama_.ollama_models_manifests&#x27;",
+    "ERROR": "RuntimeError_OLLAMA_ENDPOINT_NOT_UNIQUELY_RESOLVED",
     "FIRSTATTEMPT": "CLOSED",
     "GENERATEDWRITE": "NO",
     "GUARDEXEC": "NO",
@@ -26,12 +26,9 @@
     "PREFLIGHTEXEC": "NO",
     "PROVIDERCALL": "NO",
     "PROVIDERIMPORT": "NO",
-    "READONLY": "YES",
     "REEXECUTE": "NO",
-    "RUNTIMEBINDINGWRITE": "NO",
     "SOURCEEXEC": "NO",
     "TESTRUNS": "NO",
-    "V1RERUN": "NO",
     "VALIDATIONWRITE": "NO"
   }
 }
