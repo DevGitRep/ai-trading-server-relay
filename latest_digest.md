@@ -1,26 +1,32 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-08-27T21:27:32.436899+00:00`
-- Run ID: `20260827T212730Z`
-- Step: `BUILDJURIK218BATCHPERSISTENCE_V1`
+- Published UTC: `2026-08-27T21:28:53.346030+00:00`
+- Run ID: `20260827T212851Z`
+- Step: `RESOLVEINDICATORLABPERSISTENCEAUTHORITY_V1`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `JURIK_218_GRID_BATCH_RUNNER_AND_PERSISTENCE_V1_FAILED`
-- Next gate: `REVIEW_JURIK_BATCH_RUNNER_PERSISTENCE_V1`
+- Verdict: `INDICATOR_LAB_TEST_RUNS_DB_AUTHORITY_AMBIGUOUS`
+- Next gate: `REVIEW_INDICATOR_LAB_DB_AUTHORITY_V1`
 
 ## Facts
 
 - `ARTIFACTCOMMITTED`: `NO`
-- `BRAININTEGRATION`: `DEFERRED`
+- `CALL01`: `L428:initialize_indicator_lab_v1()`
+- `DB01`: `user_data/orderflow_dashboard/data/manual_support/pine_catalog_v1.db:pine_scripts`
+- `DB02`: `user_data/orderflow_dashboard/data/manual_support/indicator_challenger_lab_v1.db:candidate_events,candidates,intake_jobs,test_runs`
+- `DB03`: `user_data/orderflow_dashboard/data/manual_support/archive/indicator_challenger_lab_v1_PRE_VIPRASOL_DISCOVERY_V2_LIVE_20260825T111017Z.db:candidate_events,candidates,intake_jobs,tes`
 - `DBACCESS`: `SCHEMA_ONLY`
-- `DBMUTATION`: `SCHEMA_ONLY`
-- `DBPATHCANDIDATES`: `1`
-- `ERROR`: `RuntimeError_EXISTING_TEST_RUNS_TABLE_NOT_FOUND`
-- `INDICATORLABDB`: `user_data/orderflow_dashboard/indicator_challenger_lab_v1.db`
+- `DBMUTATION`: `NO`
+- `INITCALLS`: `1`
+- `INITCREATESTESTRUNS`: `YES`
+- `INITDBREFS`: `0`
+- `INITLINES`: `68-260`
+- `INITSIG`: `initialize_indicator_lab_v1()`
 - `NETWORKCALL`: `NO`
-- `PAIR`: `SOLUSDT`
 - `PERF`: `NO`
 - `PINETSEXEC`: `NO`
+- `READONLY`: `YES`
+- `RELEVANTDBS`: `3`
 - `RESULTROWSREAD`: `NO`
-- `TIMEFRAME`: `1m`
+- `TESTRUNSDBS`: `2`
