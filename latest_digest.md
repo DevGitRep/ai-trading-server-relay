@@ -1,32 +1,33 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-08-27T18:31:10.694837+00:00`
-- Run ID: `20260827T183108Z`
-- Step: `PINECATV5DEPENDENCYUSAGEREVIEW_V1`
+- Published UTC: `2026-08-27T18:37:15.890238+00:00`
+- Run ID: `20260827T183713Z`
+- Step: `PINECATPINETSREFERENCEPREFLIGHT_V1`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `PINECAT_V5_DEPENDENCY_USAGE_REVIEW_COMPLETE`
-- Next gate: `DECIDE_PINECAT_V5_SEMANTIC_RECOVERY_PATH_V1`
+- Verdict: `PINECAT_PINETS_REFERENCE_RUNTIME_PREFLIGHT_COMPLETE`
+- Next gate: `DECIDE_PINETS_RUNTIME_INSTALL_PATH_V1`
 
 ## Facts
 
 - `ARTIFACTCOMMITTED`: `NO`
-- `ATR_LENGTHLOADCOUNT`: `0`
-- `ATR_MULTIPLIERLOADCOUNT`: `0`
-- `BEARASSIGNCOUNT`: `1`
-- `BEAREXPR`: `data[&#x27;close&#x27;].rolling(window_jurik_length).apply(lambda_x:_x.min()_if_x.min()_&lt;_x.max()_else_x.max())`
-- `BULLASSIGNCOUNT`: `1`
-- `BULLEXPR`: `data[&#x27;close&#x27;].rolling(window_jurik_length).apply(lambda_x:_x.max()_if_x.max()_&gt;_x.min()_else_x.min())`
 - `DBACCESS`: `NO`
-- `GENERATEDPYTHONEXEC`: `NO`
-- `GENERATEDPYTHONIMPORT`: `NO`
-- `JURIK_SOURCELOADCOUNT`: `0`
-- `KWONLYCOUNT`: `17`
+- `IMPORTCOUNT`: `0`
+- `MAPCOUNT`: `0`
+- `MATRIXCOUNT`: `0`
+- `METHODCOUNT`: `0`
+- `NETWORKCALL`: `NO`
+- `NODE`: `ABSENT`
+- `NPM`: `ABSENT`
+- `NPX`: `ABSENT`
 - `OLLAMACALL`: `NO`
 - `PERF`: `NO`
+- `PINETSCLI`: `ABSENT`
 - `READONLY`: `YES`
-- `REQSTATEMENTCOUNT`: `0`
-- `REQUIREDINARGS`: `YES`
+- `REQUEST_SECURITYCOUNT`: `0`
+- `SOURCECHARS`: `19093`
+- `SOURCEEXEC`: `NO`
+- `STRATEGYCOUNT`: `0`
 - `TESTRUNS`: `NO`
-- `WARMUP_BARSLOADCOUNT`: `0`
+- `TYPECOUNT`: `0`
