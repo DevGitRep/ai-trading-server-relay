@@ -1,13 +1,13 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-08-27T13:17:52.053440+00:00`
-- Run ID: `20260827T131749Z`
-- Step: `OLLAMARUNTIMEBINDINGSREVIEW_V1`
+- Published UTC: `2026-08-27T13:20:05.350905+00:00`
+- Run ID: `20260827T132003Z`
+- Step: `OLLAMARUNTIMEBINDINGSREVIEW_V1B`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `PINECAT_OLLAMA_PROVIDER_V2_RUNTIME_BINDINGS_V1_REVIEW_FAILED`
-- Next gate: `REVIEW_PINECAT_OLLAMA_PROVIDER_V2_RUNTIME_BINDINGS_V1`
+- Verdict: `PINECAT_OLLAMA_PROVIDER_V2_RUNTIME_BINDINGS_V1B_REVIEW_FAILED`
+- Next gate: `REVIEW_PINECAT_OLLAMA_PROVIDER_V2_RUNTIME_BINDINGS_V1B`
 
 ## Facts
 
@@ -15,7 +15,7 @@
 - `ARTIFACTCOMMITTED`: `NO`
 - `COMMITWRITE`: `NO`
 - `DBWRITE`: `NO`
-- `ERROR`: `PermissionError_[Errno_13]_Permission_denied:_&#x27;_usr_share_ollama_.ollama_models&#x27;`
+- `ERROR`: `PermissionError_[Errno_13]_Permission_denied:_&#x27;_usr_share_ollama_.ollama_models_manifests&#x27;`
 - `FIRSTATTEMPT`: `CLOSED`
 - `GENERATEDWRITE`: `NO`
 - `GUARDEXEC`: `NO`
@@ -34,4 +34,5 @@
 - `RUNTIMEBINDINGWRITE`: `NO`
 - `SOURCEEXEC`: `NO`
 - `TESTRUNS`: `NO`
+- `V1RERUN`: `NO`
 - `VALIDATIONWRITE`: `NO`

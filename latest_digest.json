@@ -1,18 +1,18 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-27T13:17:52.053440+00:00",
-  "run_id": "20260827T131749Z",
-  "step": "OLLAMARUNTIMEBINDINGSREVIEW_V1",
+  "published_at_utc": "2026-08-27T13:20:05.350905+00:00",
+  "run_id": "20260827T132003Z",
+  "step": "OLLAMARUNTIMEBINDINGSREVIEW_V1B",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "PINECAT_OLLAMA_PROVIDER_V2_RUNTIME_BINDINGS_V1_REVIEW_FAILED",
-  "next_gate": "REVIEW_PINECAT_OLLAMA_PROVIDER_V2_RUNTIME_BINDINGS_V1",
+  "verdict": "PINECAT_OLLAMA_PROVIDER_V2_RUNTIME_BINDINGS_V1B_REVIEW_FAILED",
+  "next_gate": "REVIEW_PINECAT_OLLAMA_PROVIDER_V2_RUNTIME_BINDINGS_V1B",
   "facts": {
     "ADAPTERIMPORT": "NO",
     "ARTIFACTCOMMITTED": "NO",
     "COMMITWRITE": "NO",
     "DBWRITE": "NO",
-    "ERROR": "PermissionError_[Errno_13]_Permission_denied:_&#x27;_usr_share_ollama_.ollama_models&#x27;",
+    "ERROR": "PermissionError_[Errno_13]_Permission_denied:_&#x27;_usr_share_ollama_.ollama_models_manifests&#x27;",
     "FIRSTATTEMPT": "CLOSED",
     "GENERATEDWRITE": "NO",
     "GUARDEXEC": "NO",
@@ -31,6 +31,7 @@
     "RUNTIMEBINDINGWRITE": "NO",
     "SOURCEEXEC": "NO",
     "TESTRUNS": "NO",
+    "V1RERUN": "NO",
     "VALIDATIONWRITE": "NO"
   }
 }
