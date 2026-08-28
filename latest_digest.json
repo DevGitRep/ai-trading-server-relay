@@ -1,11 +1,11 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-28T21:04:59.918628+00:00",
-  "run_id": "20260828T231000Z",
-  "step": "REAL_INDICATOR_CORPUS",
+  "published_at_utc": "2026-08-28T21:05:59.545611+00:00",
+  "run_id": "20260828T231500Z",
+  "step": "PINE_ENTRY_UNIQUE_INDICATORS",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "INDICATOR_CORPUS_FOUND_2007_SQLITE_TABLE_PINE_ENTRY_SUPPORT_V1_DB_PINE_ENTRY_EVENTS",
+  "verdict": "PINE_EVENTS_NO_IDENTIFIER_COLUMN",
   "next_gate": null,
   "facts": {}
 }
