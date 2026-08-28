@@ -1,11 +1,11 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-28T21:30:44.235274+00:00",
-  "run_id": "20260828T233000Z",
-  "step": "RESOLVE_EXISTING_200_INDICATOR_PIPELINE",
+  "published_at_utc": "2026-08-28T21:36:50.107968+00:00",
+  "run_id": "20260828T234500Z",
+  "step": "PINE_BASELINE_BATCH_200_SETUP",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "EXISTING_PIPELINE_RESOLVED_FOR_BATCH_200",
+  "verdict": "BATCH_200_READY_EXISTING_PIPELINE_BOUND",
   "next_gate": null,
   "facts": {}
 }
