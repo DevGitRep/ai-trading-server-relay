@@ -1,14 +1,11 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-28T21:48:40.355628+00:00",
-  "run_id": "20260828T214838Z",
-  "step": "PINE_BASELINE_200_FINAL_RUNNER_BINDING",
+  "published_at_utc": "2026-08-28T22:03:10.229249+00:00",
+  "run_id": "20260828T220256Z",
+  "step": "PINE_BASELINE_200_START",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "PINETS_AND_EXISTING_PERFORMANCE_PATH_RESOLVED",
-  "next_gate": null,
-  "facts": {
-    "MATCH_COUNT": "1",
-    "MATCH_FILES_B64": "L2hvbWUvdHJhbnNmb3JtZXIvZnJlcXRyYWRlLWJvdC91c2VyX2RhdGEvb3JkZXJmbG93X2Rhc2hib2FyZC9pbmRpY2F0b3JfbGFiX3YxLnB5"
-  }
+  "verdict": "BASELINE_200_BACKGROUND_LOOP_RUNNING",
+  "next_gate": "VERIFY_FIRST_COMPLETED_INDICATOR_AND_THUMBNAIL",
+  "facts": {}
 }
