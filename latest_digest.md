@@ -1,71 +1,17 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-08-28T17:56:42.946428+00:00`
-- Run ID: `20260828T175640Z`
-- Step: `REVIEWONLYFAILEDINDICATORLABTIERUIPATCH_V2`
+- Published UTC: `2026-08-28T18:01:02.911800+00:00`
+- Run ID: `20260828T180100Z`
+- Step: `SMOKELIVEINDICATORLABTIERROUTES_V1`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `FAILED_UI_PATCH_CURRENT_STATE_REVIEWED`
-- Next gate: `PATCH_ONLY_VERIFIED_REMAINING_INDICATOR_LAB_TIER_UI_V3`
+- Verdict: `LIVE_INDICATOR_LAB_TIER_ROUTE_SMOKE_TEST_FAILED`
+- Next gate: `REVIEW_LIVE_INDICATOR_LAB_ROUTE_STATE_V1`
 
 ## Facts
 
-- `BROAD_SCAN`: `NO`
-- `CONTROLLER_CHANGED_FROM_BASE`: `YES`
-- `CONTROLLER_PINE_SOURCE_HITS`: `8`
-- `CONTROLLER_SHA`: `9e23ad07607460d3158ce229432d8ee0db94c2fa8e7f7de28670a2d510e58264`
-- `CTRL_FREE_ARTIFACT`: `NO`
-- `CTRL_INTERNAL_PREVIEW_ENV`: `YES`
-- `CTRL_PROJECTION_IMPORT`: `YES`
-- `CTRL_PROJECT_CARD`: `YES`
-- `CTRL_PROJECT_REPORT`: `YES`
-- `CTRL_PRO_ARTIFACT`: `NO`
-- `CTRL_RESOLVE_EFFECTIVE_TIER`: `YES`
-- `DB_ACCESS`: `NO`
-- `HB01`: `L422:parameters, classifications, Brain roles and warnings come together here`
-- `HB02`: `L473:placeholder_&quot;Search by indicator, author, tag or Brain role?&quot;`
-- `HB03`: `L632:...(item.brain_role_tags __ []),`
-- `HB04`: `L711:const roles _ item.brain_role_tags __ [];`
-- `HB05`: `L740:: badge(&#x27;No Brain role&#x27;, &#x27;warn&#x27;);`
-- `HB06`: `L811:&#x27;&lt;div class_&quot;pinecat-section-label&quot;&gt;Brain roles&lt;/div&gt;&#x27; +`
-- `HOME_BRAIN_HITS`: `6`
-- `HOME_BRAIN_ROLE`: `YES`
-- `HOME_BRAIN_VALUE`: `NO`
-- `HOME_CHANGED_FROM_BASE`: `NO`
-- `HOME_FREE`: `NO`
-- `HOME_INTERNAL_ADMIN`: `NO`
-- `HOME_LOCKED_RESULT`: `NO`
-- `HOME_PRO`: `NO`
-- `HOME_SHA`: `3dfa7141864dda1c316c30b8c30637d15af25d61028685a04e16e21488593858`
-- `HOME_UPGRADE`: `NO`
-- `HOME_VIEW_AS`: `NO`
+- `ERROR`: `RuntimeError_CONTROLLER_SHA_MISMATCH_9e23ad07607460d3158ce229432d8ee0db94c2fa8e7f7de28670a2d510e58264`
+- `EXISTING_UI`: `/indicator-lab`
 - `MASTER_FIRST`: `YES`
-- `MASTER_HAS_ENTITLEMENT_V1_1`: `YES`
-- `MASTER_HAS_TIER_PROJECTIONS`: `YES`
-- `MASTER_SHA`: `efe4c1683ff510ca2ea859a9aa974eebb7e88e8c80cee489506727b2fa7b0b77`
 - `MUTATION`: `NO`
-- `NETWORK_CALL`: `NO`
-- `PINETS_REEXECUTION`: `NO`
-- `RB01`: `L69:&lt;div class_&quot;row&quot;&gt;&lt;span&gt;Brain Value&lt;/span&gt;&lt;span&gt;{{ candidate.brain_value_status }}&lt;/span&gt;&lt;/div&gt;`
-- `RELEVANT_CONTROLLER_PINE_HITS`: `0`
-- `REPORT_ACCESS`: `NO`
-- `REPORT_BODY_KEY_LINES`: `4`
-- `REPORT_BRAIN_HITS`: `1`
-- `REPORT_BRAIN_VALUE`: `YES`
-- `REPORT_CHANGED_FROM_BASE`: `NO`
-- `REPORT_FUNCTION_LINE`: `990`
-- `REPORT_LOCKED_RESULT`: `NO`
-- `REPORT_PINE_SOURCE`: `YES`
-- `REPORT_PINE_SOURCE_HITS`: `3`
-- `REPORT_SHA`: `0f50dec1a14410f6e642e79cd850f2e3d5f53029fcca0f77fb107816096538b1`
-- `REPORT_UPGRADE`: `NO`
-- `REPORT_VIEW_AS`: `NO`
-- `RF01`: `L990:def indicator_lab_report(candidate_id):`
-- `RF02`: `L994:candidate, runs _ _get_candidate(`
-- `RF03`: `L995:candidate_id`
-- `RF04`: `L998:if candidate is None:`
-- `RP01`: `L109:{% if candidate.pine_source %}`
-- `RP02`: `L111:&lt;h2&gt;Captured Pine source&lt;/h2&gt;`
-- `RP03`: `L112:&lt;pre&gt;{{ candidate.pine_source }}&lt;/pre&gt;`
-- `TARGETED_FILES`: `4`
