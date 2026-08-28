@@ -1,93 +1,36 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-08-28T10:58:48.191779+00:00`
-- Run ID: `20260828T105846Z`
-- Step: `VERIFYEXACTREALISTICSCORENUMERICTRANSFORMS_V1`
+- Published UTC: `2026-08-28T11:01:51.528415+00:00`
+- Run ID: `20260828T110149Z`
+- Step: `FREEZETRANSFORMSCOMPUTERANKINGANDTOP10_V1`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `FROZEN_SCORING_CONTRACT_CONTAINS_NUMERIC_TRANSFORM_SEMANTICS`
-- Next gate: `VERIFY_EXACT_REALISTIC_SCORE_TRANSFORMS_AND_COMPUTE_DISCOVERY_RANKING_V1`
+- Verdict: `JURIK_DISCOVERY_RANKING_COMPUTED_AND_TOP10_FROZEN_BEFORE_OOS`
+- Next gate: `EXECUTE_FROZEN_JURIK_TOP10_OOS_V1`
 
 ## Facts
 
-- `ARTIFACTCOMMITTED`: `NO`
 - `BRAININTEGRATION`: `DEFERRED`
-- `C01`: `candidate_parameter_selection.gross_return_never_primary_for_rank:True`
-- `C02`: `candidate_parameter_selection.profit_priority:net_return_pct has 70 percent of realistic score`
-- `C03`: `maturity.discovery_score_allowed:True`
-- `C04`: `profit_fields.gross_return_pct.card_display:BRUTO_WINST`
-- `C05`: `profit_fields.gross_return_pct.meaning:Profit before base transaction costs and slippage.`
-- `C06`: `profit_fields.gross_return_pct.visible:True`
-- `C07`: `profit_fields.net_return_pct.card_display:REALISTISCHE_WINST`
-- `C08`: `profit_fields.net_return_pct.meaning:Profit after standard base transaction costs and slippage.`
-- `C09`: `profit_fields.net_return_pct.primary_ranking_metric:True`
-- `C10`: `profit_fields.net_return_pct.visible:True`
-- `C11`: `realistic_score.card_categories.A:[75, 89.999999]`
-- `C12`: `realistic_score.card_categories.B:[60, 74.999999]`
-- `C13`: `realistic_score.card_categories.C:[40, 59.999999]`
-- `C14`: `realistic_score.card_categories.D:[0, 39.999999]`
-- `C15`: `realistic_score.card_categories.S:[90, 100]`
-- `C16`: `realistic_score.comparable_universe_requires_same:[&quot;target_market&quot;, &quot;timeframe&quot;, &quot;evaluation_window&quot;, &quot;cost_model_id&quot;]`
-- `C17`: `realistic_score.components.max_drawdown_pct_percentile.direction:LOWER_BETTER`
-- `C18`: `realistic_score.components.max_drawdown_pct_percentile.weight:0.15`
-- `C19`: `realistic_score.components.net_return_pct_percentile.direction:HIGHER_BETTER`
-- `C20`: `realistic_score.components.net_return_pct_percentile.weight:0.7`
-- `C21`: `realistic_score.components.profit_factor_percentile.direction:HIGHER_BETTER`
-- `C22`: `realistic_score.components.profit_factor_percentile.weight:0.1`
-- `C23`: `realistic_score.components.trade_count_quality_percentile.direction:HIGHER_BETTER_AFTER_MINIMUM_GATE`
-- `C24`: `realistic_score.components.trade_count_quality_percentile.weight:0.05`
-- `C25`: `realistic_score.profit_weight_is_dominant:True`
-- `C26`: `realistic_score.purpose:Card categorization and profit-dominant library comparison.`
-- `C27`: `realistic_score.scale:0_TO_100`
-- `C28`: `realistic_score.small_cohort_rule.below_minimum_prefix:PROVISIONAL_`
-- `C29`: `realistic_score.small_cohort_rule.minimum_comparable_runs_for_non_provisional_category:10`
-- `C30`: `reuse.drawdown_candidates:[]`
-- `C31`: `reuse.drawdown_rule:Reuse an existing suitable implementation if semantically compatible; otherwise use standard peak-to-trough equity-curve max drawdown w`
-- `C32`: `reuse.profit_factor.args:[&quot;net&quot;]`
-- `C33`: `reuse.profit_factor.end_line:1791`
-- `C34`: `reuse.profit_factor.file_sha256:157ad75a62de3015d03077bb6f291da34a74ff141c04cbf6adfe6320cfd37054`
-- `C35`: `reuse.profit_factor.function:profit_factor`
-- `CODEHITS`: `28`
-- `CONTRACTFILE`: `pine_library_scoring_cost_card_contract_v1.json`
-- `CONTRACTRELEVANT`: `38`
-- `CONTRACTSHA`: `d9273528dacd6022e61646e97189a5ca435c316f1e5584ca1ceee6fcb43acb37`
-- `DBACCESS`: `NO`
-- `DBMUTATION`: `NO`
+- `DBACCESS`: `YES`
 - `DISCOVERYCOMPLETE`: `218`
-- `K01`: `executor.py:L72:&quot;net_return_pct&quot;: metrics[&quot;net_return_pct&quot;],`
-- `K02`: `executor.py:L74:&quot;max_drawdown_pct&quot;: metrics[&quot;max_drawdown_pct&quot;],`
-- `K03`: `executor.py:L76:&quot;profit_factor&quot;: metrics[&quot;profit_factor&quot;],`
-- `K04`: `executor.py:L77:&quot;trade_count&quot;: metrics[&quot;trade_count&quot;],`
-- `K05`: `executor.py:L79:&quot;robustness_score&quot;: None,`
-- `K06`: `executor.py:L80:&quot;brain_value_score&quot;: None,`
-- `K07`: `evaluator.py:L14:def _max_drawdown_pct(equity):`
-- `K08`: `evaluator.py:L29:def _profit_factor(net_trade_returns):`
-- `K09`: `evaluator.py:L143:&quot;net_return_pct&quot;: net_ret * 100.0,`
-- `K10`: `evaluator.py:L228:net_returns _ [t[&quot;net_return_pct&quot;] / 100.0 for t in trades]`
-- `K11`: `evaluator.py:L229:wins _ sum(1 for x in net_returns if x &gt; 0)`
-- `K12`: `evaluator.py:L232:net_return_pct _ (net_equity - 1.0) * 100.0`
-- `K13`: `evaluator.py:L236:&quot;net_return_pct&quot;: net_return_pct,`
-- `K14`: `evaluator.py:L238:&quot;max_drawdown_pct&quot;: _max_drawdown_pct(net_curve),`
-- `K15`: `evaluator.py:L240:&quot;profit_factor&quot;: _profit_factor(net_returns),`
-- `K16`: `evaluator.py:L241:&quot;trade_count&quot;: len(trades),`
-- `K17`: `reporting.py:L15:net _ [r[&quot;net_return_pct&quot;] / 100.0 for r in rows]`
-- `K18`: `reporting.py:L28:equity *_ 1.0 + (r[&quot;net_return_pct&quot;] / 100.0)`
-- `K19`: `reporting.py:L31:&quot;trade_count&quot;: len(rows),`
-- `K20`: `reporting.py:L32:&quot;net_return_pct&quot;: (equity - 1.0) * 100.0,`
-- `K21`: `reporting.py:L38:&quot;profit_factor&quot;: pf,`
-- `K22`: `reporting.py:L58:&quot;net_return_pct&quot;: metrics[&quot;net_return_pct&quot;],`
-- `K23`: `reporting.py:L59:&quot;max_drawdown_pct&quot;: metrics[&quot;max_drawdown_pct&quot;],`
-- `K24`: `reporting.py:L61:&quot;profit_factor&quot;: metrics[&quot;profit_factor&quot;],`
-- `K25`: `reporting.py:L62:&quot;trade_count&quot;: metrics[&quot;trade_count&quot;],`
-- `K26`: `self_test.py:L31:assert r[&quot;trade_count&quot;] __ 2`
-- `K27`: `self_test.py:L48:assert r[&quot;net_return_pct&quot;] &lt; r[&quot;gross_return_pct&quot;]`
-- `K28`: `self_test.py:L50:assert r[&quot;max_drawdown_pct&quot;] &gt;_ 0`
+- `INVALIDRUNS`: `0`
 - `NETWORKCALL`: `NO`
-- `NUMERICTRANSFORMFIELDS`: `YES`
-- `RANKINGREAD`: `NO`
-- `READONLY`: `YES`
-- `RESULTSELECTION`: `NO`
-- `RESULTVALUESREAD`: `NO`
+- `NEWMASTERSHA`: `8b9a1982d0cf740aaa4ade83b21b1787410293419e887b50111ac2b3399b95f8`
+- `OOSRUNS`: `0`
+- `OOSVALUESREAD`: `NO`
+- `PAIR`: `SOLUSDT`
+- `PERCENTILEMETHOD`: `EMPIRICAL_MIDRANK`
+- `RANKINGCOMPUTED`: `YES`
+- `RANKINGSHA`: `77d410cce67d47cfbd27f70207f190e1f2e63712ce43262e64994e6dfb267683`
+- `RESULTREADBEFOREFREEZE`: `NO`
+- `RESULTVALUESREAD`: `YES`
+- `TIMEFRAME`: `1m`
+- `TOP10`: `JURIK_171,JURIK_168,JURIK_165,JURIK_218,JURIK_117,JURIK_180,JURIK_114,JURIK_177,JURIK_174,JURIK_111`
+- `TOP10FROZEN`: `YES`
+- `TOP10SCORE`: `91.336406`
+- `TOP1SCORE`: `95.0`
 - `TOTALGRID`: `218`
-- `WEIGHTSPRESENT`: `YES`
+- `TRANSFORMFROZEN`: `YES`
+- `TRANSFORMSHA`: `c3115a44e5691d448ab7454e0e0922753e90af3cc6c01e9fd557f6fab2ca7c1d`
+- `VALIDRUNS`: `218`
