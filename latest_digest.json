@@ -1,19 +1,16 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-28T22:15:54.996846+00:00",
-  "run_id": "20260828T221552Z",
-  "step": "PINE_LIBRARY_UI_ACTUAL_STRUCTURE",
+  "published_at_utc": "2026-08-28T22:17:59.268318+00:00",
+  "run_id": "20260828T221750Z",
+  "step": "PINE_LIBRARY_UI_V2_ACTUAL_DOM",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "ACTUAL_INDICATOR_LIBRARY_DOM_RESOLVED",
-  "next_gate": "PATCH_UI_V2_AGAINST_ACTUAL_DOM",
+  "verdict": "LIBRARY_CARD_UI_V2_ACTUAL_DOM_LIVE_AND_DOCUMENTED",
+  "next_gate": "BUILD_VISUAL_INDICATOR_REPORT_V2",
   "facts": {
     "BASELINE_WORKER_RUNNING": "YES",
-    "CARD_CLASSES": "pine-library,pine-shell,pine-top,pine-head,pine-kicker,pine-title,pine-subtitle,library-stats,library-header,library-count,indicator-list,indicator-row",
-    "CATALOG_IDS": "NONE",
-    "FETCH_URLS": "NONE",
-    "MASTER_UI_V2_PRESENT": "NO",
-    "PRIOR_UI_V2_PRESENT": "NO",
-    "RENDER_NAMES": "render,resetAndRender"
+    "LIVE_PAGINATION": "YES",
+    "LIVE_SCRIPT": "YES",
+    "LIVE_STYLE": "YES"
   }
 }
