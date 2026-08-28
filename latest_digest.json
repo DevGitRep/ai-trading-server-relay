@@ -1,13 +1,13 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-28T14:40:14.188511+00:00",
-  "run_id": "20260828T144012Z",
-  "step": "WIRETIERPROJECTIONSUSINGCURRENTINDICATORLABANCHORS_V1",
+  "published_at_utc": "2026-08-28T14:46:04.122896+00:00",
+  "run_id": "20260828T144602Z",
+  "step": "WIRETIERPROJECTIONSWITHOUTFLASKIMPORT_V1",
   "status": "SUCCESS",
   "exit_code": 0,
   "verdict": "INDICATOR_LAB_ROUTE_TIER_WIRING_FAILED",
   "next_gate": "REVIEW_INDICATOR_LAB_ROUTE_TIER_WIRING_V1",
   "facts": {
-    "ERROR": "ModuleNotFoundError_No module named &#x27;flask&#x27;"
+    "ERROR": "RuntimeError_MASTER_SHA_MISMATCH_bd4a2bba5c58a178b509c84faa7721040367405be5b20c6aff2d21c0abadf8c2"
   }
 }

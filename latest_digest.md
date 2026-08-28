@@ -1,9 +1,9 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-08-28T14:40:14.188511+00:00`
-- Run ID: `20260828T144012Z`
-- Step: `WIRETIERPROJECTIONSUSINGCURRENTINDICATORLABANCHORS_V1`
+- Published UTC: `2026-08-28T14:46:04.122896+00:00`
+- Run ID: `20260828T144602Z`
+- Step: `WIRETIERPROJECTIONSWITHOUTFLASKIMPORT_V1`
 - Status: `SUCCESS`
 - Exit code: `0`
 - Verdict: `INDICATOR_LAB_ROUTE_TIER_WIRING_FAILED`
@@ -11,4 +11,4 @@
 
 ## Facts
 
-- `ERROR`: `ModuleNotFoundError_No module named &#x27;flask&#x27;`
+- `ERROR`: `RuntimeError_MASTER_SHA_MISMATCH_bd4a2bba5c58a178b509c84faa7721040367405be5b20c6aff2d21c0abadf8c2`
