@@ -1,16 +1,16 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-28T22:17:59.268318+00:00",
-  "run_id": "20260828T221750Z",
-  "step": "PINE_LIBRARY_UI_V2_ACTUAL_DOM",
+  "published_at_utc": "2026-08-28T22:20:49.112146+00:00",
+  "run_id": "20260828T222047Z",
+  "step": "PINE_VISUAL_REPORT_V2_STRUCTURE",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "LIBRARY_CARD_UI_V2_ACTUAL_DOM_LIVE_AND_DOCUMENTED",
-  "next_gate": "BUILD_VISUAL_INDICATOR_REPORT_V2",
+  "verdict": "EXISTING_VISUAL_REPORT_DATA_AND_DOM_RESOLVED",
+  "next_gate": "PATCH_VISUAL_INDICATOR_REPORT_V2",
   "facts": {
     "BASELINE_WORKER_RUNNING": "YES",
-    "LIVE_PAGINATION": "YES",
-    "LIVE_SCRIPT": "YES",
-    "LIVE_STYLE": "YES"
+    "EXISTING_CHART_PRESENT": "NO",
+    "JINJA_VAR_COUNT": "0",
+    "ROUTE_FOUND": "YES"
   }
 }
