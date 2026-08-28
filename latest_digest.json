@@ -1,11 +1,11 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-28T20:29:21.098565+00:00",
-  "run_id": "20260828T202919Z",
-  "step": "INDICATOR_LIBRARY_CLEANUP",
+  "published_at_utc": "2026-08-28T20:43:57.438789+00:00",
+  "run_id": "20260828T204355Z",
+  "step": "INDICATOR_LIBRARY_DARK_UI",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "CLEANUP_COMPLETE_UI_STILL_LIVE",
+  "verdict": "DARK_LIBRARY_UI_LIVE",
   "next_gate": null,
   "facts": {}
 }
