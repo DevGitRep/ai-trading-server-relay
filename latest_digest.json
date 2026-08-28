@@ -1,15 +1,13 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-28T19:25:55.375145+00:00",
-  "run_id": "20260828T192553Z",
-  "step": "VERIFYLIVEINDICATORLABAFTERTIERINTEGRATION_V1",
+  "published_at_utc": "2026-08-28T19:28:29.428452+00:00",
+  "run_id": "20260828T192827Z",
+  "step": "FIXLIVEINDICATORLABPRIVATEFRONTEND_V1",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "LIVE_INDICATOR_LAB_SMOKE_TEST_FAILED",
-  "next_gate": "FIX_LIVE_INDICATOR_LAB_FROM_SMOKE_RESULT",
+  "verdict": "INDICATOR_LAB_FRONTEND_CLEANUP_OR_SMOKE_FAILED",
+  "next_gate": "FIX_LIVE_INDICATOR_LAB_FROM_FUNCTIONAL_RESULT",
   "facts": {
-    "ERROR": "RuntimeError_HOME_BRAIN_LEAK_Brain roles,No Brain role",
-    "HOME_HTTP": "200",
-    "MASTER_FIRST": "PASS"
+    "ERROR": "RuntimeError_HOME_LIVE_PRIVATE_INTELLIGENCE_LEAK_6"
   }
 }
