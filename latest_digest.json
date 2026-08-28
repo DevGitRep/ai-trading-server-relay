@@ -1,13 +1,13 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-28T13:47:53.293484+00:00",
-  "run_id": "20260828T134751Z",
-  "step": "WIRETIERPROJECTIONSINTOEXISTINGINDICATORLABROUTES_V1",
+  "published_at_utc": "2026-08-28T13:55:56.488560+00:00",
+  "run_id": "20260828T135554Z",
+  "step": "WIRETIERPROJECTIONSUSINGACTUALROUTEBODIES_V1B",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "INDICATOR_LAB_ROUTE_WIRING_FAILED",
+  "verdict": "INDICATOR_LAB_TIER_ROUTE_WIRING_FAILED",
   "next_gate": "REVIEW_INDICATOR_LAB_ROUTE_WIRING_V1",
   "facts": {
-    "ERROR": "RuntimeError_HOME_BODY_CHANGED"
+    "ERROR": "RuntimeError_MANIFEST_EXPECTED_SHA_LENGTH_63"
   }
 }
