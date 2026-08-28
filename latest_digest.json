@@ -1,11 +1,11 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-28T21:03:54.594571+00:00",
-  "run_id": "20260828T230500Z",
-  "step": "INDICATOR_CORPUS_RESOLUTION",
+  "published_at_utc": "2026-08-28T21:04:59.918628+00:00",
+  "run_id": "20260828T231000Z",
+  "step": "REAL_INDICATOR_CORPUS",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "CORPUS_FOUND_2363040_SQLITE_MACRO_RESEARCH_MARKET_DB_MACRO_CANDLES_1M",
+  "verdict": "INDICATOR_CORPUS_FOUND_2007_SQLITE_TABLE_PINE_ENTRY_SUPPORT_V1_DB_PINE_ENTRY_EVENTS",
   "next_gate": null,
   "facts": {}
 }
