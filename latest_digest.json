@@ -1,11 +1,11 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-28T21:02:09.822765+00:00",
-  "run_id": "20260828T211500Z",
-  "step": "INDICATOR_SOURCE_RESOLUTION",
+  "published_at_utc": "2026-08-28T21:03:54.594571+00:00",
+  "run_id": "20260828T230500Z",
+  "step": "INDICATOR_CORPUS_RESOLUTION",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "SOURCE_ROOT_CATALOG_ROWS_2_UNIQUE_1",
+  "verdict": "CORPUS_FOUND_2363040_SQLITE_MACRO_RESEARCH_MARKET_DB_MACRO_CANDLES_1M",
   "next_gate": null,
   "facts": {}
 }
