@@ -1,11 +1,11 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-29T03:14:03.813479+00:00",
-  "run_id": "20260829T031401Z",
-  "step": "TRADINGVIEW_SCRIPT_ROUTE_FIX_V3",
+  "published_at_utc": "2026-08-29T03:14:50.076658+00:00",
+  "run_id": "20260829T031447Z",
+  "step": "TRADINGVIEW_PROVIDER_EXACT_REPAIR_BINDING",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "TV_ROUTE_V3_PATCH_FAILED",
-  "next_gate": "RESTORE_AND_PATCH_EXACT_FUNCTION",
+  "verdict": "EXACT_CURRENT_WORKER_AND_TRADINGVIEW_ROUTE_SHAPE_CAPTURED",
+  "next_gate": "RESTORE_IF_NEEDED_AND_PATCH_EXACT_EXISTING_FUNCTION",
   "facts": {}
 }
