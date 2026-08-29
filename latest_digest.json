@@ -1,18 +1,16 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-29T03:25:40.762333+00:00",
-  "run_id": "20260829T032525Z",
-  "step": "BASELINE_200_SIMPLE_QUEUE_ACTIVATION",
+  "published_at_utc": "2026-08-29T03:26:35.350355+00:00",
+  "run_id": "20260829T032633Z",
+  "step": "BASELINE_200_FIRST_RUNTIME_ERROR_DIAGNOSIS",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "BASELINE_200_QUEUE_PROCESS_EXITED_DURING_INITIAL_START",
-  "next_gate": "READ_QUEUE_LOG_AND_FIX_ONLY_FIRST_RUNTIME_ERROR",
+  "verdict": "FIRST_BASELINE_200_RUNTIME_ERROR_CAPTURED",
+  "next_gate": "FIX_ONLY_CAPTURED_RUNTIME_ERROR_THEN_RESUME",
   "facts": {
     "ATTEMPTED": "0",
-    "COMPLETED": "0",
-    "FAILED": "0",
-    "SKIPPED": "0",
+    "FIRST_ERROR": "ModuleNotFoundError: No module named indicator_lab_discovery_v2",
     "SOURCE_POOL": "200",
-    "WORKER_RUNNING": "NO"
+    "TRACEBACK_COUNT": "1"
   }
 }
