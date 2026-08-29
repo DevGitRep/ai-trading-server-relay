@@ -1,20 +1,22 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-29T17:17:58.308567+00:00",
-  "run_id": "20260829T171756Z",
-  "step": "BUILD_SINGLE_DEFAULT_PROVEN_REFERENCE",
+  "published_at_utc": "2026-08-29T17:31:47.415859+00:00",
+  "run_id": "20260829T173145Z",
+  "step": "CAPTURE_FINAL_LIBRARY_TO_PROVEN_RUNNER_HANDOFF",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "PROVEN_PIPELINE_NOW_HAS_SEPARATE_SINGLE_DEFAULT_REFERENCE",
-  "next_gate": "USER_VALIDATE_SINGLE_DEFAULT_JURIK_REFERENCE",
+  "verdict": "FINAL_HANDOFF_CONTRACT_CAPTURED",
+  "next_gate": "PATCH_TESTPINE_TO_USE_LIBRARY_AND_SINGLE_DEFAULT_RUN",
   "facts": {
+    "ACQ_KEYS": "candidate_id;source_path;source_sha256",
+    "CAND_SOURCE_RETURNS": "NONE",
+    "CODE_CHANGED": "NO",
     "CONFIGS_PER_INDICATOR": "1",
-    "EXTERNAL_LOOP": "NO",
-    "HELPER_SYNTAX": "PASS",
-    "MASTER_CHANGED": "YES",
-    "ORIGINAL_REFERENCE_CHANGED": "NO",
-    "OVERRIDES": "EMPTY",
-    "STATIC_SELFTEST": "PASS",
+    "DB_WRITE": "NO",
+    "INGEST_RETURNS": "NONE",
+    "JURIK_SINGLE_DEFAULT_RUNTIME": "PASS",
+    "PROC_ASSIGNS": "acquisition=acquisition_for_url(url);candidate_id=acquisition[&#x27;candidate_id&#x27;];source_info=candidate_source(candidate_id);source=source_info.get(&#x27;pine_source&#x27;) or &#x27;&#x27;;source_path=Pat",
+    "SOURCE_INFO_KEYS": "name;pine_source;source_sha256",
     "TESTING": "NO"
   }
 }
