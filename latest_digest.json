@@ -1,21 +1,22 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-29T20:19:40.659654+00:00",
-  "run_id": "20260829T201938Z",
-  "step": "VERIFY_TESTPINE_RUNTIME_RESULT",
+  "published_at_utc": "2026-08-29T20:23:11.474169+00:00",
+  "run_id": "20260829T202309Z",
+  "step": "INSPECT_POST_SIGNAL_PERFORMANCE_STATUS",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "NO_TEST_RUN_PERSISTED",
-  "next_gate": "INSPECT_POST_SIGNAL_PERFORMANCE_STATUS",
+  "verdict": "SIGNAL_EXTRACTION_BLOCKS_PERFORMANCE",
+  "next_gate": "REUSE_PROVEN_SIGNAL_SELECTION_METHOD_FOR_LIBRARY_SCRIPTS",
   "facts": {
     "CODE_CHANGED": "NO",
     "DB_WRITE": "NO",
-    "DD": "NONE",
-    "NET": "NONE",
+    "EXTRACTOR": "NONE",
+    "EXTRACTOR_ERROR": "NONE",
+    "LONG": "NONE",
     "PERFORMANCE_STATUS": "NOT_TESTED",
-    "PF": "NONE",
-    "PF_ROWS": "0",
-    "TEST_RUNS": "0",
-    "WIN": "NONE"
+    "RUNTIME_TEST": "NO",
+    "SHORT": "NONE",
+    "SOURCE_FOUND": "YES",
+    "SOURCE_ORIGIN": "CANDIDATE"
   }
 }
