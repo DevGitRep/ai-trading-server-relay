@@ -1,23 +1,20 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-29T19:33:52.144682+00:00",
-  "run_id": "20260829T193350Z",
-  "step": "RESOLVE_TESTPINE_RUNNER_SIGNAL_CONTRACT",
+  "published_at_utc": "2026-08-29T19:34:58.065135+00:00",
+  "run_id": "20260829T193455Z",
+  "step": "INSPECT_EXPLICIT_SIGNAL_PAIR_CONTRACT",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "RUNNER_AND_TESTPINE_CALL_CONTRACT_CAPTURED",
-  "next_gate": "FIX_EXACT_CONTRACT_BREAK_ONLY",
+  "verdict": "SIGNAL_EXTRACTOR_CONTRACT_CAPTURED",
+  "next_gate": "DECIDE_IF_LIBRARY_INDICATORS_REQUIRE_EXISTING_FALLBACK",
   "facts": {
     "CODE_CHANGED": "NO",
     "DB_WRITE": "NO",
-    "PRE_SIGNAL_CALLS": "26",
-    "RUNNER_ARGS": "",
-    "RUNNER_KWARGS": "pine_path:str(source_path),candles:candles,overrides:{},observability:_baseline_observability_mapping(observability)",
-    "RUNNER_TARGET": "result",
-    "SERIES_ASSIGNMENTS": "4",
-    "SIGNAL_PAIR": "signals : explicit_signal_pair(source)",
-    "TESTING": "NO",
-    "TESTPINE_PROCESS_CALLS": "0",
-    "TESTPINE_PYTHON": "YES"
+    "EXPLICIT_CALLS": "14",
+    "EXPLICIT_CONDITIONS": "6",
+    "EXPLICIT_RETURNS": "3",
+    "RESULT_USES": "7",
+    "SIGNAL_PATH_ASSIGNMENTS": "7",
+    "TESTING": "NO"
   }
 }
