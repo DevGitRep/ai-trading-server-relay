@@ -1,8 +1,8 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-08-29T10:49:44.154079+00:00`
-- Run ID: `20260829T104942Z`
+- Published UTC: `2026-08-29T10:54:51.877707+00:00`
+- Run ID: `20260829T105449Z`
 - Step: `READ_2000_SCRIPT_ACQUISITION_AND_LIBRARY_CARD_CONTRACT`
 - Status: `SUCCESS`
 - Exit code: `0`
