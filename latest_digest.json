@@ -1,22 +1,18 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-29T17:04:37.992213+00:00",
-  "run_id": "20260829T170435Z",
-  "step": "CAPTURE_EXACT_PROVEN_218_EXECUTION_COMMAND",
+  "published_at_utc": "2026-08-29T17:07:53.850713+00:00",
+  "run_id": "20260829T170751Z",
+  "step": "LOCATE_SINGLE_DEFAULT_PATH_IN_PROVEN_RUNNER",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "PROVEN_218_COMMAND_READY_FOR_LITERAL_REPRODUCTION",
-  "next_gate": "USER_RUN_EXACT_PROVEN_218_COMMAND",
+  "verdict": "PROVEN_PIPELINE_INSPECTED_WITHOUT_RUNNING_218_SWEEP",
+  "next_gate": "BUILD_TESTPINE_ONE_DEFAULT_CONFIG_PER_INDICATOR",
   "facts": {
     "CODE_CHANGED": "NO",
-    "COMMAND_COUNT": "1",
-    "COMMAND_FOUND": "YES",
-    "CONFIGS": "218",
-    "DATASET_CANDLES": "525600",
     "DB_WRITE": "NO",
-    "NODE_HEAP_MB": "8192",
-    "PARAM_FOUND": "NO",
-    "REFERENCE_FOUND": "YES",
+    "EMPTY_OVERRIDES": "NO",
+    "LITERAL_218": "0",
+    "OVERRIDES": "NONE",
     "TESTING": "NO"
   }
 }
