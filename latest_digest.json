@@ -1,19 +1,23 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-29T19:27:33.436571+00:00",
-  "run_id": "20260829T192731Z",
-  "step": "RESOLVE_TESTPINE_EARLY_EXIT_TRUTH",
+  "published_at_utc": "2026-08-29T19:29:17.985367+00:00",
+  "run_id": "20260829T192915Z",
+  "step": "CLASSIFY_TESTPINE_EARLY_RETURNS_SAFE",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "EARLY_EXIT_AND_REAL_PERFORMANCE_STATE_CAPTURED",
-  "next_gate": "FIX_ONLY_IF_EARLY_EXIT_IS_INCORRECT",
+  "verdict": "EARLY_RETURN_REASONS_CAPTURED",
+  "next_gate": "DECIDE_IF_EARLY_EXIT_IS_VALID_OR_LIBRARY_BUG",
   "facts": {
-    "ACTUAL_PERFORMANCE": "0",
+    "CAUSALITY": "PENDING",
     "CODE_CHANGED": "NO",
+    "CONVERSION": "NOT_STARTED",
     "DB_WRITE": "NO",
-    "EARLY_RETURNS": "3",
     "LATEST": "5",
     "NOT_TESTED": "5",
+    "PARITY": "NOT_STARTED",
+    "PERFORMANCE": "NOT_TESTED",
+    "REPAINT": "PENDING",
+    "RETURNS": "3",
     "TESTING": "NO"
   }
 }
