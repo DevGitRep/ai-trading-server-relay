@@ -1,16 +1,19 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-28T22:29:50.884019+00:00",
-  "run_id": "20260828T222948Z",
-  "step": "PINE_REPORT_V2_DATA_CONTRACT",
+  "published_at_utc": "2026-08-29T03:01:23.801272+00:00",
+  "run_id": "20260829T030114Z",
+  "step": "PINE_VISUAL_REPORT_V2_ACTUAL_ROUTE",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "REPORT_ROUTE_AND_ENTITLEMENT_CONTRACT_RESOLVED",
-  "next_gate": "BUILD_VISUAL_REPORT_V2_WITH_SERVER_SIDE_ENTITLEMENT",
+  "verdict": "VISUAL_REPORT_V2_LIVE_FREE_PRO_SAFE_AND_DOCUMENTED",
+  "next_gate": "VISUALLY_REVIEW_LIBRARY_AND_REPORT_UI",
   "facts": {
-    "BASELINE_WORKER_RUNNING": "YES",
-    "ENTITLEMENT_CALLABLE_COUNT": "17",
-    "REPORT_FETCH_COUNT": "0",
-    "ROUTE_COUNT": "2"
+    "BASELINE_WORKER_RUNNING": "NO",
+    "FREE_HTTP": "200",
+    "FREE_SAFE": "YES",
+    "FREE_VISUAL": "YES",
+    "PRO_HAS_RESULTS": "YES",
+    "PRO_HTTP": "200",
+    "PRO_VISUAL": "YES"
   }
 }
