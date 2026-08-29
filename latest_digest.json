@@ -1,16 +1,30 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-29T22:10:17.885324+00:00",
-  "run_id": "20260829T221015Z",
-  "step": "INSPECT_EXACT_RESTORED_LIBRARY_CARD_PAYLOAD",
+  "published_at_utc": "2026-08-29T22:12:11.997345+00:00",
+  "run_id": "20260829T221204Z",
+  "step": "PATCH_EXACT_LIBRARY_ROLE_PAYLOAD_AND_BADGE",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "EXACT_CARD_STRUCTURE_CAPTURED",
-  "next_gate": "PATCH_ONLY_EXACT_CARD_PAYLOAD",
+  "verdict": "PINE_LIBRARY_ROLE_BADGES_LIVE",
+  "next_gate": "CONTINUE_TESTPINE_AUTO_CLASSIFICATION",
   "facts": {
-    "CODE_CHANGED": "NO",
+    "BACKEND_STOPPED": "1",
+    "DB_NOT": "392",
+    "DB_RUNTIME": "1",
+    "DB_SIGNAL": "0",
+    "DB_SUPPORTING": "0",
     "DB_WRITE": "NO",
-    "PAYLOADS": "1",
-    "SQLS": "1"
+    "ERROR": "NONE",
+    "FREE_BADGES": "356",
+    "FREE_HTTP": "200",
+    "HELPER_PATCH": "YES",
+    "LIVE_NOT": "355",
+    "LIVE_RUNTIME": "1",
+    "LIVE_SIGNAL": "0",
+    "LIVE_SUPPORTING": "0",
+    "PRO_BADGES": "356",
+    "PRO_HTTP": "200",
+    "PY_COMPILE": "PASS",
+    "TEMPLATE_PATCH": "YES"
   }
 }
