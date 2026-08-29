@@ -1,21 +1,22 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-29T14:55:58.135436+00:00",
-  "run_id": "20260829T145556Z",
-  "step": "EXTRACT_EXACT_TESTPINE_RUNNER_CONTRACT",
+  "published_at_utc": "2026-08-29T14:58:23.769561+00:00",
+  "run_id": "20260829T145821Z",
+  "step": "READ_EXISTING_BASELINE_BATCH_RUNNER_CLI",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "EXACT_DOCUMENTED_TEST_CONTRACT_CAPTURED",
-  "next_gate": "BUILD_TESTPINE_200_DEFAULT_CONFIG_RUNNER",
+  "verdict": "EXISTING_BATCH_RUNNER_CLI_CAPTURED",
+  "next_gate": "BUILD_TESTPINE_WRAPPER",
   "facts": {
+    "ALPHA_OPTION": "NO",
     "CODE_CHANGED": "NO",
-    "COMMAND_LINES": "2",
+    "CONFIG_OPTION": "NO",
     "DB_WRITE": "NO",
-    "GENERIC_RUNNER": "YES",
-    "JURIK_REFERENCE": "YES",
-    "MASTER_READ": "YES",
-    "PYFILES": "indicator_lab_entitlement_projection_v1_1.py,pine_baseline_batch_200.py,parameter_runner.py,jurik_working_reference_v1.py",
-    "SINGLE_DEFAULT_CONFIG": "YES",
+    "DEFAULT_OPTION": "NO",
+    "LIMIT_OPTION": "NO",
+    "ORDER_OPTION": "YES",
+    "RECENT_OPTION": "YES",
+    "SCRIPT_TYPE_OPTION": "NO",
     "TESTING": "NO"
   }
 }
