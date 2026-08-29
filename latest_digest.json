@@ -1,22 +1,20 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-29T21:15:23.855094+00:00",
-  "run_id": "20260829T211521Z",
-  "step": "TRACE_CANONICAL_JURIK_SIGNAL_BYPASS",
+  "published_at_utc": "2026-08-29T21:20:04.889409+00:00",
+  "run_id": "20260829T212002Z",
+  "step": "IMPLEMENT_PINETS_DOCUMENTED_SIGNAL_EXAMPLE",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "JURIK_SPECIAL_HANDLING_EXISTS_OUTSIDE_SIGNAL_GATE",
-  "next_gate": "TRACE_JURIK_ID_DATAFLOW_INTO_PROCESS_SOURCE",
+  "verdict": "DOCUMENTED_IMPLEMENTATION_REVERTED_SAFELY",
+  "next_gate": "REPORT_DOCUMENTED_EXAMPLE_FAILURE",
   "facts": {
     "CODE_CHANGED": "NO",
     "DB_WRITE": "NO",
-    "JURIK_IN_PROCESS": "0",
-    "JURIK_REFS": "2",
-    "JURIK_SIGNAL_STMT": "NO",
-    "PROCESS_ARGS": "4",
-    "PROCESS_CALLS": "2",
-    "RUNTIME_TEST": "NO",
-    "SIGNAL_ARG": "NO",
-    "SIGNAL_ASSIGN": "7"
+    "DOC_EXAMPLE": "NOT_RUN",
+    "ERROR": "expected &#x27;except&#x27; or &#x27;finally&#x27; block (pine_baseline_batch_200.py, line 2834)",
+    "LIBRARY_RUN": "NO",
+    "LONG": "NONE",
+    "SELFTEST": "NOT_RUN",
+    "SHORT": "NONE"
   }
 }
