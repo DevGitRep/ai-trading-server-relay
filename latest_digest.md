@@ -1,19 +1,20 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-08-29T17:07:53.850713+00:00`
-- Run ID: `20260829T170751Z`
-- Step: `LOCATE_SINGLE_DEFAULT_PATH_IN_PROVEN_RUNNER`
+- Published UTC: `2026-08-29T17:14:06.130785+00:00`
+- Run ID: `20260829T171404Z`
+- Step: `LOCATE_PROVEN_SINGLE_CONFIG_EXECUTION_POINT`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `PROVEN_PIPELINE_INSPECTED_WITHOUT_RUNNING_218_SWEEP`
-- Next gate: `BUILD_TESTPINE_ONE_DEFAULT_CONFIG_PER_INDICATOR`
+- Verdict: `PROVEN_RUNNER_EXECUTION_STRUCTURE_CAPTURED`
+- Next gate: `MAKE_PROVEN_PIPELINE_RUN_ONE_DEFAULT_CONFIG`
 
 ## Facts
 
 - `CODE_CHANGED`: `NO`
+- `CONFIG_NAMES`: `PARAMETER_RUNNER;overrides`
 - `DB_WRITE`: `NO`
-- `EMPTY_OVERRIDES`: `NO`
-- `LITERAL_218`: `0`
-- `OVERRIDES`: `NONE`
+- `FUNCS`: `NONE`
+- `LOOPS`: `2`
+- `RUN_CALLS`: `importlib.util.spec_from_file_location(&#x27;parameter_runner&#x27;, PARAMETER_RUNNER);runner.run(pine_path=str(pine_path), candles=candles, overrides=overrides, observability={})`
 - `TESTING`: `NO`
