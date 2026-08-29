@@ -1,22 +1,19 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-29T22:16:35.068423+00:00",
-  "run_id": "20260829T221633Z",
-  "step": "VERIFY_TESTPINE_10_AUTO_CLASSIFICATION",
+  "published_at_utc": "2026-08-29T22:17:40.436249+00:00",
+  "run_id": "20260829T221738Z",
+  "step": "LOCATE_TESTPINE_POST_RUN_OUTCOME_EVIDENCE",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "LATEST_10_NOT_CLASSIFIED",
-  "next_gate": "FIX_POST_TEST_OUTCOME_CLASSIFICATION",
+  "verdict": "ATTEMPT_EVIDENCE_FOUND",
+  "next_gate": "PERSIST_EXACT_OUTCOME_AT_BASELINE_RETURN_PATH",
   "facts": {
+    "ATTEMPT_FIELDS": "1",
     "CODE_CHANGED": "NO",
     "DB_WRITE": "NO",
-    "GLOBAL_NOT": "392",
-    "GLOBAL_RUNTIME": "1",
-    "GLOBAL_SIGNAL": "0",
-    "GLOBAL_SUPPORTING": "0",
-    "L10_NOT": "10",
-    "L10_RUNTIME": "0",
-    "L10_SIGNAL": "0",
-    "L10_SUPPORTING": "0"
+    "ERROR_FIELDS": "0",
+    "FIELDS": "13",
+    "LATEST": "10",
+    "POPULATED_FIELDS": "13"
   }
 }
