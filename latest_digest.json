@@ -1,22 +1,20 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-29T19:47:04.882827+00:00",
-  "run_id": "20260829T194702Z",
-  "step": "TRACE_CURRENT_AND_HISTORICAL_EXECUTION_DIFFERENCE",
+  "published_at_utc": "2026-08-29T19:48:27.401948+00:00",
+  "run_id": "20260829T194825Z",
+  "step": "TRACE_JURIK_ONLY_EXECUTION_HELPER",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "JURIK_REFERENCE_USES_EXECUTION_CALLS_ABSENT_FROM_GENERIC_BASELINE",
-  "next_gate": "TRACE_JURIK_ONLY_EXECUTION_HELPER",
+  "verdict": "JURIK_REFERENCE_LOADS_DYNAMIC_MODULE_FROM_CANDIDATE_SOURCE_PATH",
+  "next_gate": "IDENTIFY_DYNAMIC_MODULE_CREATION_AND_REUSE_PATH",
   "facts": {
     "CODE_CHANGED": "NO",
     "DB_WRITE": "NO",
-    "JURIK_ONLY_CALLS": "15",
-    "JURIK_ONLY_NAMES": "RuntimeError,dumps,exec_module,execute(&#x27;\\n SELECT pine_source\\n FROM candidates\\n WHERE candidate_id:?\\n LIMIT",
-    "MASTER_HITS": "26",
-    "REFERENCE_HASH_SAME": "NO",
-    "SHARED_CALLS": "7",
-    "SINGLE_LOCAL_MODULES": "0",
+    "DYNAMIC_LOADER": "8",
+    "EXEC_MODULE": "4",
+    "PINE_SOURCE_QUERY": "4",
+    "SINGLE_FOUND": "YES",
     "TESTING": "NO",
-    "WORKING_LOCAL_MODULES": "0"
+    "WORKING_FOUND": "YES"
   }
 }
