@@ -1,21 +1,19 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-29T19:23:03.161847+00:00",
-  "run_id": "20260829T192300Z",
-  "step": "PATCH_TESTPINE_PRE_RETURN_RESULT_SAVE",
+  "published_at_utc": "2026-08-29T19:26:21.209717+00:00",
+  "run_id": "20260829T192618Z",
+  "step": "VERIFY_TESTPINE_RESULT_PERSISTENCE_FIX",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "MINIMAL_EXISTING_SAVE_RESULT_REUSE_PATCHED",
-  "next_gate": "RUN_ONE_NEW_TESTPINE_AND_VERIFY_TEST_RUN",
+  "verdict": "TESTPINE_RESULT_STILL_NOT_PERSISTED",
+  "next_gate": "TRACE_PRE_RETURN_METRICS_AT_RUNTIME",
   "facts": {
+    "CODE_CHANGED": "NO",
     "DB_WRITE": "NO",
-    "MARKERS": "3",
-    "MASTER_CHANGED": "NO",
-    "PRE_SAVE_RETURNS": "3",
-    "SAVE_PATH": "EXISTING_SAVE_RESULT",
-    "SAVE_REQUIRES_PF": "YES",
-    "SELFTEST": "PASS",
-    "SYNTAX": "PASS",
-    "TESTING": "NO"
+    "PERFORMANCE_STATUS": "NOT_TESTED",
+    "PERSISTENCE": "FAIL",
+    "PF_ROWS": "0",
+    "TESTING": "NO",
+    "TEST_RUN_ROWS": "0"
   }
 }
