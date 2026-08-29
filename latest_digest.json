@@ -1,13 +1,17 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-29T03:09:35.327646+00:00",
-  "run_id": "20260829T030933Z",
-  "step": "TRADINGVIEW_PUBLIC_DISCOVERY_FIX",
+  "published_at_utc": "2026-08-29T03:10:42.972658+00:00",
+  "run_id": "20260829T031040Z",
+  "step": "TRADINGVIEW_CURRENT_MARKUP_STRUCTURE",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "TRADINGVIEW_PAGE_REACHABLE_BUT_SCRIPT_LINK_PATTERN_UNRESOLVED",
-  "next_gate": null,
+  "verdict": "TRADINGVIEW_CURRENT_SCRIPT_DISCOVERY_MARKUP_CAPTURED",
+  "next_gate": "PATCH_EXISTING_PROVIDER_AGAINST_ACTUAL_CURRENT_MARKUP",
   "facts": {
-    "PUBLIC_SCRIPT_LINKS": "0"
+    "BYTES": "777487",
+    "HREF_COUNT": "429",
+    "HTTP": "200",
+    "JSONISH_SCRIPT_TAGS": "8",
+    "SCRIPT_OCCURRENCES": "116"
   }
 }
