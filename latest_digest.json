@@ -1,15 +1,11 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-29T03:12:34.158405+00:00",
-  "run_id": "20260829T031232Z",
-  "step": "TRADINGVIEW_CURRENT_MARKUP_PROVIDER_PATCH",
+  "published_at_utc": "2026-08-29T03:14:03.813479+00:00",
+  "run_id": "20260829T031401Z",
+  "step": "TRADINGVIEW_SCRIPT_ROUTE_FIX_V3",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "CURRENT_MARKUP_PROVIDER_PATCH_FAILED",
-  "next_gate": "REVIEW_PROVIDER_PATCH_ERROR",
-  "facts": {
-    "AGGREGATOR_DISTINCT_TV_LEADS": "0",
-    "BATCH_COMPLETED": "0",
-    "DIRECT_DISTINCT_TV_LEADS": "0"
-  }
+  "verdict": "TV_ROUTE_V3_PATCH_FAILED",
+  "next_gate": "RESTORE_AND_PATCH_EXACT_FUNCTION",
+  "facts": {}
 }
