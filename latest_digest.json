@@ -1,21 +1,19 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-29T15:40:50.677248+00:00",
-  "run_id": "20260829T154048Z",
-  "step": "READ_BASELINE_COUNT_AND_PANDAS_RUNTIME",
+  "published_at_utc": "2026-08-29T15:45:25.624544+00:00",
+  "run_id": "20260829T154523Z",
+  "step": "READ_BASELINE_PARAMETERIZATION_POINTS",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "BASELINE_COUNT_CONTROL_AND_RUNTIME_CAPTURED",
-  "next_gate": "MAKE_TESTPINE_COUNT_MEAN_INDICATORS",
+  "verdict": "EXISTING_BASELINE_RUNNER_READY_FOR_MINIMAL_COUNT_PARAMETERIZATION_REVIEW",
+  "next_gate": "PATCH_EXISTING_RUNNER_FOR_EXACT_INDICATOR_COUNT",
   "facts": {
     "BASE_FOUND": "YES",
     "CODE_CHANGED": "NO",
-    "COUNT_CLI": "NO",
-    "COUNT_ENV": "NO",
     "DB_WRITE": "NO",
-    "LITERAL_200": "YES",
-    "ORDER_CLI": "NO",
-    "PANDAS_RUNTIME": "NONE",
+    "LITERAL_200_REFS": "11",
+    "PANDAS_DECLARED": "NO",
+    "PANDAS_REFS": "12",
     "TESTING": "NO"
   }
 }
