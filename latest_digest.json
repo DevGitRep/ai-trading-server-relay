@@ -1,19 +1,24 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-29T19:39:44.179802+00:00",
-  "run_id": "20260829T193942Z",
-  "step": "INSPECT_EXPLICIT_SIGNAL_EXTRACTOR_DEPENDENCIES",
+  "published_at_utc": "2026-08-29T19:40:33.483134+00:00",
+  "run_id": "20260829T194031Z",
+  "step": "RUN_REAL_EXPLICIT_SIGNAL_EXTRACTOR",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "EXTRACTOR_DEPENDENCIES_RESOLVED",
-  "next_gate": "RUN_EXTRACTOR_WITH_EXISTING_DEPENDENCIES",
+  "verdict": "GENERIC_EXTRACTOR_RECOGNIZES_NEITHER_LATEST5_NOR_JURIK",
+  "next_gate": "COMPARE_GENERIC_TESTPINE_METHOD_WITH_PROVEN_JURIK_METHOD",
   "facts": {
     "CODE_CHANGED": "NO",
     "DB_WRITE": "NO",
-    "DEPS": "direction_score,re",
-    "DEPS_RESOLVED": "YES",
-    "DEP_COUNT": "2",
-    "LOCAL_HELPERS": "1",
+    "EXPLICIT_NONE": "2",
+    "EXPLICIT_PAIRS": "0",
+    "EXTRACTOR_RUNTIME": "REAL_EXISTING_CODE",
+    "EXTRACT_ERRORS": "3",
+    "JURIK_ERROR": "YES",
+    "JURIK_PAIR": "NO",
+    "JURIK_SOURCE": "YES",
+    "LATEST5": "5",
+    "SOURCE_MATCHED": "5",
     "TESTING": "NO"
   }
 }
