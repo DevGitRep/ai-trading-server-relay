@@ -1,21 +1,25 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-29T22:04:49.471395+00:00",
-  "run_id": "20260829T220447Z",
-  "step": "LOCATE_ACTUAL_LIBRARY_ROLE_BADGE_RENDER_PATH",
+  "published_at_utc": "2026-08-29T22:06:49.203145+00:00",
+  "run_id": "20260829T220647Z",
+  "step": "FINALIZE_ACTUAL_LIBRARY_ROLE_BADGES",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "ROLE_BADGE_INSERTED_IN_NON_RENDERED_TEMPLATE_BLOCK",
-  "next_gate": "MOVE_BADGE_TO_ACTUAL_CARD_LOOP",
+  "verdict": "LIVE_ROLE_BADGES_FAILED",
+  "next_gate": "REPORT_UI_FAILURE",
   "facts": {
+    "BACKEND_STOPPED": "0",
     "CODE_CHANGED": "NO",
+    "DB_RUNTIME": "0",
+    "DB_SIGNAL": "0",
+    "DB_SUPPORTING": "0",
     "DB_WRITE": "NO",
-    "HELPER_ROLE_DICTS": "0",
-    "HELPER_ROLE_REFS": "1",
-    "LIVE_HTTP": "200",
-    "LIVE_LABELS": "0",
-    "LIVE_MARKER": "0",
-    "REPORT_BLOCKS": "1",
-    "TEMPLATES": "4"
+    "ERROR": "SYNTAXERROR:INVALID_SYNTAX_INDICATOR_LAB_LIBRARY_UI_V1_PY_LINE_248_",
+    "LIVE_BADGES": "0",
+    "LIVE_HTTP": "NONE",
+    "LIVE_RUNTIME": "0",
+    "LIVE_SIGNAL": "0",
+    "LIVE_SUPPORTING": "0",
+    "PAYLOAD_PATCH": "NO"
   }
 }
