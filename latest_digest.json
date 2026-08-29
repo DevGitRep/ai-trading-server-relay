@@ -1,21 +1,16 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-29T22:09:17.311931+00:00",
-  "run_id": "20260829T220911Z",
-  "step": "RECOVER_PRE_ROLE_LIBRARY_HELPER",
+  "published_at_utc": "2026-08-29T22:10:17.885324+00:00",
+  "run_id": "20260829T221015Z",
+  "step": "INSPECT_EXACT_RESTORED_LIBRARY_CARD_PAYLOAD",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "WORKING_LIBRARY_HELPER_RESTORED",
-  "next_gate": "PATCH_EXACT_RESTORED_CARD_PAYLOAD",
+  "verdict": "EXACT_CARD_STRUCTURE_CAPTURED",
+  "next_gate": "PATCH_ONLY_EXACT_CARD_PAYLOAD",
   "facts": {
-    "BACKEND_STOPPED": "1",
-    "CODE_CHANGED": "YES",
+    "CODE_CHANGED": "NO",
     "DB_WRITE": "NO",
-    "ERROR": "NONE",
-    "LIVE_HTTP": "200",
-    "PY_COMPILE": "PASS",
-    "RESTORED": "YES",
-    "ROLE_DB_PRESERVED": "YES",
-    "VIEW_REPORTS": "356"
+    "PAYLOADS": "1",
+    "SQLS": "1"
   }
 }
