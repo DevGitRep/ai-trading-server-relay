@@ -1,17 +1,18 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-29T07:25:37.686206+00:00",
-  "run_id": "20260829T072535Z",
-  "step": "SOURCE1_EXISTING_FETCH_THEN_INGEST",
+  "published_at_utc": "2026-08-29T07:27:17.277006+00:00",
+  "run_id": "20260829T072714Z",
+  "step": "SOURCE1_EXISTING_DISCOVERY_LEAD_THEN_INGEST",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "SOURCE1_EXISTING_FETCH_INGEST_REACHED_EXACT_GATE",
-  "next_gate": "FIX_ONLY_REPORTED_FETCH_OR_INGEST_CONTRACT",
+  "verdict": "SOURCE1_EXISTING_LEAD_OR_INGEST_CONTRACT_GATE",
+  "next_gate": "FIX_ONLY_REPORTED_EXISTING_HELPER_ARGUMENT",
   "facts": {
-    "FETCH": "fetch_exact_pine_source",
-    "INGEST": "ingest_fetchable_source",
+    "CODE_CHANGED": "NO",
+    "DRIVER_STARTED": "NO",
     "RUNTIME_ERROR": "NONE",
     "SOURCE1_CANDIDATE": "NONE",
+    "SOURCE1_DISCOVERY_LEAD": "NO",
     "SOURCE1_EXACT_PINE_READY": "NO",
     "SOURCE_POOL": "200"
   }
