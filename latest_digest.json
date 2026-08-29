@@ -1,16 +1,23 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-29T13:01:18.867431+00:00",
-  "run_id": "20260829T130116Z",
-  "step": "CHECK_PINE_CONTENT_IMPORT_STATE",
+  "published_at_utc": "2026-08-29T13:02:02.831340+00:00",
+  "run_id": "20260829T130200Z",
+  "step": "CREATE_SELECTED_PINE_CONTENT_TABLES",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "PINE_CONTENT_IMPORT_STATE_READ_ONLY_CHECK_COMPLETE",
-  "next_gate": "CREATE_SELECTED_PINE_CONTENT_TABLES",
+  "verdict": "SELECTED_PINE_CONTENT_TABLES_READY",
+  "next_gate": "IMPORT_EXACT_200_HARVEST_SCRIPTS_AND_SOURCES",
   "facts": {
-    "DB_WRITE": "NO",
     "MASTER_CHANGED": "NO",
     "NETWORK_CALLS": "NO",
+    "OPTIONAL_SYMBOL_INTERVAL": "EXCLUDED",
+    "POPULARITY_FIELDS": "EXCLUDED",
+    "SCRIPTS_TABLE": "YES",
+    "SCRIPT_COLUMNS": "12",
+    "SCRIPT_ROWS": "0",
+    "SOURCES_TABLE": "YES",
+    "SOURCE_COLUMNS": "7",
+    "SOURCE_ROWS": "0",
     "TESTING": "NO"
   }
 }
