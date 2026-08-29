@@ -1,25 +1,16 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-29T12:22:53.959537+00:00",
-  "run_id": "20260829T122252Z",
-  "step": "READ_NATIVE_PACKAGE_CONFIGURED_HARVEST_STATE",
+  "published_at_utc": "2026-08-29T12:23:40.444865+00:00",
+  "run_id": "20260829T122338Z",
+  "step": "RESUME_NATIVE_HARVEST_EEF8A98",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "NATIVE_200_HARVEST_READY_FOR_NATIVE_RESUME",
-  "next_gate": "RESUME_ONLY_SELECTED_HARVEST_ID",
+  "verdict": "RESUME_NOT_STARTED_CHECKPOINT_NOT_PAUSED",
+  "next_gate": "READ_CURRENT_NATIVE_HARVEST_STATE",
   "facts": {
-    "CODE_CHANGED": "NO",
-    "CORPUS_SCRIPTS": "259",
-    "CORPUS_SOURCES": "184",
-    "DB_WRITE": "NO",
-    "HARVEST_ROWS": "4",
+    "HARVEST_FOUND": "NO",
+    "HARVEST_STATUS": "",
     "NETWORK_CALLS": "NO",
-    "NEW_HARVEST_CALLS": "NO",
-    "SELECTED_CACHED": "51",
-    "SELECTED_ID": "eeef8a98",
-    "SELECTED_PENDING": "17",
-    "SELECTED_SEEN": "200",
-    "SELECTED_STATUS": "paused",
-    "SELECTED_STORED": "132"
+    "NEW_HARVEST_CREATED": "NO"
   }
 }
