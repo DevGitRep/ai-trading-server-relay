@@ -1,21 +1,22 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-08-29T21:20:04.889409+00:00`
-- Run ID: `20260829T212002Z`
-- Step: `IMPLEMENT_PINETS_DOCUMENTED_SIGNAL_EXAMPLE`
+- Published UTC: `2026-08-29T21:21:37.624011+00:00`
+- Run ID: `20260829T212134Z`
+- Step: `IMPLEMENT_DOCUMENTED_RUNTIME_SIGNAL_FALLBACK`
 - Status: `SUCCESS`
 - Exit code: `0`
 - Verdict: `DOCUMENTED_IMPLEMENTATION_REVERTED_SAFELY`
-- Next gate: `REPORT_DOCUMENTED_EXAMPLE_FAILURE`
+- Next gate: `REPORT_EXAMPLE_FAILURE`
 
 ## Facts
 
 - `CODE_CHANGED`: `NO`
 - `DB_WRITE`: `NO`
 - `DOC_EXAMPLE`: `NOT_RUN`
-- `ERROR`: `expected &#x27;except&#x27; or &#x27;finally&#x27; block (pine_baseline_batch_200.py, line 2834)`
+- `ERROR`: `runner candle loader unavailable`
 - `LIBRARY_RUN`: `NO`
 - `LONG`: `NONE`
-- `SELFTEST`: `NOT_RUN`
+- `PY_COMPILE`: `PASS`
+- `SELFTEST`: `PASS`
 - `SHORT`: `NONE`
