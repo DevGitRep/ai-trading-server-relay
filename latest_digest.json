@@ -1,21 +1,20 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-29T21:23:18.708263+00:00",
-  "run_id": "20260829T212316Z",
-  "step": "INSTALL_PINETS_DOCUMENTED_RUNTIME_SIGNAL_FALLBACK",
+  "published_at_utc": "2026-08-29T21:25:42.972950+00:00",
+  "run_id": "20260829T212540Z",
+  "step": "INSTALL_PINETS_DOCUMENTED_SIGNAL_CONTRACT",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "DOCUMENTED_IMPLEMENTATION_REVERTED_SAFELY",
-  "next_gate": "REPORT_EXAMPLE_FAILURE",
+  "verdict": "DOCUMENTED_SIGNAL_CONTRACT_IMPLEMENTED",
+  "next_gate": "USER_RUN_TESTPINE_1_RECENT",
   "facts": {
-    "CODE_CHANGED": "NO",
+    "CODE_CHANGED": "YES",
     "DB_WRITE": "NO",
-    "DOC_EXAMPLE": "NOT_RUN",
-    "ERROR": "proven runner API missing",
+    "DOC_CONTRACT": "PASS",
+    "ERROR": "NONE",
     "LIBRARY_RUN": "NO",
-    "LONG": "NONE",
     "PY_COMPILE": "PASS",
     "SELFTEST": "PASS",
-    "SHORT": "NONE"
+    "WRAPPER_CONTRACT": "PASS"
   }
 }
