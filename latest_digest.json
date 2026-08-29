@@ -1,24 +1,24 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-29T21:50:14.388986+00:00",
-  "run_id": "20260829T215012Z",
-  "step": "FINISH_PINE_LIBRARY_SIGNAL_ROLES",
+  "published_at_utc": "2026-08-29T21:52:40.506092+00:00",
+  "run_id": "20260829T215235Z",
+  "step": "SAFE_FINALIZE_PINE_LIBRARY_SIGNAL_ROLES",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "IMPLEMENTATION_FAILED",
+  "verdict": "FINALIZATION_FAILED",
   "next_gate": "REPORT_FAILURE",
   "facts": {
-    "CODE_CHANGED": "YES",
+    "BACKENDS_STOPPED": "0",
+    "CODE_CHANGED": "NO",
     "DB_WRITE": "NO",
-    "ERROR": "OSERROR:_ERRNO_8_EXEC_FORMAT_ERROR:_HOME_TRANSFORMER_FREQTRADE-BOT_USER_DATA_ORDERFLOW_DAS",
+    "ERROR": "RUNTIMEERROR:ROLE_BADGES_NOT_RENDERED",
     "LIVE_BADGES": "0",
-    "LIVE_HTTP": "NONE",
-    "NOT_CLASSIFIED": "0",
-    "RUNTIME_UNSUPPORTED": "0",
+    "LIVE_HTTP": "200",
+    "NOT_CLASSIFIED": "392",
+    "RUNTIME_UNSUPPORTED": "1",
+    "SELFTEST": "PASS",
     "SIGNAL": "0",
     "SUPPORTING": "0",
-    "SYNC": "YES",
-    "TESTPINE_MODE": "PYTHON",
-    "UI": "YES"
+    "SYNC": "PASS"
   }
 }
