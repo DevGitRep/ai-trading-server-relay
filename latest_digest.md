@@ -1,22 +1,21 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-08-29T16:37:16.906509+00:00`
-- Run ID: `20260829T163714Z`
-- Step: `CAPTURE_REAL_POST_DISCOVERY_HANDOFF`
+- Published UTC: `2026-08-29T16:38:00.402967+00:00`
+- Run ID: `20260829T163758Z`
+- Step: `READ_PROCESS_SOURCE_INPUT_CONTRACT`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `REAL_NESTED_POST_DISCOVERY_FLOW_CAPTURED`
-- Next gate: `REPLACE_LEGACY_DISCOVERY_WITH_LIBRARY_SELECTION`
+- Verdict: `PROCESS_SOURCE_CONTRACT_CAPTURED`
+- Next gate: `FEED_STORED_LIBRARY_DIRECTLY_INTO_EXISTING_PIPELINE`
 
 ## Facts
 
+- `ARGS`: `sequence_no,item,query,candles`
+- `CALLS`: `candidate_source,get,ingest_fetchable_source,run,source_id_for_url,static_audit_source,update_batch`
 - `CODE_CHANGED`: `NO`
 - `DB_WRITE`: `NO`
-- `POST_ASSIGNS`: `args,completed,made_progress,parser,provider,results,sequence_no,state,url`
-- `POST_CALLS`: `get,process_source`
-- `POST_TABLES`: `NONE`
-- `POST_TERMS`: `NONE`
-- `SEARCH_LINE`: `3068`
 - `TESTING`: `NO`
-- `WORKER_CALLS`: `NONE`
+- `USES_PROVIDER`: `YES`
+- `USES_SOURCE`: `YES`
+- `USES_URL`: `YES`
