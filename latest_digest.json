@@ -1,11 +1,16 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-29T03:18:40.926760+00:00",
-  "run_id": "20260829T031838Z",
-  "step": "TRADINGVIEW_PROVIDER_FINAL_BINDING_V5",
+  "published_at_utc": "2026-08-29T03:20:12.111005+00:00",
+  "run_id": "20260829T032009Z",
+  "step": "TRADINGVIEW_DISCOVERY_ADAPTER_BINDING",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "V5_OVERRIDE_INSTALL_ABORTED",
-  "next_gate": "RESTORE_PRE_V5_BACKUP",
-  "facts": {}
+  "verdict": "ADAPTER_DID_NOT_REPRODUCE_PROVEN_LIVE_POOL",
+  "next_gate": "COMPARE_ADAPTER_EXTRACTION_WITH_500_LEAD_PROBE",
+  "facts": {
+    "ADAPTER_CATALOGUE": "",
+    "AGGREGATOR_DISTINCT_TV_LEADS": "",
+    "BATCH_COMPLETED": "0",
+    "DIRECT_DISTINCT_TV_LEADS": ""
+  }
 }
