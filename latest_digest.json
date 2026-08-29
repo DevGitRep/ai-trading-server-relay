@@ -1,20 +1,21 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-29T20:17:11.079068+00:00",
-  "run_id": "20260829T201708Z",
-  "step": "PATCH_NESTED_RESULT_MAPPING_AST",
+  "published_at_utc": "2026-08-29T20:19:40.659654+00:00",
+  "run_id": "20260829T201938Z",
+  "step": "VERIFY_TESTPINE_RUNTIME_RESULT",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "NESTED_OUTPUT_MAPPING_PATCHED_AND_SELFTESTED",
-  "next_gate": "USER_RUN_TESTPINE_1_RECENT",
+  "verdict": "NO_TEST_RUN_PERSISTED",
+  "next_gate": "INSPECT_POST_SIGNAL_PERFORMANCE_STATUS",
   "facts": {
-    "CODE_CHANGED": "YES",
+    "CODE_CHANGED": "NO",
     "DB_WRITE": "NO",
-    "MAPPING_PATCH": "YES",
-    "PY_COMPILE": "PASS",
-    "RUNTIME_TEST": "NO",
-    "SELFTEST": "PASS",
-    "SIGNAL_LOOKUPS": "2",
-    "TEMP_WORKAROUND": "REMOVED"
+    "DD": "NONE",
+    "NET": "NONE",
+    "PERFORMANCE_STATUS": "NOT_TESTED",
+    "PF": "NONE",
+    "PF_ROWS": "0",
+    "TEST_RUNS": "0",
+    "WIN": "NONE"
   }
 }
