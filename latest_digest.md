@@ -1,21 +1,22 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-08-29T20:33:01.281703+00:00`
-- Run ID: `20260829T203259Z`
-- Step: `TRACE_PROVEN_DIRECT_RESULT_CONSUMERS`
+- Published UTC: `2026-08-29T20:33:50.472734+00:00`
+- Run ID: `20260829T203348Z`
+- Step: `TRACE_EXACT_JURIK_RESULT_CONSUMERS`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `CONSUMES_RUN_RESULT_OTHER_WAY`
-- Next gate: `TRACE_EXACT_DIRECT_CONSUMER`
+- Verdict: `JURIK_REFERENCE_ONLY_EXERCISES_PARAMETER_RUNNER`
+- Next gate: `LOCATE_PROVEN_JURIK_PERFORMANCE_REFERENCE`
 
 ## Facts
 
-- `ACCESS1`: `result.keys()`
 - `CODE_CHANGED`: `NO`
 - `CONSUMER1`: `print(&#x27;JURIK_PINETS_RESULT_TYPE:&#x27; + type(result).__name__, flush:True)`
+- `CONSUMER2`: `if isinstance(result, dict): print(&#x27;JURIK_PINETS_KEYS:&#x27; + &#x27;,&#x27;.join(sorted(result.keys())), flush:True)`
+- `CONSUMER3`: `print(&#x27;JURIK_PINETS_KEYS:&#x27; + &#x27;,&#x27;.join(sorted(result.keys())), flush:True)`
 - `DB_WRITE`: `NO`
-- `DIRECT_CONSUMERS`: `3`
-- `RESULT_ACCESSES`: `1`
-- `RESULT_VARS`: `1`
+- `PERF1`: `NONE`
+- `PERF_CALLS`: `0`
+- `RESULT_CONSUMERS`: `3`
 - `RUNTIME_TEST`: `NO`

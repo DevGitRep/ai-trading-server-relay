@@ -1,20 +1,21 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-29T20:33:01.281703+00:00",
-  "run_id": "20260829T203259Z",
-  "step": "TRACE_PROVEN_DIRECT_RESULT_CONSUMERS",
+  "published_at_utc": "2026-08-29T20:33:50.472734+00:00",
+  "run_id": "20260829T203348Z",
+  "step": "TRACE_EXACT_JURIK_RESULT_CONSUMERS",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "CONSUMES_RUN_RESULT_OTHER_WAY",
-  "next_gate": "TRACE_EXACT_DIRECT_CONSUMER",
+  "verdict": "JURIK_REFERENCE_ONLY_EXERCISES_PARAMETER_RUNNER",
+  "next_gate": "LOCATE_PROVEN_JURIK_PERFORMANCE_REFERENCE",
   "facts": {
-    "ACCESS1": "result.keys()",
     "CODE_CHANGED": "NO",
     "CONSUMER1": "print(&#x27;JURIK_PINETS_RESULT_TYPE:&#x27; + type(result).__name__, flush:True)",
+    "CONSUMER2": "if isinstance(result, dict): print(&#x27;JURIK_PINETS_KEYS:&#x27; + &#x27;,&#x27;.join(sorted(result.keys())), flush:True)",
+    "CONSUMER3": "print(&#x27;JURIK_PINETS_KEYS:&#x27; + &#x27;,&#x27;.join(sorted(result.keys())), flush:True)",
     "DB_WRITE": "NO",
-    "DIRECT_CONSUMERS": "3",
-    "RESULT_ACCESSES": "1",
-    "RESULT_VARS": "1",
+    "PERF1": "NONE",
+    "PERF_CALLS": "0",
+    "RESULT_CONSUMERS": "3",
     "RUNTIME_TEST": "NO"
   }
 }
