@@ -1,7 +1,7 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-08-29T11:16:30.021269+00:00`
+- Published UTC: `2026-08-29T11:18:42.373953+00:00`
 - Run ID: `20260829T111627Z`
 - Step: `RESOLVE_PINNED_MCP_HARVEST_TIMEOUT_CONTRACT`
 - Status: `SUCCESS`
