@@ -1,20 +1,18 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-29T19:17:14.299400+00:00",
-  "run_id": "20260829T191712Z",
-  "step": "DIAGNOSE_TESTPINE_RESULT_PERSISTENCE_PATH",
+  "published_at_utc": "2026-08-29T19:18:10.621781+00:00",
+  "run_id": "20260829T191808Z",
+  "step": "INSPECT_EXISTING_TEST_RUN_PERSISTENCE_WRITES",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "TESTPINE_RESULT_PERSISTENCE_PATH_CAPTURED",
-  "next_gate": "FIX_MINIMAL_EXISTING_PERSISTENCE_PATH",
+  "verdict": "EXISTING_TEST_RUN_WRITE_PATH_READY_FOR_MINIMAL_REUSE",
+  "next_gate": "PATCH_TESTPINE_TO_REUSE_EXISTING_RESULT_PERSISTENCE",
   "facts": {
-    "ATTEMPT_DONE": "4",
     "CODE_CHANGED": "NO",
     "DB_WRITE": "NO",
-    "LATEST4": "4",
-    "PERFORMANCE_NONNULL": "4",
-    "PERFORMANCE_REACHED": "4",
+    "PERFORMANCE_ALREADY_REACHED": "YES",
     "TESTING": "NO",
-    "TEST_RUN_WRITES": "3"
+    "WRITE_COUNT": "3",
+    "WRITE_FUNCTIONS": "resolve_existing_dataset,save_result"
   }
 }
