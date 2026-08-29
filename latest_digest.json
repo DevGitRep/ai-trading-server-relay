@@ -1,22 +1,19 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-29T15:51:44.366721+00:00",
-  "run_id": "20260829T155141Z",
-  "step": "INSTALL_TRUE_COUNT_BASED_TESTPINE",
+  "published_at_utc": "2026-08-29T16:34:19.088714+00:00",
+  "run_id": "20260829T163417Z",
+  "step": "INSPECT_LEGACY_DISCOVERY_HANDOFF",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "COUNT_BASED_TESTPINE_INSTALLED",
-  "next_gate": "USER_RUN_TESTPINE_2_RECENT",
+  "verdict": "DISCOVERY_TO_TEST_PIPELINE_HANDOFF_READ",
+  "next_gate": "REPLACE_LEGACY_SEARCH_WITH_STORED_LIBRARY_SELECTION",
   "facts": {
-    "COUNT_MEANS": "INDICATORS",
-    "COUNT_OVERRIDE": "TARGET",
-    "DEFAULT_COUNT": "200",
-    "MASTER_CHANGED": "YES",
-    "MULTI_BATCH": "NO",
-    "NEW_ENGINE": "NO",
-    "PANDAS_RUNTIME": "DOCUMENTED_WORKING",
-    "SELECTION_USES_TARGET": "YES",
-    "SELFTEST": "PASS",
+    "CODE_CHANGED": "NO",
+    "DB_WRITE": "NO",
+    "FROM_SCRIPTS": "0",
+    "FROM_SOURCES": "0",
+    "LEGACY_CALLS": "1",
+    "SCRIPT_ID_REFS": "0",
     "TESTING": "NO"
   }
 }
