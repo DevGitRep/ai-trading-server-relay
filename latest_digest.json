@@ -1,24 +1,19 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-29T19:39:00.373421+00:00",
-  "run_id": "20260829T193858Z",
-  "step": "COMPARE_EXPLICIT_SIGNAL_PAIR_LATEST5_WITH_JURIK",
+  "published_at_utc": "2026-08-29T19:39:44.179802+00:00",
+  "run_id": "20260829T193942Z",
+  "step": "INSPECT_EXPLICIT_SIGNAL_EXTRACTOR_DEPENDENCIES",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "EXTRACTOR_HAS_EXTRA_DEPENDENCIES",
-  "next_gate": "INSPECT_EXTRACTOR_DEPENDENCIES",
+  "verdict": "EXTRACTOR_DEPENDENCIES_RESOLVED",
+  "next_gate": "RUN_EXTRACTOR_WITH_EXISTING_DEPENDENCIES",
   "facts": {
     "CODE_CHANGED": "NO",
     "DB_WRITE": "NO",
-    "EXPLICIT_NONE": "0",
-    "EXPLICIT_PAIRS": "0",
-    "EXTRACTOR_SAFE": "NO",
-    "EXTRACT_ERRORS": "0",
-    "JURIK_ERROR": "NO",
-    "JURIK_PAIR": "NO",
-    "JURIK_SOURCE": "YES",
-    "LATEST5": "5",
-    "SOURCE_MATCHED": "4",
+    "DEPS": "direction_score,re",
+    "DEPS_RESOLVED": "YES",
+    "DEP_COUNT": "2",
+    "LOCAL_HELPERS": "1",
     "TESTING": "NO"
   }
 }
