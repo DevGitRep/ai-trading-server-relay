@@ -1,19 +1,13 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-29T03:01:23.801272+00:00",
-  "run_id": "20260829T030114Z",
-  "step": "PINE_VISUAL_REPORT_V2_ACTUAL_ROUTE",
+  "published_at_utc": "2026-08-29T03:03:28.158840+00:00",
+  "run_id": "20260829T030326Z",
+  "step": "BASELINE_200_STOP_DIAGNOSIS",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "VISUAL_REPORT_V2_LIVE_FREE_PRO_SAFE_AND_DOCUMENTED",
-  "next_gate": "VISUALLY_REVIEW_LIBRARY_AND_REPORT_UI",
+  "verdict": "BASELINE_200_STOP_STATE_CAPTURED",
+  "next_gate": "FIX_STOP_CAUSE_AND_RESUME_FROM_DATABASE_STATE",
   "facts": {
-    "BASELINE_WORKER_RUNNING": "NO",
-    "FREE_HTTP": "200",
-    "FREE_SAFE": "YES",
-    "FREE_VISUAL": "YES",
-    "PRO_HAS_RESULTS": "YES",
-    "PRO_HTTP": "200",
-    "PRO_VISUAL": "YES"
+    "WORKER_RUNNING": "NO"
   }
 }
