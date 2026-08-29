@@ -1,21 +1,17 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-29T21:39:47.281698+00:00",
-  "run_id": "20260829T213945Z",
-  "step": "VERIFY_LATEST_TESTPINE_RESULT",
+  "published_at_utc": "2026-08-29T21:41:54.653906+00:00",
+  "run_id": "20260829T214152Z",
+  "step": "INSPECT_LATEST_INDICATOR_OFFICIAL_PINETS_OUTPUT",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "NO_TEST_RUN_PERSISTED",
-  "next_gate": "INSPECT_CURRENT_RUNTIME_OUTCOME",
+  "verdict": "RUNTIME_OUTPUT_INSPECTION_FAILED",
+  "next_gate": "REPORT_RUNTIME_ERROR",
   "facts": {
     "CODE_CHANGED": "NO",
     "DB_WRITE": "NO",
-    "DD": "NONE",
-    "NET": "NONE",
-    "PERFORMANCE_STATUS": "NOT_TESTED",
-    "PF": "NONE",
-    "PF_ROWS": "0",
-    "TEST_RUNS": "0",
-    "WIN": "NONE"
+    "ERROR": "RUNTIMEERROR:CLI_FAILED:EXECUTION_FAILED:_AWAIT_IS_ONLY_VALID_IN_ASYNC_FUNCTIONS_AND",
+    "OUTPUTS": "0",
+    "SIGNAL_LIKE": "0"
   }
 }
