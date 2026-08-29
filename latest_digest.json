@@ -1,25 +1,18 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-29T22:50:43.318136+00:00",
-  "run_id": "20260829T225040Z",
-  "step": "RESTORE_LITERAL_DOCUMENTED_TESTPINE",
+  "published_at_utc": "2026-08-29T22:52:57.580602+00:00",
+  "run_id": "20260829T225255Z",
+  "step": "VERIFY_DOCUMENTED_TESTPINE_PERSISTENCE",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "LITERAL_DOCUMENTED_TESTPINE_RESTORED",
-  "next_gate": "USER_RUN_TESTPINE_2_RECENT",
+  "verdict": "DOCUMENTED_TESTPINE_PERSISTENCE_PASS",
+  "next_gate": "CANONICAL_TESTPINE_FLOW_CONFIRMED",
   "facts": {
-    "ATTEMPT_MARKER": "YES",
-    "BASE_COMPILE": "PASS",
-    "BASE_RESTORED": "YES",
+    "ATTEMPTED": "2",
+    "CODE_CHANGED": "NO",
     "DB_WRITE": "NO",
     "ERROR": "NONE",
-    "EXPERIMENTAL_HOOKS": "NO",
-    "LINK": "YES",
-    "OFFICIAL_FALLBACK": "YES",
-    "RUNNER_COMPILE": "PASS",
-    "RUNNER_RESTORED": "YES",
-    "SELFTEST": "PASS",
-    "TESTPINE_COMPILE": "PASS",
-    "TESTPINE_RESTORED": "YES"
+    "LATEST": "2",
+    "WITH_RUNS": "0"
   }
 }
