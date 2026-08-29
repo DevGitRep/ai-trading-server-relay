@@ -1,15 +1,15 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-29T03:06:34.884202+00:00",
-  "run_id": "20260829T030632Z",
-  "step": "BASELINE_200_SOURCE_POOL_DIAGNOSIS",
+  "published_at_utc": "2026-08-29T03:07:46.272868+00:00",
+  "run_id": "20260829T030743Z",
+  "step": "PINE_PUBLIC_DISCOVERY_PROVIDER_DIAGNOSIS",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "EXISTING_DISCOVERY_RETURNED_ZERO_USABLE_TRADINGVIEW_SCRIPT_LEADS",
-  "next_gate": "FIX_EXISTING_PUBLIC_SOURCE_DISCOVERY_PROVIDER_THEN_RESUME",
+  "verdict": "",
+  "next_gate": "",
   "facts": {
-    "PROVIDERS": "NONE",
-    "TOTAL_SEARCH_RESULTS": "0",
-    "USABLE_TV_SCRIPT_LEADS": "0"
+    "TV_BYTES": "777487",
+    "TV_HTTP": "200",
+    "WORKING_PROVIDERS": ""
   }
 }
