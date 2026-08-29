@@ -1,16 +1,18 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-29T03:20:12.111005+00:00",
-  "run_id": "20260829T032009Z",
-  "step": "TRADINGVIEW_DISCOVERY_ADAPTER_BINDING",
+  "published_at_utc": "2026-08-29T03:25:40.762333+00:00",
+  "run_id": "20260829T032525Z",
+  "step": "BASELINE_200_SIMPLE_QUEUE_ACTIVATION",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "ADAPTER_DID_NOT_REPRODUCE_PROVEN_LIVE_POOL",
-  "next_gate": "COMPARE_ADAPTER_EXTRACTION_WITH_500_LEAD_PROBE",
+  "verdict": "BASELINE_200_QUEUE_PROCESS_EXITED_DURING_INITIAL_START",
+  "next_gate": "READ_QUEUE_LOG_AND_FIX_ONLY_FIRST_RUNTIME_ERROR",
   "facts": {
-    "ADAPTER_CATALOGUE": "",
-    "AGGREGATOR_DISTINCT_TV_LEADS": "",
-    "BATCH_COMPLETED": "0",
-    "DIRECT_DISTINCT_TV_LEADS": ""
+    "ATTEMPTED": "0",
+    "COMPLETED": "0",
+    "FAILED": "0",
+    "SKIPPED": "0",
+    "SOURCE_POOL": "200",
+    "WORKER_RUNNING": "NO"
   }
 }
