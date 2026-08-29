@@ -1,21 +1,19 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-29T07:50:28.892399+00:00",
-  "run_id": "20260829T074722Z",
-  "step": "REIMPLEMENT_EXACT_FROZEN_JURIK_165_ONLY",
+  "published_at_utc": "2026-08-29T07:52:44.215440+00:00",
+  "run_id": "20260829T075242Z",
+  "step": "CAPTURE_EXACT_JURIK_165_RUNNER_FAILURE",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "EXACT_FROZEN_JURIK_165_REFERENCE_HAS_ONE_REMAINING_ERROR",
-  "next_gate": "FIX_ONLY_THIS_JURIK_165_ERROR_NOTHING_ELSE",
+  "verdict": "EXACT_JURIK_165_FAILURE_LOCATION_CAPTURED",
+  "next_gate": "FIX_ONLY_THE_REPORTED_PARAMETER_RUNNER_FAILURE",
   "facts": {
-    "ACQUISITION_USED": "NO",
     "CANDLE_ROWS": "525600",
+    "CODE_CHANGED": "NO",
     "DISCOVERY_USED": "NO",
-    "EXECUTOR": "parameter_runner.py",
-    "JURIK_RC": "1",
+    "NEW_RUN_STARTED": "NO",
     "REFERENCE": "JURIK_TREND_RIBBON_QUANTALGO",
     "REFERENCE_CONFIG": "JURIK_165",
-    "RUNTIME_ERROR": "RuntimeError:",
     "SOURCE1_USED": "NO"
   }
 }
