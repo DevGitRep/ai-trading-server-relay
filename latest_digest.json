@@ -1,18 +1,25 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-29T22:56:28.355434+00:00",
-  "run_id": "20260829T225626Z",
-  "step": "VERIFY_DOCUMENTED_TESTPINE_10_PERSISTENCE",
+  "published_at_utc": "2026-08-29T23:13:33.103623+00:00",
+  "run_id": "20260829T230958Z",
+  "step": "RUN_LIBRARY_SINGLE_DEFAULT_VIA_FROZEN_REFERENCE",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "DOCUMENTED_TESTPINE_10_PERSISTENCE_PASS",
-  "next_gate": "CONTINUE_CANONICAL_TESTPINE_BATCHES",
+  "verdict": "REFERENCE_PROOF_FAILED",
+  "next_gate": "REPORT_REFERENCE_PROOF_FAILURE",
   "facts": {
-    "ATTEMPTED": "10",
+    "CANON_DB_UNCHANGED": "NO",
     "CODE_CHANGED": "NO",
     "DB_WRITE": "NO",
-    "ERROR": "NONE",
-    "LATEST": "10",
-    "WITH_RUNS": "0"
+    "EMPTY_OVERRIDES": "NO",
+    "ERROR": "RUNTIMEERROR:CANONICAL_DB_CHANGED_UNEXPECTEDLY",
+    "MASTER_UPDATED": "YES",
+    "PROFIT_FACTOR": "NONE",
+    "REFERENCE_PASS": "YES",
+    "RUNNER_CALLED": "0",
+    "RUNTIME_SECONDS": "209",
+    "SCRIPT_SELECTED": "YES",
+    "SOURCE_REPLACED": "NO",
+    "TEMP_TEST_RUNS": "0"
   }
 }
