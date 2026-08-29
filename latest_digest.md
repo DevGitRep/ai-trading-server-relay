@@ -1,8 +1,8 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-08-29T22:03:45.841192+00:00`
-- Run ID: `20260829T220343Z`
+- Published UTC: `2026-08-29T22:04:49.471395+00:00`
+- Run ID: `20260829T220447Z`
 - Step: `LOCATE_ACTUAL_LIBRARY_ROLE_BADGE_RENDER_PATH`
 - Status: `SUCCESS`
 - Exit code: `0`
