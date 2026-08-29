@@ -1,19 +1,22 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-29T22:14:37.655980+00:00",
-  "run_id": "20260829T221434Z",
-  "step": "REPAIR_TESTPINE_EXECUTABLE_SHEBANG",
+  "published_at_utc": "2026-08-29T22:16:35.068423+00:00",
+  "run_id": "20260829T221633Z",
+  "step": "VERIFY_TESTPINE_10_AUTO_CLASSIFICATION",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "TESTPINE_EXECUTABLE_REPAIRED",
-  "next_gate": "USER_RUN_TESTPINE_10_RECENT",
+  "verdict": "LATEST_10_NOT_CLASSIFIED",
+  "next_gate": "FIX_POST_TEST_OUTCOME_CLASSIFICATION",
   "facts": {
-    "CODE_CHANGED": "YES",
+    "CODE_CHANGED": "NO",
     "DB_WRITE": "NO",
-    "ERROR": "NONE",
-    "LINK": "YES",
-    "SELFTEST": "PASS",
-    "SHEBANG": "PYTHON",
-    "SYNC_MARKER": "YES"
+    "GLOBAL_NOT": "392",
+    "GLOBAL_RUNTIME": "1",
+    "GLOBAL_SIGNAL": "0",
+    "GLOBAL_SUPPORTING": "0",
+    "L10_NOT": "10",
+    "L10_RUNTIME": "0",
+    "L10_SIGNAL": "0",
+    "L10_SUPPORTING": "0"
   }
 }
