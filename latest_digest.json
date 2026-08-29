@@ -1,22 +1,20 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-29T20:37:18.830060+00:00",
-  "run_id": "20260829T203716Z",
-  "step": "TRACE_EXACT_PROVEN_PERFORMANCE_PRODUCER_FLOW",
+  "published_at_utc": "2026-08-29T20:40:01.986716+00:00",
+  "run_id": "20260829T204000Z",
+  "step": "CAPTURE_EXACT_JURIK_PERFORMANCE_ROUTE",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "PRODUCER_HAS_JURIK_SPECIFIC_PERFORMANCE_ROUTE",
-  "next_gate": "REUSE_EXACT_JURIK_SPECIFIC_ROUTE_FOR_LIBRARY",
+  "verdict": "EXACT_JURIK_SIGNAL_TO_EVALUATE_ROUTE_CAPTURED",
+  "next_gate": "PATCH_LIBRARY_TO_REUSE_PROVEN_JURIK_ROUTE_GENERICALLY",
   "facts": {
+    "BRANCH_COND": "not unique",
     "CODE_CHANGED": "NO",
     "DB_WRITE": "NO",
-    "EVALUATE_CALLS": "1",
-    "EXPLICIT_PAIR": "YES",
-    "FIND_SERIES": "YES",
-    "FLOW_CALLS": "6",
-    "JURIK_LOGIC": "5",
-    "MASTER_LINES": "25",
-    "RUNTIME_TEST": "NO",
-    "SAVE_CALLS": "1"
+    "FLOW_LINES": "7",
+    "FUNCTIONS": "1",
+    "JURIK_BRANCHES": "1",
+    "JURIK_LINES": "5",
+    "RUNTIME_TEST": "NO"
   }
 }
