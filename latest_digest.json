@@ -1,24 +1,19 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-29T19:59:56.815824+00:00",
-  "run_id": "20260829T195954Z",
-  "step": "TRACE_RUNNER_RETURN_FEEDER_AND_SIGNAL_LOOKUP",
+  "published_at_utc": "2026-08-29T20:00:54.659958+00:00",
+  "run_id": "20260829T200052Z",
+  "step": "TRACE_RUN_RETURN_EXPRESSION_ONE_LEVEL_DEEPER",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "RUNNER_DYNAMIC_RESULT_SOURCE_STILL_UNRESOLVED",
-  "next_gate": "TRACE_RETURN_EXPRESSION_ONE_LEVEL_DEEPER",
+  "verdict": "RUN_RETURN_CALL_TARGET_IS_NOT_LOCAL_HELPER",
+  "next_gate": "RESOLVE_IMPORTED_RETURN_HELPER",
   "facts": {
     "CODE_CHANGED": "NO",
     "DB_WRITE": "NO",
-    "EXPLICIT_RETURNS": "3",
-    "FEEDER_HELPERS": "NONE",
-    "HELPER_RETURNS": "0",
-    "LOOKUP_STYLE": "RESULT_INDEX_SIGNAL_NAME",
-    "RETURN_FEEDERS": "0",
-    "RETURN_KIND": "CALL",
-    "RETURN_NAMES": "0",
-    "SERIES_ASSIGN": "4",
-    "SIGNAL_ASSIGN": "1",
+    "HELPER_LOCAL": "NO",
+    "RETURN_CALLS": "1",
+    "RETURN_HELPER": "loads",
+    "SERIES_LOOKUPS": "4",
     "TESTING": "NO"
   }
 }
