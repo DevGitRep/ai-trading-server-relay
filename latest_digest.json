@@ -1,21 +1,22 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-29T20:35:55.012930+00:00",
-  "run_id": "20260829T203553Z",
-  "step": "TRACE_MASTER_NAMED_HISTORICAL_JURIK_RUN_PATH",
+  "published_at_utc": "2026-08-29T20:37:18.830060+00:00",
+  "run_id": "20260829T203716Z",
+  "step": "TRACE_EXACT_PROVEN_PERFORMANCE_PRODUCER_FLOW",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "MASTER_NAMED_HISTORICAL_PERFORMANCE_PRODUCER_IDENTIFIED",
-  "next_gate": "TRACE_EXACT_PROVEN_PERFORMANCE_PRODUCER_FLOW",
+  "verdict": "PRODUCER_HAS_JURIK_SPECIFIC_PERFORMANCE_ROUTE",
+  "next_gate": "REUSE_EXACT_JURIK_SPECIFIC_ROUTE_FOR_LIBRARY",
   "facts": {
     "CODE_CHANGED": "NO",
     "DB_WRITE": "NO",
-    "JURIK_SECTIONS": "31",
-    "MASTER_COMMANDS": "30",
-    "NAMED_FILES": "7",
-    "PERF_PRODUCERS": "1",
-    "PRODUCER": "pine_baseline_batch_200.py",
-    "RESOLVED_FILES": "4",
-    "RUNTIME_TEST": "NO"
+    "EVALUATE_CALLS": "1",
+    "EXPLICIT_PAIR": "YES",
+    "FIND_SERIES": "YES",
+    "FLOW_CALLS": "6",
+    "JURIK_LOGIC": "5",
+    "MASTER_LINES": "25",
+    "RUNTIME_TEST": "NO",
+    "SAVE_CALLS": "1"
   }
 }
