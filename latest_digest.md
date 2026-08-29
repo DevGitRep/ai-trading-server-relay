@@ -1,8 +1,8 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-08-29T17:17:00.673304+00:00`
-- Run ID: `20260829T171658Z`
+- Published UTC: `2026-08-29T17:17:38.259111+00:00`
+- Run ID: `20260829T171736Z`
 - Step: `BUILD_SINGLE_DEFAULT_PROVEN_REFERENCE`
 - Status: `SUCCESS`
 - Exit code: `0`
