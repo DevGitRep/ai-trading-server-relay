@@ -1,19 +1,19 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-08-29T19:18:10.621781+00:00`
-- Run ID: `20260829T191808Z`
-- Step: `INSPECT_EXISTING_TEST_RUN_PERSISTENCE_WRITES`
+- Published UTC: `2026-08-29T19:18:53.070781+00:00`
+- Run ID: `20260829T191850Z`
+- Step: `CAPTURE_EXISTING_SAVE_RESULT_CONTRACT`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `EXISTING_TEST_RUN_WRITE_PATH_READY_FOR_MINIMAL_REUSE`
-- Next gate: `PATCH_TESTPINE_TO_REUSE_EXISTING_RESULT_PERSISTENCE`
+- Verdict: `SAVE_RESULT_CONTRACT_READY_FOR_MINIMAL_TESTPINE_PATCH`
+- Next gate: `PATCH_LIBRARY_MODE_TO_CALL_EXISTING_SAVE_RESULT`
 
 ## Facts
 
 - `CODE_CHANGED`: `NO`
 - `DB_WRITE`: `NO`
-- `PERFORMANCE_ALREADY_REACHED`: `YES`
+- `PROCESS_SOURCE`: `YES`
+- `SAVE_ARGS`: `candidate_id,source_path,source_sha,signal_pair,metrics,trades,thumbnail`
+- `SAVE_CALLS`: `1`
 - `TESTING`: `NO`
-- `WRITE_COUNT`: `3`
-- `WRITE_FUNCTIONS`: `resolve_existing_dataset,save_result`
