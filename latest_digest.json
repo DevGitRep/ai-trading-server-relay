@@ -1,26 +1,23 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-29T23:24:57.824487+00:00",
-  "run_id": "20260829T232455Z",
-  "step": "RESOLVE_EXISTING_GENERIC_LIBRARY_EXECUTION_ROUTE",
+  "published_at_utc": "2026-08-29T23:26:15.129922+00:00",
+  "run_id": "20260829T232613Z",
+  "step": "RESOLVE_TESTPINE_TO_PROCESS_SOURCE_ROUTE",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "CANONICAL_BINDING_NOT_RESOLVED",
-  "next_gate": "STOP_AND_REPORT_BINDING",
+  "verdict": "CANONICAL_TESTPINE_PROCESS_ROUTE_RESOLVED",
+  "next_gate": "TRACE_ONE_INDICATOR_TO_EXISTING_RUNNER",
   "facts": {
-    "BATCH_EXISTS": "YES",
+    "BATCH_MAIN": "YES",
     "CODE_CHANGED": "NO",
     "DB_WRITE": "NO",
-    "EMPTY_DEFAULT_PRESENT": "YES",
     "ERROR": "NONE",
-    "GENERIC_EXECUTOR": "NONE",
-    "GENERIC_EXECUTOR_LINE": "0",
+    "PATH": "main&gt;process_source",
+    "PATH_LEN": "2",
     "PROCESS_SOURCE": "YES",
-    "PROCESS_SOURCE_LINE": "2611",
-    "RUNNER_CALL_IN_PROCESS": "YES",
-    "RUNNER_EXISTS": "YES",
-    "TESTPINE_CALL_TARGET": "main",
-    "TESTPINE_EXISTS": "YES",
-    "TESTPINE_REACHES_PROCESS": "NO"
+    "RUNNER_IN_PROCESS": "YES",
+    "RUNNER_LINE": "2792",
+    "TESTPINE_BATCH_REF": "YES",
+    "TESTPINE_MAIN_CALL": "YES"
   }
 }
