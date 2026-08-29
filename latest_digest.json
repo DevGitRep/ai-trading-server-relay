@@ -1,20 +1,21 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-29T19:48:27.401948+00:00",
-  "run_id": "20260829T194825Z",
-  "step": "TRACE_JURIK_ONLY_EXECUTION_HELPER",
+  "published_at_utc": "2026-08-29T19:49:21.507324+00:00",
+  "run_id": "20260829T194919Z",
+  "step": "IDENTIFY_DYNAMIC_MODULE_CREATION_AND_REUSE_PATH",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "JURIK_REFERENCE_LOADS_DYNAMIC_MODULE_FROM_CANDIDATE_SOURCE_PATH",
-  "next_gate": "IDENTIFY_DYNAMIC_MODULE_CREATION_AND_REUSE_PATH",
+  "verdict": "DYNAMIC_CREATION_HELPER_NOT_IDENTIFIED",
+  "next_gate": "TRACE_REFERENCE_ENTRYPOINT",
   "facts": {
     "CODE_CHANGED": "NO",
     "DB_WRITE": "NO",
-    "DYNAMIC_LOADER": "8",
-    "EXEC_MODULE": "4",
-    "PINE_SOURCE_QUERY": "4",
-    "SINGLE_FOUND": "YES",
-    "TESTING": "NO",
-    "WORKING_FOUND": "YES"
+    "LOADER_FUNCS": "0",
+    "LOADER_NAMES": "NONE",
+    "MODULE_API": "NONE",
+    "MODULE_ATTRS": "0",
+    "MODULE_CALLS": "0",
+    "TEMP_WRITES": "0",
+    "TESTING": "NO"
   }
 }
