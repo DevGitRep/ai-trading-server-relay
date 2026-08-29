@@ -1,16 +1,23 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-29T12:23:40.444865+00:00",
-  "run_id": "20260829T122338Z",
-  "step": "RESUME_NATIVE_HARVEST_EEF8A98",
+  "published_at_utc": "2026-08-29T12:24:33.498447+00:00",
+  "run_id": "20260829T122430Z",
+  "step": "NATIVE_RESUME_HARVEST_EEF8A98",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "RESUME_NOT_STARTED_CHECKPOINT_NOT_PAUSED",
-  "next_gate": "READ_CURRENT_NATIVE_HARVEST_STATE",
+  "verdict": "NATIVE_PACKAGE_REPORTS_UNKNOWN_HARVEST_ID",
+  "next_gate": "READ_NATIVE_HARVEST_ROWS_FROM_THE_SAME_CLIENT_PROCESS_CONTEXT",
   "facts": {
-    "HARVEST_FOUND": "NO",
-    "HARVEST_STATUS": "",
-    "NETWORK_CALLS": "NO",
-    "NEW_HARVEST_CREATED": "NO"
+    "CLIENT_RC": "0",
+    "CUSTOM_SOURCE_LOOP": "NO",
+    "ERROR": "YES",
+    "HARVEST_ID": "NONE",
+    "HARVEST_STATUS": "NONE",
+    "NEW_HARVEST_CREATED": "NO",
+    "SCRIPTS_SEEN": "0",
+    "SOURCES_PENDING": "0",
+    "SOURCES_STORED": "0",
+    "TESTING": "NO",
+    "UNKNOWN_HARVEST_ID": "YES"
   }
 }
