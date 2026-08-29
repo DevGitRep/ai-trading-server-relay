@@ -1,19 +1,18 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-29T10:22:02.985240+00:00",
-  "run_id": "20260829T102155Z",
-  "step": "PINNED_MCP_SEARCH_VALID_TOPIC_TREND_FOLLOWING",
+  "published_at_utc": "2026-08-29T10:24:16.234685+00:00",
+  "run_id": "20260829T102413Z",
+  "step": "QUERY_CORPUS_PIPRUNNER",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "VALID_TREND_FOLLOWING_TOPIC_RETURNED_RESULTS_BUT_NO_PIPRUNNER_MATCH",
-  "next_gate": "USE_THE_NEXT_LITERAL_RELEVANT_TOPIC_WITH_THE_SAME_PINNED_SEARCH_TOOL",
+  "verdict": "PIPRUNNER_NOT_IN_LOCAL_MCP_CORPUS",
+  "next_gate": "USE_PINNED_MCP_NETWORK_HARVEST_OR_DISCOVERY",
   "facts": {
     "CLIENT_RC": "0",
     "CODE_CHANGED": "NO",
     "DB_WRITE": "NO",
-    "ERROR_RESULT": "NO",
+    "NETWORK_REQUESTS": "NO",
     "PIPRUNNER_FOUND": "NO",
-    "SEARCH_TOOL": "search_scripts",
-    "TOPIC": "trend-following"
+    "PUB_ID": "NONE"
   }
 }
