@@ -1,21 +1,16 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-29T22:41:11.682151+00:00",
-  "run_id": "20260829T224109Z",
-  "step": "RUN_ONE_REAL_LIBRARY_INDICATOR_CANONICAL_FLOW",
+  "published_at_utc": "2026-08-29T22:42:44.120035+00:00",
+  "run_id": "20260829T224242Z",
+  "step": "RUN_CANONICAL_REAL_INDICATOR_CORRECT_ENV",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "CANONICAL_REAL_INDICATOR_RUN_FAILED",
-  "next_gate": "REPORT_CANONICAL_RUN_FAILURE",
+  "verdict": "NO_EXISTING_PANDAS_RUNTIME_FOUND",
+  "next_gate": "USE_EXISTING_TESTPINE_DATA_LOADER_DIRECTLY",
   "facts": {
     "CODE_CHANGED": "NO",
     "DB_WRITE": "NO",
-    "ERROR": "MODULENOTFOUNDERROR:NO_MODULE_NAMED_PANDAS_",
-    "LIVE_HTTP": "NONE",
-    "ROLE": "NONE",
-    "RUNNER_CALLED": "NO",
-    "RUNNER_RESOLVED": "YES",
-    "RUNNER_RETURNED": "NO",
-    "SIGNAL_PAIR": "NO"
+    "ERROR": "PANDAS_RUNTIME_MISSING",
+    "RUNTIME_FOUND": "NO"
   }
 }
