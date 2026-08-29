@@ -1,19 +1,16 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-29T15:17:54.840240+00:00",
-  "run_id": "20260829T151752Z",
-  "step": "ENABLE_TESTPINE_MULTI_BATCH",
+  "published_at_utc": "2026-08-29T15:29:39.066191+00:00",
+  "run_id": "20260829T152937Z",
+  "step": "READ_SINGLE_INDICATOR_DEFAULT_TEST_FLOW",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "TESTPINE_BATCH_ARGUMENT_NOW_MEANS_NUMBER_OF_200_INDICATOR_BATCHES",
-  "next_gate": "USER_RUN_TESTPINE_2_RECENT",
+  "verdict": "DOCUMENTED_SINGLE_INDICATOR_TEST_FLOW_READ",
+  "next_gate": "REPLACE_TESTPINE_WITH_COUNT_BASED_INDICATOR_RUNNER",
   "facts": {
-    "BATCH_SIZE": "200",
-    "CONFIG": "SINGLE_DEFAULT",
-    "MASTER_CHANGED": "YES",
-    "MULTI_BATCH": "YES",
-    "NEW_ENGINE": "NO",
-    "SELFTEST": "PASS",
+    "CODE_CHANGED": "NO",
+    "DB_WRITE": "NO",
+    "MASTER_READ": "YES",
     "TESTING": "NO"
   }
 }
