@@ -1,27 +1,24 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-08-29T16:50:49.527109+00:00`
-- Run ID: `20260829T165047Z`
-- Step: `CAPTURE_PROCESS_SOURCE_EXECUTION_FLOW`
+- Published UTC: `2026-08-29T16:54:26.588090+00:00`
+- Run ID: `20260829T165424Z`
+- Step: `READ_EXISTING_INGEST_SOURCE_CONTRACT`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `EXACT_STORED_LIBRARY_INSERTION_POINT_CAPTURED`
+- Verdict: `EXISTING_INGEST_REUSE_PATH_DETERMINED`
 - Next gate: `PATCH_STORED_LIBRARY_DIRECT_INPUT`
 
 ## Facts
 
-- `AUDIT_CALL`: `worker.static_audit_source(source)`
-- `CANDIDATE_ID_ASSIGN`: `acquisition[&#x27;candidate_id&#x27;]`
-- `CANDIDATE_SOURCE_CALL`: `candidate_source(candidate_id)`
+- `ARGS`: `source_id,query_candidate_id,query_text,item,intake_method`
+- `CALLS`: `NONE`
+- `CANDIDATE_WRITE`: `NO`
 - `CODE_CHANGED`: `NO`
 - `DB_WRITE`: `NO`
-- `INGEST_CALL`: `worker.ingest_fetchable_source(source_id, BATCH_ID, query, item, &#x27;AUTO_DISCOVER_BASELINE_200&#x27;)`
-- `PROVIDER_ASSIGN`: `item.get(&#x27;provider&#x27;) or &#x27;&#x27;`
-- `RUN_CALL`: `parameter_runner.run(pine_path=str(source_path), candles=candles, overrides={}, observability=_baseline_observability_mapping(observability))`
-- `SOURCE_ASSIGN`: `source_info.get(&#x27;pine_source&#x27;) or &#x27;&#x27;`
-- `SOURCE_ID_CALL`: `worker.source_id_for_url(provider or &#x27;TRADINGVIEW_PUBLIC&#x27;, url)`
-- `SOURCE_URL_ASSIGN`: `NONE`
+- `DEFAULT_CONFIG`: `YES`
+- `FOUND`: `YES`
+- `ITEM_KEYS`: `NONE`
+- `REMOTE_FETCH`: `NO`
+- `SOURCE_TEXT_INPUT`: `NO`
 - `TESTING`: `NO`
-- `UPDATE_CALL`: `update_batch()`
-- `URL_ASSIGN`: `item.get(&#x27;source_url&#x27;) or item.get(&#x27;url&#x27;) or &#x27;&#x27;`
