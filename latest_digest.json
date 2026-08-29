@@ -1,19 +1,18 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-29T16:34:19.088714+00:00",
-  "run_id": "20260829T163417Z",
-  "step": "INSPECT_LEGACY_DISCOVERY_HANDOFF",
+  "published_at_utc": "2026-08-29T16:35:14.625598+00:00",
+  "run_id": "20260829T163512Z",
+  "step": "CAPTURE_LEGACY_DISCOVERY_DATA_CONTRACT",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "DISCOVERY_TO_TEST_PIPELINE_HANDOFF_READ",
-  "next_gate": "REPLACE_LEGACY_SEARCH_WITH_STORED_LIBRARY_SELECTION",
+  "verdict": "LEGACY_DISCOVERY_OUTPUT_CONTRACT_CAPTURED",
+  "next_gate": "ADAPT_STORED_LIBRARY_TO_EXISTING_TEST_PIPELINE",
   "facts": {
     "CODE_CHANGED": "NO",
     "DB_WRITE": "NO",
-    "FROM_SCRIPTS": "0",
-    "FROM_SOURCES": "0",
-    "LEGACY_CALLS": "1",
-    "SCRIPT_ID_REFS": "0",
+    "ITEM_KEYS": "NONE",
+    "REPORT_KEYS": "NONE",
+    "RETURN_KEYS": "NONE",
     "TESTING": "NO"
   }
 }
