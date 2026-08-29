@@ -1,23 +1,24 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-08-29T19:32:40.099242+00:00`
-- Run ID: `20260829T193238Z`
-- Step: `COMPARE_LIBRARY_SIGNAL_PATH_WITH_JURIK`
+- Published UTC: `2026-08-29T19:33:52.144682+00:00`
+- Run ID: `20260829T193350Z`
+- Step: `RESOLVE_TESTPINE_RUNNER_SIGNAL_CONTRACT`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `LIBRARY_AND_WORKING_SIGNAL_CONTRACT_CAPTURED`
-- Next gate: `REUSE_PROVEN_SIGNAL_ADAPTER_OR_FIX_RUNNER_INPUT`
+- Verdict: `RUNNER_AND_TESTPINE_CALL_CONTRACT_CAPTURED`
+- Next gate: `FIX_EXACT_CONTRACT_BREAK_ONLY`
 
 ## Facts
 
 - `CODE_CHANGED`: `NO`
 - `DB_WRITE`: `NO`
-- `JURIK_FOUND`: `YES`
-- `JURIK_PROCESS_SOURCE`: `0`
-- `JURIK_RUNNER`: `0`
-- `JURIK_SERIES`: `0`
-- `RUNNER_CALLS`: `1`
+- `PRE_SIGNAL_CALLS`: `26`
+- `RUNNER_ARGS`: ``
+- `RUNNER_KWARGS`: `pine_path:str(source_path),candles:candles,overrides:{},observability:_baseline_observability_mapping(observability)`
+- `RUNNER_TARGET`: `result`
 - `SERIES_ASSIGNMENTS`: `4`
-- `SIGNAL_PAIR_ASSIGNMENTS`: `1`
+- `SIGNAL_PAIR`: `signals : explicit_signal_pair(source)`
 - `TESTING`: `NO`
+- `TESTPINE_PROCESS_CALLS`: `0`
+- `TESTPINE_PYTHON`: `YES`
