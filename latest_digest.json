@@ -1,21 +1,21 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-29T20:05:59.928617+00:00",
-  "run_id": "20260829T200557Z",
-  "step": "INSPECT_EXTERNAL_RESULT_OUTPUT_CONTRACT",
+  "published_at_utc": "2026-08-29T20:08:39.431850+00:00",
+  "run_id": "20260829T200836Z",
+  "step": "TRACE_EXTERNAL_ENTRYPOINT_OUTPUT",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "EXTERNAL_RESULT_TARGET_FOUND_OUTPUT_WRITER_UNRESOLVED",
-  "next_gate": "TRACE_EXTERNAL_ENTRYPOINT_OUTPUT",
+  "verdict": "EXTERNAL_WORKER_RESOLVED_OUTPUT_WRITER_STILL_INDIRECT",
+  "next_gate": "TRACE_WORKER_RETURN_OBJECT",
   "facts": {
     "CODE_CHANGED": "NO",
+    "COMMAND_PARTS": "6",
     "DB_WRITE": "NO",
-    "DYNAMIC_KEYS": "0",
-    "NAME_NORMALIZE": "0",
+    "DYNAMIC_KEYS": "3",
+    "NAME_LOGIC": "0",
     "PROCESS_CALLS": "1",
-    "STATIC_KEYS": "0",
     "STDOUT_WRITERS": "0",
-    "TARGET_FILES": "0",
-    "TESTING": "NO"
+    "TESTING": "NO",
+    "WORKER_FILES": "1"
   }
 }
