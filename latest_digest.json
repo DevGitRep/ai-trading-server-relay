@@ -1,17 +1,18 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-29T10:19:05.581147+00:00",
-  "run_id": "20260829T101903Z",
-  "step": "READ_LITERAL_EXISTING_CLIENT_COMMANDS",
+  "published_at_utc": "2026-08-29T10:19:51.794154+00:00",
+  "run_id": "20260829T101949Z",
+  "step": "PINNED_MCP_LIST_TOOLS",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "EXISTING_CLIENT_COMMAND_DISPATCH_RESOLVED",
-  "next_gate": "EXECUTE_THE_EXISTING_SEARCH_COMMAND_EXACTLY_AS_DEFINED",
+  "verdict": "PINNED_MCP_TOOL_LIST_RETURNED",
+  "next_gate": "CALL_THE_RETURNED_TRADINGVIEW_SEARCH_TOOL_FOR_PIPRUNNER",
   "facts": {
+    "CLIENT_RC": "0",
     "CODE_CHANGED": "NO",
+    "DB_WRITE": "NO",
     "LIVE_AUTHORIZATION": "YES",
-    "PREVIOUS_ERROR": "UNKNOWN_COMMAND",
-    "SUPPORTED_COMMANDS": "sdk-selftest,list-tools,call-tool",
-    "TRADINGVIEW_REQUESTS_SENT": "NO"
+    "MCP_TOOL_NAMES": "search_scripts,list_editors_picks,list_author_scripts,get_script_source,harvest_scripts,query_corpus,fetch_status",
+    "SUPPORTED_COMMAND": "list-tools"
   }
 }

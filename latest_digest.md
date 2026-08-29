@@ -1,18 +1,19 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-08-29T10:19:05.581147+00:00`
-- Run ID: `20260829T101903Z`
-- Step: `READ_LITERAL_EXISTING_CLIENT_COMMANDS`
+- Published UTC: `2026-08-29T10:19:51.794154+00:00`
+- Run ID: `20260829T101949Z`
+- Step: `PINNED_MCP_LIST_TOOLS`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `EXISTING_CLIENT_COMMAND_DISPATCH_RESOLVED`
-- Next gate: `EXECUTE_THE_EXISTING_SEARCH_COMMAND_EXACTLY_AS_DEFINED`
+- Verdict: `PINNED_MCP_TOOL_LIST_RETURNED`
+- Next gate: `CALL_THE_RETURNED_TRADINGVIEW_SEARCH_TOOL_FOR_PIPRUNNER`
 
 ## Facts
 
+- `CLIENT_RC`: `0`
 - `CODE_CHANGED`: `NO`
+- `DB_WRITE`: `NO`
 - `LIVE_AUTHORIZATION`: `YES`
-- `PREVIOUS_ERROR`: `UNKNOWN_COMMAND`
-- `SUPPORTED_COMMANDS`: `sdk-selftest,list-tools,call-tool`
-- `TRADINGVIEW_REQUESTS_SENT`: `NO`
+- `MCP_TOOL_NAMES`: `search_scripts,list_editors_picks,list_author_scripts,get_script_source,harvest_scripts,query_corpus,fetch_status`
+- `SUPPORTED_COMMAND`: `list-tools`
