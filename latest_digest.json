@@ -1,22 +1,20 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-29T22:29:37.413550+00:00",
-  "run_id": "20260829T222935Z",
-  "step": "INSPECT_EXACT_ACTIVE_PARAMETER_RUNNER",
+  "published_at_utc": "2026-08-29T22:31:16.804153+00:00",
+  "run_id": "20260829T223114Z",
+  "step": "INSTALL_EXACT_RUNTIME_ROLE_WRAPPERS_V3",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "EXACT_ACTIVE_RUNNER_STRUCTURE_CAPTURED",
-  "next_gate": "PATCH_EXACT_RUNTIME_OUTCOME_POINTS",
+  "verdict": "EXACT_RUNTIME_ROLE_WRAPPERS_IMPLEMENTED",
+  "next_gate": "USER_RUN_TESTPINE_10_RECENT",
   "facts": {
-    "BASE_CALLS": "1",
-    "CODE_CHANGED": "NO",
+    "BASE_CHANGED": "YES",
+    "BASE_COMPILE": "PASS",
     "DB_WRITE": "NO",
-    "DIRECT_FN": "YES",
     "ERROR": "NONE",
-    "RAISES": "2",
-    "RETURNS": "7",
-    "RUNNERS": "1",
-    "RUNTIME_CALLS": "1",
-    "RUN_FN": "YES"
+    "RUNNER_CHANGED": "YES",
+    "RUNNER_COMPILE": "PASS",
+    "RUNNER_RESOLVED": "YES",
+    "SELFTEST": "PASS"
   }
 }
