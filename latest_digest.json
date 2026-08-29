@@ -1,20 +1,21 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-29T21:31:08.950699+00:00",
-  "run_id": "20260829T213106Z",
-  "step": "VERIFY_REAL_PINETS_EXAMPLE",
+  "published_at_utc": "2026-08-29T21:32:36.194224+00:00",
+  "run_id": "20260829T213234Z",
+  "step": "VERIFY_REAL_RUNTIME_WITH_SYNTHETIC_CANDLES",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "REAL_EXAMPLE_FAILED",
-  "next_gate": "REPORT_RUNNER_COMPATIBILITY_GAP",
+  "verdict": "LOCAL_RUNNER_OUTPUT_HAS_NO_BUY_SELL_PAIR",
+  "next_gate": "REPORT_ACTUAL_RUNTIME_CONTRACT",
   "facts": {
-    "CANDLE_MODE": "NONE",
+    "CANDLES": "300",
     "CODE_CHANGED": "NO",
     "DB_WRITE": "NO",
-    "ERROR": "No module named &#x27;pandas&#x27;",
+    "ERROR": "NONE",
     "EXAMPLE": "FAIL",
     "LONG": "NONE",
     "OUTPUTS": "0",
+    "RUNNER_FOUND": "YES",
     "SHORT": "NONE"
   }
 }
