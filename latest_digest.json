@@ -1,22 +1,20 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-29T19:19:43.478336+00:00",
-  "run_id": "20260829T191941Z",
-  "step": "LOCATE_EXISTING_SAVE_RESULT_CALL",
+  "published_at_utc": "2026-08-29T19:20:35.657807+00:00",
+  "run_id": "20260829T192033Z",
+  "step": "TRACE_EXISTING_SAVE_RESULT_EXECUTION_PATH",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "SAVE_RESULT_CALL_SITE_AND_GUARD_CAPTURED",
-  "next_gate": "PATCH_LIBRARY_MODE_USING_EXISTING_SAVE_RESULT",
+  "verdict": "EXACT_SAVE_RESULT_EXECUTION_PATH_CAPTURED",
+  "next_gate": "FIX_TRUE_REASON_TEST_RUNS_NOT_PERSISTED",
   "facts": {
     "CODE_CHANGED": "NO",
     "DB_WRITE": "NO",
-    "PROCESS_CONTRACT_VARS": "candidate_id,metrics,source_path,thumbnail,trades",
-    "PROCESS_HAS_ALL_SAVE_VARS": "NO",
-    "SAVE_AFTER_RUN": "YES",
-    "SAVE_FOUND": "YES",
-    "SAVE_FUNCTION": "process_source",
-    "SAVE_GUARDS": "NONE",
-    "SAVE_IN_PROCESS": "YES",
+    "RAISES_BEFORE_SAVE": "0",
+    "RETURNS_BEFORE_SAVE": "3",
+    "RUNNER_LINE": "2769",
+    "SAVE_LINE": "2875",
+    "SAVE_OPS": "8",
     "TESTING": "NO"
   }
 }
