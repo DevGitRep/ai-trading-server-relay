@@ -1,22 +1,11 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-29T03:40:01.064623+00:00",
-  "run_id": "20260829T033958Z",
-  "step": "JURIK_KEYWORD_ONLY_EQUIVALENCE_REPLAY",
+  "published_at_utc": "2026-08-29T03:44:22.662774+00:00",
+  "run_id": "20260829T034420Z",
+  "step": "BASELINE_200_CANONICAL_EXECUTION_RESET",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "KEYWORD_ONLY_CALL_FIXED_BUT_NEXT_REPLAY_RUNTIME_ERROR_CAPTURED",
-  "next_gate": "FIX_ONLY_NEXT_REPLAY_ERROR",
-  "facts": {
-    "CANONICAL_ATTEMPTS": "0",
-    "METRICS_PASSING": "0/6",
-    "REFERENCE_RUN": "JURIK_DISCOVERY_V1_JURIK_165",
-    "REPLAY_ERROR": "ValueError:dictionary update sequence element #0 has length 11; 2 is required",
-    "REPLAY_STATUS": "ERROR",
-    "RUNNER_SIGNATURE": "(*, pine_path, candles, overrides=None, observability=None)",
-    "SOURCE_POOL": "200",
-    "STRICT_EQUIVALENCE": "NO",
-    "TRADE_COUNT_PASS": "NO",
-    "WORKER_RUNNING": "NO"
-  }
+  "verdict": "COMPILE_FAILED",
+  "next_gate": "FIX_ONLY_COMPILE_ERROR",
+  "facts": {}
 }
