@@ -1,24 +1,32 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-08-29T16:54:26.588090+00:00`
-- Run ID: `20260829T165424Z`
-- Step: `READ_EXISTING_INGEST_SOURCE_CONTRACT`
+- Published UTC: `2026-08-29T16:58:55.849843+00:00`
+- Run ID: `20260829T165853Z`
+- Step: `READ_PROVEN_218_CONFIG_TEST_REFERENCE`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `EXISTING_INGEST_REUSE_PATH_DETERMINED`
-- Next gate: `PATCH_STORED_LIBRARY_DIRECT_INPUT`
+- Verdict: `PROVEN_218_TEST_REFERENCE_CAPTURED_FROM_MASTER`
+- Next gate: `REPRODUCE_PROVEN_TEST_PIPELINE_BEFORE_TESTPINE_BATCHING`
 
 ## Facts
 
-- `ARGS`: `source_id,query_candidate_id,query_text,item,intake_method`
-- `CALLS`: `NONE`
-- `CANDIDATE_WRITE`: `NO`
+- `CANDIDATE`: `ICL_SRC_DF8CD7312712D315`
+- `CAUSAL_CLOSE_T`: `NO`
 - `CODE_CHANGED`: `NO`
+- `COMMAND_LINES`: `1`
+- `CONFIGS`: `218`
 - `DB_WRITE`: `NO`
-- `DEFAULT_CONFIG`: `YES`
-- `FOUND`: `YES`
-- `ITEM_KEYS`: `NONE`
-- `REMOTE_FETCH`: `NO`
-- `SOURCE_TEXT_INPUT`: `NO`
+- `DEFAULT_OVERRIDE`: `NO`
+- `DISCOVERY_CANDLES`: `525_600`
+- `EXEC_OPEN_T1`: `NO`
+- `FOUND_218`: `YES`
+- `MATURITY`: `collection`
+- `NODE_HEAP_MB`: `8192`
+- `NO_LOOKAHEAD`: `YES`
+- `PAIR`: `SOLUSDT`
+- `PARAM_RUNNER`: `parameter_runner.py`
+- `REFERENCE_RUNNER`: `jurik_working_reference_v1.py`
 - `TESTING`: `NO`
+- `TIMEFRAME`: `1m`
+- `TOP10_OOS`: `YES`
