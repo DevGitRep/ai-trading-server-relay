@@ -1,21 +1,26 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-29T18:46:08.278341+00:00",
-  "run_id": "20260829T184606Z",
-  "step": "DIAGNOSE_UI_SCORE_BINDING",
+  "published_at_utc": "2026-08-29T18:47:14.747756+00:00",
+  "run_id": "20260829T184712Z",
+  "step": "DIAGNOSE_SCORE_TO_LIBRARY_BINDING",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "UI_PATCH_FAILURE_DIAGNOSED_READ_ONLY",
-  "next_gate": "PATCH_UI_WITH_CORRECT_RESULT_BINDING",
+  "verdict": "SCORE_LIBRARY_BINDING_RESOLVED",
+  "next_gate": "CHOOSE_SAFE_UI_BINDING_OR_FIX_RESULT_PERSISTENCE",
   "facts": {
+    "ANY_MATCH": "1",
     "CODE_CHANGED": "NO",
     "DB_WRITE": "NO",
-    "LATEST_TESTPINE": "4",
-    "LIST_FUNC": "indicator_lab_home",
-    "NEW_WITH_PF": "0",
+    "LATEST4_WITH_PF": "0",
+    "LIBRARY_COUNT": "356",
+    "NAME_MATCH": "1",
+    "NEW_RESULT_PERSISTENCE": "MISSING",
     "PF_TABLES": "3",
-    "REPORT_FUNC": "indicator_lab_report",
-    "ROLLBACK_ACTIVE": "YES",
-    "TESTING": "NO"
+    "SAFE_BINDING": "SOURCE_URL",
+    "SCORED_CANDIDATES": "1",
+    "SHA_MATCH": "0",
+    "TESTING": "NO",
+    "TEST_RUNS_PF_ROWS": "228",
+    "URL_MATCH": "1"
   }
 }
