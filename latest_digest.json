@@ -1,18 +1,22 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-29T19:31:37.097972+00:00",
-  "run_id": "20260829T193135Z",
-  "step": "TRACE_TESTPINE_SIGNAL_SERIES_CREATION",
+  "published_at_utc": "2026-08-29T19:32:40.099242+00:00",
+  "run_id": "20260829T193238Z",
+  "step": "COMPARE_LIBRARY_SIGNAL_PATH_WITH_JURIK",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "SIGNAL_SERIES_AND_CONTROL_FLOW_CAPTURED",
-  "next_gate": "COMPARE_LIBRARY_SIGNAL_PATH_WITH_WORKING_PATH",
+  "verdict": "LIBRARY_AND_WORKING_SIGNAL_CONTRACT_CAPTURED",
+  "next_gate": "REUSE_PROVEN_SIGNAL_ADAPTER_OR_FIX_RUNNER_INPUT",
   "facts": {
     "CODE_CHANGED": "NO",
     "DB_WRITE": "NO",
-    "LIBRARY_REFS": "0",
-    "RETURNS": "3",
+    "JURIK_FOUND": "YES",
+    "JURIK_PROCESS_SOURCE": "0",
+    "JURIK_RUNNER": "0",
+    "JURIK_SERIES": "0",
+    "RUNNER_CALLS": "1",
     "SERIES_ASSIGNMENTS": "4",
+    "SIGNAL_PAIR_ASSIGNMENTS": "1",
     "TESTING": "NO"
   }
 }
