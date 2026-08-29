@@ -1,20 +1,22 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-29T20:47:30.193014+00:00",
-  "run_id": "20260829T204728Z",
-  "step": "TRACE_JURIK_SIGNAL_BLOCK",
+  "published_at_utc": "2026-08-29T21:13:04.726930+00:00",
+  "run_id": "20260829T211302Z",
+  "step": "TRACE_ARCHIVED_BASELINE_EXTRACTORS",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "JURIK_LABEL_PRESENT_BUT_NO_SPECIAL_SIGNAL_PAIR_LOGIC",
-  "next_gate": "TRACE_GENERIC_SIGNAL_PAIR_LOGIC_USED_BY_HISTORICAL_JURIK",
+  "verdict": "NO_ARCHIVED_BASELINE_EXTRACTOR_FINDS_JURIK_SIGNAL_PAIR",
+  "next_gate": "COMPARE_HISTORICAL_JURIK_SOURCE_LINEAGE",
   "facts": {
     "CODE_CHANGED": "NO",
     "DB_WRITE": "NO",
-    "FUNCTION": "NONE",
-    "RELEVANT_LINES": "0",
-    "RETURNS": "0",
-    "RUNTIME_TEST": "NO",
-    "SIGNAL1": "NONE",
-    "SIGNAL2": "NONE"
+    "EXTRACTOR_VERSIONS": "1",
+    "FILES": "6",
+    "JURIK_SOURCE_SHA": "fd95b3d18254",
+    "PAIR_HASH": "NONE",
+    "PAIR_LONG": "NONE",
+    "PAIR_SHORT": "NONE",
+    "PAIR_VERSIONS": "0",
+    "RUNTIME_TEST": "NO"
   }
 }
