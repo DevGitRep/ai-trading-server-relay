@@ -1,16 +1,25 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-29T22:42:44.120035+00:00",
-  "run_id": "20260829T224242Z",
-  "step": "RUN_CANONICAL_REAL_INDICATOR_CORRECT_ENV",
+  "published_at_utc": "2026-08-29T22:50:43.318136+00:00",
+  "run_id": "20260829T225040Z",
+  "step": "RESTORE_LITERAL_DOCUMENTED_TESTPINE",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "NO_EXISTING_PANDAS_RUNTIME_FOUND",
-  "next_gate": "USE_EXISTING_TESTPINE_DATA_LOADER_DIRECTLY",
+  "verdict": "LITERAL_DOCUMENTED_TESTPINE_RESTORED",
+  "next_gate": "USER_RUN_TESTPINE_2_RECENT",
   "facts": {
-    "CODE_CHANGED": "NO",
+    "ATTEMPT_MARKER": "YES",
+    "BASE_COMPILE": "PASS",
+    "BASE_RESTORED": "YES",
     "DB_WRITE": "NO",
-    "ERROR": "PANDAS_RUNTIME_MISSING",
-    "RUNTIME_FOUND": "NO"
+    "ERROR": "NONE",
+    "EXPERIMENTAL_HOOKS": "NO",
+    "LINK": "YES",
+    "OFFICIAL_FALLBACK": "YES",
+    "RUNNER_COMPILE": "PASS",
+    "RUNNER_RESTORED": "YES",
+    "SELFTEST": "PASS",
+    "TESTPINE_COMPILE": "PASS",
+    "TESTPINE_RESTORED": "YES"
   }
 }
