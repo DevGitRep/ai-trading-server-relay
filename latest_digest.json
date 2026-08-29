@@ -1,24 +1,21 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-29T20:10:29.793515+00:00",
-  "run_id": "20260829T201027Z",
-  "step": "TRACE_WORKER_RETURN_OBJECT",
+  "published_at_utc": "2026-08-29T20:12:58.539814+00:00",
+  "run_id": "20260829T201256Z",
+  "step": "READ_EXACT_RUNNER_MJS_KEY_CONTRACT",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "WORKER_KEY_NAMESPACE_AND_EXTRACTOR_NAMESPACE_MISMATCH",
-  "next_gate": "PATCH_ONLY_RESULT_KEY_MAPPING",
+  "verdict": "EXACT_WORKER_KEY_CONTEXT_CAPTURED",
+  "next_gate": "PATCH_RESULT_KEY_MAPPING",
   "facts": {
     "CODE_CHANGED": "NO",
-    "CONTRACT_MATCH": "NO",
     "DB_WRITE": "NO",
-    "DYNAMIC_KEYS": "2",
-    "EXTRACTOR_CLASS": "VARIABLE_IDENTIFIER",
-    "KEY_CLASS": "DYNAMIC_UNCLASSIFIED",
-    "KEY_ORIGINS": "0",
-    "OUTPUT_CLASS": "OUTPUT_MAP",
-    "RETURNS": "0",
-    "SERIALIZERS": "1",
+    "DYNAMIC_KEYS": "3",
+    "EXPLICIT_RETURNS": "3",
+    "RUNNER_FOUND": "YES",
+    "SERIALIZATION": "1",
+    "SERIES_LOOKUPS": "4",
     "TESTING": "NO",
-    "WORKER_FILE": "runner.mjs"
+    "WORKER_FOUND": "YES"
   }
 }
