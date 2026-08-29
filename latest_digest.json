@@ -1,25 +1,20 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-29T22:06:49.203145+00:00",
-  "run_id": "20260829T220647Z",
-  "step": "FINALIZE_ACTUAL_LIBRARY_ROLE_BADGES",
+  "published_at_utc": "2026-08-29T22:08:01.208697+00:00",
+  "run_id": "20260829T220759Z",
+  "step": "RESTORE_CANONICAL_LIBRARY_HELPER",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "LIVE_ROLE_BADGES_FAILED",
-  "next_gate": "REPORT_UI_FAILURE",
+  "verdict": "RESTORE_FAILED",
+  "next_gate": "REPORT_RESTORE_FAILURE",
   "facts": {
-    "BACKEND_STOPPED": "0",
     "CODE_CHANGED": "NO",
-    "DB_RUNTIME": "0",
-    "DB_SIGNAL": "0",
-    "DB_SUPPORTING": "0",
     "DB_WRITE": "NO",
-    "ERROR": "SYNTAXERROR:INVALID_SYNTAX_INDICATOR_LAB_LIBRARY_UI_V1_PY_LINE_248_",
-    "LIVE_BADGES": "0",
+    "ERROR": "RUNTIMEERROR:CANONICAL_HELPER_BACKUP_MISSING",
     "LIVE_HTTP": "NONE",
-    "LIVE_RUNTIME": "0",
-    "LIVE_SIGNAL": "0",
-    "LIVE_SUPPORTING": "0",
-    "PAYLOAD_PATCH": "NO"
+    "PAYLOAD_POINTS": "0",
+    "PY_COMPILE": "NOT_RUN",
+    "RESTORED": "NO",
+    "SQL_POINTS": "0"
   }
 }
