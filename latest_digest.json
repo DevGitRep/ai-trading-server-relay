@@ -1,23 +1,23 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-29T19:43:11.117106+00:00",
-  "run_id": "20260829T194309Z",
-  "step": "TRACE_PROVEN_JURIK_REFERENCE_ORIGIN",
+  "published_at_utc": "2026-08-29T19:44:35.208932+00:00",
+  "run_id": "20260829T194433Z",
+  "step": "TRACE_JURIK_TEST_RUN_WRITER",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "JURIK_RUN_ORIGIN_STILL_UNRESOLVED",
-  "next_gate": "TRACE_TEST_RUN_WRITER_CALLER_FOR_JURIK",
+  "verdict": "JURIK_ROWS_COMPATIBLE_WITH_CANONICAL_SAVE_RESULT_BUT_PROVENANCE_NOT_STORED",
+  "next_gate": "USE_MASTER_AND_CONFIG_HISTORY_TO_IDENTIFY_HISTORICAL_METHOD",
   "facts": {
+    "CANDIDATE_HITS": "2",
+    "CAND_PROVENANCE": "16",
     "CODE_CHANGED": "NO",
     "DB_WRITE": "NO",
+    "INSERT_COLS": "UNRESOLVED",
     "JURIK_RUNS": "228",
-    "ORIGIN": "UNRESOLVED",
-    "PATH_CLASSES": "NONE",
-    "PATH_MATCH": "NONE",
-    "SHA_MATCH": "NONE",
-    "SIGNAL_PAIRS": "0",
-    "SOURCE_PATHS": "0",
-    "SOURCE_SHAS": "0",
-    "TESTING": "NO"
+    "MASTER_HITS": "18",
+    "RUN_METADATA": "4",
+    "SAVE_CALLS": "4",
+    "TESTING": "NO",
+    "WRITE_HITS": "0"
   }
 }
