@@ -1,22 +1,22 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-29T20:30:20.896870+00:00",
-  "run_id": "20260829T203018Z",
-  "step": "EXPOSE_PROVEN_OUTPUT_ITERATION",
+  "published_at_utc": "2026-08-29T20:31:31.293325+00:00",
+  "run_id": "20260829T203129Z",
+  "step": "TRACE_PROVEN_RESULT_ALIAS_CHAIN",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "PROVEN_OUTPUT_ITERATION_NOT_UNIQUE",
-  "next_gate": "SELECT_EXACT_PROVEN_LOOP",
+  "verdict": "JURIK_REFERENCE_DOES_NOT_SELECT_SIGNALS_BY_OUTPUT_ITERATION",
+  "next_gate": "TRACE_PROVEN_RESULT_DERIVED_SIGNAL_CONSUMER",
   "facts": {
+    "ALIASES": "1",
+    "ALIAS_EDGES": "0",
     "CODE_CHANGED": "NO",
+    "CONSUMERS": "0",
     "DB_WRITE": "NO",
-    "EVAL1": "NONE",
-    "LOOP_BODY1": "NONE",
-    "LOOP_BODY2": "NONE",
-    "LOOP_ITER": "NONE",
-    "LOOP_TARGET": "NONE",
-    "OUTPUT_LOOPS": "0",
-    "RUNTIME_TEST": "NO",
-    "SIGNAL_ASSIGN": "0"
+    "ITERATIONS": "0",
+    "ITER_EXPR": "NONE",
+    "ITER_TARGET": "NONE",
+    "RESULT_VARS": "1",
+    "RUNTIME_TEST": "NO"
   }
 }
