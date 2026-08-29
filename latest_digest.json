@@ -1,22 +1,23 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-29T10:30:41.484766+00:00",
-  "run_id": "20260829T103035Z",
-  "step": "DISCOVER_ONE_NEW_SCRIPT_WITH_PINNED_MCP",
+  "published_at_utc": "2026-08-29T10:31:35.936350+00:00",
+  "run_id": "20260829T103131Z",
+  "step": "GET_ONE_NEW_SCRIPT_SOURCE_WITH_PINNED_MCP",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "PINNED_MCP_DISCOVERED_ONE_NEW_SCRIPT_NOT_PRESENT_IN_EXISTING_DB",
-  "next_gate": "CALL_GET_SCRIPT_SOURCE_FOR_THIS_NEW_SCRIPT",
+  "verdict": "PINNED_MCP_NEW_SCRIPT_SOURCE_RETRIEVAL_PASS",
+  "next_gate": "PERSIST_THIS_NEW_SCRIPT_SOURCE_IN_EXISTING_DATABASE_USING_CANONICAL_MCP_PROVIDER",
   "facts": {
     "BACKTEST_USED": "NO",
     "CLIENT_RC": "0",
     "CODE_CHANGED": "NO",
     "DB_WRITE": "NO",
-    "DISCOVERY_TOOL": "list_editors_picks",
-    "NEW_PUB_ID": "PUB_4d443adb72e74b9f8e63f44a6ee81e5b",
-    "NEW_SCRIPT_ID": "ks2QGulb-Initial-Balance-Auction-Intelligence-by-DGT",
     "PINETS_USED": "NO",
-    "RETURNED_PUB_IDS": "24",
-    "RETURNED_SCRIPT_URLS": "24"
+    "PINE_VERSION": "//@version=6",
+    "PUB_ID": "PUB_4d443adb72e74b9f8e63f44a6ee81e5b",
+    "SOURCE_BYTES": "43237",
+    "SOURCE_FOUND": "YES",
+    "SOURCE_SHA": "c178f9822c4eb87c60948ad29fdad5e7f6bc7ef1d97815e93dddf6defc3a2755",
+    "TOOL": "get_script_source"
   }
 }
