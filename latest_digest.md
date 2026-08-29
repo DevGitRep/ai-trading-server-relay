@@ -1,19 +1,22 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-08-29T10:19:51.794154+00:00`
-- Run ID: `20260829T101949Z`
-- Step: `PINNED_MCP_LIST_TOOLS`
+- Published UTC: `2026-08-29T10:20:35.782571+00:00`
+- Run ID: `20260829T102030Z`
+- Step: `PINNED_MCP_SEARCH_PIPRUNNER`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `PINNED_MCP_TOOL_LIST_RETURNED`
-- Next gate: `CALL_THE_RETURNED_TRADINGVIEW_SEARCH_TOOL_FOR_PIPRUNNER`
+- Verdict: `PINNED_MCP_PIPRUNNER_SEARCH_PASS`
+- Next gate: `CALL_GET_SCRIPT_SOURCE_FOR_THE_RETURNED_PIPRUNNER_RESULT`
 
 ## Facts
 
+- `BACKTEST_USED`: `NO`
+- `CANONICAL_STACK`: `PINE_CATALOG_MCP_V1`
 - `CLIENT_RC`: `0`
 - `CODE_CHANGED`: `NO`
 - `DB_WRITE`: `NO`
-- `LIVE_AUTHORIZATION`: `YES`
-- `MCP_TOOL_NAMES`: `search_scripts,list_editors_picks,list_author_scripts,get_script_source,harvest_scripts,query_corpus,fetch_status`
-- `SUPPORTED_COMMAND`: `list-tools`
+- `PINETS_USED`: `NO`
+- `PIPRUNNER_FOUND`: `YES`
+- `SCRIPT_ID`: `NONE`
+- `SEARCH_TOOL`: `search_scripts`
