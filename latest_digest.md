@@ -1,26 +1,28 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-08-30T14:33:54.978548+00:00`
-- Run ID: `20260830T143352Z`
-- Step: `TRACE_PINETS_SLICE_RUNTIME_ERROR`
+- Published UTC: `2026-08-30T14:34:51.727336+00:00`
+- Run ID: `20260830T143449Z`
+- Step: `READ_PINETS_CLI_ERROR_OUTPUT_CONTRACT`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `SLICE_ERROR_REPRODUCED_NO_PACKAGE_FRAME`
-- Next gate: `STOP_BEFORE_CLASSIFICATION`
+- Verdict: `CLI_STACK_PATH_PRESENT`
+- Next gate: `USE_ONLY_OFFICIAL_STACK_PATH`
 
 ## Facts
 
-- `CLI_RC`: `1`
+- `CLI_VERSION`: `0.1.15`
 - `CODE_CHANGED`: `NO`
+- `CODE_DEBUG`: `YES`
+- `CODE_TRACE`: `NO`
+- `CODE_VERBOSE`: `NO`
 - `DB_WRITE`: `NO`
+- `ENTRY_FOUND`: `YES`
 - `ERROR`: `NONE`
-- `ERROR_TEXT`: `Execution failed: Cannot read properties of undefined (reading &#x27;slice&#x27;)`
-- `FRAME_CODE`: `NONE`
-- `FRAME_FILE`: `NONE`
-- `FRAME_FOUND`: `NO`
-- `FRAME_LINE`: `NONE`
-- `FRAME_PACKAGE`: `NONE`
+- `EXECUTION_FAILED_HANDLER`: `YES`
+- `HANDLER_USES_MESSAGE_ONLY`: `YES`
+- `HANDLER_USES_STACK`: `YES`
+- `HELP_DEBUG`: `YES`
+- `HELP_TRACE`: `NO`
+- `HELP_VERBOSE`: `NO`
 - `MASTER_UPDATED`: `NO`
-- `SLICE_ERROR`: `YES`
-- `SOURCE_FOUND`: `YES`
