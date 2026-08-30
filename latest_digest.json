@@ -1,21 +1,20 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-30T20:41:47.103966+00:00",
-  "run_id": "20260830T204144Z",
-  "step": "INSTALL_AND_PROVE_PREFLIGHT_ONLY",
+  "published_at_utc": "2026-08-30T21:27:44.385648+00:00",
+  "run_id": "20260830T212737Z",
+  "step": "REPAIR_MLFINPY_DEPENDENCY_AND_PROVE_APIS",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "PREFLIGHT_ONLY_WORKS_AND_PERSISTS",
-  "next_gate": "USER_CAN_RUN_PREFLIGHT_BATCH",
+  "verdict": "DOCUMENTED_QUANT_PREFLIGHT_APIS_PROVEN",
+  "next_gate": "CONNECT_TO_EXISTING_PINETS_OUTPUT",
   "facts": {
-    "BACKTEST_RUN": "NO",
-    "COMMAND": "testpine-preflight",
-    "DB_MARKER_VERIFIED": "YES",
-    "DB_SAVED": "YES",
+    "CUSUM": "PASS",
+    "DB_WRITE": "NO",
     "MASTER_UPDATED": "YES",
-    "NEW_TABLE": "NO",
-    "PREFLIGHT_DETAIL": "pointvalue",
-    "PREFLIGHT_STATUS": "PINETS_RUNTIME_UNSUPPORTED",
-    "SELFTEST": "PASS"
+    "MLFINPY": "0.1.2",
+    "SKLEARN": "INSTALLED",
+    "TREND_SCANNING": "PASS",
+    "TRIPLE_BARRIER": "PASS",
+    "ZSCORE": "PASS"
   }
 }
