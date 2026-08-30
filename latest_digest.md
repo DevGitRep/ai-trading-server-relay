@@ -1,34 +1,28 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-08-30T05:33:17.375523+00:00`
-- Run ID: `20260830T053315Z`
-- Step: `VERIFY_DOCUMENTED_STORED_SOURCE_BINDING_VALUES`
+- Published UTC: `2026-08-30T05:34:40.239047+00:00`
+- Run ID: `20260830T053438Z`
+- Step: `READ_CANONICAL_STORED_SOURCE_ADAPTER_DOC`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `STORED_SOURCE_BINDING_VALUES_READ`
-- Next gate: `RESTORE_ONLY_EXISTING_BINDING`
+- Verdict: `CANONICAL_STORED_SOURCE_ADAPTER_DOC_READ`
+- Next gate: `IMPLEMENT_LITERAL_DOCUMENTED_ADAPTER`
 
 ## Facts
 
-- `ACQUISITION_BY_SHA`: `0`
-- `ACQUISITION_BY_URL`: `0`
-- `ACTUAL_SOURCE_URL_PRESENT`: `NO`
-- `ACTUAL_SOURCE_URL_SCRIPT_PATH`: `NO`
-- `ACTUAL_URLS_EQUAL`: `NO`
-- `ACTUAL_URL_PRESENT`: `NO`
-- `ACTUAL_URL_SCRIPT_PATH`: `NO`
-- `CANDIDATE_EXPR`: `candidate_id`
-- `CANDIDATE_PRESENT`: `NO`
 - `CODE_CHANGED`: `NO`
 - `DB_WRITE`: `NO`
 - `ERROR`: `NONE`
+- `HAS_ACQUISITION`: `YES`
+- `HAS_LIBRARY_URL`: `YES`
+- `HAS_PROCESS_SOURCE`: `NO`
+- `HAS_SEARCH_BYPASS`: `NO`
+- `HAS_SOURCE_PATH`: `NO`
+- `LINE1`: `pine_baseline_batch_200.py contains one canonical internal adapter:`
+- `LINE2`: `TESTPINE_LIBRARY_ACQUISITION_V1`
+- `LINE3`: `Internal Library candidates use:`
+- `LINE4`: `library://candidate/&lt;candidate_id&gt;`
+- `LINE5`: `The adapter reads pine_source + source_sha256 from the existing candidates table, writes the runtime .pin`
 - `MASTER_UPDATED`: `NO`
-- `PROVIDER_EXPR`: `&#x27;PINE_LIBRARY&#x27;`
-- `QUERY_EXPR`: `row[&#x27;name&#x27;] or row[&#x27;script_id_part&#x27;]`
-- `SCHEMA_FOUND`: `YES`
-- `SCRIPT_EXPR`: `row[&#x27;script_id_part&#x27;]`
-- `SELECTED_ROW`: `YES`
-- `SOURCE_SHA_PRESENT`: `NO`
-- `SOURCE_URL_EXPR`: `&#x27;library://candidate/&#x27; + candidate_id`
-- `URL_EXPR`: `&#x27;library://candidate/&#x27; + candidate_id`
+- `SECTION_FOUND`: `YES`
