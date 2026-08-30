@@ -1,28 +1,29 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-08-30T14:34:51.727336+00:00`
-- Run ID: `20260830T143449Z`
-- Step: `READ_PINETS_CLI_ERROR_OUTPUT_CONTRACT`
+- Published UTC: `2026-08-30T14:37:06.279756+00:00`
+- Run ID: `20260830T143703Z`
+- Step: `TRACE_SLICE_WITH_OFFICIAL_PINETS_DEBUG`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `CLI_STACK_PATH_PRESENT`
-- Next gate: `USE_ONLY_OFFICIAL_STACK_PATH`
+- Verdict: `OFFICIAL_DEBUG_STACK_FRAME_READ`
+- Next gate: `CLASSIFY_FROM_EXACT_FRAME`
 
 ## Facts
 
-- `CLI_VERSION`: `0.1.15`
+- `CLI_RC`: `1`
 - `CODE_CHANGED`: `NO`
-- `CODE_DEBUG`: `YES`
-- `CODE_TRACE`: `NO`
-- `CODE_VERBOSE`: `NO`
 - `DB_WRITE`: `NO`
-- `ENTRY_FOUND`: `YES`
+- `DEBUG_USED`: `YES`
 - `ERROR`: `NONE`
-- `EXECUTION_FAILED_HANDLER`: `YES`
-- `HANDLER_USES_MESSAGE_ONLY`: `YES`
-- `HANDLER_USES_STACK`: `YES`
-- `HELP_DEBUG`: `YES`
-- `HELP_TRACE`: `NO`
-- `HELP_VERBOSE`: `NO`
+- `ERROR_TEXT`: `Indicator: tmph6svoijs.pine Data source: JSON file (500 candles) Executing... Execution failed: Cannot read properties of undefined (reading &#x27;slice&#x27;)`
+- `FRAME_CODE`: ``,e+=&quot;[&quot;+this.matrix[r].join(&quot;, &quot;)+&quot;]&quot;;return e}add_col(...e){return this._add_col(this,...e)}add_row(...e){return this._add_row(this,...e)}avg(...e){return thi`
+- `FRAME_FILE`: `pinets-cli.min.cjs`
+- `FRAME_FOUND`: `YES`
+- `FRAME_LINE`: `159`
+- `FRAME_PACKAGE`: `PINETS_CLI`
 - `MASTER_UPDATED`: `NO`
+- `QUIET_USED`: `NO`
+- `SLICE_ERROR`: `YES`
+- `SOURCE_FOUND`: `YES`
+- `STACK_PRESENT`: `YES`
