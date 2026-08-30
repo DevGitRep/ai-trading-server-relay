@@ -1,27 +1,24 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-08-30T04:15:08.824736+00:00`
-- Run ID: `20260830T041506Z`
-- Step: `RESOLVE_CANONICAL_ATTEMPT_NONE_ORIGIN`
+- Published UTC: `2026-08-30T04:16:28.435805+00:00`
+- Run ID: `20260830T041626Z`
+- Step: `RESOLVE_EXISTING_PROCESS_SOURCE_RUNNER_GATE`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `ATTEMPT_NONE_ORIGIN_NOT_RESOLVED`
-- Next gate: `STOP_AND_REPORT_ATTEMPT_NONE_ORIGIN`
+- Verdict: `EXISTING_RUNNER_GATE_RESOLVED`
+- Next gate: `EVALUATE_EXISTING_GATE_FOR_ONE_LIBRARY_SOURCE`
 
 ## Facts
 
 - `CODE_CHANGED`: `NO`
 - `DB_WRITE`: `NO`
-- `ENCLOSING_FUNCTION`: `NONE`
 - `ERROR`: `NONE`
-- `LATEST_MARKER_COLUMN`: `notes`
-- `LATEST_MARKER_VALUE`: `DONE`
-- `LATEST_PERFORMANCE_STATUS`: `NOT_TESTED`
-- `LATEST_TEST_RUNS`: `0`
-- `MARKER_EXPR`: `NONE`
-- `MARKER_FILE`: `testpine`
-- `MARKER_LINE`: `28`
+- `LAST_RETURN_BEFORE`: `2769`
 - `MASTER_UPDATED`: `NO`
-- `OUTCOME_ASSIGNMENTS`: `0`
-- `OUTCOME_VALUES`: `NONE`
+- `PROCESS_SOURCE`: `YES`
+- `RETURNS_BEFORE_RUNNER`: `8`
+- `RUNNER_CALL`: `execute`
+- `RUNNER_CONDITIONS`: `&#x27;lookahead_on&#x27; in source.lower() or &#x27;&quot;hard_fail&quot;:true&#x27; in audit_text or (&#x27;&quot;pass&quot;:false&#x27; in audit_tex`
+- `RUNNER_IF_DEPTH`: `1`
+- `RUNNER_LINE`: `2792`
