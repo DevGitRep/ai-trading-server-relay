@@ -1,25 +1,21 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-30T06:13:55.975939+00:00",
-  "run_id": "20260830T061353Z",
-  "step": "MAKE_PINETS_RUNTIME_STATUS_PRECISE",
+  "published_at_utc": "2026-08-30T06:15:57.045608+00:00",
+  "run_id": "20260830T061554Z",
+  "step": "READ_CURRENT_PINETS_FAILURE",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "PINETS_RUNTIME_STATUS_MADE_PRECISE",
-  "next_gate": "USER_RUN_TESTPINE_1_RECENT",
+  "verdict": "CURRENT_PINETS_FAILURE_READ",
+  "next_gate": "HANDLE_LITERAL_RUNTIME_ERROR_ONLY",
   "facts": {
-    "COMPILE": "PASS",
+    "CLI_RC": "1",
+    "CODE_CHANGED": "NO",
     "DB_WRITE": "NO",
     "ERROR": "NONE",
-    "GENERIC_FAILURE_CASE": "YES",
-    "GENERIC_UNSUPPORTED_FOUND": "YES",
-    "MASTER_FIRST": "YES",
-    "MASTER_UPDATED": "YES",
-    "NOT_FUNCTION_CASE": "YES",
-    "NOT_IMPLEMENTED_CASE": "YES",
-    "PRECISE_STATUS_PATCHED": "YES",
-    "PREFLIGHT_FOUND": "YES",
-    "SCALE_CASE": "YES",
-    "SELFTEST": "PASS"
+    "ERROR_CLASS": "OTHER_RUNTIME_ERROR",
+    "ERROR_TEXT": "Execution failed: Cannot read properties of undefined (reading &#x27;tickerid&#x27;)",
+    "MASTER_UPDATED": "NO",
+    "SOURCE_FOUND": "YES",
+    "STDOUT_JSON": "NO"
   }
 }
