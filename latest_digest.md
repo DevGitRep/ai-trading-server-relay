@@ -1,32 +1,23 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-08-30T05:50:20.885402+00:00`
-- Run ID: `20260830T055018Z`
-- Step: `RUN_PINETS_LOCAL_OFFICIAL_EPOCH_MS`
+- Published UTC: `2026-08-30T05:51:18.438551+00:00`
+- Run ID: `20260830T055116Z`
+- Step: `READ_INSTALLED_PINETS_ARRAY_BOX_SUPPORT`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `PINETS_LOCAL_EPOCH_MS_EXECUTED`
-- Next gate: `USE_NATIVE_PINETS_OUTPUT_ONLY`
+- Verdict: `ARRAY_NEW_BOX_NOT_IMPLEMENTED`
+- Next gate: `TREAT_SELECTED_SCRIPT_AS_PINETS_RUNTIME_UNSUPPORTED`
 
 ## Facts
 
-- `BUY_POINTS`: `0`
-- `BUY_PRESENT`: `NO`
-- `CLI_FOUND`: `YES`
-- `CLI_RC`: `1`
+- `ARRAY_NEW_BOX_IMPL`: `NO`
+- `BOX_NEW_IMPL`: `NO`
 - `CODE_CHANGED`: `NO`
 - `DB_WRITE`: `NO`
+- `DOC_ARRAY_NEW_BOX`: `NO`
+- `DOC_BOX_NEW`: `NO`
 - `ERROR`: `NONE`
-- `INPUT_ROWS`: `500`
 - `MASTER_UPDATED`: `NO`
-- `OUTPUT_KEYS`: `NONE`
-- `PLOT_COUNT`: `0`
-- `PLOT_NAMES`: `NONE`
-- `SELL_POINTS`: `0`
-- `SELL_PRESENT`: `NO`
-- `SOURCE_FOUND`: `YES`
-- `STDERR`: `Execution failed: array.new_box is not a function`
-- `STDOUT_JSON`: `NO`
-- `TIME_13_DIGIT`: `YES`
-- `TIME_UNIT`: `EPOCH_MS`
+- `MATCH_FILES`: `0`
+- `NEW_BOX_IMPL`: `NO`
