@@ -1,29 +1,28 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-08-30T14:44:20.551088+00:00`
-- Run ID: `20260830T144417Z`
-- Step: `TRACE_SLICE_WITH_NODE_SOURCE_MAPS`
+- Published UTC: `2026-08-30T14:46:58.965702+00:00`
+- Run ID: `20260830T144656Z`
+- Step: `TEST_DOCUMENTED_TIMEFRAME_WITH_CUSTOM_DATA`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `SOURCE_MAP_DID_NOT_REMAP_FRAME`
-- Next gate: `USE_EXACT_LINE_AND_COLUMN_WITH_BUNDLE_MAP`
+- Verdict: `TIMEFRAME_DID_NOT_FIX_SLICE`
+- Next gate: `DO_NOT_PATCH_PREFLIGHT`
 
 ## Facts
 
+- `BUY_PRESENT`: `NO`
 - `CLI_RC`: `1`
 - `CODE_CHANGED`: `NO`
 - `DB_WRITE`: `NO`
 - `ERROR`: `NONE`
-- `FRAME_COLUMN`: `116077`
-- `FRAME_FILE`: `pinets-cli.min.cjs`
-- `FRAME_FUNCTION`: `Og.in_seconds`
-- `FRAME_LINE`: `159`
-- `FRAME_PACKAGE`: `NONE`
-- `MAPPED_FRAME_FOUND`: `NO`
+- `ERROR_CLASS`: `OTHER_RUNTIME_ERROR`
+- `ERROR_TEXT`: `Execution failed: Cannot read properties of undefined (reading &#x27;slice&#x27;)`
 - `MASTER_UPDATED`: `NO`
-- `MINIFIED_ONLY`: `YES`
+- `PLOT_COUNT`: `0`
+- `SELL_PRESENT`: `NO`
 - `SLICE_ERROR`: `YES`
 - `SOURCE_FOUND`: `YES`
-- `SOURCE_MAPS_ENABLED`: `YES`
-- `STACK_PRESENT`: `YES`
+- `STDOUT_JSON`: `NO`
+- `TIMEFRAME`: `1`
+- `TIMEFRAME_USED`: `YES`
