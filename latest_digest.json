@@ -1,20 +1,26 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-30T04:13:47.462741+00:00",
-  "run_id": "20260830T041345Z",
-  "step": "READ_LATEST_DOCUMENTED_TESTPINE_OUTCOME",
+  "published_at_utc": "2026-08-30T04:15:08.824736+00:00",
+  "run_id": "20260830T041506Z",
+  "step": "RESOLVE_CANONICAL_ATTEMPT_NONE_ORIGIN",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "LATEST_ATTEMPT_OUTCOME_READ",
-  "next_gate": "INTERPRET_DOCUMENTED_ATTEMPT_OUTCOME",
+  "verdict": "ATTEMPT_NONE_ORIGIN_NOT_RESOLVED",
+  "next_gate": "STOP_AND_REPORT_ATTEMPT_NONE_ORIGIN",
   "facts": {
-    "ATTEMPT_FOUND": "YES",
-    "ATTEMPT_OUTCOME": "DONE",
     "CODE_CHANGED": "NO",
     "DB_WRITE": "NO",
+    "ENCLOSING_FUNCTION": "NONE",
     "ERROR": "NONE",
+    "LATEST_MARKER_COLUMN": "notes",
+    "LATEST_MARKER_VALUE": "DONE",
+    "LATEST_PERFORMANCE_STATUS": "NOT_TESTED",
+    "LATEST_TEST_RUNS": "0",
+    "MARKER_EXPR": "NONE",
+    "MARKER_FILE": "testpine",
+    "MARKER_LINE": "28",
     "MASTER_UPDATED": "NO",
-    "REMAINING_PROCESSES": "0",
-    "TEST_RUNS": "0"
+    "OUTCOME_ASSIGNMENTS": "0",
+    "OUTCOME_VALUES": "NONE"
   }
 }
