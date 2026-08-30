@@ -1,37 +1,32 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-08-30T20:15:11.376513+00:00`
-- Run ID: `20260830T201509Z`
-- Step: `READ_SELECTION_HELPERS_AND_PAYLOAD`
+- Published UTC: `2026-08-30T20:17:09.897790+00:00`
+- Run ID: `20260830T201705Z`
+- Step: `TRACE_REAL_TESTPINE_SELECTOR_READONLY`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `CANONICAL_SELECTION_HELPERS_READ`
-- Next gate: `RECONSTRUCT_EXACT_LAST_SELECTION_READ_ONLY`
+- Verdict: `LAST_ATTEMPTED_BOUNDARY_CANDIDATE_IDENTIFIED`
+- Next gate: `REPRODUCE_IDENTIFIED_CANDIDATE_ONLY`
 
 ## Facts
 
-- `ALREADY_CALL_ARGS`: `conn,sha`
-- `ALREADY_CALL_FOUND`: `YES`
-- `ALREADY_FN_FOUND`: `YES`
-- `ALREADY_RETURN`: `row is not None`
-- `ALREADY_SQL_MARKER`: `YES`
-- `ALREADY_SQL_TABLE`: `candidates`
-- `APPEND_FOUND`: `YES`
-- `APPEND_KEYS`: `candidate_id,provider,url,source_url,query,script_id_part,source_version`
-- `APPEND_VALUE_NAMES`: `candidate_id,&#x27;PINE_LIBRARY&#x27;,&#x27;library:&lt;path&gt;&#x27; + candidate_id,&#x27;library:&lt;path&gt;&#x27; + candidate_id,row[&#x27;nam`
+- `ALREADY_CALLS`: `6`
+- `ALREADY_WRAPPED`: `YES`
+- `ATTEMPTED_BEFORE_BOUNDARY`: `5`
 - `CODE_CHANGED`: `NO`
+- `DB_HASH_UNCHANGED`: `YES`
 - `DB_WRITE`: `NO`
-- `ENSURE_CALL_ARGS`: `conn,row,source,sha`
-- `ENSURE_CALL_FOUND`: `YES`
-- `ENSURE_COMMITS`: `NO`
-- `ENSURE_FN_FOUND`: `YES`
-- `ENSURE_READ_TABLE`: `NONE`
-- `ENSURE_RETURNS_ID`: `YES`
-- `ENSURE_WRITE_TABLE`: `candidates`
+- `ENSURE_BLOCKED`: `YES`
 - `ERROR`: `NONE`
-- `LOOP_TARGET`: `row`
+- `FIRST_UNTESTED_SEEN`: `YES`
+- `LAST_ATTEMPTED_CANDIDATE`: `ICL_LIB_01B8EF98CF931F0A`
+- `LAST_ATTEMPTED_SHA`: `01b8ef98cf931f0a`
+- `LAST_ATTEMPT_MARKER`: `YES`
+- `MAIN_GUARD_FOUND`: `YES`
 - `MASTER_UPDATED`: `NO`
-- `SCRIPT_SQL_LIMIT`: `1`
-- `SCRIPT_SQL_ORDER`: `coalesce(x.fetched_at,&#x27;&#x27;) desc, x.rowid desc`
+- `MODULE_LOADED`: `YES`
+- `NEXT_SCRIPT_ID`: `PUB;df302027bd7a4435a6c2ccc3e9a11142`
+- `NEXT_UNTESTED_SHA`: `e435f23dfbffc23c`
 - `SELECT_FN_FOUND`: `YES`
+- `SELECT_RETURNED`: `YES`
