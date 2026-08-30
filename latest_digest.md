@@ -1,8 +1,8 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-08-30T14:43:16.681315+00:00`
-- Run ID: `20260830T144313Z`
+- Published UTC: `2026-08-30T14:44:20.551088+00:00`
+- Run ID: `20260830T144417Z`
 - Step: `TRACE_SLICE_WITH_NODE_SOURCE_MAPS`
 - Status: `SUCCESS`
 - Exit code: `0`
