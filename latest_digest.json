@@ -1,26 +1,21 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-30T14:19:13.682028+00:00",
-  "run_id": "20260830T141911Z",
-  "step": "PATCH_TICKERID_RUNTIME_LIMIT_STRUCTURALLY",
+  "published_at_utc": "2026-08-30T14:23:28.375067+00:00",
+  "run_id": "20260830T142325Z",
+  "step": "READ_NEXT_PINETS_RUNTIME_ERROR",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "TICKERID_RUNTIME_LIMIT_RECOGNIZED",
-  "next_gate": "USER_RUN_TESTPINE_1_RECENT",
+  "verdict": "NEXT_PINETS_RUNTIME_ERROR_READ",
+  "next_gate": "HANDLE_LITERAL_ERROR_ONLY",
   "facts": {
-    "COMPILE": "PASS",
+    "CLI_RC": "1",
+    "CODE_CHANGED": "NO",
     "DB_WRITE": "NO",
     "ERROR": "NONE",
-    "GENERIC_FAILED_KEPT": "YES",
-    "MASTER_FIRST": "YES",
-    "MASTER_UPDATED": "YES",
-    "NOT_FUNCTION_KEPT": "YES",
-    "NOT_IMPLEMENTED_KEPT": "YES",
-    "PREFLIGHT_FOUND": "YES",
-    "SCALE_CASE_KEPT": "YES",
-    "SELFTEST": "PASS",
-    "STATUS_ASSIGN_FOUND": "YES",
-    "TICKERID_ALREADY_PRESENT": "NO",
-    "TICKERID_CASE_ADDED": "YES"
+    "ERROR_CLASS": "OTHER_RUNTIME_ERROR",
+    "ERROR_TEXT": "Execution failed: Cannot read properties of undefined (reading &#x27;pointvalue&#x27;)",
+    "MASTER_UPDATED": "NO",
+    "SOURCE_FOUND": "YES",
+    "STDOUT_JSON": "NO"
   }
 }
