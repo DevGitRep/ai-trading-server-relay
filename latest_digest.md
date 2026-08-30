@@ -1,28 +1,32 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-08-30T14:46:58.965702+00:00`
-- Run ID: `20260830T144656Z`
-- Step: `TEST_DOCUMENTED_TIMEFRAME_WITH_CUSTOM_DATA`
+- Published UTC: `2026-08-30T14:51:53.233182+00:00`
+- Run ID: `20260830T145150Z`
+- Step: `TEST_OFFICIAL_DIRECT_PINETS_CONSTRUCTOR`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `TIMEFRAME_DID_NOT_FIX_SLICE`
-- Next gate: `DO_NOT_PATCH_PREFLIGHT`
+- Verdict: `DIRECT_CONSTRUCTOR_FIXED_TIMEFRAME_NEXT_ERROR`
+- Next gate: `HANDLE_ONLY_NEW_LITERAL_ERROR`
 
 ## Facts
 
 - `BUY_PRESENT`: `NO`
-- `CLI_RC`: `1`
+- `CLI_USED`: `NO`
 - `CODE_CHANGED`: `NO`
 - `DB_WRITE`: `NO`
+- `DIRECT_CONSTRUCTOR`: `YES`
 - `ERROR`: `NONE`
-- `ERROR_CLASS`: `OTHER_RUNTIME_ERROR`
-- `ERROR_TEXT`: `Execution failed: Cannot read properties of undefined (reading &#x27;slice&#x27;)`
+- `ERROR_TEXT`: `TypeError: Cannot read properties of undefined (reading &#x27;tickerid&#x27;) at _r (eval at Pg (file:&lt;path&gt;:125:848), &lt;anonymous&gt;:490:40) at vn._executeIterations (file:&lt;path&gt;:126:30508) at`
 - `MASTER_UPDATED`: `NO`
+- `NODE_RC`: `1`
+- `OPEN_TIME_FORMAT`: `YES`
+- `PINETS_VERSION`: `0.9.33`
 - `PLOT_COUNT`: `0`
+- `RESULT_JSON`: `NO`
+- `RUNTIME_PASS`: `NO`
 - `SELL_PRESENT`: `NO`
-- `SLICE_ERROR`: `YES`
+- `SLICE_ERROR`: `NO`
 - `SOURCE_FOUND`: `YES`
-- `STDOUT_JSON`: `NO`
+- `TICKER`: `SOLUSDT`
 - `TIMEFRAME`: `1`
-- `TIMEFRAME_USED`: `YES`
