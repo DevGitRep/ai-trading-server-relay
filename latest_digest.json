@@ -1,21 +1,24 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-30T16:55:08.111724+00:00",
-  "run_id": "20260830T165506Z",
-  "step": "CHECK_LITERAL_PREFIX_OWNER",
+  "published_at_utc": "2026-08-30T19:47:18.523065+00:00",
+  "run_id": "20260830T194716Z",
+  "step": "ADD_EXACT_SYMINFO_PREFIX_RUNTIME_LIMIT",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "PREFIX_CONFIRMED_AS_SYMINFO",
-  "next_gate": "ADD_EXACT_PREFIX_RUNTIME_LIMIT",
+  "verdict": "PREFIX_PATCH_ROLLED_BACK",
+  "next_gate": "STOP",
   "facts": {
-    "CODE_CHANGED": "NO",
+    "COMPILE": "NO",
     "DB_WRITE": "NO",
-    "ERROR": "NONE",
+    "ERROR": "RUNTIMEERROR:UNSUPPORTED_BRANCH_NOT_FOUND",
+    "EXACT_UNDEFINED_GUARD": "NO",
+    "GENERIC_FAILED_KEPT": "NO",
+    "MASTER_FIRST": "YES",
     "MASTER_UPDATED": "NO",
-    "OTHER_PREFIX_REF": "NO",
-    "SOURCE_FOUND": "YES",
-    "SYMINFO_POINTVALUE": "NO",
-    "SYMINFO_PREFIX": "YES",
-    "SYMINFO_TICKERID": "NO"
+    "POINTVALUE_KEPT": "NO",
+    "PREFIX_ADDED": "NO",
+    "SELFTEST": "NO",
+    "TICKERID_KEPT": "NO",
+    "UNSUPPORTED_BRANCH_FOUND": "NO"
   }
 }
