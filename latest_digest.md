@@ -1,24 +1,23 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-08-30T05:01:11.338273+00:00`
-- Run ID: `20260830T050109Z`
-- Step: `RESOLVE_EARLIEST_SAFE_PREFLIGHT_POSITION`
+- Published UTC: `2026-08-30T05:19:30.496874+00:00`
+- Run ID: `20260830T051928Z`
+- Step: `READ_CANONICAL_PROCESS_SOURCE_CONTRACT`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `PREFLIGHT_POSITION_NOT_RESOLVED`
-- Next gate: `STOP_AND_REPORT_POSITION`
+- Verdict: `CANONICAL_CONTRACT_READ`
+- Next gate: `IMPLEMENT_ONLY_DOCUMENTED_BINDING`
 
 ## Facts
 
-- `CANDLES_READY_LINE`: `0`
+- `CALL_SITES`: `2`
 - `CODE_CHANGED`: `NO`
 - `DB_WRITE`: `NO`
-- `EARLIEST_SAFE_LINE`: `0`
 - `ERROR`: `NONE`
+- `FIRST_CALL`: `process_source(_tp_seq, _tp_item, _tp_item.get(&#x27;query&#x27;) or &#x27;PINE_LIBRARY&#x27;, candles)`
+- `LIBRARY_LITERAL`: `NONE`
 - `MASTER_UPDATED`: `NO`
-- `PINE_PATH_READY_LINE`: `0`
-- `PREFLIGHT_GATE_LINE`: `3265`
-- `RUNNER_READY_LINE`: `0`
-- `SOURCE_READY_LINE`: `3105`
-- `STATIC_AUDIT_LINE`: `3146`
+- `PROCESS_ARGS`: `sequence_no,item,query,candles`
+- `RUNNER_LINE`: `3286`
+- `SOURCE_PATH_FIRST_LINE`: `3115`

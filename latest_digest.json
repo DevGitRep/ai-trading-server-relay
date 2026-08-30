@@ -1,23 +1,22 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-30T05:01:11.338273+00:00",
-  "run_id": "20260830T050109Z",
-  "step": "RESOLVE_EARLIEST_SAFE_PREFLIGHT_POSITION",
+  "published_at_utc": "2026-08-30T05:19:30.496874+00:00",
+  "run_id": "20260830T051928Z",
+  "step": "READ_CANONICAL_PROCESS_SOURCE_CONTRACT",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "PREFLIGHT_POSITION_NOT_RESOLVED",
-  "next_gate": "STOP_AND_REPORT_POSITION",
+  "verdict": "CANONICAL_CONTRACT_READ",
+  "next_gate": "IMPLEMENT_ONLY_DOCUMENTED_BINDING",
   "facts": {
-    "CANDLES_READY_LINE": "0",
+    "CALL_SITES": "2",
     "CODE_CHANGED": "NO",
     "DB_WRITE": "NO",
-    "EARLIEST_SAFE_LINE": "0",
     "ERROR": "NONE",
+    "FIRST_CALL": "process_source(_tp_seq, _tp_item, _tp_item.get(&#x27;query&#x27;) or &#x27;PINE_LIBRARY&#x27;, candles)",
+    "LIBRARY_LITERAL": "NONE",
     "MASTER_UPDATED": "NO",
-    "PINE_PATH_READY_LINE": "0",
-    "PREFLIGHT_GATE_LINE": "3265",
-    "RUNNER_READY_LINE": "0",
-    "SOURCE_READY_LINE": "3105",
-    "STATIC_AUDIT_LINE": "3146"
+    "PROCESS_ARGS": "sequence_no,item,query,candles",
+    "RUNNER_LINE": "3286",
+    "SOURCE_PATH_FIRST_LINE": "3115"
   }
 }
