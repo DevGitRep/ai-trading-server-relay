@@ -1,36 +1,37 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-08-30T20:14:11.242447+00:00`
-- Run ID: `20260830T201409Z`
-- Step: `READ_FULL_SELECT_UNTESTED_FLOW`
+- Published UTC: `2026-08-30T20:15:11.376513+00:00`
+- Run ID: `20260830T201509Z`
+- Step: `READ_SELECTION_HELPERS_AND_PAYLOAD`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `SELECT_UNTESTED_FULL_FLOW_READ`
-- Next gate: `USE_REPORTED_FLOW_ONLY`
+- Verdict: `CANONICAL_SELECTION_HELPERS_READ`
+- Next gate: `RECONSTRUCT_EXACT_LAST_SELECTION_READ_ONLY`
 
 ## Facts
 
-- `ATTEMPT_LITERAL_IN_FN`: `NO`
-- `CANDIDATES_REF_IN_FN`: `NO`
+- `ALREADY_CALL_ARGS`: `conn,sha`
+- `ALREADY_CALL_FOUND`: `YES`
+- `ALREADY_FN_FOUND`: `YES`
+- `ALREADY_RETURN`: `row is not None`
+- `ALREADY_SQL_MARKER`: `YES`
+- `ALREADY_SQL_TABLE`: `candidates`
+- `APPEND_FOUND`: `YES`
+- `APPEND_KEYS`: `candidate_id,provider,url,source_url,query,script_id_part,source_version`
+- `APPEND_VALUE_NAMES`: `candidate_id,&#x27;PINE_LIBRARY&#x27;,&#x27;library:&lt;path&gt;&#x27; + candidate_id,&#x27;library:&lt;path&gt;&#x27; + candidate_id,row[&#x27;nam`
 - `CODE_CHANGED`: `NO`
-- `COUNT_USED_IN_FN`: `YES`
 - `DB_WRITE`: `NO`
+- `ENSURE_CALL_ARGS`: `conn,row,source,sha`
+- `ENSURE_CALL_FOUND`: `YES`
+- `ENSURE_COMMITS`: `NO`
+- `ENSURE_FN_FOUND`: `YES`
+- `ENSURE_READ_TABLE`: `NONE`
+- `ENSURE_RETURNS_ID`: `YES`
+- `ENSURE_WRITE_TABLE`: `candidates`
 - `ERROR`: `NONE`
-- `FUNCTION_FOUND`: `YES`
-- `HELPER_CALLS`: `fail,conn.commit,hexdigest,already_tested,ensure_candidate,selected.append,hashlib.sha256,source.enc`
+- `LOOP_TARGET`: `row`
 - `MASTER_UPDATED`: `NO`
-- `ORDER_USED_IN_FN`: `YES`
-- `POPULAR_LITERAL`: `NO`
-- `RECENT_LITERAL`: `YES`
-- `RETURN_ASSIGN_CALL`: `NONE`
-- `RETURN_ASSIGN_LINE`: `214`
-- `RETURN_ASSIGN_TYPE`: `List`
-- `RETURN_NAME`: `selected`
-- `SCRIPTS_REF_IN_FN`: `YES`
-- `SOURCES_REF_IN_FN`: `YES`
-- `SQL1`: `SELECT:scripts:ORDER,LIMIT`
-- `SQL2`: `NONE`
-- `SQL3`: `NONE`
-- `SQL4`: `NONE`
-- `SQL_COUNT`: `1`
+- `SCRIPT_SQL_LIMIT`: `1`
+- `SCRIPT_SQL_ORDER`: `coalesce(x.fetched_at,&#x27;&#x27;) desc, x.rowid desc`
+- `SELECT_FN_FOUND`: `YES`
