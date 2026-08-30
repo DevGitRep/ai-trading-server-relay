@@ -1,26 +1,20 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-29T23:28:41.394897+00:00",
-  "run_id": "20260829T232803Z",
-  "step": "TRACE_ONE_CANONICAL_TESTPINE_INDICATOR",
+  "published_at_utc": "2026-08-30T04:13:47.462741+00:00",
+  "run_id": "20260830T041345Z",
+  "step": "READ_LATEST_DOCUMENTED_TESTPINE_OUTCOME",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "PROCESS_SOURCE_NOT_ENTERED",
-  "next_gate": "STOP_AND_REPORT_RUNTIME_ROUTE",
+  "verdict": "LATEST_ATTEMPT_OUTCOME_READ",
+  "next_gate": "INTERPRET_DOCUMENTED_ATTEMPT_OUTCOME",
   "facts": {
-    "ATTEMPTED_ADDED": "1",
+    "ATTEMPT_FOUND": "YES",
+    "ATTEMPT_OUTCOME": "DONE",
     "CODE_CHANGED": "NO",
-    "DB_WRITE": "YES",
+    "DB_WRITE": "NO",
     "ERROR": "NONE",
-    "MASTER_UPDATED": "YES",
-    "PROCESS_ENTERED": "NO",
-    "PROCESS_EXCEPTION": "NONE",
-    "PROCESS_LAST_LINE": "0",
-    "RUNNER_CALLSITE": "NO",
-    "RUNNER_ENTERED": "NO",
-    "RUNNER_EXCEPTION": "NONE",
-    "RUNNER_FUNCTION": "NONE",
-    "RUNTIME_SECONDS": "36",
-    "TEST_RUNS_ADDED": "0"
+    "MASTER_UPDATED": "NO",
+    "REMAINING_PROCESSES": "0",
+    "TEST_RUNS": "0"
   }
 }
