@@ -1,32 +1,30 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-08-30T05:45:46.221198+00:00`
-- Run ID: `20260830T054544Z`
-- Step: `READ_OFFICIAL_PINETS_LOCAL_DATA_FORMAT`
+- Published UTC: `2026-08-30T05:46:35.630081+00:00`
+- Run ID: `20260830T054633Z`
+- Step: `READ_OFFICIAL_PINETS_JSON_SCHEMA`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `OFFICIAL_LOCAL_DATA_FORMAT_READ`
-- Next gate: `RUN_PINETS_WITH_DOCUMENTED_LOCAL_DATA`
+- Verdict: `OFFICIAL_JSON_SCHEMA_DOCUMENTED`
+- Next gate: `RUN_WITH_LITERAL_DOCUMENTED_JSON_SCHEMA`
 
 ## Facts
 
-- `CLOSE_FIELD`: `NO`
+- `CLOSE_KEY`: `YES`
 - `CODE_CHANGED`: `NO`
-- `CSV_MENTION`: `NO`
-- `DATA_EXAMPLE_LINE`: `pinets run rsi.pine --data ./my_candles.json`
-- `DATA_OPTION_LINE`: `pinets run rsi.pine --data ./my_candles.json`
+- `DATA_SECTIONS`: `4`
 - `DB_WRITE`: `NO`
+- `DOC_FILES`: `1`
 - `ERROR`: `NONE`
-- `FORMAT_LINE1`: `pinets run rsi.pine --symbol BTCUSDT --timeframe 60`
-- `FORMAT_LINE2`: `_ Custom data from a JSON file`
-- `FORMAT_LINE3`: `pinets run rsi.pine --data ./my_candles.json`
-- `FORMAT_LINE4`: `_ `--timeframe &lt;tf&gt;` _ `-t` _ Timeframe: `1`, `5`, `15`, `60`, `240`, `1D`, `1W`, `1M` _ `60` _`
-- `HIGH_FIELD`: `NO`
-- `JSON_MENTION`: `YES`
-- `LOW_FIELD`: `NO`
+- `HIGH_KEY`: `YES`
+- `JSON_ARRAY`: `YES`
+- `LOW_KEY`: `YES`
 - `MASTER_UPDATED`: `NO`
-- `OPEN_FIELD`: `NO`
-- `README_FOUND`: `YES`
-- `TIME_FIELD`: `NO`
-- `VOLUME_FIELD`: `NO`
+- `MY_CANDLES`: `YES`
+- `OPEN_KEY`: `YES`
+- `SCHEMA_EXAMPLE`: `YES`
+- `SCHEMA_KEYS`: `time,open,high,low,close,volume`
+- `TIMESTAMP_KEY`: `NO`
+- `TIME_KEY`: `YES`
+- `VOLUME_KEY`: `YES`
