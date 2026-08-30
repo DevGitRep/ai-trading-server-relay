@@ -1,27 +1,28 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-08-30T05:31:09.892967+00:00`
-- Run ID: `20260830T053107Z`
-- Step: `READ_TESTPINE_ITEM_PRODUCER`
+- Published UTC: `2026-08-30T05:32:10.002866+00:00`
+- Run ID: `20260830T053208Z`
+- Step: `READ_TESTPINE_STORED_SOURCE_JSON_CONTRACT`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `TESTPINE_ITEM_PRODUCER_READ`
-- Next gate: `APPLY_DOCUMENTED_STORED_SOURCE_BINDING`
+- Verdict: `TESTPINE_JSON_CONTRACT_READ`
+- Next gate: `RESTORE_ONLY_DOCUMENTED_STORED_SOURCE_FIELDS`
 
 ## Facts
 
-- `CALL_LINE`: `3397`
+- `BATCH_JSON_LOAD`: `2764:_tp_meta = _tp_json.loads(|2837:_tp_payload = _tp_json.loads(|3388:_tp_items = _tp_json.load(_tp_fh)`
+- `CANDIDATE_LINES`: `73:SELECT candidate_id|86:candidate_id = find_candidate(conn, sha)|89:if candidate_id:|102:WHERE candidate_id=_`
 - `CODE_CHANGED`: `NO`
 - `DB_WRITE`: `NO`
-- `ENCLOSING_FOR`: `YES`
 - `ERROR`: `NONE`
-- `FOR_ITER`: `enumerate(_tp_items, start=1)`
-- `FOR_LINE`: `3391`
-- `FOR_TARGET`: `(_tp_seq, _tp_item)`
-- `ITEM_GET_KEYS`: `query`
-- `ITEM_WRITE_KEYS`: `_testpine_documented_pinets_preflight_v1`
-- `ITER_SOURCE`: `_tp_items=_tp_json.load(_tp_fh)`
-- `ITER_SOURCE_LINE`: `3388`
+- `ITEMS_FILE_LINES`: `NONE`
+- `JSON_DUMP_LINES`: `390:json.dumps(selected),`
 - `MASTER_UPDATED`: `NO`
-- `QUERY_EXPR`: `_tp_item.get(&#x27;query&#x27;) or &#x27;PINE_LIBRARY&#x27;`
+- `QUERY_LINES`: `245:&quot;query&quot;: (`
+- `SCHEMA_KEYS`: `query,source_url,url,candidate_id,script_id_part,provider`
+- `SCRIPT_ID_LINES`: `119:&quot;script_id_part=&quot; + str(row[&quot;script_id_part&quot;]) + &quot;_n&quot;|179:s.script_id_part,|194:WHERE x.script_id_part=s.script_id_part|247:or row[&quot;script_id_part&quot;]`
+- `SOURCE_PATH_LINES`: `NONE`
+- `SOURCE_SHA_LINES`: `49:WHERE source_sha256=_|75:WHERE source_sha256=_|100:source_sha256=_,|137:source_sha256,`
+- `SOURCE_URL_LINES`: `134:source_url,|241:&quot;source_url&quot;: (`
+- `URL_LINES`: `237:&quot;url&quot;: (`
