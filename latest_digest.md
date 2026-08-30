@@ -1,28 +1,31 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-08-30T06:08:25.291082+00:00`
-- Run ID: `20260830T060823Z`
-- Step: `READ_ORIGINAL_TESTPINE_CANDLES_SOURCE`
+- Published UTC: `2026-08-30T06:09:14.583654+00:00`
+- Run ID: `20260830T060912Z`
+- Step: `READ_EXISTING_CANDLE_LIST_SHAPE`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `ORIGINAL_CANDLES_SOURCE_READ`
-- Next gate: `ADAPT_PREFLIGHT_TO_EXISTING_CANDLE_TYPE_ONLY`
+- Verdict: `EXISTING_CANDLE_LIST_SHAPE_READ`
+- Next gate: `USE_LIST_DIRECTLY_FOR_PINETS`
 
 ## Facts
 
-- `ASSIGN_COUNT`: `2`
+- `APPEND_COUNT`: `1`
+- `APPEND_EXPR`: `{&#x27;timestamp&#x27;: epoch, &#x27;time&#x27;: epoch, &#x27;open&#x27;: float(row[lower_map[&#x27;open&#x27;]]), &#x27;high&#x27;: float(row[lower_map[&#x27;high&#x27;]]), &#x27;low&#x27;: float(row[lower_map[&#x27;low&#x27;]]),`
+- `CLOSE_KEY`: `YES`
 - `CODE_CHANGED`: `NO`
-- `DATAFRAME_BUILD`: `NO`
+- `DATE_KEY`: `NO`
 - `DB_WRITE`: `NO`
+- `ELEMENT_KEYS`: `timestamp,time,open,high,low,close,volume`
+- `ELEMENT_KIND`: `DICT`
 - `ERROR`: `NONE`
-- `LIST_BUILD`: `NO`
+- `EXTEND_COUNT`: `0`
+- `HIGH_KEY`: `YES`
+- `LIST_ALREADY_PINETS_READY`: `YES`
+- `LOW_KEY`: `YES`
 - `MASTER_UPDATED`: `NO`
-- `ORIGIN_EXPR`: `[]`
-- `ORIGIN_KIND`: `LIST`
-- `ORIGIN_LINE`: `747`
-- `PRODUCER_FN`: `NONE`
-- `PRODUCER_FOUND`: `NO`
-- `READ_FEATHER`: `NO`
-- `RETURN_KIND`: `UNKNOWN`
-- `TO_DICT_RECORDS`: `NO`
+- `OPEN_KEY`: `YES`
+- `TIMESTAMP_KEY`: `YES`
+- `TIME_KEY`: `YES`
+- `VOLUME_KEY`: `YES`
