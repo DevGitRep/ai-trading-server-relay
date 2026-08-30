@@ -1,23 +1,26 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-30T04:16:28.435805+00:00",
-  "run_id": "20260830T041626Z",
-  "step": "RESOLVE_EXISTING_PROCESS_SOURCE_RUNNER_GATE",
+  "published_at_utc": "2026-08-30T04:17:56.035411+00:00",
+  "run_id": "20260830T041754Z",
+  "step": "RESOLVE_EXACT_PARAMETER_RUNNER_BINDING",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "EXISTING_RUNNER_GATE_RESOLVED",
-  "next_gate": "EVALUATE_EXISTING_GATE_FOR_ONE_LIBRARY_SOURCE",
+  "verdict": "EXACT_PARAMETER_RUNNER_BINDING_NOT_FOUND",
+  "next_gate": "STOP_AND_REPORT_PARAMETER_RUNNER_BINDING",
   "facts": {
     "CODE_CHANGED": "NO",
     "DB_WRITE": "NO",
-    "ERROR": "NONE",
-    "LAST_RETURN_BEFORE": "2769",
+    "ERROR": "RUNTIMEERROR:NO_EXACT_PARAMETER_RUNNER_CALL_IN_PROCESS_SOURCE",
+    "EXACT_RUNNER_CALLS": "0",
+    "EXACT_RUNNER_LINE": "0",
+    "EXACT_RUNNER_SYMBOL": "NONE",
     "MASTER_UPDATED": "NO",
     "PROCESS_SOURCE": "YES",
-    "RETURNS_BEFORE_RUNNER": "8",
-    "RUNNER_CALL": "execute",
-    "RUNNER_CONDITIONS": "&#x27;lookahead_on&#x27; in source.lower() or &#x27;&quot;hard_fail&quot;:true&#x27; in audit_text or (&#x27;&quot;pass&quot;:false&#x27; in audit_tex",
-    "RUNNER_IF_DEPTH": "1",
-    "RUNNER_LINE": "2792"
+    "RETURNS_BEFORE_RUNNER": "0",
+    "RUNNER_CONDITIONS": "NONE",
+    "RUNNER_FILE_EXISTS": "YES",
+    "RUNNER_IF_DEPTH": "0",
+    "RUNNER_IMPORTS": "0",
+    "RUNNER_IMPORT_BINDINGS": "NONE"
   }
 }
