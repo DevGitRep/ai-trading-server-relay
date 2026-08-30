@@ -1,23 +1,29 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-08-30T19:58:18.048376+00:00`
-- Run ID: `20260830T195815Z`
-- Step: `READ_NEXT_DIRECT_PINETS_ERROR`
+- Published UTC: `2026-08-30T19:59:33.732902+00:00`
+- Run ID: `20260830T195931Z`
+- Step: `VERIFY_CURRENT_RUNTIME_CLASSIFIER_SEMANTICS`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `DIRECT_PINETS_NEXT_ERROR_READ`
-- Next gate: `HANDLE_LITERAL_ERROR_ONLY`
+- Verdict: `CLASSIFIER_LOGIC_WORKS_SYNTHETICALLY`
+- Next gate: `COMPARE_ACTUAL_TP_ERR_VALUE`
 
 ## Facts
 
+- `ASSIGN_FOUND`: `YES`
+- `ASSIGN_TARGET`: `_tp_runtime_unsupported`
 - `CODE_CHANGED`: `NO`
+- `CONSUMER_IF_FOUND`: `YES`
+- `CONSUMER_TESTS_TARGET`: `YES`
 - `DB_WRITE`: `NO`
 - `ERROR`: `NONE`
-- `ERROR_CLASS`: `UNDEFINED_PROPERTY`
-- `ERROR_PROPERTY`: `tickerid`
-- `ERROR_TEXT`: `TypeError: Cannot read properties of undefined (reading &#x27;tickerid&#x27;) at _r (eval at Pg (file:&lt;path&gt;:125:848), &lt;anonymous&gt;:69:39) at vn._executeIterations (file:&lt;path&gt;:126:30508) at`
+- `FAILED_OUTPUT_FOUND`: `YES`
+- `GENERIC_SYNTHETIC`: `NO`
 - `MASTER_UPDATED`: `NO`
-- `NODE_RC`: `1`
-- `PINETS_VERSION`: `0.9.33`
-- `SOURCE_FOUND`: `YES`
+- `POINTVALUE_SYNTHETIC`: `YES`
+- `PREFIX_SYNTHETIC`: `YES`
+- `TICKER_SYNTHETIC`: `YES`
+- `TP_ERR_ASSIGN_FOUND`: `YES`
+- `TP_ERR_LOWERCASE`: `YES`
+- `UNSUPPORTED_OUTPUT_FOUND`: `YES`
