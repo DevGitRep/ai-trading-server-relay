@@ -1,21 +1,20 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-31T05:27:15.744739+00:00",
-  "run_id": "20260831T052713Z",
+  "published_at_utc": "2026-08-31T05:28:39.144210+00:00",
+  "run_id": "20260831T052835Z",
   "step": "FINALIZE_RESIN_RUNTIME_DECISION",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "RESIN_FINALIZATION_INCOMPLETE",
-  "next_gate": "STOP",
+  "verdict": "RESIN_RUNTIME_DECISION_FINALIZED",
+  "next_gate": "NEW_CHAT_INTEGRATE_RESIN_IN_EXISTING_PREFLIGHT",
   "facts": {
-    "CLI_PROOF": "FAIL",
     "CODE_CHANGED": "NO",
     "DB_WRITE": "NO",
-    "MASTER_UPDATED": "NO",
+    "EVENT_CASE": "PASS",
+    "MASTER_UPDATED": "YES",
+    "MINTICK": "PASS",
     "PINETS_PATCHING": "STOPPED",
-    "REAL_EVENT_CASE": "PASS",
-    "REAL_MINTICK": "PASS",
-    "REAL_TICKERID": "PASS",
-    "RESIN_VERSION": "0.2.2"
+    "RESIN_VERSION": "0.2.2",
+    "TICKERID": "PASS"
   }
 }
