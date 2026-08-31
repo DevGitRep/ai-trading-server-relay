@@ -1,23 +1,14 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-31T07:52:53.079430+00:00",
-  "run_id": "20260831T075220Z",
-  "step": "FINAL_PYTHON_TESTPINE_LAUNCHER",
+  "published_at_utc": "2026-08-31T08:08:10.404557+00:00",
+  "run_id": "20260831T080807Z",
+  "step": "IDENTIFY_EXACT_JURIK_REFERENCE",
   "status": "PASS",
   "exit_code": 0,
-  "verdict": "CLEAN_CANONICAL_RESIN_PIPELINE_COMPLETE",
-  "next_gate": "NORMAL_LIBRARY_THROUGHPUT_ONLY",
+  "verdict": "JURIK_REFERENCE_RECORDS_INSPECTED",
+  "next_gate": "RESET_RESULTS_BY_EXACT_REFERENCE_CANDIDATE_ID",
   "facts": {
-    "ACTIVE_BASELINE": "REMOVED",
-    "ACTIVE_PARAMETER_RUNNER": "REMOVED",
-    "ACTIVE_RUNTIME": "RESIN_0.2.2",
-    "CANONICAL_ADAPTER": "tools/resin_pine_adapter.mjs",
-    "CANONICAL_PREFLIGHT": "tools/testpine-preflight",
-    "MASTER_SYNC": "PASS",
-    "NORMAL_BATCH": "PASS",
-    "PERSISTENCE_DELTA": "10",
-    "PUBLIC_COMMAND": "tools/testpine",
-    "TESTPINE_HELPERS": "PRESERVED",
-    "TESTPINE_MAIN": "PYTHON_THIN_LAUNCHER"
+    "DATABASE_WRITE": "NO",
+    "PRODUCTION_WRITE": "NO"
   }
 }
