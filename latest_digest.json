@@ -1,25 +1,24 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-31T04:44:21.236809+00:00",
-  "run_id": "20260831T044418Z",
-  "step": "CLASSIFY_PINETS_OUTPUT_TYPES",
+  "published_at_utc": "2026-08-31T04:45:44.629329+00:00",
+  "run_id": "20260831T044540Z",
+  "step": "FIND_VARYING_NUMERIC_PINETS_OUTPUT",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "NO_EVENT_USABLE_OUTPUT_TYPE_CONFIRMED",
-  "next_gate": "STOP",
+  "verdict": "VARYING_NUMERIC_PINE_OUTPUT_CONFIRMED",
+  "next_gate": "PROVE_QUANT_EVENTS_ON_THIS_CANDIDATE",
   "facts": {
-    "BINARY_STATE": "0",
+    "CANDIDATES_SCANNED": "4",
     "CODE_CHANGED": "NO",
-    "CONSTANT": "5",
-    "CONTINUOUS": "0",
     "DB_WRITE": "NO",
     "ERROR": "NONE",
-    "GE30_POINTS": "5",
-    "LOW_CARDINALITY_STATE": "0",
+    "FIRST_USABLE": "ICL_LIB_F9121EF174F88F03",
     "MASTER_UPDATED": "NO",
-    "NUMERIC_PLOTS": "5",
-    "PLOTS": "18",
-    "SPARSE": "0",
-    "STATE_TRANSITIONS": "0"
+    "MAX_POINTS": "500",
+    "MAX_UNIQUE": "53",
+    "RUNTIME_OK": "4",
+    "VARYING_PLOTS": "1",
+    "WITH_NUMERIC_PLOTS": "3",
+    "WITH_VARYING_NUMERIC": "1"
   }
 }
