@@ -1,15 +1,18 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-31T08:13:23.396911+00:00",
-  "run_id": "20260831T081320Z",
-  "step": "COMPACT_FIRST_10_RESULT_REVIEW",
+  "published_at_utc": "2026-08-31T08:47:24.989208+00:00",
+  "run_id": "20260831T084650Z",
+  "step": "ADD_NATIVE_RESIN_OUTPUT_USING_OFFICIAL_VIZ_PATTERN",
   "status": "PASS",
   "exit_code": 0,
-  "verdict": "FIRST_10_RESULT_DETAILS_EXTRACTED",
-  "next_gate": "DECIDE_CLASSIFICATION_AND_SCALING",
+  "verdict": "NATIVE_RESIN_OUTPUT_STORAGE_COMPLETE",
+  "next_gate": "CONTINUE_349_FRESH_LIBRARY_CANDIDATES",
   "facts": {
-    "DATABASE_WRITE": "NO",
-    "MASTER_WRITE": "NO",
-    "PRODUCTION_WRITE": "NO"
+    "CURRENT_TESTED_BACKFILLED": "YES",
+    "FUTURE_NATIVE_STORAGE": "AUTOMATIC",
+    "MASTER_SYNC": "PASS",
+    "NATIVE_TABLE": "resin_native_outputs",
+    "SCORING_CHANGED": "NO",
+    "VIZ_TRANSPORT": "OFFICIAL_RESIN_FILE_PATTERN"
   }
 }
