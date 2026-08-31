@@ -1,18 +1,21 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-31T04:59:15.635653+00:00",
-  "run_id": "20260831T045909Z",
-  "step": "DIAGNOSE_QUANT_HELPER_IMPORT",
+  "published_at_utc": "2026-08-31T05:01:31.473348+00:00",
+  "run_id": "20260831T050127Z",
+  "step": "PATCH_QUANT_HELPER_ISOLATED_RUNTIME",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "QUANT_IMPORT_CONTRACT_IDENTIFIED",
-  "next_gate": "PATCH_HELPER_TO_USE_PROVEN_ISOLATED_RUNTIME",
+  "verdict": "ISOLATED_QUANT_RUNTIME_PATCHED",
+  "next_gate": "RERUN_SMALL_REAL_PREFLIGHT_BATCH",
   "facts": {
-    "CODE_CHANGED": "NO",
-    "DB_WRITE": "NO",
-    "MAIN_ERROR": "NONE",
-    "MAIN_IMPORT_FAIL": "NONE",
-    "MASTER_UPDATED": "NO",
-    "QENV_IMPORT": "PASS"
+    "BACKTEST": "NO",
+    "COMPILE": "PASS",
+    "ERROR": "NONE",
+    "IMPORT_ERROR_ROWS_RESET": "0",
+    "MASTER_UPDATED": "YES",
+    "NEW_TABLE": "NO",
+    "PATCHED": "YES",
+    "QENV_WORKER_SMOKE": "PASS",
+    "SELFTEST": "PASS"
   }
 }
