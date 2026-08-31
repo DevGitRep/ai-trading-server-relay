@@ -1,20 +1,23 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-31T05:28:39.144210+00:00",
-  "run_id": "20260831T052835Z",
-  "step": "FINALIZE_RESIN_RUNTIME_DECISION",
+  "published_at_utc": "2026-08-31T05:32:11.235468+00:00",
+  "run_id": "20260831T053208Z",
+  "step": "FINALIZE_PINE_PREFLIGHT_HANDOFF",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "RESIN_RUNTIME_DECISION_FINALIZED",
-  "next_gate": "NEW_CHAT_INTEGRATE_RESIN_IN_EXISTING_PREFLIGHT",
+  "verdict": "HANDOFF_CLEAN_AND_CANONICAL",
+  "next_gate": "NEW_CHAT_RESIN_CUTOVER",
   "facts": {
-    "CODE_CHANGED": "NO",
+    "BACKTEST": "NO",
+    "CURRENT_PINETS_RETAINED": "YES",
     "DB_WRITE": "NO",
-    "EVENT_CASE": "PASS",
-    "MASTER_UPDATED": "YES",
-    "MINTICK": "PASS",
-    "PINETS_PATCHING": "STOPPED",
-    "RESIN_VERSION": "0.2.2",
-    "TICKERID": "PASS"
+    "HISTORY_ARCHIVED": "YES",
+    "MASTER_HANDOFF": "YES",
+    "MLFINPY_RETAINED": "YES",
+    "OLD_PINETS_0_1_0_REMOVED": "YES",
+    "OLD_PROBE_SECTIONS_REMOVED": "YES",
+    "RESIN_RETAINED": "YES",
+    "TESTPINE_COMPILE": "PASS",
+    "TESTPINE_SELFTEST": "PASS"
   }
 }
