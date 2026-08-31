@@ -1,25 +1,25 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-31T04:43:01.805368+00:00",
-  "run_id": "20260831T044257Z",
-  "step": "PROVE_REAL_PINE_QUANT_EVENT_PREFLIGHT",
+  "published_at_utc": "2026-08-31T04:44:21.236809+00:00",
+  "run_id": "20260831T044418Z",
+  "step": "CLASSIFY_PINETS_OUTPUT_TYPES",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "REAL_PINE_QUANT_PREFLIGHT_PARTIAL",
-  "next_gate": "INSPECT_EVENT_COUNTS_ONLY",
+  "verdict": "NO_EVENT_USABLE_OUTPUT_TYPE_CONFIRMED",
+  "next_gate": "STOP",
   "facts": {
-    "ANALYZABLE_PLOTS": "0",
-    "CANDIDATE_FOUND": "YES",
+    "BINARY_STATE": "0",
     "CODE_CHANGED": "NO",
-    "CUSUM_EVENTS": "0",
+    "CONSTANT": "5",
+    "CONTINUOUS": "0",
     "DB_WRITE": "NO",
     "ERROR": "NONE",
+    "GE30_POINTS": "5",
+    "LOW_CARDINALITY_STATE": "0",
     "MASTER_UPDATED": "NO",
-    "NODE_RC": "0",
+    "NUMERIC_PLOTS": "5",
     "PLOTS": "18",
-    "QUANT_PIPELINE": "NO",
-    "TREND_LABELS": "0",
-    "TRIPLE_BARRIER_LABELS": "0",
-    "ZSCORE_EVENTS": "0"
+    "SPARSE": "0",
+    "STATE_TRANSITIONS": "0"
   }
 }
