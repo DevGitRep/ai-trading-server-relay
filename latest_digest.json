@@ -1,21 +1,22 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-31T05:01:31.473348+00:00",
-  "run_id": "20260831T050127Z",
-  "step": "PATCH_QUANT_HELPER_ISOLATED_RUNTIME",
+  "published_at_utc": "2026-08-31T05:03:29.390933+00:00",
+  "run_id": "20260831T050327Z",
+  "step": "FIX_QUANT_HELPER_GLOBAL_SCOPE",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "ISOLATED_QUANT_RUNTIME_PATCHED",
-  "next_gate": "RERUN_SMALL_REAL_PREFLIGHT_BATCH",
+  "verdict": "QUANT_HELPER_SCOPE_FIX_INCOMPLETE",
+  "next_gate": "STOP",
   "facts": {
     "BACKTEST": "NO",
-    "COMPILE": "PASS",
-    "ERROR": "NONE",
-    "IMPORT_ERROR_ROWS_RESET": "0",
-    "MASTER_UPDATED": "YES",
-    "NEW_TABLE": "NO",
-    "PATCHED": "YES",
-    "QENV_WORKER_SMOKE": "PASS",
-    "SELFTEST": "PASS"
+    "COMPILE": "NO",
+    "DB_WRITE": "NO",
+    "ERROR": "RUNTIMEERROR:GLOBAL_SCOPE_PROOF_FAILED",
+    "GLOBAL_CALL_SMOKE": "NO",
+    "HELPER_FOUND": "YES",
+    "HELPER_NOW_TOPLEVEL": "NO",
+    "HELPER_WAS_TOPLEVEL": "NO",
+    "MASTER_UPDATED": "NO",
+    "SELFTEST": "NO"
   }
 }
