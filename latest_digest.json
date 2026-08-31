@@ -1,15 +1,15 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-31T08:11:25.171784+00:00",
-  "run_id": "20260831T081102Z",
-  "step": "FIRST_FRESH_LIBRARY_BATCH",
+  "published_at_utc": "2026-08-31T08:12:20.352521+00:00",
+  "run_id": "20260831T081217Z",
+  "step": "REVIEW_FIRST_10_FRESH_RESULTS",
   "status": "PASS",
   "exit_code": 0,
-  "verdict": "FIRST_10_FRESH_CANDIDATES_PROCESSED",
-  "next_gate": "REVIEW_FIRST_FRESH_RESULTS",
+  "verdict": "FIRST_FRESH_RESULTS_READY_FOR_CONTENT_REVIEW",
+  "next_gate": "DECIDE_RESULT_CLASSIFICATION_BEFORE_SCALE",
   "facts": {
-    "CANONICAL_PIPELINE_CHANGED": "NO",
-    "FRESH_RESULTS": "10",
-    "REFERENCE_CANDIDATE_ID": "ICL_LIB_C14AE2EE7413E976"
+    "DATABASE_WRITE": "NO",
+    "MASTER_WRITE": "NO",
+    "PRODUCTION_WRITE": "NO"
   }
 }
