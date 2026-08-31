@@ -1,16 +1,23 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-08-31T07:19:05.693063+00:00",
-  "run_id": "20260831T071902Z",
-  "step": "INSPECT_STALE_TESTPINE_EXECUTION_SEAM",
+  "published_at_utc": "2026-08-31T07:52:53.079430+00:00",
+  "run_id": "20260831T075220Z",
+  "step": "FINAL_PYTHON_TESTPINE_LAUNCHER",
   "status": "PASS",
   "exit_code": 0,
-  "verdict": "STALE_SELECTOR_EXECUTION_SEAM_INSPECTED",
-  "next_gate": "REWIRE_TESTPINE_TO_CANONICAL_PREFLIGHT_WITH_EXISTING_SELECTION_AND_PERSISTENCE",
+  "verdict": "CLEAN_CANONICAL_RESIN_PIPELINE_COMPLETE",
+  "next_gate": "NORMAL_LIBRARY_THROUGHPUT_ONLY",
   "facts": {
+    "ACTIVE_BASELINE": "REMOVED",
+    "ACTIVE_PARAMETER_RUNNER": "REMOVED",
     "ACTIVE_RUNTIME": "RESIN_0.2.2",
-    "KNOWN_FAILURE": "testpine_calls_disabled_legacy_baseline",
-    "PRODUCTION_CODE_WRITE": "NO",
-    "PRODUCTION_DB_WRITE": "NO"
+    "CANONICAL_ADAPTER": "tools/resin_pine_adapter.mjs",
+    "CANONICAL_PREFLIGHT": "tools/testpine-preflight",
+    "MASTER_SYNC": "PASS",
+    "NORMAL_BATCH": "PASS",
+    "PERSISTENCE_DELTA": "10",
+    "PUBLIC_COMMAND": "tools/testpine",
+    "TESTPINE_HELPERS": "PRESERVED",
+    "TESTPINE_MAIN": "PYTHON_THIN_LAUNCHER"
   }
 }
