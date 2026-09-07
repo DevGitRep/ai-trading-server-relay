@@ -1,33 +1,28 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-07T12:39:38.738691+00:00`
-- Run ID: `20260907T123936Z`
-- Step: `READAPIPAYLOADSHAPE`
+- Published UTC: `2026-09-07T12:42:15.135626+00:00`
+- Run ID: `20260907T124213Z`
+- Step: `SMOKECANONICALCARDS`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `ACTUALAPIPAYLOADSHAPEPROVEN`
-- Next gate: `RERUNSMOKEWITHEXACTCARDPATH`
+- Verdict: `LIBRARYCANONICALOUTPUTSMOKEFAILED`
+- Next gate: `REVIEWEXACTSMOKEFAILURE`
 
 ## Facts
 
 - `ACTIVE`: `active`
 - `BENCHTEST_RERUN`: `NO`
-- `BYTES`: `4636`
-- `CARDKEYN`: `9`
-- `CARDN`: `12`
-- `CARDPATH`: `$.items`
 - `CHANGES_MADE`: `NO`
 - `DB_WRITE`: `NO`
-- `HTTP`: `200`
-- `LISTN`: `1`
+- `ERROR_STAGE`: `PAGE1`
+- `ERROR_TYPE`: `RuntimeError`
+- `EXPECTED`: `16`
+- `JOIN_BY_ID`: `YES`
 - `MASTER_READ`: `YES`
-- `METRICDICT`: `NO`
-- `PAGEKEYN`: `5`
+- `NAME_MAPPING_USED`: `NO`
 - `PREFLIGHT_RERUN`: `NO`
 - `QUICK`: `ok`
 - `RESTART`: `NO`
-- `SCORED`: `16`
 - `SOURCE_CHANGE`: `NO`
-- `TOPKEYS`: `items,ok,page,page_size,pages,q,sort,tier,total`
-- `TOPTYPE`: `dict`
+- `TOPSCORE`: `74.595173`
