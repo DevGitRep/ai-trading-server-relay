@@ -1,31 +1,38 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-07T12:18:50.368005+00:00`
-- Run ID: `20260907T121848Z`
-- Step: `PATCHLIBRARYCANONICALBULK`
+- Published UTC: `2026-09-07T12:22:09.940189+00:00`
+- Run ID: `20260907T122207Z`
+- Step: `READMETRICSHAPE`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `LIBRARYCANONICALBULKCUTOVERFAILED`
-- Next gate: `REVIEWPATCHFAILURE`
+- Verdict: `DIRECTCANONICALMETRICMAPSEAMPROVEN`
+- Next gate: `PATCHDIRECTCANONICALMETRICMAP`
 
 ## Facts
 
 - `BENCHTEST_RERUN`: `NO`
+- `BESTKEYN`: `0`
+- `BESTKEYS`: `NONE`
+- `BULKCONVERT`: `1`
+- `CANMAPN`: `6`
+- `CANREADY`: `YES`
+- `CHANGES_MADE`: `NO`
 - `COMPLETE`: `16`
-- `CONNVAR`: `conn`
 - `DB_WRITE`: `NO`
-- `ERROR_STAGE`: `MAP`
-- `ERROR_TYPE`: `RuntimeError`
 - `JOIN_BY_ID`: `YES`
 - `JS_CHANGE`: `NO`
+- `LOADSEAMN`: `7`
 - `MASTER_READ`: `YES`
+- `MISSING`: `NONE`
+- `MISSINGN`: `0`
 - `NAME_MAPPING_USED`: `NO`
-- `OLDCOLN`: `13`
+- `OUTKEYS`: `absolute_profitability_status,candidate_id,max_drawdown_pct,net_return_pct,profit_factor,realistic_score,result_contract`
 - `PREFLIGHT_RERUN`: `NO`
 - `QUICK`: `ok`
 - `RESTART`: `NO`
-- `ROLLBACK`: `NO`
+- `ROWINPUTN`: `13`
+- `ROWOUTPUTN`: `16`
 - `SCORED`: `16`
 - `SCORE_PRODUCER_CHANGE`: `NO`
 - `SOURCE_CHANGE`: `NO`
