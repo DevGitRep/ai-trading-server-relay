@@ -1,24 +1,19 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-07T01:26:46.526869+00:00`
-- Run ID: `20260907T012644Z`
-- Step: `LIBRARY_FETCH_A_EXACT_SEAM_READ`
+- Published UTC: `2026-09-07T01:27:19.911796+00:00`
+- Run ID: `20260907T012717Z`
+- Step: `LIBRARY_FETCH_A_FINAL_SEAM_READ`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `FETCH_A_BASE_URL_AND_PAYLOAD_CONSUMER_CAPTURED`
-- Next gate: `MINIMAL_REALISTIC_SCORE_SEAM_PATCH`
+- Verdict: `FETCH_A_ENDPOINT_AND_PAYLOAD_CONSUMER_PROVEN`
+- Next gate: `MINIMAL_REALISTIC_SCORE_PATCH`
 
 ## Facts
 
 - `BENCHTEST_RERUN`: `NO`
 - `CHANGES_MADE`: `NO`
 - `MASTER_READ`: `YES`
-- `PARAM_1`: `L826:url.searchParams.set(`
-- `PARAM_2`: `L831:url.searchParams.set(`
-- `PARAM_3`: `L838:url.searchParams.set(`
-- `PARAM_4`: `L845:url.searchParams.set(`
-- `PAYLOAD_1`: `L880:const payload=await response.json();`
-- `PAYLOAD_2`: `L887:payload`
+- `PAYLOAD_CONSUMER`: `} applyPage( payload ); }catch(error){`
 - `RESTART`: `NO`
-- `URL_1`: `L821:const url=new URL(`
+- `URL_SEAM`: `); const url=new URL( &quot;/indicator-lab/api/library-page&quot;, location.origin );`
