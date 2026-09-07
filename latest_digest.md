@@ -1,24 +1,26 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-07T01:40:57.955767+00:00`
-- Run ID: `20260907T014055Z`
-- Step: `LIBRARY_SCORE_PATCH_SEAM_PREP_READ`
+- Published UTC: `2026-09-07T01:43:28.169202+00:00`
+- Run ID: `20260907T014324Z`
+- Step: `MINIMAL_REALISTIC_SCORE_CARD_SOURCE_PATCH`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `CARD_RETURN_AND_DB_ACCESS_SEAM_CAPTURED`
-- Next gate: `MINIMAL_REALISTIC_SCORE_CARD_SOURCE_PATCH`
+- Verdict: `REALISTIC_SCORE_V2_CARD_WIRING_PATCHED`
+- Next gate: `VERIFY_LIVE_LIBRARY_RESPONSE_THEN_RESTART_ONLY_IF_REQUIRED`
 
 ## Facts
 
+- `BACKUP_CREATED`: `YES`
 - `BENCHTEST_RERUN`: `NO`
-- `CHANGES_MADE`: `NO`
-- `DB_1`: `L11:&quot;user_data/orderflow_dashboard/data/manual_support/&quot;`
-- `DB_2`: `L12:&quot;indicator_challenger_lab_v1.db&quot;`
-- `DB_3`: `L774:conn = sqlite3.connect(`
-- `DB_4`: `L933:conn = sqlite3.connect(`
-- `DB_ACCESS_HITS`: `4`
-- `FUNCTION_RANGE`: `L916-1229`
-- `HAS_RETURN_CARDS`: `YES`
+- `COMPILE`: `PASS`
+- `DB_QUICK_CHECK`: `ok`
+- `DB_WRITE`: `NO`
+- `EXISTING_DB_CONNECTION_USED`: `conn`
 - `MASTER_READ`: `YES`
+- `PATCH_FILE`: `indicator_lab_library_ui_v1.py`
+- `PATCH_MARKER_COUNT`: `1`
 - `RESTART`: `NO`
+- `V2_DISTINCT_SOURCES`: `23`
+- `V2_NUMERIC_SCORES`: `23`
+- `V2_RESULT_ROWS`: `23`
