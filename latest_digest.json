@@ -1,25 +1,27 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-07T03:05:25.365899+00:00",
-  "run_id": "20260907T030436Z",
-  "step": "REMOVE_LEGACY_79_AND_RENDER_DIRECT_23_BENCH_SCORE_V2",
+  "published_at_utc": "2026-09-07T03:20:33.946256+00:00",
+  "run_id": "20260907T032028Z",
+  "step": "DEFINITIVE_BENCHTEST_STORAGE_V2_MIGRATION_AND_HANDOFF",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "V31T_FAILED_AND_FULLY_ROLLED_BACK",
-  "next_gate": "REVIEW_FAILED_STAGE_ONLY",
+  "verdict": "V31V_PREINSTALL_FAILED_NO_LIVE_CHANGE",
+  "next_gate": "REVIEW_PREINSTALL_FAILURE_ONLY",
   "facts": {
     "BENCHTEST_RERUN": "NO",
     "DB_WRITE": "NO",
-    "ERROR_STAGE": "VERIFY_NEW_UI_API",
+    "ERROR_STAGE": "PATCH_LIBRARY_PAGE",
     "ERROR_TYPE": "RuntimeError",
     "LEGACY_BEFORE": "79",
     "MASTER_READ": "YES",
+    "MASTER_UPDATED": "NO",
     "PENDING_BEFORE": "3",
-    "RESTART": "YES",
-    "ROLLBACK": "YES",
+    "REF_FILES": "4",
+    "RESTART": "NO",
+    "ROLLBACK": "NO",
     "SCORED_BEFORE": "23",
-    "SOURCE_CHANGE": "YES",
-    "STATS_CHANGES": "2",
-    "TOP": "74.59517342100865"
+    "SOURCE_CHANGE": "NO",
+    "TOP": "74.59517342100865",
+    "TOTAL_BEFORE": "105"
   }
 }
