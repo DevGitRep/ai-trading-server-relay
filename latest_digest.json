@@ -1,17 +1,16 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-07T01:19:17.875498+00:00",
-  "run_id": "20260907T011915Z",
-  "step": "CANONICAL_LIBRARY_ROUTE_HANDLER_READ",
+  "published_at_utc": "2026-09-07T01:20:14.409713+00:00",
+  "run_id": "20260907T012012Z",
+  "step": "CANONICAL_LIBRARY_EXACT_ROUTE_OWNER_READ",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "CANONICAL_LIBRARY_HANDLER_CAPTURED",
-  "next_gate": "PATCH_ONLY_PROVEN_LIBRARY_CARD_DATA_MAPPING",
+  "verdict": "EXACT_INDICATOR_LAB_ROUTE_OWNER_CAPTURED",
+  "next_gate": "READ_CARD_DATA_MAPPING_IN_EXACT_OWNER",
   "facts": {
     "BENCHTEST_RERUN": "NO",
     "CHANGES_MADE": "NO",
-    "HANDLER_1": "indicator_library_ui_v2_download:L15195-15267",
-    "HANDLER_COUNT": "1",
+    "EXACT_ROUTE_COUNT": "0",
     "MASTER_READ": "YES",
     "RESTART": "NO"
   }
