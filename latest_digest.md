@@ -1,40 +1,38 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-07T11:02:54.496614+00:00`
-- Run ID: `20260907T110252Z`
-- Step: `READFINALSCOREPERSISTENCE`
+- Published UTC: `2026-09-07T11:11:30.054867+00:00`
+- Run ID: `20260907T111127Z`
+- Step: `READLIBRARYSEAM`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `FROZENSCOREPERSISTENCEFULLYPROVEN`
-- Next gate: `WIRELIBRARYTOCANONICALVIEW`
+- Verdict: `LIBRARYCUTOVERSEAMPARTIAL`
+- Next gate: `REVIEWONLYLIBRARYSEAM`
 
 ## Facts
 
+- `APPLYPAGE`: `YES`
 - `BENCHTEST_RERUN`: `NO`
+- `BUILDCARD`: `YES`
+- `CANONFUNCS`: `NONE`
+- `CARDIDS`: `NONE`
 - `CHANGES_MADE`: `NO`
-- `CONFKEYS`: `NONE`
-- `CURRENT`: `16`
+- `COMPLETE`: `16`
 - `DB_WRITE`: `NO`
-- `HASREALISTIC`: `YES`
-- `INSERTLINE`: `5552`
+- `IDFUNCS`: `indicator_lab_library_ui_v1.py:_bench_metrics_from_row_v25b,indicator_lab_library_ui_v1.py:_best_metrics,indic`
+- `JSMETRICS`: `YES`
+- `JSTOPREAL`: `YES`
+- `LEGACYFUNCS`: `indicator_lab_library_ui_v1.py:_bulk_bench_metrics,indicator_lab_library_ui_v1.py:_candidate_metrics,indicator`
+- `MARKERS`: `3`
 - `MASTER_READ`: `YES`
+- `METRICFUNCS`: `indicator_lab_library_ui_v1.py:_absolute_status,indicator_lab_library_ui_v1.py:_bench_metrics_from_row_v25b,in`
 - `PREFLIGHT_RERUN`: `NO`
-- `PRIMARYONLY`: `YES`
 - `QUICK`: `ok`
-- `RANKKEYS`: `score_eligible`
-- `REALEXPR`: `primary_score[ &quot;score&quot; ]`
-- `RECOMPUTE_CALLER`: `NONE`
 - `RESTART`: `NO`
-- `RESULTINSERT`: `YES`
-- `RETURNKEYN`: `12`
 - `SCORED`: `16`
-- `SCORE_ACTIVITY`: `ACTIVE`
-- `SCORE_CONFIDENCE`: `LOW`
-- `SCORE_MATCH`: `YES`
-- `SECEXPR`: `secondary_score[ &quot;score&quot; ]`
-- `SECSCOREKEY`: `secondary_score`
+- `SCORE_PRODUCER_COMPLETE`: `YES`
+- `SCORE_UPDATER_REQUIRED`: `NO`
 - `SOURCE_CHANGE`: `NO`
-- `STATUSKEYS`: `score_status,secondary_score_status`
-- `UPDATELINE`: `5488`
-- `WRITERREAL`: `YES`
+- `TARGETFUNCS`: `3`
+- `VIEWCOLS`: `YES`
+- `VIEWROWS`: `11775`
