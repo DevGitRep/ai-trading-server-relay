@@ -1,25 +1,19 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-07T01:08:56.302905+00:00",
-  "run_id": "20260907T010854Z",
-  "step": "LIBRARY_BENCHTEST_BACKEND_FUNCTION_READ",
+  "published_at_utc": "2026-09-07T01:10:23.406022+00:00",
+  "run_id": "20260907T011021Z",
+  "step": "LIBRARY_BENCHTEST_CALLER_RESPONSE_SEAM_READ",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "EXACT_BACKEND_FUNCTION_STRUCTURE_CAPTURED",
-  "next_gate": "PATCH_ONLY_PROVEN_RESPONSE_MAPPING",
+  "verdict": "EXACT_LIBRARY_RESPONSE_OWNER_CAPTURED",
+  "next_gate": "PATCH_ONLY_PROVEN_CARD_SCORE_MAPPING",
   "facts": {
     "BENCHTEST_RERUN": "NO",
+    "CALL_1": "L15161:indicator_library_ui_v2_stats:15119-15191",
+    "CALL_COUNT": "1",
     "CHANGES_MADE": "NO",
-    "FUNCTION": "_indicator_library_ui_v2_benchtest",
-    "FUNCTION_END": "15115",
-    "FUNCTION_LINE": "15060",
     "MASTER_READ": "YES",
-    "RESPONSE_KEYS": "NONE",
-    "RESTART": "NO",
-    "SQL_1": "benchtest_results_v1",
-    "SQL_2": "benchtest_results_v1",
-    "SQL_3": "SELECT DISTINCT source_sha256 FROM benchtest_results_v1 WHERE source_sha256 IS NOT NULL AND contract_version=?",
-    "SQL_4": "SELECT DISTINCT source_sha256 FROM benchtest_results_v1 WHERE source_sha256 IS NOT NULL",
-    "SQL_COUNT": "4"
+    "RELEVANT_RESPONSE_KEYS": "benchtest_semantics,benchtest_total",
+    "RESTART": "NO"
   }
 }
