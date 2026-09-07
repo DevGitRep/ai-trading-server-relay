@@ -1,67 +1,95 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-07T17:40:17.754283+00:00`
-- Run ID: `20260907T174015Z`
-- Step: `READACTIVEREFS`
+- Published UTC: `2026-09-07T17:42:43.047051+00:00`
+- Run ID: `20260907T174241Z`
+- Step: `READLEGACYOWNERS`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `ACTIVELEGACYREFERENCESSTRUCTURED`
-- Next gate: `REVIEWLEGACYREFERENCEOWNERS`
+- Verdict: `LEGACYREFERENCEOWNERSFULLYREAD`
+- Next gate: `PATCHACTIVELEGACYSEAMS`
 
 ## Facts
 
-- `ACTIVEFILEN`: `3`
-- `ACTIVEREFN`: `17`
-- `BENCHOWNERN`: `5`
-- `BENCHOWNERS`: `_v2_finish_from_signals,ensure_schema,insert_result,recompute_scores,select_candidates`
-- `BENCHREFN`: `10`
+- `ACTIVEOWNERN`: `5`
 - `BENCHTEST_RERUN`: `NO`
 - `CANONICALN`: `16`
+- `CANONOWNERN`: `0`
 - `CHANGES_MADE`: `NO`
 - `DB_WRITE`: `NO`
-- `F1AST`: `YES`
-- `F1CALLS`: `_v2_finish_from_signals:1,ensure_schema:2,insert_result:2,recompute_scores:0,select_candid`
-- `F1CONSTN`: `10`
-- `F1CREATE`: `1`
-- `F1DELETE`: `1`
-- `F1INSERT`: `1`
-- `F1NAME`: `benchtest`
-- `F1NONCONSTN`: `0`
-- `F1OWNERN`: `5`
-- `F1OWNERS`: `_v2_finish_from_signals:2,ensure_schema:3,insert_result:1,recompute_scores:3,select_candid`
-- `F1REFN`: `10`
-- `F1UPDATE`: `2`
-- `F2AST`: `YES`
-- `F2CALLS`: `_indicator_library_ui_v2_benchtest:1`
-- `F2CONSTN`: `4`
-- `F2NAME`: `backend.py`
-- `F2NONCONSTN`: `0`
-- `F2OWNERN`: `1`
-- `F2OWNERS`: `_indicator_library_ui_v2_benchtest:4`
-- `F2REFN`: `4`
-- `F3AST`: `YES`
-- `F3CALLS`: `indicator_lab_report_bench_chart_data_v28c:0`
-- `F3CONSTN`: `3`
-- `F3NAME`: `indicator_lab_v1.py`
-- `F3NONCONSTN`: `0`
-- `F3OWNERN`: `1`
-- `F3OWNERS`: `indicator_lab_report_bench_chart_data_v28c:3`
-- `F3REFN`: `3`
-- `FKREFN`: `0`
+- `DEADOWNERN`: `2`
 - `LEGACYROWS`: `16`
 - `LIBRARY_CHANGE`: `NO`
-- `LOCK`: `YES`
+- `LIVEREVIEW1`: `_v2_finish_from_signals`
+- `LIVEREVIEWN`: `5`
 - `MASTER_READ`: `YES`
-- `MODULEREFN`: `0`
-- `OWNEDTYPE1`: `index`
-- `OWNERCALLN`: `8`
+- `O1CALLER`: `evaluate`
+- `O1CALLN`: `1`
+- `O1CANONN`: `0`
+- `O1FILE`: `benchtest`
+- `O1KINDS`: `DELETE,SELECT`
+- `O1LOADN`: `1`
+- `O1NAME`: `_v2_finish_from_signals`
+- `O1REFN`: `2`
+- `O1STMTN`: `2`
+- `O2CALLER`: `execute,main`
+- `O2CALLN`: `2`
+- `O2CANONN`: `0`
+- `O2FILE`: `benchtest`
+- `O2KINDS`: `CREATE`
+- `O2LOADN`: `2`
+- `O2NAME`: `ensure_schema`
+- `O2REFN`: `3`
+- `O2STMTN`: `1`
+- `O3CALLER`: `evaluate,save_nonpass`
+- `O3CALLN`: `2`
+- `O3CANONN`: `0`
+- `O3FILE`: `benchtest`
+- `O3KINDS`: `INSERT`
+- `O3LOADN`: `2`
+- `O3NAME`: `insert_result`
+- `O3REFN`: `1`
+- `O3STMTN`: `1`
+- `O4CALLN`: `0`
+- `O4CANONN`: `0`
+- `O4FILE`: `benchtest`
+- `O4KINDS`: `SELECT,UPDATE`
+- `O4LOADN`: `0`
+- `O4NAME`: `recompute_scores`
+- `O4REFN`: `3`
+- `O4STMTN`: `3`
+- `O5CALLER`: `main`
+- `O5CALLN`: `2`
+- `O5CANONN`: `0`
+- `O5FILE`: `benchtest`
+- `O5KINDS`: `SELECT`
+- `O5LOADN`: `2`
+- `O5NAME`: `select_candidates`
+- `O5REFN`: `1`
+- `O5STMTN`: `1`
+- `O6CALLER`: `indicator_library_ui_v2_stats`
+- `O6CALLN`: `1`
+- `O6CANONN`: `0`
+- `O6FILE`: `backend.py`
+- `O6KINDS`: `OTHER,SELECT`
+- `O6LOADN`: `1`
+- `O6NAME`: `_indicator_library_ui_v2_benchtest`
+- `O6REFN`: `4`
+- `O6STMTN`: `4`
+- `O7CALLN`: `0`
+- `O7CANONN`: `0`
+- `O7FILE`: `indicator_lab_v1.py`
+- `O7KINDS`: `SELECT`
+- `O7LOADN`: `0`
+- `O7NAME`: `indicator_lab_report_bench_chart_data_v28c`
+- `O7REFN`: `3`
+- `O7STMTN`: `3`
+- `OWNERN`: `7`
 - `PREFLIGHT_RERUN`: `NO`
 - `QUICK`: `ok`
+- `RECOMPUTEDEAD`: `YES`
+- `REPORTDEAD`: `YES`
 - `RESTART`: `NO`
-- `SCHEMADEP`: `0`
-- `SCHEMAOWNED`: `2`
-- `SCHEMATOTAL`: `2`
 - `SCORE_PRODUCER_CHANGE`: `NO`
 - `SOURCE_CHANGE`: `NO`
 - `TEMP_DB_WRITE`: `NO`
