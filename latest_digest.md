@@ -1,26 +1,24 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-07T01:39:47.160365+00:00`
-- Run ID: `20260907T013945Z`
-- Step: `LIBRARY_CARD_AND_V2_SCORE_KEYS_READ`
+- Published UTC: `2026-09-07T01:40:57.955767+00:00`
+- Run ID: `20260907T014055Z`
+- Step: `LIBRARY_SCORE_PATCH_SEAM_PREP_READ`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `CARD_KEYS_AND_V2_SCORE_STORAGE_CAPTURED`
+- Verdict: `CARD_RETURN_AND_DB_ACCESS_SEAM_CAPTURED`
 - Next gate: `MINIMAL_REALISTIC_SCORE_CARD_SOURCE_PATCH`
 
 ## Facts
 
 - `BENCHTEST_RERUN`: `NO`
-- `CARD_HAS_CANDIDATE_ID`: `NO`
-- `CARD_HAS_SOURCE_SHA256`: `YES`
 - `CHANGES_MADE`: `NO`
-- `DB_HAS_CANDIDATE_ID`: `YES`
-- `DB_HAS_PRIMARY_SCORE`: `NO`
-- `DB_HAS_REALISTIC_SCORE`: `YES`
-- `DB_HAS_SCORE_CONTRACT`: `YES`
-- `DB_HAS_SOURCE_SHA256`: `YES`
-- `FUNCTION_FOUND`: `YES`
+- `DB_1`: `L11:&quot;user_data/orderflow_dashboard/data/manual_support/&quot;`
+- `DB_2`: `L12:&quot;indicator_challenger_lab_v1.db&quot;`
+- `DB_3`: `L774:conn = sqlite3.connect(`
+- `DB_4`: `L933:conn = sqlite3.connect(`
+- `DB_ACCESS_HITS`: `4`
+- `FUNCTION_RANGE`: `L916-1229`
+- `HAS_RETURN_CARDS`: `YES`
 - `MASTER_READ`: `YES`
 - `RESTART`: `NO`
-- `SAMPLE_COUNT`: `2`
