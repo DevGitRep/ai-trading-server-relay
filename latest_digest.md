@@ -1,36 +1,40 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-07T14:32:24.288326+00:00`
-- Run ID: `20260907T143222Z`
-- Step: `TESTENTITLEDSORT`
+- Published UTC: `2026-09-07T14:34:04.050995+00:00`
+- Run ID: `20260907T143402Z`
+- Step: `VERIFYPRIMARYCARDFIELDS`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `REALISTICSORTCORRECTWHENENTITLED`
-- Next gate: `VERIFYLIVEPRIMARYCARDMETRICFIELDS`
+- Verdict: `ONLYPARTIALPRIMARYCARDMETRICSARELIVE`
+- Next gate: `PATCHCARDPROJECTIONFROMCANONICALMAP`
 
 ## Facts
 
-- `APITIER`: `PRO`
+- `APIFIELDN`: `1`
+- `APIFIELDS`: `realistic_score`
+- `APISCORED`: `16`
 - `BENCHTEST_RERUN`: `NO`
+- `CANONICALN`: `16`
+- `CARDDICTN`: `1`
+- `CARDFIELDN`: `0`
+- `CARDFIELDS`: `NONE`
 - `CHANGES_MADE`: `NO`
 - `DB_WRITE`: `NO`
-- `DESC`: `YES`
-- `ENTVALN`: `2`
-- `ENTVALS`: `PRO,INTERNAL_ADMIN`
-- `EXACT`: `YES`
+- `DDN`: `0`
+- `HELPERFIELDN`: `6`
+- `HELPERFIELDS`: `realistic_score,profit_factor,net_return_pct,max_drawdown_pct,win_rate_pct,trade_count`
+- `JOIN_BY_ID`: `YES`
 - `MASTER_READ`: `YES`
-- `MECH`: `QUERY:view_as`
-- `MECHN`: `1`
-- `MECHS`: `QUERY:view_as`
-- `P1`: `12`
-- `P2`: `4`
+- `NAME_MAPPING_USED`: `NO`
+- `PFN`: `0`
 - `PREFLIGHT_RERUN`: `NO`
+- `PROJFIELDN`: `0`
+- `PROJFIELDS`: `NONE`
 - `QUICK`: `ok`
-- `REQVAL`: `PRO`
+- `REALN`: `16`
 - `RESTART`: `NO`
-- `SCORED`: `16`
+- `RETN`: `0`
 - `SOURCE_CHANGE`: `NO`
-- `TIERLINE`: `474`
-- `TOP`: `74.595173`
-- `TOPMATCH`: `YES`
+- `TRADESN`: `0`
+- `WINN`: `0`
