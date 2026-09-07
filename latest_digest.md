@@ -1,33 +1,43 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-07T16:40:59.323482+00:00`
-- Run ID: `20260907T164057Z`
-- Step: `READLEGACYOWNER`
+- Published UTC: `2026-09-07T16:42:16.111287+00:00`
+- Run ID: `20260907T164214Z`
+- Step: `READLEGACYCALLCHAIN`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `REMAININGLEGACYTABLEOWNERACTIVE`
-- Next gate: `REVIEWLEGACYOWNERCALLER`
+- Verdict: `LEGACYMETRICCALLERSTILLACTIVE`
+- Next gate: `REVIEWOUTERCALLER`
 
 ## Facts
 
+- `APICALLER`: `NO`
+- `APITARGET`: `NO`
 - `BENCHTEST_RERUN`: `NO`
-- `CALLN`: `1`
+- `CALLER`: `_best_metrics`
+- `CALLERCALLN`: `1`
+- `CALLEREND`: `531`
+- `CALLERLINE`: `508`
+- `CALLERLOADN`: `1`
 - `CHANGES_MADE`: `NO`
 - `DB_WRITE`: `NO`
 - `JOIN_BY_ID`: `YES`
 - `JS_CHANGE`: `NO`
-- `LOADN`: `1`
-- `LOADUSES`: `NO`
+- `LOADCALLER`: `YES`
+- `LOADTARGET`: `NO`
 - `MASTER_READ`: `YES`
 - `NAME_MAPPING_USED`: `NO`
-- `OWNER`: `_candidate_metrics`
-- `OWNEREND`: `251`
-- `OWNERLINE`: `125`
+- `OUTER1`: `load_report_metrics`
+- `OUTERFN`: `1`
 - `PREFLIGHT_RERUN`: `NO`
 - `QUICK`: `ok`
 - `RESTART`: `NO`
 - `SCORED`: `16`
+- `SCORE_PRODUCER_CHANGE`: `NO`
 - `SOURCE_CHANGE`: `NO`
-- `TABLELINE`: `146`
 - `TABLESRCN`: `1`
+- `TABLETARGET`: `1`
+- `TARGETCALLLINE`: `516`
+- `TARGETCALLN`: `1`
+- `TARGETEND`: `251`
+- `TARGETLINE`: `125`
