@@ -1,22 +1,22 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-07T01:23:43.839236+00:00`
-- Run ID: `20260907T012341Z`
-- Step: `LIBRARY_REALISTIC_SCORE_FETCH_MAPPING_READ`
+- Published UTC: `2026-09-07T01:24:32.751165+00:00`
+- Run ID: `20260907T012430Z`
+- Step: `LIBRARY_SCORE_EXACT_FETCH_RESPONSE_READ`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `EXACT_FETCH_AND_SCORE_MAPPING_CAPTURED`
-- Next gate: `PATCH_ONLY_PROVEN_SCORE_RESPONSE_MAPPING`
+- Verdict: `EXACT_LIBRARY_FETCH_RESPONSE_MAPPING_CAPTURED`
+- Next gate: `MINIMAL_REALISTIC_SCORE_MAPPING_PATCH`
 
 ## Facts
 
 - `BENCHTEST_RERUN`: `NO`
 - `CHANGES_MADE`: `NO`
-- `FETCH_1`: `const response=await fetch(`
-- `FETCH_LINES`: `864,968`
-- `JSON_LINES`: `880,978`
+- `FETCH_A`: `L864:const response=await fetch(`
+- `FETCH_B`: `L968:fetch(`
+- `JSON_A`: `L880:const payload=await response.json();`
+- `JSON_B`: `L978:return r.json();`
 - `MASTER_READ`: `YES`
 - `RESTART`: `NO`
-- `SCORE_1`: `[&quot;Realistic Score&quot;,&quot;realistic_score&quot;]`
-- `SCORE_LINES`: `292`
+- `SCORE_FIELD`: `L292:realistic_score`

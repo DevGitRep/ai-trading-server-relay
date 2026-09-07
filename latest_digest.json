@@ -1,21 +1,21 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-07T01:23:43.839236+00:00",
-  "run_id": "20260907T012341Z",
-  "step": "LIBRARY_REALISTIC_SCORE_FETCH_MAPPING_READ",
+  "published_at_utc": "2026-09-07T01:24:32.751165+00:00",
+  "run_id": "20260907T012430Z",
+  "step": "LIBRARY_SCORE_EXACT_FETCH_RESPONSE_READ",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "EXACT_FETCH_AND_SCORE_MAPPING_CAPTURED",
-  "next_gate": "PATCH_ONLY_PROVEN_SCORE_RESPONSE_MAPPING",
+  "verdict": "EXACT_LIBRARY_FETCH_RESPONSE_MAPPING_CAPTURED",
+  "next_gate": "MINIMAL_REALISTIC_SCORE_MAPPING_PATCH",
   "facts": {
     "BENCHTEST_RERUN": "NO",
     "CHANGES_MADE": "NO",
-    "FETCH_1": "const response=await fetch(",
-    "FETCH_LINES": "864,968",
-    "JSON_LINES": "880,978",
+    "FETCH_A": "L864:const response=await fetch(",
+    "FETCH_B": "L968:fetch(",
+    "JSON_A": "L880:const payload=await response.json();",
+    "JSON_B": "L978:return r.json();",
     "MASTER_READ": "YES",
     "RESTART": "NO",
-    "SCORE_1": "[&quot;Realistic Score&quot;,&quot;realistic_score&quot;]",
-    "SCORE_LINES": "292"
+    "SCORE_FIELD": "L292:realistic_score"
   }
 }
