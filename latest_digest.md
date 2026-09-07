@@ -1,33 +1,31 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-07T09:21:36.311387+00:00`
-- Run ID: `20260907T092031Z`
-- Step: `READCUTOVERSEAMS`
+- Published UTC: `2026-09-07T09:24:38.194514+00:00`
+- Run ID: `20260907T092435Z`
+- Step: `READEXACTPRODUCERSEAMS`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `CUTOVERSEAMSINCOMPLETE`
-- Next gate: `READONLYREVIEWMISSINGSEAM`
+- Verdict: `EXACTPRODUCERSEAMSIDENTIFIED`
+- Next gate: `WIREBENCHWRITERTOCANONICALRUNSTABLE`
 
 ## Facts
 
-- `BENCHLEGACYFILES`: `3`
-- `BENCHREAD`: `indicator_lab_v1.py:indicator_lab_report_bench_chart_data_v28c,indicator_lab_library_ui_v1.py:_candidate_metri`
-- `BENCHREADN`: `5`
+- `BENCHFILE`: `benchtest`
+- `BENCHREFS`: `14`
 - `BENCHRUNS`: `16`
 - `BENCHTEST_RERUN`: `NO`
-- `BENCHWRITE`: `NONE`
-- `BENCHWRITEN`: `0`
-- `CANDLEGACYFILES`: `101`
-- `CANDWRITE`: `indicator_lab_v1.py:indicator_lab_paste_pine,indicator_lab_conversion_result_commit_v1.py:commit_conversion_re`
-- `CANDWRITEN`: `98`
 - `CHANGES_MADE`: `NO`
 - `DB_WRITE`: `NO`
 - `INDICATORS`: `11775`
-- `LIBRARY`: `indicator_lab_v1.py:register_indicator_lab_routes,indicator_lab_v1.py:indicator_lab_library_page_api_v26,indic`
+- `INGESTFUNCS`: `9`
+- `INSERTCALLS`: `1`
+- `INSERTFN`: `_v2_insert_result`
 - `MASTER_READ`: `YES`
-- `PREFLIGHT`: `test_your_script_v1.py:TOPLEVEL,test_your_script_v1.py:_candidate_preflight_status,test_your_script_v1.py:run_`
+- `METRICLINES`: `248`
+- `PREFFUNCS`: `13`
 - `PREFLIGHT_RERUN`: `NO`
+- `PREFSEAMS`: `114`
 - `QUICK`: `ok`
 - `RESTART`: `NO`
 - `SOURCE_CHANGE`: `NO`
