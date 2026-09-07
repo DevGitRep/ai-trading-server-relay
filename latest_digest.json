@@ -1,21 +1,22 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-07T01:24:32.751165+00:00",
-  "run_id": "20260907T012430Z",
-  "step": "LIBRARY_SCORE_EXACT_FETCH_RESPONSE_READ",
+  "published_at_utc": "2026-09-07T01:25:26.456980+00:00",
+  "run_id": "20260907T012524Z",
+  "step": "LIBRARY_SCORE_FETCH_URL_AND_PAYLOAD_READ",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "EXACT_LIBRARY_FETCH_RESPONSE_MAPPING_CAPTURED",
-  "next_gate": "MINIMAL_REALISTIC_SCORE_MAPPING_PATCH",
+  "verdict": "FETCH_URL_AND_PAYLOAD_FLOW_CAPTURED",
+  "next_gate": "MINIMAL_REALISTIC_SCORE_RESPONSE_MAPPING_PATCH",
   "facts": {
+    "A_1": "L864:const response=await fetch(",
+    "A_2": "L865:url.toString(),",
+    "A_3": "L880:const payload=await response.json();",
     "BENCHTEST_RERUN": "NO",
+    "B_1": "L968:fetch(",
+    "B_2": "L969:`/indicator-lab/api/library-stats?view_as=${encodeURIComponent(tier)}`",
+    "B_3": "L978:return r.json();",
     "CHANGES_MADE": "NO",
-    "FETCH_A": "L864:const response=await fetch(",
-    "FETCH_B": "L968:fetch(",
-    "JSON_A": "L880:const payload=await response.json();",
-    "JSON_B": "L978:return r.json();",
     "MASTER_READ": "YES",
-    "RESTART": "NO",
-    "SCORE_FIELD": "L292:realistic_score"
+    "RESTART": "NO"
   }
 }
