@@ -1,41 +1,38 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-07T10:25:11.014884+00:00`
-- Run ID: `20260907T102509Z`
-- Step: `PROVEPRIMARYSECONDARYSCORE`
+- Published UTC: `2026-09-07T10:37:07.080015+00:00`
+- Run ID: `20260907T103705Z`
+- Step: `READPRIMARYACTIVITY`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `PRIMARYSECONDARYSCORINGSEMANTICSRESOLVED`
-- Next gate: `ENFORCEFROZENPRIMARYREALISTICSCORE`
+- Verdict: `PRIMARYACTIVITYSEMANTICSEXACTLYRESOLVED`
+- Next gate: `PATCHONLYPROVENCANONICALSCOREPERSISTENCE`
 
 ## Facts
 
+- `ACTIVE`: `active=_v2_score_activity( benchmark )`
+- `ACTIVEKEYS`: `NONE`
 - `BENCHTEST_RERUN`: `NO`
-- `CALL1`: `_v2_score_one( primary, role=&quot;PRIMARY_CROSS_TYPE&quot;, )`
-- `CALL2`: `_v2_score_one( secondary, role=secondary_role, )`
-- `CALLOWNER1`: `primary_score=_v2_score_one( primary, role=&quot;PRIMARY_CROSS_TYPE&quot;, )`
-- `CALLOWNER2`: `secondary_score=_v2_score_one( secondary, role=secondary_role, )`
+- `BUNDLECALLS`: `1`
 - `CHANGES_MADE`: `NO`
 - `CURRENT`: `16`
 - `DB_WRITE`: `NO`
-- `FALLBACK1`: `IFEXP:&quot;INDICATOR_SECONDARY_TYPE_SPECIFIC&quot; if script_kind==&quot;indicator&quot; else &quot;STRATEGY_SECONDARY_TYPE_SPECIFIC&quot;`
-- `FALLBACKN`: `1`
-- `FROZEN_PRIMARY`: `UNIVERSAL_SIGNAL_FLIP_V2`
-- `FROZEN_SECONDARY`: `STANDARDIZED_ATR_1R_1_5R_V2`
+- `DD`: `76.18878357030016`
+- `EXPOSURE`: `99.98306697108067`
+- `FINISHSCOREN`: `0`
+- `INSERTCALLS`: `1`
 - `MASTER_READ`: `YES`
+- `MODE`: `UNIVERSAL_SIGNAL_FLIP_V2`
+- `NOACTNULL`: `YES`
+- `NOACTSTATUS`: `YES`
+- `PF`: `0.0`
 - `PREFLIGHT_RERUN`: `NO`
-- `PRIMARYSCOREVAR`: `primary_score=_v2_score_one( primary, role=&quot;PRIMARY_CROSS_TYPE&quot;, )`
-- `PRIMARYTRADES`: `0`
 - `QUICK`: `ok`
-- `REALISTICEXPR`: `primary_score[ &quot;score&quot; ]`
+- `RAWACTN`: `12`
 - `RESTART`: `NO`
-- `RETURNREALISTIC`: `primary_score[ &quot;score&quot; ]`
-- `RETURNSECONDARY`: `secondary_score[ &quot;score&quot; ]`
-- `SCORECALLN`: `2`
-- `SECONDARYSCOREVAR`: `secondary_score=_v2_score_one( secondary, role=secondary_role, )`
-- `SECONDARYTRADES`: `15833`
-- `SECONDARY_MAY_REPLACE_PRIMARY`: `NO`
+- `RETURN`: `-58.61491326971059`
+- `SCORE`: `8.487595661182382`
 - `SOURCE_CHANGE`: `NO`
-- `ZEROID`: `ICL_LIB_4B7C809FCA83500F`
-- `ZEROSCORE`: `8.487595661182382`
+- `STATUS`: `MIGRATED`
+- `TRADES`: `0`
