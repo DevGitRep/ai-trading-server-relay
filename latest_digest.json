@@ -1,21 +1,23 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-07T08:24:25.753251+00:00",
-  "run_id": "20260907T082423Z",
-  "step": "IDENTIFYEXACTPRIMARYCARDMETRICS",
+  "published_at_utc": "2026-09-07T08:25:22.128666+00:00",
+  "run_id": "20260907T082520Z",
+  "step": "READEXACTPRIMARYSCHEMAANDTARGETVALUES",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "PRIMARYFIELDMAPREADFAILED",
-  "next_gate": "REVIEWREADONLYFAILURE",
+  "verdict": "EXACTPRIMARYSCHEMAANDVALUESPRINTED",
+  "next_gate": "SELECTEXACTFIVEPRIMARYFIELDSFROMPRINTEDSCHEMA",
   "facts": {
     "BENCHTEST_RERUN": "NO",
     "CHANGES_MADE": "NO",
     "DB_WRITE": "NO",
-    "ERROR_STAGE": "MAP",
-    "ERROR_TYPE": "RuntimeError",
     "MASTER_READ": "YES",
+    "PRIMARY_COLS": "4",
+    "PRIMARY_NONNULL": "4",
     "QUICK": "ok",
     "RESTART": "NO",
+    "TARGET_ID": "ICL_LIB_4B7C809FCA83500F",
+    "TARGET_SCORE": "8.487595661182382",
     "TOTAL": "16"
   }
 }
