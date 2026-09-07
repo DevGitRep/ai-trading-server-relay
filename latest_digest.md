@@ -1,22 +1,24 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-07T01:35:20.516816+00:00`
-- Run ID: `20260907T013518Z`
-- Step: `LIBRARY_CARD_SOURCE_CALLER_TRACE`
+- Published UTC: `2026-09-07T01:37:03.273683+00:00`
+- Run ID: `20260907T013701Z`
+- Step: `LOAD_LIBRARY_CARDS_OWNER_LOOKUP`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `LIBRARY_CARD_SOURCE_CALLER_CAPTURED`
-- Next gate: `PATCH_REALISTIC_SCORE_AT_PROVEN_CARD_SOURCE`
+- Verdict: `LOAD_LIBRARY_CARDS_LOCATION_CAPTURED`
+- Next gate: `READ_ONLY_PROVEN_CARD_SOURCE_FUNCTION`
 
 ## Facts
 
-- `ASSIGN_1`: `indicator_lab_library_page_api_v26:L1759:cards = load_library_cards(tier)`
-- `ASSIGN_2`: `indicator_lab_home:L1826:_ui_cards_all = _pine_library_cards(_ui_effective_tier)`
 - `BENCHTEST_RERUN`: `NO`
-- `CALL_1`: `indicator_lab_library_page_api_v26:L1783:arg=cards`
-- `CALL_2`: `indicator_lab_home:L1827:arg=_ui_cards_all`
-- `CALL_COUNT`: `2`
+- `CALL_1`: `indicator_lab_v1.py:L1759`
+- `CALL_COUNT`: `1`
 - `CHANGES_MADE`: `NO`
+- `DEFINITION_COUNT`: `1`
+- `DEF_1`: `indicator_lab_library_ui_v1.py:L916`
+- `HIT_COUNT`: `4`
+- `IMPORT_1`: `indicator_lab_v1.py:L1816:from indicator_lab_library_ui_v1 import load_library_cards as _pine_library_cards`
+- `IMPORT_COUNT`: `1`
 - `MASTER_READ`: `YES`
 - `RESTART`: `NO`
