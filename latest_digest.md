@@ -1,40 +1,34 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-07T13:36:44.498884+00:00`
-- Run ID: `20260907T133642Z`
-- Step: `READSORTSEMANTICS`
+- Published UTC: `2026-09-07T13:45:51.884767+00:00`
+- Run ID: `20260907T134549Z`
+- Step: `READREALISTICSORTPATH`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `REALISTICSORTPOSITIONEXACTLYOBSERVED`
-- Next gate: `REVIEWPRINTEDPYTHONSORTSEAM`
+- Verdict: `REALISTICSORTCODEPATHPROVEN`
+- Next gate: `PATCHORSMOKEBASEDONPROVENPATH`
 
 ## Facts
 
 - `ACTIVE`: `active`
 - `BENCHTEST_RERUN`: `NO`
+- `CARDKEYN`: `9`
+- `CARDKEYS`: `author,image_url,name,realistic_score,report_url,script_id_part,signal_role,signal_role_reason,signal_role_updated_at`
 - `CHANGES_MADE`: `NO`
 - `DB_WRITE`: `NO`
-- `JSHITN`: `12`
-- `LASTN`: `6`
-- `LASTSCORED`: `0`
-- `LOW`: `0.363394`
-- `LOWLAST`: `NO`
-- `LOWP1`: `NO`
+- `HASSCOREKEY`: `YES`
 - `MASTER_READ`: `YES`
-- `P1ASC`: `NO`
-- `P1DESC`: `NO`
-- `P1N`: `12`
-- `P1SCORED`: `0`
-- `P2SCORED`: `0`
-- `PAGES`: `775`
 - `PREFLIGHT_RERUN`: `NO`
 - `QUICK`: `ok`
-- `REALN`: `5`
+- `RELFUNCN`: `16`
+- `RELFUNCS`: `_job_id,_append_event,_indicator_lab_library_page_v26,register_indicator_lab_routes,_display_metric,indicator_lab_librar`
 - `RESTART`: `NO`
+- `REVERSE`: `True`
 - `SCORED`: `16`
-- `SORTCALLN`: `0`
+- `SCOREPATH`: `MULTIPLE`
+- `SCOREPATHN`: `6`
+- `SORTBEFOREPAGE`: `YES`
+- `SORTOWNER`: `_indicator_lab_library_page_v26,register_indicator_lab_routes,load_library_cards`
+- `SORTOWNERN`: `3`
 - `SOURCE_CHANGE`: `NO`
-- `TOP`: `74.595173`
-- `TOPLAST`: `NO`
-- `TOPP1`: `NO`
