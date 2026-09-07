@@ -1,20 +1,23 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-07T01:13:15.299856+00:00",
-  "run_id": "20260907T011313Z",
-  "step": "MASTER_LIBRARY_SCORE_ARCHITECTURE_READ",
+  "published_at_utc": "2026-09-07T01:18:12.971398+00:00",
+  "run_id": "20260907T011811Z",
+  "step": "MASTER_CANONICAL_LIBRARY_ROUTE_READ",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "MASTER_LIBRARY_UI_ARCHITECTURE_SEARCHED",
-  "next_gate": "USE_MASTER_OWNER_IF_DOCUMENTED",
+  "verdict": "CANONICAL_LIBRARY_ROUTE_AND_SCORE_INTENT_CAPTURED",
+  "next_gate": "READ_ONLY_CANONICAL_LIBRARY_ROUTE_HANDLER",
   "facts": {
     "BENCHTEST_RERUN": "NO",
     "CHANGES_MADE": "NO",
-    "HAS_LIBRARY_UI_V2": "YES",
-    "HAS_REALISTIC_SCORE": "YES",
     "MASTER_READ": "YES",
-    "MATCH_COUNT": "143",
     "RESTART": "NO",
-    "SECTION_COUNT": "90"
+    "ROUTE_1": "L129:### 4. Canonical Library routes",
+    "ROUTE_2": "L131:Library:",
+    "ROUTE_3": "L133:`GET /indicator-lab`",
+    "ROUTE_4": "L137:`GET /indicator-lab/strategy/&lt;script_id_part&gt;`",
+    "ROUTE_5": "L147:`GET /indicator-lab/api/library-stats`",
+    "ROUTE_6": "L151:`GET /indicator-lab/strategy/&lt;script_id_part&gt;/download.pine`",
+    "SCORE_INTENT_1": "L224:- Realistic Score;"
   }
 }
