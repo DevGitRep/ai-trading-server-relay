@@ -1,29 +1,25 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-07T02:17:11.196044+00:00`
-- Run ID: `20260907T021706Z`
-- Step: `V31S_DEFINITIVE_LIBRARY_SCORE_PATCH_CORRECTED`
+- Published UTC: `2026-09-07T02:18:09.170503+00:00`
+- Run ID: `20260907T021807Z`
+- Step: `V31S_UNBOUNDLOCAL_CONTROLFLOW_READ`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `V31S_PREINSTALL_CHECK_FAILED_NO_LIVE_CHANGE`
-- Next gate: `REVIEW_SINGLE_FAILED_PREINSTALL_STAGE`
+- Verdict: `CANDIDATE_IDS_CONTROL_FLOW_CAPTURED`
+- Next gate: `ONE_MINIMAL_CONTROL_FLOW_SAFE_V31S_PATCH`
 
 ## Facts
 
-- `BACKEND_CHANGES`: `2`
-- `BACKEND_MODE`: `OWNER_SCOPED_LITERAL`
+- `APPEND`: `L1234:indent12:cards.append(card)`
+- `APPEND_CONTROL`: `For@L1112:FOR:row in library_rows|Try@L963:TRY`
+- `ASSIGN_1`: `L1215:indent16:candidate_ids = _candidate_ids_from_maps(sha, row[&#x27;chart_url&#x27;], candidate_sha_map, candidate_url_map)`
+- `ASSIGN_1_CONTROL`: `If@L1186:IF:pro|For@L1112:FOR:row in library_rows|Try@L963:TRY`
 - `BENCHTEST_RERUN`: `NO`
-- `DB_QUICK`: `ok`
-- `DB_TOP`: `74.59517342100865`
+- `CANDIDATE_ASSIGN_COUNT`: `1`
+- `CARDS_APPEND_COUNT`: `1`
+- `CHANGES_MADE`: `NO`
 - `DB_WRITE`: `NO`
-- `ERROR_STAGE`: `DIRECT_LIBRARY_PROOF`
-- `ERROR_TYPE`: `UnboundLocalError`
-- `LEGACY`: `79`
-- `LIVE_FILES_CHANGED`: `NO`
 - `MASTER_READ`: `YES`
+- `PROVEN_SAME_CONTROL_PATH`: `NO`
 - `RESTART`: `NO`
-- `ROLLBACK`: `NO`
-- `V2_NUMERIC`: `23`
-- `V2_PENDING`: `3`
-- `V2_TOTAL`: `26`
