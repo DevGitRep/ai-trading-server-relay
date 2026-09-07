@@ -1,34 +1,33 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-07T10:03:17.739685+00:00`
-- Run ID: `20260907T100315Z`
-- Step: `TRACESCOREUPDATER`
+- Published UTC: `2026-09-07T10:06:43.359404+00:00`
+- Run ID: `20260907T100641Z`
+- Step: `READMISSINGSCORINGHELPER`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `SCORESEAMPARTIAL`
-- Next gate: `REVIEWONLYMISSINGSCORESEAM`
+- Verdict: `MISSINGSCORINGHELPERCHAINRESOLVED`
+- Next gate: `PATCHCANONICALSCOREUPDATERANDNOACTIVITY`
 
 ## Facts
 
 - `BENCHTEST_RERUN`: `NO`
 - `CHANGES_MADE`: `NO`
-- `CLEARSIGNALS`: `1`
 - `CURRENT`: `16`
 - `DB_WRITE`: `NO`
+- `DIRECTCALLS`: `execute,midrank_percentile`
+- `HELPERS`: `execute,evaluate,_v2_finish_from_signals,_v2_score_result_bundle,ensure_schema`
 - `MASTER_READ`: `YES`
-- `NOACTIVITYHITS`: `3`
-- `PERSISTCALLS`: `3`
+- `NOACTOWNERS`: `_v2_finish_from_signals,_v2_score_result_bundle,evaluate`
+- `PERSISTCALLS`: `7`
+- `PERSISTOWNERS`: `_v2_finish_from_signals,_v2_insert_result,recompute_scores`
 - `PREFLIGHT_RERUN`: `NO`
 - `PRIMARY5`: `16`
 - `QUICK`: `ok`
-- `RECOMPUTE`: `YES`
 - `RESTART`: `NO`
-- `ROWFIELDS`: `15`
-- `SCORECALLS`: `0`
 - `SCORED`: `16`
-- `SCOREFN`: `YES`
+- `SCOREONEREACHABLE`: `YES`
+- `SCOREPATH`: `recompute_scores-&gt;execute-&gt;evaluate-&gt;_v2_finish_from_signals-&gt;_v2_score_result_bundle-&gt;_v2_score_one`
 - `SOURCE_CHANGE`: `NO`
-- `ZEROCOUNT`: `1`
 - `ZEROID`: `ICL_LIB_4B7C809FCA83500F`
 - `ZEROSCORE`: `8.487595661182382`
