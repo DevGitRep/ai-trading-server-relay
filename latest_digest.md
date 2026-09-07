@@ -1,30 +1,26 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-07T01:37:48.710590+00:00`
-- Run ID: `20260907T013746Z`
-- Step: `PROVEN_LOAD_LIBRARY_CARDS_READ`
+- Published UTC: `2026-09-07T01:39:47.160365+00:00`
+- Run ID: `20260907T013945Z`
+- Step: `LIBRARY_CARD_AND_V2_SCORE_KEYS_READ`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `PROVEN_CARD_SOURCE_SCORE_MAPPING_CAPTURED`
+- Verdict: `CARD_KEYS_AND_V2_SCORE_STORAGE_CAPTURED`
 - Next gate: `MINIMAL_REALISTIC_SCORE_CARD_SOURCE_PATCH`
 
 ## Facts
 
 - `BENCHTEST_RERUN`: `NO`
+- `CARD_HAS_CANDIDATE_ID`: `NO`
+- `CARD_HAS_SOURCE_SHA256`: `YES`
 - `CHANGES_MADE`: `NO`
+- `DB_HAS_CANDIDATE_ID`: `YES`
+- `DB_HAS_PRIMARY_SCORE`: `NO`
+- `DB_HAS_REALISTIC_SCORE`: `YES`
+- `DB_HAS_SCORE_CONTRACT`: `YES`
+- `DB_HAS_SOURCE_SHA256`: `YES`
 - `FUNCTION_FOUND`: `YES`
-- `FUNCTION_RANGE`: `L916-1229`
-- `HAS_BENCHTEST_RESULTS`: `NO`
-- `HAS_BENCH_SCORE_V2`: `NO`
-- `HAS_REALISTIC_SCORE`: `NO`
 - `MASTER_READ`: `YES`
 - `RESTART`: `NO`
-- `SEAM_1`: `L916:def load_library_cards(`
-- `SEAM_2`: `L940:cards = []`
-- `SEAM_3`: `L957:from test_your_script_v1 import (`
-- `SEAM_4`: `L970:# source_sha_cache_v1 already provides source_sha256.`
-- `SEAM_5`: `L981:public_source_shas = set(`
-- `SEAM_6`: `L984:str(item[&quot;source_sha256&quot;])`
-- `SEAM_7`: `L986:if item[&quot;source_sha256&quot;]`
-- `SEAM_8`: `L994:if item[&quot;source_sha256&quot;]:`
+- `SAMPLE_COUNT`: `2`
