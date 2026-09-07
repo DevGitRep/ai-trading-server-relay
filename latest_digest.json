@@ -1,25 +1,22 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-07T08:30:53.263807+00:00",
-  "run_id": "20260907T083051Z",
-  "step": "TRACEV2WRITERPAYLOADOBJECT",
+  "published_at_utc": "2026-09-07T08:32:21.990958+00:00",
+  "run_id": "20260907T083219Z",
+  "step": "READEXACTV2WRITERPAYLOADKEYS",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "WRITERPAYLOADCONSTRUCTIONSEAMPRINTED",
-  "next_gate": "MAPCARDMETRICSFROMEXACTPAYLOADFIELDS",
+  "verdict": "READPAYLOADKEYSFAILED",
+  "next_gate": "REVIEWREADONLYFAILURE",
   "facts": {
     "BENCHTEST_RERUN": "NO",
     "CHANGES_MADE": "NO",
     "DB_WRITE": "NO",
-    "INSERT_CALLS": "1",
-    "INSERT_FN": "YES",
+    "ERROR_STAGE": "PARSE",
+    "ERROR_TYPE": "RuntimeError",
+    "INSERT_PARAMS": "con,values",
     "MASTER_READ": "YES",
-    "PAYLOAD_DEFS": "0",
-    "PAYLOAD_NAMES": "result",
     "QUICK": "ok",
     "RESTART": "NO",
-    "TOTAL": "16",
-    "TRACE_ASSIGNS": "5",
-    "WRITER_FIELDS": "0"
+    "TOTAL": "16"
   }
 }
