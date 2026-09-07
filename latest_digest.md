@@ -1,39 +1,43 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-07T12:22:09.940189+00:00`
-- Run ID: `20260907T122207Z`
-- Step: `READMETRICSHAPE`
+- Published UTC: `2026-09-07T12:25:39.917323+00:00`
+- Run ID: `20260907T122537Z`
+- Step: `PATCHDIRECTCANONICALMAP`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `DIRECTCANONICALMETRICMAPSEAMPROVEN`
-- Next gate: `PATCHDIRECTCANONICALMETRICMAP`
+- Verdict: `DIRECTCANONICALLIBRARYMETRICMAPFAILED`
+- Next gate: `REVIEWPATCHFAILURE`
 
 ## Facts
 
+- `BACKUP`: `YES`
 - `BENCHTEST_RERUN`: `NO`
-- `BESTKEYN`: `0`
-- `BESTKEYS`: `NONE`
-- `BULKCONVERT`: `1`
-- `CANMAPN`: `6`
-- `CANREADY`: `YES`
-- `CHANGES_MADE`: `NO`
+- `BESTVARS`: `metrics`
 - `COMPLETE`: `16`
+- `CONNVAR`: `conn`
 - `DB_WRITE`: `NO`
+- `ERROR_STAGE`: `SERVICE`
+- `ERROR_TYPE`: `RuntimeError`
 - `JOIN_BY_ID`: `YES`
 - `JS_CHANGE`: `NO`
-- `LOADSEAMN`: `7`
+- `MAPROWS`: `16`
 - `MASTER_READ`: `YES`
-- `MISSING`: `NONE`
-- `MISSINGN`: `0`
 - `NAME_MAPPING_USED`: `NO`
-- `OUTKEYS`: `absolute_profitability_status,candidate_id,max_drawdown_pct,net_return_pct,profit_factor,realistic_score,result_contract`
+- `NEWCALL`: `1`
+- `OLDCALL`: `0`
 - `PREFLIGHT_RERUN`: `NO`
+- `QUERYROWS`: `16`
 - `QUICK`: `ok`
 - `RESTART`: `NO`
-- `ROWINPUTN`: `13`
-- `ROWOUTPUTN`: `16`
+- `ROLLBACK`: `YES`
 - `SCORED`: `16`
 - `SCORE_PRODUCER_CHANGE`: `NO`
+- `SIXCOMPLETE`: `16`
 - `SOURCE_CHANGE`: `NO`
+- `SYNTAX`: `PASS`
+- `UNMAPPED`: `NONE`
+- `UNMAPPEDN`: `0`
+- `USEDKEYN`: `0`
+- `USEDKEYS`: `NONE`
 - `VIEWROWS`: `11775`
