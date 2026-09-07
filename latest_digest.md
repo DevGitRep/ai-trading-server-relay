@@ -1,19 +1,22 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-07T01:27:19.911796+00:00`
-- Run ID: `20260907T012717Z`
-- Step: `LIBRARY_FETCH_A_FINAL_SEAM_READ`
+- Published UTC: `2026-09-07T01:29:10.538802+00:00`
+- Run ID: `20260907T012908Z`
+- Step: `LIBRARY_PAGE_BACKEND_SCORE_SEAM_READ`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `FETCH_A_ENDPOINT_AND_PAYLOAD_CONSUMER_PROVEN`
-- Next gate: `MINIMAL_REALISTIC_SCORE_PATCH`
+- Verdict: `EXACT_LIBRARY_PAGE_BACKEND_SEAM_CAPTURED`
+- Next gate: `MINIMAL_REALISTIC_SCORE_BACKEND_PATCH`
 
 ## Facts
 
 - `BENCHTEST_RERUN`: `NO`
 - `CHANGES_MADE`: `NO`
+- `HAS_BENCHTEST_RESULTS`: `NO`
+- `HAS_ORDER_BY`: `NO`
+- `HAS_REALISTIC_SCORE`: `NO`
 - `MASTER_READ`: `YES`
-- `PAYLOAD_CONSUMER`: `} applyPage( payload ); }catch(error){`
+- `OWNER_COUNT`: `0`
 - `RESTART`: `NO`
-- `URL_SEAM`: `); const url=new URL( &quot;/indicator-lab/api/library-page&quot;, location.origin );`
+- `ROUTE_HITS`: `0`
