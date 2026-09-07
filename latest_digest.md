@@ -1,89 +1,29 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-07T17:45:32.292915+00:00`
-- Run ID: `20260907T174530Z`
-- Step: `READACTIVELEGACYSEAMS`
+- Published UTC: `2026-09-07T17:58:06.801767+00:00`
+- Run ID: `20260907T175804Z`
+- Step: `FINALIZEBENCHV2`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `ACTIVELEGACYSEAMSEMANTICSMAPPED`
-- Next gate: `PATCHLEGACYSEAMSONEBYONE`
+- Verdict: `FINALBENCHV2CUTOVERFAILED`
+- Next gate: `REVIEWFINALCUTOVERFAILURE`
 
 ## Facts
 
-- `BACKRETURNN`: `3`
 - `BENCHTEST_RERUN`: `NO`
 - `CANONICALN`: `16`
-- `CHANGES_MADE`: `NO`
 - `DB_WRITE`: `NO`
-- `INDCOLN`: `8`
-- `LEGACYCOLN`: `73`
+- `ERROR_STAGE`: `PATCHMEMORY`
+- `ERROR_TYPE`: `RuntimeError`
 - `LEGACYROWS`: `16`
-- `LEGRUNOVERLAP`: `10`
-- `LEGVIEWOVERLAP`: `10`
 - `LIBRARY_CHANGE`: `NO`
+- `LOCKBEFORE`: `YES`
 - `MASTER_READ`: `YES`
 - `PREFLIGHT_RERUN`: `NO`
 - `QUICK`: `ok`
 - `RESTART`: `NO`
-- `RUNCOLN`: `33`
-- `S1CALLER`: `evaluate`
-- `S1CALLERN`: `1`
-- `S1CALLN`: `1`
-- `S1CANONN`: `0`
-- `S1DBCALLN`: `7`
-- `S1KINDS`: `DELETE,SELECT`
-- `S1LEGDBN`: `2`
-- `S1LEGREFN`: `2`
-- `S1LEGSTMTN`: `2`
-- `S1LOADN`: `1`
-- `S1NAME`: `_v2_finish_from_signals`
-- `S2CALLER`: `execute,main`
-- `S2CALLERN`: `2`
-- `S2CALLN`: `2`
-- `S2CANONN`: `0`
-- `S2DBCALLN`: `1`
-- `S2KINDS`: `CREATE`
-- `S2LEGDBN`: `1`
-- `S2LEGREFN`: `3`
-- `S2LEGSTMTN`: `1`
-- `S2LOADN`: `2`
-- `S2NAME`: `ensure_schema`
-- `S3CALLER`: `evaluate,save_nonpass`
-- `S3CALLERN`: `2`
-- `S3CALLN`: `2`
-- `S3CANONN`: `0`
-- `S3DBCALLN`: `1`
-- `S3KINDS`: `INSERT`
-- `S3LEGDBN`: `0`
-- `S3LEGREFN`: `1`
-- `S3LEGSTMTN`: `1`
-- `S3LOADN`: `2`
-- `S3NAME`: `insert_result`
-- `S4CALLER`: `main`
-- `S4CALLERN`: `1`
-- `S4CALLN`: `2`
-- `S4CANONN`: `0`
-- `S4DBCALLN`: `1`
-- `S4KINDS`: `SELECT`
-- `S4LEGDBN`: `0`
-- `S4LEGREFN`: `1`
-- `S4LEGSTMTN`: `1`
-- `S4LOADN`: `2`
-- `S4NAME`: `select_candidates`
-- `S5CALLER`: `indicator_library_ui_v2_stats`
-- `S5CALLERN`: `1`
-- `S5CALLN`: `1`
-- `S5CANONN`: `0`
-- `S5DBCALLN`: `2`
-- `S5KINDS`: `OTHER,SELECT`
-- `S5LEGDBN`: `2`
-- `S5LEGREFN`: `4`
-- `S5LEGSTMTN`: `4`
-- `S5LOADN`: `1`
-- `S5NAME`: `_indicator_library_ui_v2_benchtest`
+- `ROLLBACK`: `NO`
 - `SCORE_PRODUCER_CHANGE`: `NO`
-- `SELECTCANDIDATES`: `PRINTED`
 - `SOURCE_CHANGE`: `NO`
-- `TEMP_DB_WRITE`: `NO`
-- `VIEWCOLN`: `35`
+- `TEMP_DB_WRITE`: `YES`
