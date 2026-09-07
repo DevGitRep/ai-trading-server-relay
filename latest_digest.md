@@ -1,49 +1,52 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-07T14:58:25.676895+00:00`
-- Run ID: `20260907T145823Z`
-- Step: `TRACEAPICARDPRODUCER`
+- Published UTC: `2026-09-07T15:00:28.743094+00:00`
+- Run ID: `20260907T150026Z`
+- Step: `READLATEENRICHMENT`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `APICARDPRODUCEREXACTLYTRACED`
-- Next gate: `PATCHFIVEFIELDSATREALISTICPRODUCER`
+- Verdict: `LATEV31AESTILLUSESLEGACYBYNAME`
+- Next gate: `PATCHTOBYPASSLEGACYOVERWRITE`
 
 ## Facts
 
 - `BENCHTEST_RERUN`: `NO`
-- `BLOCK1`: `_bench_rows = _bench_v31ae_con.execute( &quot;&quot;&quot; SELECT b.candidate_id, b.&quot;profit_factor&quot; AS _profit_factor, b.&quot;net_r`
-- `BLOCK1LINE`: `1283`
-- `BLOCK2`: `_bench_v31ae_con.execute( &quot;&quot;&quot; SELECT b.candidate_id, b.&quot;profit_factor&quot; AS _profit_factor, b.&quot;net_return_pct&quot; AS`
-- `BLOCK2LINE`: `1283`
-- `BLOCK3`: `_bench_metrics_by_name.setdefault( _name, [], ).append({ &quot;profit_factor&quot;: _row[&quot;_profit_factor&quot;], &quot;net_return_pc`
-- `BLOCK3LINE`: `1321`
-- `BLOCK4`: `_card[&quot;realistic_score&quot;] = None`
-- `BLOCK4LINE`: `1344`
-- `BLOCK5`: `_card[&quot;realistic_score&quot;] = float( _values[&quot;realistic_score&quot;] )`
-- `BLOCK5LINE`: `1347`
-- `BLOCK6`: `_metrics.update({ &quot;profit_factor&quot;: _values[&quot;profit_factor&quot;], &quot;net_return_pct&quot;: _values[&quot;net_return_pct&quot;], &quot;max_d`
-- `BLOCK6LINE`: `1358`
-- `BLOCK7`: `_card[&quot;metrics&quot;] = _metrics`
-- `BLOCK7LINE`: `1366`
-- `BLOCKN`: `7`
-- `CARDSEXPR`: `load_library_cards( tier )`
-- `CARDSLINE`: `1769`
-- `CARDSVAR`: `cards`
+- `CARDMETRICS`: `YES`
 - `CHANGES_MADE`: `NO`
 - `COMPLETE`: `16`
+- `CTXEND`: `1371`
+- `CTXSTART`: `1325`
 - `DB_WRITE`: `NO`
 - `JOIN_BY_ID`: `YES`
 - `JS_CHANGE`: `NO`
+- `LEGACYBYNAME`: `YES`
 - `MASTER_READ`: `YES`
 - `NAME_MAPPING_USED`: `NO`
-- `PAGECALL`: `_indicator_lab_library_page_v26( cards, tier, q=request.args.get( &quot;q&quot;, &quot;&quot;, ), sort_key=request.args.get( &quot;sort&quot;,`
-- `PAGECALLLINE`: `1793`
 - `PREFLIGHT_RERUN`: `NO`
-- `PRODUCER`: `load_library_cards`
 - `QUICK`: `ok`
-- `REALWRITELINES`: `1344,1347`
-- `REALWRITEN`: `2`
 - `RESTART`: `NO`
 - `SCORED`: `16`
+- `SEM1`: `Assign:_bench_metrics_unique = { _name: _values[0] for _name, _values in _bench_metrics_by_name.items() if len(_`
+- `SEM10`: `Assign:_values = _bench_metrics_unique.get(_name)`
+- `SEM10LINE`: `1343`
+- `SEM1LINE`: `1333`
+- `SEM2`: `Call:_bench_metrics_by_name.items()`
+- `SEM2LINE`: `1336`
+- `SEM3`: `Call:len(_values)`
+- `SEM3LINE`: `1337`
+- `SEM4`: `Call:_card_name_counts.get(_name, 0)`
+- `SEM4LINE`: `1338`
+- `SEM5`: `For:for _card in cards: _name = str(_card.get(&quot;name&quot;) or &quot;&quot;).strip() _values = _bench_metrics_unique.get(_name)`
+- `SEM5LINE`: `1341`
+- `SEM6`: `Assign:_name = str(_card.get(&quot;name&quot;) or &quot;&quot;).strip()`
+- `SEM6LINE`: `1342`
+- `SEM7`: `Call:_card.get(&quot;name&quot;)`
+- `SEM7LINE`: `1342`
+- `SEM8`: `Call:str(_card.get(&quot;name&quot;) or &quot;&quot;)`
+- `SEM8LINE`: `1342`
+- `SEM9`: `Call:str(_card.get(&quot;name&quot;) or &quot;&quot;).strip()`
+- `SEM9LINE`: `1342`
+- `SEMN`: `22`
 - `SOURCE_CHANGE`: `NO`
+- `VALUES`: `YES`
