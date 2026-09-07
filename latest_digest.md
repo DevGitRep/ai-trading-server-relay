@@ -1,24 +1,24 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-07T03:55:25.094036+00:00`
-- Run ID: `20260907T035523Z`
-- Step: `PROVE_LIBRARY_PAGE_TIER_SEAM_FOR_16_CARD_VERIFY`
+- Published UTC: `2026-09-07T03:56:16.214085+00:00`
+- Run ID: `20260907T035614Z`
+- Step: `READ_EXACT_EXISTING_UI_LIBRARY_PAGE_REQUEST_AND_API_TIER_SEAM`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `VERIFY_FAILURE_NOT_PROVEN_TO_BE_VIEW_AS_TIER`
-- Next gate: `USE_PRINTED_EXACT_API_AND_JS_REQUEST_TO_FIX_ONLY_VERIFY_SEAM`
+- Verdict: `EXACT_UI_REQUEST_AND_API_TIER_SEAM_PRINTED`
+- Next gate: `REAPPLY_PROVEN_16_CARD_MAPPING_WITH_EXACT_UI_REQUEST_VERIFY`
 
 ## Facts
 
-- `API_TIER_USAGE`: `YES`
-- `API_VIEW_AS`: `NO`
 - `BENCHTEST_RERUN`: `NO`
 - `CHANGES_MADE`: `NO`
 - `DB_TOTAL`: `23`
 - `DB_WRITE`: `NO`
-- `JS_VIEW_AS`: `YES`
+- `JS_HAS_VIEW_AS`: `YES`
+- `JS_QUERY_PARAMS`: `email,library_review_allowed,name,page,page_size,pine_source,q,rights_confirmed,sort,sort_dir,sort_key,source,source_author,source_sha256,source_url,submission_id,test_your_script,view_as`
 - `MASTER_READ`: `YES`
 - `QUICK`: `ok`
 - `RESTART`: `NO`
-- `TIER_LITERALS`: `FREE,INTERNAL_ADMIN,PRO`
+- `TIER_EXPR`: `tier`
+- `TIER_EXPR_COUNT`: `1`
