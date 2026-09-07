@@ -1,28 +1,52 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-07T17:12:56.692957+00:00`
-- Run ID: `20260907T171254Z`
-- Step: `SALVAGEWRITERPATCH`
+- Published UTC: `2026-09-07T17:16:01.355409+00:00`
+- Run ID: `20260907T171559Z`
+- Step: `READCURRENTWRITERSTATE`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `WRITERSALVAGEVERIFYFAILED`
-- Next gate: `REVIEWCURRENTSOURCESTATE`
+- Verdict: `CURRENTWRITERSTILLHASORPHANAVAILABLE`
+- Next gate: `PATCHONLYORPHANASSIGNMENT`
 
 ## Facts
 
+- `ARGS`: `con,values`
+- `AVAILREADN`: `1`
+- `AVAILSTOREN`: `0`
 - `BENCHTEST_RERUN`: `NO`
 - `CANONICALN`: `16`
+- `CHANGES_MADE`: `NO`
 - `DB_WRITE`: `NO`
-- `ERROR_STAGE`: `SOURCE`
-- `ERROR_TYPE`: `RuntimeError`
+- `DEFN`: `1`
+- `END`: `4108`
+- `LEGACYN`: `0`
 - `LEGACYROWS`: `16`
 - `LIBRARY_CHANGE`: `NO`
+- `LINE`: `4095`
 - `LOCK`: `YES`
 - `MASTER_READ`: `YES`
+- `MINBACKUPN`: `1`
+- `MINRUNTIME`: `2`
+- `MINSTATE`: `ORPHANAVAILABLE`
+- `ONLYBACKUPN`: `1`
+- `ONLYRUNTIME`: `4`
+- `ONLYSTATE`: `OTHER`
+- `PIPECALLN`: `1`
 - `PREFLIGHT_RERUN`: `NO`
 - `QUICK`: `ok`
 - `RESTART`: `NO`
+- `RUNTIME`: `2`
 - `SCORE_PRODUCER_CHANGE`: `NO`
 - `SOURCE_CHANGE`: `NO`
+- `SQLN`: `0`
+- `STATE`: `ORPHANAVAILABLE`
+- `STMT0END`: `4104`
+- `STMT0LINE`: `4100`
+- `STMT0TEXT`: `columns:[ key for key in values if key in available ]`
+- `STMT0TYPE`: `Assign`
+- `STMT1END`: `4108`
+- `STMT1LINE`: `4108`
+- `STMT1TEXT`: `_v2_pipeline_insert_result_v1(con, values)`
+- `STMT1TYPE`: `Expr`
 - `TEMP_DB_WRITE`: `NO`
