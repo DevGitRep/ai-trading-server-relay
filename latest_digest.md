@@ -1,36 +1,51 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T15:33:52.836098+00:00`
-- Run ID: `20260908T153350Z`
-- Step: `PATCHFREECHARTFRONTEND`
+- Published UTC: `2026-09-08T15:37:00.060941+00:00`
+- Run ID: `20260908T153658Z`
+- Step: `READCHARTSTART`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `FREECHARTFRONTENDLIVE`
-- Next gate: `REVIEWFREEVISUAL`
+- Verdict: `CHARTSTARTREAD`
+- Next gate: `PATCHFREECHARTSTART`
 
 ## Facts
 
-- `BACKUP`: `PASS`
 - `BENCHTEST_RERUN`: `NO`
 - `DB_WRITE`: `NO`
-- `FREECANDLES`: `2190`
-- `FREEMARKERS`: `0`
-- `JSHTTP`: `200`
-- `LEGACY`: `ABSENT`
-- `MASTER`: `UPDATED`
-- `MASTER_CHANGE`: `YES`
+- `JS1`: `LOAD 1090:`/indicator-lab/strategy/${encodeURIComponent( | 1091:decodeURIComponent(id) | 1092:)}/bench-chart-dat`
+- `JS10`: `LOAD 1126:/* PAGER_WRAP_AWARE_AND_BUY_SELL_MARKERS_V29O */ | 1128:/* | 1129:* Convert persisted trade events int`
+- `JS11`: `LOAD 1130:* actions rather than styling ENTRY as if it always | 1131:* meant BUY: | 1132:* | 1133:* LONG ENTRY =`
+- `JS12`: `LOAD 1134:* LONG EXIT = SELL | 1135:* SHORT ENTRY = SELL | 1136:* SHORT EXIT = BUY | 1137:*/`
+- `JS13`: `LOAD 1138:const markerAction=marker=&gt;{ | 1139:const kind=String( | 1140:marker[2]||&quot;&quot; | 1141:).toUpperCase();`
+- `JS14`: `LOAD 1143:const direction=String( | 1144:marker[3]||&quot;&quot; | 1145:).toUpperCase();`
+- `JS15`: `LOAD 1147:const shortTrade= | 1148:direction.includes( | 1149:&quot;SHORT&quot;`
+- `JS16`: `LOAD 1150:); | 1152:if(shortTrade){ | 1153:return kind===&quot;ENTRY&quot;`
+- `JS17`: `LOAD 1154:?&quot;SELL&quot; | 1155::&quot;BUY&quot;; | 1156:}`
+- `JS18`: `LOAD 1158:return kind===&quot;ENTRY&quot; | 1159:?&quot;BUY&quot; | 1160::&quot;SELL&quot;; | 1161:};`
+- `JS19`: `LOAD 1163:const buyMarkerCount= | 1164:markers.reduce( | 1165:(count,marker)=&gt;`
+- `JS2`: `LOAD 1094:)}`; | 1096:try{ | 1097:const response=await fetch(`
+- `JS20`: `LOAD 1166:count | 1167:+( | 1168:markerAction(marker)===&quot;BUY&quot; | 1169:?1`
+- `JS21`: `LOAD 1170::0 | 1171:), | 1172:0 | 1173:);`
+- `JS22`: `LOAD 1175:const sellMarkerCount= | 1176:markers.reduce( | 1177:(count,marker)=&gt;`
+- `JS23`: `LOAD 1178:count | 1179:+( | 1180:markerAction(marker)===&quot;SELL&quot; | 1181:?1`
+- `JS24`: `LOAD 1182::0 | 1183:), | 1184:0 | 1185:);`
+- `JS25`: `LOAD 1187:if( | 1188:payload.mode!==&quot;candles&quot; | 1189:||candles.length&lt;2`
+- `JS26`: `LOAD 1190:){ | 1191:stage.innerHTML= | 1192:&#x27;&lt;div class=&quot;irl-bench-chart-empty&quot;&gt;&#x27; | 1193:+&#x27;Price candle data is`
+- `JS27`: `LOAD 1194:+&#x27;&lt;/div&gt;&#x27;; | 1196:host.dataset.chartState=&quot;empty&quot;; | 1197:return;`
+- `JS28`: `LOAD 1198:} | 1200:host.dataset.chartState=&quot;ready&quot;;`
+- `JS29`: `LOAD 1202:meta.textContent=[ | 1203:payload.pair||&quot;&quot;, | 1204:payload.source_timeframe | 1205:?`${payload.source_`
+- `JS3`: `LOAD 1098:endpoint, | 1099:{ | 1100:headers:{ | 1101:&quot;Accept&quot;:&quot;application/json&quot;`
+- `JS30`: `LOAD 1206::&quot;&quot;, | 1207:payload.display_timeframe | 1208:?`${payload.display_timeframe} display candles` | 1209::&quot;`
+- `JS4`: `LOAD 1102:} | 1103:} | 1104:);`
+- `JS5`: `LOAD 1106:if(!response.ok){ | 1107:throw new Error( | 1108:`chart ${response.status}` | 1109:);`
+- `JS6`: `LOAD 1110:} | 1112:const payload=await response.json();`
+- `JS7`: `LOAD 1114:const candles=Array.isArray( | 1115:payload.candles | 1116:) | 1117:?payload.candles`
+- `JS8`: `LOAD 1118::[]; | 1120:const markers=Array.isArray( | 1121:payload.markers`
+- `JS9`: `LOAD 1122:) | 1123:?payload.markers | 1124::[];`
+- `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
-- `PATCH`: `PASS`
-- `PRECANDLES`: `2190`
 - `PREFLIGHT_RERUN`: `NO`
-- `PREMARKERS`: `0`
-- `PREWRITE`: `PASS`
-- `PROMARKERS`: `16`
-- `PROMARKERS2`: `16`
-- `QUICK`: `ok`
-- `RESTART`: `YES`
-- `ROLLBACK`: `NO`
+- `RESTART`: `NO`
 - `SCORE_PRODUCER_CHANGE`: `NO`
-- `SERVICE`: `active`
-- `SOURCE_CHANGE`: `YES`
+- `SOURCE_CHANGE`: `NO`
