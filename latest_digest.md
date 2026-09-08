@@ -1,35 +1,34 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T13:51:59.571509+00:00`
-- Run ID: `20260908T135157Z`
-- Step: `PATCHFREEGATING2`
+- Published UTC: `2026-09-08T13:59:01.545297+00:00`
+- Run ID: `20260908T135859Z`
+- Step: `READREPORTBUTTONLINK`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `FREEREPORTGATINGLIVE`
-- Next gate: `REVIEWFREEVISUAL`
+- Verdict: `REPORTBUTTONLINKREAD`
+- Next gate: `FIXREPORTBUTTONLINK`
 
 ## Facts
 
-- `BACKUP`: `PASS`
 - `BENCHTEST_RERUN`: `NO`
 - `DB_WRITE`: `NO`
-- `FREEBARS`: `100 100`
-- `FREEHTTP`: `200`
-- `FREELOCKS`: `11`
-- `FREEMARKERS`: `0`
-- `LEGACY`: `ABSENT`
-- `MASTER_CHANGE`: `YES`
+- `HIT1`: `indicator_library_ui_v2.js:6:const explicit=( | params.get(&quot;view_as&quot;)||&quot;&quot; | ).trim().toUpperCase();`
+- `HIT10`: `indicator_library_ui_v2.js:186:new URL( | clone.href, | location.href`
+- `HIT2`: `indicator_library_ui_v2.js:19:* FREE / PRO / INTERNAL state even when the URL itself | * is /indicator-lab wit`
+- `HIT3`: `indicator_library_ui_v2.js:128:document.querySelectorAll( | &#x27;a[href*=&quot;view_as=&quot;]&#x27; | )`
+- `HIT4`: `indicator_library_ui_v2.js:144:return new URL( | x.href, | location.href`
+- `HIT5`: `indicator_library_ui_v2.js:145:x.href, | location.href | ).searchParams.get(&quot;view_as&quot;)===v;`
+- `HIT6`: `indicator_library_ui_v2.js:146:location.href | ).searchParams.get(&quot;view_as&quot;)===v; | }catch(_){`
+- `HIT7`: `indicator_library_ui_v2.js:177:new URL( | clone.href, | location.href`
+- `HIT8`: `indicator_library_ui_v2.js:178:clone.href, | location.href | ).searchParams.get(&quot;view_as&quot;)`
+- `HIT9`: `indicator_library_ui_v2.js:179:location.href | ).searchParams.get(&quot;view_as&quot;) | ===tier`
+- `LOCKREFS`: `32`
+- `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
-- `PATCH`: `PASS`
 - `PREFLIGHT_RERUN`: `NO`
-- `PREWRITE`: `PASS`
-- `PROHTTP`: `200`
-- `PROLOCKS`: `0`
-- `PROMARKERS`: `2`
-- `QUICK`: `ok`
-- `RESTART`: `YES`
-- `ROLLBACK`: `NO`
+- `REPORTREFS`: `18`
+- `RESTART`: `NO`
 - `SCORE_PRODUCER_CHANGE`: `NO`
-- `SERVICE`: `active`
-- `SOURCE_CHANGE`: `YES`
+- `SOURCE_CHANGE`: `NO`
+- `SUBREFS`: `14`
