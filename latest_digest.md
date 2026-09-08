@@ -1,34 +1,35 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T09:51:01.339318+00:00`
-- Run ID: `20260908T095059Z`
-- Step: `DIAGCHARTHTTP`
+- Published UTC: `2026-09-08T09:52:30.691548+00:00`
+- Run ID: `20260908T095228Z`
+- Step: `READSTDLIBCHARTINPUT`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `CHARTHTTPDIAGREAD`
-- Next gate: `FIXCHARTROUTE`
+- Verdict: `STDLIBCHARTINPUTREAD`
+- Next gate: `PATCHCHARTSTDLIB`
 
 ## Facts
 
 - `BENCHTEST_RERUN`: `NO`
-- `CANDLES`: `0`
-- `CHARTHTTP`: `555`
-- `DATES`: `0`
+- `CANDLEFIRST`: `None`
+- `CANDLEKEYS`: ``
+- `CANDLELAST`: `None`
+- `CANDLES`: `2190`
 - `DB_WRITE`: `NO`
-- `IDENTITY`: `NO`
-- `JSON`: `NO`
-- `LIBRARY`: `NO`
+- `ENTRYTIME`: `0`
+- `EXITTIME`: `0`
+- `FIRSTENTRY`: `None`
+- `FIRSTEXIT`: `None`
+- `LIBERROR`: `NONE`
+- `LIBIMPORT`: `YES`
+- `LIBMAP`: `ICL_LIB_45F65B21D5674C2C`
 - `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
-- `PANDAS`: `NO`
 - `PREFLIGHT_RERUN`: `NO`
-- `PRIMARY`: `0`
-- `PROBERC`: `0`
-- `PROBE_ERROR`: `PANDAS:ModuleNotFoundError`
-- `PYARROW`: `NO`
+- `PRIMARY`: `8`
 - `QUICK`: `ok`
 - `RESTART`: `NO`
 - `SCORE_PRODUCER_CHANGE`: `NO`
-- `SERVICEPY`: `YES`
 - `SOURCE_CHANGE`: `NO`
+- `TIMEKEYS`: `NONE`
