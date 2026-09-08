@@ -1,13 +1,13 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T21:11:54.681750+00:00`
-- Run ID: `20260908T211152Z`
-- Step: `RESOLVESTAGE3LEGACY`
+- Published UTC: `2026-09-08T21:13:36.434493+00:00`
+- Run ID: `20260908T211334Z`
+- Step: `READSELECTIONMETHOD`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `STAGE3LEGACYREAD`
-- Next gate: `REVIEWSTAGE3LEGACY`
+- Verdict: `SELECTIONMETHODREAD`
+- Next gate: `RESOLVESELECTIONRULE`
 
 ## Facts
 
@@ -17,50 +17,8 @@
 - `BRAIN_IQ_CHANGE`: `NO`
 - `CACHE_CHANGE`: `NO`
 - `DB_WRITE`: `NO`
-- `FACTS`: `26`
+- `FACTS`: `48`
 - `INSTALL`: `NO`
-- `LEGACY1`: `MASTERALIGN=YES`
-- `LEGACY10`: `S2BFILE=latest_incumbent_alignment.json rows=14 parent=incumbent_alignment_v1`
-- `LEGACY11`: `S2BFILE=latest_native_pilot.json rows=3 parent=full_year_incremental_discovery_v1`
-- `LEGACY12`: `S2BKEYS=artifact_top_level_keys,candidate_id,dataset_actual_candles,dataset_expected_candles,market_data_contrac`
-- `LEGACY13`: `S2BFILE=incumbent_alignment_20260901T064337Z.json rows=101 parent=runs`
-- `LEGACY14`: `S2BFILE=native_pilot_20260901T072142Z.json rows=3 parent=runs`
-- `LEGACY15`: `SELGENERATORS=2`
-- `LEGACY16`: `SELGEN=stage3_cache_representatives_v1.py match=1/4 parent=full_year_incremental_discovery_v1`
-- `LEGACY17`: `SELARGS=benchtest,cache,db,market-sha,report,selection`
-- `LEGACY18`: `SELGEN=stage3_cached_normalizer_v1.py match=1/4 parent=full_year_incremental_discovery_v1`
-- `LEGACY19`: `SELARGS=addendum-output,benchtest,cache,db,expected-market-sha,expected-policy-sha,expected-selection-sha,expect`
-- `LEGACY2`: `WORKERDEFS=1`
-- `LEGACY20`: `SELREFS=3`
-- `LEGACY21`: `SELREF=latest_native_pilot.json parent=full_year_incremental_discovery_v1`
-- `LEGACY22`: `SELREF=indicator_stage3_full_year_normalization_policy_v1.json parent=full_year_incremental_discovery_v1`
-- `LEGACY23`: `SELREF=native_pilot_20260901T072142Z.json parent=runs`
-- `LEGACY24`: `WORKERRESOLVED=YES`
-- `LEGACY25`: `SELGENRESOLVED=NO`
-- `LEGACY26`: `LEGACYWIRING=NO`
-- `LEGACY27`: `NONE`
-- `LEGACY28`: `NONE`
-- `LEGACY29`: `NONE`
-- `LEGACY3`: `WORKERREFS=4`
-- `LEGACY30`: `NONE`
-- `LEGACY31`: `NONE`
-- `LEGACY32`: `NONE`
-- `LEGACY33`: `NONE`
-- `LEGACY34`: `NONE`
-- `LEGACY35`: `NONE`
-- `LEGACY36`: `NONE`
-- `LEGACY37`: `NONE`
-- `LEGACY38`: `NONE`
-- `LEGACY39`: `NONE`
-- `LEGACY4`: `WORKERFILE=indicator_incumbent_alignment_v1.py parent=incumbent_alignment_v1`
-- `LEGACY40`: `NONE`
-- `LEGACY41`: `NONE`
-- `LEGACY42`: `NONE`
-- `LEGACY5`: `WORKERARGS=plots,close`
-- `LEGACY6`: `WORKERCTX=816:def candidate_plot_representations( | 817:plots, | 820:representations = [] | 841:for idx, plot in`
-- `LEGACY7`: `S2BARTIFACTS=5`
-- `LEGACY8`: `S2BFILE=latest_incumbent_alignment.historical_before_canonical_20260908T210310Z.json rows=101 parent=incumbent_a`
-- `LEGACY9`: `S2BKEYS=candidate_id,maximum_incumbent_linear_overlap,minimum_incumbent_linear_overlap,native_plot_count,realist`
 - `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
 - `NATIVE_CHANGE`: `NO`
@@ -69,6 +27,54 @@
 - `QUEUE_CHANGE`: `NO`
 - `RESTART`: `NO`
 - `SCORE_PRODUCER_CHANGE`: `NO`
+- `SELMETHOD1`: `MASTERALIGN=YES`
+- `SELMETHOD10`: `SELSCALAR representative_count=17`
+- `SELMETHOD11`: `SELLIST representatives=17`
+- `SELMETHOD12`: `SELSCALAR scientific_role=FULL_YEAR_DISCOVERY_MATERIALIZATION_ONLY`
+- `SELMETHOD13`: `SELSCALAR selection_policy=all cluster-free shortlist candidates plus minimal greedy shortlist set covering ever`
+- `SELMETHOD14`: `SELSCALAR shortlist_count=40`
+- `SELMETHOD15`: `SELSCALAR source_stage2b=PATH`
+- `SELMETHOD16`: `SELSCALAR source_stage2b_sha256=7e53381b443fb5edc3f2b666c318941854ac9833de7e53e435d79b56fdc10faa`
+- `SELMETHOD17`: `SELSCALAR stage3_contract=PATH`
+- `SELMETHOD18`: `SELSCALAR stage3_contract_sha256=8024908a8d6dbd7be5411a82f5d39257a451011eeaf82eb0853e9fee9830b1a1`
+- `SELMETHOD19`: `REPRESENTATIVES=17`
+- `SELMETHOD2`: `SELTOP=cluster_free_selected_count,contract,coverable_redundancy_cluster_ids,covered_redundancy_cluster_ids,pilo`
+- `SELMETHOD20`: `REPKEYS=candidate_id,cluster_ids,maximum_incumbent_linear_overlap,minimum_incumbent_linear_overlap,realistic_sco`
+- `SELMETHOD21`: `REP candidate_id=ICL_LIB_DEC7F969A4B5969C;maximum_incumbent_linear_overlap=0.1674544414722499;minimum_incumbent_`
+- `SELMETHOD22`: `REP candidate_id=ICL_LIB_03F8ADC1C1F04A49;maximum_incumbent_linear_overlap=0.5175505555295448;minimum_incumbent_`
+- `SELMETHOD23`: `REP candidate_id=ICL_LIB_ADE006748BF49980;maximum_incumbent_linear_overlap=0.0818463658450068;minimum_incumbent_`
+- `SELMETHOD24`: `REP candidate_id=ICL_LIB_4743852E2337D14B;maximum_incumbent_linear_overlap=0.07106447999433467;minimum_incumbent`
+- `SELMETHOD25`: `OLDALIGNMENTS=1`
+- `SELMETHOD26`: `REPOLDMATCH=17`
+- `SELMETHOD27`: `REPMAP ICL_LIB_03F8ADC1C1F04A49 copied=candidate_id,maximum_incumbent_linear_overlap,minimum_incumbent_linear_ov`
+- `SELMETHOD28`: `REPMAP ICL_LIB_15C5A6CB7C36A539 copied=candidate_id,maximum_incumbent_linear_overlap,minimum_incumbent_linear_ov`
+- `SELMETHOD29`: `REPMAP ICL_LIB_38F8480283DEC284 copied=candidate_id,maximum_incumbent_linear_overlap,minimum_incumbent_linear_ov`
+- `SELMETHOD3`: `SELSCALAR cluster_free_selected_count=10`
+- `SELMETHOD30`: `REPMAP ICL_LIB_40643D7CCA614A61 copied=candidate_id,maximum_incumbent_linear_overlap,minimum_incumbent_linear_ov`
+- `SELMETHOD31`: `REPMAP ICL_LIB_4743852E2337D14B copied=candidate_id,maximum_incumbent_linear_overlap,minimum_incumbent_linear_ov`
+- `SELMETHOD32`: `CONTRACTRULES=6`
+- `SELMETHOD33`: `RULE native_materialization.pilot_only=True`
+- `SELMETHOD34`: `RULE representative_selection.cluster_representative_policy=greedy set cover; maximize uncovered cluster coverag`
+- `SELMETHOD35`: `RULE representative_selection.cover_every_redundancy_cluster=True`
+- `SELMETHOD36`: `RULE representative_selection.include_all_cluster_free_shortlist=True`
+- `SELMETHOD37`: `RULE representative_selection.realistic_score_is_brain_value=False`
+- `SELMETHOD38`: `RULE representative_selection.source=STAGE2B_DIVERSITY_AND_REDUNDANCY_SCREEN`
+- `SELMETHOD39`: `SELREFS=5`
+- `SELMETHOD4`: `SELSCALAR contract=INDICATOR_RESEARCH_INTELLIGENCE_STAGE3_DIVERSITY_REPRESENTATIVES_V1`
+- `SELMETHOD40`: `REF all17_normalized_series_identities_v1.json parent=full_year_incremental_discovery_v1 name=N sha=Y`
+- `SELMETHOD41`: `REF latest_native_pilot.json parent=full_year_incremental_discovery_v1 name=Y sha=N`
+- `SELMETHOD42`: `REF indicator_stage3_full_year_normalization_policy_v1.json parent=full_year_incremental_discovery_v1 name=Y sha`
+- `SELMETHOD43`: `REF pilot_normalized_series_identities_v1.json parent=full_year_incremental_discovery_v1 name=N sha=Y`
+- `SELMETHOD44`: `REF native_pilot_20260901T072142Z.json parent=runs name=Y sha=N`
+- `SELMETHOD45`: `CURRALIGNHAS=candidate_id,maximum_incumbent_linear_overlap,minimum_incumbent_linear_overlap,realistic_score,scri`
+- `SELMETHOD46`: `CURRALIGNMISS=cluster_ids,realistic_score_role,representation_types,selection_reason`
+- `SELMETHOD47`: `STAGE2BRESOLVED=YES`
+- `SELMETHOD48`: `SELRESOLVABLE=NO`
+- `SELMETHOD5`: `SELLIST coverable_redundancy_cluster_ids=9`
+- `SELMETHOD6`: `SELLIST covered_redundancy_cluster_ids=9`
+- `SELMETHOD7`: `SELLIST pilot_candidate_ids=3`
+- `SELMETHOD8`: `SELDICT pilot_reasons=ICL_LIB_38F8480283DEC284,ICL_LIB_ADB9FD6DFD0470D5,ICL_LIB_DEC7F969A4B5969C`
+- `SELMETHOD9`: `SELSCALAR redundancy_cluster_count=10`
 - `SOURCE_CHANGE`: `NO`
 - `STAGE2B_RERUN`: `NO`
 - `STAGE3_RERUN`: `NO`
