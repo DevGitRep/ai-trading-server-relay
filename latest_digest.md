@@ -1,13 +1,13 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T20:33:08.847182+00:00`
-- Run ID: `20260908T203306Z`
-- Step: `TRACEALIGNEXACT`
+- Published UTC: `2026-09-08T20:36:18.511972+00:00`
+- Run ID: `20260908T203616Z`
+- Step: `RESOLVEALIGNPREFLIGHT`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `ALIGNEXACTREAD`
-- Next gate: `RESOLVEALIGNINPUTS`
+- Verdict: `ALIGNPREFLIGHTREAD`
+- Next gate: `REVIEWPREFLIGHTCANDIDATES`
 
 ## Facts
 
@@ -15,55 +15,53 @@
 - `BRAIN_ADMISSION`: `NO`
 - `BRAIN_IQ_CHANGE`: `NO`
 - `DB_WRITE`: `NO`
-- `EXACT1`: `MASTERNATIVE=YES`
-- `EXACT10`: `DBCHECK indicator_brain.db match=1/1`
-- `EXACT11`: `DBCHECK indicator_v1_first_seen_overlay.db match=0/1`
-- `EXACT12`: `INDDBMATCHES=1`
-- `EXACT13`: `INDDBWINNER=indicator_brain.db`
-- `EXACT14`: `COREFS=0`
-- `EXACT15`: `PREFRESOLVED=NO`
-- `EXACT16`: `INDDBRESOLVED=YES`
-- `EXACT17`: `ALLRESOLVED=NO`
-- `EXACT18`: `NONE`
-- `EXACT19`: `NONE`
-- `EXACT2`: `PREFTEXTMATCH=0`
-- `EXACT20`: `NONE`
-- `EXACT21`: `NONE`
-- `EXACT22`: `NONE`
-- `EXACT23`: `NONE`
-- `EXACT24`: `NONE`
-- `EXACT25`: `NONE`
-- `EXACT26`: `NONE`
-- `EXACT27`: `NONE`
-- `EXACT28`: `NONE`
-- `EXACT29`: `NONE`
-- `EXACT3`: `EXECBLOCK=YES`
-- `EXACT30`: `NONE`
-- `EXACT31`: `NONE`
-- `EXACT32`: `NONE`
-- `EXACT33`: `NONE`
-- `EXACT34`: `NONE`
-- `EXACT35`: `NONE`
-- `EXACT36`: `NONE`
-- `EXACT37`: `NONE`
-- `EXACT38`: `NONE`
-- `EXACT39`: `NONE`
-- `EXACT4`: `ARGV1=344:def execute_frozen_feature_prefix( | 345:source_path, | 346:model_path, | 347:indicator_db, | 348:inte`
-- `EXACT40`: `NONE`
-- `EXACT41`: `NONE`
-- `EXACT42`: `NONE`
-- `EXACT43`: `NONE`
-- `EXACT44`: `NONE`
-- `EXACT5`: `ARGV2=439:scorer = importlib.util.module_from_spec( | 440:spec | 441:) | 443:loader.exec_module( | 444:scorer |`
-- `EXACT6`: `SOURCECOUNT=1`
-- `EXACT7`: `CONNECTS=1`
-- `EXACT8`: `SQLCTX=3521:conn.execute(&quot;&quot;&quot; | 3522:CREATE TABLE IF NOT EXISTS indicator_ai_brain_runs (`
-- `EXACT9`: `REALTABLES=indicator_ai_brain_runs`
-- `FACTS`: `17`
+- `FACTS`: `20`
 - `INSTALL`: `NO`
 - `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
 - `NATIVE_CHANGE`: `NO`
+- `PREF1`: `MASTERNATIVE=YES`
+- `PREF10`: `VIA=def:load_candles`
+- `PREF11`: `API baseline.before.py match=1/2 parent=stable_signal_role_classification_20260829T222202Z`
+- `PREF12`: `API pine_baseline_batch_200.py match=1/2 parent=20260830T061353Z`
+- `PREF13`: `API pine_baseline_batch_200.py match=1/2 parent=20260830T141911Z`
+- `PREF14`: `API pine_baseline_batch_200.py match=1/2 parent=20260830T045639Z`
+- `PREF15`: `API pine_baseline_batch_200.py match=1/2 parent=20260830T195559Z`
+- `PREF16`: `API pine_baseline_batch_200.py match=1/2 parent=20260830T142718Z`
+- `PREF17`: `API pine_baseline_batch_200.py match=1/2 parent=20260830T055948Z`
+- `PREF18`: `PREFREFS=1`
+- `PREF19`: `REF indicator_incumbent_alignment_v1.py parent=incumbent_alignment_v1 via=_stage2b_preflight,find_dataset()`
+- `PREF2`: `PREFLINE=770`
+- `PREF20`: `PREFRESOLVED=NO`
+- `PREF21`: `NONE`
+- `PREF22`: `NONE`
+- `PREF23`: `NONE`
+- `PREF24`: `NONE`
+- `PREF25`: `NONE`
+- `PREF26`: `NONE`
+- `PREF27`: `NONE`
+- `PREF28`: `NONE`
+- `PREF29`: `NONE`
+- `PREF3`: `MODATTRS=find_dataset,load_candles`
+- `PREF30`: `NONE`
+- `PREF31`: `NONE`
+- `PREF32`: `NONE`
+- `PREF33`: `NONE`
+- `PREF34`: `NONE`
+- `PREF35`: `NONE`
+- `PREF36`: `NONE`
+- `PREF37`: `NONE`
+- `PREF38`: `NONE`
+- `PREF39`: `NONE`
+- `PREF4`: `MODCALLS=find_dataset,load_candles`
+- `PREF40`: `NONE`
+- `PREF41`: `NONE`
+- `PREF42`: `NONE`
+- `PREF5`: `LOAD 777:.SourceFileLoader( | 785:.spec_from_loader( | 793:.module_from_spec( | 798:loader.exec_module( | 802:da`
+- `PREF6`: `LOAD 803:mod.find_dataset() | 806:candles = ( | 807:mod.load_candles() | 811:dataset, | 812:candles,`
+- `PREF7`: `APICANDIDATES=19`
+- `PREF8`: `FULLAPIMATCH=0`
+- `PREF9`: `API baseline.before.py match=1/2 parent=exact_role_wrappers_20260829T223114Z`
 - `PREFLIGHT_RERUN`: `NO`
 - `PROSPECTIVE_ACTIVATION`: `NO`
 - `QUEUE_CHANGE`: `NO`
