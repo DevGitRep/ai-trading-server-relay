@@ -1,45 +1,52 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T16:21:07.342247+00:00`
-- Run ID: `20260908T162105Z`
-- Step: `READBRAINSCORE`
+- Published UTC: `2026-09-08T16:23:42.509285+00:00`
+- Run ID: `20260908T162340Z`
+- Step: `VERIFYBRAINLEDGER`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `BRAINSCORELOGICREAD`
-- Next gate: `ASSESSBRAINSCORE`
+- Verdict: `BRAINLEDGERREAD`
+- Next gate: `ASSESSBRAININPUTQUALITY`
 
 ## Facts
 
 - `BENCHTEST_RERUN`: `NO`
-- `BRAIN1`: `CODE 103:parity_status TEXT NOT NULL DEFAULT &#x27;NOT_STARTED&#x27;, | 105:performance_status TEXT NOT NULL DEFAULT &#x27;NOT_TE`
-- `BRAIN10`: `CODE 2425:for _k, _v in _free_profile_source.items(): | 2426:if ( | 2427:_k.startswith(&#x27;dna_&#x27;) | 2428:or _k.starts`
-- `BRAIN11`: `NONE`
-- `BRAIN12`: `NONE`
-- `BRAIN13`: `NONE`
-- `BRAIN14`: `NONE`
-- `BRAIN15`: `NONE`
-- `BRAIN16`: `NONE`
-- `BRAIN17`: `NONE`
-- `BRAIN18`: `NONE`
-- `BRAIN19`: `NONE`
-- `BRAIN2`: `CODE 128:target_market TEXT NOT NULL, | 129:timeframe TEXT NOT NULL, | 130:cost_model_id TEXT NOT NULL, | 132:gros`
-- `BRAIN20`: `NONE`
-- `BRAIN21`: `NONE`
-- `BRAIN22`: `NONE`
-- `BRAIN23`: `NONE`
-- `BRAIN24`: `NONE`
-- `BRAIN25`: `NONE`
-- `BRAIN26`: `NONE`
-- `BRAIN27`: `NONE`
-- `BRAIN28`: `NONE`
-- `BRAIN3`: `CODE 218:conversion_status, | 219:parity_status, | 220:performance_status, | 221:oos_status, | 222:robustness_stat`
-- `BRAIN4`: `CODE 288:rows = con.execute( | 289:&quot;&quot;&quot; | 290:SELECT | 291:c.*, | 292:( | 293:SELECT net_return_pct | 294:FROM test`
-- `BRAIN5`: `CODE 619:in _norm_title(card) | 620:) | 621:] | 623:metric_fields = { | 624:&#x27;realistic&#x27;: &#x27;realistic_score&#x27;, | 625:`
-- `BRAIN6`: `CODE 647:def _display_metric(card): | 648:if not entitled: | 649:return float(&quot;-inf&quot;) | 650:# BENCH_SCORE_V2_REALI`
-- `BRAIN7`: `CODE 1969:_run = _con.execute( | 1970:f&quot;&quot;&quot; | 1971:SELECT | 1972:primary_benchmark_mode, | 1973:primary_trade_count`
-- `BRAIN8`: `CODE 2064:_trade | 2065:) | 2067:_expected = int( | 2068:_run[ | 2069:&quot;primary_trade_count&quot; | 2070:] | 2071:or 0 |`
-- `BRAIN9`: `CODE 2272:&#x27;INTERNAL_ADMIN&#x27;, | 2273:} | 2274:) | 2275:else [] | 2276:), | 2277:&quot;primary_trade_count&quot;: len( | 2278:_`
+- `BRAINHITS`: `5`
+- `CHECK1`: `BRAINCODE 103:parity_status TEXT NOT NULL DEFAULT &#x27;NOT_STARTED&#x27;, | 105:performance_status TEXT NOT NULL DEFAULT &#x27;NOT`
+- `CHECK10`: `CURRENTRUNS=21`
+- `CHECK11`: `RUN1 exp=20812 ledger=None suspect=None score=1.371890246584288`
+- `CHECK12`: `RUN2 exp=18476 ledger=None suspect=None score=1.2704542121798568`
+- `CHECK13`: `RUN3 exp=1917 ledger=None suspect=None score=6.912975107801398`
+- `CHECK14`: `RUN4 exp=19541 ledger=None suspect=None score=1.0897986913929338`
+- `CHECK15`: `RUN5 exp=6265 ledger=None suspect=None score=1.8600665021735943`
+- `CHECK16`: `RUN6 exp=97774 ledger=None suspect=None score=0.44101850631704925`
+- `CHECK17`: `RUN7 exp=10891 ledger=None suspect=None score=1.848792478092611`
+- `CHECK18`: `RUN8 exp=None ledger=None suspect=None score=None`
+- `CHECK19`: `RUN9 exp=8 ledger=None suspect=None score=74.59517342100865`
+- `CHECK2`: `BRAINCODE 138:profit_factor REAL, | 139:trade_count INTEGER, | 141:oos_status TEXT, | 142:robustness_score REAL, | 1`
+- `CHECK20`: `RUN10 exp=0 ledger=None suspect=None score=8.487595661182382`
+- `CHECK21`: `RUN11 exp=1867 ledger=None suspect=None score=3.6254754054714873`
+- `CHECK22`: `RUN12 exp=117873 ledger=None suspect=None score=0.39478806896590746`
+- `CHECK23`: `RUN13 exp=None ledger=None suspect=None score=None`
+- `CHECK24`: `RUN14 exp=32248 ledger=None suspect=None score=0.9050418314563837`
+- `CHECK25`: `RUN15 exp=53408 ledger=None suspect=None score=0.7945310662500145`
+- `CHECK26`: `RUN16 exp=None ledger=None suspect=None score=None`
+- `CHECK27`: `RUN17 exp=11013 ledger=None suspect=None score=1.9278323195139966`
+- `CHECK28`: `RUN18 exp=19541 ledger=None suspect=None score=1.0897986913929338`
+- `CHECK29`: `RUN19 exp=None ledger=None suspect=None score=None`
+- `CHECK3`: `BRAINCODE 218:conversion_status, | 219:parity_status, | 220:performance_status, | 221:oos_status, | 222:robustness_s`
+- `CHECK30`: `RUN20 exp=104000 ledger=None suspect=None score=0.3633940671598031`
+- `CHECK31`: `RUN21 exp=None ledger=None suspect=None score=None`
+- `CHECK32`: `SMOKERAW market_data_contract=BENCHTEST_MARKET_DATA_V1`
+- `CHECK33`: `SMOKERAW market_data_sha256=b577ee5771839c9aea350659027c8ff45e0af93eabb349b1d1266818857339fc`
+- `CHECK34`: `SMOKERAW primary_benchmark_mode=UNIVERSAL_SIGNAL_FLIP_V2`
+- `CHECK4`: `BRAINCODE 323:WHERE t.candidate_id = c.candidate_id | 324:ORDER BY t.created_epoch_ms DESC | 325:LIMIT 1 | 326:) AS`
+- `CHECK5`: `BRAINCODE 328:SELECT brain_value_score | 329:FROM test_runs t | 330:WHERE t.candidate_id = c.candidate_id | 331:ORDE`
+- `CHECK6`: `LEDGERCODE 1969:_run = _con.execute( | 1970:f&quot;&quot;&quot; | 1971:SELECT | 1972:primary_benchmark_mode, | 1973:primary_trade_c`
+- `CHECK7`: `LEDGERCODE 2020:_rows = _con.execute( | 2021:&quot;&quot;&quot; | 2022:SELECT raw_json | 2023:FROM benchtest_trades_v1 | 2024:WHERE`
+- `CHECK8`: `LEDGERCODE 2065:) | 2067:_expected = int( | 2068:_run[ | 2069:&quot;primary_trade_count&quot; | 2070:] | 2071:or 0 | 2072:) |`
+- `CHECK9`: `TRADECOLS=run_id,candidate_id,trade_no,raw_json,benchmark_mode`
 - `DB_WRITE`: `NO`
 - `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
