@@ -1,9 +1,9 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T08:51:11.248986+00:00`
-- Run ID: `20260908T085109Z`
-- Step: `PATCHREPORTV2ROBUST`
+- Published UTC: `2026-09-08T09:46:11.400463+00:00`
+- Run ID: `20260908T094609Z`
+- Step: `PATCHREPORTV2FINAL`
 - Status: `SUCCESS`
 - Exit code: `0`
 - Verdict: `REPORTV2PATCHFAILED`
@@ -11,13 +11,15 @@
 
 ## Facts
 
+- `BACKUP`: `PASS`
 - `BENCHTEST_RERUN`: `NO`
+- `COMPILE`: `PASS`
 - `DB_WRITE`: `NO`
-- `ERROR`: `CARDSIGNAL_R`
+- `ERROR`: `&lt;urlopen error [Errno 111] Connection refused&gt;`
 - `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
 - `PREFLIGHT_RERUN`: `NO`
-- `RESTART`: `NO`
-- `ROLLBACK`: `NO`
+- `RESTART`: `YES`
+- `ROLLBACK`: `YES`
 - `SCORE_PRODUCER_CHANGE`: `NO`
 - `SOURCE_CHANGE`: `NO`
