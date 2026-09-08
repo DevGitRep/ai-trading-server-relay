@@ -1,13 +1,13 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T21:56:43.154008+00:00`
-- Run ID: `20260908T215641Z`
-- Step: `RESOLVEPILOTSCOPE`
+- Published UTC: `2026-09-08T21:57:56.507383+00:00`
+- Run ID: `20260908T215754Z`
+- Step: `VERIFYCACHEFULLSCOPE`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `PILOTSCOPE_READ`
-- Next gate: `REVIEWSTAGE3SCOPE`
+- Verdict: `CACHEFULLSCOPEREAD`
+- Next gate: `DRYRUNINCREMENTAL`
 
 ## Facts
 
@@ -15,9 +15,55 @@
 - `BENCHTEST_RERUN`: `NO`
 - `BRAIN_ADMISSION`: `NO`
 - `BRAIN_IQ_CHANGE`: `NO`
+- `CACHEFLOW1`: `MASTERALIGN=YES`
+- `CACHEFLOW10`: `FLOW=206:!= &quot;ok&quot; | 207:): | 208:raise RuntimeError( | 209:&quot;DB_QUICK_CHECK_FAILED_BEFORE&quot; | 210:) | 212:cache.ens`
+- `CACHEFLOW11`: `FLOW=213:con | 214:) | 216:con.commit() | 218:results = [] | 220:for index, cid in enumerate( | 221:remaining,`
+- `CACHEFLOW12`: `FLOW=222:1, | 223:): | 225:row = con.execute( | 226:&quot;&quot;&quot; | 227:SELECT | 228:candidate_id,`
+- `CACHEFLOW13`: `FLOW=229:name, | 230:source_sha256 | 231:FROM candidates | 232:WHERE candidate_id=? | 233:LIMIT 1 | 234:&quot;&quot;&quot;,`
+- `CACHEFLOW14`: `LOOPS=2`
+- `CACHEFLOW15`: `LOOP line=220 target=(index, cid) iter=enumerate(remaining, 1)`
+- `CACHEFLOW16`: `LOOP line=584 target=cid iter=representatives`
+- `CACHEFLOW17`: `GUARDS=1`
+- `CACHEFLOW18`: `GUARD line=182 if=len(remaining) != 14`
+- `CACHEFLOW19`: `PILOTEMPTYCHECKS=0`
+- `CACHEFLOW2`: `SCRIPTYES=YES`
+- `CACHEFLOW20`: `OUTPUTHITS=12`
+- `CACHEFLOW21`: `OUTPUT=56:return ( | 57:json.dumps( | 58:obj, | 59:indent=2, | 60:sort_keys=True, | 61:ensure_ascii=False,`
+- `CACHEFLOW22`: `OUTPUT=580:# a canonical cache outcome: PASS or technical FAILURE. | 581:# | 582:representative_outcomes = [] |`
+- `CACHEFLOW23`: `OUTPUT=635:) = cached | 637:representative_outcomes.append( | 638:{ | 639:&quot;candidate_id&quot;: | 640:cid,`
+- `CACHEFLOW24`: `OUTPUT=656:pass_count = sum( | 657:row[&quot;status&quot;] == &quot;PASS&quot; | 658:for row in representative_outcomes | 659:) | 66`
+- `CACHEFLOW25`: `OUTPUT=661:failure_count = sum( | 662:row[&quot;status&quot;] != &quot;PASS&quot; | 663:for row in representative_outcomes | 664:) |`
+- `CACHEFLOW26`: `OUTPUT=687:) | 689:report = { | 690:&quot;contract&quot;: | 691:REPORT_CONTRACT, | 693:&quot;status&quot;:`
+- `CACHEFLOW27`: `OUTPUT=711:len(candles), | 713:&quot;representative_count&quot;: | 714:17, | 716:&quot;preexisting_pilot_count&quot;: | 717:3,`
+- `CACHEFLOW28`: `OUTPUT=717:3, | 719:&quot;batch_candidate_count&quot;: | 720:14, | 722:&quot;batch_pass_count&quot;: | 723:batch_pass,`
+- `CACHEFLOW29`: `OUTPUT=735:failure_count, | 737:&quot;batch_results&quot;: | 738:results, | 740:&quot;representative_outcomes&quot;: | 741:represent`
+- `CACHEFLOW3`: `ANCHORS=3`
+- `CACHEFLOW30`: `OUTPUT=738:results, | 740:&quot;representative_outcomes&quot;: | 741:representative_outcomes, | 743:&quot;governance&quot;: { | 744:`
+- `CACHEFLOW31`: `REMAININGLOOP=YES`
+- `CACHEFLOW32`: `EMPTYBLOCK=NO`
+- `CACHEFLOW33`: `CACHEROUTEREADY=YES`
+- `CACHEFLOW34`: `NONE`
+- `CACHEFLOW35`: `NONE`
+- `CACHEFLOW36`: `NONE`
+- `CACHEFLOW37`: `NONE`
+- `CACHEFLOW38`: `NONE`
+- `CACHEFLOW39`: `NONE`
+- `CACHEFLOW4`: `FLOW=163:representatives = [ | 164:row[&quot;candidate_id&quot;] | 165:for row in selection[ | 166:&quot;representatives&quot; | 167`
+- `CACHEFLOW40`: `NONE`
+- `CACHEFLOW41`: `NONE`
+- `CACHEFLOW42`: `NONE`
+- `CACHEFLOW43`: `NONE`
+- `CACHEFLOW44`: `NONE`
+- `CACHEFLOW45`: `NONE`
+- `CACHEFLOW46`: `NONE`
+- `CACHEFLOW5`: `FLOW=170:pilots = set( | 171:selection[ | 172:&quot;pilot_candidate_ids&quot; | 173:] | 174:) | 176:remaining = [`
+- `CACHEFLOW6`: `FLOW=177:cid | 178:for cid in representatives | 179:if cid not in pilots | 180:] | 182:if len(remaining) != 14:`
+- `CACHEFLOW7`: `FLOW=184:&quot;REMAINING_POPULATION_DRIFT:&quot; | 185:+ str(len(remaining)) | 186:) | 188:# | 189:# One existing canonica`
+- `CACHEFLOW8`: `FLOW=191:resin_host = ( | 192:bench.load_resin_host() | 193:) | 195:con = sqlite3.connect( | 196:args.db, | 197:`
+- `CACHEFLOW9`: `FLOW=198:) | 200:con.row_factory = sqlite3.Row | 202:if ( | 203:con.execute( | 204:&quot;PRAGMA quick_check&quot; | 205:).`
 - `CACHE_CHANGE`: `NO`
 - `DB_WRITE`: `NO`
-- `FACTS`: `42`
+- `FACTS`: `33`
 - `INSTALL`: `NO`
 - `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
@@ -26,52 +72,6 @@
 - `PROSPECTIVE_ACTIVATION`: `NO`
 - `QUEUE_CHANGE`: `NO`
 - `RESTART`: `NO`
-- `SCOPE1`: `MASTERALIGN=YES`
-- `SCOPE10`: `CACHELOOPSREPS=YES`
-- `SCOPE11`: `CACHEPILOTFILTER=YES`
-- `SCOPE12`: `PILOTGUARDS=0`
-- `SCOPE13`: `TERM=INDICATOR_STAGE3_FULL_YEAR_CACHE_POPULATION_V1`
-- `SCOPE14`: `TERM=_stage3_cache_population_benchtest`
-- `SCOPE15`: `TERM=_stage3_cache_population_cache`
-- `SCOPE16`: `TERM=NORMALIZE_ALL_17_REPRESENTATIVES_FROM_CANONICAL_CACHE`
-- `SCOPE17`: `TERM=FREEZE_COMPATIBILITY_EXCLUSIONS_AND_NORMALIZE_CACHE_PASS_REPRESENTATIVES`
-- `SCOPE18`: `TERM=representative_count`
-- `SCOPE19`: `SCRIPT=stage3_cached_normalizer_v1.py`
-- `SCOPE2`: `SCRIPTS=2`
-- `SCOPE20`: `SCOPEDEFS=1`
-- `SCOPE21`: `SCOPE default=pilot choices=(&#x27;pilot&#x27;, &#x27;representatives&#x27;) required=None`
-- `SCOPE22`: `NONPILOTSCOPE=representatives`
-- `SCOPE23`: `FLOWCTX=9`
-- `SCOPE24`: `FLOW=526:) | 527:) | 529:if args.scope == &quot;pilot&quot;: | 531:candidate_ids = selection[ | 532:&quot;pilot_candidate_ids&quot;`
-- `SCOPE25`: `FLOW=529:if args.scope == &quot;pilot&quot;: | 531:candidate_ids = selection[ | 532:&quot;pilot_candidate_ids&quot; | 533:] | 535:el`
-- `SCOPE26`: `FLOW=535:else: | 537:candidate_ids = [ | 538:row[ | 539:&quot;candidate_id&quot; | 540:] | 541:for row in selection[ | 542`
-- `SCOPE27`: `FLOW=580:exact_count = 0 | 581:reclassified_count = 0 | 583:for cid in candidate_ids: | 585:dbrow = con.execute(`
-- `SCOPE28`: `FLOW=914:# Pilot-specific frozen evidence. | 915:# | 917:if args.scope == &quot;pilot&quot;: | 919:if len(candidate_ids) !`
-- `SCOPE29`: `FLOW=953:&quot;FULL_YEAR_RETROSPECTIVE_DISCOVERY_ONLY&quot;, | 955:&quot;scope&quot;: | 956:args.scope, | 958:&quot;candidate_count&quot;: | 9`
-- `SCOPE3`: `SCRIPT=stage3_cache_representatives_v1.py`
-- `SCOPE30`: `PILOTGUARDS=3`
-- `SCOPE31`: `GUARD 529:if args.scope == &quot;pilot&quot;:`
-- `SCOPE32`: `GUARD 917:if args.scope == &quot;pilot&quot;:`
-- `SCOPE33`: `GUARD 1141:if args.scope == &quot;pilot&quot;:`
-- `SCOPE34`: `TERM=INDICATOR_STAGE3_CACHED_NORMALIZATION_V1`
-- `SCOPE35`: `TERM=pilot`
-- `SCOPE36`: `TERM=normalization_policy_sha256`
-- `SCOPE37`: `TERM=FULL_YEAR_RETROSPECTIVE_DISCOVERY_ONLY`
-- `SCOPE38`: `TERM=CACHE_FULL_YEAR_NATIVE_ARTIFACTS_FOR_REMAINING_14_REPRESENTATIVES`
-- `SCOPE39`: `TERM=NORMALIZATION_STATUS=PASS`
-- `SCOPE4`: `SCOPEDEFS=0`
-- `SCOPE40`: `CACHEALLREPS=NO`
-- `SCOPE41`: `NONPILOTSCOPEFOUND=YES`
-- `SCOPE42`: `STAGE3ROUTEREADY=NO`
-- `SCOPE43`: `NONE`
-- `SCOPE44`: `NONE`
-- `SCOPE45`: `NONE`
-- `SCOPE46`: `NONE`
-- `SCOPE5`: `FLOWCTX=3`
-- `SCOPE6`: `FLOW=170:pilots = set( | 171:selection[ | 172:&quot;pilot_candidate_ids&quot; | 173:] | 174:) | 176:remaining = [ | 177:ci`
-- `SCOPE7`: `FLOW=176:remaining = [ | 177:cid | 178:for cid in representatives | 179:if cid not in pilots | 180:] | 182:if le`
-- `SCOPE8`: `FLOW=581:# | 582:representative_outcomes = [] | 584:for cid in representatives: | 586:row = con.execute( | 587:&quot;`
-- `SCOPE9`: `CACHEHASREPS=NO`
 - `SCORE_PRODUCER_CHANGE`: `NO`
 - `SOURCE_CHANGE`: `NO`
 - `STAGE2B_RERUN`: `NO`
