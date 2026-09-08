@@ -1,69 +1,23 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T21:44:55.302524+00:00`
-- Run ID: `20260908T214453Z`
-- Step: `READALIGNDIVERSITY`
+- Published UTC: `2026-09-08T21:49:58.140776+00:00`
+- Run ID: `20260908T214956Z`
+- Step: `VALIDATESELECTIONREPLAY`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `ALIGNDIVERSITYREAD`
-- Next gate: `BUILDSELECTIONDRYRUN`
+- Verdict: `SELECTIONREPLAYREAD`
+- Next gate: `REVIEWSELECTIONREPLAY`
 
 ## Facts
 
-- `ALIGNDIV1`: `MASTERALIGN=YES`
-- `ALIGNDIV10`: `OLDONLY=0`
-- `ALIGNDIV11`: `CURRONLY=0`
-- `ALIGNDIV12`: `COMMON candidate_results[].selected_representation_count old=scalar:8 cur=scalar:2`
-- `ALIGNDIV13`: `COMMON candidate_results[].selected_series[].representation old=scalar:EVENT_PRESENCE cur=scalar:PRICE_DISTANCE_`
-- `ALIGNDIV14`: `COMMON candidate_results[].usable_representation_count old=scalar:8 cur=scalar:2`
-- `ALIGNDIV15`: `COMMON counts.cross_candidate_redundancy_clusters old=scalar:10 cur=scalar:7`
-- `ALIGNDIV16`: `COMMON counts.cross_candidate_redundancy_edges old=scalar:683 cur=scalar:22`
-- `ALIGNDIV17`: `COMMON counts.diversity_screen_shortlist old=scalar:40 cur=scalar:13`
-- `ALIGNDIV18`: `COMMON diversity_screen_shortlist old=list:40 cur=list:13`
-- `ALIGNDIV19`: `COMMON diversity_screen_shortlist[].candidate_id old=scalar:ICL_LIB_DEC7F969A4B5969C cur=scalar:ICL_LIB_A54371FD`
-- `ALIGNDIV2`: `OLDMATCHES=2`
-- `ALIGNDIV20`: `COMMON diversity_screen_shortlist[].maximum_incumbent_linear_overlap old=scalar:0.1674544414722499 cur=scalar:0.`
-- `ALIGNDIV21`: `COMMON diversity_screen_shortlist[].minimum_incumbent_linear_overlap old=scalar:0.004955004607796131 cur=scalar:`
-- `ALIGNDIV22`: `COMMON diversity_screen_shortlist[].realistic_score old=scalar:16.25 cur=scalar:1.9278323195139966`
-- `ALIGNDIV23`: `COMMON diversity_screen_shortlist[].redundancy_cluster_memberships old=scalar:0 cur=scalar:0`
-- `ALIGNDIV24`: `REPCLUSTERS=9`
-- `ALIGNDIV25`: `REPCLUSTERINOLD=9/9`
-- `ALIGNDIV26`: `CLUSTER_IDS=0/0`
-- `ALIGNDIV27`: `REALISTIC_SCORE_ROLE=0/0`
-- `ALIGNDIV28`: `REPRESENTATION_TYPES=0/0`
-- `ALIGNDIV29`: `SELECTION_REASON=0/0`
-- `ALIGNDIV3`: `OLDROWS=101`
-- `ALIGNDIV30`: `REDUNDANCYSTRUCTURE=YES`
-- `ALIGNDIV31`: `NONE`
-- `ALIGNDIV32`: `NONE`
-- `ALIGNDIV33`: `NONE`
-- `ALIGNDIV34`: `NONE`
-- `ALIGNDIV35`: `NONE`
-- `ALIGNDIV36`: `NONE`
-- `ALIGNDIV37`: `NONE`
-- `ALIGNDIV38`: `NONE`
-- `ALIGNDIV39`: `NONE`
-- `ALIGNDIV4`: `CURRENTROWS=14`
-- `ALIGNDIV40`: `NONE`
-- `ALIGNDIV41`: `NONE`
-- `ALIGNDIV42`: `NONE`
-- `ALIGNDIV43`: `NONE`
-- `ALIGNDIV44`: `NONE`
-- `ALIGNDIV45`: `NONE`
-- `ALIGNDIV46`: `NONE`
-- `ALIGNDIV5`: `OLDTOP=candidate_results,canonical_window,contract,counts,diversity_screen_shortlist,governance,incumbent_alignm`
-- `ALIGNDIV6`: `CURRTOP=candidate_results,canonical_window,contract,counts,diversity_screen_shortlist,governance,incumbent_align`
-- `ALIGNDIV7`: `OLDDIVERSITYFIELDS=33`
-- `ALIGNDIV8`: `CURRDIVERSITYFIELDS=33`
-- `ALIGNDIV9`: `COMMONFIELDS=33`
 - `ALIGNMENT_CHANGE`: `NO`
 - `BENCHTEST_RERUN`: `NO`
 - `BRAIN_ADMISSION`: `NO`
 - `BRAIN_IQ_CHANGE`: `NO`
 - `CACHE_CHANGE`: `NO`
 - `DB_WRITE`: `NO`
-- `FACTS`: `30`
+- `FACTS`: `27`
 - `INSTALL`: `NO`
 - `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
@@ -71,6 +25,50 @@
 - `PREFLIGHT_RERUN`: `NO`
 - `PROSPECTIVE_ACTIVATION`: `NO`
 - `QUEUE_CHANGE`: `NO`
+- `REPLAY1`: `MASTERALIGN=YES`
+- `REPLAY10`: `OLDCFSELECTED=10`
+- `REPLAY11`: `CLUSTERFREEEXACT=NO`
+- `REPLAY12`: `SHORTLISTREP=40 exact=NO`
+- `REPLAY13`: `SCOREREP=40 exact=NO`
+- `REPLAY14`: `OVERLAPREP=40 exact=NO`
+- `REPLAY15`: `CIDREP=40 exact=NO`
+- `REPLAY16`: `GREEDYMATCHES=0`
+- `REPLAY17`: `REPTYPEEXACT=17/17`
+- `REPLAY18`: `REASONS=CLUSTER_FREE_SHORTLIST,REDUNDANCY_CLUSTER_REPRESENTATIVE:1,2,REDUNDANCY_CLUSTER_REPRESENTATIVE:10,REDUND`
+- `REPLAY19`: `SCOREROLES=TIE_BREAK_ONLY`
+- `REPLAY2`: `OLDROWS=101`
+- `REPLAY20`: `REASONCONSISTENT=YES`
+- `REPLAY21`: `PILOTS=3`
+- `REPLAY22`: `PILOT ICL_LIB_DEC7F969A4B5969C pos=0 reason=EVENT_PLUS_NUMERIC`
+- `REPLAY23`: `PILOT ICL_LIB_38F8480283DEC284 pos=4 reason=STATE_OUTPUT`
+- `REPLAY24`: `PILOT ICL_LIB_ADB9FD6DFD0470D5 pos=10 reason=EVENT_PLUS_PRICE_DISTANCE`
+- `REPLAY25`: `PILOTRULES=1`
+- `REPLAY26`: `PRULE native_materialization.pilot_only=True`
+- `REPLAY27`: `REPLAYREADY=NO`
+- `REPLAY28`: `NONE`
+- `REPLAY29`: `NONE`
+- `REPLAY3`: `SHORTLIST=40`
+- `REPLAY30`: `NONE`
+- `REPLAY31`: `NONE`
+- `REPLAY32`: `NONE`
+- `REPLAY33`: `NONE`
+- `REPLAY34`: `NONE`
+- `REPLAY35`: `NONE`
+- `REPLAY36`: `NONE`
+- `REPLAY37`: `NONE`
+- `REPLAY38`: `NONE`
+- `REPLAY39`: `NONE`
+- `REPLAY4`: `CURRENTSHORTLIST=13`
+- `REPLAY40`: `NONE`
+- `REPLAY41`: `NONE`
+- `REPLAY42`: `NONE`
+- `REPLAY43`: `NONE`
+- `REPLAY44`: `NONE`
+- `REPLAY5`: `CLUSTERSOURCES=0`
+- `REPLAY6`: `MEMBERSHIPIDS=0`
+- `REPLAY7`: `DISCOVEREDCLUSTERS=0`
+- `REPLAY8`: `REPCLUSTEREXACT=10/17`
+- `REPLAY9`: `CLUSTERFREE=40`
 - `RESTART`: `NO`
 - `SCORE_PRODUCER_CHANGE`: `NO`
 - `SOURCE_CHANGE`: `NO`
