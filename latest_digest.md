@@ -1,12 +1,12 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T20:19:48.233275+00:00`
-- Run ID: `20260908T201946Z`
-- Step: `LOCATEALIGNINPUTS`
+- Published UTC: `2026-09-08T20:22:03.157036+00:00`
+- Run ID: `20260908T202201Z`
+- Step: `TRACEALIGNCLI`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `ALIGNFROZENINPUTSREAD`
+- Verdict: `ALIGNREMAININGINPUTSREAD`
 - Next gate: `DRYRUNALIGNMENT`
 
 ## Facts
@@ -15,48 +15,8 @@
 - `BRAIN_ADMISSION`: `NO`
 - `BRAIN_IQ_CHANGE`: `NO`
 - `DB_WRITE`: `NO`
-- `FACTS`: `23`
+- `FACTS`: `31`
 - `INSTALL`: `NO`
-- `LOCATE1`: `MASTERNATIVE=YES`
-- `LOCATE10`: `META CONTRACT model=sol_indicator_ai_brain_v1d1_20260818_150847.joblib count=1`
-- `LOCATE11`: `META CONTRACT model_sha256=70103689c4b560103c41146bd6b52778f7d21bfbdf99e28de63ce04f742c87df count=0`
-- `LOCATE12`: `META ADDENDUM feature_source=sol_indicator_ai_brain_v1d1_20260818_150847.py count=1`
-- `LOCATE13`: `META ADDENDUM feature_source_sha256=157ad75a62de3015d03077bb6f291da34a74ff141c04cbf6adfe6320cfd37054 count=0`
-- `LOCATE14`: `META ADDENDUM model=sol_indicator_ai_brain_v1d1_20260818_150847.joblib count=1`
-- `LOCATE15`: `META ADDENDUM model_sha256=70103689c4b560103c41146bd6b52778f7d21bfbdf99e28de63ce04f742c87df count=0`
-- `LOCATE16`: `INVOCATIONS=5`
-- `LOCATE17`: `CALL indicator_v1_fixed_paired_challengers_manifest_recovered_v1.json:16`
-- `LOCATE18`: `CALLARGS=NONE`
-- `LOCATE19`: `CALL indicator_v1_fixed_paired_challengers_manifest.json:16`
-- `LOCATE2`: `EXACT sol_indicator_ai_brain_v1d1_20260818_150847.py count=1`
-- `LOCATE20`: `CALL indicator_v1_live_six_role_resin.py:18`
-- `LOCATE21`: `CALL indicator_v1_live_six_role_resin_binding.json:7`
-- `LOCATE22`: `CALL indicator_stage3_full_year_normalization_policy_v1.json:5`
-- `LOCATE23`: `REQUIRED=db,stage1,stage2a,contract,preflight,source,model,interface,indicator-db,output,latest`
-- `LOCATE24`: `NONE`
-- `LOCATE25`: `NONE`
-- `LOCATE26`: `NONE`
-- `LOCATE27`: `NONE`
-- `LOCATE28`: `NONE`
-- `LOCATE29`: `NONE`
-- `LOCATE3`: `FOUND sol_indicator_ai_brain_v1d1_20260818_150847.py parent=src`
-- `LOCATE30`: `NONE`
-- `LOCATE31`: `NONE`
-- `LOCATE32`: `NONE`
-- `LOCATE33`: `NONE`
-- `LOCATE34`: `NONE`
-- `LOCATE35`: `NONE`
-- `LOCATE36`: `NONE`
-- `LOCATE37`: `NONE`
-- `LOCATE38`: `NONE`
-- `LOCATE39`: `NONE`
-- `LOCATE4`: `EXACT sol_indicator_ai_brain_v1d1_20260818_150847.joblib count=1`
-- `LOCATE40`: `NONE`
-- `LOCATE5`: `FOUND sol_indicator_ai_brain_v1d1_20260818_150847.joblib parent=models`
-- `LOCATE6`: `NAMEDREFS=9`
-- `LOCATE7`: `META LATEST frozen_source_binance=SOL_USDT_USDT-1m-futures.feather count=0`
-- `LOCATE8`: `META CONTRACT feature_source=sol_indicator_ai_brain_v1d1_20260818_150847.py count=1`
-- `LOCATE9`: `META CONTRACT feature_source_sha256=157ad75a62de3015d03077bb6f291da34a74ff141c04cbf6adfe6320cfd37054 count=0`
 - `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
 - `NATIVE_CHANGE`: `NO`
@@ -66,3 +26,49 @@
 - `RESTART`: `NO`
 - `SCORE_PRODUCER_CHANGE`: `NO`
 - `SOURCE_CHANGE`: `NO`
+- `TRACE1`: `MASTERNATIVE=YES`
+- `TRACE10`: `PREFLIGHTHITS=1`
+- `TRACE11`: `PREFLIGHTCTX1=1259:&quot;STAGE2A_NOT_READY&quot; | 1260:) | 1262:dataset, candles = ( | 1263:load_preflight( | 1264:args.p`
+- `TRACE12`: `INTERFACEHITS=1`
+- `TRACE13`: `INTERFACECTX1=1224:) | 1225:) | 1227:interface = json.load( | 1228:open( | 1229:args.interface, | 1230:encoding=`
+- `TRACE14`: `INDICATOR_DBHITS=1`
+- `TRACE15`: `INDICATOR_DBCTX1=1340:} | 1342:ind = execute_frozen_feature_prefix( | 1343:args.source, | 1344:args.model, | 134`
+- `TRACE16`: `LOADPREFLIGHT=770`
+- `TRACE17`: `PREFCODE 770:def load_preflight( | 771:path, | 772:): | 773:path = Path(path)`
+- `TRACE18`: `PREFCODE 775:loader = ( | 776:importlib.machinery | 777:.SourceFileLoader( | 778:&quot;_stage2b_preflight&quot;,`
+- `TRACE19`: `PREFCODE 779:str(path), | 780:) | 781:) | 783:spec = (`
+- `TRACE2`: `SOURCECOUNT=1`
+- `TRACE20`: `PREFCODE 784:importlib.util | 785:.spec_from_loader( | 786:loader.name, | 787:loader,`
+- `TRACE21`: `PREFCODE 788:) | 789:) | 791:mod = ( | 792:importlib.util`
+- `TRACE22`: `PREFCODE 793:.module_from_spec( | 794:spec | 795:) | 796:)`
+- `TRACE23`: `COMMANDHITS=0`
+- `TRACE24`: `PREFFILES=0`
+- `TRACE25`: `INTERFACEFILES=3`
+- `TRACE26`: `INTERFACE indicator_v1h0_fusion_interface_manifest_20260819_070806.json parent=manifests`
+- `TRACE27`: `INTERFACE indicator_v1h0_fusion_interface_contract_20260819_070806.json parent=contracts`
+- `TRACE28`: `INTERFACE indicator_v1h0_fusion_interface_audit_20260819_070806.json parent=audits`
+- `TRACE29`: `BRAINDBS=2`
+- `TRACE3`: `SOURCESHA=YES`
+- `TRACE30`: `DB indicator_brain.db tables=indicator_ai_brain_runs,indicator_baseline_results,indicator_breakout_conditioned_m`
+- `TRACE31`: `DB indicator_v1_first_seen_overlay.db tables=first_seen_candles_v1`
+- `TRACE32`: `NONE`
+- `TRACE33`: `NONE`
+- `TRACE34`: `NONE`
+- `TRACE35`: `NONE`
+- `TRACE36`: `NONE`
+- `TRACE37`: `NONE`
+- `TRACE38`: `NONE`
+- `TRACE39`: `NONE`
+- `TRACE4`: `SOURCEFILE=sol_indicator_ai_brain_v1d1_20260818_150847.py parent=src`
+- `TRACE40`: `NONE`
+- `TRACE41`: `NONE`
+- `TRACE42`: `NONE`
+- `TRACE43`: `NONE`
+- `TRACE44`: `NONE`
+- `TRACE45`: `NONE`
+- `TRACE46`: `NONE`
+- `TRACE5`: `MODELCOUNT=1`
+- `TRACE6`: `MODELSHA=YES`
+- `TRACE7`: `MODELFILE=sol_indicator_ai_brain_v1d1_20260818_150847.joblib parent=models`
+- `TRACE8`: `DBHITS=1`
+- `TRACE9`: `DBCTX1=1452:for row in eligible | 1453:} | 1455:con = sqlite3.connect( | 1456:&quot;file:&quot; | 1457:+ args.db | 1458:+`
