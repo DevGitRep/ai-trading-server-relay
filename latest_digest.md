@@ -1,57 +1,56 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T16:26:09.890331+00:00`
-- Run ID: `20260908T162607Z`
-- Step: `TRACEBRAINSCOREPRODUCER`
+- Published UTC: `2026-09-08T16:27:57.020056+00:00`
+- Run ID: `20260908T162754Z`
+- Step: `ASSESSBRAINCUTOVER`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `BRAINSCOREPRODUCERTRACED`
-- Next gate: `ASSESSBRAINCUTOVER`
+- Verdict: `BRAINCUTOVERREAD`
+- Next gate: `DECIDEBRAINCUTOVER`
 
 ## Facts
 
-- `ACTIVEPY`: `22289`
 - `BENCHTEST_RERUN`: `NO`
+- `CUTOVER1`: `CONSUMER 294:FROM test_runs t | 301:FROM test_runs t | 308:FROM test_runs t | 315:FROM test_runs t | 322:FROM test_r`
+- `CUTOVER10`: `TEST5 candidate_id=ICL_SRC_FD95B3D18254030E created_epoch_ms=1787916448464 win_rate=26.794045767607198 profit_factor`
+- `CUTOVER11`: `TEST6 candidate_id=ICL_SRC_FD95B3D18254030E created_epoch_ms=1787916268700 win_rate=26.040763226366003 profit_factor`
+- `CUTOVER12`: `TEST7 candidate_id=ICL_SRC_FD95B3D18254030E created_epoch_ms=1787916086874 win_rate=25.78757875787579 profit_factor=`
+- `CUTOVER13`: `TEST8 candidate_id=ICL_SRC_FD95B3D18254030E created_epoch_ms=1787915903917 win_rate=26.401925391095066 profit_factor`
+- `CUTOVER14`: `TEST9 candidate_id=ICL_SRC_FD95B3D18254030E created_epoch_ms=1787915720362 win_rate=26.105855279979544 profit_factor`
+- `CUTOVER15`: `TEST10 candidate_id=ICL_SRC_FD95B3D18254030E created_epoch_ms=1787915539904 win_rate=26.682501979414095 profit_facto`
+- `CUTOVER16`: `TEST11 candidate_id=ICL_SRC_FD95B3D18254030E created_epoch_ms=1787912983372 win_rate=29.50603732162459 profit_factor`
+- `CUTOVER17`: `TEST12 candidate_id=ICL_SRC_FD95B3D18254030E created_epoch_ms=1787912802849 win_rate=23.74370148440692 profit_factor`
+- `CUTOVER18`: `CANON1 indicator_id=ICL_LIB_3C1AF4E83728BCA8 version_id=IV_EC0F35154E4914EB214E realistic_score=None primary_profit_`
+- `CUTOVER19`: `CANON2 indicator_id=ICL_LIB_F69E6ED8CB171623 version_id=IV_5B6E038278BCC8C81B83 realistic_score=None primary_profit_`
+- `CUTOVER2`: `CANONICAL 1972:primary_benchmark_mode, | 1973:primary_trade_count, | 1975:FROM pipeline_benchtest_runs | 2005:&quot;prima`
+- `CUTOVER20`: `CANON3 indicator_id=ICL_LIB_7A6E8B988516166A version_id=IV_3BC69973D5B126B8AF52 realistic_score=None primary_profit_`
+- `CUTOVER21`: `CANON4 indicator_id=ICL_LIB_B6B05AC425A0160C version_id=IV_1FB72DB0D6C5ECECA1E8 realistic_score=None primary_profit_`
+- `CUTOVER22`: `CANON5 indicator_id=ICL_LIB_A25DFFC072ED8814 version_id=IV_A961913154095F8CD8F3 realistic_score=None primary_profit_`
+- `CUTOVER23`: `CANON6 indicator_id=ICL_LIB_BAE7213D641A93F1 version_id=IV_7F624890D8027E6A2774 realistic_score=0.3633940671598031 p`
+- `CUTOVER24`: `CANON7 indicator_id=ICL_LIB_A8AA2EEAB418E059 version_id=IV_2D967052A4BC5D132A5E realistic_score=1.0897986913929338 p`
+- `CUTOVER25`: `CANON8 indicator_id=ICL_LIB_A54371FD6D088869 version_id=IV_94F2A5E26A58B3250C13 realistic_score=1.9278323195139966 p`
+- `CUTOVER26`: `NONE`
+- `CUTOVER27`: `NONE`
+- `CUTOVER28`: `NONE`
+- `CUTOVER29`: `NONE`
+- `CUTOVER3`: `EXECUTOR 71:&quot;gross_return_pct&quot;: metrics[&quot;gross_return_pct&quot;], | 72:&quot;net_return_pct&quot;: metrics[&quot;net_return_pct&quot;], | 73:`
+- `CUTOVER30`: `NONE`
+- `CUTOVER31`: `NONE`
+- `CUTOVER32`: `NONE`
+- `CUTOVER33`: `NONE`
+- `CUTOVER34`: `NONE`
+- `CUTOVER4`: `TESTRUNCOLS=run_id,candidate_id,created_epoch_ms,target_market,timeframe,cost_model_id,gross_return_pct,net_return_p`
+- `CUTOVER5`: `TESTRUNROWS=12`
+- `CUTOVER6`: `TEST1 candidate_id=ICL_SRC_FD95B3D18254030E created_epoch_ms=1787917168734 win_rate=25.57403008709422 profit_factor=`
+- `CUTOVER7`: `TEST2 candidate_id=ICL_SRC_FD95B3D18254030E created_epoch_ms=1787916993868 win_rate=26.470588235294116 profit_factor`
+- `CUTOVER8`: `TEST3 candidate_id=ICL_SRC_FD95B3D18254030E created_epoch_ms=1787916812724 win_rate=26.763620577382245 profit_factor`
+- `CUTOVER9`: `TEST4 candidate_id=ICL_SRC_FD95B3D18254030E created_epoch_ms=1787916631049 win_rate=26.12574341546304 profit_factor=`
 - `DB_WRITE`: `NO`
-- `HITS`: `29`
 - `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
 - `PREFLIGHT_RERUN`: `NO`
+- `PRODUCERHITS`: `0`
 - `RESTART`: `NO`
 - `SCORE_PRODUCER_CHANGE`: `NO`
 - `SOURCE_CHANGE`: `NO`
-- `TRACE1`: `BRAIN indicator_lab_v1.py 103:parity_status TEXT NOT NULL DEFAULT &#x27;NOT_STARTED&#x27;, | 105:performance_status TEXT NOT N`
-- `TRACE10`: `PRODUCER indicator_lab_v1.py 217:repaint_status, | 218:conversion_status, | 219:parity_status, | 220:performance_sta`
-- `TRACE11`: `PRODUCER indicator_lab_v1.py 322:FROM test_runs t | 323:WHERE t.candidate_id = c.candidate_id | 324:ORDER BY t.creat`
-- `TRACE12`: `PRODUCER indicator_lab_v1.py 327:( | 328:SELECT brain_value_score | 329:FROM test_runs t | 330:WHERE t.candidate_id`
-- `TRACE13`: `PRODUCER tools/legacy_disabled/resin_clean_cut_20260831T073405Z/pine_baseline_batch_200.py 2029:} | 2031:con = conne`
-- `TRACE14`: `PRODUCER tools/legacy_disabled/resin_clean_cut_20260831T073405Z/pine_baseline_batch_200.py 2046:max_drawdown_pct, |`
-- `TRACE15`: `LEDGER 1972:primary_benchmark_mode, | 1973:primary_trade_count,`
-- `TRACE16`: `LEDGER 1975:FROM pipeline_benchtest_runs`
-- `TRACE17`: `LEDGER 1999:&quot;run_id&quot;`
-- `TRACE18`: `LEDGER 2005:&quot;primary_benchmark_mode&quot;`
-- `TRACE19`: `LEDGER 2022:SELECT raw_json | 2023:FROM benchtest_trades_v1 | 2024:WHERE run_id=?`
-- `TRACE2`: `BRAIN indicator_lab_v1.py 138:profit_factor REAL, | 139:trade_count INTEGER, | 141:oos_status TEXT, | 142:robustness`
-- `TRACE20`: `LEDGER 2025:AND candidate_id=? | 2026:ORDER BY CAST(trade_no AS INTEGER)`
-- `TRACE21`: `LEDGER 2036:_trades = []`
-- `TRACE22`: `LEDGER 2040:_trade = _json.loads( | 2041:_row[&quot;raw_json&quot;]`
-- `TRACE23`: `LEDGER 2047:_trade,`
-- `TRACE24`: `LEDGER 2054:_trade.get(`
-- `TRACE25`: `LEDGER 2055:&quot;benchmark_mode&quot;`
-- `TRACE26`: `LEDGER 2063:_trades.append( | 2064:_trade`
-- `TRACE27`: `LEDGER 2067:_expected = int( | 2069:&quot;primary_trade_count&quot;`
-- `TRACE28`: `LEDGER 2074:if len(_trades) != _expected:`
-- `TRACE29`: `LEDGER 2078:&quot;error&quot;: &quot;PRIMARY trade artifact mismatch&quot;,`
-- `TRACE3`: `BRAIN indicator_lab_v1.py 218:conversion_status, | 219:parity_status, | 220:performance_status, | 221:oos_status, |`
-- `TRACE30`: `NONE`
-- `TRACE31`: `NONE`
-- `TRACE32`: `NONE`
-- `TRACE33`: `NONE`
-- `TRACE34`: `NONE`
-- `TRACE4`: `BRAIN indicator_lab_v1.py 323:WHERE t.candidate_id = c.candidate_id | 324:ORDER BY t.created_epoch_ms DESC | 325:LIM`
-- `TRACE5`: `BRAIN indicator_lab_v1.py 328:SELECT brain_value_score | 329:FROM test_runs t | 330:WHERE t.candidate_id = c.candida`
-- `TRACE6`: `BRAIN tools/pine_library_test_executor_v1/executor.py 75:&quot;win_rate&quot;: metrics[&quot;win_rate&quot;], | 76:&quot;profit_factor&quot;: metr`
-- `TRACE7`: `BRAIN tools/legacy_disabled/resin_clean_cut_20260831T073405Z/pine_baseline_batch_200.py 2047:win_rate, | 2048:profit`
-- `TRACE8`: `PRODUCER indicator_lab_v1.py 102:conversion_status TEXT NOT NULL DEFAULT &#x27;NOT_STARTED&#x27;, | 103:parity_status TEXT NOT`
-- `TRACE9`: `PRODUCER indicator_lab_v1.py 137:win_rate REAL, | 138:profit_factor REAL, | 139:trade_count INTEGER, | 141:oos_statu`
