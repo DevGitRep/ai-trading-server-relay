@@ -1,35 +1,26 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T13:34:06.168831+00:00`
-- Run ID: `20260908T133404Z`
-- Step: `READFREEGATING`
+- Published UTC: `2026-09-08T13:45:17.828503+00:00`
+- Run ID: `20260908T134515Z`
+- Step: `PATCHFREEGATING`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `FREEGATINGMARKUPREAD`
-- Next gate: `PATCHFREEGATING`
+- Verdict: `FREEREPORTGATINGFAILED`
+- Next gate: `REVIEWFREEGATING`
 
 ## Facts
 
-- `BEHAVIOUR`: `FLIP=YES,SECONDARY=YES,PF=YES,BAR=YES`
-- `BENCHEXPR1`: `{{ (&#x27;%.1f&#x27;|format(benchtest_metrics.get(&#x27;realistic_score&#x27;))) ~ &#x27; / 100&#x27; if benchtest_metri`
-- `BENCHEXPR2`: `{{ &#x27;%.2f&#x27;|format(benchtest_metrics.get(&#x27;profit_factor&#x27;)) if benchtest_metrics.get(&#x27;profit_`
-- `BENCHEXPR3`: `{{ (&#x27;%.2f&#x27;|format(benchtest_metrics.get(&#x27;net_return_pct&#x27;))) ~ &#x27;%&#x27; if benchtest_metrics.get`
-- `BENCHEXPR4`: `{{ (&#x27;%.2f&#x27;|format(benchtest_metrics.get(&#x27;max_drawdown_pct&#x27;))) ~ &#x27;%&#x27; if benchtest_metrics.g`
-- `BENCHEXPR5`: `{{ (&#x27;%.2f&#x27;|format(benchtest_metrics.get(&#x27;win_rate_pct&#x27;))) ~ &#x27;%&#x27; if benchtest_metrics.get(&#x27;`
-- `BENCHEXPR6`: `{{ benchtest_metrics.get(&#x27;trade_count&#x27;) if benchtest_metrics.get(&#x27;trade_count&#x27;) is not non`
-- `BENCHLABELS`: `REALISTIC SCORE:YES,PROFIT FACTOR:YES,NET RETURN:YES,MAX DRAWDOWN:YES,WIN RATE:YES,TRADES:YES`
+- `BACKUP`: `PASS`
 - `BENCHTEST_RERUN`: `NO`
 - `DB_WRITE`: `NO`
-- `LOCKTOKENS`: `lock`
+- `ERROR`: `LIVE:RuntimeError:FREELOCKS`
 - `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
 - `PREFLIGHT_RERUN`: `NO`
-- `RESTART`: `NO`
-- `RISK`: `SHARPE=YES,SORTINO=YES,MARKER=YES`
+- `PREWRITE`: `PASS`
+- `RESTART`: `YES`
+- `ROLLBACK`: `YES`
 - `SCORE_PRODUCER_CHANGE`: `NO`
+- `SERVICE`: `active`
 - `SOURCE_CHANGE`: `NO`
-- `TIER1`: `&lt;a href=&quot;/indicator-lab?view_as=PRO&quot;&gt; Back to Indicator Lab&lt;/a&gt;`
-- `TIER2`: `{% if benchtest_metrics and tier in [&#x27;PRO&#x27;,&#x27;INTERNAL_ADMIN&#x27;] %}`
-- `TIER3`: `&lt;span&gt;Profit Factor&lt;/span&gt;`
-- `TIER4`: `{{ &#x27;%.2f&#x27;|format(benchtest_metrics.get(&#x27;profit_factor&#x27;)) if benchtest_metrics.get(&#x27;profit_facto`
