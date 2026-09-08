@@ -1,35 +1,27 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T10:05:28.479484+00:00`
-- Run ID: `20260908T100526Z`
-- Step: `READMARKERWIRE`
+- Published UTC: `2026-09-08T10:07:19.861933+00:00`
+- Run ID: `20260908T100717Z`
+- Step: `UPDATEMASTERHANDOFF`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `MARKERWIREREAD`
+- Verdict: `MASTERHANDOFFUPDATED`
 - Next gate: `PATCHMARKERWIRE`
 
 ## Facts
 
-- `ACTION1`: `const kind=String( marker[2]||&quot;&quot; ).toUpperCase()`
-- `ACTION2`: `const direction=String( marker[3]||&quot;&quot; ).toUpperCase()`
-- `ACTION3`: `const shortTrade= direction.includes( &quot;SHORT&quot; )`
-- `ACTION4`: `if(shortTrade){ return kind===&quot;ENTRY&quot; ?&quot;SELL&quot; :&quot;BUY&quot;`
+- `BACKUP`: `YES`
 - `BENCHTEST_RERUN`: `NO`
-- `COUNT1`: `const buyMarkerCount=`
-- `COUNT2`: `const sellMarkerCount=`
 - `DB_WRITE`: `NO`
-- `INDEX1`: `rAction=marker=&gt;{ const kind=String( marker[2]||&quot;&quot; ).toUpperCase(); const direction=String( marker[3]||&quot;`
-- `INDEX2`: `pperCase(); const direction=String( marker[3]||&quot;&quot; ).toUpperCase(); const shortTrade= direction.includes`
-- `INDEX3`: `rker=&gt;{ const mt=Number( marker[0] ); const mp=Number( marker[1]`
-- `INDEX4`: `); const mp=Number( marker[1] ); if( !Number.isFinite(mt)`
-- `MASTER_CHANGE`: `NO`
+- `DIRECTION`: `LONGSHORT`
+- `KIND`: `ENTRYEXIT`
+- `MARKER_CONTRACT`: `ARRAY4`
+- `MASTER_CHANGE`: `YES`
 - `MASTER_READ`: `YES`
+- `OPEN_DEFECT`: `MARKERWIRE`
 - `PREFLIGHT_RERUN`: `NO`
-- `RENDER1`: `markerAction(marker)===&quot;BUY&quot;`
-- `RENDER2`: `markerAction(marker)===&quot;SELL&quot;`
-- `RENDER3`: `markerAction(`
-- `RENDER4`: `NONE`
+- `RESIN_SIGNAL_SOURCE`: `NO`
 - `RESTART`: `NO`
 - `SCORE_PRODUCER_CHANGE`: `NO`
 - `SOURCE_CHANGE`: `NO`
