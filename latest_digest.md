@@ -1,59 +1,52 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T19:43:23.072679+00:00`
-- Run ID: `20260908T194321Z`
-- Step: `READADAPTERCLI`
+- Published UTC: `2026-09-08T19:45:56.375806+00:00`
+- Run ID: `20260908T194554Z`
+- Step: `DRYRUNBRAINCANONICAL`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `ADAPTERCLIREAD`
-- Next gate: `DRYRUNADAPTER`
+- Verdict: `DRYRUNBLOCKED`
+- Next gate: `REVIEWDRYRUN`
 
 ## Facts
 
 - `BENCHTEST_RERUN`: `NO`
 - `BRAIN_ADMISSION`: `NO`
 - `BRAIN_IQ_CHANGE`: `NO`
-- `CLI1`: `MASTERFEED=YES`
-- `CLI10`: `WRITE 1001:).write_text( | 1148:+ args.output`
-- `CLI11`: `MAIN 84:def main(): | 85:ap = argparse.ArgumentParser() | 87:ap.add_argument( | 88:&quot;--db&quot;, | 89:required=True,`
-- `CLI12`: `MAIN 1162:if __name__ == &quot;__main__&quot;: | 1163:main()`
-- `CLI13`: `HELPRC=0`
-- `CLI14`: `HELP usage: indicator_research_library_brain_value_adapter_v1.py`
-- `CLI15`: `HELP [-h] --db DB --contract CONTRACT --output OUTPUT --latest LATEST`
-- `CLI16`: `HELP options:`
-- `CLI17`: `HELP -h, --help show this help message and exit`
-- `CLI18`: `HELP --db DB`
-- `CLI19`: `HELP --contract CONTRACT`
-- `CLI2`: `CANONICALREADER=YES`
-- `CLI20`: `HELP --output OUTPUT`
-- `CLI21`: `HELP --latest LATEST`
-- `CLI22`: `NONE`
-- `CLI23`: `NONE`
-- `CLI24`: `NONE`
-- `CLI25`: `NONE`
-- `CLI26`: `NONE`
-- `CLI27`: `NONE`
-- `CLI28`: `NONE`
-- `CLI29`: `NONE`
-- `CLI3`: `LEGACYREADER=NO`
-- `CLI30`: `NONE`
-- `CLI31`: `NONE`
-- `CLI32`: `NONE`
-- `CLI33`: `NONE`
-- `CLI34`: `NONE`
-- `CLI35`: `NONE`
-- `CLI36`: `NONE`
-- `CLI37`: `NONE`
-- `CLI38`: `NONE`
-- `CLI4`: `ARGLINES=6`
-- `CLI5`: `ARG 85:ap = argparse.ArgumentParser() | 87:ap.add_argument( | 92:ap.add_argument( | 97:ap.add_argument(`
-- `CLI6`: `ARG 102:ap.add_argument( | 107:args = ap.parse_args()`
-- `CLI7`: `ARGNAMES=contract,db,latest,output`
-- `CLI8`: `WRITERLINES=6`
-- `CLI9`: `WRITE 98:&quot;--output&quot;, | 984:json.dumps( | 993:args.output | 994:).write_text(`
 - `DB_WRITE`: `NO`
-- `FACTS`: `21`
+- `DRY1`: `MASTERFEED=YES`
+- `DRY10`: `NONE`
+- `DRY11`: `NONE`
+- `DRY12`: `NONE`
+- `DRY13`: `NONE`
+- `DRY14`: `NONE`
+- `DRY15`: `NONE`
+- `DRY16`: `NONE`
+- `DRY17`: `NONE`
+- `DRY18`: `NONE`
+- `DRY19`: `NONE`
+- `DRY2`: `CANONICALREADER=YES`
+- `DRY20`: `NONE`
+- `DRY21`: `NONE`
+- `DRY22`: `NONE`
+- `DRY23`: `NONE`
+- `DRY24`: `NONE`
+- `DRY25`: `NONE`
+- `DRY26`: `NONE`
+- `DRY27`: `NONE`
+- `DRY28`: `NONE`
+- `DRY29`: `NONE`
+- `DRY3`: `LEGACYREADER=NO`
+- `DRY30`: `NONE`
+- `DRY4`: `CURRENTCANONICAL=16`
+- `DRY5`: `OLDQUEUE=533`
+- `DRY6`: `ADAPTERRC=1`
+- `DRY7`: `NONE`
+- `DRY8`: `NONE`
+- `DRY9`: `NONE`
+- `ERROR`: `RuntimeError:ADAPTER_RC_1_Traceback (most recent call last): File &quot;PATH&quot;, line 1163, in &lt;module&gt;`
+- `FACTS`: `6`
 - `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
 - `PREFLIGHT_RERUN`: `NO`
@@ -61,3 +54,5 @@
 - `RESTART`: `NO`
 - `SCORE_PRODUCER_CHANGE`: `NO`
 - `SOURCE_CHANGE`: `NO`
+- `TEMP_CLEANUP`: `YES`
+- `TEMP_WRITE`: `YES`
