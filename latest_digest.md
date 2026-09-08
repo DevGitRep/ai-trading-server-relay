@@ -1,36 +1,26 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T15:47:40.706495+00:00`
-- Run ID: `20260908T154738Z`
-- Step: `READCHARTCURRENTCALL`
+- Published UTC: `2026-09-08T15:48:41.478859+00:00`
+- Run ID: `20260908T154839Z`
+- Step: `READCHARTCALLCTX`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `CHARTCURRENTCALLREAD`
+- Verdict: `CHARTCALLCTXREAD`
 - Next gate: `PATCHFREECHARTCALL`
 
 ## Facts
 
 - `BENCHTEST_RERUN`: `NO`
+- `CTX1`: `CTX 2238:&quot;h1&quot; | 2239:);`
+- `CTX2`: `CTX 2241:if(h){ | 2242:h.insertAdjacentElement( | 2243:&quot;afterend&quot;,`
+- `CTX3`: `CTX 2244:link | 2245:); | 2246:}`
+- `CTX4`: `CTX 2247:} | 2248:} | 2249:}`
+- `CTX5`: `CTX 2251:irlReportNativeChartV28C(); | 2252:}`
+- `CTX6`: `CTX 2255:document.addEventListener(&quot;DOMContentLoaded&quot;,()=&gt;{if(!library()){const o=new MutationObserver(()=&gt;{if(lib`
+- `CTX7`: `NONE`
+- `CTX8`: `NONE`
 - `DB_WRITE`: `NO`
-- `DISK1`: `DISK 1039:/* REPORT_NATIVE_CANDLES_V29G */ | 1041:function irlReportNativeChartV28C(){ | 1042:// FREE_CHART_FRONTE`
-- `DISK2`: `DISK 2247:} | 2248:} | 2249:} | 2251:irlReportNativeChartV28C(); | 2252:} | 2255:document.addEventListener(&quot;DOMCon`
-- `DISK3`: `NONE`
-- `DISK4`: `NONE`
-- `DISK5`: `NONE`
-- `DISK6`: `NONE`
-- `DISKHITS`: `2`
-- `DISKSHA`: `526fa8d5b95a4cdc`
-- `HASHMATCH`: `YES`
-- `JSHTTP`: `200`
-- `LIVE1`: `LIVE 1039:/* REPORT_NATIVE_CANDLES_V29G */ | 1041:function irlReportNativeChartV28C(){ | 1042:// FREE_CHART_FRONTE`
-- `LIVE2`: `LIVE 2247:} | 2248:} | 2249:} | 2251:irlReportNativeChartV28C(); | 2252:} | 2255:document.addEventListener(&quot;DOMCon`
-- `LIVE3`: `NONE`
-- `LIVE4`: `NONE`
-- `LIVE5`: `NONE`
-- `LIVE6`: `NONE`
-- `LIVEHITS`: `2`
-- `LIVESHA`: `526fa8d5b95a4cdc`
 - `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
 - `PREFLIGHT_RERUN`: `NO`
