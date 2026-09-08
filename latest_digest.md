@@ -1,25 +1,23 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T06:20:22.148653+00:00`
-- Run ID: `20260908T062020Z`
-- Step: `READBENCHSTATOWNER`
+- Published UTC: `2026-09-08T06:21:30.224694+00:00`
+- Run ID: `20260908T062128Z`
+- Step: `READBENCHSTATWIRING`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `BENCHSTATOWNERREAD`
+- Verdict: `BENCHSTATWIRINGREAD`
 - Next gate: `PATCHBENCHSTAT`
 
 ## Facts
 
-- `API_ZERO_KEY`: `NOTFOUND`
+- `ASSIGN_TARGET`: `bench,bench_semantics`
 - `BENCHTEST_RERUN`: `NO`
-- `CALLER`: `indicator_library_ui_v2_stats`
-- `CALL_USE`: `ASSIGN`
+- `BENCH_ASSIGN`: `( bench, bench_semantics, )=_indicator_library_ui_v2_benchtest( con, tables, current_shas, )`
+- `BENCH_EXPR`: `&quot;benchtest_total&quot;=&gt;bench | &quot;benchtest_semantics&quot;=&gt;bench_semantics`
 - `DB_WRITE`: `NO`
-- `HELPER_CALLS`: `1`
-- `HELPER_FLAGS`: `REALISTIC,CURRENT,RUNS`
+- `HELPER_RETURN`: `UNKNOWN`
 - `MASTER_READ`: `YES`
 - `PREFLIGHT_RERUN`: `NO`
 - `RESTART`: `NO`
-- `RETURN_SHAPE`: `TUPLE`
 - `SOURCE_CHANGE`: `NO`

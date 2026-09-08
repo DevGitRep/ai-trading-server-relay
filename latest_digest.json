@@ -1,24 +1,22 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-08T06:20:22.148653+00:00",
-  "run_id": "20260908T062020Z",
-  "step": "READBENCHSTATOWNER",
+  "published_at_utc": "2026-09-08T06:21:30.224694+00:00",
+  "run_id": "20260908T062128Z",
+  "step": "READBENCHSTATWIRING",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "BENCHSTATOWNERREAD",
+  "verdict": "BENCHSTATWIRINGREAD",
   "next_gate": "PATCHBENCHSTAT",
   "facts": {
-    "API_ZERO_KEY": "NOTFOUND",
+    "ASSIGN_TARGET": "bench,bench_semantics",
     "BENCHTEST_RERUN": "NO",
-    "CALLER": "indicator_library_ui_v2_stats",
-    "CALL_USE": "ASSIGN",
+    "BENCH_ASSIGN": "( bench, bench_semantics, )=_indicator_library_ui_v2_benchtest( con, tables, current_shas, )",
+    "BENCH_EXPR": "&quot;benchtest_total&quot;=&gt;bench | &quot;benchtest_semantics&quot;=&gt;bench_semantics",
     "DB_WRITE": "NO",
-    "HELPER_CALLS": "1",
-    "HELPER_FLAGS": "REALISTIC,CURRENT,RUNS",
+    "HELPER_RETURN": "UNKNOWN",
     "MASTER_READ": "YES",
     "PREFLIGHT_RERUN": "NO",
     "RESTART": "NO",
-    "RETURN_SHAPE": "TUPLE",
     "SOURCE_CHANGE": "NO"
   }
 }
