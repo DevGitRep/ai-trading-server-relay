@@ -1,33 +1,72 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T22:02:41.345128+00:00`
-- Run ID: `20260908T220239Z`
-- Step: `PATCHCACHECARDINALITY`
+- Published UTC: `2026-09-08T22:04:48.223372+00:00`
+- Run ID: `20260908T220446Z`
+- Step: `READNORMALIZERCARDINALITY`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `CACHECARDINALITYPATCHED`
-- Next gate: `DRYRUNINCREMENTAL`
+- Verdict: `NORMALIZERCARDINALITYREAD`
+- Next gate: `PATCHNORMALIZERCARDINALITY`
 
 ## Facts
 
-- `BACKUP`: `YES`
 - `BENCHTEST_RERUN`: `NO`
 - `BRAIN_ADMISSION`: `NO`
 - `BRAIN_IQ_CHANGE`: `NO`
 - `CACHE_CHANGE`: `NO`
 - `DB_WRITE`: `NO`
-- `DYNAMIC_GUARD`: `YES`
-- `DYNAMIC_REPORT`: `YES`
-- `ERROR`: `NONE`
-- `HASH_CHANGED`: `YES`
+- `FACTS`: `24`
 - `INSTALL`: `NO`
-- `MASTER_CHANGE`: `YES`
+- `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
+- `NORM1`: `MASTERCACHEPATCH=YES`
+- `NORM10`: `LOOP line=583 target=cid iter=candidate_ids`
+- `NORM11`: `SCOPECTX=5`
+- `NORM12`: `SCOPE=527:) | 529:if args.scope == &quot;pilot&quot;: | 531:candidate_ids = selection[ | 532:&quot;pilot_candidate_ids&quot; | 533:]`
+- `NORM13`: `SCOPE=915:# | 917:if args.scope == &quot;pilot&quot;: | 919:if len(candidate_ids) != 3: | 920:raise RuntimeError( | 921:&quot;P`
+- `NORM14`: `SCOPE=955:&quot;scope&quot;: | 956:args.scope, | 958:&quot;candidate_count&quot;: | 959:len(candidate_ids), | 961:&quot;selected_role_cou`
+- `NORM15`: `SCOPE=1075:&quot;scope&quot;: | 1076:args.scope, | 1078:&quot;candidate_count&quot;: | 1079:len(candidate_ids), | 1081:&quot;selected_rol`
+- `NORM16`: `SCOPE=1139:) | 1141:if args.scope == &quot;pilot&quot;: | 1143:if not args.addendum_output: | 1144:raise RuntimeError( | 1`
+- `NORM17`: `REPORTHITS=2`
+- `NORM18`: `REPORT 958:&quot;candidate_count&quot;:`
+- `NORM19`: `REPORT 1078:&quot;candidate_count&quot;:`
+- `NORM2`: `LITERALS=1`
+- `NORM20`: `OTHERFIXED=0`
+- `NORM21`: `PATCHNEEDED=YES`
+- `NORM22`: `COMPUTERISK=NO`
+- `NORM23`: `PATCHABLE=YES`
+- `NORM24`: `ALREADYDYNAMIC=NO`
+- `NORM25`: `NONE`
+- `NORM26`: `NONE`
+- `NORM27`: `NONE`
+- `NORM28`: `NONE`
+- `NORM29`: `NONE`
+- `NORM3`: `LIT3=917:if args.scope == &quot;pilot&quot;: | 919:if len(candidate_ids) != 3: | 920:raise RuntimeError( | 921:&quot;PILOT_COUN`
+- `NORM30`: `NONE`
+- `NORM31`: `NONE`
+- `NORM32`: `NONE`
+- `NORM33`: `NONE`
+- `NORM34`: `NONE`
+- `NORM35`: `NONE`
+- `NORM36`: `NONE`
+- `NORM37`: `NONE`
+- `NORM38`: `NONE`
+- `NORM39`: `NONE`
+- `NORM4`: `GUARDS=4`
+- `NORM40`: `NONE`
+- `NORM41`: `NONE`
+- `NORM42`: `NONE`
+- `NORM43`: `NONE`
+- `NORM44`: `NONE`
+- `NORM5`: `GUARD=546:if len( | 547:set(candidate_ids) | 548:) != len(candidate_ids): | 550:raise RuntimeError( | 551:&quot;DUPLI`
+- `NORM6`: `GUARD=917:if args.scope == &quot;pilot&quot;: | 919:if len(candidate_ids) != 3: | 920:raise RuntimeError( | 921:&quot;PILOT_COU`
+- `NORM7`: `GUARD=956:args.scope, | 958:&quot;candidate_count&quot;: | 959:len(candidate_ids), | 961:&quot;selected_role_count&quot;: | 962:tota`
+- `NORM8`: `GUARD=1076:args.scope, | 1078:&quot;candidate_count&quot;: | 1079:len(candidate_ids), | 1081:&quot;selected_role_count&quot;: | 1082`
+- `NORM9`: `CANDIDATELOOPS=1`
 - `PREFLIGHT_RERUN`: `NO`
 - `PROSPECTIVE_ACTIVATION`: `NO`
 - `RESTART`: `NO`
 - `SCORE_PRODUCER_CHANGE`: `NO`
-- `SOURCE_CHANGE`: `YES`
+- `SOURCE_CHANGE`: `NO`
 - `STAGE3_RERUN`: `NO`
-- `SYNTAX`: `YES`
