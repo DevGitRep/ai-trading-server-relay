@@ -1,13 +1,13 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T19:56:39.753972+00:00`
-- Run ID: `20260908T195637Z`
-- Step: `ASSESSRESEARCHGATE`
+- Published UTC: `2026-09-08T20:00:30.101257+00:00`
+- Run ID: `20260908T200028Z`
+- Step: `READQUEUECONSUMERS`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `RESEARCHGATEREAD`
-- Next gate: `DECIDERESEARCHGATE`
+- Verdict: `QUEUECONSUMERSREAD`
+- Next gate: `PUBLISHCANONICALQUEUE`
 
 ## Facts
 
@@ -15,51 +15,48 @@
 - `BRAIN_ADMISSION`: `NO`
 - `BRAIN_IQ_CHANGE`: `NO`
 - `DB_WRITE`: `NO`
-- `FACTS`: `17`
-- `GATE1`: `MASTERFEED=YES`
-- `GATE10`: `CONTRACT candidate_admission_to_research_queue.minimum_completed_trades_when_available=100`
-- `GATE11`: `ADAPTERRC=0`
-- `GATE12`: `REJECTED=2`
-- `GATE13`: `REJECT ICL_LIB_45F65B21D5674C2C score=74.59517342100865 trades=8 exposure=96.55555555555556 conf=UNKNOWN`
-- `GATE14`: `REASONS ICL_LIB_45F65B21D5674C2C=[&#x27;COMPLETED_TRADES_LT_100&#x27;]`
-- `GATE15`: `SMOKETARGET_REJECTED=YES`
-- `GATE16`: `REJECT ICL_LIB_4B7C809FCA83500F score=8.487595661182382 trades=0 exposure=99.98306697108067 conf=UNKNOWN`
-- `GATE17`: `REASONS ICL_LIB_4B7C809FCA83500F=[&#x27;COMPLETED_TRADES_LT_100&#x27;]`
-- `GATE18`: `NONE`
-- `GATE19`: `NONE`
-- `GATE2`: `CONTRACTOK=YES`
-- `GATE20`: `NONE`
-- `GATE21`: `NONE`
-- `GATE22`: `NONE`
-- `GATE23`: `NONE`
-- `GATE24`: `NONE`
-- `GATE25`: `NONE`
-- `GATE26`: `NONE`
-- `GATE27`: `NONE`
-- `GATE28`: `NONE`
-- `GATE29`: `NONE`
-- `GATE3`: `TRADEGATEHITS=9`
-- `GATE30`: `NONE`
-- `GATE31`: `NONE`
-- `GATE32`: `NONE`
-- `GATE33`: `NONE`
-- `GATE34`: `NONE`
-- `GATE35`: `NONE`
-- `GATE36`: `NONE`
-- `GATE37`: `NONE`
-- `GATE38`: `NONE`
-- `GATE4`: `GATE 299:&quot;trade_count&quot;: | 300:db_row.get(&quot;primary_trade_count&quot;), | 302:&quot;completed_trades&quot;: | 303:db_row.get(&quot;pri`
-- `GATE5`: `GATE 449:&quot;trade_count&quot; | 517:and trades &lt; 100 | 521:&quot;COMPLETED_TRADES_LT_100&quot; | 634:&quot;completed_trades&quot;:`
-- `GATE6`: `GATE 1138:f&quot;|trades={row[&#x27;benchtest&#x27;][&#x27;completed_trades&#x27;]}&quot;`
-- `GATE7`: `CONTRACTHITS=3`
-- `GATE8`: `CONTRACT brain_value_principle={&quot;chronological_validation_required&quot;: true, &quot;incremental_predictive_value_require`
-- `GATE9`: `CONTRACT candidate_admission_to_research_queue={&quot;exclude_states&quot;: [&quot;TECHNICAL_FAILURE&quot;, &quot;NO_OBJECTIVE_DIRECTION&quot;`
+- `FACTS`: `12`
 - `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
 - `PREFLIGHT_RERUN`: `NO`
 - `PROSPECTIVE_ACTIVATION`: `NO`
+- `QUEUE1`: `MASTERFEED=YES`
+- `QUEUE10`: `ACTIVEPROCS=0`
+- `QUEUE11`: `SYSTEMDREFS=1`
+- `QUEUE12`: `UNIT indicator-first-seen-v1.service`
+- `QUEUE13`: `NONE`
+- `QUEUE14`: `NONE`
+- `QUEUE15`: `NONE`
+- `QUEUE16`: `NONE`
+- `QUEUE17`: `NONE`
+- `QUEUE18`: `NONE`
+- `QUEUE19`: `NONE`
+- `QUEUE2`: `CURRENTLATEST=533`
+- `QUEUE20`: `NONE`
+- `QUEUE21`: `NONE`
+- `QUEUE22`: `NONE`
+- `QUEUE23`: `NONE`
+- `QUEUE24`: `NONE`
+- `QUEUE25`: `NONE`
+- `QUEUE26`: `NONE`
+- `QUEUE27`: `NONE`
+- `QUEUE28`: `NONE`
+- `QUEUE29`: `NONE`
+- `QUEUE3`: `CODEREFS=2`
+- `QUEUE30`: `NONE`
+- `QUEUE31`: `NONE`
+- `QUEUE32`: `NONE`
+- `QUEUE33`: `NONE`
+- `QUEUE34`: `NONE`
+- `QUEUE35`: `NONE`
+- `QUEUE36`: `NONE`
+- `QUEUE4`: `REF user_data/indicator_brain/research_library_intelligence/v1/native_screening_v1/indicator_native_screening_v1`
+- `QUEUE5`: `CTX 48:&quot;native_table&quot;: &quot;resin_native_outputs&quot;, | 49:&quot;stage1_adapter&quot;: &quot;PATH&quot;, | 50:&quot;stage1_adapter_sha256&quot;: &quot;356`
+- `QUEUE6`: `REF user_data/indicator_brain/research_library_intelligence/v1/incumbent_alignment_v1/indicator_incumbent_alignm`
+- `QUEUE7`: `CTX 60:}, | 61:&quot;next_gate&quot;: &quot;FULL_YEAR_CHRONOLOGICAL_INCREMENTAL_BRAIN_VALUE_DISCOVERY&quot;, | 62:&quot;parent_stage1&quot;: {`
+- `QUEUE8`: `USE user_data/indicator_brain/research_library_intelligence/v1/native_screening_v1/indicator_native_screening_v1`
+- `QUEUE9`: `USE user_data/indicator_brain/research_library_intelligence/v1/incumbent_alignment_v1/indicator_incumbent_alignm`
+- `QUEUE_CHANGE`: `NO`
 - `RESTART`: `NO`
 - `SCORE_PRODUCER_CHANGE`: `NO`
 - `SOURCE_CHANGE`: `NO`
-- `TEMP_CLEANUP`: `YES`
-- `TEMP_WRITE`: `YES`
