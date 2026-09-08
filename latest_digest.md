@@ -1,13 +1,13 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T20:47:54.331210+00:00`
-- Run ID: `20260908T204658Z`
-- Step: `RESOLVEPREFSTAR`
+- Published UTC: `2026-09-08T20:49:55.288932+00:00`
+- Run ID: `20260908T204953Z`
+- Step: `RECOVERFROZENPREFLIGHT`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `ALIGNPREFSTARREAD`
-- Next gate: `REVIEWPREFLIGHTSOURCE`
+- Verdict: `FROZENPREFLIGHTNOTRESOLVED`
+- Next gate: `DECIDEPREFLIGHTRESTORE`
 
 ## Facts
 
@@ -15,7 +15,7 @@
 - `BRAIN_ADMISSION`: `NO`
 - `BRAIN_IQ_CHANGE`: `NO`
 - `DB_WRITE`: `NO`
-- `FACTS`: `5`
+- `FACTS`: `15`
 - `INSTALL`: `NO`
 - `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
@@ -23,44 +23,38 @@
 - `PREFLIGHT_RERUN`: `NO`
 - `PROSPECTIVE_ACTIVATION`: `NO`
 - `QUEUE_CHANGE`: `NO`
+- `RECOVER1`: `MASTERNATIVE=YES`
+- `RECOVER10`: `TEXT testpine-preflight.bak_remove_pinets_contract_v2_20260831T055424Z parent=tools`
+- `RECOVER11`: `PYCBOTH=1`
+- `RECOVER12`: `PYC testpine-preflightcpython-312.pyc parent=__pycache__`
+- `RECOVER13`: `PREFREFS=1`
+- `RECOVER14`: `SOURCECANDIDATES=17`
+- `RECOVER15`: `PYCCANDIDATES=1`
+- `RECOVER16`: `NONE`
+- `RECOVER17`: `NONE`
+- `RECOVER18`: `NONE`
+- `RECOVER19`: `NONE`
+- `RECOVER2`: `TEXTBOTH=17`
+- `RECOVER20`: `NONE`
+- `RECOVER21`: `NONE`
+- `RECOVER22`: `NONE`
+- `RECOVER23`: `NONE`
+- `RECOVER24`: `NONE`
+- `RECOVER25`: `NONE`
+- `RECOVER26`: `NONE`
+- `RECOVER27`: `NONE`
+- `RECOVER28`: `NONE`
+- `RECOVER29`: `NONE`
+- `RECOVER3`: `TEXT indicator_incumbent_alignment_v1.py parent=incumbent_alignment_v1`
+- `RECOVER30`: `NONE`
+- `RECOVER31`: `NONE`
+- `RECOVER32`: `NONE`
+- `RECOVER4`: `TEXT testpine-preflight parent=test_your_script_exact_preflight_v9_backup_20260903T195308`
+- `RECOVER5`: `TEXT testpine-preflight.before parent=resin_native_viz_20260831T084650Z`
+- `RECOVER6`: `TEXT testpine-preflight.before parent=native_resin_artifacts_20260831T084105Z`
+- `RECOVER7`: `TEXT testpine-preflight.before parent=fix_resin_artifact_json_shadow_20260831T091256Z`
+- `RECOVER8`: `TEXT testpine-preflight.bak_unified_resin_20260831T065514Z parent=tools`
+- `RECOVER9`: `TEXT testpine-preflight.bak_official_resin_final_20260831T071517Z parent=tools`
 - `RESTART`: `NO`
 - `SCORE_PRODUCER_CHANGE`: `NO`
 - `SOURCE_CHANGE`: `NO`
-- `STAR1`: `MASTERNATIVE=YES`
-- `STAR10`: `NONE`
-- `STAR11`: `NONE`
-- `STAR12`: `NONE`
-- `STAR13`: `NONE`
-- `STAR14`: `NONE`
-- `STAR15`: `NONE`
-- `STAR16`: `NONE`
-- `STAR17`: `NONE`
-- `STAR18`: `NONE`
-- `STAR19`: `NONE`
-- `STAR2`: `DIRECTCANDIDATES=19`
-- `STAR20`: `NONE`
-- `STAR21`: `NONE`
-- `STAR22`: `NONE`
-- `STAR23`: `NONE`
-- `STAR24`: `NONE`
-- `STAR25`: `NONE`
-- `STAR26`: `NONE`
-- `STAR27`: `NONE`
-- `STAR28`: `NONE`
-- `STAR29`: `NONE`
-- `STAR3`: `STARFULLMATCH=0`
-- `STAR30`: `NONE`
-- `STAR31`: `NONE`
-- `STAR32`: `NONE`
-- `STAR33`: `NONE`
-- `STAR34`: `NONE`
-- `STAR35`: `NONE`
-- `STAR36`: `NONE`
-- `STAR37`: `NONE`
-- `STAR38`: `NONE`
-- `STAR4`: `RELEVANTSTARS=0`
-- `STAR5`: `PREFRESOLVED=NO`
-- `STAR6`: `NONE`
-- `STAR7`: `NONE`
-- `STAR8`: `NONE`
-- `STAR9`: `NONE`
