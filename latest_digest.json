@@ -1,18 +1,23 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-08T06:08:28.016485+00:00",
-  "run_id": "20260908T060825Z",
-  "step": "READBENCHCLI",
+  "published_at_utc": "2026-09-08T06:12:12.076184+00:00",
+  "run_id": "20260908T061210Z",
+  "step": "CONFIRMSTANDARD5",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "BENCHCLIREAD",
-  "next_gate": "STANDARD5COMMAND",
+  "verdict": "STANDARD5CONFIRMED",
+  "next_gate": "RUNSTANDARD5",
   "facts": {
+    "ARG1": "COUNT",
+    "ARG2": "MODE",
     "BENCHTEST_RERUN": "NO",
     "DB_WRITE": "NO",
     "MASTER_READ": "YES",
     "PREFLIGHT_RERUN": "NO",
+    "RECENT": "YES",
     "RESTART": "NO",
-    "SOURCE_CHANGE": "NO"
+    "SELECT_DYNAMIC": "YES",
+    "SOURCE_CHANGE": "NO",
+    "STANDARD5_CMD": "user_data/orderflow_dashboard/tools/benchtest 5 recent"
   }
 }
