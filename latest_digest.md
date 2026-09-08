@@ -1,35 +1,33 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T06:23:41.558620+00:00`
-- Run ID: `20260908T062339Z`
-- Step: `FIXBENCHSTAT`
+- Published UTC: `2026-09-08T06:55:16.205825+00:00`
+- Run ID: `20260908T065514Z`
+- Step: `DIAGREPORTCANONICAL`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `BENCHSTATSFIXED`
-- Next gate: `NORMALOPERATIONS`
+- Verdict: `REPORTCANONICALDIAGREAD`
+- Next gate: `RESTOREREPORTANDCHART`
 
 ## Facts
 
-- `BACKUP`: `PASS`
 - `BENCHTEST_RERUN`: `NO`
-- `CANONICAL`: `16`
-- `COMPILE`: `PASS`
+- `CHARTFUNCS`: `1`
 - `DB_WRITE`: `NO`
-- `FINALQUICK`: `ok`
+- `ERRCODE`: `UNKNOWN`
+- `ERRTYPE`: `UNKNOWN`
+- `HTTP`: `500`
 - `LIBRARY_CHANGE`: `NO`
-- `LIVEBENCH`: `16`
-- `MASTERSTATE`: `PATCHED`
-- `MASTERUPDATED`: `YES`
-- `MASTER_CHANGE`: `YES`
 - `MASTER_READ`: `YES`
-- `PATCHSTATE`: `PATCHED`
 - `PREFLIGHT_RERUN`: `NO`
 - `QUICK`: `ok`
-- `READYTRY`: `4`
-- `RESTART`: `YES`
-- `ROLLBACK`: `NO`
-- `ROUTEFOUND`: `YES`
+- `REPORTFUNCS`: `8`
+- `RESTART`: `NO`
+- `ROUTEOWNER`: `backend:indicator_library_ui_v2_download:/indicator-lab/strategy/&lt;script_id_part&gt;/download.pine | lab:indicato`
+- `ROUTES`: `4`
+- `SCORED`: `16`
 - `SCORE_PRODUCER_CHANGE`: `NO`
-- `SERVICE`: `active`
-- `SOURCE_CHANGE`: `YES`
+- `SOURCE_CHANGE`: `NO`
+- `TARGETMATCH`: `candidates:notes;pipeline_indicators:legacy_snapshot_json`
+- `TOKENS`: `LOADREPORT:1,BESTMETRICS:2,PIPEBENCH:5,PIPEVIEW:1,BULKMETRICS:2`
+- `TRACEFLAGS`: `LOADREPORT`
