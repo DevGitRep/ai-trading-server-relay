@@ -1,13 +1,13 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T20:39:17.488764+00:00`
-- Run ID: `20260908T203914Z`
-- Step: `RESOLVEALIGNPREFLIGHT`
+- Published UTC: `2026-09-08T20:47:54.331210+00:00`
+- Run ID: `20260908T204658Z`
+- Step: `RESOLVEPREFSTAR`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `ALIGNPREFLIGHTREAD`
-- Next gate: `REVIEWPREFLIGHTCANDIDATES`
+- Verdict: `ALIGNPREFSTARREAD`
+- Next gate: `REVIEWPREFLIGHTSOURCE`
 
 ## Facts
 
@@ -15,56 +15,52 @@
 - `BRAIN_ADMISSION`: `NO`
 - `BRAIN_IQ_CHANGE`: `NO`
 - `DB_WRITE`: `NO`
-- `FACTS`: `20`
+- `FACTS`: `5`
 - `INSTALL`: `NO`
 - `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
 - `NATIVE_CHANGE`: `NO`
-- `PREF1`: `MASTERNATIVE=YES`
-- `PREF10`: `VIA=def:load_candles`
-- `PREF11`: `API baseline.before.py match=1/2 parent=stable_signal_role_classification_20260829T222202Z`
-- `PREF12`: `API pine_baseline_batch_200.py match=1/2 parent=20260830T061353Z`
-- `PREF13`: `API pine_baseline_batch_200.py match=1/2 parent=20260830T141911Z`
-- `PREF14`: `API pine_baseline_batch_200.py match=1/2 parent=20260830T045639Z`
-- `PREF15`: `API pine_baseline_batch_200.py match=1/2 parent=20260830T195559Z`
-- `PREF16`: `API pine_baseline_batch_200.py match=1/2 parent=20260830T142718Z`
-- `PREF17`: `API pine_baseline_batch_200.py match=1/2 parent=20260830T055948Z`
-- `PREF18`: `PREFREFS=1`
-- `PREF19`: `REF indicator_incumbent_alignment_v1.py parent=incumbent_alignment_v1 via=_stage2b_preflight,find_dataset()`
-- `PREF2`: `PREFLINE=770`
-- `PREF20`: `PREFRESOLVED=NO`
-- `PREF21`: `NONE`
-- `PREF22`: `NONE`
-- `PREF23`: `NONE`
-- `PREF24`: `NONE`
-- `PREF25`: `NONE`
-- `PREF26`: `NONE`
-- `PREF27`: `NONE`
-- `PREF28`: `NONE`
-- `PREF29`: `NONE`
-- `PREF3`: `MODATTRS=find_dataset,load_candles`
-- `PREF30`: `NONE`
-- `PREF31`: `NONE`
-- `PREF32`: `NONE`
-- `PREF33`: `NONE`
-- `PREF34`: `NONE`
-- `PREF35`: `NONE`
-- `PREF36`: `NONE`
-- `PREF37`: `NONE`
-- `PREF38`: `NONE`
-- `PREF39`: `NONE`
-- `PREF4`: `MODCALLS=find_dataset,load_candles`
-- `PREF40`: `NONE`
-- `PREF41`: `NONE`
-- `PREF42`: `NONE`
-- `PREF5`: `LOAD 777:.SourceFileLoader( | 785:.spec_from_loader( | 793:.module_from_spec( | 798:loader.exec_module( | 802:da`
-- `PREF6`: `LOAD 803:mod.find_dataset() | 806:candles = ( | 807:mod.load_candles() | 811:dataset, | 812:candles,`
-- `PREF7`: `APICANDIDATES=19`
-- `PREF8`: `FULLAPIMATCH=0`
-- `PREF9`: `API baseline.before.py match=1/2 parent=exact_role_wrappers_20260829T223114Z`
 - `PREFLIGHT_RERUN`: `NO`
 - `PROSPECTIVE_ACTIVATION`: `NO`
 - `QUEUE_CHANGE`: `NO`
 - `RESTART`: `NO`
 - `SCORE_PRODUCER_CHANGE`: `NO`
 - `SOURCE_CHANGE`: `NO`
+- `STAR1`: `MASTERNATIVE=YES`
+- `STAR10`: `NONE`
+- `STAR11`: `NONE`
+- `STAR12`: `NONE`
+- `STAR13`: `NONE`
+- `STAR14`: `NONE`
+- `STAR15`: `NONE`
+- `STAR16`: `NONE`
+- `STAR17`: `NONE`
+- `STAR18`: `NONE`
+- `STAR19`: `NONE`
+- `STAR2`: `DIRECTCANDIDATES=19`
+- `STAR20`: `NONE`
+- `STAR21`: `NONE`
+- `STAR22`: `NONE`
+- `STAR23`: `NONE`
+- `STAR24`: `NONE`
+- `STAR25`: `NONE`
+- `STAR26`: `NONE`
+- `STAR27`: `NONE`
+- `STAR28`: `NONE`
+- `STAR29`: `NONE`
+- `STAR3`: `STARFULLMATCH=0`
+- `STAR30`: `NONE`
+- `STAR31`: `NONE`
+- `STAR32`: `NONE`
+- `STAR33`: `NONE`
+- `STAR34`: `NONE`
+- `STAR35`: `NONE`
+- `STAR36`: `NONE`
+- `STAR37`: `NONE`
+- `STAR38`: `NONE`
+- `STAR4`: `RELEVANTSTARS=0`
+- `STAR5`: `PREFRESOLVED=NO`
+- `STAR6`: `NONE`
+- `STAR7`: `NONE`
+- `STAR8`: `NONE`
+- `STAR9`: `NONE`
