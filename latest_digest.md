@@ -1,48 +1,34 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T14:29:06.960642+00:00`
-- Run ID: `20260908T142904Z`
-- Step: `READFREEPROFILEDETAILS`
+- Published UTC: `2026-09-08T14:31:20.268029+00:00`
+- Run ID: `20260908T143118Z`
+- Step: `READFREEPROFILEMAP`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `FREEPROFILEDETAILSREAD`
+- Verdict: `FREEPROFILEMAPREAD`
 - Next gate: `PATCHFREECHARTPROFILE`
 
 ## Facts
 
 - `BENCHTEST_RERUN`: `NO`
-- `CODE1`: `CHART 2068:_run[ | 2069:&quot;primary_trade_count&quot; | 2070:] | 2071:or 0`
-- `CODE10`: `CHART 2112:or _display_count &lt;= 0 | 2113:or _source_count % _display_count != 0 | 2114:): | 2115:return _jsonify(`
-- `CODE11`: `CHART 2116:{ | 2117:&quot;ok&quot;: False, | 2118:&quot;error&quot;: &quot;Price candle data unavailable&quot;, | 2119:}`
-- `CODE12`: `CHART 2128:_display_count | 2129:!= len(_candles) | 2130:): | 2131:return _jsonify(`
-- `CODE13`: `CHART 2132:{ | 2133:&quot;ok&quot;: False, | 2134:&quot;error&quot;: &quot;Display candle count mismatch&quot;, | 2135:}`
-- `CODE14`: `CHART 2140:return None | 2142:try: | 2143:bar_index = int(`
-- `CODE15`: `CHART 2144:bar | 2145:) | 2146:except Exception: | 2147:return None`
-- `CODE16`: `CHART 2152:): | 2153:return None | 2155:display_index = (`
-- `CODE17`: `CHART 2160:if ( | 2161:display_index &lt; 0 | 2162:or display_index &gt;= len( | 2163:_candles`
-- `CODE18`: `CHART 2164:) | 2165:): | 2166:return None`
-- `CODE19`: `CHART 2168:candle = _candles[ | 2169:display_index | 2170:]`
-- `CODE2`: `CHART 2072:) | 2074:if len(_trades) != _expected: | 2075:return _jsonify(`
-- `CODE20`: `CHART 2172:if ( | 2173:not isinstance( | 2174:candle, | 2175:list,`
-- `CODE21`: `CHART 2176:) | 2177:or not candle | 2178:): | 2179:return None`
-- `CODE22`: `CHART 2181:return candle[0] | 2183:_markers = []`
-- `CODE23`: `CHART 2185:for trade in _trades: | 2186:direction = str( | 2187:trade.get(`
-- `CODE24`: `CHART 2193:entry_time = _bar_time( | 2194:trade.get( | 2195:&quot;entry_bar&quot;`
-- `CODE25`: `CHART 2200:trade.get( | 2201:&quot;exit_bar&quot; | 2202:) | 2203:)`
-- `CODE26`: `CHART 2216:if entry_time is not None: | 2217:_markers.append([ | 2218:entry_time, | 2219:trade.get(&quot;entry_price&quot;),`
-- `CODE27`: `CHART 2224:if exit_time is not None: | 2225:_markers.append([ | 2226:exit_time, | 2227:trade.get(&quot;exit_price&quot;),`
-- `CODE28`: `CHART 2232:_markers.sort( | 2233:key=lambda marker: int(marker[0]) | 2234:)`
-- `CODE29`: `CHART 2236:return _jsonify( | 2237:{ | 2238:&quot;ok&quot;: True, | 2239:&quot;mode&quot;: &quot;candles&quot;,`
-- `CODE3`: `CHART 2076:{ | 2077:&quot;ok&quot;: False, | 2078:&quot;error&quot;: &quot;PRIMARY trade artifact mismatch&quot;, | 2079:}`
-- `CODE30`: `CHART 2240:&quot;pair&quot;: ( | 2241:_candle_payload.get( | 2242:&quot;pair&quot; | 2243:)`
-- `CODE4`: `CHART 2080:), 409 | 2082:_candle_payload = _json.loads( | 2083:_cache.read_text(`
-- `CODE5`: `CHART 2088:_candles = ( | 2089:_candle_payload.get( | 2090:&quot;candles&quot; | 2091:)`
-- `CODE6`: `CHART 2096:_candle_payload.get( | 2097:&quot;source_candle_count&quot; | 2098:) | 2099:or 0`
-- `CODE7`: `CHART 2100:) | 2102:_display_count = int( | 2103:_candle_payload.get(`
-- `CODE8`: `CHART 2104:&quot;display_candle_count&quot; | 2105:) | 2106:or len(_candles) | 2107:)`
-- `CODE9`: `CHART 2109:if ( | 2110:not _candles | 2111:or _source_count &lt;= 0`
 - `DB_WRITE`: `NO`
+- `MAP1`: `CHART 2013:return _jsonify( | 2014:{ | 2015:&quot;ok&quot;: False,`
+- `MAP10`: `CHART 2260:&quot;candles&quot;: _candles, | 2261:&quot;markers&quot;: _markers, | 2262:&quot;primary_trade_count&quot;: len( | 2263:_trades`
+- `MAP11`: `CHART 2278:except Exception: | 2279:return _jsonify( | 2280:{ | 2281:&quot;ok&quot;: False,`
+- `MAP12`: `ROUTE 2308:abort, | 2309:render_template, | 2310:)`
+- `MAP13`: `ROUTE 2373:requested_tier = str( | 2374:_indicator_lab_requested_tier() | 2375:or &#x27;FREE&#x27;`
+- `MAP14`: `ROUTE 2373:requested_tier = str( | 2374:_indicator_lab_requested_tier() | 2375:or &#x27;FREE&#x27; | 2376:).upper()`
+- `MAP15`: `ROUTE 2379:preview_authorized | 2380:and requested_tier | 2381:in { | 2382:&#x27;FREE&#x27;,`
+- `MAP16`: `ROUTE 2386:): | 2387:effective_tier = requested_tier | 2388:else: | 2389:effective_tier = &#x27;FREE&#x27;`
+- `MAP2`: `CHART 2074:if len(_trades) != _expected: | 2075:return _jsonify( | 2076:{ | 2077:&quot;ok&quot;: False,`
+- `MAP3`: `CHART 2114:): | 2115:return _jsonify( | 2116:{ | 2117:&quot;ok&quot;: False,`
+- `MAP4`: `CHART 2130:): | 2131:return _jsonify( | 2132:{ | 2133:&quot;ok&quot;: False,`
+- `MAP5`: `CHART 2183:_markers = [] | 2185:for trade in _trades:`
+- `MAP6`: `CHART 2216:if entry_time is not None: | 2217:_markers.append([ | 2218:entry_time, | 2219:trade.get(&quot;entry_price&quot;`
+- `MAP7`: `CHART 2224:if exit_time is not None: | 2225:_markers.append([ | 2226:exit_time, | 2227:trade.get(&quot;exit_price&quot;),`
+- `MAP8`: `CHART 2232:_markers.sort( | 2233:key=lambda marker: int(marker[0]) | 2234:)`
+- `MAP9`: `CHART 2236:return _jsonify( | 2237:{ | 2238:&quot;ok&quot;: True,`
 - `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
 - `PREFLIGHT_RERUN`: `NO`
