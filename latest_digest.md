@@ -1,33 +1,33 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T08:19:24.723946+00:00`
-- Run ID: `20260908T081922Z`
-- Step: `READCHARTPAYLOAD2`
+- Published UTC: `2026-09-08T08:22:05.899718+00:00`
+- Run ID: `20260908T082203Z`
+- Step: `READCHARTARTIFACTS`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `CHARTPAYLOAD2READ`
+- Verdict: `CHARTARTIFACTSREAD`
 - Next gate: `PATCHREPORTV2`
 
 ## Facts
 
 - `BENCHTEST_RERUN`: `NO`
-- `COLUMNS`: `benchtest_run_id,indicator_id,version_id,preflight_run_id,benchtest_contract,score_method,status,primary_benchmark_mode,primary_profit_factor,primary_net_return_pct,prima`
+- `CANON_LINK`: `benchtest_run_id,version_id,preflight_run_id,created_at`
+- `CANON_TRADES`: `8`
 - `DB_WRITE`: `NO`
-- `ENDTEST`: `D2:primary,secondary`
-- `EVIDENCE`: `D4:evidence,mode,primary,secondary`
-- `FIRST_KEYS`: `NONE`
-- `FIRST_PATH`: `NONE`
 - `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
-- `OLD_USE`: `trade_rows=con.execute( &quot;&quot;&quot; SELECT trade_no, candidate_id, raw_json FROM benchtest_trades_v1 WHERE r | resin=con.execute( &quot;&quot;&quot; SELECT plots_json, captured_at FRO`
-- `PLOTS`: `NONE`
+- `PLOT_LINK`: `captured_at`
+- `PLOT_MATCH`: `1`
+- `PLOT_SHAPE`: `L:6`
+- `PLOT_TABLE`: `resin_native_outputs`
 - `PREFLIGHT_RERUN`: `NO`
 - `QUICK`: `ok`
-- `RAW`: `NONE`
 - `RESTART`: `NO`
 - `SCORE_PRODUCER_CHANGE`: `NO`
 - `SOURCE_CHANGE`: `NO`
-- `TRADES`: `8`
-- `TRADE_PATHS`: `0`
-- `TRADE_RECORDS`: `0`
+- `TRADE_LINK`: `run_id`
+- `TRADE_PUBLIC`: `0`
+- `TRADE_SHAPE`: `entry_bar,entry_price,entry_signal_bar,exit_bar,exit_price,exit_signal_bar`
+- `TRADE_TABLE`: `YES`
+- `TRADE_TARGET`: `21`
