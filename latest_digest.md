@@ -1,52 +1,51 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T16:12:46.833069+00:00`
-- Run ID: `20260908T161244Z`
-- Step: `READBRAINBENCHFLOW`
+- Published UTC: `2026-09-08T16:14:38.086125+00:00`
+- Run ID: `20260908T161435Z`
+- Step: `TRACEBRAININPUTS`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `BRAINBENCHFLOWREAD`
-- Next gate: `TRACEBRAININPUTS`
+- Verdict: `BRAININPUTSTRACED`
+- Next gate: `REVIEWBRAININPUTQUALITY`
 
 ## Facts
 
 - `BENCHTEST_RERUN`: `NO`
+- `CANDIDATEFILES`: `54`
 - `DB_WRITE`: `NO`
-- `FLOW1`: `76:`PRIVATEPATH | 78:Indicator Library UI: | 80:`PRIVATEPATH`
-- `FLOW10`: `332:Production scoring contract: | 334:`BENCH_SCORE_V2` | 336:The method is frozen unless an explicit scoring redesign`
-- `FLOW11`: `356:Therefore a result with: | 358:`trade_count = 0` | 360:can legitimately have a numeric Realistic Score when a posi`
-- `FLOW12`: `358:`trade_count = 0` | 360:can legitimately have a numeric Realistic Score when a position remains | 361:open/exposed`
-- `FLOW13`: `363:Genuinely no PRIMARY activity means: | 365:`realistic_score = NULL / N/A` | 367:## Confidence`
-- `FLOW14`: `378:## Hard scoring invariant | 380:**Realistic Score is the PRIMARY `UNIVERSAL_SIGNAL_FLIP_V2` score.** | 382:Indicat`
-- `FLOW15`: `385:SECONDARY must never replace, backfill, fallback into or cross-rank as the | 386:PRIMARY Realistic Score. | 388:--`
-- `FLOW16`: `409:- `select_candidates` reads canonical pipeline state; | 410:- old percentile score recomputation is absent; | 411:`
-- `FLOW17`: `459:- total: `16` | 461:Realistic Score sort order: | 463:`descending``
-- `FLOW18`: `485:A scored card exposes: | 487:1. Realistic Score | 488:2. Profit Factor | 489:3. Return | 490:4. Max Drawdown`
-- `FLOW19`: `494:Canonical API keys: | 496:- `realistic_score` | 497:- `profit_factor` | 498:- `net_return_pct` | 499:- `max_drawdo`
-- `FLOW2`: `151:- `pipeline_preflight_runs`: `0` rows | 152:- `indicator_pipeline_current`: `11775` rows | 153:- current rows with`
-- `FLOW20`: `499:- `max_drawdown_pct` | 500:- `win_rate_pct` | 501:- `trade_count` | 503:These six are PRIMARY metrics.`
-- `FLOW21`: `505:## Entitlement | 507:Realistic Score display/sort is intended for entitled PRO / | 508:INTERNAL_ADMIN use. | 510:I`
-- `FLOW22`: `514:## Zero-closed-trade behaviour | 516:A card can have zero closed trades and still have a valid Realistic Score | 5`
-- `FLOW23`: `525:It must not: | 527:- calculate its own competing Realistic Score; | 528:- infer pipeline identity by display name;`
-- `FLOW24`: `541:- BenchTest execution; | 542:- PRIMARY and SECONDARY result construction; | 543:- BENCH_SCORE_V2 persistence; | 54`
-- `FLOW25`: `553:- backend BenchTest/Library statistics integration. | 555:## Indicator Library | 557:`PRIVATEPATH`
-- `FLOW26`: `562:- canonical metric overlay; | 563:- entitlement handling; | 564:- Realistic Score display and sorting. | 566:## Na`
-- `FLOW27`: `604:changed. | 605:12. Preserve PRIMARY/SECONDARY separation. | 606:13. Do not redesign BENCH_SCORE_V2 as part of unre`
-- `FLOW28`: `646:## Indicator Lab report | 647:- Report route: `/indicator-lab/strategy/&lt;candidate_id&gt;`. | 648:- `12-MONTH BENCHTES`
-- `FLOW29`: `663:- `benchtest_results_v2` is not used and must remain absent. | 665:## Indicator Library homepage metrics | 666:- H`
-- `FLOW3`: `196:- `version_id` | 197:- `is_current` | 198:- `realistic_score` | 199:- `primary_profit_factor` | 200:- `primary_net`
-- `FLOW30`: `670:- `Flip Win Rate` is PRIMARY `UNIVERSAL_SIGNAL_FLIP_V2` `win_rate_pct`. | 671:- `1:1.5 Win Rate` is SECONDARY `STA`
-- `FLOW4`: `201:- `primary_max_drawdown_pct` | 202:- `primary_win_rate_pct` | 203:- `primary_trade_count` | 204:- complete raw res`
-- `FLOW5`: `231:It is not authoritative for indicator-version ownership, Preflight runs, | 232:BenchTest history or Realistic Scor`
-- `FLOW6`: `283:- no script-defined stop-loss or take-profit in PRIMARY; | 284:- an open final position is marked to market; | 285`
-- `FLOW7`: `303:- if stop and target both hit in one candle: | 304:`STOP_FIRST`; | 305:- opposite signal does not close the open t`
-- `FLOW8`: `321:- native stops and targets where implemented; | 322:- native closed-trade ledger; | 323:- final open position mark`
-- `FLOW9`: `328:--- | 330:# 7. BENCH_SCORE_V2 | 332:Production scoring contract:`
-- `HITS`: `63`
 - `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
 - `PREFLIGHT_RERUN`: `NO`
 - `RESTART`: `NO`
+- `RISKHITS`: `35`
 - `SCORE_PRODUCER_CHANGE`: `NO`
 - `SOURCE_CHANGE`: `NO`
+- `TRACE1`: `MASTERPRIMARY 283:- no script-defined stop-loss or take-profit in PRIMARY; | 284:- an open final position is marked`
+- `TRACE10`: `FILE data/manual_support/report_candles_pager_v29g_backup_20260904T123131Z/indicator_lab_v1.py score=4 108:brain_val`
+- `TRACE11`: `FILE data/manual_support/report_chart_exact_run_v28e_backup_20260904T111446Z/indicator_lab_v1.py score=4 108:brain_v`
+- `TRACE12`: `RISK indicator_lab_v1.py:2023:FROM benchtest_trades_v1`
+- `TRACE13`: `RISK backend.py:14452:&quot;closed_trades&quot;: 0,`
+- `TRACE14`: `RISK backend.py:14597:&quot;closed_trades&quot;:`
+- `TRACE15`: `RISK data/manual_support/benchtest_v2_score_recent100_v31m_backup_20260905T131100Z/benchtest.v31m.py:433:CREATE TABL`
+- `TRACE16`: `RISK data/manual_support/benchtest_v2_score_recent100_v31m_backup_20260905T131100Z/benchtest.v31m.py:447:ON benchtes`
+- `TRACE17`: `RISK data/manual_support/benchtest_v2_score_recent100_v31m_backup_20260905T131100Z/benchtest.v31m.py:855:INSERT INTO`
+- `TRACE18`: `RISK data/manual_support/benchtest_v2_score_recent100_v31m_backup_20260905T131100Z/benchtest.v31m.py:2772:&quot;exit_sign`
+- `TRACE19`: `RISK data/manual_support/benchtest_v2_score_recent100_v31m_backup_20260905T131100Z/benchtest.v31m.py:3972:INSERT INT`
+- `TRACE2`: `MASTERSCORE 330:# 7. BENCH_SCORE_V2 | 334:`BENCH_SCORE_V2` | 338:PRIMARY weights: | 351:PRIMARY is considered active`
+- `TRACE20`: `NONE`
+- `TRACE21`: `NONE`
+- `TRACE22`: `NONE`
+- `TRACE23`: `NONE`
+- `TRACE24`: `NONE`
+- `TRACE25`: `NONE`
+- `TRACE26`: `NONE`
+- `TRACE27`: `NONE`
+- `TRACE28`: `NONE`
+- `TRACE3`: `MASTERLIBRARY 514:## Zero-closed-trade behaviour | 516:A card can have zero closed trades and still have a valid Rea`
+- `TRACE4`: `FILE indicator_lab_v1.py score=7 108:brain_value_status TEXT NOT NULL DEFAULT &#x27;NOT_TESTED&#x27;, | 143:brain_value_score`
+- `TRACE5`: `FILE indicator_lab_library_ui_v1.py score=6 147:&quot;realistic_score&quot; | 200:realistic_score = _num( | 201:row[&quot;realistic`
+- `TRACE6`: `FILE backend.py score=4 9481:# - Indicator brain | 9482:# - Market Structure brain | 9483:# - Orderflow brain | 1506`
+- `TRACE7`: `FILE data/manual_support/benchtest_v2_score_recent100_v31m_backup_20260905T131100Z/benchtest.v31m.py score=4 403:rea`
+- `TRACE8`: `FILE data/manual_support/benchtest_v2_score_recent100_v31n_backup_20260905T173016Z/benchtest.score-fixed.py score=4`
+- `TRACE9`: `FILE data/manual_support/benchtest_v2_score_v31m_backup_20260905T182549Z/benchtest.final.py score=4 403:realistic_sc`
