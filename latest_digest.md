@@ -1,57 +1,22 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T17:26:10.484591+00:00`
-- Run ID: `20260908T172608Z`
-- Step: `COMPAREMASTERARCH`
+- Published UTC: `2026-09-08T17:29:30.565819+00:00`
+- Run ID: `20260908T172928Z`
+- Step: `RESTOREBRAINARCH`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `MASTERARCHGAPREAD`
-- Next gate: `CLASSIFYMASTERGAPS`
+- Verdict: `BRAINARCHRESTORED`
+- Next gate: `VERIFYBRAINARCH`
 
 ## Facts
 
-- `ANCHORS`: `20`
+- `BACKUP`: `PASS`
 - `BENCHTEST_RERUN`: `NO`
 - `DB_WRITE`: `NO`
-- `FACTS`: `41`
-- `GAP1`: `ANCHOR SIXBRAINS=ABSENT lines=NONE`
-- `GAP10`: `ANCHOR DATACAUSALITY=ABSENT lines=NONE`
-- `GAP11`: `ANCHOR PREDICTIVE=ABSENT lines=NONE`
-- `GAP12`: `ANCHOR SPECIALIZATION=ABSENT lines=NONE`
-- `GAP13`: `ANCHOR ROBUSTNESS=ABSENT lines=NONE`
-- `GAP14`: `ANCHOR ECONOMIC=ABSENT lines=NONE`
-- `GAP15`: `ANCHOR RESEARCHLAB=ABSENT lines=NONE`
-- `GAP16`: `ANCHOR RESEARCHFACTORY=ABSENT lines=NONE`
-- `GAP17`: `ANCHOR INCREMENTAL=ABSENT lines=NONE`
-- `GAP18`: `ANCHOR PROSPECTIVE=ABSENT lines=NONE`
-- `GAP19`: `ANCHOR ADMISSION=ABSENT lines=NONE`
-- `GAP2`: `ANCHOR FDI=ABSENT lines=NONE`
-- `GAP20`: `ANCHOR CONTINUATION=ABSENT lines=NONE`
-- `GAP21`: `HEADING 145:# 4. Canonical persistent architecture`
-- `GAP22`: `HEADING 156:## pipeline_indicators`
-- `GAP23`: `HEADING 166:## pipeline_indicator_versions`
-- `GAP24`: `HEADING 213:## indicator_pipeline_current`
-- `GAP25`: `HEADING 270:## PRIMARY for indicators and strategies`
-- `GAP26`: `HEADING 291:## SECONDARY for indicators`
-- `GAP27`: `HEADING 390:# 8. BenchTest writer and read architecture`
-- `GAP28`: `HEADING 555:## Indicator Library`
-- `GAP29`: `HEADING 578:## Indicator Lab/report module`
-- `GAP3`: `ANCHOR INDICATOR=ABSENT lines=NONE`
-- `GAP30`: `HEADING 646:## Indicator Lab report`
-- `GAP31`: `HEADING 665:## Indicator Library homepage metrics`
-- `GAP32`: `HEADING 678:## Indicator Library implementation handoff`
-- `GAP33`: `HEADING 795:## Indicator DNA and Trading Profile`
-- `GAP34`: `HEADING 806:### INDICATOR_DNA_V1 contract`
-- `GAP35`: `HEADING 996:## Indicator Lab report Free entitlement`
-- `GAP36`: `IQNUM 73=ABSENT`
-- `GAP4`: `ANCHOR CRYPTO=ABSENT lines=NONE`
-- `GAP5`: `ANCHOR MACRO=ABSENT lines=NONE`
-- `GAP6`: `ANCHOR ORDERFLOW=ABSENT lines=NONE`
-- `GAP7`: `ANCHOR MARKETSTRUCTURE=ABSENT lines=NONE`
-- `GAP8`: `ANCHOR DERIVATIVES=ABSENT lines=NONE`
-- `GAP9`: `ANCHOR IQBENCH=ABSENT lines=NONE`
-- `MASTER_CHANGE`: `NO`
+- `ERROR`: `NONE`
+- `MARKER`: `PRESENT`
+- `MASTER_CHANGE`: `YES`
 - `MASTER_READ`: `YES`
 - `PREFLIGHT_RERUN`: `NO`
 - `RESTART`: `NO`
