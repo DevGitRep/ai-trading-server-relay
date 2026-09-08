@@ -1,37 +1,35 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T09:56:46.956821+00:00`
-- Run ID: `20260908T095644Z`
-- Step: `PATCHCHARTSTDLIB`
+- Published UTC: `2026-09-08T10:00:15.328109+00:00`
+- Run ID: `20260908T100013Z`
+- Step: `READBUSELLARTIFACTS`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `REPORTV2RESTORED`
-- Next gate: `NORMALOPERATIONS`
+- Verdict: `BUSELLARTIFACTSREAD`
+- Next gate: `PATCHBUSELLSIGNALS`
 
 ## Facts
 
-- `BACKUP`: `PASS`
 - `BENCHTEST_RERUN`: `NO`
-- `CANDLES`: `2190`
-- `CHART`: `200`
-- `CHARTHTTP`: `200`
-- `COMPILE`: `PASS`
 - `DB_WRITE`: `NO`
-- `LEGACY`: `ABSENT`
-- `MARKERS`: `16`
-- `MASTER`: `PASS`
-- `MASTER_CHANGE`: `YES`
+- `JS1`: `/* PAGER_WRAP_AWARE_AND_BUY_SELL_MARKERS_V29O */`
+- `JS2`: `const buyMarkerCount=`
+- `JS3`: `markerAction(marker)===&quot;BUY&quot;`
+- `LARGE1`: `NONE`
+- `LARGE2`: `NONE`
+- `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
-- `PATCH`: `PASS`
+- `OLD1`: `if source_sha256: resin=con.execute( &quot;&quot;&quot; SELECT plots_json, captured_at FROM resin_native_outputs WHERE source_sha256=? AND error_stage IS N`
+- `OLD2`: `resin=con.execute( &quot;&quot;&quot; SELECT plots_json, captured_at FROM resin_native_outputs WHERE source_sha256=? AND error_stage IS NULL ORDER BY captu`
+- `OLD3`: `try: plots=_chart_json.loads( resin[&quot;plots_json&quot;] or &quot;[]&quot; ) except Exception: plots=[]`
+- `PLOTMATCH`: `1`
+- `PLOTSHAPE`: `L:6`
 - `PREFLIGHT_RERUN`: `NO`
-- `PRIMARY`: `8`
 - `QUICK`: `ok`
-- `RATIO`: `240`
-- `READY`: `YES`
-- `REPORT`: `200`
-- `RESTART`: `YES`
-- `ROOTHTTP`: `200`
+- `RESTART`: `NO`
 - `SCORE_PRODUCER_CHANGE`: `NO`
-- `SERVICE`: `active`
-- `SOURCE_CHANGE`: `YES`
+- `SERIES1`: `NONE`
+- `SERIES2`: `NONE`
+- `SERIES3`: `NONE`
+- `SOURCE_CHANGE`: `NO`
