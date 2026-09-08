@@ -1,8 +1,8 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T08:22:05.899718+00:00`
-- Run ID: `20260908T082203Z`
+- Published UTC: `2026-09-08T08:23:00.672614+00:00`
+- Run ID: `20260908T082258Z`
 - Step: `READCHARTARTIFACTS`
 - Status: `SUCCESS`
 - Exit code: `0`
