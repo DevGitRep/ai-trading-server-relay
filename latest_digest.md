@@ -1,32 +1,39 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T12:03:30.943059+00:00`
-- Run ID: `20260908T120328Z`
-- Step: `FIXBENCHUSABLECOUNT`
+- Published UTC: `2026-09-08T12:17:11.787878+00:00`
+- Run ID: `20260908T121709Z`
+- Step: `READREPORTPROFILEDATA`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `BENCHSTATUSABLECOUNT`
-- Next gate: `NORMALOPERATIONS`
+- Verdict: `REPORTPROFILEDATAREAD`
+- Next gate: `DESIGNTRADINGPROFILE`
 
 ## Facts
 
-- `BACKMODE`: `444`
-- `BACKUP`: `PASS`
 - `BENCHTEST_RERUN`: `NO`
-- `COMPILE`: `PASS`
-- `CURRENT`: `21`
+- `CANDMETA`: `name,family,source_author`
+- `DATA1`: `gross_return_pct=NULL`
+- `DATA10`: `profit_factor=2.5459138924136475`
+- `DATA11`: `profit_factor_percentile=NULL`
+- `DATA12`: `realistic_score=74.59517342100865`
+- `DATA13`: `return_percentile=NULL`
+- `DATA14`: `score_cohort_size=NULL`
+- `DATA2`: `long_signal_count=6`
+- `DATA3`: `losing_trades=3`
+- `DATA4`: `max_drawdown_pct=43.05182148474185`
+- `DATA5`: `net_return_pct=40.49375002858368`
+- `DATA6`: `primary_benchmark_mode=UNIVERSAL_SIGNAL_FLIP_V2`
+- `DATA7`: `primary_exposure_pct=96.55555555555556`
+- `DATA8`: `primary_sharpe=0.8327514658188191`
+- `DATA9`: `primary_sortino=1.25656586032564`
 - `DB_WRITE`: `NO`
-- `MASTER_CHANGE`: `YES`
+- `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
-- `PATCH`: `PASS`
+- `PAYLOAD_KEYS`: `73`
 - `PREFLIGHT_RERUN`: `NO`
 - `QUICK`: `ok`
-- `RESTART`: `YES`
-- `ROLLBACK`: `NO`
-- `SCORED`: `16`
+- `RESTART`: `NO`
 - `SCORE_PRODUCER_CHANGE`: `NO`
-- `SERVICE`: `active`
-- `SOURCE_CHANGE`: `YES`
-- `STATSHTTP`: `200`
-- `TILECOUNT`: `16`
+- `SOURCE_CHANGE`: `NO`
+- `VIEWMETA`: `name,author`
