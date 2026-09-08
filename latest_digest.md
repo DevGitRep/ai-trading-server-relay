@@ -1,23 +1,30 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T12:58:21.871118+00:00`
-- Run ID: `20260908T125819Z`
-- Step: `MOVEPROFILETAGS`
+- Published UTC: `2026-09-08T13:05:10.681294+00:00`
+- Run ID: `20260908T130508Z`
+- Step: `FIXPROFILETAGS`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `PROFILETAGPATCHFAILED`
-- Next gate: `REVIEWPROFILETAGS`
+- Verdict: `PROFILETAGSALIGNED`
+- Next gate: `REVIEWREPORTVISUAL`
 
 ## Facts
 
+- `BACKUP`: `PASS`
 - `BENCHTEST_RERUN`: `NO`
 - `DB_WRITE`: `NO`
-- `ERROR`: `PREWRITE:RuntimeError:JINJAPARSE`
-- `MASTER_CHANGE`: `NO`
+- `GRID`: `5`
+- `HTTP`: `200`
+- `MASTER_CHANGE`: `YES`
 - `MASTER_READ`: `YES`
+- `ORDER`: `PROFILE TAGS SCRIPT DESC`
+- `PATCH`: `PASS`
 - `PREFLIGHT_RERUN`: `NO`
-- `RESTART`: `NO`
+- `PREWRITE`: `PASS`
+- `QUICK`: `ok`
+- `RESTART`: `YES`
 - `ROLLBACK`: `NO`
 - `SCORE_PRODUCER_CHANGE`: `NO`
-- `SOURCE_CHANGE`: `NO`
+- `SERVICE`: `active`
+- `SOURCE_CHANGE`: `YES`
