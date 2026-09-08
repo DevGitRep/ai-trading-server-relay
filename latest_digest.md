@@ -1,35 +1,32 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T14:01:37.872090+00:00`
-- Run ID: `20260908T140135Z`
-- Step: `READREPORTLINKBLOCK`
+- Published UTC: `2026-09-08T14:03:14.493080+00:00`
+- Run ID: `20260908T140312Z`
+- Step: `READREPORTPAYWALL`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `REPORTLINKBLOCKREAD`
+- Verdict: `REPORTPAYWALLREAD`
 - Next gate: `FIXREPORTBUTTONLINK`
 
 ## Facts
 
 - `BENCHTEST_RERUN`: `NO`
-- `BLOCK1`: `120: | 121:bar.className=&quot;irl-v2-titlebar&quot;; | 122: | 123:parent.insertBefore(bar,h); | 124:bar.appendChild(h);`
-- `BLOCK10`: `165: | 166:chosen.forEach((a,i)=&gt;{ | 167:if(i){ | 168:nav.append( | 169:document.createTextNode(&quot; &quot;)`
-- `BLOCK11`: `170:); | 171:} | 172: | 173:const clone=a.cloneNode(true); | 174:`
-- `BLOCK12`: `175:if( | 176:new URL( | 177:clone.href, | 178:location.href | 179:).searchParams.get(&quot;view_as&quot;)`
-- `BLOCK13`: `180:===tier | 181:|| | 182:( | 183:tier===&quot;INTERNAL&quot; | 184:&amp;&amp;`
-- `BLOCK14`: `185:new URL( | 186:clone.href, | 187:location.href | 188:).searchParams.get(&quot;view_as&quot;) | 189:===&quot;INTERNAL_ADMIN&quot;`
-- `BLOCK15`: `190:) | 191:){ | 192:clone.classList.add( | 193:&quot;irl-v2-view-active&quot; | 194:);`
-- `BLOCK16`: `195:} | 196: | 197:nav.appendChild(clone); | 198:}); | 199:`
-- `BLOCK17`: `200:bar.appendChild(nav); | 201: | 202:let box=chosen[0].parentElement;`
-- `BLOCK2`: `125: | 126:const links=Array.from( | 127:document.querySelectorAll( | 128:&#x27;a[href*=&quot;view_as=&quot;]&#x27; | 129:)`
-- `BLOCK3`: `130:).filter(a=&gt;!bar.contains(a)); | 131: | 132:const wanted=[ | 133:&quot;FREE&quot;, | 134:&quot;PRO&quot;,`
-- `BLOCK4`: `135:&quot;INTERNAL_ADMIN&quot; | 136:]; | 137: | 138:const chosen=[]; | 139:`
-- `BLOCK5`: `140:wanted.forEach(v=&gt;{ | 141:const a=links.find(x=&gt;{ | 142:try{ | 143:return new URL( | 144:x.href,`
-- `BLOCK6`: `145:location.href | 146:).searchParams.get(&quot;view_as&quot;)===v; | 147:}catch(_){ | 148:return false; | 149:}`
-- `BLOCK7`: `150:}); | 151: | 152:if(a){ | 153:chosen.push(a); | 154:}`
-- `BLOCK8`: `155:}); | 156: | 157:if(chosen.length){ | 158:const nav=document.createElement(&quot;div&quot;); | 159:`
-- `BLOCK9`: `160:nav.className=&quot;irl-v2-viewas&quot;; | 161: | 162:nav.append( | 163:document.createTextNode(&quot;View as: &quot;) | 164:);`
 - `DB_WRITE`: `NO`
+- `HIT1`: `indicator_library_ui_v2.js:504:report.className=&quot;report&quot;; | 505:report.dataset.reportLink=&quot;yes&quot;; | 506:report.hr`
+- `HIT10`: `indicator_library_ui_v2.js:2823:event.preventDefault(); | 2824:event.stopPropagation(); | 2826:upgrade( | 2827:t`
+- `HIT11`: `indicator_library_ui_v2.js:2824:event.stopPropagation(); | 2826:upgrade( | 2827:target.dataset.irlUpgradeV7 | 28`
+- `HIT12`: `indicator_library_ui_v2.js:2843:const target = | 2844:event.target instanceof Element | 2845:? event.target.clos`
+- `HIT13`: `indicator_library_ui_v2.js:2852:event.preventDefault(); | 2853:event.stopPropagation(); | 2855:upgrade( | 2856:t`
+- `HIT14`: `indicator_library_ui_v2.js:2853:event.stopPropagation(); | 2855:upgrade( | 2856:target.dataset.irlUpgradeV7 | 28`
+- `HIT2`: `indicator_library_ui_v2.js:2629:})(); | 2630:/* TEST_YOUR_SCRIPT_FREE_INLINE_V6_END */ | 2632:/* FREE_PRO_HEADER`
+- `HIT3`: `indicator_library_ui_v2.js:2646:); | 2647:} | 2649:function upgrade(source) { | 2650:const u = new URL( | 2651:S`
+- `HIT4`: `indicator_library_ui_v2.js:2682:sort.closest(&quot;.irl-v2-field&quot;); | 2684:if (field) { | 2685:field.dataset.irlUpgra`
+- `HIT5`: `indicator_library_ui_v2.js:2688:field.setAttribute( | 2689:&quot;title&quot;, | 2690:&quot;Upgrade to unlock Realistic Score&quot; |`
+- `HIT6`: `indicator_library_ui_v2.js:2782:text.includes(&quot;&quot;); | 2784:const lockMeta = | 2785:/\b(locked|pro only|premium|up`
+- `HIT7`: `indicator_library_ui_v2.js:2795:lockMeta || | 2796:lockData | 2797:) { | 2798:el.dataset.irlUpgradeV7 = | 2799:&quot;`
+- `HIT8`: `indicator_library_ui_v2.js:2801:el.setAttribute( | 2802:&quot;title&quot;, | 2803:&quot;Upgrade to unlock this feature&quot; | 2804:`
+- `HIT9`: `indicator_library_ui_v2.js:2814:const target = | 2815:event.target instanceof Element | 2816:? event.target.clos`
 - `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
 - `PREFLIGHT_RERUN`: `NO`
