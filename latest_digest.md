@@ -1,66 +1,21 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T20:54:17.271655+00:00`
-- Run ID: `20260908T205415Z`
-- Step: `DRYRUNALIGNMENT`
+- Published UTC: `2026-09-08T20:55:44.817891+00:00`
+- Run ID: `20260908T205542Z`
+- Step: `RESOLVEALIGNRUNTIME`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `ALIGNDRYRUNBLOCKED`
-- Next gate: `REVIEWALIGNDRYRUN`
+- Verdict: `ALIGNRUNTIMEMULTIPLE`
+- Next gate: `SELECTALIGNRUNTIME`
 
 ## Facts
 
-- `ALIGNDRY1`: `MASTERNATIVE=YES`
-- `ALIGNDRY10`: `MODEL=YES`
-- `ALIGNDRY11`: `INTERFACE=YES`
-- `ALIGNDRY12`: `INDICATORDB=YES`
-- `ALIGNDRY13`: `SOURCESHA=YES`
-- `ALIGNDRY14`: `MODELSHA=YES`
-- `ALIGNDRY15`: `OLDALIGN=101`
-- `ALIGNDRY16`: `ALIGNRC=1`
-- `ALIGNDRY17`: `RUNTAIL= File &quot;PATH&quot;, line 17, in &lt;module&gt; import pandas_ta as ta ModuleNotFoundError: No module named &#x27;pandas_t`
-- `ALIGNDRY18`: `NONE`
-- `ALIGNDRY19`: `NONE`
-- `ALIGNDRY2`: `QUEUE=16`
-- `ALIGNDRY20`: `NONE`
-- `ALIGNDRY21`: `NONE`
-- `ALIGNDRY22`: `NONE`
-- `ALIGNDRY23`: `NONE`
-- `ALIGNDRY24`: `NONE`
-- `ALIGNDRY25`: `NONE`
-- `ALIGNDRY26`: `NONE`
-- `ALIGNDRY27`: `NONE`
-- `ALIGNDRY28`: `NONE`
-- `ALIGNDRY29`: `NONE`
-- `ALIGNDRY3`: `ELIGIBLE=14`
-- `ALIGNDRY30`: `NONE`
-- `ALIGNDRY31`: `NONE`
-- `ALIGNDRY32`: `NONE`
-- `ALIGNDRY33`: `NONE`
-- `ALIGNDRY34`: `NONE`
-- `ALIGNDRY35`: `NONE`
-- `ALIGNDRY36`: `NONE`
-- `ALIGNDRY37`: `NONE`
-- `ALIGNDRY38`: `NONE`
-- `ALIGNDRY39`: `NONE`
-- `ALIGNDRY4`: `GATED=2`
-- `ALIGNDRY40`: `NONE`
-- `ALIGNDRY41`: `NONE`
-- `ALIGNDRY42`: `NONE`
-- `ALIGNDRY43`: `NONE`
-- `ALIGNDRY44`: `NONE`
-- `ALIGNDRY5`: `NATIVE=14`
-- `ALIGNDRY6`: `MATERIALIZED=13`
-- `ALIGNDRY7`: `NOVARYING=1`
-- `ALIGNDRY8`: `PREFLIGHT=YES`
-- `ALIGNDRY9`: `SOURCE=YES`
 - `BENCHTEST_RERUN`: `NO`
 - `BRAIN_ADMISSION`: `NO`
 - `BRAIN_IQ_CHANGE`: `NO`
 - `DB_WRITE`: `NO`
-- `ERROR`: `RuntimeError:ALIGN_RC_1`
-- `FACTS`: `17`
+- `FACTS`: `21`
 - `INSTALL`: `NO`
 - `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
@@ -69,8 +24,47 @@
 - `PROSPECTIVE_ACTIVATION`: `NO`
 - `QUEUE_CHANGE`: `NO`
 - `RESTART`: `NO`
+- `RUNTIME1`: `MASTER=YES`
+- `RUNTIME10`: `PY freqtrade-venv/bin/python PASS`
+- `RUNTIME11`: `PY freqtrade-venv/bin/python3 PASS`
+- `RUNTIME12`: `PY user_data/orderflow_dashboard/.venv/bin/python BAD pandas:ModuleNotFoundError,pandas_ta:ModuleNotFoundError`
+- `RUNTIME13`: `PY user_data/orderflow_dashboard/.venv/bin/python3 BAD pandas:ModuleNotFoundError,pandas_ta:ModuleNotFoundError`
+- `RUNTIME14`: `PY runtime/vectorbt_v1_1_0/venv/bin/python BAD pandas_ta:ModuleNotFoundError`
+- `RUNTIME15`: `PY runtime/vectorbt_v1_1_0/venv/bin/python3 BAD pandas_ta:ModuleNotFoundError`
+- `RUNTIME16`: `PY runtime/mlfinpy_v0_1_2/.venv/bin/python BAD pandas_ta:ModuleNotFoundError`
+- `RUNTIME17`: `PY runtime/mlfinpy_v0_1_2/.venv/bin/python3 BAD pandas_ta:ModuleNotFoundError`
+- `RUNTIME18`: `PY orderflow_dashboard/macro_research/.venv/bin/python BAD pandas:ModuleNotFoundError,pandas_ta:ModuleNotFoundEr`
+- `RUNTIME19`: `PY orderflow_dashboard/macro_research/.venv/bin/python3 BAD pandas:ModuleNotFoundError,pandas_ta:ModuleNotFoundE`
+- `RUNTIME2`: `SOURCECOUNT=1`
+- `RUNTIME20`: `PY SYSTEM BAD joblib:ModuleNotFoundError,numpy:ModuleNotFoundError,pandas:ModuleNotFoundError,pandas_ta:ModuleNo`
+- `RUNTIME21`: `PASSING=2`
+- `RUNTIME22`: `NONE`
+- `RUNTIME23`: `NONE`
+- `RUNTIME24`: `NONE`
+- `RUNTIME25`: `NONE`
+- `RUNTIME26`: `NONE`
+- `RUNTIME27`: `NONE`
+- `RUNTIME28`: `NONE`
+- `RUNTIME29`: `NONE`
+- `RUNTIME3`: `SOURCEIMPORTS=__future__,datetime,hashlib,inspect,joblib,json,math,numpy,os,pandas,pandas_ta,pathlib,sklearn,sql`
+- `RUNTIME30`: `NONE`
+- `RUNTIME31`: `NONE`
+- `RUNTIME32`: `NONE`
+- `RUNTIME33`: `NONE`
+- `RUNTIME34`: `NONE`
+- `RUNTIME35`: `NONE`
+- `RUNTIME36`: `NONE`
+- `RUNTIME37`: `NONE`
+- `RUNTIME38`: `NONE`
+- `RUNTIME39`: `NONE`
+- `RUNTIME4`: `PROBEIMPORTS=joblib,numpy,pandas,pandas_ta,sklearn`
+- `RUNTIME40`: `NONE`
+- `RUNTIME41`: `NONE`
+- `RUNTIME42`: `NONE`
+- `RUNTIME5`: `PREFLIGHTS=1`
+- `RUNTIME6`: `SHEBANG=#!PATH`
+- `RUNTIME7`: `PANDASTAHITS=1`
+- `RUNTIME8`: `PANDASTA env=freqtrade-venv parent=site-packages`
+- `RUNTIME9`: `PYTHONS=11`
 - `SCORE_PRODUCER_CHANGE`: `NO`
 - `SOURCE_CHANGE`: `NO`
-- `TEMP_CLEANUP`: `YES`
-- `TEMP_DB`: `YES`
-- `TEMP_WRITE`: `YES`
