@@ -1,13 +1,13 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T21:13:36.434493+00:00`
-- Run ID: `20260908T211334Z`
-- Step: `READSELECTIONMETHOD`
+- Published UTC: `2026-09-08T21:15:01.907134+00:00`
+- Run ID: `20260908T211459Z`
+- Step: `RESOLVESTAGE2BDIVERSITY`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `SELECTIONMETHODREAD`
-- Next gate: `RESOLVESELECTIONRULE`
+- Verdict: `STAGE2BDIVERSITYREAD`
+- Next gate: `REVIEWSTAGE2BDIVERSITY`
 
 ## Facts
 
@@ -17,7 +17,53 @@
 - `BRAIN_IQ_CHANGE`: `NO`
 - `CACHE_CHANGE`: `NO`
 - `DB_WRITE`: `NO`
-- `FACTS`: `48`
+- `DIVERSITY1`: `MASTERALIGN=YES`
+- `DIVERSITY10`: `S2BPRODUCERRESOLVED=NO`
+- `DIVERSITY11`: `S2BDIVERSITYREADY=NO`
+- `DIVERSITY12`: `NONE`
+- `DIVERSITY13`: `NONE`
+- `DIVERSITY14`: `NONE`
+- `DIVERSITY15`: `NONE`
+- `DIVERSITY16`: `NONE`
+- `DIVERSITY17`: `NONE`
+- `DIVERSITY18`: `NONE`
+- `DIVERSITY19`: `NONE`
+- `DIVERSITY2`: `SOURCE2BSHA=7e53381b443fb5ed`
+- `DIVERSITY20`: `NONE`
+- `DIVERSITY21`: `NONE`
+- `DIVERSITY22`: `NONE`
+- `DIVERSITY23`: `NONE`
+- `DIVERSITY24`: `NONE`
+- `DIVERSITY25`: `NONE`
+- `DIVERSITY26`: `NONE`
+- `DIVERSITY27`: `NONE`
+- `DIVERSITY28`: `NONE`
+- `DIVERSITY29`: `NONE`
+- `DIVERSITY3`: `SHAMATCHES=2`
+- `DIVERSITY30`: `NONE`
+- `DIVERSITY31`: `NONE`
+- `DIVERSITY32`: `NONE`
+- `DIVERSITY33`: `NONE`
+- `DIVERSITY34`: `NONE`
+- `DIVERSITY35`: `NONE`
+- `DIVERSITY36`: `NONE`
+- `DIVERSITY37`: `NONE`
+- `DIVERSITY38`: `NONE`
+- `DIVERSITY39`: `NONE`
+- `DIVERSITY4`: `SHAFILE=latest_incumbent_alignment.historical_before_canonical_20260908T210310Z.json parent=incumbent_alignment_`
+- `DIVERSITY40`: `NONE`
+- `DIVERSITY41`: `NONE`
+- `DIVERSITY42`: `NONE`
+- `DIVERSITY43`: `NONE`
+- `DIVERSITY44`: `NONE`
+- `DIVERSITY45`: `NONE`
+- `DIVERSITY46`: `NONE`
+- `DIVERSITY5`: `SHAFILE=incumbent_alignment_20260901T064337Z.json parent=runs`
+- `DIVERSITY6`: `PRODUCERS=0`
+- `DIVERSITY7`: `CLUSTERARTIFACTS=1`
+- `DIVERSITY8`: `CLUSTERFILE=diversity_representatives_v1.json list=representatives rows=17 parent=full_year_incremental_discover`
+- `DIVERSITY9`: `S2BSOURCERESOLVED=NO`
+- `FACTS`: `11`
 - `INSTALL`: `NO`
 - `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
@@ -27,54 +73,6 @@
 - `QUEUE_CHANGE`: `NO`
 - `RESTART`: `NO`
 - `SCORE_PRODUCER_CHANGE`: `NO`
-- `SELMETHOD1`: `MASTERALIGN=YES`
-- `SELMETHOD10`: `SELSCALAR representative_count=17`
-- `SELMETHOD11`: `SELLIST representatives=17`
-- `SELMETHOD12`: `SELSCALAR scientific_role=FULL_YEAR_DISCOVERY_MATERIALIZATION_ONLY`
-- `SELMETHOD13`: `SELSCALAR selection_policy=all cluster-free shortlist candidates plus minimal greedy shortlist set covering ever`
-- `SELMETHOD14`: `SELSCALAR shortlist_count=40`
-- `SELMETHOD15`: `SELSCALAR source_stage2b=PATH`
-- `SELMETHOD16`: `SELSCALAR source_stage2b_sha256=7e53381b443fb5edc3f2b666c318941854ac9833de7e53e435d79b56fdc10faa`
-- `SELMETHOD17`: `SELSCALAR stage3_contract=PATH`
-- `SELMETHOD18`: `SELSCALAR stage3_contract_sha256=8024908a8d6dbd7be5411a82f5d39257a451011eeaf82eb0853e9fee9830b1a1`
-- `SELMETHOD19`: `REPRESENTATIVES=17`
-- `SELMETHOD2`: `SELTOP=cluster_free_selected_count,contract,coverable_redundancy_cluster_ids,covered_redundancy_cluster_ids,pilo`
-- `SELMETHOD20`: `REPKEYS=candidate_id,cluster_ids,maximum_incumbent_linear_overlap,minimum_incumbent_linear_overlap,realistic_sco`
-- `SELMETHOD21`: `REP candidate_id=ICL_LIB_DEC7F969A4B5969C;maximum_incumbent_linear_overlap=0.1674544414722499;minimum_incumbent_`
-- `SELMETHOD22`: `REP candidate_id=ICL_LIB_03F8ADC1C1F04A49;maximum_incumbent_linear_overlap=0.5175505555295448;minimum_incumbent_`
-- `SELMETHOD23`: `REP candidate_id=ICL_LIB_ADE006748BF49980;maximum_incumbent_linear_overlap=0.0818463658450068;minimum_incumbent_`
-- `SELMETHOD24`: `REP candidate_id=ICL_LIB_4743852E2337D14B;maximum_incumbent_linear_overlap=0.07106447999433467;minimum_incumbent`
-- `SELMETHOD25`: `OLDALIGNMENTS=1`
-- `SELMETHOD26`: `REPOLDMATCH=17`
-- `SELMETHOD27`: `REPMAP ICL_LIB_03F8ADC1C1F04A49 copied=candidate_id,maximum_incumbent_linear_overlap,minimum_incumbent_linear_ov`
-- `SELMETHOD28`: `REPMAP ICL_LIB_15C5A6CB7C36A539 copied=candidate_id,maximum_incumbent_linear_overlap,minimum_incumbent_linear_ov`
-- `SELMETHOD29`: `REPMAP ICL_LIB_38F8480283DEC284 copied=candidate_id,maximum_incumbent_linear_overlap,minimum_incumbent_linear_ov`
-- `SELMETHOD3`: `SELSCALAR cluster_free_selected_count=10`
-- `SELMETHOD30`: `REPMAP ICL_LIB_40643D7CCA614A61 copied=candidate_id,maximum_incumbent_linear_overlap,minimum_incumbent_linear_ov`
-- `SELMETHOD31`: `REPMAP ICL_LIB_4743852E2337D14B copied=candidate_id,maximum_incumbent_linear_overlap,minimum_incumbent_linear_ov`
-- `SELMETHOD32`: `CONTRACTRULES=6`
-- `SELMETHOD33`: `RULE native_materialization.pilot_only=True`
-- `SELMETHOD34`: `RULE representative_selection.cluster_representative_policy=greedy set cover; maximize uncovered cluster coverag`
-- `SELMETHOD35`: `RULE representative_selection.cover_every_redundancy_cluster=True`
-- `SELMETHOD36`: `RULE representative_selection.include_all_cluster_free_shortlist=True`
-- `SELMETHOD37`: `RULE representative_selection.realistic_score_is_brain_value=False`
-- `SELMETHOD38`: `RULE representative_selection.source=STAGE2B_DIVERSITY_AND_REDUNDANCY_SCREEN`
-- `SELMETHOD39`: `SELREFS=5`
-- `SELMETHOD4`: `SELSCALAR contract=INDICATOR_RESEARCH_INTELLIGENCE_STAGE3_DIVERSITY_REPRESENTATIVES_V1`
-- `SELMETHOD40`: `REF all17_normalized_series_identities_v1.json parent=full_year_incremental_discovery_v1 name=N sha=Y`
-- `SELMETHOD41`: `REF latest_native_pilot.json parent=full_year_incremental_discovery_v1 name=Y sha=N`
-- `SELMETHOD42`: `REF indicator_stage3_full_year_normalization_policy_v1.json parent=full_year_incremental_discovery_v1 name=Y sha`
-- `SELMETHOD43`: `REF pilot_normalized_series_identities_v1.json parent=full_year_incremental_discovery_v1 name=N sha=Y`
-- `SELMETHOD44`: `REF native_pilot_20260901T072142Z.json parent=runs name=Y sha=N`
-- `SELMETHOD45`: `CURRALIGNHAS=candidate_id,maximum_incumbent_linear_overlap,minimum_incumbent_linear_overlap,realistic_score,scri`
-- `SELMETHOD46`: `CURRALIGNMISS=cluster_ids,realistic_score_role,representation_types,selection_reason`
-- `SELMETHOD47`: `STAGE2BRESOLVED=YES`
-- `SELMETHOD48`: `SELRESOLVABLE=NO`
-- `SELMETHOD5`: `SELLIST coverable_redundancy_cluster_ids=9`
-- `SELMETHOD6`: `SELLIST covered_redundancy_cluster_ids=9`
-- `SELMETHOD7`: `SELLIST pilot_candidate_ids=3`
-- `SELMETHOD8`: `SELDICT pilot_reasons=ICL_LIB_38F8480283DEC284,ICL_LIB_ADB9FD6DFD0470D5,ICL_LIB_DEC7F969A4B5969C`
-- `SELMETHOD9`: `SELSCALAR redundancy_cluster_count=10`
 - `SOURCE_CHANGE`: `NO`
 - `STAGE2B_RERUN`: `NO`
 - `STAGE3_RERUN`: `NO`
