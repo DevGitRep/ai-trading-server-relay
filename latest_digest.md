@@ -1,36 +1,41 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T10:13:50.209785+00:00`
-- Run ID: `20260908T101348Z`
-- Step: `PATCHMARKERWIRE2`
+- Published UTC: `2026-09-08T10:41:45.392285+00:00`
+- Run ID: `20260908T104143Z`
+- Step: `READLIBCARDWINRATE`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `MARKERWIRERESTORED`
-- Next gate: `NORMALOPERATIONS`
+- Verdict: `LIBCARDWINRATEREAD`
+- Next gate: `PATCHLIBCARDWINRATE`
 
 ## Facts
 
-- `BACKUP`: `PASS`
+- `BACK1`: `&quot;realistic_score&quot;`
+- `BACK2`: `win_rate_pct = _num(`
+- `BACK3`: `row[&quot;win_rate_pct&quot;]`
+- `BACK4`: `realistic_score = _num(`
 - `BENCHTEST_RERUN`: `NO`
-- `BUY`: `8`
-- `CHART`: `200`
-- `COMPILE`: `PASS`
+- `CARD1`: `[&quot;Profit Factor&quot;,&quot;profit_factor&quot;],`
+- `CARD2`: `[&quot;Net Return&quot;,&quot;net_return_pct&quot;],`
+- `CARD3`: `[&quot;Max Drawdown&quot;,&quot;max_drawdown_pct&quot;],`
+- `CARD4`: `[&quot;Win Rate&quot;,&quot;win_rate_pct&quot;],`
+- `CARD5`: `[&quot;Trades&quot;,&quot;trade_count&quot;],`
+- `CARD6`: `[&quot;Realistic Score&quot;,&quot;realistic_score&quot;]`
 - `DB_WRITE`: `NO`
-- `LEGACY`: `ABSENT`
-- `MARKERS`: `16`
-- `MASTER`: `PASS`
-- `MASTER_CHANGE`: `YES`
+- `HELPER`: `def _bulk_pipeline_metrics_v1(conn): # Temporary metadata base until production smoke/cleanup. metrics_map = {} row`
+- `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
-- `PATCH`: `PASS`
 - `PREFLIGHT_RERUN`: `NO`
-- `PRIMARY`: `8`
+- `PRIMARYWIN`: `62.5`
 - `QUICK`: `ok`
-- `READY`: `YES`
-- `REPORT`: `200`
-- `RESTART`: `YES`
+- `RESTART`: `NO`
 - `SCORE_PRODUCER_CHANGE`: `NO`
-- `SELL`: `8`
-- `SERVICE`: `active`
-- `SOURCE_CHANGE`: `YES`
-- `WIRE`: `ARRAY4`
+- `SECONDARY1`: `secondary_win_rate_pct=7.6923076923076925`
+- `SECONDARY2`: `secondary_winning_trades=1`
+- `SECONDARY3`: `NONE`
+- `SORT1`: `shell.innerHTML=`&lt;div class=&quot;irl-v2-stats&quot;&gt;&lt;div class=&quot;irl-v2-stat&quot;&gt;&lt;div class=&quot;irl-v2-label&quot;&gt;Indicators &amp; Strategi`
+- `SORT2`: `NONE`
+- `SORT3`: `NONE`
+- `SORT4`: `NONE`
+- `SOURCE_CHANGE`: `NO`
