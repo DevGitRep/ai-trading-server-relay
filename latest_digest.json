@@ -1,23 +1,23 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-08T17:29:30.565819+00:00",
-  "run_id": "20260908T172928Z",
-  "step": "RESTOREBRAINARCH",
+  "published_at_utc": "2026-09-08T17:36:04.160205+00:00",
+  "run_id": "20260908T173601Z",
+  "step": "SNAPSHOTMASTER",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "BRAINARCHRESTORED",
-  "next_gate": "VERIFYBRAINARCH",
+  "verdict": "MASTERSNAPSHOTREADY",
+  "next_gate": "DOWNLOADMASTER",
   "facts": {
-    "BACKUP": "PASS",
     "BENCHTEST_RERUN": "NO",
     "DB_WRITE": "NO",
-    "ERROR": "NONE",
-    "MARKER": "PRESENT",
-    "MASTER_CHANGE": "YES",
+    "HASHMATCH": "YES",
+    "MASTER_CHANGE": "NO",
     "MASTER_READ": "YES",
     "PREFLIGHT_RERUN": "NO",
     "RESTART": "NO",
     "SCORE_PRODUCER_CHANGE": "NO",
+    "SHA": "1f04464c011b51b7",
+    "SNAPSHOT": "AI_TRADING_SYSTEM_MASTER_RESTORED_2026-09-08.md",
     "SOURCE_CHANGE": "NO"
   }
 }
