@@ -1,13 +1,13 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T20:29:47.962798+00:00`
-- Run ID: `20260908T202945Z`
-- Step: `RESOLVEPREFANDDB`
+- Published UTC: `2026-09-08T20:33:08.847182+00:00`
+- Run ID: `20260908T203306Z`
+- Step: `TRACEALIGNEXACT`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `ALIGNPREFDBREAD`
-- Next gate: `DRYRUNALIGNMENT`
+- Verdict: `ALIGNEXACTREAD`
+- Next gate: `RESOLVEALIGNINPUTS`
 
 ## Facts
 
@@ -15,55 +15,55 @@
 - `BRAIN_ADMISSION`: `NO`
 - `BRAIN_IQ_CHANGE`: `NO`
 - `DB_WRITE`: `NO`
-- `FACTS`: `22`
+- `EXACT1`: `MASTERNATIVE=YES`
+- `EXACT10`: `DBCHECK indicator_brain.db match=1/1`
+- `EXACT11`: `DBCHECK indicator_v1_first_seen_overlay.db match=0/1`
+- `EXACT12`: `INDDBMATCHES=1`
+- `EXACT13`: `INDDBWINNER=indicator_brain.db`
+- `EXACT14`: `COREFS=0`
+- `EXACT15`: `PREFRESOLVED=NO`
+- `EXACT16`: `INDDBRESOLVED=YES`
+- `EXACT17`: `ALLRESOLVED=NO`
+- `EXACT18`: `NONE`
+- `EXACT19`: `NONE`
+- `EXACT2`: `PREFTEXTMATCH=0`
+- `EXACT20`: `NONE`
+- `EXACT21`: `NONE`
+- `EXACT22`: `NONE`
+- `EXACT23`: `NONE`
+- `EXACT24`: `NONE`
+- `EXACT25`: `NONE`
+- `EXACT26`: `NONE`
+- `EXACT27`: `NONE`
+- `EXACT28`: `NONE`
+- `EXACT29`: `NONE`
+- `EXACT3`: `EXECBLOCK=YES`
+- `EXACT30`: `NONE`
+- `EXACT31`: `NONE`
+- `EXACT32`: `NONE`
+- `EXACT33`: `NONE`
+- `EXACT34`: `NONE`
+- `EXACT35`: `NONE`
+- `EXACT36`: `NONE`
+- `EXACT37`: `NONE`
+- `EXACT38`: `NONE`
+- `EXACT39`: `NONE`
+- `EXACT4`: `ARGV1=344:def execute_frozen_feature_prefix( | 345:source_path, | 346:model_path, | 347:indicator_db, | 348:inte`
+- `EXACT40`: `NONE`
+- `EXACT41`: `NONE`
+- `EXACT42`: `NONE`
+- `EXACT43`: `NONE`
+- `EXACT44`: `NONE`
+- `EXACT5`: `ARGV2=439:scorer = importlib.util.module_from_spec( | 440:spec | 441:) | 443:loader.exec_module( | 444:scorer |`
+- `EXACT6`: `SOURCECOUNT=1`
+- `EXACT7`: `CONNECTS=1`
+- `EXACT8`: `SQLCTX=3521:conn.execute(&quot;&quot;&quot; | 3522:CREATE TABLE IF NOT EXISTS indicator_ai_brain_runs (`
+- `EXACT9`: `REALTABLES=indicator_ai_brain_runs`
+- `FACTS`: `17`
 - `INSTALL`: `NO`
 - `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
 - `NATIVE_CHANGE`: `NO`
-- `PREFDB1`: `MASTERNATIVE=YES`
-- `PREFDB10`: `STAGEPREFILES=3`
-- `PREFDB11`: `STAGEPREF run_r5t_readonly_preflight.py parent=r5t_post_cutover_freeze`
-- `PREFDB12`: `STAGEPREF run_r5wf_production_readonly_preflight.py parent=r5wf_one_time_production_ingest_authority_preflight`
-- `PREFDB13`: `STAGEPREF run_r5wgl_readonly_preflight.py parent=r5wgl_01_production_eligibility_readonly_preflight`
-- `PREFDB14`: `EXECSTART=344`
-- `PREFDB15`: `EXEC1=344:def execute_frozen_feature_prefix( | 345:source_path, | 346:model_path, | 347:indicator_db, | 348:inte`
-- `PREFDB16`: `EXEC2=423:raise RuntimeError( | 424:&quot;FROZEN_MODEL_SHA_DRIFT&quot; | 425:) | 427:loader = importlib.machinery.SourceFi`
-- `PREFDB17`: `SOURCECOUNT=1`
-- `PREFDB18`: `DBASSIGN=1`
-- `PREFDB19`: `DBSET 32:DB = Path(sys.argv[2])`
-- `PREFDB2`: `PREFSTART=770`
-- `PREFDB20`: `DBLITERALS=0`
-- `PREFDB21`: `CONNECTS=1`
-- `PREFDB22`: `DBCTX1=3511:created_at = datetime.now( | 3512:timezone.utc | 3513:).isoformat() | 3516:conn = sqlite3.connect( |`
-- `PREFDB23`: `NONE`
-- `PREFDB24`: `NONE`
-- `PREFDB25`: `NONE`
-- `PREFDB26`: `NONE`
-- `PREFDB27`: `NONE`
-- `PREFDB28`: `NONE`
-- `PREFDB29`: `NONE`
-- `PREFDB3`: `PREFCODE 770:def load_preflight( | 771:path, | 772:): | 773:path = Path(path) | 775:loader = (`
-- `PREFDB30`: `NONE`
-- `PREFDB31`: `NONE`
-- `PREFDB32`: `NONE`
-- `PREFDB33`: `NONE`
-- `PREFDB34`: `NONE`
-- `PREFDB35`: `NONE`
-- `PREFDB36`: `NONE`
-- `PREFDB37`: `NONE`
-- `PREFDB38`: `NONE`
-- `PREFDB39`: `NONE`
-- `PREFDB4`: `PREFCODE 776:importlib.machinery | 777:.SourceFileLoader( | 778:&quot;_stage2b_preflight&quot;, | 779:str(path), | 780:) |`
-- `PREFDB40`: `NONE`
-- `PREFDB41`: `NONE`
-- `PREFDB42`: `NONE`
-- `PREFDB43`: `NONE`
-- `PREFDB44`: `NONE`
-- `PREFDB5`: `PREFCODE 783:spec = ( | 784:importlib.util | 785:.spec_from_loader( | 786:loader.name, | 787:loader,`
-- `PREFDB6`: `PREFCODE 788:) | 789:) | 791:mod = ( | 792:importlib.util | 793:.module_from_spec(`
-- `PREFDB7`: `PREFCODE 794:spec | 795:) | 796:) | 798:loader.exec_module( | 799:mod`
-- `PREFDB8`: `PREFCODE 800:) | 802:dataset = Path( | 803:mod.find_dataset() | 804:).resolve()`
-- `PREFDB9`: `PREFSYMBOLMATCH=0`
 - `PREFLIGHT_RERUN`: `NO`
 - `PROSPECTIVE_ACTIVATION`: `NO`
 - `QUEUE_CHANGE`: `NO`
