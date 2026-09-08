@@ -1,57 +1,53 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T16:53:34.315337+00:00`
-- Run ID: `20260908T165332Z`
-- Step: `TRACEBRAINJOBS`
+- Published UTC: `2026-09-08T16:57:05.317800+00:00`
+- Run ID: `20260908T165703Z`
+- Step: `READBRAINSTAGES`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `BRAINJOBSTRACED`
-- Next gate: `ASSESSBRAINARCHITECTURE`
+- Verdict: `BRAINSTAGESREAD`
+- Next gate: `DESIGNBRAINCUTOVER`
 
 ## Facts
 
+- `ACTIVEFILES`: `209`
 - `BENCHTEST_RERUN`: `NO`
-- `BRAINMAP1`: `MASTERSEL 402:`_v2_insert_result` | 404:Current rules: | 406:- `insert_result` routes to canonical BenchTest persi`
-- `BRAINMAP10`: `VALUES candidate_events.event_id=1:1,2:1,3:1,4:1,5:1,6:1,7:1,8:1,9:1,10:1`
-- `BRAINMAP11`: `VALUES candidate_events.event_type=STATIC_CAUSAL_REPAINT_AUDIT:11,PINE_TO_PYTHON_CONVERSION_QUEUED:11,PUBLIC_PINE_`
-- `BRAINMAP12`: `TABLE candidates=candidate_id,created_epoch_ms,updated_epoch_ms,intake_method,name,family,target_market,timeframes`
-- `BRAINMAP13`: `VALUES candidates.status=LIBRARY_READY:11760,STATIC_AUDIT_COMPLETE:10,PROSPECTIVE_CONFIRMATION:2,SOURCE_CAPTURED:1`
-- `BRAINMAP14`: `VALUES candidates.discovery_status=NOT_STARTED:11760,COMPLETE:12,NOT_REQUIRED:2,SEARCHED_NO_FETCHABLE_PINE:1`
-- `BRAINMAP15`: `VALUES candidates.causality_status=PENDING:11762,STATIC_NO_HARD_RED_FLAGS:10,EXISTING_RESEARCH:2,PASS_CONFIRMED_CL`
-- `BRAINMAP16`: `VALUES candidates.repaint_status=PENDING:11762,STATIC_NO_HARD_RED_FLAGS:10,EXISTING_RESEARCH:2,FAIL_MANUAL_HTF_REP`
-- `BRAINMAP17`: `VALUES candidates.conversion_status=NOT_STARTED:11761,WAITING_PROVIDER:10,EXISTING_RESEARCH:2,PYTHON_STATIC_VALIDA`
-- `BRAINMAP18`: `VALUES candidates.parity_status=NOT_STARTED:11773,EXISTING_RESEARCH:2`
-- `BRAINMAP19`: `VALUES candidates.performance_status=NOT_TESTED:11773,BLIND:2`
-- `BRAINMAP2`: `TABLE benchtest_native_artifact_cache_v1=cache_key,cache_contract,origin_candidate_id,source_sha256,market_data_co`
-- `BRAINMAP20`: `VALUES candidates.oos_status=NOT_TESTED:11773,BLIND:2`
-- `BRAINMAP21`: `VALUES candidates.robustness_status=NOT_TESTED:11773,BLIND:2`
-- `BRAINMAP22`: `VALUES candidates.brain_value_status=NOT_TESTED:11773,BLIND:2`
-- `BRAINMAP23`: `VALUES candidates.prospective_status=NOT_STARTED:11773,ACTIVE:2`
-- `BRAINMAP24`: `TABLE conversion_jobs=conversion_job_id,candidate_id,created_epoch_ms,updated_epoch_ms,source_sha256,provider,stat`
-- `BRAINMAP25`: `VALUES conversion_jobs.conversion_job_id=CVJ1_A6BA3815C1DE34EA6AFC:1,ICL_CONV_21AC9113E1C613E3E9:1,ICL_CONV_361198`
-- `BRAINMAP26`: `VALUES conversion_jobs.status=WAITING_PROVIDER:10,PYTHON_STATIC_VALIDATION_FAIL:1,BLOCKED_REPAINT_FAIL:1`
-- `BRAINMAP27`: `TABLE intake_jobs=job_id,created_epoch_ms,job_type,request_json,status,error_text`
-- `BRAINMAP28`: `VALUES intake_jobs.job_id=ICL_AD_RUN1_9A9E5A39F8873E00:1,ICL_PV2_RUN1_C6821B6A80F6AC7E:1,ICL_PV2_RUN2_ECFB3192E14B`
-- `BRAINMAP29`: `VALUES intake_jobs.job_type=AUTO_DISCOVERY_PROVIDER_V2_LIVE_RUN_2_RECOVERY_1:1,AUTO_DISCOVERY_PROVIDER_V2_LIVE_RUN`
-- `BRAINMAP3`: `VALUES benchtest_native_artifact_cache_v1.parameter_mode=PINE_NATIVE_DEFAULT:665`
-- `BRAINMAP30`: `VALUES intake_jobs.status=DONE:2,FAILED:1,COMPLETED:1`
-- `BRAINMAP31`: `TABLE pipeline_benchtest_runs=benchtest_run_id,indicator_id,version_id,preflight_run_id,benchtest_contract,score_m`
-- `BRAINMAP32`: `VALUES pipeline_benchtest_runs.status=MIGRATED:16,None:5`
-- `BRAINMAP33`: `VALUES pipeline_benchtest_runs.primary_benchmark_mode=UNIVERSAL_SIGNAL_FLIP_V2:16,None:5`
-- `BRAINMAP34`: `FLOW test_your_script_v1.py | 2612:or &quot;Benchmark completed&quot; | 2624:&quot;benchmark is ready&quot; | 2628:&quot;Your 12-month SOL/`
-- `BRAINMAP4`: `VALUES benchtest_native_artifact_cache_v1.status=PASS:647,FAILURE:18`
-- `BRAINMAP5`: `VALUES benchtest_native_artifact_cache_v1.resin_status=PASS:647,RESIN_RUNTIME_FAILED:18`
-- `BRAINMAP6`: `VALUES benchtest_native_artifact_cache_v1.error_stage=None:647,RUN_FAILED:14,EXIT_-6:4`
-- `BRAINMAP7`: `TABLE benchtest_trades_v1=run_id,candidate_id,trade_no,raw_json,benchmark_mode`
-- `BRAINMAP8`: `VALUES benchtest_trades_v1.benchmark_mode=UNIVERSAL_SIGNAL_FLIP_V2:694057,STANDARDIZED_ATR_1R_1_5R_V2:464230,NATIV`
-- `BRAINMAP9`: `TABLE candidate_events=event_id,candidate_id,created_epoch_ms,event_type,payload_json`
 - `DB_WRITE`: `NO`
-- `FACTS`: `82`
+- `HITS`: `12`
 - `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
 - `PREFLIGHT_RERUN`: `NO`
 - `RESTART`: `NO`
 - `SCORE_PRODUCER_CHANGE`: `NO`
 - `SOURCE_CHANGE`: `NO`
-- `TABLES`: `7`
+- `STAGE1`: `indicator_lab_v1.py | 105:performance_status TEXT NOT NULL DEFAULT &#x27;NOT_TESTED&#x27;, | 106:oos_status TEXT NOT NULL`
+- `STAGE10`: `indicator_lab_worker_v1.py | 640:FROM candidate_events | 641:WHERE candidate_id=?`
+- `STAGE11`: `indicator_lab_tier_runtime_v1b.py | 369:&quot;oos_status&quot;, | 370:&quot;robustness_status&quot;, | 383:def _scrub(`
+- `STAGE12`: `tools/pine_library_test_executor_v1/executor.py | 78:&quot;oos_status&quot;: &quot;PENDING&quot;, | 80:&quot;brain_value_score&quot;: None,`
+- `STAGE13`: `NONE`
+- `STAGE14`: `NONE`
+- `STAGE15`: `NONE`
+- `STAGE16`: `NONE`
+- `STAGE17`: `NONE`
+- `STAGE18`: `NONE`
+- `STAGE19`: `NONE`
+- `STAGE2`: `indicator_lab_v1.py | 141:oos_status TEXT, | 143:brain_value_score REAL, | 149:CREATE TABLE IF NOT EXISTS candid`
+- `STAGE20`: `NONE`
+- `STAGE21`: `NONE`
+- `STAGE22`: `NONE`
+- `STAGE23`: `NONE`
+- `STAGE24`: `NONE`
+- `STAGE25`: `NONE`
+- `STAGE26`: `NONE`
+- `STAGE27`: `NONE`
+- `STAGE28`: `NONE`
+- `STAGE29`: `NONE`
+- `STAGE3`: `indicator_lab_v1.py | 220:performance_status, | 221:oos_status, | 222:robustness_status, | 223:brain_value_statu`
+- `STAGE30`: `NONE`
+- `STAGE4`: `indicator_lab_v1.py | 265:def _append_event(con, candidate_id, event_type, payload): | 268:INSERT INTO candidate`
+- `STAGE5`: `indicator_lab_v1.py | 321:SELECT trade_count | 323:WHERE t.candidate_id = c.candidate_id | 328:SELECT brain_valu`
+- `STAGE6`: `indicator_lab_v1.py | 388:WHERE status = &#x27;QUEUED&#x27; | 394:SELECT COUNT(*) | 396:WHERE prospective_status = &#x27;ACTIVE`
+- `STAGE7`: `indicator_lab_v1.py | 2595:_append_event(`
+- `STAGE8`: `indicator_lab_v1.py | 2897:_append_event(`
+- `STAGE9`: `indicator_lab_worker_v1.py | 296:def append_event( | 304:INSERT INTO candidate_events (`
