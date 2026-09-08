@@ -1,54 +1,62 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T19:31:10.055345+00:00`
-- Run ID: `20260908T193107Z`
-- Step: `READCUTOVERSEAM2`
+- Published UTC: `2026-09-08T19:33:36.508794+00:00`
+- Run ID: `20260908T193334Z`
+- Step: `READCUTOVERMAP3`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `CUTOVERSEAMREAD`
+- Verdict: `CUTOVERMAPPINGREADY`
 - Next gate: `PATCHBRAINCUTOVER`
 
 ## Facts
 
 - `BENCHTEST_RERUN`: `NO`
 - `DB_WRITE`: `NO`
-- `FACTS`: `20`
+- `FACTS`: `43`
+- `MAP1`: `MASTERARCH=YES`
+- `MAP10`: `FIELDS contract_version,max_drawdown_pct,net_return_pct,profit_factor,realistic_score,resin_status`
+- `MAP11`: `FIELDS score_eligible,score_status,signal_mode,source_sha256,test_status,tested_at`
+- `MAP12`: `FIELDS trade_count,win_rate_pct`
+- `MAP13`: `RUNCOLS benchtest_run_id,indicator_id,version_id,preflight_run_id,benchtest_contract,score_method,status`
+- `MAP14`: `RUNCOLS primary_benchmark_mode,primary_profit_factor,primary_net_return_pct,primary_max_drawdown_pct,primary_win`
+- `MAP15`: `RUNCOLS primary_sortino,primary_exposure_pct,secondary_max_drawdown_pct,realistic_score,legacy_max_drawdown_pct,`
+- `MAP16`: `RAWKEYS candidate_id,contract_version,dataset_actual_candles,dataset_coverage_pct,dataset_end,dataset_expected_c`
+- `MAP17`: `RAWKEYS end_of_test_json,ending_equity,engine,engine_version,error_detail,expectancy,gross_return_pct`
+- `MAP18`: `RAWKEYS inverse_dd_percentile,long_signal_count,losing_trades,market_data_contract,market_data_sha256,max_drawdo`
+- `MAP19`: `RAWKEYS pair,parameter_mode,primary_benchmark_mode,primary_exposure_pct,primary_sharpe,primary_sortino,profit_fa`
+- `MAP2`: `LEGACYLINE=235`
+- `MAP20`: `RAWKEYS profit_factor_percentile,realistic_score,resin_detail,resin_status,resin_version,return_percentile,run_i`
+- `MAP21`: `RAWKEYS score_cohort_size,score_contract,score_eligible,score_quality_json,score_status,script_kind,secondary_be`
+- `MAP22`: `RAWKEYS secondary_ending_equity,secondary_expectancy,secondary_exposure_pct,secondary_losing_trades,secondary_ma`
+- `MAP23`: `RAWKEYS secondary_profit_factor,secondary_score,secondary_score_status,secondary_sharpe,secondary_sortino,second`
+- `MAP24`: `RAWKEYS secondary_trade_count,secondary_win_rate_pct,secondary_winning_trades,short_signal_count,signal_contract`
+- `MAP25`: `RAWKEYS source_sha256,sqn,starting_equity,test_status,tested_at,timeframe,trade_count`
+- `MAP26`: `RAWKEYS trade_count_percentile,win_rate_pct,winning_trades`
+- `MAP27`: `MAP realistic_score=realistic_score`
+- `MAP28`: `MAP profit_factor=primary_profit_factor`
+- `MAP29`: `MAP net_return_pct=primary_net_return_pct`
+- `MAP3`: `SQL 219:ORDER BY updated_epoch_ms ASC | 220:&quot;&quot;&quot; | 221:): | 222:candidate_map[`
+- `MAP30`: `MAP max_drawdown_pct=primary_max_drawdown_pct`
+- `MAP31`: `MAP completed_trades=primary_trade_count`
+- `MAP32`: `MAP contract_version=MISSING`
+- `MAP33`: `EXTRA resin_status direct=NO raw=YES`
+- `MAP34`: `EXTRA score_eligible direct=NO raw=YES`
+- `MAP35`: `EXTRA score_status direct=NO raw=YES`
+- `MAP36`: `EXTRA signal_mode direct=NO raw=YES`
+- `MAP37`: `EXTRA source_sha256 direct=NO raw=YES`
+- `MAP38`: `EXTRA test_status direct=NO raw=YES`
+- `MAP39`: `EXTRA tested_at direct=NO raw=YES`
+- `MAP4`: `SQL 223:row[&quot;candidate_id&quot;] | 224:] = dict(row) | 226:# Latest BenchTest result per candidate under the current`
+- `MAP40`: `EXTRA trade_count direct=NO raw=YES`
+- `MAP5`: `SQL 228:latest_bench = {} | 230:for row in con.execute( | 231:&quot;&quot;&quot; | 232:SELECT`
+- `MAP6`: `SQL 233:rowid AS _rowid, | 234:* | 235:FROM benchtest_results_v1 | 236:WHERE contract_version=?`
+- `MAP7`: `SQL 237:ORDER BY tested_at ASC, rowid ASC | 238:&quot;&quot;&quot;, | 239:(BENCH_CONTRACT,), | 240:):`
+- `MAP8`: `SQL 241:latest_bench[ | 242:row[&quot;candidate_id&quot;] | 243:] = dict(row) | 245:queue = []`
+- `MAP9`: `SQL 247:exact_source_identity_count = 0 | 248:metadata_lineage_pass_count = 0 | 249:technical_pass_count = 0 | 2`
 - `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
 - `PREFLIGHT_RERUN`: `NO`
 - `RESTART`: `NO`
 - `SCORE_PRODUCER_CHANGE`: `NO`
-- `SEAM1`: `MASTERARCH=YES`
-- `SEAM10`: `REF CODE user_data/indicator_brain/research_library_intelligence/v1/native_screening_v1/indicator_native_screening_v`
-- `SEAM11`: `REF NONLIVE user_data/orderflow_dashboard/data/manual_support/AI_TRADING_SYSTEM_MASTER.before_BENCHTEST_V2_SCORE_PER`
-- `SEAM12`: `REF NONLIVE user_data/orderflow_dashboard/data/manual_support/master_backup_20260903T132014.md:2801`
-- `SEAM13`: `REF NONLIVE user_data/orderflow_dashboard/data/manual_support/master_backup_20260903T132014.md:2904`
-- `SEAM14`: `REF NONLIVE user_data/orderflow_dashboard/data/manual_support/test_your_script_status_connected_v21e_backup_20260904`
-- `SEAM15`: `REF NONLIVE user_data/orderflow_dashboard/data/manual_support/test_your_script_grid_layout_v3_backup_20260903T143627`
-- `SEAM16`: `TARGETSOURCE=pipeline_benchtest_runs`
-- `SEAM17`: `TARGETCURRENT=is_current1`
-- `SEAM18`: `TARGETSCORED=numeric_realistic_score`
-- `SEAM19`: `PRIMARYMODE=UNIVERSAL_SIGNAL_FLIP_V2`
-- `SEAM2`: `BENCHFIELDS=contract_version,max_drawdown_pct,net_return_pct,profit_factor,realistic_score,resin_status,score_el`
-- `SEAM20`: `FINALOPEN=MARK_TO_MARKET_NOT_EXIT`
-- `SEAM21`: `NONE`
-- `SEAM22`: `NONE`
-- `SEAM23`: `NONE`
-- `SEAM24`: `NONE`
-- `SEAM25`: `NONE`
-- `SEAM26`: `NONE`
-- `SEAM27`: `NONE`
-- `SEAM28`: `NONE`
-- `SEAM29`: `NONE`
-- `SEAM3`: `RUNCOLS=benchtest_run_id,indicator_id,version_id,preflight_run_id,benchtest_contract,score_method,status,primary`
-- `SEAM30`: `NONE`
-- `SEAM31`: `NONE`
-- `SEAM32`: `NONE`
-- `SEAM4`: `SEAM legacy=ICL_LIB_0D272A5A803DB579 iid=ICL_LIB_0D272A5A803DB579 vid=IV_504255E8E8DC19124A4F`
-- `SEAM5`: `RUN run=BTR_209BB6C8FC6FD2722AB9 score=1.371890246584288 trades=20812`
-- `SEAM6`: `CURRENTScored=16`
-- `SEAM7`: `SCOREDWITHLEGACY=16`
-- `SEAM8`: `REFCOUNT=323`
-- `SEAM9`: `CODEREFS=1`
 - `SOURCE_CHANGE`: `NO`
