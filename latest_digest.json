@@ -1,8 +1,8 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-08T08:43:49.417571+00:00",
-  "run_id": "20260908T084347Z",
-  "step": "PATCHREPORTV2STRUCT",
+  "published_at_utc": "2026-09-08T08:51:11.248986+00:00",
+  "run_id": "20260908T085109Z",
+  "step": "PATCHREPORTV2ROBUST",
   "status": "SUCCESS",
   "exit_code": 0,
   "verdict": "REPORTV2PATCHFAILED",
@@ -10,7 +10,7 @@
   "facts": {
     "BENCHTEST_RERUN": "NO",
     "DB_WRITE": "NO",
-    "ERROR": "FIELDCOUNTSCORE_CO",
+    "ERROR": "CARDSIGNAL_R",
     "MASTER_CHANGE": "NO",
     "MASTER_READ": "YES",
     "PREFLIGHT_RERUN": "NO",
