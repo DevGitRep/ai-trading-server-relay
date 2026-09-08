@@ -1,26 +1,37 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T14:52:06.449145+00:00`
-- Run ID: `20260908T145204Z`
-- Step: `PATCHFREECHARTPROFILE2`
+- Published UTC: `2026-09-08T14:53:28.023205+00:00`
+- Run ID: `20260908T145325Z`
+- Step: `READCHARTSMOKE`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `FREECHARTPROFILEFAILED`
-- Next gate: `REVIEWFREEPATCH`
+- Verdict: `CHARTSMOKEREAD`
+- Next gate: `PATCHFREECHARTPROFILE`
 
 ## Facts
 
-- `BACKUP`: `PASS`
 - `BENCHTEST_RERUN`: `NO`
+- `CHART1`: `5a8be1b3428aade27fba6359da18 F=404/False/cNA/mNA P=404/False/cNA/mNA e=Indicator identity unavailable`
+- `CHART10`: `1f1f15a449e08da533ccaa2ddb8f F=404/False/cNA/mNA P=404/False/cNA/mNA e=Indicator identity unavailable`
+- `CHART11`: `IcP8yQTUFBpvajtiLpkAw78uUeIi F=404/False/cNA/mNA P=404/False/cNA/mNA e=Indicator identity unavailable`
+- `CHART12`: `8GAoCLM8O3jE8DHuI2R1kJnoIacX F=404/False/cNA/mNA P=404/False/cNA/mNA e=Indicator identity unavailable`
+- `CHART2`: `kfSMjI5fsgLKOXV5XHdUTsrVS0C2 F=404/False/cNA/mNA P=404/False/cNA/mNA e=Indicator identity unavailable`
+- `CHART3`: `96557201415e9fdc4b8aab45c11b F=404/False/cNA/mNA P=404/False/cNA/mNA e=Indicator identity unavailable`
+- `CHART4`: `d9dfefa1423e993ede3f87a7ecf8 F=404/False/cNA/mNA P=404/False/cNA/mNA e=Indicator identity unavailable`
+- `CHART5`: `c816861b4456b7ecf9445e475a22 F=404/False/cNA/mNA P=404/False/cNA/mNA e=Indicator identity unavailable`
+- `CHART6`: `e7e2700c4fbdb22667c1abecb95d F=404/False/cNA/mNA P=404/False/cNA/mNA e=Indicator identity unavailable`
+- `CHART7`: `XxZy7OdwX28F8s48gMq7H6i9AKPO F=404/False/cNA/mNA P=404/False/cNA/mNA e=Indicator identity unavailable`
+- `CHART8`: `EO8889WFfPKuf9LBrgnSVkAcpvkm F=404/False/cNA/mNA P=404/False/cNA/mNA e=Indicator identity unavailable`
+- `CHART9`: `4623354e4622b56947572bfacf2f F=404/False/cNA/mNA P=404/False/cNA/mNA e=Indicator identity unavailable`
 - `DB_WRITE`: `NO`
-- `ERROR`: `REPORTLIVE:RuntimeError:CHARTSMOKE`
+- `FREEWITHCANDLES`: `0`
+- `LIBHTTP`: `200`
 - `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
 - `PREFLIGHT_RERUN`: `NO`
-- `PREWRITE`: `PASS`
-- `RESTART`: `YES`
-- `ROLLBACK`: `YES`
+- `PROWITHMARKERS`: `0`
+- `REPORTS`: `12`
+- `RESTART`: `NO`
 - `SCORE_PRODUCER_CHANGE`: `NO`
-- `SERVICE`: `active`
 - `SOURCE_CHANGE`: `NO`
