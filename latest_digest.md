@@ -1,26 +1,32 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T12:02:01.966562+00:00`
-- Run ID: `20260908T120159Z`
-- Step: `READWRITEPERMS`
+- Published UTC: `2026-09-08T12:03:30.943059+00:00`
+- Run ID: `20260908T120328Z`
+- Step: `FIXBENCHUSABLECOUNT`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `WRITEPERMSREAD`
-- Next gate: `FIXBENCHSTAT`
+- Verdict: `BENCHSTATUSABLECOUNT`
+- Next gate: `NORMALOPERATIONS`
 
 ## Facts
 
-- `BACKDIR`: `775:transformer:transformer`
-- `BACKSTAT`: `444:transformer:transformer`
-- `BACKWRITE`: `NO`
+- `BACKMODE`: `444`
+- `BACKUP`: `PASS`
 - `BENCHTEST_RERUN`: `NO`
+- `COMPILE`: `PASS`
+- `CURRENT`: `21`
 - `DB_WRITE`: `NO`
-- `MASTERDIR`: `775:transformer:transformer`
-- `MASTERSTAT`: `664:transformer:transformer`
-- `MASTERWRITE`: `YES`
-- `MASTER_CHANGE`: `NO`
+- `MASTER_CHANGE`: `YES`
 - `MASTER_READ`: `YES`
+- `PATCH`: `PASS`
 - `PREFLIGHT_RERUN`: `NO`
-- `RESTART`: `NO`
-- `SOURCE_CHANGE`: `NO`
+- `QUICK`: `ok`
+- `RESTART`: `YES`
+- `ROLLBACK`: `NO`
+- `SCORED`: `16`
+- `SCORE_PRODUCER_CHANGE`: `NO`
+- `SERVICE`: `active`
+- `SOURCE_CHANGE`: `YES`
+- `STATSHTTP`: `200`
+- `TILECOUNT`: `16`
