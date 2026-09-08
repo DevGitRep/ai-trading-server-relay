@@ -1,34 +1,36 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T08:12:31.143591+00:00`
-- Run ID: `20260908T081229Z`
-- Step: `READCANONCHARTINPUTS`
+- Published UTC: `2026-09-08T08:14:07.518197+00:00`
+- Run ID: `20260908T081405Z`
+- Step: `READTRADELEDGER`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `CANONCHARTINPUTSREAD`
+- Verdict: `TRADELEDGERCONTRACTREAD`
 - Next gate: `PATCHREPORTV2`
 
 ## Facts
 
 - `BENCHTEST_RERUN`: `NO`
-- `CANON_PATH1`: `end_of_test_json.primary.entry_bar=int`
-- `CANON_PATH2`: `end_of_test_json.primary.entry_price=float`
-- `CANON_PATH3`: `end_of_test_json.primary.entry_signal_bar=int`
-- `CANON_PATH4`: `end_of_test_json.primary.normal_closed_trade=bool`
+- `CONTRACT`: `TEXT24`
 - `DB_WRITE`: `NO`
-- `HELPERS`: `_chart_candidate_ids:ABSENT | _chart_best_metrics:ABSENT | _epoch_seconds(value):L0:R=None`
-- `MARKER_KEYS`: `Entry Timestamp,Exit Timestamp,display_timeframe,markers,source_timeframe,timeframe`
+- `ENDTEST`: `D2:primary,secondary`
+- `EVIDENCE`: `D4:evidence,mode,primary,secondary`
+- `MARKER`: `t=_epoch_seconds( trade.get( &quot;Exit Timestamp&quot; ) )|_epoch_seconds( trade.get( &quot;Exit Timestamp&quot; ) )|trade.get( &quot;Exit Timestamp&quot; )`
 - `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
+- `OLDJSON`: `NONE`
+- `OLDKEYS`: `Avg Entry Price,Avg Exit Price,Entry Timestamp,Exit Timestamp,candles,market_data_sha256,plots_json,raw_json,run_id,source_candle_count,tested_at,trade_no`
 - `PREFLIGHT_RERUN`: `NO`
 - `QUICK`: `ok`
 - `RESTART`: `NO`
 - `SCORE_PRODUCER_CHANGE`: `NO`
 - `SOURCE_CHANGE`: `NO`
-- `SQL1`: `SELECT * FROM benchtest_results_v2 WHERE candidate_id=? AND tested_at=? LIMIT 1`
-- `SQL2`: `SELECT * FROM benchtest_results_v2 WHERE candidate_id=? ORDER BY tested_at DESC LIMIT 1`
-- `SQL3`: `SELECT market_data_sha256 FROM benchtest_results_v2 WHERE run_id=? LIMIT 1`
-- `SQL_N`: `3`
-- `TOP_RAW`: `long_signal_count,losing_trades,secondary_losing_trades,secondary_trade_count,secondary_winning_trades,short_signal_count,signal_contract,signal_evide`
-- `TRADE_KEYS`: `Avg Entry Price,Avg Exit Price,ENTRY,EXIT,Entry Timestamp,Exit Timestamp,trade_count,trade_no`
+- `TOP1`: `dataset_actual_candles=INT`
+- `TOP2`: `dataset_expected_candles=INT`
+- `TOP3`: `end_of_test_json=D2:primary,secondary`
+- `TOP4`: `long_signal_count=INT`
+- `TOP5`: `losing_trades=INT`
+- `TRADELIST`: `NONE`
+- `TRADELISTN`: `0`
+- `TRADES`: `8`
