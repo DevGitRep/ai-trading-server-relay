@@ -1,12 +1,12 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T20:22:03.157036+00:00`
-- Run ID: `20260908T202201Z`
-- Step: `TRACEALIGNCLI`
+- Published UTC: `2026-09-08T20:23:36.313465+00:00`
+- Run ID: `20260908T202334Z`
+- Step: `RESOLVEALIGNFINAL`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `ALIGNREMAININGINPUTSREAD`
+- Verdict: `ALIGNFINALINPUTSREAD`
 - Next gate: `DRYRUNALIGNMENT`
 
 ## Facts
@@ -15,7 +15,53 @@
 - `BRAIN_ADMISSION`: `NO`
 - `BRAIN_IQ_CHANGE`: `NO`
 - `DB_WRITE`: `NO`
-- `FACTS`: `31`
+- `FACTS`: `18`
+- `FINAL1`: `MASTERNATIVE=YES`
+- `FINAL10`: `INTERFACE indicator_v1h0_fusion_interface_audit_20260819_070806.json match=0/1 parent=audits`
+- `FINAL11`: `INTERFACE indicator_v1h0_fusion_interface_contract_20260819_070806.json match=1/1 parent=contracts`
+- `FINAL12`: `INTERFACE indicator_v1h0_fusion_interface_manifest_20260819_070806.json match=0/1 parent=manifests`
+- `FINAL13`: `DBTABLES=resin_native_outputs`
+- `FINAL14`: `INDTABLES=pathlib`
+- `FINAL15`: `DBFILE indicator_challenger_lab_v1.db db=1/1 ind=0/1`
+- `FINAL16`: `DBFILE indicator_brain.db db=0/1 ind=0/1`
+- `FINAL17`: `DBFILE indicator_v1_first_seen_overlay.db db=0/1 ind=0/1`
+- `FINAL18`: `METAREFS=0`
+- `FINAL19`: `NONE`
+- `FINAL2`: `PREFLOADLINE=770`
+- `FINAL20`: `NONE`
+- `FINAL21`: `NONE`
+- `FINAL22`: `NONE`
+- `FINAL23`: `NONE`
+- `FINAL24`: `NONE`
+- `FINAL25`: `NONE`
+- `FINAL26`: `NONE`
+- `FINAL27`: `NONE`
+- `FINAL28`: `NONE`
+- `FINAL29`: `NONE`
+- `FINAL3`: `PREFAPI=find_dataset,load_candles`
+- `FINAL30`: `NONE`
+- `FINAL31`: `NONE`
+- `FINAL32`: `NONE`
+- `FINAL33`: `NONE`
+- `FINAL34`: `NONE`
+- `FINAL35`: `NONE`
+- `FINAL36`: `NONE`
+- `FINAL37`: `NONE`
+- `FINAL38`: `NONE`
+- `FINAL39`: `NONE`
+- `FINAL4`: `PREFCANDIDATES=3`
+- `FINAL40`: `NONE`
+- `FINAL41`: `NONE`
+- `FINAL42`: `NONE`
+- `FINAL43`: `NONE`
+- `FINAL44`: `NONE`
+- `FINAL45`: `NONE`
+- `FINAL46`: `NONE`
+- `FINAL5`: `PREF run_r5t_readonly_preflight.py score=0 parent=r5t_post_cutover_freeze`
+- `FINAL6`: `PREF run_r5wf_production_readonly_preflight.py score=0 parent=r5wf_one_time_production_ingest_authority_prefligh`
+- `FINAL7`: `PREF run_r5wgl_readonly_preflight.py score=0 parent=r5wgl_01_production_eligibility_readonly_preflight`
+- `FINAL8`: `INTERFACEKEYS=fusion_regime_thresholds`
+- `FINAL9`: `INTERFACECANDIDATES=3`
 - `INSTALL`: `NO`
 - `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
@@ -26,49 +72,3 @@
 - `RESTART`: `NO`
 - `SCORE_PRODUCER_CHANGE`: `NO`
 - `SOURCE_CHANGE`: `NO`
-- `TRACE1`: `MASTERNATIVE=YES`
-- `TRACE10`: `PREFLIGHTHITS=1`
-- `TRACE11`: `PREFLIGHTCTX1=1259:&quot;STAGE2A_NOT_READY&quot; | 1260:) | 1262:dataset, candles = ( | 1263:load_preflight( | 1264:args.p`
-- `TRACE12`: `INTERFACEHITS=1`
-- `TRACE13`: `INTERFACECTX1=1224:) | 1225:) | 1227:interface = json.load( | 1228:open( | 1229:args.interface, | 1230:encoding=`
-- `TRACE14`: `INDICATOR_DBHITS=1`
-- `TRACE15`: `INDICATOR_DBCTX1=1340:} | 1342:ind = execute_frozen_feature_prefix( | 1343:args.source, | 1344:args.model, | 134`
-- `TRACE16`: `LOADPREFLIGHT=770`
-- `TRACE17`: `PREFCODE 770:def load_preflight( | 771:path, | 772:): | 773:path = Path(path)`
-- `TRACE18`: `PREFCODE 775:loader = ( | 776:importlib.machinery | 777:.SourceFileLoader( | 778:&quot;_stage2b_preflight&quot;,`
-- `TRACE19`: `PREFCODE 779:str(path), | 780:) | 781:) | 783:spec = (`
-- `TRACE2`: `SOURCECOUNT=1`
-- `TRACE20`: `PREFCODE 784:importlib.util | 785:.spec_from_loader( | 786:loader.name, | 787:loader,`
-- `TRACE21`: `PREFCODE 788:) | 789:) | 791:mod = ( | 792:importlib.util`
-- `TRACE22`: `PREFCODE 793:.module_from_spec( | 794:spec | 795:) | 796:)`
-- `TRACE23`: `COMMANDHITS=0`
-- `TRACE24`: `PREFFILES=0`
-- `TRACE25`: `INTERFACEFILES=3`
-- `TRACE26`: `INTERFACE indicator_v1h0_fusion_interface_manifest_20260819_070806.json parent=manifests`
-- `TRACE27`: `INTERFACE indicator_v1h0_fusion_interface_contract_20260819_070806.json parent=contracts`
-- `TRACE28`: `INTERFACE indicator_v1h0_fusion_interface_audit_20260819_070806.json parent=audits`
-- `TRACE29`: `BRAINDBS=2`
-- `TRACE3`: `SOURCESHA=YES`
-- `TRACE30`: `DB indicator_brain.db tables=indicator_ai_brain_runs,indicator_baseline_results,indicator_breakout_conditioned_m`
-- `TRACE31`: `DB indicator_v1_first_seen_overlay.db tables=first_seen_candles_v1`
-- `TRACE32`: `NONE`
-- `TRACE33`: `NONE`
-- `TRACE34`: `NONE`
-- `TRACE35`: `NONE`
-- `TRACE36`: `NONE`
-- `TRACE37`: `NONE`
-- `TRACE38`: `NONE`
-- `TRACE39`: `NONE`
-- `TRACE4`: `SOURCEFILE=sol_indicator_ai_brain_v1d1_20260818_150847.py parent=src`
-- `TRACE40`: `NONE`
-- `TRACE41`: `NONE`
-- `TRACE42`: `NONE`
-- `TRACE43`: `NONE`
-- `TRACE44`: `NONE`
-- `TRACE45`: `NONE`
-- `TRACE46`: `NONE`
-- `TRACE5`: `MODELCOUNT=1`
-- `TRACE6`: `MODELSHA=YES`
-- `TRACE7`: `MODELFILE=sol_indicator_ai_brain_v1d1_20260818_150847.joblib parent=models`
-- `TRACE8`: `DBHITS=1`
-- `TRACE9`: `DBCTX1=1452:for row in eligible | 1453:} | 1455:con = sqlite3.connect( | 1456:&quot;file:&quot; | 1457:+ args.db | 1458:+`
