@@ -1,8 +1,8 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T14:38:34.829512+00:00`
-- Run ID: `20260908T143832Z`
+- Published UTC: `2026-09-08T14:42:45.801009+00:00`
+- Run ID: `20260908T144243Z`
 - Step: `PATCHFREECHARTPROFILE`
 - Status: `SUCCESS`
 - Exit code: `0`
