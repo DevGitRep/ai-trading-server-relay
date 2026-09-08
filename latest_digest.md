@@ -1,34 +1,23 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T12:51:28.303980+00:00`
-- Run ID: `20260908T125126Z`
-- Step: `PATCHINDICATORDNA2`
+- Published UTC: `2026-09-08T12:58:21.871118+00:00`
+- Run ID: `20260908T125819Z`
+- Step: `MOVEPROFILETAGS`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `INDICATORDNALIVE`
-- Next gate: `REVIEWREPORTVISUAL`
+- Verdict: `PROFILETAGPATCHFAILED`
+- Next gate: `REVIEWPROFILETAGS`
 
 ## Facts
 
-- `BACKUP`: `PASS`
 - `BENCHTEST_RERUN`: `NO`
-- `CARDS`: `5`
-- `COMPILE`: `PASS`
 - `DB_WRITE`: `NO`
-- `DNA`: `T9.2 M57.2 R33.6 V0.0 X0.0`
-- `DNASUM`: `100.0`
-- `LEGACY`: `ABSENT`
-- `LIVEDNASUM`: `100.0`
-- `MASTER_CHANGE`: `YES`
+- `ERROR`: `PREWRITE:RuntimeError:JINJAPARSE`
+- `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
-- `PATCH`: `PASS`
 - `PREFLIGHT_RERUN`: `NO`
-- `PREWRITE`: `PASS`
-- `QUICK`: `ok`
-- `REPORT`: `200`
-- `RESTART`: `YES`
+- `RESTART`: `NO`
 - `ROLLBACK`: `NO`
 - `SCORE_PRODUCER_CHANGE`: `NO`
-- `SERVICE`: `active`
-- `SOURCE_CHANGE`: `YES`
+- `SOURCE_CHANGE`: `NO`
