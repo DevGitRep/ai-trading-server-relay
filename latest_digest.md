@@ -1,69 +1,69 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T21:15:01.907134+00:00`
-- Run ID: `20260908T211459Z`
-- Step: `RESOLVESTAGE2BDIVERSITY`
+- Published UTC: `2026-09-08T21:44:55.302524+00:00`
+- Run ID: `20260908T214453Z`
+- Step: `READALIGNDIVERSITY`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `STAGE2BDIVERSITYREAD`
-- Next gate: `REVIEWSTAGE2BDIVERSITY`
+- Verdict: `ALIGNDIVERSITYREAD`
+- Next gate: `BUILDSELECTIONDRYRUN`
 
 ## Facts
 
+- `ALIGNDIV1`: `MASTERALIGN=YES`
+- `ALIGNDIV10`: `OLDONLY=0`
+- `ALIGNDIV11`: `CURRONLY=0`
+- `ALIGNDIV12`: `COMMON candidate_results[].selected_representation_count old=scalar:8 cur=scalar:2`
+- `ALIGNDIV13`: `COMMON candidate_results[].selected_series[].representation old=scalar:EVENT_PRESENCE cur=scalar:PRICE_DISTANCE_`
+- `ALIGNDIV14`: `COMMON candidate_results[].usable_representation_count old=scalar:8 cur=scalar:2`
+- `ALIGNDIV15`: `COMMON counts.cross_candidate_redundancy_clusters old=scalar:10 cur=scalar:7`
+- `ALIGNDIV16`: `COMMON counts.cross_candidate_redundancy_edges old=scalar:683 cur=scalar:22`
+- `ALIGNDIV17`: `COMMON counts.diversity_screen_shortlist old=scalar:40 cur=scalar:13`
+- `ALIGNDIV18`: `COMMON diversity_screen_shortlist old=list:40 cur=list:13`
+- `ALIGNDIV19`: `COMMON diversity_screen_shortlist[].candidate_id old=scalar:ICL_LIB_DEC7F969A4B5969C cur=scalar:ICL_LIB_A54371FD`
+- `ALIGNDIV2`: `OLDMATCHES=2`
+- `ALIGNDIV20`: `COMMON diversity_screen_shortlist[].maximum_incumbent_linear_overlap old=scalar:0.1674544414722499 cur=scalar:0.`
+- `ALIGNDIV21`: `COMMON diversity_screen_shortlist[].minimum_incumbent_linear_overlap old=scalar:0.004955004607796131 cur=scalar:`
+- `ALIGNDIV22`: `COMMON diversity_screen_shortlist[].realistic_score old=scalar:16.25 cur=scalar:1.9278323195139966`
+- `ALIGNDIV23`: `COMMON diversity_screen_shortlist[].redundancy_cluster_memberships old=scalar:0 cur=scalar:0`
+- `ALIGNDIV24`: `REPCLUSTERS=9`
+- `ALIGNDIV25`: `REPCLUSTERINOLD=9/9`
+- `ALIGNDIV26`: `CLUSTER_IDS=0/0`
+- `ALIGNDIV27`: `REALISTIC_SCORE_ROLE=0/0`
+- `ALIGNDIV28`: `REPRESENTATION_TYPES=0/0`
+- `ALIGNDIV29`: `SELECTION_REASON=0/0`
+- `ALIGNDIV3`: `OLDROWS=101`
+- `ALIGNDIV30`: `REDUNDANCYSTRUCTURE=YES`
+- `ALIGNDIV31`: `NONE`
+- `ALIGNDIV32`: `NONE`
+- `ALIGNDIV33`: `NONE`
+- `ALIGNDIV34`: `NONE`
+- `ALIGNDIV35`: `NONE`
+- `ALIGNDIV36`: `NONE`
+- `ALIGNDIV37`: `NONE`
+- `ALIGNDIV38`: `NONE`
+- `ALIGNDIV39`: `NONE`
+- `ALIGNDIV4`: `CURRENTROWS=14`
+- `ALIGNDIV40`: `NONE`
+- `ALIGNDIV41`: `NONE`
+- `ALIGNDIV42`: `NONE`
+- `ALIGNDIV43`: `NONE`
+- `ALIGNDIV44`: `NONE`
+- `ALIGNDIV45`: `NONE`
+- `ALIGNDIV46`: `NONE`
+- `ALIGNDIV5`: `OLDTOP=candidate_results,canonical_window,contract,counts,diversity_screen_shortlist,governance,incumbent_alignm`
+- `ALIGNDIV6`: `CURRTOP=candidate_results,canonical_window,contract,counts,diversity_screen_shortlist,governance,incumbent_align`
+- `ALIGNDIV7`: `OLDDIVERSITYFIELDS=33`
+- `ALIGNDIV8`: `CURRDIVERSITYFIELDS=33`
+- `ALIGNDIV9`: `COMMONFIELDS=33`
 - `ALIGNMENT_CHANGE`: `NO`
 - `BENCHTEST_RERUN`: `NO`
 - `BRAIN_ADMISSION`: `NO`
 - `BRAIN_IQ_CHANGE`: `NO`
 - `CACHE_CHANGE`: `NO`
 - `DB_WRITE`: `NO`
-- `DIVERSITY1`: `MASTERALIGN=YES`
-- `DIVERSITY10`: `S2BPRODUCERRESOLVED=NO`
-- `DIVERSITY11`: `S2BDIVERSITYREADY=NO`
-- `DIVERSITY12`: `NONE`
-- `DIVERSITY13`: `NONE`
-- `DIVERSITY14`: `NONE`
-- `DIVERSITY15`: `NONE`
-- `DIVERSITY16`: `NONE`
-- `DIVERSITY17`: `NONE`
-- `DIVERSITY18`: `NONE`
-- `DIVERSITY19`: `NONE`
-- `DIVERSITY2`: `SOURCE2BSHA=7e53381b443fb5ed`
-- `DIVERSITY20`: `NONE`
-- `DIVERSITY21`: `NONE`
-- `DIVERSITY22`: `NONE`
-- `DIVERSITY23`: `NONE`
-- `DIVERSITY24`: `NONE`
-- `DIVERSITY25`: `NONE`
-- `DIVERSITY26`: `NONE`
-- `DIVERSITY27`: `NONE`
-- `DIVERSITY28`: `NONE`
-- `DIVERSITY29`: `NONE`
-- `DIVERSITY3`: `SHAMATCHES=2`
-- `DIVERSITY30`: `NONE`
-- `DIVERSITY31`: `NONE`
-- `DIVERSITY32`: `NONE`
-- `DIVERSITY33`: `NONE`
-- `DIVERSITY34`: `NONE`
-- `DIVERSITY35`: `NONE`
-- `DIVERSITY36`: `NONE`
-- `DIVERSITY37`: `NONE`
-- `DIVERSITY38`: `NONE`
-- `DIVERSITY39`: `NONE`
-- `DIVERSITY4`: `SHAFILE=latest_incumbent_alignment.historical_before_canonical_20260908T210310Z.json parent=incumbent_alignment_`
-- `DIVERSITY40`: `NONE`
-- `DIVERSITY41`: `NONE`
-- `DIVERSITY42`: `NONE`
-- `DIVERSITY43`: `NONE`
-- `DIVERSITY44`: `NONE`
-- `DIVERSITY45`: `NONE`
-- `DIVERSITY46`: `NONE`
-- `DIVERSITY5`: `SHAFILE=incumbent_alignment_20260901T064337Z.json parent=runs`
-- `DIVERSITY6`: `PRODUCERS=0`
-- `DIVERSITY7`: `CLUSTERARTIFACTS=1`
-- `DIVERSITY8`: `CLUSTERFILE=diversity_representatives_v1.json list=representatives rows=17 parent=full_year_incremental_discover`
-- `DIVERSITY9`: `S2BSOURCERESOLVED=NO`
-- `FACTS`: `11`
+- `FACTS`: `30`
 - `INSTALL`: `NO`
 - `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
