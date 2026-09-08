@@ -1,31 +1,34 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T14:00:35.332491+00:00`
-- Run ID: `20260908T140030Z`
-- Step: `READREPORTLINKLOGIC`
+- Published UTC: `2026-09-08T14:01:37.872090+00:00`
+- Run ID: `20260908T140135Z`
+- Step: `READREPORTLINKBLOCK`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `REPORTLINKLOGICREAD`
+- Verdict: `REPORTLINKBLOCKREAD`
 - Next gate: `FIXREPORTBUTTONLINK`
 
 ## Facts
 
 - `BENCHTEST_RERUN`: `NO`
-- `CODE1`: `128:&#x27;a[href*=&quot;view_as=&quot;]&#x27;`
-- `CODE10`: `187:location.href`
-- `CODE11`: `188:).searchParams.get(&quot;view_as&quot;)`
-- `CODE12`: `192:clone.classList.add(`
-- `CODE13`: `197:nav.appendChild(clone);`
-- `CODE14`: `NONE`
-- `CODE2`: `144:x.href,`
-- `CODE3`: `145:location.href`
-- `CODE4`: `146:).searchParams.get(&quot;view_as&quot;)===v;`
-- `CODE5`: `173:const clone=a.cloneNode(true);`
-- `CODE6`: `177:clone.href,`
-- `CODE7`: `178:location.href`
-- `CODE8`: `179:).searchParams.get(&quot;view_as&quot;)`
-- `CODE9`: `186:clone.href,`
+- `BLOCK1`: `120: | 121:bar.className=&quot;irl-v2-titlebar&quot;; | 122: | 123:parent.insertBefore(bar,h); | 124:bar.appendChild(h);`
+- `BLOCK10`: `165: | 166:chosen.forEach((a,i)=&gt;{ | 167:if(i){ | 168:nav.append( | 169:document.createTextNode(&quot; &quot;)`
+- `BLOCK11`: `170:); | 171:} | 172: | 173:const clone=a.cloneNode(true); | 174:`
+- `BLOCK12`: `175:if( | 176:new URL( | 177:clone.href, | 178:location.href | 179:).searchParams.get(&quot;view_as&quot;)`
+- `BLOCK13`: `180:===tier | 181:|| | 182:( | 183:tier===&quot;INTERNAL&quot; | 184:&amp;&amp;`
+- `BLOCK14`: `185:new URL( | 186:clone.href, | 187:location.href | 188:).searchParams.get(&quot;view_as&quot;) | 189:===&quot;INTERNAL_ADMIN&quot;`
+- `BLOCK15`: `190:) | 191:){ | 192:clone.classList.add( | 193:&quot;irl-v2-view-active&quot; | 194:);`
+- `BLOCK16`: `195:} | 196: | 197:nav.appendChild(clone); | 198:}); | 199:`
+- `BLOCK17`: `200:bar.appendChild(nav); | 201: | 202:let box=chosen[0].parentElement;`
+- `BLOCK2`: `125: | 126:const links=Array.from( | 127:document.querySelectorAll( | 128:&#x27;a[href*=&quot;view_as=&quot;]&#x27; | 129:)`
+- `BLOCK3`: `130:).filter(a=&gt;!bar.contains(a)); | 131: | 132:const wanted=[ | 133:&quot;FREE&quot;, | 134:&quot;PRO&quot;,`
+- `BLOCK4`: `135:&quot;INTERNAL_ADMIN&quot; | 136:]; | 137: | 138:const chosen=[]; | 139:`
+- `BLOCK5`: `140:wanted.forEach(v=&gt;{ | 141:const a=links.find(x=&gt;{ | 142:try{ | 143:return new URL( | 144:x.href,`
+- `BLOCK6`: `145:location.href | 146:).searchParams.get(&quot;view_as&quot;)===v; | 147:}catch(_){ | 148:return false; | 149:}`
+- `BLOCK7`: `150:}); | 151: | 152:if(a){ | 153:chosen.push(a); | 154:}`
+- `BLOCK8`: `155:}); | 156: | 157:if(chosen.length){ | 158:const nav=document.createElement(&quot;div&quot;); | 159:`
+- `BLOCK9`: `160:nav.className=&quot;irl-v2-viewas&quot;; | 161: | 162:nav.append( | 163:document.createTextNode(&quot;View as: &quot;) | 164:);`
 - `DB_WRITE`: `NO`
 - `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
