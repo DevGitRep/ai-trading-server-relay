@@ -1,64 +1,34 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T20:09:42.552919+00:00`
-- Run ID: `20260908T200940Z`
-- Step: `ASSESSNATIVEOUTCOME`
+- Published UTC: `2026-09-08T20:12:10.843908+00:00`
+- Run ID: `20260908T201201Z`
+- Step: `PUBLISHCANONICALNATIVE`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `NATIVEOUTCOMEREAD`
-- Next gate: `DECIDENATIVEPUBLICATION`
+- Verdict: `CANONICALNATIVEPUBLISHED`
+- Next gate: `PREPAREINCUMBENTALIGNMENT`
 
 ## Facts
 
+- `ARCHIVE`: `YES`
 - `BENCHTEST_RERUN`: `NO`
 - `BRAIN_ADMISSION`: `NO`
 - `BRAIN_IQ_CHANGE`: `NO`
 - `DB_WRITE`: `NO`
+- `ELIGIBLE`: `14`
 - `ERROR`: `NONE`
-- `FACTS`: `25`
-- `MASTER_CHANGE`: `NO`
+- `ID_MATCH`: `YES`
+- `MASTER_CHANGE`: `YES`
 - `MASTER_READ`: `YES`
-- `OUTCOME1`: `MASTERQUEUE=YES`
-- `OUTCOME10`: `CONTRACT fingerprint_metrics=[&quot;length&quot;, &quot;finite_count&quot;, &quot;finite_ratio&quot;, &quot;unique_count&quot;, &quot;unique_ratio&quot;, &quot;mean&quot;,`
-- `OUTCOME11`: `CONTRACT native_series_rules={&quot;buy_sell_semantics_inferred&quot;: false, &quot;input&quot;: &quot;plots_json&quot;, &quot;minimum_finite_value`
-- `OUTCOME12`: `CONTRACT native_series_rules.input=plots_json`
-- `OUTCOME13`: `CONTRACT native_series_rules.minimum_unique_values_for_varying_series=3`
-- `OUTCOME14`: `CONTRACT native_series_rules.plot_color_semantics_inferred=False`
-- `OUTCOME15`: `CONTRACT native_series_rules.strategy_state_used_as_numeric_brain_feature=False`
-- `OUTCOME16`: `CONTRACT native_series_rules.time_like_series_excluded=True`
-- `OUTCOME17`: `CONTRACT native_series_rules.viz_used_as_numeric_brain_feature=False`
-- `OUTCOME18`: `NATIVERC=0`
-- `OUTCOME19`: `SPECIALCOUNT=1`
-- `OUTCOME2`: `STATUSCODEHITS=4`
-- `OUTCOME20`: `CANDIDATE=ICL_LIB_13D116EF34B21491`
-- `OUTCOME21`: `SCRIPTNAME=Markov Forecaster PRO`
-- `OUTCOME22`: `SERIESCOUNT=NONLIST`
-- `OUTCOME23`: `NATIVEARTIFACT=YES`
-- `OUTCOME24`: `METRICS score=6.912975107801398 trades=1917 exposure=99.94520547945206`
-- `OUTCOME25`: `PERF pf=0.7742404459252152 return=-92.63902325586218 dd=93.0959564901707`
-- `OUTCOME26`: `NONE`
-- `OUTCOME27`: `NONE`
-- `OUTCOME28`: `NONE`
-- `OUTCOME29`: `NONE`
-- `OUTCOME3`: `CODE1=932:continue | 934:plots_raw = row[ | 935:&quot;plots_json&quot; | 936:] | 938:if not plots_raw: | 939:item[&quot;status&quot;`
-- `OUTCOME30`: `NONE`
-- `OUTCOME31`: `NONE`
-- `OUTCOME32`: `NONE`
-- `OUTCOME33`: `NONE`
-- `OUTCOME34`: `NONE`
-- `OUTCOME4`: `CODE2=1062:].append(cid) | 1064:item[&quot;status&quot;] = ( | 1065:&quot;MATERIALIZED_SCREENING&quot; | 1066:) | 1068:else: | 1069:`
-- `OUTCOME5`: `CODE3=1130:&quot;PLOTS_JSON_INVALID&quot; | 1131:] | 1133:materialized = counts[ | 1134:&quot;MATERIALIZED_SCREENING&quot; | 1135:]`
-- `OUTCOME6`: `CODE4=1366:print( | 1367:&quot;MATERIALIZED_SCREENING=&quot; | 1368:+ str( | 1369:materialized | 1370:) | 1371:) | 1373:pr`
-- `OUTCOME7`: `CONTRACTHITS=17`
-- `OUTCOME8`: `CONTRACT candidate_outcomes=[&quot;MATERIALIZED_SCREENING&quot;, &quot;NO_VARYING_NUMERIC_PLOT_SERIES&quot;, &quot;NATIVE_ARTIFACT_MISSIN`
-- `OUTCOME9`: `CONTRACT contract=INDICATOR_NATIVE_SCREENING_V1`
+- `MATERIALIZED`: `13`
+- `NATIVE_CHANGE`: `YES`
+- `NEW_NATIVE`: `14`
+- `NO_VARYING`: `1`
+- `OLD_NATIVE`: `101`
 - `PREFLIGHT_RERUN`: `NO`
 - `PROSPECTIVE_ACTIVATION`: `NO`
 - `QUEUE_CHANGE`: `NO`
 - `RESTART`: `NO`
 - `SCORE_PRODUCER_CHANGE`: `NO`
 - `SOURCE_CHANGE`: `NO`
-- `TEMP_CLEANUP`: `YES`
-- `TEMP_DB`: `YES`
-- `TEMP_WRITE`: `YES`
