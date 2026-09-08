@@ -1,26 +1,25 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T06:18:55.151378+00:00`
-- Run ID: `20260908T061853Z`
-- Step: `DIAGBENCHSTAT`
+- Published UTC: `2026-09-08T06:20:22.148653+00:00`
+- Run ID: `20260908T062020Z`
+- Step: `READBENCHSTATOWNER`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `BENCHSTATDIAGREAD`
-- Next gate: `FIXBENCHSTAT`
+- Verdict: `BENCHSTATOWNERREAD`
+- Next gate: `PATCHBENCHSTAT`
 
 ## Facts
 
-- `ALL_BENCH`: `16`
-- `BACKEND_HITS`: `2`
+- `API_ZERO_KEY`: `NOTFOUND`
 - `BENCHTEST_RERUN`: `NO`
-- `CURRENT_BENCH`: `16`
-- `CURRENT_SCORED`: `16`
+- `CALLER`: `indicator_library_ui_v2_stats`
+- `CALL_USE`: `ASSIGN`
 - `DB_WRITE`: `NO`
-- `LIBRARY_HITS`: `5`
-- `LIVE_RESPONSE`: `RESPONSEFOUND`
+- `HELPER_CALLS`: `1`
+- `HELPER_FLAGS`: `REALISTIC,CURRENT,RUNS`
 - `MASTER_READ`: `YES`
 - `PREFLIGHT_RERUN`: `NO`
-- `QUICK`: `ok`
 - `RESTART`: `NO`
+- `RETURN_SHAPE`: `TUPLE`
 - `SOURCE_CHANGE`: `NO`
