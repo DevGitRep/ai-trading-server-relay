@@ -1,27 +1,23 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T10:07:19.861933+00:00`
-- Run ID: `20260908T100717Z`
-- Step: `UPDATEMASTERHANDOFF`
+- Published UTC: `2026-09-08T10:10:39.210052+00:00`
+- Run ID: `20260908T101037Z`
+- Step: `PATCHMARKERWIRE`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `MASTERHANDOFFUPDATED`
-- Next gate: `PATCHMARKERWIRE`
+- Verdict: `MARKERWIREPATCHFAILED`
+- Next gate: `REVIEWMARKERWIRE`
 
 ## Facts
 
-- `BACKUP`: `YES`
 - `BENCHTEST_RERUN`: `NO`
 - `DB_WRITE`: `NO`
-- `DIRECTION`: `LONGSHORT`
-- `KIND`: `ENTRYEXIT`
-- `MARKER_CONTRACT`: `ARRAY4`
-- `MASTER_CHANGE`: `YES`
+- `ERROR`: `unindent does not match any outer indentation level (&lt;unknow`
+- `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
-- `OPEN_DEFECT`: `MARKERWIRE`
 - `PREFLIGHT_RERUN`: `NO`
-- `RESIN_SIGNAL_SOURCE`: `NO`
 - `RESTART`: `NO`
+- `ROLLBACK`: `NO`
 - `SCORE_PRODUCER_CHANGE`: `NO`
 - `SOURCE_CHANGE`: `NO`
