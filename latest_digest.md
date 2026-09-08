@@ -1,13 +1,13 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T20:55:44.817891+00:00`
-- Run ID: `20260908T205542Z`
-- Step: `RESOLVEALIGNRUNTIME`
+- Published UTC: `2026-09-08T20:59:38.550949+00:00`
+- Run ID: `20260908T205936Z`
+- Step: `DRYRUNALIGNMENTFREQTRADE`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `ALIGNRUNTIMEMULTIPLE`
-- Next gate: `SELECTALIGNRUNTIME`
+- Verdict: `ALIGNDRYRUNPASS`
+- Next gate: `ASSESSALIGNMENTOUTPUT`
 
 ## Facts
 
@@ -15,7 +15,54 @@
 - `BRAIN_ADMISSION`: `NO`
 - `BRAIN_IQ_CHANGE`: `NO`
 - `DB_WRITE`: `NO`
-- `FACTS`: `21`
+- `ERROR`: `NONE`
+- `FACTS`: `24`
+- `FTALIGN1`: `MASTER=YES`
+- `FTALIGN10`: `INPUTS=YES`
+- `FTALIGN11`: `SOURCESHA=YES`
+- `FTALIGN12`: `MODELSHA=YES`
+- `FTALIGN13`: `OLDALIGN=101`
+- `FTALIGN14`: `ALIGNRC=0`
+- `FTALIGN15`: `DRYRESULTS=14`
+- `FTALIGN16`: `OUTPUTIDS=14`
+- `FTALIGN17`: `OUTSIDE=0`
+- `FTALIGN18`: `MISSING=0`
+- `FTALIGN19`: `RECOVERED=0`
+- `FTALIGN2`: `SAMEVENV=YES`
+- `FTALIGN20`: `ALIGNNOVARYING=1`
+- `FTALIGN21`: `NOVARYINGID=ICL_LIB_13D116EF34B21491`
+- `FTALIGN22`: `NOVARYINGMETA=realistic_score=6.912975107801398;recovered_from_stage2a_no_varying=False;stage2a_status=NO_VARYIN`
+- `FTALIGN23`: `FIRSTKEYS=candidate_id,maximum_incumbent_linear_overlap,minimum_incumbent_linear_overlap,native_plot_count,reali`
+- `FTALIGN24`: `OLDUNCHANGED=YES`
+- `FTALIGN25`: `NONE`
+- `FTALIGN26`: `NONE`
+- `FTALIGN27`: `NONE`
+- `FTALIGN28`: `NONE`
+- `FTALIGN29`: `NONE`
+- `FTALIGN3`: `RUNTIMEIMPORTS=YES`
+- `FTALIGN30`: `NONE`
+- `FTALIGN31`: `NONE`
+- `FTALIGN32`: `NONE`
+- `FTALIGN33`: `NONE`
+- `FTALIGN34`: `NONE`
+- `FTALIGN35`: `NONE`
+- `FTALIGN36`: `NONE`
+- `FTALIGN37`: `NONE`
+- `FTALIGN38`: `NONE`
+- `FTALIGN39`: `NONE`
+- `FTALIGN4`: `QUEUE=16`
+- `FTALIGN40`: `NONE`
+- `FTALIGN41`: `NONE`
+- `FTALIGN42`: `NONE`
+- `FTALIGN43`: `NONE`
+- `FTALIGN44`: `NONE`
+- `FTALIGN45`: `NONE`
+- `FTALIGN46`: `NONE`
+- `FTALIGN5`: `ELIGIBLE=14`
+- `FTALIGN6`: `GATED=2`
+- `FTALIGN7`: `NATIVE=14`
+- `FTALIGN8`: `MATERIALIZED=13`
+- `FTALIGN9`: `NOVARYING=1`
 - `INSTALL`: `NO`
 - `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
@@ -24,47 +71,8 @@
 - `PROSPECTIVE_ACTIVATION`: `NO`
 - `QUEUE_CHANGE`: `NO`
 - `RESTART`: `NO`
-- `RUNTIME1`: `MASTER=YES`
-- `RUNTIME10`: `PY freqtrade-venv/bin/python PASS`
-- `RUNTIME11`: `PY freqtrade-venv/bin/python3 PASS`
-- `RUNTIME12`: `PY user_data/orderflow_dashboard/.venv/bin/python BAD pandas:ModuleNotFoundError,pandas_ta:ModuleNotFoundError`
-- `RUNTIME13`: `PY user_data/orderflow_dashboard/.venv/bin/python3 BAD pandas:ModuleNotFoundError,pandas_ta:ModuleNotFoundError`
-- `RUNTIME14`: `PY runtime/vectorbt_v1_1_0/venv/bin/python BAD pandas_ta:ModuleNotFoundError`
-- `RUNTIME15`: `PY runtime/vectorbt_v1_1_0/venv/bin/python3 BAD pandas_ta:ModuleNotFoundError`
-- `RUNTIME16`: `PY runtime/mlfinpy_v0_1_2/.venv/bin/python BAD pandas_ta:ModuleNotFoundError`
-- `RUNTIME17`: `PY runtime/mlfinpy_v0_1_2/.venv/bin/python3 BAD pandas_ta:ModuleNotFoundError`
-- `RUNTIME18`: `PY orderflow_dashboard/macro_research/.venv/bin/python BAD pandas:ModuleNotFoundError,pandas_ta:ModuleNotFoundEr`
-- `RUNTIME19`: `PY orderflow_dashboard/macro_research/.venv/bin/python3 BAD pandas:ModuleNotFoundError,pandas_ta:ModuleNotFoundE`
-- `RUNTIME2`: `SOURCECOUNT=1`
-- `RUNTIME20`: `PY SYSTEM BAD joblib:ModuleNotFoundError,numpy:ModuleNotFoundError,pandas:ModuleNotFoundError,pandas_ta:ModuleNo`
-- `RUNTIME21`: `PASSING=2`
-- `RUNTIME22`: `NONE`
-- `RUNTIME23`: `NONE`
-- `RUNTIME24`: `NONE`
-- `RUNTIME25`: `NONE`
-- `RUNTIME26`: `NONE`
-- `RUNTIME27`: `NONE`
-- `RUNTIME28`: `NONE`
-- `RUNTIME29`: `NONE`
-- `RUNTIME3`: `SOURCEIMPORTS=__future__,datetime,hashlib,inspect,joblib,json,math,numpy,os,pandas,pandas_ta,pathlib,sklearn,sql`
-- `RUNTIME30`: `NONE`
-- `RUNTIME31`: `NONE`
-- `RUNTIME32`: `NONE`
-- `RUNTIME33`: `NONE`
-- `RUNTIME34`: `NONE`
-- `RUNTIME35`: `NONE`
-- `RUNTIME36`: `NONE`
-- `RUNTIME37`: `NONE`
-- `RUNTIME38`: `NONE`
-- `RUNTIME39`: `NONE`
-- `RUNTIME4`: `PROBEIMPORTS=joblib,numpy,pandas,pandas_ta,sklearn`
-- `RUNTIME40`: `NONE`
-- `RUNTIME41`: `NONE`
-- `RUNTIME42`: `NONE`
-- `RUNTIME5`: `PREFLIGHTS=1`
-- `RUNTIME6`: `SHEBANG=#!PATH`
-- `RUNTIME7`: `PANDASTAHITS=1`
-- `RUNTIME8`: `PANDASTA env=freqtrade-venv parent=site-packages`
-- `RUNTIME9`: `PYTHONS=11`
 - `SCORE_PRODUCER_CHANGE`: `NO`
 - `SOURCE_CHANGE`: `NO`
+- `TEMP_CLEANUP`: `YES`
+- `TEMP_DB`: `YES`
+- `TEMP_WRITE`: `YES`
