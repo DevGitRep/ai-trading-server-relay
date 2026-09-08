@@ -1,34 +1,35 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T13:59:01.545297+00:00`
-- Run ID: `20260908T135859Z`
-- Step: `READREPORTBUTTONLINK`
+- Published UTC: `2026-09-08T14:00:35.332491+00:00`
+- Run ID: `20260908T140030Z`
+- Step: `READREPORTLINKLOGIC`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `REPORTBUTTONLINKREAD`
+- Verdict: `REPORTLINKLOGICREAD`
 - Next gate: `FIXREPORTBUTTONLINK`
 
 ## Facts
 
 - `BENCHTEST_RERUN`: `NO`
+- `CODE1`: `128:&#x27;a[href*=&quot;view_as=&quot;]&#x27;`
+- `CODE10`: `187:location.href`
+- `CODE11`: `188:).searchParams.get(&quot;view_as&quot;)`
+- `CODE12`: `192:clone.classList.add(`
+- `CODE13`: `197:nav.appendChild(clone);`
+- `CODE14`: `NONE`
+- `CODE2`: `144:x.href,`
+- `CODE3`: `145:location.href`
+- `CODE4`: `146:).searchParams.get(&quot;view_as&quot;)===v;`
+- `CODE5`: `173:const clone=a.cloneNode(true);`
+- `CODE6`: `177:clone.href,`
+- `CODE7`: `178:location.href`
+- `CODE8`: `179:).searchParams.get(&quot;view_as&quot;)`
+- `CODE9`: `186:clone.href,`
 - `DB_WRITE`: `NO`
-- `HIT1`: `indicator_library_ui_v2.js:6:const explicit=( | params.get(&quot;view_as&quot;)||&quot;&quot; | ).trim().toUpperCase();`
-- `HIT10`: `indicator_library_ui_v2.js:186:new URL( | clone.href, | location.href`
-- `HIT2`: `indicator_library_ui_v2.js:19:* FREE / PRO / INTERNAL state even when the URL itself | * is /indicator-lab wit`
-- `HIT3`: `indicator_library_ui_v2.js:128:document.querySelectorAll( | &#x27;a[href*=&quot;view_as=&quot;]&#x27; | )`
-- `HIT4`: `indicator_library_ui_v2.js:144:return new URL( | x.href, | location.href`
-- `HIT5`: `indicator_library_ui_v2.js:145:x.href, | location.href | ).searchParams.get(&quot;view_as&quot;)===v;`
-- `HIT6`: `indicator_library_ui_v2.js:146:location.href | ).searchParams.get(&quot;view_as&quot;)===v; | }catch(_){`
-- `HIT7`: `indicator_library_ui_v2.js:177:new URL( | clone.href, | location.href`
-- `HIT8`: `indicator_library_ui_v2.js:178:clone.href, | location.href | ).searchParams.get(&quot;view_as&quot;)`
-- `HIT9`: `indicator_library_ui_v2.js:179:location.href | ).searchParams.get(&quot;view_as&quot;) | ===tier`
-- `LOCKREFS`: `32`
 - `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
 - `PREFLIGHT_RERUN`: `NO`
-- `REPORTREFS`: `18`
 - `RESTART`: `NO`
 - `SCORE_PRODUCER_CHANGE`: `NO`
 - `SOURCE_CHANGE`: `NO`
-- `SUBREFS`: `14`
