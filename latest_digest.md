@@ -1,48 +1,45 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T16:19:26.093430+00:00`
-- Run ID: `20260908T161923Z`
-- Step: `READLIVEBRAININPUT`
+- Published UTC: `2026-09-08T16:21:07.342247+00:00`
+- Run ID: `20260908T162105Z`
+- Step: `READBRAINSCORE`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `LIVEBRAININPUTREAD`
-- Next gate: `ASSESSBRAINQUALITY`
+- Verdict: `BRAINSCORELOGICREAD`
+- Next gate: `ASSESSBRAINSCORE`
 
 ## Facts
 
-- `ACTIVEFILES`: `3`
 - `BENCHTEST_RERUN`: `NO`
-- `BRAIN1`: `LAB 105:performance_status TEXT NOT NULL DEFAULT &#x27;NOT_TESTED&#x27;, | 106:oos_status TEXT NOT NULL DEFAULT &#x27;NOT_TESTED&#x27;,`
-- `BRAIN10`: `BACKEND 521:&quot;large_sells&quot;: | 522:0, | 524:&quot;trade_count&quot;: | 525:0, | 527:&quot;whale_buy_value&quot;: | 528:0.0,`
-- `BRAIN11`: `BACKEND 879:trade[&quot;quantity&quot;] | 880:) | 882:c[&quot;trade_count&quot;] += 1 | 884:if trade.get(&quot;is_large&quot;): | 885:if trade[&quot;is`
-- `BRAIN12`: `BACKEND 9478:# This route is deliberately isolated from: | 9479:# - pine_entry_support_v1.db | 9480:# - Direction V1`
-- `BRAIN13`: `BACKEND 10769:return { | 10770:&quot;n&quot;: 0, | 10771:&quot;wins&quot;: 0, | 10772:&quot;win_rate&quot;: None, | 10773:&quot;avg_return_pct&quot;: None,`
-- `BRAIN14`: `BACKEND 10788:&quot;wins&quot;: | 10789:wins, | 10791:&quot;win_rate&quot;: | 10792:round( | 10793:wins / n * 100.0, | 10794:2 | 10795:)`
-- `BRAIN15`: `BACKEND 11367:&quot;fallback_n&quot;: | 11368:fallbacks, | 11370:&quot;resolved_win_rate&quot;: | 11371:( | 11372:round( | 11373:resolve`
-- `BRAIN16`: `BACKEND 11744:&quot;losses&quot;: 0, | 11745:&quot;breakeven&quot;: 0, | 11747:&quot;win_rate&quot;: None, | 11749:&quot;avg_return_pct&quot;: None, | 11750`
-- `BRAIN17`: `LIB 144:) | 146:score = metrics.get( | 147:&quot;realistic_score&quot; | 148:) | 150:net_return = metrics.get( | 151:&quot;net_retu`
-- `BRAIN18`: `LIB 193:row[&quot;profit_factor&quot;] | 194:) | 196:win_rate_pct = _num( | 197:row[&quot;win_rate_pct&quot;] | 198:) | 200:realistic_sc`
-- `BRAIN19`: `LIB 233:&quot;max_drawdown_pct&quot;: | 234:max_drawdown_pct, | 236:&quot;win_rate_pct&quot;: | 237:win_rate_pct, | 239:&quot;trade_count&quot;: |`
-- `BRAIN2`: `LAB 134:fee_free_return_pct REAL, | 136:max_drawdown_pct REAL, | 137:win_rate REAL, | 138:profit_factor REAL, | 139:`
-- `BRAIN20`: `LIB 388:&quot;profit_factor&quot;: None, | 389:&quot;net_return_pct&quot;: None, | 390:&quot;max_drawdown_pct&quot;: None, | 391:&quot;win_rate_pct&quot;: N`
-- `BRAIN21`: `LIB 526:metrics = card[&quot;metrics&quot;] | 528:score = metrics.get( | 529:&quot;realistic_score&quot; | 530:) | 532:net_return = metr`
-- `BRAIN22`: `LIB 748:&quot;&quot;&quot; | 749:SELECT | 750:indicator_id, | 751:realistic_score, | 752:primary_profit_factor, | 753:primary_net_r`
-- `BRAIN23`: `LIB 766:metrics.update({ | 767:&quot;candidate_id&quot;: candidate_id, | 768:&quot;realistic_score&quot;: row[&quot;realistic_score&quot;], | 769:`
-- `BRAIN24`: `LIB 781:_secondary_rows = conn.execute( | 782:&#x27;&#x27;&#x27; | 783:SELECT indicator_id, &quot;raw_result_json&quot; | 784:FROM pipeline_b`
-- `BRAIN25`: `SCHEMA candidates=brain_value_status`
-- `BRAIN26`: `SCHEMA default_test_results_v1=trade_count,win_rate_pct,realistic_score`
-- `BRAIN27`: `SCHEMA pine_baseline_leaderboard_v1=trade_count`
-- `BRAIN28`: `SCHEMA pine_library_discovery_ranking_v1=realistic_score`
-- `BRAIN29`: `SCHEMA pine_library_run_scores=realistic_score`
-- `BRAIN3`: `LAB 220:performance_status, | 221:oos_status, | 222:robustness_status, | 223:brain_value_status, | 224:prospective_s`
-- `BRAIN30`: `SCHEMA pine_library_session_diagnostics_v1=trade_count,win_rate_pct`
-- `BRAIN4`: `LAB 304:LIMIT 1 | 305:) AS max_drawdown_pct, | 306:( | 307:SELECT win_rate | 308:FROM test_runs t | 309:WHERE t.cand`
-- `BRAIN5`: `LAB 621:] | 623:metric_fields = { | 624:&#x27;realistic&#x27;: &#x27;realistic_score&#x27;, | 625:&#x27;profit&#x27;: &#x27;profit_factor&#x27;, | 626:&#x27;retu`
-- `BRAIN6`: `LAB 647:def _display_metric(card): | 648:if not entitled: | 649:return float(&quot;-inf&quot;) | 650:# BENCH_SCORE_V2_REALISTI`
-- `BRAIN7`: `LAB 976:return ( | 977:&quot;brain&quot; in token | 978:or &quot;brain_value&quot; in token | 979:) | 981:def _pl_scrub_private(value):`
-- `BRAIN8`: `LAB 1005:phrase in lower | 1006:for phrase in ( | 1007:&quot;ai brain&quot;, | 1008:&quot;indicator brain&quot;, | 1009:&quot;brain value&quot;, |`
-- `BRAIN9`: `BACKEND 411:&quot;delta&quot;: 0.0, | 412:&quot;large_buys&quot;: 0, | 413:&quot;large_sells&quot;: 0, | 414:&quot;trade_count&quot;: 0, | 416:# Order Scalp`
+- `BRAIN1`: `CODE 103:parity_status TEXT NOT NULL DEFAULT &#x27;NOT_STARTED&#x27;, | 105:performance_status TEXT NOT NULL DEFAULT &#x27;NOT_TE`
+- `BRAIN10`: `CODE 2425:for _k, _v in _free_profile_source.items(): | 2426:if ( | 2427:_k.startswith(&#x27;dna_&#x27;) | 2428:or _k.starts`
+- `BRAIN11`: `NONE`
+- `BRAIN12`: `NONE`
+- `BRAIN13`: `NONE`
+- `BRAIN14`: `NONE`
+- `BRAIN15`: `NONE`
+- `BRAIN16`: `NONE`
+- `BRAIN17`: `NONE`
+- `BRAIN18`: `NONE`
+- `BRAIN19`: `NONE`
+- `BRAIN2`: `CODE 128:target_market TEXT NOT NULL, | 129:timeframe TEXT NOT NULL, | 130:cost_model_id TEXT NOT NULL, | 132:gros`
+- `BRAIN20`: `NONE`
+- `BRAIN21`: `NONE`
+- `BRAIN22`: `NONE`
+- `BRAIN23`: `NONE`
+- `BRAIN24`: `NONE`
+- `BRAIN25`: `NONE`
+- `BRAIN26`: `NONE`
+- `BRAIN27`: `NONE`
+- `BRAIN28`: `NONE`
+- `BRAIN3`: `CODE 218:conversion_status, | 219:parity_status, | 220:performance_status, | 221:oos_status, | 222:robustness_stat`
+- `BRAIN4`: `CODE 288:rows = con.execute( | 289:&quot;&quot;&quot; | 290:SELECT | 291:c.*, | 292:( | 293:SELECT net_return_pct | 294:FROM test`
+- `BRAIN5`: `CODE 619:in _norm_title(card) | 620:) | 621:] | 623:metric_fields = { | 624:&#x27;realistic&#x27;: &#x27;realistic_score&#x27;, | 625:`
+- `BRAIN6`: `CODE 647:def _display_metric(card): | 648:if not entitled: | 649:return float(&quot;-inf&quot;) | 650:# BENCH_SCORE_V2_REALI`
+- `BRAIN7`: `CODE 1969:_run = _con.execute( | 1970:f&quot;&quot;&quot; | 1971:SELECT | 1972:primary_benchmark_mode, | 1973:primary_trade_count`
+- `BRAIN8`: `CODE 2064:_trade | 2065:) | 2067:_expected = int( | 2068:_run[ | 2069:&quot;primary_trade_count&quot; | 2070:] | 2071:or 0 |`
+- `BRAIN9`: `CODE 2272:&#x27;INTERNAL_ADMIN&#x27;, | 2273:} | 2274:) | 2275:else [] | 2276:), | 2277:&quot;primary_trade_count&quot;: len( | 2278:_`
 - `DB_WRITE`: `NO`
 - `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
