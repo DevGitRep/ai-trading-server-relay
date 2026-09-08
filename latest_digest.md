@@ -1,33 +1,26 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T11:56:14.589720+00:00`
-- Run ID: `20260908T115612Z`
-- Step: `DIAGNOSEBENCH21`
+- Published UTC: `2026-09-08T12:02:01.966562+00:00`
+- Run ID: `20260908T120159Z`
+- Step: `READWRITEPERMS`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `FIVENULLPRIMARY`
-- Next gate: `REVIEWNULLBENCH`
+- Verdict: `WRITEPERMSREAD`
+- Next gate: `FIXBENCHSTAT`
 
 ## Facts
 
+- `BACKDIR`: `775:transformer:transformer`
+- `BACKSTAT`: `444:transformer:transformer`
+- `BACKWRITE`: `NO`
 - `BENCHTEST_RERUN`: `NO`
-- `CURRENT`: `21`
 - `DB_WRITE`: `NO`
-- `LEGACY`: `ABSENT`
+- `MASTERDIR`: `775:transformer:transformer`
+- `MASTERSTAT`: `664:transformer:transformer`
+- `MASTERWRITE`: `YES`
 - `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
-- `NULL1`: `ID=ICL_LIB_3C1AF4E83728BCA8;ST=NULL;MODE=NULL;TR=NULL;resin_status=PASS;score_status=NOT_SCORE_ELIGIBLE`
-- `NULL2`: `ID=ICL_LIB_F69E6ED8CB171623;ST=NULL;MODE=NULL;TR=NULL;resin_status=PASS;score_status=NOT_SCORE_ELIGIBLE`
-- `NULL3`: `ID=ICL_LIB_7A6E8B988516166A;ST=NULL;MODE=NULL;TR=NULL;resin_status=PASS;score_status=NOT_SCORE_ELIGIBLE`
-- `NULL4`: `ID=ICL_LIB_B6B05AC425A0160C;ST=NULL;MODE=NULL;TR=NULL;resin_status=PASS;score_status=NOT_SCORE_ELIGIBLE`
-- `NULL5`: `ID=ICL_LIB_A25DFFC072ED8814;ST=NULL;MODE=NULL;TR=NULL;resin_status=PASS;score_status=NOT_SCORE_ELIGIBLE`
-- `NULLSCORE`: `5`
 - `PREFLIGHT_RERUN`: `NO`
-- `QUICK`: `ok`
 - `RESTART`: `NO`
-- `SCORED`: `16`
-- `SCORE_PRODUCER_CHANGE`: `NO`
 - `SOURCE_CHANGE`: `NO`
-- `VIEWSCORED`: `16`
-- `VIEWTOTAL`: `11775`
