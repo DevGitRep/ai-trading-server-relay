@@ -1,29 +1,32 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T08:26:50.241739+00:00`
-- Run ID: `20260908T082647Z`
-- Step: `TRACETRADELINKV2`
+- Published UTC: `2026-09-08T08:30:18.339772+00:00`
+- Run ID: `20260908T083016Z`
+- Step: `READCHARTRUTEWIRE`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `TRADELINKTRACED`
-- Next gate: `PATCHREPORTV2`
+- Verdict: `CHARTROUTEWIREREAD`
+- Next gate: `PATCHREPORTV2FINAL`
 
 ## Facts
 
+- `ATTRS`: `NONE`
 - `BENCHTEST_RERUN`: `NO`
-- `CANON_RUN`: `BTR_21BD506A81130BD4B893`
-- `CANON_TIME`: `20260907T091202Z`
+- `CURRENT_PATHS`: `/indicator-lab/strategy/&lt;candidate_id&gt;`
+- `CURRENT_ROUTE`: `NO`
+- `DATASET`: `chartState,pagerVisualMode`
 - `DB_WRITE`: `NO`
-- `GROUPS`: `d459deaf-d9b0-4a06-a842-2ad5507a1b0b:21:1-21`
-- `LINK_HITS`: `benchtest_trades_v1:21`
-- `LINK_TABLES`: `benchtest_trades_v1,default_test_results_v1,default_test_trades_v1,pine_baseline_leaderboard_v1,pine_baseline_thumbnails_v1,pine_library_discovery_ran`
+- `DECORATOR`: `app.route( &quot;/indicator-lab/strategy/&lt;candidate_id&gt;/bench-chart-data&quot;, methods=[&quot;GET&quot;], )`
+- `JS_CALLS`: `fetch,irlReportNativeChartV28C,json,loadPage,requestAnimationFrame`
+- `JS_URL1`: `const response=await fetch(`
+- `JS_URL2`: `const payload=await response.json();`
 - `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
-- `OLD_QUERY`: `con.execute( &quot;&quot;&quot; SELECT trade_no, candidate_id, raw_json FROM benchtest_trades_v1 WHERE run_id=? ORDER BY CAST(trade_no AS INTEGER) LIMIT 5000 &quot;&quot;&quot;, ( run_id, ), ).fetchall()`
 - `PREFLIGHT_RERUN`: `NO`
-- `QUICK`: `ok`
-- `RAW_RUNS`: `run_id=d459deaf-d9b0-4a06-a842-2ad5507a1b0b`
+- `RESPONSE`: `ok,mode,pair,source_timeframe,display_timeframe,source_candle_count,display_candle_count,candles,markers,dataset_start,dataset_end`
 - `RESTART`: `NO`
 - `SCORE_PRODUCER_CHANGE`: `NO`
 - `SOURCE_CHANGE`: `NO`
+- `TRADE1`: `if run_id: trade_rows=con.execute( &quot;&quot;&quot; SELECT trade_no, candidate_id, raw_json FROM benchtest_trades_v1 WHERE run_id=? ORDER BY CAST(trade_no AS`
+- `TRADE2`: `trade_rows=con.execute( &quot;&quot;&quot; SELECT trade_no, candidate_id, raw_json FROM benchtest_trades_v1 WHERE run_id=? ORDER BY CAST(trade_no AS INTEGER) LI`
