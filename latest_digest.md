@@ -1,25 +1,30 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T09:46:11.400463+00:00`
-- Run ID: `20260908T094609Z`
-- Step: `PATCHREPORTV2FINAL`
+- Published UTC: `2026-09-08T09:47:05.986758+00:00`
+- Run ID: `20260908T094703Z`
+- Step: `READSERVICESTATE`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `REPORTV2PATCHFAILED`
-- Next gate: `REVIEWPATCHFAILURE`
+- Verdict: `SERVICESTATEREAD`
+- Next gate: `RETRYPATCHORFIXSTART`
 
 ## Facts
 
-- `BACKUP`: `PASS`
+- `ACTIVE`: `active`
 - `BENCHTEST_RERUN`: `NO`
-- `COMPILE`: `PASS`
+- `CHART_ROUTE`: `NO`
 - `DB_WRITE`: `NO`
-- `ERROR`: `&lt;urlopen error [Errno 111] Connection refused&gt;`
+- `HTTP5000`: `200`
+- `LOGFLAGS`: `STARTED`
+- `MAINPID`: `3982187`
+- `MAINSTATUS`: `0`
 - `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
+- `PATCH_MARKER`: `NO`
+- `PORTS`: `53,4040,11434,5000,443,37587,22,56826`
 - `PREFLIGHT_RERUN`: `NO`
-- `RESTART`: `YES`
-- `ROLLBACK`: `YES`
+- `RESTART`: `NO`
 - `SCORE_PRODUCER_CHANGE`: `NO`
 - `SOURCE_CHANGE`: `NO`
+- `SUBSTATE`: `running`
