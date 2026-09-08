@@ -1,35 +1,29 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T08:25:19.299086+00:00`
-- Run ID: `20260908T082517Z`
-- Step: `CONFIRMTRADEARTIFACTLINK`
+- Published UTC: `2026-09-08T08:26:50.241739+00:00`
+- Run ID: `20260908T082647Z`
+- Step: `TRACETRADELINKV2`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `REPORTV2PATCHNOTREADY`
-- Next gate: `REVIEWTRADEMATCH`
+- Verdict: `TRADELINKTRACED`
+- Next gate: `PATCHREPORTV2`
 
 ## Facts
 
-- `BARS_VALID`: `YES`
 - `BENCHTEST_RERUN`: `NO`
-- `BENCH_RUN`: `BTR_21BD506A81130BD4B893`
+- `CANON_RUN`: `BTR_21BD506A81130BD4B893`
+- `CANON_TIME`: `20260907T091202Z`
 - `DB_WRITE`: `NO`
-- `DD`: `43.05182148474185`
-- `EXPECTED`: `8`
-- `FIRST`: `NONE`
-- `HOST`: `id=&quot;irlBenchChart&quot; | id=&quot;irlBenchChartStage&quot;`
-- `LAST`: `NONE`
+- `GROUPS`: `d459deaf-d9b0-4a06-a842-2ad5507a1b0b:21:1-21`
+- `LINK_HITS`: `benchtest_trades_v1:21`
+- `LINK_TABLES`: `benchtest_trades_v1,default_test_results_v1,default_test_trades_v1,pine_baseline_leaderboard_v1,pine_baseline_thumbnails_v1,pine_library_discovery_ran`
 - `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
-- `MATCHED`: `0`
-- `OLD_FIELDS`: `test_status,absolute_profitability_status,score_cohort_size,signal_role`
-- `PF`: `2.5459138924136475`
+- `OLD_QUERY`: `con.execute( &quot;&quot;&quot; SELECT trade_no, candidate_id, raw_json FROM benchtest_trades_v1 WHERE run_id=? ORDER BY CAST(trade_no AS INTEGER) LIMIT 5000 &quot;&quot;&quot;, ( run_id, ), ).fetchall()`
 - `PREFLIGHT_RERUN`: `NO`
 - `QUICK`: `ok`
+- `RAW_RUNS`: `run_id=d459deaf-d9b0-4a06-a842-2ad5507a1b0b`
 - `RESTART`: `NO`
-- `RETURN`: `40.49375002858368`
-- `SCORE`: `74.59517342100865`
 - `SCORE_PRODUCER_CHANGE`: `NO`
 - `SOURCE_CHANGE`: `NO`
-- `WIN`: `62.5`
