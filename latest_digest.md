@@ -1,28 +1,27 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T15:06:25.577066+00:00`
-- Run ID: `20260908T150623Z`
-- Step: `READCHARTDEF`
+- Published UTC: `2026-09-08T15:09:57.966342+00:00`
+- Run ID: `20260908T150955Z`
+- Step: `PATCHFREEPROFILE4`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `CHARTDEFREAD`
-- Next gate: `PATCHFREECHARTPROFILE`
+- Verdict: `FREECHARTPROFILEFAILED`
+- Next gate: `REVIEWFREEPATCH`
 
 ## Facts
 
+- `BACKUP`: `PASS`
 - `BENCHTEST_RERUN`: `NO`
+- `CHARTDEF`: `indicator_lab_report_bench_chart_data_`
 - `DB_WRITE`: `NO`
-- `HIT1`: `1873:@app.route( | 1874:&quot;/indicator-lab/strategy/&lt;candidate_id&gt;/bench-chart-data&quot;, | 1877:def indicator_lab_re`
-- `HIT2`: `NONE`
-- `HIT3`: `NONE`
-- `HIT4`: `NONE`
-- `HIT5`: `NONE`
-- `HIT6`: `NONE`
+- `ERROR`: `LIVE:RuntimeError:PROFILESMOKE`
 - `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
-- `OCCURRENCES`: `1`
 - `PREFLIGHT_RERUN`: `NO`
-- `RESTART`: `NO`
+- `PREWRITE`: `PASS`
+- `RESTART`: `YES`
+- `ROLLBACK`: `YES`
 - `SCORE_PRODUCER_CHANGE`: `NO`
+- `SERVICE`: `active`
 - `SOURCE_CHANGE`: `NO`
