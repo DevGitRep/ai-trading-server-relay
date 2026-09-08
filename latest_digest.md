@@ -1,59 +1,59 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T18:35:00.177811+00:00`
-- Run ID: `20260908T183458Z`
-- Step: `TRACELEGACYBRAINFEED`
+- Published UTC: `2026-09-08T18:39:22.604059+00:00`
+- Run ID: `20260908T183920Z`
+- Step: `MAPBRAINCUTOVER`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `LEGACYBRAINFEEDTRACED`
-- Next gate: `DESIGNBRAINCUTOVER`
+- Verdict: `BRAINCUTOVERMAPPED`
+- Next gate: `PATCHBRAINCUTOVER`
 
 ## Facts
 
 - `BENCHTEST_RERUN`: `NO`
-- `CUTOVER1`: `MASTERARCH=YES`
-- `CUTOVER10`: `SQL 833:&quot;identity_contract&quot;: { | 834:&quot;primary_binding&quot;: | 835:( | 836:&quot;benchtest_results_v1.source_sha256&quot; | 837`
-- `CUTOVER11`: `LEGACYTABLE=NO`
-- `CUTOVER12`: `CURRENTTOTAL=21`
-- `CUTOVER13`: `CURRENTSCored=16`
-- `CUTOVER14`: `LEGACYWRITERS=15`
-- `CUTOVER15`: `WRITER user_data/orderflow_dashboard/data/manual_support/benchtest_v2_score_recent100_v31m_backup_20260905T131100Z/benc`
-- `CUTOVER16`: `WRITER user_data/orderflow_dashboard/data/manual_support/benchtest_v2_score_v31m_backup_20260905T182549Z/benchtest.fina`
-- `CUTOVER17`: `ADMITCTX indicator_v1_blocker5_first_seen_scheduler_evidence_v1.json | 32:&quot;append_only_triggers_two&quot;: true, | 33`
-- `CUTOVER18`: `ADMITCTX activation_indicator_v1_library_incremental.json | 23:&quot;phase_1&quot;: &quot;CLEAN_CHRONOLOGICAL_OOS&quot;, | 24:&quot;phase`
-- `CUTOVER19`: `PROSCONTRACTS=1`
-- `CUTOVER2`: `ADAPTERS=1`
-- `CUTOVER20`: `PROSTATUS=FROZEN_PRE_ACTIVATION`
-- `CUTOVER21`: `ACTIVATION=activated:False,activation_requires_all_blockers_pass:True,historical_backfill_before_activation:Fals`
-- `CUTOVER22`: `BLOCKERS=7`
-- `CUTOVER23`: `BLOCKER EXACT_CAUSAL_FUTURE_MARKET_DATA_LANE_RESOLVED`
-- `CUTOVER24`: `BLOCKER EXACT_FROZEN_INCUMBENT_WF3_SCORING_LANE_RESOLVED`
-- `CUTOVER25`: `BLOCKER EXACT_SIX_ROLE_RESIN_0_2_2_FEATURE_LANE_RESOLVED`
-- `CUTOVER26`: `BLOCKER EXACT_FROZEN_RANGE_120_BP_TARGET_CONSTRUCTION_RESOLVED`
-- `CUTOVER27`: `BLOCKER FIRST_SEEN_CAUSAL_WITNESS_RESOLVED`
-- `CUTOVER28`: `BLOCKER FIXED_PAIRED_CHALLENGER_MODELS_AND_SCALERS_BUILT_AND_HASH_FROZEN`
-- `CUTOVER29`: `BLOCKER NO_PRE_ACTIVATION_ROW_CAN_ENTER_EITHER_PHASE`
-- `CUTOVER3`: `SQL 162:kind, | 163:script_name, | 164:fetched_at | 165:FROM sources | 166:WHERE source IS NOT NULL | 167:ORDER`
-- `CUTOVER30`: `NONE`
-- `CUTOVER31`: `NONE`
-- `CUTOVER32`: `NONE`
-- `CUTOVER33`: `NONE`
-- `CUTOVER34`: `NONE`
-- `CUTOVER35`: `NONE`
-- `CUTOVER36`: `NONE`
-- `CUTOVER37`: `NONE`
-- `CUTOVER38`: `NONE`
-- `CUTOVER39`: `NONE`
-- `CUTOVER4`: `SQL 215:brain_value_status, | 216:prospective_status, | 217:updated_epoch_ms | 218:FROM candidates | 219:ORDER B`
-- `CUTOVER40`: `NONE`
-- `CUTOVER5`: `SQL 232:SELECT | 233:rowid AS _rowid, | 234:* | 235:FROM benchtest_results_v1 | 236:WHERE contract_version=? | 2`
-- `CUTOVER6`: `SQL 542:&quot;completed_trades&quot;: | 543:trades, | 545:&quot;realistic_score&quot;: | 546:number( | 547:bench.get( | 548:&quot;realist`
-- `CUTOVER7`: `SQL 545:&quot;realistic_score&quot;: | 546:number( | 547:bench.get( | 548:&quot;realistic_score&quot; | 549:) | 550:), | 552:&quot;score_`
-- `CUTOVER8`: `SQL 691:-( | 692:row[ | 693:&quot;benchtest&quot; | 694:][&quot;realistic_score&quot;] | 695:if row[ | 696:&quot;benchtest&quot; | 697:][&quot;real`
-- `CUTOVER9`: `SQL 694:][&quot;realistic_score&quot;] | 695:if row[ | 696:&quot;benchtest&quot; | 697:][&quot;realistic_score&quot;] | 698:is not None | 699:`
 - `DB_WRITE`: `NO`
-- `FACTS`: `29`
+- `FACTS`: `24`
+- `MAP1`: `MASTERARCH=YES`
+- `MAP10`: `ADAPTER 320:if candidate_pine_source | 324:# Candidate metadata may omit duplicated source payload, | 375:eligib`
+- `MAP11`: `SCHEMA pipeline_indicators=indicator_id,legacy_candidate_id,name,author,source_url,created_at,migrated_at,legacy`
+- `MAP12`: `SCHEMA pipeline_indicator_versions=version_id,indicator_id,version_no,script_sha256,script_text,source_kind,sour`
+- `MAP13`: `SCHEMA pipeline_benchtest_runs=benchtest_run_id,indicator_id,version_id,preflight_run_id,benchtest_contract,scor`
+- `MAP14`: `RUNKEYS=benchtest_run_id,indicator_id,version_id,preflight_run_id,benchtest_contract,score_method,status,primary`
+- `MAP15`: `RUNTIMEREFS=7`
+- `MAP16`: `RUNTIME user_data/indicator_brain/research_library_intelligence/v1/native_screening_v1/indicator_native_screening_v1_con`
+- `MAP17`: `RUNTIME user_data/orderflow_dashboard/data/manual_support/AI_TRADING_SYSTEM_MASTER.before_BENCHTEST_V2_SCORE_PERSISTENCE`
+- `MAP18`: `RUNTIME user_data/orderflow_dashboard/data/manual_support/test_your_script_v9_subprocess_runtime_fix_20260903T200452/AI_`
+- `MAP19`: `RUNTIME user_data/orderflow_dashboard/data/manual_support/.master_snapshots/AI_TRADING_SYSTEM_MASTER_20260908T060554Z.md`
+- `MAP2`: `ADAPTERLINES=1071`
+- `MAP20`: `TARGETSOURCE=pipeline_benchtest_runs`
+- `MAP21`: `TARGETCURRENT=is_current=1`
+- `MAP22`: `TARGETSCORED=realistic_score IS NOT NULL`
+- `MAP23`: `PRIMARYMODE=UNIVERSAL_SIGNAL_FLIP_V2`
+- `MAP24`: `FINALOPEN=MARK_TO_MARKET_NOT_EXIT`
+- `MAP25`: `NONE`
+- `MAP26`: `NONE`
+- `MAP27`: `NONE`
+- `MAP28`: `NONE`
+- `MAP29`: `NONE`
+- `MAP3`: `ADAPTER 75:def candidate_id_from_sha(source_sha): | 76:if not source_sha: | 81:+ source_sha[:16].upper() | 88:ap`
+- `MAP30`: `NONE`
+- `MAP31`: `NONE`
+- `MAP32`: `NONE`
+- `MAP33`: `NONE`
+- `MAP34`: `NONE`
+- `MAP35`: `NONE`
+- `MAP36`: `NONE`
+- `MAP37`: `NONE`
+- `MAP38`: `NONE`
+- `MAP39`: `NONE`
+- `MAP4`: `ADAPTER 98:ap.add_argument( | 103:ap.add_argument( | 142:# CANONICAL SOURCE IDENTITY | 146:# SHA256(sources.sour`
+- `MAP40`: `NONE`
+- `MAP5`: `ADAPTER 160:source, | 165:FROM sources | 166:WHERE source IS NOT NULL | 171:row[&quot;source&quot;] | 174:source_by_sha[fu`
+- `MAP6`: `ADAPTER 189:&quot;source_sha256&quot;: | 202:source_url, | 203:source_sha256, | 205:pine_source, | 218:FROM candidates`
+- `MAP7`: `ADAPTER 235:FROM benchtest_results_v1 | 247:exact_source_identity_count = 0 | 263:&quot;source_sha256&quot; | 267:source =`
+- `MAP8`: `ADAPTER 281:exact_source_identity = bool( | 283:and source | 284:and source[ | 285:&quot;source_sha256&quot; | 291:if exac`
+- `MAP9`: `ADAPTER 292:exact_source_identity_count += 1 | 301:&quot;source_sha256&quot; | 308:candidate_pine_source = ( | 310:&quot;pine_s`
 - `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
 - `PREFLIGHT_RERUN`: `NO`
