@@ -1,56 +1,34 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T20:03:38.597678+00:00`
-- Run ID: `20260908T200336Z`
-- Step: `VERIFYNATIVECONSUMER`
+- Published UTC: `2026-09-08T20:05:49.379300+00:00`
+- Run ID: `20260908T200544Z`
+- Step: `PUBLISHCANONICALQUEUE`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `NATIVECONSUMERREAD`
-- Next gate: `PUBLISHCANONICALQUEUE`
+- Verdict: `CANONICALQUEUEPUBLISHED`
+- Next gate: `VERIFYDOWNSTREAMREADINESS`
 
 ## Facts
 
+- `ARCHIVE`: `YES`
 - `BENCHTEST_RERUN`: `NO`
 - `BRAIN_ADMISSION`: `NO`
 - `BRAIN_IQ_CHANGE`: `NO`
+- `CANONICAL_IDS`: `16`
 - `DB_WRITE`: `NO`
-- `FACTS`: `10`
-- `MASTER_CHANGE`: `NO`
+- `ELIGIBLE`: `14`
+- `ERROR`: `NONE`
+- `GATED`: `2`
+- `GATE_REASON`: `COMPLETED_TRADES_LT_100`
+- `MASTER_CHANGE`: `YES`
 - `MASTER_READ`: `YES`
-- `NATIVE1`: `MASTERFEED=YES`
-- `NATIVE10`: `FILTER1=if\s+.*eligible,if\s+.*brain_research,\[\s*.*for\s+.*in\s+.*candid`
-- `NATIVE11`: `NONE`
-- `NATIVE12`: `NONE`
-- `NATIVE13`: `NONE`
-- `NATIVE14`: `NONE`
-- `NATIVE15`: `NONE`
-- `NATIVE16`: `NONE`
-- `NATIVE17`: `NONE`
-- `NATIVE18`: `NONE`
-- `NATIVE19`: `NONE`
-- `NATIVE2`: `NATIVEDIR=YES`
-- `NATIVE20`: `NONE`
-- `NATIVE21`: `NONE`
-- `NATIVE22`: `NONE`
-- `NATIVE23`: `NONE`
-- `NATIVE24`: `NONE`
-- `NATIVE25`: `NONE`
-- `NATIVE26`: `NONE`
-- `NATIVE27`: `NONE`
-- `NATIVE28`: `NONE`
-- `NATIVE29`: `NONE`
-- `NATIVE3`: `MATCHFILES=1`
-- `NATIVE30`: `NONE`
-- `NATIVE4`: `FILE1=indicator_native_screening_materializer_v1.py`
-- `NATIVE5`: `SIGNALS1=candidate_queue,brain_research,eligible`
-- `NATIVE6`: `CTX11=711:) | 713:eligible = [ | 714:row | 715:for row in queue[ | 716:&quot;candidate_queue&quot; | 717:] | 718:if row[ |`
-- `NATIVE7`: `CTX12=752:) | 754:for candidate in eligible: | 756:cid = candidate[ | 757:&quot;candidate_id&quot;`
-- `NATIVE8`: `CTX13=1141:artifact_present = ( | 1142:len(eligible) | 1143:- missing | 1144:)`
-- `NATIVE9`: `CTX14=1147:100.0 | 1148:* artifact_present | 1149:/ len(eligible) | 1150:if eligible | 1151:else 0.0 | 1152:)`
+- `NEW_QUEUE`: `16`
+- `OLD_QUEUE`: `533`
+- `OUTSIDE`: `0`
 - `PREFLIGHT_RERUN`: `NO`
 - `PROSPECTIVE_ACTIVATION`: `NO`
-- `QUEUE_CHANGE`: `NO`
+- `QUEUE_CHANGE`: `YES`
 - `RESTART`: `NO`
 - `SCORE_PRODUCER_CHANGE`: `NO`
 - `SOURCE_CHANGE`: `NO`
