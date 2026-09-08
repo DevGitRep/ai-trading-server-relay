@@ -1,37 +1,33 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T14:31:20.268029+00:00`
-- Run ID: `20260908T143118Z`
-- Step: `READFREEPROFILEMAP`
+- Published UTC: `2026-09-08T14:32:29.730651+00:00`
+- Run ID: `20260908T143227Z`
+- Step: `READFREEPROFILEKEYS`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `FREEPROFILEMAPREAD`
+- Verdict: `FREEPROFILEKEYSREAD`
 - Next gate: `PATCHFREECHARTPROFILE`
 
 ## Facts
 
+- `ACTIVITY_KEYS`: `primary_exposure_pct,trade_count`
 - `BENCHTEST_RERUN`: `NO`
 - `DB_WRITE`: `NO`
-- `MAP1`: `CHART 2013:return _jsonify( | 2014:{ | 2015:&quot;ok&quot;: False,`
-- `MAP10`: `CHART 2260:&quot;candles&quot;: _candles, | 2261:&quot;markers&quot;: _markers, | 2262:&quot;primary_trade_count&quot;: len( | 2263:_trades`
-- `MAP11`: `CHART 2278:except Exception: | 2279:return _jsonify( | 2280:{ | 2281:&quot;ok&quot;: False,`
-- `MAP12`: `ROUTE 2308:abort, | 2309:render_template, | 2310:)`
-- `MAP13`: `ROUTE 2373:requested_tier = str( | 2374:_indicator_lab_requested_tier() | 2375:or &#x27;FREE&#x27;`
-- `MAP14`: `ROUTE 2373:requested_tier = str( | 2374:_indicator_lab_requested_tier() | 2375:or &#x27;FREE&#x27; | 2376:).upper()`
-- `MAP15`: `ROUTE 2379:preview_authorized | 2380:and requested_tier | 2381:in { | 2382:&#x27;FREE&#x27;,`
-- `MAP16`: `ROUTE 2386:): | 2387:effective_tier = requested_tier | 2388:else: | 2389:effective_tier = &#x27;FREE&#x27;`
-- `MAP2`: `CHART 2074:if len(_trades) != _expected: | 2075:return _jsonify( | 2076:{ | 2077:&quot;ok&quot;: False,`
-- `MAP3`: `CHART 2114:): | 2115:return _jsonify( | 2116:{ | 2117:&quot;ok&quot;: False,`
-- `MAP4`: `CHART 2130:): | 2131:return _jsonify( | 2132:{ | 2133:&quot;ok&quot;: False,`
-- `MAP5`: `CHART 2183:_markers = [] | 2185:for trade in _trades:`
-- `MAP6`: `CHART 2216:if entry_time is not None: | 2217:_markers.append([ | 2218:entry_time, | 2219:trade.get(&quot;entry_price&quot;`
-- `MAP7`: `CHART 2224:if exit_time is not None: | 2225:_markers.append([ | 2226:exit_time, | 2227:trade.get(&quot;exit_price&quot;),`
-- `MAP8`: `CHART 2232:_markers.sort( | 2233:key=lambda marker: int(marker[0]) | 2234:)`
-- `MAP9`: `CHART 2236:return _jsonify( | 2237:{ | 2238:&quot;ok&quot;: True,`
+- `DIRECTION_KEYS`: `direction_left_count,direction_left_label,direction_left_pct,direction_right_count,direction_right_label,direction_r`
+- `DNA_KEYS`: `direction_mode`
 - `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
 - `PREFLIGHT_RERUN`: `NO`
 - `RESTART`: `NO`
+- `ROUTE1`: `2370:_indicator_lab_internal_request_authorized() | 2371:) | 2373:requested_tier = str( | 2374:_indicator_lab_requeste`
+- `ROUTE2`: `2380:and requested_tier | 2381:in { | 2382:&#x27;FREE&#x27;, | 2383:&#x27;PRO&#x27;, | 2384:&#x27;INTERNAL_ADMIN&#x27;,`
+- `ROUTE3`: `2385:} | 2386:): | 2387:effective_tier = requested_tier | 2388:else: | 2389:effective_tier = &#x27;FREE&#x27;`
+- `ROUTE4`: `2391:benchtest_metrics = ( | 2392:_pine_report_metrics( | 2393:candidate_id, | 2394:effective_tier,`
+- `ROUTE5`: `2395:) | 2396:) | 2398:return render_template( | 2399:&#x27;indicator_lab_report.html&#x27;,`
+- `ROUTE6`: `2400:record=record, | 2401:source_meta=source_meta, | 2402:benchtest_metrics=benchtest_metrics, | 2403:tier=effective_`
+- `ROUTE7`: `NONE`
+- `ROUTE8`: `NONE`
 - `SCORE_PRODUCER_CHANGE`: `NO`
 - `SOURCE_CHANGE`: `NO`
+- `TAG_KEYS`: `profile_tags`
