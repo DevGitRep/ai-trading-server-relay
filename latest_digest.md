@@ -1,23 +1,35 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T06:21:30.224694+00:00`
-- Run ID: `20260908T062128Z`
-- Step: `READBENCHSTATWIRING`
+- Published UTC: `2026-09-08T06:23:41.558620+00:00`
+- Run ID: `20260908T062339Z`
+- Step: `FIXBENCHSTAT`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `BENCHSTATWIRINGREAD`
-- Next gate: `PATCHBENCHSTAT`
+- Verdict: `BENCHSTATSFIXED`
+- Next gate: `NORMALOPERATIONS`
 
 ## Facts
 
-- `ASSIGN_TARGET`: `bench,bench_semantics`
+- `BACKUP`: `PASS`
 - `BENCHTEST_RERUN`: `NO`
-- `BENCH_ASSIGN`: `( bench, bench_semantics, )=_indicator_library_ui_v2_benchtest( con, tables, current_shas, )`
-- `BENCH_EXPR`: `&quot;benchtest_total&quot;=&gt;bench | &quot;benchtest_semantics&quot;=&gt;bench_semantics`
+- `CANONICAL`: `16`
+- `COMPILE`: `PASS`
 - `DB_WRITE`: `NO`
-- `HELPER_RETURN`: `UNKNOWN`
+- `FINALQUICK`: `ok`
+- `LIBRARY_CHANGE`: `NO`
+- `LIVEBENCH`: `16`
+- `MASTERSTATE`: `PATCHED`
+- `MASTERUPDATED`: `YES`
+- `MASTER_CHANGE`: `YES`
 - `MASTER_READ`: `YES`
+- `PATCHSTATE`: `PATCHED`
 - `PREFLIGHT_RERUN`: `NO`
-- `RESTART`: `NO`
-- `SOURCE_CHANGE`: `NO`
+- `QUICK`: `ok`
+- `READYTRY`: `4`
+- `RESTART`: `YES`
+- `ROLLBACK`: `NO`
+- `ROUTEFOUND`: `YES`
+- `SCORE_PRODUCER_CHANGE`: `NO`
+- `SERVICE`: `active`
+- `SOURCE_CHANGE`: `YES`
