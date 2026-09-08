@@ -1,53 +1,59 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T18:29:14.351047+00:00`
-- Run ID: `20260908T182911Z`
-- Step: `TRACEBRAINSOURCE`
+- Published UTC: `2026-09-08T18:31:54.962629+00:00`
+- Run ID: `20260908T183153Z`
+- Step: `VERIFYBRAINADMISSION`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `BRAINSOURCETRACED`
-- Next gate: `CLASSIFYBRAINFEED`
+- Verdict: `BRAINADMISSIONREAD`
+- Next gate: `DESIGNBRAINCUTOVER`
 
 ## Facts
 
+- `ADMISSION1`: `MASTERARCH=YES`
+- `ADMISSION10`: `QUEUE family_status=EXISTING_METADATA_AVAILABLE:533`
+- `ADMISSION11`: `QUEUE behavioral_fingerprint_status=NOT_EVALUATED:533`
+- `ADMISSION12`: `QUEUE incremental_status=MISSING:533`
+- `ADMISSION13`: `QUEUE brain_value_proven=MISSING:533`
+- `ADMISSION14`: `QUEUE admission_status=MISSING:533`
+- `ADMISSION15`: `QUEUE prospective_status=NOT_STARTED:533`
+- `ADMISSION16`: `JSONFILES=40`
+- `ADMISSION17`: `BRAINVALUETRUE=0`
+- `ADMISSION18`: `ADMISSIONHITS=2`
+- `ADMISSION19`: `ADMISSION indicator_v1_blocker5_first_seen_scheduler_evidence_v1.json:admitted`
+- `ADMISSION2`: `ADAPTERS=1`
+- `ADMISSION20`: `ADMISSION activation_indicator_v1_library_incremental.json:admitted`
+- `ADMISSION21`: `STATES=NOT_STARTED:1066,MATERIALIZED_SCREENING:152,PASS:75,NO_VARYING_NUMERIC_PLOT_SERIES:50,READY_INTERFACE:2,F`
+- `ADMISSION22`: `PROSCONTRACTS=1`
+- `ADMISSION23`: `PROS status=FROZEN_PRE_ACTIVATION`
+- `ADMISSION24`: `PROS activation_state={&#x27;activated&#x27;: False, &#x27;activation_requires_all_blockers_pass&#x27;: True, &#x27;historical_backfill_b`
+- `ADMISSION25`: `PROS created_at_utc=2026-09-01T17:10:18.044043+00:00`
+- `ADMISSION26`: `PROSBLOCKERS=7`
+- `ADMISSION27`: `BLOCKER EXACT_CAUSAL_FUTURE_MARKET_DATA_LANE_RESOLVED`
+- `ADMISSION28`: `BLOCKER EXACT_FROZEN_INCUMBENT_WF3_SCORING_LANE_RESOLVED`
+- `ADMISSION29`: `BLOCKER EXACT_SIX_ROLE_RESIN_0_2_2_FEATURE_LANE_RESOLVED`
+- `ADMISSION3`: `ADAPTER 88:ap.add_argument( | 93:ap.add_argument( | 98:ap.add_argument( | 103:ap.add_argument( | 124:con = sqlit`
+- `ADMISSION30`: `BLOCKER EXACT_FROZEN_RANGE_120_BP_TARGET_CONSTRUCTION_RESOLVED`
+- `ADMISSION31`: `BLOCKER FIRST_SEEN_CAUSAL_WITNESS_RESOLVED`
+- `ADMISSION32`: `BLOCKER FIXED_PAIRED_CHALLENGER_MODELS_AND_SCALERS_BUILT_AND_HASH_FROZEN`
+- `ADMISSION33`: `NONE`
+- `ADMISSION34`: `NONE`
+- `ADMISSION35`: `NONE`
+- `ADMISSION36`: `NONE`
+- `ADMISSION37`: `NONE`
+- `ADMISSION38`: `NONE`
+- `ADMISSION39`: `NONE`
+- `ADMISSION4`: `ADAPTER 165:FROM sources | 218:FROM candidates | 235:FROM benchtest_results_v1 | 545:&quot;realistic_score&quot;: | 548:&quot;r`
+- `ADMISSION40`: `NONE`
+- `ADMISSION5`: `ADAPTER 694:][&quot;realistic_score&quot;] | 697:][&quot;realistic_score&quot;] | 783:&quot;current_benchtest_candidates&quot;: | 836:&quot;benchte`
+- `ADMISSION6`: `ADAPTER 866:&quot;realistic_score_use&quot;: | 922:&quot;CURRENT_BENCHTEST_CANDIDATES=&quot; | 1045:f&quot;|score={row[&#x27;benchtest&#x27;][&#x27;real`
+- `ADMISSION7`: `QUEUECOUNT=533`
+- `ADMISSION8`: `QUEUE eligible=False:432,True:101`
+- `ADMISSION9`: `QUEUE challenger_status=NOT_CREATED:533`
 - `BENCHTEST_RERUN`: `NO`
 - `DB_WRITE`: `NO`
-- `FACTS`: `20`
-- `LINEAGE1`: `MASTERARCH=YES`
-- `LINEAGE10`: `IDENTITYKEYS=benchtest_source_sha256,candidate_metadata_lineage_pass,exact_source_identity,script_id_part,sha_de`
-- `LINEAGE11`: `SOURCEKEYS=family,fetched_at,kind,pine_version,script_name,source_sha256`
-- `LINEAGE12`: `PICOLS=indicator_id,legacy_candidate_id,name,author,source_url,created_at,migrated_at,legacy_snapshot_json`
-- `LINEAGE13`: `CURRENTSCored=16`
-- `LINEAGE14`: `QUEUELINKED=533`
-- `LINEAGE15`: `QUEUECURRENTSCored=0`
-- `LINEAGE16`: `QUEUENOTCURRENTSCored=533`
-- `LINEAGE17`: `SCORESAME=0`
-- `LINEAGE18`: `SCORECHANGED=0`
-- `LINEAGE19`: `QUEUESCOREMISSING=0`
-- `LINEAGE2`: `ADAPTERS=1`
-- `LINEAGE20`: `CURRENTTOTAL=21`
-- `LINEAGE21`: `NONE`
-- `LINEAGE22`: `NONE`
-- `LINEAGE23`: `NONE`
-- `LINEAGE24`: `NONE`
-- `LINEAGE25`: `NONE`
-- `LINEAGE26`: `NONE`
-- `LINEAGE27`: `NONE`
-- `LINEAGE28`: `NONE`
-- `LINEAGE29`: `NONE`
-- `LINEAGE3`: `ADAPTERSOURCE 7:import sqlite3 | 124:con = sqlite3.connect( | 125:&quot;file:&quot; + args.db + &quot;?mode=ro&quot;, | 129:con.row_`
-- `LINEAGE30`: `NONE`
-- `LINEAGE31`: `NONE`
-- `LINEAGE32`: `NONE`
-- `LINEAGE33`: `NONE`
-- `LINEAGE34`: `NONE`
-- `LINEAGE4`: `QUEUECOUNT=533`
-- `LINEAGE5`: `QUEUECREATED=2026-09-01T05:29:06.232431+00:00`
-- `LINEAGE6`: `QUEUECONTRACT=NONE`
-- `LINEAGE7`: `QUEUEITEMKEYS=benchtest,brain_research,candidate_id,identity,source`
-- `LINEAGE8`: `BENCHTESTKEYS=completed_trades,contract_version,max_drawdown_pct,net_return_pct,profit_factor,realistic_score,re`
-- `LINEAGE9`: `BRAIN_RESEARCHKEYS=behavioral_fingerprint_status,challenger_status,eligibility_reasons,eligible,family_status,in`
+- `FACTS`: `32`
 - `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
 - `PREFLIGHT_RERUN`: `NO`
