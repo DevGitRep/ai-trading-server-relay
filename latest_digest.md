@@ -1,58 +1,59 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T17:10:42.973697+00:00`
-- Run ID: `20260908T171040Z`
-- Step: `READCOREBRAINIQ`
+- Published UTC: `2026-09-08T17:26:10.484591+00:00`
+- Run ID: `20260908T172608Z`
+- Step: `COMPAREMASTERARCH`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `COREBRAINIQREAD`
-- Next gate: `MAPCOREBRAINIQ`
+- Verdict: `MASTERARCHGAPREAD`
+- Next gate: `CLASSIFYMASTERGAPS`
 
 ## Facts
 
-- `ACTIVEFILES`: `698`
+- `ANCHORS`: `20`
 - `BENCHTEST_RERUN`: `NO`
 - `DB_WRITE`: `NO`
-- `IQ1`: `MASTER 78:Indicator Library UI:`
-- `IQ10`: `SOURCE shadow_ai_governance_v11.py:1050:print(&quot; RESEARCH MEMORY&quot;)`
-- `IQ11`: `SOURCE shadow_ai_prospective_rotation_v23.py:72:challenger_version TEXT UNIQUE NOT NULL,`
-- `IQ12`: `SOURCE shadow_ai_prospective_rotation_v23.py:673:UPDATE shadow_ai_research_trials_v2`
-- `IQ13`: `SOURCE shadow_ai_prospective_rotation_v23.py:897:# Select best research artifact that has`
-- `IQ14`: `SOURCE shadow_ai_prospective_rotation_v23.py:905:r.research_rank_score,`
-- `IQ15`: `SOURCE shadow_ai_prospective_rotation_v23.py:908:FROM shadow_ai_research_trials_v2 r`
-- `IQ16`: `SOURCE shadow_ai_prospective_rotation_v23.py:927:r.research_rank_score DESC,`
-- `IQ17`: `SOURCE shadow_ai_prospective_rotation_v23.py:936:&quot; No new unused research artifact available.&quot;`
-- `IQ18`: `SOURCE shadow_ai_prospective_rotation_v23.py:1006:research_rank_score,`
-- `IQ19`: `SOURCE shadow_ai_prospective_rotation_v23.py:1038:&quot;research_rank_score&quot;`
-- `IQ2`: `MASTER 555:## Indicator Library`
-- `IQ20`: `SOURCE shadow_ai_prospective_rotation_v23.py:1072:&quot;Research rank:&quot;,`
-- `IQ21`: `SOURCE shadow_ai_prospective_rotation_v23.py:1074:&quot;research_rank_score&quot;`
-- `IQ22`: `SOURCE shadow_ai_train.py:56:learning_rate=0.05,`
-- `IQ23`: `SOURCE shadow_ai_train.py:123:unique_epochs = np.asarray(`
-- `IQ24`: `SOURCE shadow_ai_train.py:128:if len(unique_epochs) &lt; 100:`
-- `IQ25`: `SOURCE shadow_ai_train.py:140:len(unique_epochs) * 0.55`
-- `IQ26`: `SOURCE shadow_ai_train.py:144:len(unique_epochs)`
-- `IQ27`: `SOURCE shadow_ai_train.py:166:&gt;= len(unique_epochs)`
-- `IQ28`: `IQCODE shadow_ai_research_brain.py | 198:parent_model_version TEXT, | 200:experiment_fingerprint TEXT, | 202:tra`
-- `IQ29`: `NONE`
-- `IQ3`: `MASTER 665:## Indicator Library homepage metrics | 678:## Indicator Library implementation handoff | 680:### Pur`
-- `IQ30`: `NONE`
-- `IQ31`: `NONE`
-- `IQ32`: `NONE`
-- `IQ33`: `NONE`
-- `IQ34`: `NONE`
-- `IQ4`: `SOURCE shadow_ai_governance_v11.py:56:INSERT INTO shadow_ai_research_state(`
-- `IQ5`: `SOURCE shadow_ai_governance_v11.py:77:FROM shadow_ai_research_state`
-- `IQ6`: `SOURCE shadow_ai_governance_v11.py:510:# Legacy state from Research Brain v1 is intentionally`
-- `IQ7`: `SOURCE shadow_ai_governance_v11.py:583:&quot;research_brain_v1.1&quot;,`
-- `IQ8`: `SOURCE shadow_ai_governance_v11.py:634:# Update Research Memory.`
-- `IQ9`: `SOURCE shadow_ai_governance_v11.py:989:&quot; RESEARCH BRAIN V1.1 &quot;`
-- `MASTERHITS`: `5`
+- `FACTS`: `41`
+- `GAP1`: `ANCHOR SIXBRAINS=ABSENT lines=NONE`
+- `GAP10`: `ANCHOR DATACAUSALITY=ABSENT lines=NONE`
+- `GAP11`: `ANCHOR PREDICTIVE=ABSENT lines=NONE`
+- `GAP12`: `ANCHOR SPECIALIZATION=ABSENT lines=NONE`
+- `GAP13`: `ANCHOR ROBUSTNESS=ABSENT lines=NONE`
+- `GAP14`: `ANCHOR ECONOMIC=ABSENT lines=NONE`
+- `GAP15`: `ANCHOR RESEARCHLAB=ABSENT lines=NONE`
+- `GAP16`: `ANCHOR RESEARCHFACTORY=ABSENT lines=NONE`
+- `GAP17`: `ANCHOR INCREMENTAL=ABSENT lines=NONE`
+- `GAP18`: `ANCHOR PROSPECTIVE=ABSENT lines=NONE`
+- `GAP19`: `ANCHOR ADMISSION=ABSENT lines=NONE`
+- `GAP2`: `ANCHOR FDI=ABSENT lines=NONE`
+- `GAP20`: `ANCHOR CONTINUATION=ABSENT lines=NONE`
+- `GAP21`: `HEADING 145:# 4. Canonical persistent architecture`
+- `GAP22`: `HEADING 156:## pipeline_indicators`
+- `GAP23`: `HEADING 166:## pipeline_indicator_versions`
+- `GAP24`: `HEADING 213:## indicator_pipeline_current`
+- `GAP25`: `HEADING 270:## PRIMARY for indicators and strategies`
+- `GAP26`: `HEADING 291:## SECONDARY for indicators`
+- `GAP27`: `HEADING 390:# 8. BenchTest writer and read architecture`
+- `GAP28`: `HEADING 555:## Indicator Library`
+- `GAP29`: `HEADING 578:## Indicator Lab/report module`
+- `GAP3`: `ANCHOR INDICATOR=ABSENT lines=NONE`
+- `GAP30`: `HEADING 646:## Indicator Lab report`
+- `GAP31`: `HEADING 665:## Indicator Library homepage metrics`
+- `GAP32`: `HEADING 678:## Indicator Library implementation handoff`
+- `GAP33`: `HEADING 795:## Indicator DNA and Trading Profile`
+- `GAP34`: `HEADING 806:### INDICATOR_DNA_V1 contract`
+- `GAP35`: `HEADING 996:## Indicator Lab report Free entitlement`
+- `GAP36`: `IQNUM 73=ABSENT`
+- `GAP4`: `ANCHOR CRYPTO=ABSENT lines=NONE`
+- `GAP5`: `ANCHOR MACRO=ABSENT lines=NONE`
+- `GAP6`: `ANCHOR ORDERFLOW=ABSENT lines=NONE`
+- `GAP7`: `ANCHOR MARKETSTRUCTURE=ABSENT lines=NONE`
+- `GAP8`: `ANCHOR DERIVATIVES=ABSENT lines=NONE`
+- `GAP9`: `ANCHOR IQBENCH=ABSENT lines=NONE`
 - `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
 - `PREFLIGHT_RERUN`: `NO`
 - `RESTART`: `NO`
 - `SCORE_PRODUCER_CHANGE`: `NO`
-- `SOURCEHITS`: `1791`
 - `SOURCE_CHANGE`: `NO`
