@@ -1,43 +1,36 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T15:22:13.701311+00:00`
-- Run ID: `20260908T152211Z`
-- Step: `PATCHFREEENTITLEMENT`
+- Published UTC: `2026-09-08T15:33:52.836098+00:00`
+- Run ID: `20260908T153350Z`
+- Step: `PATCHFREECHARTFRONTEND`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `FREECUTOVERLIVE`
+- Verdict: `FREECHARTFRONTENDLIVE`
 - Next gate: `REVIEWFREEVISUAL`
 
 ## Facts
 
 - `BACKUP`: `PASS`
 - `BENCHTEST_RERUN`: `NO`
-- `CHARTDEF`: `indicator_lab_report_bench_chart_d`
 - `DB_WRITE`: `NO`
 - `FREECANDLES`: `2190`
-- `FREEHTTP`: `200`
-- `FREELOCKS`: `11`
 - `FREEMARKERS`: `0`
+- `JSHTTP`: `200`
 - `LEGACY`: `ABSENT`
-- `MASTER`: `REPLACED`
+- `MASTER`: `UPDATED`
 - `MASTER_CHANGE`: `YES`
 - `MASTER_READ`: `YES`
 - `PATCH`: `PASS`
 - `PRECANDLES`: `2190`
 - `PREFLIGHT_RERUN`: `NO`
-- `PREMARKERS`: `16`
-- `PRETARGET`: `PASS`
+- `PREMARKERS`: `0`
 - `PREWRITE`: `PASS`
-- `PROCANDLES`: `2190`
-- `PROFILE`: `MATCH`
-- `PROHTTP`: `200`
-- `PROLOCKS`: `0`
 - `PROMARKERS`: `16`
+- `PROMARKERS2`: `16`
 - `QUICK`: `ok`
 - `RESTART`: `YES`
 - `ROLLBACK`: `NO`
 - `SCORE_PRODUCER_CHANGE`: `NO`
 - `SERVICE`: `active`
 - `SOURCE_CHANGE`: `YES`
-- `TAGS`: `PASS`
