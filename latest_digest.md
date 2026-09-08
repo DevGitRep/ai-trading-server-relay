@@ -1,13 +1,13 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T20:08:23.599236+00:00`
-- Run ID: `20260908T200821Z`
-- Step: `DRYRUNNATIVESCREENING`
+- Published UTC: `2026-09-08T20:09:42.552919+00:00`
+- Run ID: `20260908T200940Z`
+- Step: `ASSESSNATIVEOUTCOME`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `NATIVEDRYRUNPASS`
-- Next gate: `ASSESSNATIVESCREENING`
+- Verdict: `NATIVEOUTCOMEREAD`
+- Next gate: `DECIDENATIVEPUBLICATION`
 
 ## Facts
 
@@ -16,39 +16,43 @@
 - `BRAIN_IQ_CHANGE`: `NO`
 - `DB_WRITE`: `NO`
 - `ERROR`: `NONE`
-- `FACTS`: `15`
+- `FACTS`: `25`
 - `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
-- `NATIVE1`: `MASTERQUEUE=YES`
-- `NATIVE10`: `MATCHES14=YES`
-- `NATIVE11`: `OUTSIDEELIGIBLE=0`
-- `NATIVE12`: `MISSINGELIGIBLE=0`
-- `NATIVE13`: `STATUSES=MATERIALIZED_SCREENING:13,NO_VARYING_NUMERIC_PLOT_SERIES:1`
-- `NATIVE14`: `FIRSTKEYS=candidate_id,native_artifact,realistic_score,screening_role,script_name,series,source_sha256,status`
-- `NATIVE15`: `OLDNATIVEUNCHANGED=YES`
-- `NATIVE16`: `NONE`
-- `NATIVE17`: `NONE`
-- `NATIVE18`: `NONE`
-- `NATIVE19`: `NONE`
-- `NATIVE2`: `LIVEQUEUE=16`
-- `NATIVE20`: `NONE`
-- `NATIVE21`: `NONE`
-- `NATIVE22`: `NONE`
-- `NATIVE23`: `NONE`
-- `NATIVE24`: `NONE`
-- `NATIVE25`: `NONE`
-- `NATIVE26`: `NONE`
-- `NATIVE27`: `NONE`
-- `NATIVE28`: `NONE`
-- `NATIVE29`: `NONE`
-- `NATIVE3`: `ELIGIBLEIDS=14`
-- `NATIVE30`: `NONE`
-- `NATIVE4`: `GATEDIDS=2`
-- `NATIVE5`: `OLDNATIVE=101`
-- `NATIVE6`: `NATIVERC=0`
-- `NATIVE7`: `DRYNATIVE=14`
-- `NATIVE8`: `CREATED_AT_UTC=2026-09-08T20:08:21.243141+00:00`
-- `NATIVE9`: `OUTPUTIDS=14`
+- `OUTCOME1`: `MASTERQUEUE=YES`
+- `OUTCOME10`: `CONTRACT fingerprint_metrics=[&quot;length&quot;, &quot;finite_count&quot;, &quot;finite_ratio&quot;, &quot;unique_count&quot;, &quot;unique_ratio&quot;, &quot;mean&quot;,`
+- `OUTCOME11`: `CONTRACT native_series_rules={&quot;buy_sell_semantics_inferred&quot;: false, &quot;input&quot;: &quot;plots_json&quot;, &quot;minimum_finite_value`
+- `OUTCOME12`: `CONTRACT native_series_rules.input=plots_json`
+- `OUTCOME13`: `CONTRACT native_series_rules.minimum_unique_values_for_varying_series=3`
+- `OUTCOME14`: `CONTRACT native_series_rules.plot_color_semantics_inferred=False`
+- `OUTCOME15`: `CONTRACT native_series_rules.strategy_state_used_as_numeric_brain_feature=False`
+- `OUTCOME16`: `CONTRACT native_series_rules.time_like_series_excluded=True`
+- `OUTCOME17`: `CONTRACT native_series_rules.viz_used_as_numeric_brain_feature=False`
+- `OUTCOME18`: `NATIVERC=0`
+- `OUTCOME19`: `SPECIALCOUNT=1`
+- `OUTCOME2`: `STATUSCODEHITS=4`
+- `OUTCOME20`: `CANDIDATE=ICL_LIB_13D116EF34B21491`
+- `OUTCOME21`: `SCRIPTNAME=Markov Forecaster PRO`
+- `OUTCOME22`: `SERIESCOUNT=NONLIST`
+- `OUTCOME23`: `NATIVEARTIFACT=YES`
+- `OUTCOME24`: `METRICS score=6.912975107801398 trades=1917 exposure=99.94520547945206`
+- `OUTCOME25`: `PERF pf=0.7742404459252152 return=-92.63902325586218 dd=93.0959564901707`
+- `OUTCOME26`: `NONE`
+- `OUTCOME27`: `NONE`
+- `OUTCOME28`: `NONE`
+- `OUTCOME29`: `NONE`
+- `OUTCOME3`: `CODE1=932:continue | 934:plots_raw = row[ | 935:&quot;plots_json&quot; | 936:] | 938:if not plots_raw: | 939:item[&quot;status&quot;`
+- `OUTCOME30`: `NONE`
+- `OUTCOME31`: `NONE`
+- `OUTCOME32`: `NONE`
+- `OUTCOME33`: `NONE`
+- `OUTCOME34`: `NONE`
+- `OUTCOME4`: `CODE2=1062:].append(cid) | 1064:item[&quot;status&quot;] = ( | 1065:&quot;MATERIALIZED_SCREENING&quot; | 1066:) | 1068:else: | 1069:`
+- `OUTCOME5`: `CODE3=1130:&quot;PLOTS_JSON_INVALID&quot; | 1131:] | 1133:materialized = counts[ | 1134:&quot;MATERIALIZED_SCREENING&quot; | 1135:]`
+- `OUTCOME6`: `CODE4=1366:print( | 1367:&quot;MATERIALIZED_SCREENING=&quot; | 1368:+ str( | 1369:materialized | 1370:) | 1371:) | 1373:pr`
+- `OUTCOME7`: `CONTRACTHITS=17`
+- `OUTCOME8`: `CONTRACT candidate_outcomes=[&quot;MATERIALIZED_SCREENING&quot;, &quot;NO_VARYING_NUMERIC_PLOT_SERIES&quot;, &quot;NATIVE_ARTIFACT_MISSIN`
+- `OUTCOME9`: `CONTRACT contract=INDICATOR_NATIVE_SCREENING_V1`
 - `PREFLIGHT_RERUN`: `NO`
 - `PROSPECTIVE_ACTIVATION`: `NO`
 - `QUEUE_CHANGE`: `NO`
