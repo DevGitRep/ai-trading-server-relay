@@ -1,51 +1,52 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T16:16:54.384729+00:00`
-- Run ID: `20260908T161652Z`
-- Step: `TRACEBRAININPUTS`
+- Published UTC: `2026-09-08T16:19:26.093430+00:00`
+- Run ID: `20260908T161923Z`
+- Step: `READLIVEBRAININPUT`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `BRAININPUTSTRACED`
-- Next gate: `REVIEWBRAININPUTQUALITY`
+- Verdict: `LIVEBRAININPUTREAD`
+- Next gate: `ASSESSBRAINQUALITY`
 
 ## Facts
 
+- `ACTIVEFILES`: `3`
 - `BENCHTEST_RERUN`: `NO`
-- `CANDIDATEFILES`: `54`
+- `BRAIN1`: `LAB 105:performance_status TEXT NOT NULL DEFAULT &#x27;NOT_TESTED&#x27;, | 106:oos_status TEXT NOT NULL DEFAULT &#x27;NOT_TESTED&#x27;,`
+- `BRAIN10`: `BACKEND 521:&quot;large_sells&quot;: | 522:0, | 524:&quot;trade_count&quot;: | 525:0, | 527:&quot;whale_buy_value&quot;: | 528:0.0,`
+- `BRAIN11`: `BACKEND 879:trade[&quot;quantity&quot;] | 880:) | 882:c[&quot;trade_count&quot;] += 1 | 884:if trade.get(&quot;is_large&quot;): | 885:if trade[&quot;is`
+- `BRAIN12`: `BACKEND 9478:# This route is deliberately isolated from: | 9479:# - pine_entry_support_v1.db | 9480:# - Direction V1`
+- `BRAIN13`: `BACKEND 10769:return { | 10770:&quot;n&quot;: 0, | 10771:&quot;wins&quot;: 0, | 10772:&quot;win_rate&quot;: None, | 10773:&quot;avg_return_pct&quot;: None,`
+- `BRAIN14`: `BACKEND 10788:&quot;wins&quot;: | 10789:wins, | 10791:&quot;win_rate&quot;: | 10792:round( | 10793:wins / n * 100.0, | 10794:2 | 10795:)`
+- `BRAIN15`: `BACKEND 11367:&quot;fallback_n&quot;: | 11368:fallbacks, | 11370:&quot;resolved_win_rate&quot;: | 11371:( | 11372:round( | 11373:resolve`
+- `BRAIN16`: `BACKEND 11744:&quot;losses&quot;: 0, | 11745:&quot;breakeven&quot;: 0, | 11747:&quot;win_rate&quot;: None, | 11749:&quot;avg_return_pct&quot;: None, | 11750`
+- `BRAIN17`: `LIB 144:) | 146:score = metrics.get( | 147:&quot;realistic_score&quot; | 148:) | 150:net_return = metrics.get( | 151:&quot;net_retu`
+- `BRAIN18`: `LIB 193:row[&quot;profit_factor&quot;] | 194:) | 196:win_rate_pct = _num( | 197:row[&quot;win_rate_pct&quot;] | 198:) | 200:realistic_sc`
+- `BRAIN19`: `LIB 233:&quot;max_drawdown_pct&quot;: | 234:max_drawdown_pct, | 236:&quot;win_rate_pct&quot;: | 237:win_rate_pct, | 239:&quot;trade_count&quot;: |`
+- `BRAIN2`: `LAB 134:fee_free_return_pct REAL, | 136:max_drawdown_pct REAL, | 137:win_rate REAL, | 138:profit_factor REAL, | 139:`
+- `BRAIN20`: `LIB 388:&quot;profit_factor&quot;: None, | 389:&quot;net_return_pct&quot;: None, | 390:&quot;max_drawdown_pct&quot;: None, | 391:&quot;win_rate_pct&quot;: N`
+- `BRAIN21`: `LIB 526:metrics = card[&quot;metrics&quot;] | 528:score = metrics.get( | 529:&quot;realistic_score&quot; | 530:) | 532:net_return = metr`
+- `BRAIN22`: `LIB 748:&quot;&quot;&quot; | 749:SELECT | 750:indicator_id, | 751:realistic_score, | 752:primary_profit_factor, | 753:primary_net_r`
+- `BRAIN23`: `LIB 766:metrics.update({ | 767:&quot;candidate_id&quot;: candidate_id, | 768:&quot;realistic_score&quot;: row[&quot;realistic_score&quot;], | 769:`
+- `BRAIN24`: `LIB 781:_secondary_rows = conn.execute( | 782:&#x27;&#x27;&#x27; | 783:SELECT indicator_id, &quot;raw_result_json&quot; | 784:FROM pipeline_b`
+- `BRAIN25`: `SCHEMA candidates=brain_value_status`
+- `BRAIN26`: `SCHEMA default_test_results_v1=trade_count,win_rate_pct,realistic_score`
+- `BRAIN27`: `SCHEMA pine_baseline_leaderboard_v1=trade_count`
+- `BRAIN28`: `SCHEMA pine_library_discovery_ranking_v1=realistic_score`
+- `BRAIN29`: `SCHEMA pine_library_run_scores=realistic_score`
+- `BRAIN3`: `LAB 220:performance_status, | 221:oos_status, | 222:robustness_status, | 223:brain_value_status, | 224:prospective_s`
+- `BRAIN30`: `SCHEMA pine_library_session_diagnostics_v1=trade_count,win_rate_pct`
+- `BRAIN4`: `LAB 304:LIMIT 1 | 305:) AS max_drawdown_pct, | 306:( | 307:SELECT win_rate | 308:FROM test_runs t | 309:WHERE t.cand`
+- `BRAIN5`: `LAB 621:] | 623:metric_fields = { | 624:&#x27;realistic&#x27;: &#x27;realistic_score&#x27;, | 625:&#x27;profit&#x27;: &#x27;profit_factor&#x27;, | 626:&#x27;retu`
+- `BRAIN6`: `LAB 647:def _display_metric(card): | 648:if not entitled: | 649:return float(&quot;-inf&quot;) | 650:# BENCH_SCORE_V2_REALISTI`
+- `BRAIN7`: `LAB 976:return ( | 977:&quot;brain&quot; in token | 978:or &quot;brain_value&quot; in token | 979:) | 981:def _pl_scrub_private(value):`
+- `BRAIN8`: `LAB 1005:phrase in lower | 1006:for phrase in ( | 1007:&quot;ai brain&quot;, | 1008:&quot;indicator brain&quot;, | 1009:&quot;brain value&quot;, |`
+- `BRAIN9`: `BACKEND 411:&quot;delta&quot;: 0.0, | 412:&quot;large_buys&quot;: 0, | 413:&quot;large_sells&quot;: 0, | 414:&quot;trade_count&quot;: 0, | 416:# Order Scalp`
 - `DB_WRITE`: `NO`
 - `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
 - `PREFLIGHT_RERUN`: `NO`
 - `RESTART`: `NO`
-- `RISKHITS`: `35`
 - `SCORE_PRODUCER_CHANGE`: `NO`
 - `SOURCE_CHANGE`: `NO`
-- `TRACE1`: `MASTERPRIMARY 283:- no script-defined stop-loss or take-profit in PRIMARY; | 284:- an open final position is marked`
-- `TRACE10`: `FILE data/manual_support/report_candles_pager_v29g_backup_20260904T123131Z/indicator_lab_v1.py score=4 108:brain_val`
-- `TRACE11`: `FILE data/manual_support/report_chart_exact_run_v28e_backup_20260904T111446Z/indicator_lab_v1.py score=4 108:brain_v`
-- `TRACE12`: `RISK indicator_lab_v1.py:2023:FROM benchtest_trades_v1`
-- `TRACE13`: `RISK backend.py:14452:&quot;closed_trades&quot;: 0,`
-- `TRACE14`: `RISK backend.py:14597:&quot;closed_trades&quot;:`
-- `TRACE15`: `RISK data/manual_support/benchtest_v2_score_recent100_v31m_backup_20260905T131100Z/benchtest.v31m.py:433:CREATE TABL`
-- `TRACE16`: `RISK data/manual_support/benchtest_v2_score_recent100_v31m_backup_20260905T131100Z/benchtest.v31m.py:447:ON benchtes`
-- `TRACE17`: `RISK data/manual_support/benchtest_v2_score_recent100_v31m_backup_20260905T131100Z/benchtest.v31m.py:855:INSERT INTO`
-- `TRACE18`: `RISK data/manual_support/benchtest_v2_score_recent100_v31m_backup_20260905T131100Z/benchtest.v31m.py:2772:&quot;exit_sign`
-- `TRACE19`: `RISK data/manual_support/benchtest_v2_score_recent100_v31m_backup_20260905T131100Z/benchtest.v31m.py:3972:INSERT INT`
-- `TRACE2`: `MASTERSCORE 330:# 7. BENCH_SCORE_V2 | 334:`BENCH_SCORE_V2` | 338:PRIMARY weights: | 351:PRIMARY is considered active`
-- `TRACE20`: `NONE`
-- `TRACE21`: `NONE`
-- `TRACE22`: `NONE`
-- `TRACE23`: `NONE`
-- `TRACE24`: `NONE`
-- `TRACE25`: `NONE`
-- `TRACE26`: `NONE`
-- `TRACE27`: `NONE`
-- `TRACE28`: `NONE`
-- `TRACE3`: `MASTERLIBRARY 514:## Zero-closed-trade behaviour | 516:A card can have zero closed trades and still have a valid Rea`
-- `TRACE4`: `FILE indicator_lab_v1.py score=7 108:brain_value_status TEXT NOT NULL DEFAULT &#x27;NOT_TESTED&#x27;, | 143:brain_value_score`
-- `TRACE5`: `FILE indicator_lab_library_ui_v1.py score=6 147:&quot;realistic_score&quot; | 200:realistic_score = _num( | 201:row[&quot;realistic`
-- `TRACE6`: `FILE backend.py score=4 9481:# - Indicator brain | 9482:# - Market Structure brain | 9483:# - Orderflow brain | 1506`
-- `TRACE7`: `FILE data/manual_support/benchtest_v2_score_recent100_v31m_backup_20260905T131100Z/benchtest.v31m.py score=4 403:rea`
-- `TRACE8`: `FILE data/manual_support/benchtest_v2_score_recent100_v31n_backup_20260905T173016Z/benchtest.score-fixed.py score=4`
-- `TRACE9`: `FILE data/manual_support/benchtest_v2_score_v31m_backup_20260905T182549Z/benchtest.final.py score=4 403:realistic_sc`
