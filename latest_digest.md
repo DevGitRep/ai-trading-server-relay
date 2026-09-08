@@ -1,31 +1,33 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T07:39:30.123785+00:00`
-- Run ID: `20260908T073928Z`
-- Step: `READREPORTLOCALS`
+- Published UTC: `2026-09-08T07:45:27.475703+00:00`
+- Run ID: `20260908T074525Z`
+- Step: `FIXREPORTCHART`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `REPORTLOCALSREAD`
-- Next gate: `PATCHREPORTANDCHART`
+- Verdict: `REPORTCHARTRESTOREFAILED`
+- Next gate: `REVIEWREPORTPATCH`
 
 ## Facts
 
-- `ASSIGN_HEAD`: `tier = str( effective_tier or &quot;FREE&quot; ).upper() | conn = sqlite3.connect( DB ) | conn.row_factory = sqlite3.Row`
-- `ASSIGN_N`: `3`
+- `BACKUP`: `PASS`
 - `BENCHTEST_RERUN`: `NO`
-- `BEST_ARGS`: `conn,candidate_ids`
-- `BEST_CALL`: `_best_metrics( conn, candidate_ids, )`
-- `BEST_OWNER`: `metrics`
-- `CAND_CALL`: `_candidate_ids( conn, sha, row[&quot;chart_url&quot;], )`
-- `CAND_OWNER`: `candidate_ids`
-- `CANON_HELPERS`: `YES`
-- `CONNECT_CALL`: `sqlite3.connect( DB )`
-- `CONNECT_OWNER`: `conn`
+- `COMPILE`: `PASS`
 - `DB_WRITE`: `NO`
+- `FAILCODE`: `METRICCHART`
+- `FAILSTAGE`: `LIVE`
+- `HTTP`: `200`
+- `MASTER`: `UPDATED`
 - `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
+- `PATCH`: `ADDED`
 - `PREFLIGHT_RERUN`: `NO`
-- `RESTART`: `NO`
+- `QUICK`: `ok`
+- `READY`: `4`
+- `RESTART`: `YES`
+- `ROLLBACK`: `YES`
+- `SCORE`: `74.595173`
 - `SCORE_PRODUCER_CHANGE`: `NO`
 - `SOURCE_CHANGE`: `NO`
+- `TRADES`: `8`
