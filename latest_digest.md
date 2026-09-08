@@ -1,12 +1,12 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T20:02:14.797826+00:00`
-- Run ID: `20260908T200212Z`
-- Step: `VERIFYQUEUECONSUMERS`
+- Published UTC: `2026-09-08T20:03:38.597678+00:00`
+- Run ID: `20260908T200336Z`
+- Step: `VERIFYNATIVECONSUMER`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `QUEUECONSUMERSVERIFIED`
+- Verdict: `NATIVECONSUMERREAD`
 - Next gate: `PUBLISHCANONICALQUEUE`
 
 ## Facts
@@ -15,46 +15,42 @@
 - `BRAIN_ADMISSION`: `NO`
 - `BRAIN_IQ_CHANGE`: `NO`
 - `DB_WRITE`: `NO`
-- `FACTS`: `12`
+- `FACTS`: `10`
 - `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
+- `NATIVE1`: `MASTERFEED=YES`
+- `NATIVE10`: `FILTER1=if\s+.*eligible,if\s+.*brain_research,\[\s*.*for\s+.*in\s+.*candid`
+- `NATIVE11`: `NONE`
+- `NATIVE12`: `NONE`
+- `NATIVE13`: `NONE`
+- `NATIVE14`: `NONE`
+- `NATIVE15`: `NONE`
+- `NATIVE16`: `NONE`
+- `NATIVE17`: `NONE`
+- `NATIVE18`: `NONE`
+- `NATIVE19`: `NONE`
+- `NATIVE2`: `NATIVEDIR=YES`
+- `NATIVE20`: `NONE`
+- `NATIVE21`: `NONE`
+- `NATIVE22`: `NONE`
+- `NATIVE23`: `NONE`
+- `NATIVE24`: `NONE`
+- `NATIVE25`: `NONE`
+- `NATIVE26`: `NONE`
+- `NATIVE27`: `NONE`
+- `NATIVE28`: `NONE`
+- `NATIVE29`: `NONE`
+- `NATIVE3`: `MATCHFILES=1`
+- `NATIVE30`: `NONE`
+- `NATIVE4`: `FILE1=indicator_native_screening_materializer_v1.py`
+- `NATIVE5`: `SIGNALS1=candidate_queue,brain_research,eligible`
+- `NATIVE6`: `CTX11=711:) | 713:eligible = [ | 714:row | 715:for row in queue[ | 716:&quot;candidate_queue&quot; | 717:] | 718:if row[ |`
+- `NATIVE7`: `CTX12=752:) | 754:for candidate in eligible: | 756:cid = candidate[ | 757:&quot;candidate_id&quot;`
+- `NATIVE8`: `CTX13=1141:artifact_present = ( | 1142:len(eligible) | 1143:- missing | 1144:)`
+- `NATIVE9`: `CTX14=1147:100.0 | 1148:* artifact_present | 1149:/ len(eligible) | 1150:if eligible | 1151:else 0.0 | 1152:)`
 - `PREFLIGHT_RERUN`: `NO`
 - `PROSPECTIVE_ACTIVATION`: `NO`
 - `QUEUE_CHANGE`: `NO`
 - `RESTART`: `NO`
 - `SCORE_PRODUCER_CHANGE`: `NO`
 - `SOURCE_CHANGE`: `NO`
-- `VERIFY1`: `MASTERFEED=YES`
-- `VERIFY10`: `UNITENABLED=static rc=0`
-- `VERIFY11`: `UNITSHOW=ExecStart={ path=PATH ; argv[]=PATH PATH ; ignore_errors=no ; start_time=[Tue 2026-09-08 20:01:35 UTC]`
-- `VERIFY12`: `UNITQUEUEREF=NO`
-- `VERIFY13`: `NONE`
-- `VERIFY14`: `NONE`
-- `VERIFY15`: `NONE`
-- `VERIFY16`: `NONE`
-- `VERIFY17`: `NONE`
-- `VERIFY18`: `NONE`
-- `VERIFY19`: `NONE`
-- `VERIFY2`: `NATIVEEXISTS=NO`
-- `VERIFY20`: `NONE`
-- `VERIFY21`: `NONE`
-- `VERIFY22`: `NONE`
-- `VERIFY23`: `NONE`
-- `VERIFY24`: `NONE`
-- `VERIFY25`: `NONE`
-- `VERIFY26`: `NONE`
-- `VERIFY27`: `NONE`
-- `VERIFY28`: `NONE`
-- `VERIFY29`: `NONE`
-- `VERIFY3`: `ALIGNEXISTS=YES`
-- `VERIFY30`: `NONE`
-- `VERIFY31`: `NONE`
-- `VERIFY32`: `NONE`
-- `VERIFY33`: `NONE`
-- `VERIFY34`: `NONE`
-- `VERIFY4`: `ALIGNQUEUEREF=NO`
-- `VERIFY5`: `ALIGNCANDIDATEREF=YES`
-- `VERIFY6`: `ALIGNELIGSIGNALS=[&quot;eligible&quot;],brain_research`
-- `VERIFY7`: `ALIGNCTX1=1437:) | 1439:eligible = [ | 1440:row | 1441:for row in stage1[ | 1442:&quot;candidate_queue&quot; | 1443:] | 14`
-- `VERIFY8`: `ALIGNCTX2=2416:&quot;counts&quot;: { | 2417:&quot;stage1_eligible&quot;: | 2418:len( | 2419:eligible | 2420:), | 2422:&quot;candidate_wit`
-- `VERIFY9`: `UNITACTIVE=inactive rc=3`
