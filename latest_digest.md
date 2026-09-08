@@ -1,38 +1,35 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T08:04:29.729564+00:00`
-- Run ID: `20260908T080427Z`
-- Step: `READCHARTWIREEXACT`
+- Published UTC: `2026-09-08T08:06:09.436697+00:00`
+- Run ID: `20260908T080607Z`
+- Step: `READCHARTSTATECONTRACT`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `CHARTWIREEXACTREAD`
+- Verdict: `CHARTSTATECONTRACTREAD`
 - Next gate: `PATCHREPORTV2`
 
 ## Facts
 
+- `BACKUP_BIND`: `NONE`
+- `BACKUP_HINT`: `bench_chart,market_candles`
+- `BACKUP_SERVER`: `YES`
+- `BACKUP_TPL`: `NO`
 - `BENCHTEST_RERUN`: `NO`
-- `CALLS`: `irlReportNativeChartV28C,render`
-- `DATASET`: `chartState`
+- `CALL`: `irlReportNativeChartV28C(){ if(!entitled) | irlReportNativeChartV28C()`
+- `CURRENT_BIND`: `NONE`
+- `DATASET_FIELDS`: `chartState`
 - `DB_WRITE`: `NO`
-- `EVIDENCE`: `LIST:4:DICT:count,kind,path,role`
-- `FETCH`: `NONE`
-- `GLOBALS`: `addEventListener`
-- `IDS`: `irlDownload,irlDownloadSlot,irlTestScriptModal`
-- `JS_ARROW`: `NONE`
-- `JS_FUNCTION`: `nearest`
+- `EVIDENCE_FILES`: `LONG:SEMANTIC_SERIES:6:.condition:NO:UNKNOWN | LONG:SEMANTIC_ARRAY:6:.condition:NO:UNKNOWN | SHORT:SEMANTIC_SERIES:7:.condition:NO:UNKNOWN | SHORT:SEMANTIC_ARRAY:7:.condition:NO:UNKNOWN`
+- `JSON_PARSE`: `NONE`
+- `JS_ARGS`: ``
+- `LITERAL_KEYS`: `NONE`
 - `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
-- `PATHS`: `/indicator-lab/strategy/`
 - `PREFLIGHT_RERUN`: `NO`
-- `PRIMARY`: `TEXT:24`
 - `QUICK`: `ok`
-- `RAW_SIGNAL`: `end_of_test_json.primary.entry_bar=INT | end_of_test_json.primary.entry_price=FLOAT | end_of_test_json.primary.entry_signal_bar=INT | end_of_test_json.primary.normal_signal=BOOL | long_signal_count=INT | short_signal_cou`
 - `RESTART`: `NO`
 - `SCORE_PRODUCER_CHANGE`: `NO`
-- `SECONDARY`: `TEXT:27`
-- `SELECTORS`: `h1,th,td,tr`
+- `SERVER_TOKENS`: `NONE`
 - `SOURCE_CHANGE`: `NO`
-- `TPL_ATTRS`: `data-page=indicator-lab-script-detail-v1`
-- `TPL_IDS`: `irlBenchChart,irlBenchChartMeta,irlBenchChartStage,irlDownloadSlot`
-- `TPL_SCRIPTS`: `NONE`
+- `STATE_KEYS`: `candles,display_timeframe,markers,mode,pair,source_timeframe`
