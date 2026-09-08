@@ -1,12 +1,12 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T08:01:09.051594+00:00`
-- Run ID: `20260908T080106Z`
-- Step: `DIAGREPORTLIVEV3`
+- Published UTC: `2026-09-08T08:02:59.169037+00:00`
+- Run ID: `20260908T080257Z`
+- Step: `READCHARTDATAOWNER`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `REPORTLIVEV3READ`
+- Verdict: `CHARTDATAOWNERREAD`
 - Next gate: `PATCHREPORTV2`
 
 ## Facts
@@ -14,28 +14,32 @@
 - `BENCHTEST_RERUN`: `NO`
 - `DB_WRITE`: `NO`
 - `DD`: `43.05182148474185`
-- `ENDPOINT`: `NONE`
-- `ENDPOINT_STATUS`: `NOTFOUND`
-- `ERROR_TEXT`: `signal`
-- `HTTP`: `200`
-- `LIVE_ATTR`: `data-page=&quot;indicator-lab-script-detail-v1&quot;`
-- `LIVE_FETCH`: `NONE`
-- `LIVE_PATH`: `NONE`
+- `ERROR_OWNER`: `indicator_library_ui_v2.js`
+- `FETCH`: `url.toString(|`/indicator-lab/api/library-stats?view_as=${encodeURIComponent(tier|endpoint, { headers:{ &quot;Accept&quot;:&quot;application/json&quot; } } |&quot;/indicator-lab/api/lib`
+- `MARKET_COLS`: `date,open,high,low,close,volume`
+- `MARKET_EXISTS`: `YES`
+- `MARKET_RANGE`: `2025-07-31 00:00:00+00:00&gt;2026-07-30 23:59:00+00:00`
+- `MARKET_ROWS`: `525600`
 - `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
+- `MISSING_ATTRS`: `chart-state,free-lock,irl-free-stats-v7,irl-upgrade-v7,library-page-size,library-pages,library-total,pager-visual-mode,report-link,shared-metrics,stat`
+- `OWNERS`: `indicator_library_ui_v2.js:ERROR|indicator_lab_report.html:PAGE,CHART|indicator_lab_report.html:PAGE,CHART|indicator_library_ui_v2.js:ERROR|indicator_library_ui_v2.js:ERROR`
+- `OWNER_N`: `10`
+- `PAGE_OWNER`: `NONE`
+- `PATHS`: `/indicator-lab/api/library-page|/indicator-lab/api/library-stats?view_as=PRO|/indicator-lab/api/test-your-script/status|/indicator-lab/intake/paste-pine|/indica`
 - `PF`: `2.5459138924136475`
 - `PREFLIGHT_RERUN`: `NO`
+- `PRIMARY`: `STR`
+- `PRIMARY_NEST`: `NONE`
 - `QUICK`: `ok`
+- `REQUIRED_ATTRS`: `chart-state,free-lock,irl-free-stats-v7,irl-upgrade-v7,library-page-size,library-pages,library-total,pager-visual-mode,report-link,shared-metrics,stat`
 - `RESTART`: `NO`
 - `RETURN`: `40.49375002858368`
 - `SCORE`: `74.59517342100865`
 - `SCORE_PRODUCER_CHANGE`: `NO`
-- `SERVER_ROUTE`: `lab:indicator_lab_pine_catalog_api_v1:/indicator-lab/pine-catalog/api | backend:pine_support_history_v1:/api/pine-support/history | backend:entry_data_health_v1:/api/entr`
-- `SIGNAL_EVIDENCE`: `DICT:evidence,mode,primary,secondary`
+- `SCRIPT_SRC`: `/static/indicator_library_ui_v2.js`
+- `SECONDARY`: `STR`
+- `SECONDARY_NEST`: `NONE`
 - `SOURCE_CHANGE`: `NO`
-- `TEMPLATE_HITS`: `InteractiveBenchTest:1,irl-bench-chart-sect:2,signal:2`
-- `TPL_FETCH`: `NONE`
-- `TPL_PATH`: `NONE`
-- `TPL_URLFOR`: `NONE`
 - `TRADES`: `8`
 - `WIN`: `62.5`
