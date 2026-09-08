@@ -1,33 +1,37 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T15:56:49.686585+00:00`
-- Run ID: `20260908T155647Z`
-- Step: `READREPORTFREEGUARD`
+- Published UTC: `2026-09-08T15:59:36.823185+00:00`
+- Run ID: `20260908T155934Z`
+- Step: `PATCHFREECHARTCALL`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `REPORTFREEGUARDREAD`
-- Next gate: `PATCHFREECHARTCALL`
+- Verdict: `FREECHARTCALLLIVE`
+- Next gate: `REVIEWFREEVISUAL`
 
 ## Facts
 
+- `BACKUP`: `PASS`
 - `BENCHTEST_RERUN`: `NO`
 - `DB_WRITE`: `NO`
-- `GUARD1`: `HEAD 2141:function report(){ | 2142:if(!entitled){ | 2143:return;`
-- `GUARD10`: `TAIL 2255:document.addEventListener(&quot;DOMContentLoaded&quot;,()=&gt;{if(!library()){const o=new MutationObserver(()=&gt;{if(libr`
-- `GUARD11`: `NONE`
-- `GUARD12`: `NONE`
-- `GUARD2`: `HEAD 2144:} | 2146:if(`
-- `GUARD3`: `HEAD 2147:!location.pathname.startsWith( | 2148:&quot;/indicator-lab/strategy/&quot; | 2149:)`
-- `GUARD4`: `HEAD 2150:){ | 2151:return; | 2152:}`
-- `GUARD5`: `HEAD 2154:const hidden=new Set([ | 2155:&quot;open_source&quot;,`
-- `GUARD6`: `HEAD 2156:&quot;image_url&quot;, | 2157:&quot;fetched_at&quot;, | 2158:&quot;signal_role_updated_at&quot;`
-- `GUARD7`: `HEAD 2159:]);`
-- `GUARD8`: `TAIL 2248:} | 2249:}`
-- `GUARD9`: `TAIL 2251:irlReportNativeChartV28C(); | 2252:}`
-- `MASTER_CHANGE`: `NO`
+- `FREECANDLES`: `2190`
+- `FREEMARKERS`: `0`
+- `HASHMATCH`: `YES`
+- `JSHTTP`: `200`
+- `LEGACY`: `ABSENT`
+- `MASTER`: `UPDATED`
+- `MASTER_CHANGE`: `YES`
 - `MASTER_READ`: `YES`
+- `PATCH`: `PASS`
+- `PRECANDLES`: `2190`
 - `PREFLIGHT_RERUN`: `NO`
-- `RESTART`: `NO`
+- `PREMARKERS`: `0`
+- `PREWRITE`: `PASS`
+- `PROMARKERS`: `16`
+- `PROMARKERS2`: `16`
+- `QUICK`: `ok`
+- `RESTART`: `YES`
+- `ROLLBACK`: `NO`
 - `SCORE_PRODUCER_CHANGE`: `NO`
-- `SOURCE_CHANGE`: `NO`
+- `SERVICE`: `active`
+- `SOURCE_CHANGE`: `YES`
