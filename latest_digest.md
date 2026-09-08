@@ -1,24 +1,36 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T15:46:39.328155+00:00`
-- Run ID: `20260908T154637Z`
-- Step: `READCHARTCALLSITE`
+- Published UTC: `2026-09-08T15:47:40.706495+00:00`
+- Run ID: `20260908T154738Z`
+- Step: `READCHARTCURRENTCALL`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `CHARTCALLSITEREAD`
+- Verdict: `CHARTCURRENTCALLREAD`
 - Next gate: `PATCHFREECHARTCALL`
 
 ## Facts
 
 - `BENCHTEST_RERUN`: `NO`
-- `CALL1`: `CALLSITE 2236:}else{ | 2237:const h=document.querySelector( | 2238:&quot;h1&quot;`
-- `CALL2`: `CALLSITE 2239:); | 2241:if(h){`
-- `CALL3`: `CALLSITE 2242:h.insertAdjacentElement( | 2243:&quot;afterend&quot;, | 2244:link`
-- `CALL4`: `CALLSITE 2245:); | 2246:} | 2247:}`
-- `CALL5`: `CALLSITE 2248:} | 2249:}`
-- `CALL6`: `NONE`
 - `DB_WRITE`: `NO`
+- `DISK1`: `DISK 1039:/* REPORT_NATIVE_CANDLES_V29G */ | 1041:function irlReportNativeChartV28C(){ | 1042:// FREE_CHART_FRONTE`
+- `DISK2`: `DISK 2247:} | 2248:} | 2249:} | 2251:irlReportNativeChartV28C(); | 2252:} | 2255:document.addEventListener(&quot;DOMCon`
+- `DISK3`: `NONE`
+- `DISK4`: `NONE`
+- `DISK5`: `NONE`
+- `DISK6`: `NONE`
+- `DISKHITS`: `2`
+- `DISKSHA`: `526fa8d5b95a4cdc`
+- `HASHMATCH`: `YES`
+- `JSHTTP`: `200`
+- `LIVE1`: `LIVE 1039:/* REPORT_NATIVE_CANDLES_V29G */ | 1041:function irlReportNativeChartV28C(){ | 1042:// FREE_CHART_FRONTE`
+- `LIVE2`: `LIVE 2247:} | 2248:} | 2249:} | 2251:irlReportNativeChartV28C(); | 2252:} | 2255:document.addEventListener(&quot;DOMCon`
+- `LIVE3`: `NONE`
+- `LIVE4`: `NONE`
+- `LIVE5`: `NONE`
+- `LIVE6`: `NONE`
+- `LIVEHITS`: `2`
+- `LIVESHA`: `526fa8d5b95a4cdc`
 - `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
 - `PREFLIGHT_RERUN`: `NO`
