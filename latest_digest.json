@@ -1,24 +1,25 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-08T11:29:57.898233+00:00",
-  "run_id": "20260908T112955Z",
-  "step": "PATCHLIBRARYCARD4",
+  "published_at_utc": "2026-09-08T11:31:09.636044+00:00",
+  "run_id": "20260908T113107Z",
+  "step": "READMETRICFIELDS",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "LIBRARYCARDPATCHFAILED",
-  "next_gate": "REVIEWLIBRARYCARDS",
+  "verdict": "METRICFIELDSREAD",
+  "next_gate": "PATCHLIBRARYCARDS",
   "facts": {
+    "ASSIGN": "metric_fields = { &quot;realistic&quot;: &quot;realistic_score&quot;, &quot;profit&quot;: &quot;profit_factor&quot;, &quot;return&quot;: &quot;net_return_pct&quot;, &quot;win&quot;: &quot;win_rate_pct",
     "BENCHTEST_RERUN": "NO",
     "DB_WRITE": "NO",
-    "ERROR": "WINMAP",
+    "DICT": "{ &quot;realistic&quot;: &quot;realistic_score&quot;, &quot;profit&quot;: &quot;profit_factor&quot;, &quot;return&quot;: &quot;net_return_pct&quot;, &quot;win&quot;: &quot;win_rate_pct&quot;, }",
+    "END": "632:5",
     "MASTER_CHANGE": "NO",
     "MASTER_READ": "YES",
+    "PAIRS": "realistic=realistic_score,profit=profit_factor,return=net_return_pct,win=win_rate_pct",
     "PREFLIGHT_RERUN": "NO",
-    "PRIMARYWIN": "62.5",
     "RESTART": "NO",
-    "ROLLBACK": "NO",
     "SCORE_PRODUCER_CHANGE": "NO",
-    "SECONDARYWIN": "7.6923076923076925",
-    "SOURCE_CHANGE": "NO"
+    "SOURCE_CHANGE": "NO",
+    "START": "623:20"
   }
 }

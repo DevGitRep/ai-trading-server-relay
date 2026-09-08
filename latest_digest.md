@@ -1,25 +1,26 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T11:29:57.898233+00:00`
-- Run ID: `20260908T112955Z`
-- Step: `PATCHLIBRARYCARD4`
+- Published UTC: `2026-09-08T11:31:09.636044+00:00`
+- Run ID: `20260908T113107Z`
+- Step: `READMETRICFIELDS`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `LIBRARYCARDPATCHFAILED`
-- Next gate: `REVIEWLIBRARYCARDS`
+- Verdict: `METRICFIELDSREAD`
+- Next gate: `PATCHLIBRARYCARDS`
 
 ## Facts
 
+- `ASSIGN`: `metric_fields = { &quot;realistic&quot;: &quot;realistic_score&quot;, &quot;profit&quot;: &quot;profit_factor&quot;, &quot;return&quot;: &quot;net_return_pct&quot;, &quot;win&quot;: &quot;win_rate_pct`
 - `BENCHTEST_RERUN`: `NO`
 - `DB_WRITE`: `NO`
-- `ERROR`: `WINMAP`
+- `DICT`: `{ &quot;realistic&quot;: &quot;realistic_score&quot;, &quot;profit&quot;: &quot;profit_factor&quot;, &quot;return&quot;: &quot;net_return_pct&quot;, &quot;win&quot;: &quot;win_rate_pct&quot;, }`
+- `END`: `632:5`
 - `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
+- `PAIRS`: `realistic=realistic_score,profit=profit_factor,return=net_return_pct,win=win_rate_pct`
 - `PREFLIGHT_RERUN`: `NO`
-- `PRIMARYWIN`: `62.5`
 - `RESTART`: `NO`
-- `ROLLBACK`: `NO`
 - `SCORE_PRODUCER_CHANGE`: `NO`
-- `SECONDARYWIN`: `7.6923076923076925`
 - `SOURCE_CHANGE`: `NO`
+- `START`: `623:20`
