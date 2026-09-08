@@ -1,41 +1,45 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T14:04:08.497651+00:00`
-- Run ID: `20260908T140405Z`
-- Step: `READREPORTPAYWALLBLOCK`
+- Published UTC: `2026-09-08T14:06:11.430803+00:00`
+- Run ID: `20260908T140609Z`
+- Step: `READPAYWALLHANDLERS`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `REPORTPAYWALLBLOCKREAD`
+- Verdict: `PAYWALLHANDLERSREAD`
 - Next gate: `FIXREPORTBUTTONLINK`
 
 ## Facts
 
 - `BENCHTEST_RERUN`: `NO`
-- `BLOCK1`: `490:metrics.appendChild( | 491:tile | 492:); | 493:}`
-- `BLOCK10`: `2769:).toLowerCase(); | 2770: | 2771:const aria = | 2772:(`
-- `BLOCK11`: `2773:el.getAttribute(&quot;aria-label&quot;) || &quot;&quot; | 2774:).toLowerCase(); | 2775: | 2776:const lockClass =`
-- `BLOCK12`: `2777:/(^|[\s_-])(lock|locked|pro-lock|premium-lock)([\s_-]|$)/ | 2778:.test(cls); | 2779: | 2780:const lockText`
-- `BLOCK13`: `2781:text.includes(&quot;&quot;) || | 2782:text.includes(&quot;&quot;); | 2783: | 2784:const lockMeta =`
-- `BLOCK14`: `2785:/\b(locked|pro only|premium|upgrade)\b/ | 2786:.test(title + &quot; &quot; + aria); | 2787: | 2788:const lockData =`
-- `BLOCK15`: `2789:el.hasAttribute(&quot;data-locked&quot;) || | 2790:el.hasAttribute(&quot;data-pro-only&quot;); | 2791: | 2792:if (`
-- `BLOCK16`: `2793:lockClass || | 2794:lockText || | 2795:lockMeta || | 2796:lockData`
-- `BLOCK17`: `2797:) { | 2798:el.dataset.irlUpgradeV7 = | 2799:&quot;locked-feature&quot;; | 2800:`
-- `BLOCK18`: `2801:el.setAttribute( | 2802:&quot;title&quot;, | 2803:&quot;Upgrade to unlock this feature&quot; | 2804:);`
-- `BLOCK19`: `2805:} | 2806:}); | 2807:} | 2808:`
-- `BLOCK2`: `494:); | 495: | 496:body.appendChild( | 497:metrics`
-- `BLOCK20`: `2809:document.addEventListener( | 2810:&quot;pointerdown&quot;,`
-- `BLOCK3`: `498:); | 499: | 500:const report=document.createElement( | 501:&quot;a&quot;`
-- `BLOCK4`: `502:); | 503: | 504:report.className=&quot;report&quot;; | 505:report.dataset.reportLink=&quot;yes&quot;;`
-- `BLOCK5`: `506:report.href=card.report_url||&quot;#&quot;; | 507:report.textContent=&quot;View report&quot;; | 508: | 509:body.appendChild(`
-- `BLOCK6`: `510:report | 511:); | 512: | 513:article.appendChild(`
-- `BLOCK7`: `514:body | 515:); | 516: | 517:return article;`
-- `BLOCK8`: `518:}`
-- `BLOCK9`: `2765: | 2766:const title = | 2767:( | 2768:el.getAttribute(&quot;title&quot;) || &quot;&quot;`
+- `BLOCK1`: `2809:document.addEventListener( | 2810:&quot;pointerdown&quot;, | 2811:function (event) {`
+- `BLOCK10`: `2836:if ( | 2837:!freeView() || | 2838:![&quot;Enter&quot;, &quot; &quot;].includes(event.key)`
+- `BLOCK11`: `2839:) { | 2840:return; | 2841:}`
+- `BLOCK12`: `2842: | 2843:const target = | 2844:event.target instanceof Element`
+- `BLOCK13`: `2845:? event.target.closest( | 2846:&quot;[data-irl-upgrade-v7]&quot; | 2847:)`
+- `BLOCK14`: `2848:: null; | 2849: | 2850:if (!target) return;`
+- `BLOCK15`: `2851: | 2852:event.preventDefault(); | 2853:event.stopPropagation();`
+- `BLOCK16`: `2854: | 2855:upgrade( | 2856:target.dataset.irlUpgradeV7`
+- `BLOCK17`: `2857:); | 2858:}, | 2859:true`
+- `BLOCK18`: `2860:); | 2861: | 2862:function run() {`
+- `BLOCK19`: `2863:prepareFreeHeader(); | 2864:markLocks(); | 2865:}`
+- `BLOCK2`: `2812:if (!freeView()) return; | 2813: | 2814:const target =`
+- `BLOCK20`: `2866: | 2867:if ( | 2868:document.readyState === &quot;loading&quot;`
+- `BLOCK21`: `2869:) { | 2870:document.addEventListener( | 2871:&quot;DOMContentLoaded&quot;,`
+- `BLOCK22`: `2872:run | 2873:); | 2874:} else {`
+- `BLOCK23`: `2875:run();`
+- `BLOCK3`: `2815:event.target instanceof Element | 2816:? event.target.closest( | 2817:&quot;[data-irl-upgrade-v7]&quot;`
+- `BLOCK4`: `2818:) | 2819:: null; | 2820:`
+- `BLOCK5`: `2821:if (!target) return; | 2822: | 2823:event.preventDefault();`
+- `BLOCK6`: `2824:event.stopPropagation(); | 2825: | 2826:upgrade(`
+- `BLOCK7`: `2827:target.dataset.irlUpgradeV7 | 2828:); | 2829:},`
+- `BLOCK8`: `2830:true | 2831:); | 2832:`
+- `BLOCK9`: `2833:document.addEventListener( | 2834:&quot;keydown&quot;, | 2835:function (event) {`
 - `DB_WRITE`: `NO`
 - `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
 - `PREFLIGHT_RERUN`: `NO`
+- `REPORT_MARKER`: `data-report-link yes`
 - `RESTART`: `NO`
 - `SCORE_PRODUCER_CHANGE`: `NO`
 - `SOURCE_CHANGE`: `NO`
