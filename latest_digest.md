@@ -1,47 +1,55 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T15:38:14.534411+00:00`
-- Run ID: `20260908T153812Z`
-- Step: `READCHARTTRIGGER`
+- Published UTC: `2026-09-08T15:40:38.982189+00:00`
+- Run ID: `20260908T154037Z`
+- Step: `READCHARTEND`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `CHARTTRIGGERREAD`
+- Verdict: `CHARTENDREAD`
 - Next gate: `PATCHFREECHARTSTART`
 
 ## Facts
 
 - `BENCHTEST_RERUN`: `NO`
 - `DB_WRITE`: `NO`
+- `END1`: `HEAD 1041:function irlReportNativeChartV28C(){ | 1042:// FREE_CHART_FRONTEND_LOAD_V1 | 1043:// FREE may load can`
+- `END10`: `HEAD 1069:const start=async()=&gt;{ | 1070:if(started){`
+- `END11`: `HEAD 1071:return; | 1072:}`
+- `END12`: `HEAD 1074:started=true; | 1075:host.dataset.chartState=&quot;loading&quot;;`
+- `END13`: `HEAD 1077:const parts=location.pathname | 1078:.split(&quot;/&quot;) | 1079:.filter(Boolean);`
+- `END14`: `HEAD 1081:const id=parts[ | 1082:parts.length-1`
+- `END15`: `HEAD 1083:]; | 1085:if(!id || id===&quot;strategy&quot;){`
+- `END16`: `HEAD 1086:return; | 1087:}`
+- `END17`: `HEAD 1089:const endpoint= | 1090:`/indicator-lab/strategy/${encodeURIComponent( | 1091:decodeURIComponent(id)`
+- `END18`: `HEAD 1092:)}/bench-chart-data?view_as=${encodeURIComponent( | 1093:tier | 1094:)}`;`
+- `END19`: `END 2190:) | 2191:){ | 2192:const parts=location.pathname`
+- `END2`: `HEAD 1045:const host=document.getElementById( | 1046:&quot;irlBenchChart&quot;`
+- `END20`: `END 2193:.split(&quot;/&quot;) | 2194:.filter(Boolean);`
+- `END21`: `END 2196:const id=parts[ | 2197:parts.length-1 | 2198:];`
+- `END22`: `END 2200:if( | 2201:id`
+- `END23`: `END 2202:&amp;&amp;id!==&quot;strategy&quot; | 2203:){ | 2204:const link=document.createElement(`
+- `END24`: `END 2205:&quot;a&quot; | 2206:);`
+- `END25`: `END 2208:link.id=&quot;irlDownload&quot;; | 2209:link.className= | 2210:&quot;irl-report-download&quot;;`
+- `END26`: `END 2212:link.textContent= | 2213:&quot;Download Pine script&quot;;`
+- `END27`: `END 2215:link.href= | 2216:`/indicator-lab/strategy/${encodeURIComponent(`
+- `END28`: `END 2217:decodeURIComponent(id) | 2218:)}/download.pine?view_as=${encodeURIComponent( | 2219:tier`
+- `END29`: `END 2220:)}`; | 2222:const slot=document.getElementById(`
+- `END3`: `HEAD 1047:); | 1049:const stage=document.getElementById(`
+- `END30`: `END 2223:&quot;irlDownloadSlot&quot; | 2224:);`
+- `END31`: `END 2226:if(slot){ | 2227:slot.appendChild( | 2228:link`
+- `END32`: `END 2229:); | 2231:}else{`
+- `END33`: `END 2232:const h=document.querySelector( | 2233:&quot;h1&quot; | 2234:);`
+- `END34`: `END 2236:if(h){ | 2237:h.insertAdjacentElement(`
+- `END4`: `HEAD 1050:&quot;irlBenchChartStage&quot; | 1051:);`
+- `END5`: `HEAD 1053:const meta=document.getElementById( | 1054:&quot;irlBenchChartMeta&quot; | 1055:);`
+- `END6`: `HEAD 1057:if( | 1058:!host`
+- `END7`: `HEAD 1059:||!stage | 1060:||host.dataset.chartState | 1061:){`
+- `END8`: `HEAD 1062:return; | 1063:}`
+- `END9`: `HEAD 1065:host.dataset.chartState=&quot;waiting&quot;; | 1067:let started=false;`
 - `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
 - `PREFLIGHT_RERUN`: `NO`
 - `RESTART`: `NO`
 - `SCORE_PRODUCER_CHANGE`: `NO`
 - `SOURCE_CHANGE`: `NO`
-- `TRIGGER1`: `TAIL 1208:?`${payload.display_timeframe} display candles` | 1209::&quot;&quot;, | 1210:`${buyMarkerCount} Buy ${sellMarker`
-- `TRIGGER10`: `TAIL 1235:{ | 1236:alpha:false | 1237:}`
-- `TRIGGER11`: `TAIL 1238:); | 1240:const defaultWindow=Math.min(`
-- `TRIGGER12`: `TAIL 1241:120, | 1242:candles.length | 1243:);`
-- `TRIGGER13`: `TAIL 1245:let last=candles.length-1;`
-- `TRIGGER14`: `TAIL 1247:let first=Math.max( | 1248:0, | 1249:last-defaultWindow+1`
-- `TRIGGER15`: `TAIL 1250:); | 1252:let hover=-1;`
-- `TRIGGER16`: `TAIL 1254:let dragging=false; | 1255:let dragX=0;`
-- `TRIGGER17`: `TAIL 1256:let dragFirst=0; | 1257:let dragLast=0;`
-- `TRIGGER18`: `TAIL 1259:const minWindow=Math.min( | 1260:20, | 1261:candles.length`
-- `TRIGGER19`: `TAIL 1262:); | 1264:function fmt(value){`
-- `TRIGGER2`: `TAIL 1211:] | 1212:.filter(Boolean) | 1213:.join(&quot; &quot;);`
-- `TRIGGER20`: `TAIL 1265:return Number(value).toLocaleString( | 1266:undefined, | 1267:{`
-- `TRIGGER21`: `TAIL 1268:maximumFractionDigits:4 | 1269:} | 1270:);`
-- `TRIGGER22`: `TAIL 1271:} | 1273:function candleDate(index){`
-- `TRIGGER23`: `TAIL 1274:return new Date( | 1275:Number( | 1276:candles[index][0]`
-- `TRIGGER24`: `TAIL 1277:)*1000 | 1278:); | 1279:}`
-- `TRIGGER25`: `CALL 1041:function irlReportNativeChartV28C(){`
-- `TRIGGER26`: `CALL 2246:irlReportNativeChartV28C();`
-- `TRIGGER3`: `TAIL 1215:stage.replaceChildren();`
-- `TRIGGER4`: `TAIL 1217:const canvas=document.createElement( | 1218:&quot;canvas&quot; | 1219:);`
-- `TRIGGER5`: `TAIL 1221:const tooltip=document.createElement( | 1222:&quot;div&quot;`
-- `TRIGGER6`: `TAIL 1223:); | 1225:tooltip.className=`
-- `TRIGGER7`: `TAIL 1226:&quot;irl-bench-chart-tooltip&quot;; | 1228:stage.append(`
-- `TRIGGER8`: `TAIL 1229:canvas, | 1230:tooltip | 1231:);`
-- `TRIGGER9`: `TAIL 1233:const ctx=canvas.getContext( | 1234:&quot;2d&quot;,`
