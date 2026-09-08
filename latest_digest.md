@@ -1,34 +1,66 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T20:05:49.379300+00:00`
-- Run ID: `20260908T200544Z`
-- Step: `PUBLISHCANONICALQUEUE`
+- Published UTC: `2026-09-08T20:06:53.170544+00:00`
+- Run ID: `20260908T200651Z`
+- Step: `VERIFYDOWNSTREAM`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `CANONICALQUEUEPUBLISHED`
-- Next gate: `VERIFYDOWNSTREAMREADINESS`
+- Verdict: `DOWNSTREAMREADINESSREAD`
+- Next gate: `DRYRUNNATIVESCREENING`
 
 ## Facts
 
-- `ARCHIVE`: `YES`
 - `BENCHTEST_RERUN`: `NO`
 - `BRAIN_ADMISSION`: `NO`
 - `BRAIN_IQ_CHANGE`: `NO`
-- `CANONICAL_IDS`: `16`
 - `DB_WRITE`: `NO`
-- `ELIGIBLE`: `14`
-- `ERROR`: `NONE`
-- `GATED`: `2`
-- `GATE_REASON`: `COMPLETED_TRADES_LT_100`
-- `MASTER_CHANGE`: `YES`
+- `DOWN1`: `MASTERQUEUE=YES`
+- `DOWN10`: `NATIVEOUTPUT1=--output,--latest,write_text,json.dump,json.dumps`
+- `DOWN11`: `NATIVEHELPRC1=0`
+- `DOWN12`: `NATIVEHELP1=usage: indicator_native_screening_materializer_v1.py [-h] --db DB --queue | QUEUE --contract CONTRAC`
+- `DOWN13`: `NATIVEJSONS=2`
+- `DOWN14`: `NATIVEART=indicator_native_screening_v1_contract.json candidate_outcomes:7`
+- `DOWN15`: `NATIVEART=latest_native_screening.json candidates:101`
+- `DOWN16`: `ALIGNDIR=YES`
+- `DOWN17`: `ALIGNSCRIPTS=1`
+- `DOWN18`: `ALIGNSCRIPT1=indicator_incumbent_alignment_v1.py`
+- `DOWN19`: `ALIGNARGS1=contract,db,indicator-db,interface,latest,model,output,preflight,source,stage1,stage2a`
+- `DOWN2`: `LIVEQUEUE=16`
+- `DOWN20`: `ALIGNINPUTS1=incumbent_alignment,candidate_queue,eligible`
+- `DOWN21`: `ALIGNOUTPUT1=--output,--latest,write_text,json.dump,json.dumps`
+- `DOWN22`: `ALIGNHELPRC1=1`
+- `DOWN23`: `ALIGNHELP1=Traceback (most recent call last): | File &quot;PATH&quot;, line 16, in &lt;module&gt; | import joblib`
+- `DOWN24`: `ALIGNJSONS=3`
+- `DOWN25`: `ALIGNART=indicator_incumbent_alignment_v1_contract.json NOCOUNT`
+- `DOWN26`: `ALIGNART=indicator_incumbent_alignment_v1_frozen_scorer_reuse_addendum.json NOCOUNT`
+- `DOWN27`: `ALIGNART=latest_incumbent_alignment.json candidate_results:101`
+- `DOWN28`: `NONE`
+- `DOWN29`: `NONE`
+- `DOWN3`: `LIVEELIGIBLE=14`
+- `DOWN30`: `NONE`
+- `DOWN31`: `NONE`
+- `DOWN32`: `NONE`
+- `DOWN33`: `NONE`
+- `DOWN34`: `NONE`
+- `DOWN35`: `NONE`
+- `DOWN36`: `NONE`
+- `DOWN37`: `NONE`
+- `DOWN38`: `NONE`
+- `DOWN39`: `NONE`
+- `DOWN4`: `LIVEGATED=2`
+- `DOWN40`: `NONE`
+- `DOWN5`: `NATIVEDIR=YES`
+- `DOWN6`: `NATIVESCRIPTS=1`
+- `DOWN7`: `NATIVESCRIPT1=indicator_native_screening_materializer_v1.py`
+- `DOWN8`: `NATIVEARGS1=contract,db,latest,output,queue`
+- `DOWN9`: `NATIVEINPUTS1=native_screening,candidate_queue,eligible`
+- `FACTS`: `27`
+- `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
-- `NEW_QUEUE`: `16`
-- `OLD_QUEUE`: `533`
-- `OUTSIDE`: `0`
 - `PREFLIGHT_RERUN`: `NO`
 - `PROSPECTIVE_ACTIVATION`: `NO`
-- `QUEUE_CHANGE`: `YES`
+- `QUEUE_CHANGE`: `NO`
 - `RESTART`: `NO`
 - `SCORE_PRODUCER_CHANGE`: `NO`
 - `SOURCE_CHANGE`: `NO`
