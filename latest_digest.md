@@ -1,41 +1,25 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T10:41:45.392285+00:00`
-- Run ID: `20260908T104143Z`
-- Step: `READLIBCARDWINRATE`
+- Published UTC: `2026-09-08T10:50:40.481271+00:00`
+- Run ID: `20260908T105037Z`
+- Step: `PATCHLIBCARDWINRATE`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `LIBCARDWINRATEREAD`
-- Next gate: `PATCHLIBCARDWINRATE`
+- Verdict: `LIBRARYCARDWINRATEPATCHFAILED`
+- Next gate: `REVIEWLIBRARYCARD`
 
 ## Facts
 
-- `BACK1`: `&quot;realistic_score&quot;`
-- `BACK2`: `win_rate_pct = _num(`
-- `BACK3`: `row[&quot;win_rate_pct&quot;]`
-- `BACK4`: `realistic_score = _num(`
 - `BENCHTEST_RERUN`: `NO`
-- `CARD1`: `[&quot;Profit Factor&quot;,&quot;profit_factor&quot;],`
-- `CARD2`: `[&quot;Net Return&quot;,&quot;net_return_pct&quot;],`
-- `CARD3`: `[&quot;Max Drawdown&quot;,&quot;max_drawdown_pct&quot;],`
-- `CARD4`: `[&quot;Win Rate&quot;,&quot;win_rate_pct&quot;],`
-- `CARD5`: `[&quot;Trades&quot;,&quot;trade_count&quot;],`
-- `CARD6`: `[&quot;Realistic Score&quot;,&quot;realistic_score&quot;]`
 - `DB_WRITE`: `NO`
-- `HELPER`: `def _bulk_pipeline_metrics_v1(conn): # Temporary metadata base until production smoke/cleanup. metrics_map = {} row`
+- `ERROR`: `SORTMAP`
 - `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
 - `PREFLIGHT_RERUN`: `NO`
 - `PRIMARYWIN`: `62.5`
-- `QUICK`: `ok`
 - `RESTART`: `NO`
+- `ROLLBACK`: `NO`
 - `SCORE_PRODUCER_CHANGE`: `NO`
-- `SECONDARY1`: `secondary_win_rate_pct=7.6923076923076925`
-- `SECONDARY2`: `secondary_winning_trades=1`
-- `SECONDARY3`: `NONE`
-- `SORT1`: `shell.innerHTML=`&lt;div class=&quot;irl-v2-stats&quot;&gt;&lt;div class=&quot;irl-v2-stat&quot;&gt;&lt;div class=&quot;irl-v2-label&quot;&gt;Indicators &amp; Strategi`
-- `SORT2`: `NONE`
-- `SORT3`: `NONE`
-- `SORT4`: `NONE`
+- `SECONDARYWIN`: `7.6923076923076925`
 - `SOURCE_CHANGE`: `NO`
