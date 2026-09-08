@@ -1,32 +1,59 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T14:08:47.165819+00:00`
-- Run ID: `20260908T140845Z`
-- Step: `FIXREPORTBUTTONNAV`
+- Published UTC: `2026-09-08T14:25:42.139731+00:00`
+- Run ID: `20260908T142540Z`
+- Step: `READFREECHARTPROFILE`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `REPORTBUTTONNAVLIVE`
-- Next gate: `NORMALOPERATIONS`
+- Verdict: `FREECHARTPROFILEREAD`
+- Next gate: `PATCHFREECHARTPROFILE`
 
 ## Facts
 
-- `BACKUP`: `PASS`
 - `BENCHTEST_RERUN`: `NO`
 - `DB_WRITE`: `NO`
-- `JSHTTP`: `200`
-- `LIBHTTP`: `200`
-- `MASTER_CHANGE`: `YES`
+- `INTERACTIVE1`: `indicator_lab_report.html:761:&lt;h2&gt;Interactive BenchTest chart&lt;/h2&gt;`
+- `INTERACTIVE10`: `indicator_lab_v1.py:2105:) | 2106:or len(_candles) | 2107:)`
+- `INTERACTIVE2`: `indicator_lab_report.html:766:&gt; | 767:Actual tested data | 768:&lt;/div&gt;`
+- `INTERACTIVE3`: `indicator_lab_report.html:776:&lt;div class=&quot;irl-bench-chart-loading&quot;&gt; | 777:Interactive chart loads when visible | 778:&lt;`
+- `INTERACTIVE4`: `indicator_lab_report.html:949:&lt;div class=&quot;tpv1-title&quot;&gt; | 950:{% if bm.get(&quot;direction_mode&quot;) == &quot;SIGNALS&quot; %} | 951:Dire`
+- `INTERACTIVE5`: `indicator_lab_report.html:983:&lt;div class=&quot;tpv1-note&quot;&gt; | 984:Signal direction when available; otherwise trade outcome d`
+- `INTERACTIVE6`: `indicator_lab_v1.py:184:&quot;MaRa Custom V1&quot;, | 185:&quot;MULTI_SIGNAL&quot;, | 186:&quot;PROSPECTIVE_CONFIRMATION&quot;,`
+- `INTERACTIVE7`: `indicator_lab_v1.py:1899:/ &quot;manual_support&quot; | 1900:/ &#x27;benchtest_market_candles_b577ee5771839c9aea350659027c8ff45e0af93`
+- `INTERACTIVE8`: `indicator_lab_v1.py:2088:_candles = ( | 2089:_candle_payload.get(`
+- `INTERACTIVE9`: `indicator_lab_v1.py:2089:_candle_payload.get( | 2090:&quot;candles&quot; | 2091:)`
+- `INTERACTIVE_COUNT`: `704`
+- `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
-- `PATCH`: `PASS`
 - `PREFLIGHT_RERUN`: `NO`
-- `PREWRITE`: `PASS`
-- `QUICK`: `ok`
-- `REPORTHTTP`: `200`
-- `REPORTLOCKS`: `11`
-- `REPORTURLS`: `12`
-- `RESTART`: `YES`
-- `ROLLBACK`: `NO`
+- `PROFILE1`: `indicator_lab_report.html:449:&lt;!-- INDICATOR_DNA_V1 --&gt; | 450:&lt;style&gt;`
+- `PROFILE2`: `indicator_lab_report.html:604:/* Exposure gauge */ | 605:.tpv1-gauge{`
+- `PROFILE3`: `indicator_lab_report.html:644:/* Sharpe / Sortino */ | 645:.tpv1-axis-row{margin:12px 0 18px;}`
+- `PROFILE4`: `indicator_lab_report.html:891:&lt;!-- TRADING_PROFILE_V1 --&gt; | 892:{% set bm = benchtest_metrics or {} %}`
+- `PROFILE5`: `indicator_lab_report.html:892:{% set bm = benchtest_metrics or {} %} | 893:{% set d1 = bm.get(&quot;dna_trend_pct&quot;) or 0 %}`
+- `PROFILE6`: `indicator_lab_report.html:893:{% set d1 = bm.get(&quot;dna_trend_pct&quot;) or 0 %} | 894:{% set d2 = bm.get(&quot;dna_momentum_pct&quot;)`
+- `PROFILE7`: `indicator_lab_report.html:894:{% set d2 = bm.get(&quot;dna_momentum_pct&quot;) or 0 %} | 895:{% set d3 = bm.get(&quot;dna_reversal_pc`
+- `PROFILE8`: `indicator_lab_report.html:895:{% set d3 = bm.get(&quot;dna_reversal_pct&quot;) or 0 %} | 896:{% set d4 = bm.get(&quot;dna_volume_pct&quot;`
+- `PROFILE_COUNT`: `83`
+- `RESTART`: `NO`
 - `SCORE_PRODUCER_CHANGE`: `NO`
-- `SERVICE`: `active`
-- `SOURCE_CHANGE`: `YES`
+- `SOURCE_CHANGE`: `NO`
+- `STATIC1`: `indicator_lab_report.html:287:.irl-bench-preview-row { | 288:display: grid;`
+- `STATIC2`: `indicator_lab_report.html:297:.irl-bench-preview-row | 298:.benchtest-report-context {`
+- `STATIC3`: `indicator_lab_report.html:329:.irl-report-preview-panel { | 330:min-width: 0;`
+- `STATIC4`: `indicator_lab_report.html:338:.irl-bench-preview-row | 339:.irl-report-preview-panel {`
+- `STATIC_COUNT`: `87`
+- `TAGS1`: `indicator_lab_report.html:450:&lt;style&gt; | 451:.tpv1-tags{ | 452:display:grid;`
+- `TAGS2`: `indicator_lab_report.html:456:} | 457:.tpv1-tag{ | 458:display:flex;`
+- `TAGS3`: `indicator_lab_report.html:474:} | 475:.tpv1-tag strong{color:#7dd3fc;}`
+- `TAGS4`: `indicator_lab_report.html:719:.tpv1-grid, | 720:.tpv1-tags{ | 721:grid-template-columns:repeat(3,minmax(0,1fr));`
+- `TAGS5`: `indicator_lab_report.html:725:.tpv1-grid, | 726:.tpv1-tags{ | 727:grid-template-columns:1fr;`
+- `TAGS_COUNT`: `16`
+- `TIER1`: `indicator_lab_report.html:477:/* FREE_REPORT_GATING_V1 */ | 478:.free-report-lock-v1{`
+- `TIER2`: `indicator_lab_report.html:477:/* FREE_REPORT_GATING_V1 */ | 478:.free-report-lock-v1{ | 479:display:inline-flex;`
+- `TIER3`: `indicator_lab_report.html:738:&lt;p&gt; | 739:&lt;a href=&quot;/indicator-lab?view_as=PRO&quot;&gt; Back to Indicator Lab&lt;/a&gt; | 740:&lt;/p&gt;`
+- `TIER4`: `indicator_lab_report.html:752:{% set report_paid = tier in [&#x27;PRO&#x27;,&#x27;INTERNAL_ADMIN&#x27;] %} | 753:{% if benchtest_metrics o`
+- `TIER5`: `indicator_lab_report.html:797:&lt;strong&gt; | 798:{% if report_paid %}{{ (&#x27;%.1f&#x27;|format(benchtest_metrics.get(&#x27;realistic_sc`
+- `TIER6`: `indicator_lab_report.html:804:&lt;strong&gt; | 805:{% if report_paid %}{{ &#x27;%.2f&#x27;|format(benchtest_metrics.get(&#x27;profit_factor`
+- `TIER_COUNT`: `183`
