@@ -1,37 +1,43 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T11:16:26.656621+00:00`
-- Run ID: `20260908T111624Z`
-- Step: `READLIBRARYHANDLER`
+- Published UTC: `2026-09-08T11:17:48.744438+00:00`
+- Run ID: `20260908T111746Z`
+- Step: `READLIBRARYHANDLERREST`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `LIBRARYHANDLERREAD`
+- Verdict: `LIBRARYHANDLERRESTREAD`
 - Next gate: `PATCHLIBRARYCARDS`
 
 ## Facts
 
 - `BENCHTEST_RERUN`: `NO`
-- `BODY1`: `def indicator_lab_library_page_api_v26(): | from flask import jsonify, request | from indicator_lab_library_ui`
-- `BODY2`: `load_library_cards, | ) | tier = _indicator_lab_requested_tier()`
-- `BODY3`: `cards = load_library_cards( | tier | )`
-- `BODY4`: `try: | page = int( | request.args.get(`
-- `BODY5`: `&quot;page&quot;, | &quot;1&quot;, | )`
-- `BODY6`: `) | except Exception: | page = 1`
+- `BODY10`: `payload = _indicator_lab_library_page_v26( | cards, | tier,`
+- `BODY11`: `q=request.args.get( | &quot;q&quot;, | &quot;&quot;,`
+- `BODY12`: `), | sort_key=request.args.get( | &quot;sort&quot;,`
+- `BODY13`: `&quot;realistic&quot;, | ), | page=page,`
+- `BODY14`: `page_size=page_size, | ) | payload[&quot;ok&quot;] = True`
+- `BODY15`: `payload[&quot;tier&quot;] = tier | response = jsonify( | payload`
+- `BODY16`: `) | response.headers[ | &quot;Cache-Control&quot;`
+- `BODY7`: `try: | page_size = int( | request.args.get(`
+- `BODY8`: `&quot;page_size&quot;, | &quot;12&quot;, | )`
+- `BODY9`: `) | except Exception: | page_size = 12`
 - `DB_WRITE`: `NO`
 - `HANDLER`: `indicator_lab_library_page_api_v26`
-- `LINESTART`: `1761`
+- `LINES`: `50`
 - `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
 - `PREFLIGHT_RERUN`: `NO`
-- `REL1`: `def indicator_lab_library_page_api_v26():`
-- `REL2`: `from flask import jsonify, request`
-- `REL3`: `load_library_cards,`
-- `REL4`: `cards = load_library_cards(`
-- `REL5`: `page = int(`
-- `REL6`: `request.args.get(`
-- `REL7`: `&quot;page&quot;,`
-- `REL8`: `page = 1`
+- `REL1`: `request.args.get(`
+- `REL10`: `return response`
+- `REL2`: `page_size = int(`
+- `REL3`: `&quot;page_size&quot;,`
+- `REL4`: `page_size = 12`
+- `REL5`: `q=request.args.get(`
+- `REL6`: `sort_key=request.args.get(`
+- `REL7`: `&quot;sort&quot;,`
+- `REL8`: `&quot;realistic&quot;,`
+- `REL9`: `page_size=page_size,`
 - `RESTART`: `NO`
 - `SCORE_PRODUCER_CHANGE`: `NO`
 - `SOURCE_CHANGE`: `NO`
