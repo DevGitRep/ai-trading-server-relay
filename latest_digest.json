@@ -1,16 +1,28 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-09T18:42:45.979001+00:00",
-  "run_id": "20260909T184243Z",
-  "step": "READMENUSHELL",
+  "published_at_utc": "2026-09-09T18:44:39.992691+00:00",
+  "run_id": "20260909T184438Z",
+  "step": "FIXMENUAHERO",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "MENUSHELLREAD",
-  "next_gate": "FIXMENUAHERO",
+  "verdict": "MENUAHEROREADY",
+  "next_gate": "VISUALCHECK",
   "facts": {
+    "BENCHTEST": "NO",
+    "DASH_HTTP": "200",
     "DB_WRITE": "NO",
+    "HERO_CROP": "YES",
+    "HERO_SHORTER": "YES",
+    "JS_CACHE_BUST": "YES",
+    "JS_HTTP": "200",
+    "LAB_HTTP": "200",
+    "MASTER_CHANGE": "YES",
     "MASTER_READ": "YES",
-    "RESTART": "NO",
-    "SOURCE_CHANGE": "NO"
+    "MENU_LAB": "YES",
+    "MENU_ROOT": "YES",
+    "RESTART": "YES",
+    "ROOT_HTTP": "200",
+    "SERVICE": "active",
+    "TAGLINE_LEFT": "YES"
   }
 }
