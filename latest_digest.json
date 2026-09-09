@@ -1,17 +1,16 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-09T16:40:12.675221+00:00",
-  "run_id": "20260909T164010Z",
-  "step": "READBRANDTARGET",
+  "published_at_utc": "2026-09-09T18:18:57.171494+00:00",
+  "run_id": "20260909T181855Z",
+  "step": "PATCHBRANDBANNER",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "BRANDTARGETREAD",
-  "next_gate": "PATCHBRANDHEADER",
+  "verdict": "BRANDBANNERFAILED",
+  "next_gate": "PATCHBRANDBANNER",
   "facts": {
-    "BENCHTEST": "NO",
-    "DB_WRITE": "NO",
-    "MASTER_READ": "YES",
-    "RESTART": "NO",
-    "SOURCE_CHANGE": "NO"
+    "DBWRITE": "NO",
+    "FAILSTEP": "TEMPLATEPATCH",
+    "ORIGINALRC": "1",
+    "RESTART": "NO"
   }
 }

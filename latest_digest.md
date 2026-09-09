@@ -1,18 +1,17 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-09T16:40:12.675221+00:00`
-- Run ID: `20260909T164010Z`
-- Step: `READBRANDTARGET`
+- Published UTC: `2026-09-09T18:18:57.171494+00:00`
+- Run ID: `20260909T181855Z`
+- Step: `PATCHBRANDBANNER`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `BRANDTARGETREAD`
-- Next gate: `PATCHBRANDHEADER`
+- Verdict: `BRANDBANNERFAILED`
+- Next gate: `PATCHBRANDBANNER`
 
 ## Facts
 
-- `BENCHTEST`: `NO`
-- `DB_WRITE`: `NO`
-- `MASTER_READ`: `YES`
+- `DBWRITE`: `NO`
+- `FAILSTEP`: `TEMPLATEPATCH`
+- `ORIGINALRC`: `1`
 - `RESTART`: `NO`
-- `SOURCE_CHANGE`: `NO`
