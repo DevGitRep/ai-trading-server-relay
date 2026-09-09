@@ -1,49 +1,53 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-09T10:53:04.424324+00:00`
-- Run ID: `20260909T105302Z`
-- Step: `REPLAYCANARY180`
+- Published UTC: `2026-09-09T10:58:24.906766+00:00`
+- Run ID: `20260909T105821Z`
+- Step: `READMARKETSCHEMA`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `CANARYBLOCKED`
-- Next gate: `REVIEWCANARY180`
+- Verdict: `MARKETSCHEMAREAD`
+- Next gate: `REPLAYCANARY180FIX`
 
 ## Facts
 
 - `BENCHTEST_RERUN`: `NO`
 - `BRAIN_ADMISSION`: `NO`
 - `BRAIN_IQ_CHANGE`: `NO`
-- `CANARY1`: `MASTERSTATE=YES`
-- `CANARY10`: `NONE`
-- `CANARY11`: `NONE`
-- `CANARY12`: `NONE`
-- `CANARY13`: `NONE`
-- `CANARY14`: `NONE`
-- `CANARY15`: `NONE`
-- `CANARY16`: `NONE`
-- `CANARY17`: `NONE`
-- `CANARY18`: `NONE`
-- `CANARY19`: `NONE`
-- `CANARY2`: `SKLEARN=1.8.0`
-- `CANARY20`: `NONE`
-- `CANARY21`: `NONE`
-- `CANARY22`: `NONE`
-- `CANARY23`: `NONE`
-- `CANARY24`: `NONE`
-- `CANARY3`: `FROZEN=1.8.0`
-- `CANARY4`: `ERROR=RuntimeError:CANDLES_NOT_FRAME`
-- `CANARY5`: `NONE`
-- `CANARY6`: `NONE`
-- `CANARY7`: `NONE`
-- `CANARY8`: `NONE`
-- `CANARY9`: `NONE`
 - `CURRENT_INCREMENTAL_RUN`: `NO`
-- `FACTS`: `4`
-- `HISTORICAL_MODEL_TRAINING`: `YES`
+- `FACTS`: `17`
 - `INSTALL`: `NO`
+- `MARKET1`: `MASTERSTATE=YES`
+- `MARKET10`: `FIRSTKEYS=close,high,low,open,time,volume`
+- `MARKET11`: `RETURNS=1`
+- `MARKET12`: `RETURNSRC=return ( meta, candles, open_, close, )`
+- `MARKET13`: `CANDLELINES=3`
+- `MARKET14`: `CANDLESRC=212:meta[&quot;actual_candles&quot;]`
+- `MARKET15`: `CANDLESRC=242:candles = [`
+- `MARKET16`: `CANDLESRC=305:candles,`
+- `MARKET17`: `SCHEMAREADY=YES`
+- `MARKET18`: `NONE`
+- `MARKET19`: `NONE`
+- `MARKET2`: `RETURNLEN=4`
+- `MARKET20`: `NONE`
+- `MARKET21`: `NONE`
+- `MARKET22`: `NONE`
+- `MARKET23`: `NONE`
+- `MARKET24`: `NONE`
+- `MARKET25`: `NONE`
+- `MARKET26`: `NONE`
+- `MARKET27`: `NONE`
+- `MARKET28`: `NONE`
+- `MARKET3`: `META=type=dict len=20`
+- `MARKET4`: `CANDLES=type=list len=525600`
+- `MARKET5`: `OPEN=type=Series shape=(525600,) dtype=float64 len=525600`
+- `MARKET6`: `CLOSE=type=Series shape=(525600,) dtype=float64 len=525600`
+- `MARKET7`: `METAKEYS=actual_candles,benchtest_duration_contract,candidate_count_controls_duration,candidate_count_controls_n`
+- `MARKET8`: `CANDLELIST=YES`
+- `MARKET9`: `FIRSTTYPE=dict`
 - `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
+- `MODEL_TRAINING`: `NO`
 - `PACKAGE_CHANGE`: `NO`
 - `PREFLIGHT_RERUN`: `NO`
 - `PROD_CACHE_CHANGE`: `NO`
@@ -53,4 +57,3 @@
 - `SCORE_PRODUCER_CHANGE`: `NO`
 - `SOURCE_CHANGE`: `NO`
 - `STAGE3_RERUN`: `NO`
-- `TEMP_REPORT_WRITE`: `YES`
