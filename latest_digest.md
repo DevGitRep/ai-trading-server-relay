@@ -1,13 +1,13 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-09T10:37:05.002228+00:00`
-- Run ID: `20260909T103702Z`
-- Step: `READSKLEARNRUNTIME`
+- Published UTC: `2026-09-09T10:43:09.664192+00:00`
+- Run ID: `20260909T104307Z`
+- Step: `VERIFY180RUNTIME`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `SKLEARN180NOTFOUND`
-- Next gate: `REVIEWSKLEARNRUNTIME`
+- Verdict: `SKLEARN180RESOLVED`
+- Next gate: `REPLAYHISTMODELS180`
 
 ## Facts
 
@@ -15,7 +15,7 @@
 - `BRAIN_ADMISSION`: `NO`
 - `BRAIN_IQ_CHANGE`: `NO`
 - `CURRENT_INCREMENTAL_RUN`: `NO`
-- `FACTS`: `7`
+- `FACTS`: `23`
 - `INSTALL`: `NO`
 - `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
@@ -26,35 +26,33 @@
 - `PROD_DB_WRITE`: `NO`
 - `PROSPECTIVE_ACTIVATION`: `NO`
 - `RESTART`: `NO`
-- `SKL1`: `MASTERSTATE=YES`
-- `SKL10`: `NONE`
-- `SKL11`: `NONE`
-- `SKL12`: `NONE`
-- `SKL13`: `NONE`
-- `SKL14`: `NONE`
-- `SKL15`: `NONE`
-- `SKL16`: `NONE`
-- `SKL17`: `NONE`
-- `SKL18`: `NONE`
-- `SKL19`: `NONE`
-- `SKL2`: `RUNTIMES=2`
-- `SKL20`: `NONE`
-- `SKL21`: `NONE`
-- `SKL22`: `NONE`
-- `SKL23`: `NONE`
-- `SKL24`: `NONE`
-- `SKL25`: `NONE`
-- `SKL26`: `NONE`
-- `SKL27`: `NONE`
-- `SKL28`: `NONE`
-- `SKL29`: `NONE`
-- `SKL3`: `RT1=/usr/bin/python3.12 py=3.12.3 skl=NO:ModuleNotFoundError np=NO:ModuleNotFoundError pd=NO:ModuleNotFoundE`
-- `SKL30`: `NONE`
-- `SKL4`: `RT2=user_data/orderflow_dashboard/runtime/vectorbt_v1_1_0/venv/bin/python py=3.12.3 skl=1.9.0 np=2.5.2 pd=3.`
-- `SKL5`: `DIST180=1`
-- `SKL6`: `DIST=freqtrade-venv/lib/python3.12/site-packages/scikit_learn-1.8.0.dist-info`
-- `SKL7`: `EXACT180=0`
-- `SKL8`: `NONE`
-- `SKL9`: `NONE`
+- `RT1`: `MASTERSTATE=YES`
+- `RT10`: `VBPREFIX=PATH`
+- `RT11`: `VBSKLEARN=1.9.0`
+- `RT12`: `VBNUMPY=2.5.2`
+- `RT13`: `VBPANDAS=3.0.5`
+- `RT14`: `VBJOBLIB=1.6.0`
+- `RT15`: `VBVECTORBT=1.1.0`
+- `RT16`: `FT180=YES`
+- `RT17`: `MARKETLOADER=YES`
+- `RT18`: `LOADERARGS=`
+- `RT19`: `LOADERNAMES=DATA,MARKET_DATA_CONTRACT,META,RuntimeError,candles,chunk,close,date,dates,df,f,float,h,hashlib,hi`
+- `RT2`: `FTPY=PATH`
+- `RT20`: `LOADERSRC=149:def load_market_data(): | 151:meta = json.loads( | 152:META.read_text( | 153:encoding=&quot;utf-8&quot; | 154:) | 155:) | 157:if ( | 158:meta.get(&quot;contract&quot;) | 159:!= MARKET_DA`
+- `RT21`: `LOADERVBT=NO`
+- `RT22`: `LOADERHELPERS=NONE`
+- `RT23`: `REPLAYRUNTIMEREADY=YES`
+- `RT24`: `NONE`
+- `RT25`: `NONE`
+- `RT26`: `NONE`
+- `RT27`: `NONE`
+- `RT28`: `NONE`
+- `RT3`: `FTPREFIX=PATH`
+- `RT4`: `FTSKLEARN=1.8.0`
+- `RT5`: `FTNUMPY=2.2.6`
+- `RT6`: `FTPANDAS=2.3.3`
+- `RT7`: `FTJOBLIB=1.5.3`
+- `RT8`: `FTVECTORBT=NO:ModuleNotFoundError`
+- `RT9`: `VBPY=PATH`
 - `SOURCE_CHANGE`: `NO`
 - `STAGE3_RERUN`: `NO`
