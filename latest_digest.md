@@ -1,50 +1,52 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-09T06:29:32.474261+00:00`
-- Run ID: `20260909T062930Z`
-- Step: `RESOLVECACHEAUTHORITY`
+- Published UTC: `2026-09-09T06:31:25.990672+00:00`
+- Run ID: `20260909T063123Z`
+- Step: `RESOLVECACHEBYHASH`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `CACHEAUTHORITYREAD`
-- Next gate: `REVIEWCACHEAUTHORITY`
+- Verdict: `CACHEHASHREAD`
+- Next gate: `DRYRUNINCREMENTAL`
 
 ## Facts
 
-- `AUTH1`: `MASTERSTATE=YES`
-- `AUTH10`: `PATHMATCHES=0`
-- `AUTH11`: `RESOLVED=NO`
-- `AUTH12`: `BASIS=NONE`
-- `AUTH13`: `NONE`
-- `AUTH14`: `NONE`
-- `AUTH15`: `NONE`
-- `AUTH16`: `NONE`
-- `AUTH17`: `NONE`
-- `AUTH18`: `NONE`
-- `AUTH19`: `NONE`
-- `AUTH2`: `CANDIDATES=2`
-- `AUTH20`: `NONE`
-- `AUTH21`: `NONE`
-- `AUTH22`: `NONE`
-- `AUTH23`: `NONE`
-- `AUTH24`: `NONE`
-- `AUTH25`: `NONE`
-- `AUTH26`: `NONE`
-- `AUTH27`: `NONE`
-- `AUTH28`: `NONE`
-- `AUTH3`: `AUTHSHAS=0`
-- `AUTH4`: `AUTHPATHS=0`
-- `AUTH5`: `CAND1=user_data/orderflow_dashboard/data/manual_support/benchtest_v2_key_addressed_cache_v31d_backup_20260904T22`
-- `AUTH6`: `SYMS1=`
-- `AUTH7`: `CAND2=user_data/orderflow_dashboard/data/manual_support/benchtest_v2_key_addressed_cache_v31d_backup_20260904T22`
-- `AUTH8`: `SYMS2=`
-- `AUTH9`: `SHAMATCHES=0`
 - `BENCHTEST_RERUN`: `NO`
 - `BRAIN_ADMISSION`: `NO`
 - `BRAIN_IQ_CHANGE`: `NO`
 - `CACHE_CHANGE`: `NO`
 - `DB_WRITE`: `NO`
-- `FACTS`: `12`
+- `FACTS`: `13`
+- `HASH1`: `MASTERSTATE=YES`
+- `HASH10`: `CONTENTRESOLVED=YES`
+- `HASH11`: `VALIDMATCHES=2`
+- `HASH12`: `PREFERRED=user_data/orderflow_dashboard/data/manual_support/benchtest_v2_key_addressed_cache_v31d_backup_2026090`
+- `HASH13`: `PREFERREDSHA=62e055d15b36868f`
+- `HASH14`: `NONE`
+- `HASH15`: `NONE`
+- `HASH16`: `NONE`
+- `HASH17`: `NONE`
+- `HASH18`: `NONE`
+- `HASH19`: `NONE`
+- `HASH2`: `POLICYSHAS=1`
+- `HASH20`: `NONE`
+- `HASH21`: `NONE`
+- `HASH22`: `NONE`
+- `HASH23`: `NONE`
+- `HASH24`: `NONE`
+- `HASH25`: `NONE`
+- `HASH26`: `NONE`
+- `HASH27`: `NONE`
+- `HASH28`: `NONE`
+- `HASH29`: `NONE`
+- `HASH3`: `POLICYNAMES=1`
+- `HASH30`: `NONE`
+- `HASH4`: `AUTHORITYSHA=62e055d15b36868f`
+- `HASH5`: `AUTHORITYNAME=benchtest_native_cache_v1.py`
+- `HASH6`: `SCANNED=6568`
+- `HASH7`: `SHAMATCHES=2`
+- `HASH8`: `MATCH1=user_data/orderflow_dashboard/data/manual_support/benchtest_v2_key_addressed_cache_v31d_backup_20260904T2`
+- `HASH9`: `MATCH2=user_data/orderflow_dashboard/data/manual_support/benchtest_v2_key_addressed_cache_v31d_backup_20260904T2`
 - `INSTALL`: `NO`
 - `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
