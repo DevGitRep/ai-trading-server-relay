@@ -1,12 +1,12 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-09T09:53:25.426367+00:00`
-- Run ID: `20260909T095323Z`
-- Step: `READHISTMODELWIRING`
+- Published UTC: `2026-09-09T09:57:12.985697+00:00`
+- Run ID: `20260909T095710Z`
+- Step: `FINALMODELWIRING`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `HISTMODELWIRINGREAD`
+- Verdict: `FINALMODELWIRINGREAD`
 - Next gate: `REPLAYHISTORICALMODELS`
 
 ## Facts
@@ -17,70 +17,68 @@
 - `CACHE_CHANGE`: `NO`
 - `DB_WRITE`: `NO`
 - `FACTS`: `75`
-- `HMW1`: `MASTERSTATE=YES`
-- `HMW10`: `METHOD method.target.WF2.test_period=2025`
-- `HMW11`: `METHOD method.target.WF2.threshold_bp=254.9472717285156`
-- `HMW12`: `METHOD method.target.WF3.definition=range_120_bp &gt;= 243.2083969116211`
-- `HMW13`: `METHOD method.target.WF3.test_period=2026_H1`
-- `HMW14`: `METHOD method.target.WF3.threshold_bp=243.2083969116211`
-- `HMW15`: `METHOD method.target.fold_native=True`
-- `HMW16`: `METHOD method.target.source=FROZEN_OUTCOMES_RANGE_120_BP`
-- `HMW17`: `METHOD method.walk_forward.expanding_training_window=True`
-- `HMW18`: `METHOD method.walk_forward.gap_rows=120`
-- `HMW19`: `METHOD method.walk_forward.split_plan.WF2.fold_rows=220560`
-- `HMW2`: `METHODWIRE=129`
-- `HMW20`: `METHOD method.walk_forward.split_plan.WF2.splits[].purge_gap_minutes=120`
-- `HMW21`: `METHOD method.walk_forward.split_plan.WF2.splits[].test_first_start_utc=2025-08-26T08:40:00+00:00`
-- `HMW22`: `METHOD method.walk_forward.split_plan.WF2.splits[].test_last_start_utc=2025-09-20T21:19:00+00:00`
-- `HMW23`: `METHOD method.walk_forward.split_plan.WF2.splits[].test_local_index_end=73519`
-- `HMW24`: `METHOD method.walk_forward.split_plan.WF2.splits[].test_local_index_start=36760`
-- `HMW25`: `METHOD method.walk_forward.split_plan.WF2.splits[].test_rows_before_role_finite_filter=36760`
-- `HMW26`: `METHOD method.walk_forward.split_plan.WF2.splits[].train_first_start_utc=2025-07-31T20:00:00+00:00`
-- `HMW27`: `METHOD method.walk_forward.split_plan.WF2.splits[].train_last_start_utc=2025-08-26T06:39:00+00:00`
-- `HMW28`: `ROLECID=ICL_LIB_DEC7F969A4B5969C`
-- `HMW29`: `ROLEORD=0`
-- `HMW3`: `METHOD governance.model_retrained=False`
-- `HMW30`: `WF2KEYS=augmented,baseline,brier_delta,evaluated_test_rows,log_loss_delta,positive_rate,purge_gap_rows,roc_auc_d`
-- `HMW31`: `WF2 evaluated_test_rows=34970`
-- `HMW32`: `WF2 purge_gap_rows=120`
-- `HMW33`: `WF2 positive_rate=0.14526737203317128`
-- `HMW34`: `WF2 target_threshold_bp=254.9472717285156`
-- `HMW35`: `WF2 log_loss_delta=-0.00015137558154298958`
-- `HMW36`: `WF3KEYS=augmented,baseline,brier_delta,evaluated_test_rows,log_loss_delta,positive_rate,purge_gap_rows,roc_auc_d`
-- `HMW37`: `WF3 evaluated_test_rows=49977`
-- `HMW38`: `WF3 purge_gap_rows=120`
-- `HMW39`: `WF3 positive_rate=0.14616723692898734`
-- `HMW4`: `METHOD method.evaluation.cross_fold_probability_pooling=False`
-- `HMW40`: `WF3 target_threshold_bp=243.2083969116211`
-- `HMW41`: `WF3 log_loss_delta=-4.354778254611613e-06`
-- `HMW42`: `CACHEKEY=168cd4ddc6e8a5c027d7`
-- `HMW43`: `SERIESKEYS=native_identity,stage2b_selection_provenance,stage3_full_year_representation`
-- `HMW44`: `CACHECOLS=cache_key,cache_contract,origin_candidate_id,source_sha256,market_data_contract,market_data_sha256,dat`
-- `HMW45`: `CACHEROW=YES`
-- `HMW46`: `CACHEFIELD market_data_contract=str:24`
-- `HMW47`: `CACHEFIELD market_data_sha256=str:64`
-- `HMW48`: `CACHEFIELD artifact_path=str:241`
-- `HMW49`: `CACHEFIELD artifact_manifest_path=str:240`
-- `HMW5`: `METHOD method.preprocessing.candidate_specific_validity=For each role and split, incumbent-only and augmented mo`
-- `HMW50`: `CACHEFIELD artifact_raw_json_sha256=str:64`
-- `HMW51`: `CACHEFIELD artifact_file_sha256=str:64`
-- `HMW52`: `COMPROWS=481200`
-- `HMW53`: `COMPCOLS=candidate_row_index,candle_epoch,candle_start_utc,fold,test_period,breakout_probability`
-- `HMW54`: `OUTROWS=460000`
-- `HMW55`: `OUTCOLS=row_i,date,period,ret_5_bp,abs_ret_5_bp,range_5_bp,vol_5_bp,trend_eff_5,mfe_long_5_bp,mae_long_5_bp,mfe_`
-- `HMW56`: `COMPHASH candidate_row_index=635c1f7502049d21`
-- `HMW57`: `COMPHASH candle_epoch=41f19522f7cfa446`
-- `HMW58`: `COMPHASH candle_start_utc=aa3c37a1494c6e4e`
-- `HMW59`: `TARGETCOL range_120_bp dtype=float32`
-- `HMW6`: `METHOD method.preprocessing.fit_scaler_on=TRAIN_ROWS_ONLY`
-- `HMW60`: `NORMHITS=11`
-- `HMW61`: `NORMSRC=168:) | 169:) | 171:selected = matches[0].get( | 172:&quot;selected_series&quot; | 173:) | 175:if not isinstance(`
-- `HMW62`: `NORMSRC=462:) | 464:transform = getattr( | 465:stage2b, | 466:&quot;candidate_plot_representations&quot;, | 467:None, | 46`
-- `HMW63`: `NORMSRC=804:) | 806:series_out.append( | 807:{ | 808:&quot;native_identity&quot;: { | 809:&quot;source_sha256&quot;: | 810:dbrow[ |`
-- `HMW64`: `NORMSRC=844:&quot;unique_count&quot; | 845:), | 846:}, | 848:&quot;stage3_full_year_representation&quot;: { | 849:&quot;representation&quot;:`
-- `HMW7`: `METHOD method.preprocessing.performance_metrics_as_features=False`
-- `HMW8`: `METHOD method.preprocessing.scaler=sklearn.preprocessing.StandardScaler`
-- `HMW9`: `METHOD method.target.WF2.definition=range_120_bp &gt;= 254.9472717285156`
+- `FINAL1`: `MASTERSTATE=YES`
+- `FINAL10`: `RULE target.source=FROZEN_OUTCOMES_RANGE_120_BP`
+- `FINAL11`: `WALK_FORWARDREFS=130`
+- `FINAL12`: `RULE walk_forward.expanding_training_window=True`
+- `FINAL13`: `RULE walk_forward.gap_rows=120`
+- `FINAL14`: `RULE walk_forward.implementation=sklearn.model_selection.TimeSeriesSplit`
+- `FINAL15`: `RULE walk_forward.n_splits=5`
+- `FINAL16`: `RULE walk_forward.shuffle=False`
+- `FINAL17`: `RULE walk_forward.split_boundaries_created_before_role_filtering=True`
+- `FINAL18`: `RULE walk_forward.split_plan.WF2.fold_rows=220560`
+- `FINAL19`: `RULE walk_forward.split_plan.WF2.splits[0].purge_gap_minutes=120`
+- `FINAL2`: `TARGETREFS=8`
+- `FINAL20`: `RULE walk_forward.split_plan.WF2.splits[0].split=1`
+- `FINAL21`: `RULE walk_forward.split_plan.WF2.splits[0].test_first_start_utc=2025-08-26T08:40:00+00:00`
+- `FINAL22`: `RULE walk_forward.split_plan.WF2.splits[0].test_last_start_utc=2025-09-20T21:19:00+00:00`
+- `FINAL23`: `RULE walk_forward.split_plan.WF2.splits[0].test_local_index_end=73519`
+- `FINAL24`: `RULE walk_forward.split_plan.WF2.splits[0].test_local_index_start=36760`
+- `FINAL25`: `RULE walk_forward.split_plan.WF2.splits[0].test_rows_before_role_finite_filter=36760`
+- `FINAL26`: `RULE walk_forward.split_plan.WF2.splits[0].train_first_start_utc=2025-07-31T20:00:00+00:00`
+- `FINAL27`: `RULE walk_forward.split_plan.WF2.splits[0].train_last_start_utc=2025-08-26T06:39:00+00:00`
+- `FINAL28`: `RULE walk_forward.split_plan.WF2.splits[0].train_local_index_end=36639`
+- `FINAL29`: `RULE walk_forward.split_plan.WF2.splits[0].train_local_index_start=0`
+- `FINAL3`: `RULE target.WF2.definition=range_120_bp &gt;= 254.9472717285156`
+- `FINAL30`: `PREPROCESSINGREFS=5`
+- `FINAL31`: `RULE preprocessing.candidate_specific_validity=For each role and split, incumbent-only and augmented models use`
+- `FINAL32`: `RULE preprocessing.fit_scaler_on=TRAIN_ROWS_ONLY`
+- `FINAL33`: `RULE preprocessing.imputation=NONE`
+- `FINAL34`: `RULE preprocessing.performance_metrics_as_features=False`
+- `FINAL35`: `RULE preprocessing.scaler=sklearn.preprocessing.StandardScaler`
+- `FINAL36`: `ESTIMATORREFS=7`
+- `FINAL37`: `RULE estimator.C=1.0`
+- `FINAL38`: `RULE estimator.class=sklearn.linear_model.LogisticRegression`
+- `FINAL39`: `RULE estimator.fit_intercept=True`
+- `FINAL4`: `RULE target.WF2.test_period=2025`
+- `FINAL40`: `RULE estimator.hyperparameter_tuning=False`
+- `FINAL41`: `RULE estimator.max_iter=1000`
+- `FINAL42`: `RULE estimator.penalty=l2`
+- `FINAL43`: `RULE estimator.solver=lbfgs`
+- `FINAL44`: `EVALUATIONREFS=7`
+- `FINAL45`: `RULE evaluation.cross_fold_probability_pooling=False`
+- `FINAL46`: `RULE evaluation.cross_fold_summary=Row-count-weighted mean of fold-specific metric deltas only; raw fold probabi`
+- `FINAL47`: `RULE evaluation.metrics_computed=Separately per WF2 and WF3 from concatenated walk-forward test predictions.`
+- `FINAL48`: `RULE evaluation.positive_delta_means=LIBRARY_ROLE_IMPROVES_OUT_OF_SAMPLE_LOG_LOSS`
+- `FINAL49`: `RULE evaluation.primary_delta_definition=incumbent_only_log_loss - augmented_log_loss`
+- `FINAL5`: `RULE target.WF2.threshold_bp=254.9472717285156`
+- `FINAL50`: `RULE evaluation.primary_metric=LOG_LOSS`
+- `FINAL51`: `RULE evaluation.secondary_metrics_used_for_primary_gate=False`
+- `FINAL52`: `SOURCEHITS=4`
+- `FINAL53`: `SRC1=prospective/v1_library_incremental_confirmation/build_20260901T171017Z/fixed_paired_challengers_v1/indicato`
+- `FINAL54`: `SRC2=src/sol_indicator_ai_brain_v1d1_20260818_150847.py score=5 range=Y lr=N prob=N scale=N`
+- `FINAL55`: `SRC3=src/sol_indicator_ai_brain_v1d_20260818_145706.py score=5 range=Y lr=N prob=N scale=N`
+- `FINAL56`: `SRC4=src/sol_indicator_parameter_discovery_v1c_20260818_122153.py score=5 range=Y lr=N prob=N scale=N`
+- `FINAL57`: `RANGECTX=5`
+- `FINAL58`: `RANGE=86:close=market[&quot;close&quot;].to_numpy(dtype=np.float64) | 88:wf3=comp.loc[comp[&quot;fold&quot;].astype(str)==&quot;WF3&quot;].cop`
+- `FINAL59`: `RANGE=92:right_on=&quot;date&quot;, | 93:how=&quot;left&quot;, | 94:validate=&quot;one_to_one&quot;, | 95:) | 96:wf3=wf3.loc[ | 97:wf3[&quot;range_`
+- `FINAL6`: `RULE target.WF3.definition=range_120_bp &gt;= 243.2083969116211`
+- `FINAL60`: `RANGE=170:exact_sha_pass += 1 | 172:role_values=values[market_index] | 173:probability=wf3[&quot;breakout_probability`
+- `FINAL61`: `RANGE=1525:].to_numpy( | 1526:dtype=float | 1527:) | 1529:RANGE120 = outcomes[ | 1530:&quot;range_120_bp&quot; | 1531:].to`
+- `FINAL62`: `MODELCTX=3`
+- `FINAL7`: `RULE target.WF3.test_period=2026_H1`
+- `FINAL8`: `RULE target.WF3.threshold_bp=243.2083969116211`
+- `FINAL9`: `RULE target.fold_native=True`
 - `INCREMENTAL_RUN`: `NO`
 - `INSTALL`: `NO`
 - `MASTER_CHANGE`: `NO`
