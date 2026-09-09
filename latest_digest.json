@@ -1,25 +1,17 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-09T16:34:34.903645+00:00",
-  "run_id": "20260909T163432Z",
-  "step": "PATCHWEBENTRY",
+  "published_at_utc": "2026-09-09T16:40:12.675221+00:00",
+  "run_id": "20260909T164010Z",
+  "step": "READBRANDTARGET",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "AITRADERBENCHROOTREADY",
-  "next_gate": "BRANDHEADER",
+  "verdict": "BRANDTARGETREAD",
+  "next_gate": "PATCHBRANDHEADER",
   "facts": {
-    "BACKEND_MODE": "444",
     "BENCHTEST": "NO",
-    "DASHBOARD": "KEPT",
-    "DASH_HTTP": "200",
     "DB_WRITE": "NO",
-    "FREE_DEFAULT": "YES",
-    "LAB_HTTP": "200",
-    "MASTER_CHANGE": "YES",
     "MASTER_READ": "YES",
-    "RESTART": "YES",
-    "ROOT_HTTP": "200",
-    "SERVICE": "active",
-    "SOURCE_CHANGE": "YES"
+    "RESTART": "NO",
+    "SOURCE_CHANGE": "NO"
   }
 }
