@@ -1,71 +1,56 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-08T22:21:03.629756+00:00`
-- Run ID: `20260908T222101Z`
-- Step: `DRYRUNINCREMENTAL`
+- Published UTC: `2026-09-09T06:29:32.474261+00:00`
+- Run ID: `20260909T062930Z`
+- Step: `RESOLVECACHEAUTHORITY`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `STAGE3DRYRUNBLOCKED`
-- Next gate: `REVIEWSTAGE3DRYRUN`
+- Verdict: `CACHEAUTHORITYREAD`
+- Next gate: `REVIEWCACHEAUTHORITY`
 
 ## Facts
 
+- `AUTH1`: `MASTERSTATE=YES`
+- `AUTH10`: `PATHMATCHES=0`
+- `AUTH11`: `RESOLVED=NO`
+- `AUTH12`: `BASIS=NONE`
+- `AUTH13`: `NONE`
+- `AUTH14`: `NONE`
+- `AUTH15`: `NONE`
+- `AUTH16`: `NONE`
+- `AUTH17`: `NONE`
+- `AUTH18`: `NONE`
+- `AUTH19`: `NONE`
+- `AUTH2`: `CANDIDATES=2`
+- `AUTH20`: `NONE`
+- `AUTH21`: `NONE`
+- `AUTH22`: `NONE`
+- `AUTH23`: `NONE`
+- `AUTH24`: `NONE`
+- `AUTH25`: `NONE`
+- `AUTH26`: `NONE`
+- `AUTH27`: `NONE`
+- `AUTH28`: `NONE`
+- `AUTH3`: `AUTHSHAS=0`
+- `AUTH4`: `AUTHPATHS=0`
+- `AUTH5`: `CAND1=user_data/orderflow_dashboard/data/manual_support/benchtest_v2_key_addressed_cache_v31d_backup_20260904T22`
+- `AUTH6`: `SYMS1=`
+- `AUTH7`: `CAND2=user_data/orderflow_dashboard/data/manual_support/benchtest_v2_key_addressed_cache_v31d_backup_20260904T22`
+- `AUTH8`: `SYMS2=`
+- `AUTH9`: `SHAMATCHES=0`
 - `BENCHTEST_RERUN`: `NO`
 - `BRAIN_ADMISSION`: `NO`
 - `BRAIN_IQ_CHANGE`: `NO`
-- `DRY1`: `MASTERSTATE=YES`
-- `DRY10`: `NONE`
-- `DRY11`: `NONE`
-- `DRY12`: `NONE`
-- `DRY13`: `NONE`
-- `DRY14`: `NONE`
-- `DRY15`: `NONE`
-- `DRY16`: `NONE`
-- `DRY17`: `NONE`
-- `DRY18`: `NONE`
-- `DRY19`: `NONE`
-- `DRY2`: `SELECTION=13to9`
-- `DRY20`: `NONE`
-- `DRY21`: `NONE`
-- `DRY22`: `NONE`
-- `DRY23`: `NONE`
-- `DRY24`: `NONE`
-- `DRY25`: `NONE`
-- `DRY26`: `NONE`
-- `DRY27`: `NONE`
-- `DRY28`: `NONE`
-- `DRY29`: `NONE`
-- `DRY3`: `CLUSTERFREE=5`
-- `DRY30`: `NONE`
-- `DRY31`: `NONE`
-- `DRY32`: `NONE`
-- `DRY33`: `NONE`
-- `DRY34`: `NONE`
-- `DRY35`: `NONE`
-- `DRY36`: `NONE`
-- `DRY37`: `NONE`
-- `DRY38`: `NONE`
-- `DRY4`: `CLUSTERCOVER=7/7`
-- `DRY5`: `ERROR=RuntimeError:CACHE_AUTHORITY_PATHS:2`
-- `DRY6`: `NONE`
-- `DRY7`: `NONE`
-- `DRY8`: `NONE`
-- `DRY9`: `NONE`
-- `FACTS`: `5`
+- `CACHE_CHANGE`: `NO`
+- `DB_WRITE`: `NO`
+- `FACTS`: `12`
 - `INSTALL`: `NO`
 - `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
 - `PREFLIGHT_RERUN`: `NO`
-- `PROD_CACHE_CHANGE`: `NO`
-- `PROD_DB_WRITE`: `NO`
 - `PROSPECTIVE_ACTIVATION`: `NO`
 - `RESTART`: `NO`
 - `SCORE_PRODUCER_CHANGE`: `NO`
-- `SELECTION_READY`: `YES`
 - `SOURCE_CHANGE`: `NO`
-- `STAGE3_EXECUTED`: `NO`
 - `STAGE3_RERUN`: `NO`
-- `TEMP`: `stage3_current_dryrun_20260908T222101Z`
-- `TEMP_DB_READY`: `NO`
-- `TEMP_DB_WRITE`: `NO`
