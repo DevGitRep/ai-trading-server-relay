@@ -1,13 +1,13 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-09T10:34:05.719598+00:00`
-- Run ID: `20260909T103403Z`
-- Step: `REPLAYHISTMODELS`
+- Published UTC: `2026-09-09T10:37:05.002228+00:00`
+- Run ID: `20260909T103702Z`
+- Step: `READSKLEARNRUNTIME`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `HISTMODELREPLAYBLOCKED`
-- Next gate: `REVIEWHISTMODELREPLAY`
+- Verdict: `SKLEARN180NOTFOUND`
+- Next gate: `REVIEWSKLEARNRUNTIME`
 
 ## Facts
 
@@ -15,45 +15,46 @@
 - `BRAIN_ADMISSION`: `NO`
 - `BRAIN_IQ_CHANGE`: `NO`
 - `CURRENT_INCREMENTAL_RUN`: `NO`
-- `FACTS`: `4`
-- `HISTORICAL_MODEL_TRAINING`: `YES`
-- `HREPLAY1`: `MASTERSTATE=YES`
-- `HREPLAY10`: `NONE`
-- `HREPLAY11`: `NONE`
-- `HREPLAY12`: `NONE`
-- `HREPLAY13`: `NONE`
-- `HREPLAY14`: `NONE`
-- `HREPLAY15`: `NONE`
-- `HREPLAY16`: `NONE`
-- `HREPLAY17`: `NONE`
-- `HREPLAY18`: `NONE`
-- `HREPLAY19`: `NONE`
-- `HREPLAY2`: `SKLEARN=1.9.0`
-- `HREPLAY20`: `NONE`
-- `HREPLAY21`: `NONE`
-- `HREPLAY22`: `NONE`
-- `HREPLAY23`: `NONE`
-- `HREPLAY24`: `NONE`
-- `HREPLAY25`: `NONE`
-- `HREPLAY26`: `NONE`
-- `HREPLAY27`: `NONE`
-- `HREPLAY28`: `NONE`
-- `HREPLAY3`: `FROZENSKLEARN=1.8.0`
-- `HREPLAY4`: `ERROR=RuntimeError:SKLEARN_VERSION_DRIFT`
-- `HREPLAY5`: `NONE`
-- `HREPLAY6`: `NONE`
-- `HREPLAY7`: `NONE`
-- `HREPLAY8`: `NONE`
-- `HREPLAY9`: `NONE`
+- `FACTS`: `7`
 - `INSTALL`: `NO`
 - `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
+- `MODEL_TRAINING`: `NO`
+- `PACKAGE_CHANGE`: `NO`
 - `PREFLIGHT_RERUN`: `NO`
 - `PROD_CACHE_CHANGE`: `NO`
 - `PROD_DB_WRITE`: `NO`
 - `PROSPECTIVE_ACTIVATION`: `NO`
 - `RESTART`: `NO`
-- `SCORE_PRODUCER_CHANGE`: `NO`
+- `SKL1`: `MASTERSTATE=YES`
+- `SKL10`: `NONE`
+- `SKL11`: `NONE`
+- `SKL12`: `NONE`
+- `SKL13`: `NONE`
+- `SKL14`: `NONE`
+- `SKL15`: `NONE`
+- `SKL16`: `NONE`
+- `SKL17`: `NONE`
+- `SKL18`: `NONE`
+- `SKL19`: `NONE`
+- `SKL2`: `RUNTIMES=2`
+- `SKL20`: `NONE`
+- `SKL21`: `NONE`
+- `SKL22`: `NONE`
+- `SKL23`: `NONE`
+- `SKL24`: `NONE`
+- `SKL25`: `NONE`
+- `SKL26`: `NONE`
+- `SKL27`: `NONE`
+- `SKL28`: `NONE`
+- `SKL29`: `NONE`
+- `SKL3`: `RT1=/usr/bin/python3.12 py=3.12.3 skl=NO:ModuleNotFoundError np=NO:ModuleNotFoundError pd=NO:ModuleNotFoundE`
+- `SKL30`: `NONE`
+- `SKL4`: `RT2=user_data/orderflow_dashboard/runtime/vectorbt_v1_1_0/venv/bin/python py=3.12.3 skl=1.9.0 np=2.5.2 pd=3.`
+- `SKL5`: `DIST180=1`
+- `SKL6`: `DIST=freqtrade-venv/lib/python3.12/site-packages/scikit_learn-1.8.0.dist-info`
+- `SKL7`: `EXACT180=0`
+- `SKL8`: `NONE`
+- `SKL9`: `NONE`
 - `SOURCE_CHANGE`: `NO`
 - `STAGE3_RERUN`: `NO`
-- `TEMP_REPORT_WRITE`: `YES`
