@@ -1,12 +1,12 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-09T15:22:21.926645+00:00`
-- Run ID: `20260909T152219Z`
-- Step: `READLABENDPOINT`
+- Published UTC: `2026-09-09T15:23:28.316860+00:00`
+- Run ID: `20260909T152326Z`
+- Step: `READLABREGISTER`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `LABENDPOINTREAD`
+- Verdict: `LABREGISTERREAD`
 - Next gate: `PATCHWEBENTRY`
 
 ## Facts
