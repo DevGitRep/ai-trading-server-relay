@@ -1,60 +1,86 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-09T08:44:13.874272+00:00`
-- Run ID: `20260909T084320Z`
-- Step: `RERUNNORMALIZER`
+- Published UTC: `2026-09-09T08:55:20.084430+00:00`
+- Run ID: `20260909T085518Z`
+- Step: `REVIEWSTAGE3OUTPUT`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `STAGE3NORMALIZERPASSED`
-- Next gate: `REVIEWSTAGE3OUTPUT`
+- Verdict: `STAGE3OUTPUTREAD`
+- Next gate: `READINCREMENTALRUNNER`
 
 ## Facts
 
 - `BENCHTEST_RERUN`: `NO`
 - `BRAIN_ADMISSION`: `NO`
 - `BRAIN_IQ_CHANGE`: `NO`
-- `CACHE_RERUN`: `NO`
-- `FACTS`: `15`
+- `CACHE_CHANGE`: `NO`
+- `DB_WRITE`: `NO`
+- `FACTS`: `62`
 - `INSTALL`: `NO`
 - `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
-- `NORMRUN1`: `MASTERSTATE=YES`
-- `NORMRUN10`: `NORMRC=0`
-- `NORMRUN11`: `NORMSTATUS=PASS`
-- `NORMRUN12`: `NORMCAND=9`
-- `NORMRUN13`: `NORMPASS=None`
-- `NORMRUN14`: `NORMFAIL=None`
-- `NORMRUN15`: `IDENTITYCOUNT=9`
-- `NORMRUN16`: `NONE`
-- `NORMRUN17`: `NONE`
-- `NORMRUN18`: `NONE`
-- `NORMRUN19`: `NONE`
-- `NORMRUN2`: `CACHESTATUS=PASS`
-- `NORMRUN20`: `NONE`
-- `NORMRUN21`: `NONE`
-- `NORMRUN22`: `NONE`
-- `NORMRUN23`: `NONE`
-- `NORMRUN24`: `NONE`
-- `NORMRUN25`: `NONE`
-- `NORMRUN26`: `NONE`
-- `NORMRUN27`: `NONE`
-- `NORMRUN28`: `NONE`
-- `NORMRUN29`: `NONE`
-- `NORMRUN3`: `CACHEPASS=9/9`
-- `NORMRUN30`: `NONE`
-- `NORMRUN4`: `WORKERSHA=705ecf9c63e775f8`
-- `NORMRUN5`: `POLICYWORKER=705ecf9c63e775f8`
-- `NORMRUN6`: `WORKERMATCH=YES`
-- `NORMRUN7`: `ALIGNSHA=a2f700defb03c580`
-- `NORMRUN8`: `SELALIGNMATCH=YES`
-- `NORMRUN9`: `CACHEAUTH=62e055d15b36868f`
+- `OUT1`: `MASTERSTATE=YES`
+- `OUT10`: `IDENTSTAT=NONE`
+- `OUT11`: `ADDSTAT=NONE`
+- `OUT12`: `SERIESCAND=9`
+- `OUT13`: `SERIESTOTAL=36`
+- `OUT14`: `SERIESRANGE=1-8`
+- `OUT15`: `ADDREFS=0`
+- `OUT16`: `CONTRACTREFS=10`
+- `OUT17`: `CONTRACT current_phase_claims.brain_mutation=False`
+- `OUT18`: `CONTRACT current_phase_claims.brain_value_proven=False`
+- `OUT19`: `CONTRACT current_phase_claims.economic_evidence=False`
+- `OUT2`: `SELECTIONIDS=9`
+- `OUT20`: `CONTRACT current_phase_claims.iq_change=False`
+- `OUT21`: `CONTRACT current_phase_claims.oos=False`
+- `OUT22`: `CONTRACT current_phase_claims.prospective=False`
+- `OUT23`: `CONTRACT current_phase_claims.retrospective_discovery=True`
+- `OUT24`: `CONTRACT prediction_target.wf3_threshold_bp=243.2083969116211`
+- `OUT25`: `METHODREFS=74`
+- `OUT26`: `METHOD method.ranking.eligible_for_retrospective_incremental_shortlist=CONSISTENT_POSITIVE`
+- `OUT27`: `METHOD method.retrospective_evidence_classification.CONSISTENT_POSITIVE=primary log-loss delta &gt; 0 in WF2 AND &gt;`
+- `OUT28`: `METHOD method.retrospective_evidence_classification.MIXED=WF2 and WF3 primary log-loss deltas have different sig`
+- `OUT29`: `METHOD method.retrospective_evidence_classification.NON_POSITIVE=primary log-loss delta &lt;= 0 in WF2 AND &lt;= 0 in`
+- `OUT3`: `CACHEIDS=9`
+- `OUT30`: `METHOD method.retrospective_evidence_classification.no_minimum_effect_threshold=True`
+- `OUT31`: `METHOD method.retrospective_evidence_classification.no_p_value_threshold=True`
+- `OUT32`: `METHOD method.retrospective_evidence_classification.purpose=Retrospective discovery classification only, not pro`
+- `OUT33`: `METHOD method.target.WF2.threshold_bp=254.9472717285156`
+- `OUT34`: `RETROREFS=10033`
+- `OUT35`: `RETRO brain_value_proven=False`
+- `OUT36`: `RETRO prospective_evidence=False`
+- `OUT37`: `RETRO retrospective_discovery=True`
+- `OUT38`: `RETRO roles[].folds.WF2.target_threshold_bp=254.9472717285156`
+- `OUT39`: `RETRO roles[].folds.WF3.augmented.brier=0.0982370980934612`
+- `OUT4`: `NORMIDS=0`
+- `OUT40`: `RETRO roles[].folds.WF3.augmented.log_loss=0.33054435042455377`
+- `OUT41`: `RETRO roles[].folds.WF3.augmented.roc_auc=0.8016952321411569`
+- `OUT42`: `RETRO roles[].folds.WF3.augmented.rows=49977`
+- `OUT43`: `COMPARATORREFS=24`
+- `OUT44`: `COMP authorities.coverage_contract=INDICATOR_WF2_WF3_OOF_COVERAGE_AUTHORITY_V1`
+- `OUT45`: `COMP authorities.indicator_model_sha256=70103689c4b56010`
+- `OUT46`: `COMP authorities.indicator_source_sha256=157ad75a62de3015`
+- `OUT47`: `COMP authorities.market_sha256=b577ee5771839c9a`
+- `OUT48`: `COMP authorities.scorer_sha256=1a4d1482db895b4f`
+- `OUT49`: `COMP coverage.first_start_utc=2025-07-31T20:00:00+00:00`
+- `OUT5`: `IDENTIDS=9`
+- `OUT50`: `COMP coverage.fold_appropriate_rows=481200`
+- `OUT51`: `COMP coverage.last_start_utc=2026-06-30T23:59:00+00:00`
+- `OUT52`: `RUNNERHITS=7`
+- `OUT53`: `RUNNER=research_library_intelligence/v1/incumbent_alignment_v1/indicator_incumbent_alignment_v1.py score=3`
+- `OUT54`: `RUNNER=prospective/v1_library_incremental_confirmation/build_20260901T171017Z/fixed_paired_challengers_v1/indica`
+- `OUT55`: `RUNNER=src/indicator_v1h0_fusion_interface_freeze_20260819_070806.py score=2`
+- `OUT56`: `RUNNER=src/sol_indicator_brain_nwhull_classifier_v1_20260818_100348.py score=2`
+- `OUT57`: `RUNNER=src/sol_indicator_brain_nwhull_v1_20260818_095443.py score=2`
+- `OUT58`: `RUNNER=src/sol_indicator_nwhull_extreme_tail_v1_20260818_103044.py score=2`
+- `OUT6`: `IDENTEXACT=YES`
+- `OUT7`: `NORMCOUNT=9`
+- `OUT8`: `CACHESTAT=PASS:28`
+- `OUT9`: `NORMSTAT=PASS:1`
 - `PREFLIGHT_RERUN`: `NO`
-- `PROD_CACHE_CHANGE`: `NO`
-- `PROD_DB_WRITE`: `NO`
 - `PROSPECTIVE_ACTIVATION`: `NO`
 - `RESTART`: `NO`
 - `SCORE_PRODUCER_CHANGE`: `NO`
 - `SOURCE_CHANGE`: `NO`
-- `STAGE3_NORMALIZER_RERUN`: `YES`
-- `TEMP_DB_WRITE`: `YES`
+- `STAGE3_RERUN`: `NO`
