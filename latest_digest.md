@@ -1,29 +1,31 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-09T18:44:39.992691+00:00`
-- Run ID: `20260909T184438Z`
-- Step: `FIXMENUAHERO`
+- Published UTC: `2026-09-09T19:10:27.700255+00:00`
+- Run ID: `20260909T191025Z`
+- Step: `FINALIZEHEROBANNER`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `MENUAHEROREADY`
-- Next gate: `VISUALCHECK`
+- Verdict: `FINALHEROBANNERREADY`
+- Next gate: `FINALVISUALCHECK`
 
 ## Facts
 
+- `BANNER_CROP`: `NO`
+- `BANNER_HTTP`: `200`
+- `BANNER_RATIO`: `6TO1`
 - `BENCHTEST`: `NO`
 - `DASH_HTTP`: `200`
 - `DB_WRITE`: `NO`
-- `HERO_CROP`: `YES`
-- `HERO_SHORTER`: `YES`
-- `JS_CACHE_BUST`: `YES`
-- `JS_HTTP`: `200`
+- `HTML_SLOGAN`: `NO`
 - `LAB_HTTP`: `200`
 - `MASTER_CHANGE`: `YES`
 - `MASTER_READ`: `YES`
-- `MENU_LAB`: `YES`
-- `MENU_ROOT`: `YES`
+- `MENU_KEPT`: `YES`
 - `RESTART`: `YES`
 - `ROOT_HTTP`: `200`
 - `SERVICE`: `active`
-- `TAGLINE_LEFT`: `YES`
+- `SIGNIN_OVERLAY`: `YES`
+- `SLOGAN_EMBEDDED`: `YES`
+- `TEMPLATE_CHANGE`: `YES`
+- `UNLOCKPRO_OVERLAY`: `YES`
