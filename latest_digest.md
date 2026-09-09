@@ -1,13 +1,13 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-09T08:06:57.636666+00:00`
-- Run ID: `20260909T080655Z`
-- Step: `READSTAGE2BSHA`
+- Published UTC: `2026-09-09T08:10:47.323349+00:00`
+- Run ID: `20260909T081045Z`
+- Step: `READNORMSTAGE2B`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `STAGE2BSHAREAD`
-- Next gate: `RERUNNORMALIZER`
+- Verdict: `NORMSTAGE2BREAD`
+- Next gate: `REVIEWNORMSTAGE2B`
 
 ## Facts
 
@@ -16,51 +16,57 @@
 - `BRAIN_IQ_CHANGE`: `NO`
 - `CACHE_CHANGE`: `NO`
 - `DB_WRITE`: `NO`
-- `FACTS`: `35`
+- `FACTS`: `53`
 - `INSTALL`: `NO`
 - `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
+- `N2B1`: `MASTERSTATE=YES`
+- `N2B10`: `SRC=405:) | 407:args = ap.parse_args() | 409:stage2b_path = Path( | 410:args.stage2b_worker | 411:)`
+- `N2B11`: `SRC=413:selection_path = Path( | 414:args.selection | 415:) | 417:policy_path = Path( | 418:args.policy`
+- `N2B12`: `SRC=419:) | 421:if ( | 422:sha_file(stage2b_path) | 423:!= args.expected_stage2b_sha | 424:):`
+- `N2B13`: `SRC=425:raise RuntimeError( | 426:&quot;STAGE2B_SHA_DRIFT&quot; | 427:) | 429:if ( | 430:sha_file(selection_path)`
+- `N2B14`: `SRC=431:!= args.expected_selection_sha | 432:): | 433:raise RuntimeError( | 434:&quot;SELECTION_SHA_DRIFT&quot; | 435:)`
+- `N2B15`: `SRC=437:if ( | 438:sha_file(policy_path) | 439:!= args.expected_policy_sha | 440:): | 441:raise RuntimeError(`
+- `N2B16`: `SRC=442:&quot;POLICY_SHA_DRIFT&quot; | 443:) | 445:bench = load_module( | 446:&quot;_stage3_benchtest&quot;, | 447:Path(`
+- `N2B17`: `CURRENTALIGN=a2f700defb03c580`
+- `N2B18`: `CURRENTWORKER=705ecf9c63e775f8`
+- `N2B19`: `OLDSTAGE2B=7e53381b443fb5ed`
+- `N2B2`: `SOURCEHITS=10`
+- `N2B20`: `POLICYREFS=4`
+- `N2B21`: `POLICY authorities.stage2b_transformation_worker=indicator_incumbent_alignment_v1.py`
+- `N2B22`: `POLICY authorities.stage2b_transformation_worker_sha256=705ecf9c63e775f8`
+- `N2B23`: `POLICY authorities.stage3_representative_selection_sha256=b12021ecf6367f78`
+- `N2B24`: `POLICY normalizer_implementation_rules.must_reuse_stage2b_representation_semantics=True`
+- `N2B25`: `REPORT=pilot_normalized_series_identities_v1.json`
+- `N2B26`: `REPORT=all17_normalized_series_identities_v1.json`
+- `N2B27`: `REPORTSREAD=2`
+- `N2B28`: `HIST candidates[].series[].stage2b_selection_provenance.finite_count=500`
+- `N2B29`: `HIST candidates[].series[].stage2b_selection_provenance.price_scale=False`
+- `N2B3`: `SRC=362:) | 364:ap.add_argument( | 365:&quot;--expected-market-sha&quot;, | 366:required=True, | 367:)`
+- `N2B30`: `HIST candidates[].series[].stage2b_selection_provenance.representation=EVENT_PRESENCE`
+- `N2B31`: `HIST candidates[].series[].stage2b_selection_provenance.series_sha256=db051b42d9dc1f46`
+- `N2B32`: `HIST candidates[].series[].stage2b_selection_provenance.unique_count=2`
+- `N2B33`: `HIST candidates[].series[].stage2b_selection_provenance.series_sha256=7ce5ce2b0d4470d4`
+- `N2B34`: `HIST candidates[].series[].stage2b_selection_provenance.finite_count=127`
+- `N2B35`: `HIST candidates[].series[].stage2b_selection_provenance.representation=NUMERIC_RAW`
+- `N2B36`: `HIST candidates[].series[].stage2b_selection_provenance.series_sha256=966ec4d8ff7a4da2`
+- `N2B37`: `HIST candidates[].series[].stage2b_selection_provenance.unique_count=127`
+- `N2B38`: `HIST candidates[].series[].stage2b_selection_provenance.finite_count=132`
+- `N2B39`: `UNIQUEIDENTITIES=84`
+- `N2B4`: `SRC=369:ap.add_argument( | 370:&quot;--expected-stage2b-sha&quot;, | 371:required=True, | 372:) | 374:ap.add_argument(`
+- `N2B40`: `IDENTITY=0360c78a4b9a68cd labels=HIST64`
+- `N2B41`: `IDENTITY=03879e52d38fb873 labels=HIST10,HIST45`
+- `N2B42`: `IDENTITY=052c1f5af8b53328 labels=HIST85`
+- `N2B43`: `IDENTITY=0b22704ad81a0e98 labels=HIST93`
+- `N2B44`: `IDENTITY=0e86e8cdb17a643d labels=HIST15,HIST50`
+- `N2B5`: `SRC=375:&quot;--expected-selection-sha&quot;, | 376:required=True, | 377:) | 379:ap.add_argument( | 380:&quot;--expected-policy`
+- `N2B6`: `SRC=381:required=True, | 382:) | 384:ap.add_argument( | 385:&quot;--scope&quot;, | 386:choices=(`
+- `N2B7`: `SRC=387:&quot;pilot&quot;, | 388:&quot;representatives&quot;, | 389:), | 390:default=&quot;pilot&quot;, | 391:)`
+- `N2B8`: `SRC=393:ap.add_argument( | 394:&quot;--identity-output&quot;, | 395:required=True, | 396:) | 398:ap.add_argument(`
+- `N2B9`: `SRC=399:&quot;--run-output&quot;, | 400:required=True, | 401:) | 403:ap.add_argument( | 404:&quot;--addendum-output&quot;,`
 - `PREFLIGHT_RERUN`: `NO`
 - `PROSPECTIVE_ACTIVATION`: `NO`
 - `RESTART`: `NO`
 - `SCORE_PRODUCER_CHANGE`: `NO`
-- `SHA1`: `MASTERSTATE=YES`
-- `SHA10`: `DRIFTCTX=431:!= args.expected_selection_sha | 432:): | 433:raise RuntimeError(`
-- `SHA11`: `EXPECTEDUSES=4`
-- `SHA12`: `EXPECTED 370:&quot;--expected-stage2b-sha&quot;,`
-- `SHA13`: `EXPECTED 423:!= args.expected_stage2b_sha`
-- `SHA14`: `EXPECTED 1016:args.expected_stage2b_sha,`
-- `SHA15`: `EXPECTED 1208:args.expected_stage2b_sha,`
-- `SHA16`: `ALIGNSHA=a2f700defb03c580`
-- `SHA17`: `SELSOURCE=a2f700defb03c580`
-- `SHA18`: `SELALIGNMATCH=YES`
-- `SHA19`: `POLICYREFS=4`
-- `SHA2`: `NORMEXISTS=YES`
-- `SHA20`: `POLICY authorities.stage2b_transformation_worker=indicator_incumbent_alignment_v1.py`
-- `SHA21`: `POLICY authorities.stage2b_transformation_worker_sha256=705ecf9c63e775f8`
-- `SHA22`: `POLICY authorities.stage3_representative_selection_sha256=b12021ecf6367f78`
-- `SHA23`: `POLICY normalizer_implementation_rules.must_reuse_stage2b_representation_semantics=True`
-- `SHA24`: `POLICYSHAUNIQUE=2`
-- `SHA25`: `POLICYSHA=705ecf9c63e775f8`
-- `SHA26`: `POLICYSHA=b12021ecf6367f78`
-- `SHA27`: `DRIFTBASIS=ARG,POLICY`
-- `SHA28`: `STDERRLINES=6`
-- `SHA29`: `STDERR=Traceback (most recent call last):`
-- `SHA3`: `POLICYEXISTS=YES`
-- `SHA30`: `STDERR=File &quot;PATH&quot;, line 1309, in &lt;module&gt;`
-- `SHA31`: `STDERR=main()`
-- `SHA32`: `STDERR=File &quot;PATH&quot;, line 425, in main`
-- `SHA33`: `STDERR=raise RuntimeError(`
-- `SHA34`: `STDERR=RuntimeError: STAGE2B_SHA_DRIFT`
-- `SHA35`: `SHASEMANTICS=RESOLVED`
-- `SHA36`: `NONE`
-- `SHA37`: `NONE`
-- `SHA38`: `NONE`
-- `SHA4`: `ALIGNEXISTS=YES`
-- `SHA5`: `SELECTIONEXISTS=YES`
-- `SHA6`: `DRIFTHITS=1`
-- `SHA7`: `DRIFTCTX=413:selection_path = Path( | 414:args.selection | 415:) | 417:policy_path = Path( | 418:args.policy`
-- `SHA8`: `DRIFTCTX=419:) | 421:if ( | 422:sha_file(stage2b_path) | 423:!= args.expected_stage2b_sha | 424:):`
-- `SHA9`: `DRIFTCTX=425:raise RuntimeError( | 426:&quot;STAGE2B_SHA_DRIFT&quot; | 427:) | 429:if ( | 430:sha_file(selection_path)`
 - `SOURCE_CHANGE`: `NO`
 - `STAGE3_RERUN`: `NO`
