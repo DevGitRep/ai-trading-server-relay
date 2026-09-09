@@ -1,12 +1,12 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-09T09:38:58.805096+00:00`
-- Run ID: `20260909T093856Z`
-- Step: `VALIDATEHISTORICALREPLAY`
+- Published UTC: `2026-09-09T09:53:25.426367+00:00`
+- Run ID: `20260909T095323Z`
+- Step: `READHISTMODELWIRING`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `HISTORICALMETRICPARITY`
+- Verdict: `HISTMODELWIRINGREAD`
 - Next gate: `REPLAYHISTORICALMODELS`
 
 ## Facts
@@ -16,42 +16,76 @@
 - `BRAIN_IQ_CHANGE`: `NO`
 - `CACHE_CHANGE`: `NO`
 - `DB_WRITE`: `NO`
-- `FACTS`: `18`
+- `FACTS`: `75`
+- `HMW1`: `MASTERSTATE=YES`
+- `HMW10`: `METHOD method.target.WF2.test_period=2025`
+- `HMW11`: `METHOD method.target.WF2.threshold_bp=254.9472717285156`
+- `HMW12`: `METHOD method.target.WF3.definition=range_120_bp &gt;= 243.2083969116211`
+- `HMW13`: `METHOD method.target.WF3.test_period=2026_H1`
+- `HMW14`: `METHOD method.target.WF3.threshold_bp=243.2083969116211`
+- `HMW15`: `METHOD method.target.fold_native=True`
+- `HMW16`: `METHOD method.target.source=FROZEN_OUTCOMES_RANGE_120_BP`
+- `HMW17`: `METHOD method.walk_forward.expanding_training_window=True`
+- `HMW18`: `METHOD method.walk_forward.gap_rows=120`
+- `HMW19`: `METHOD method.walk_forward.split_plan.WF2.fold_rows=220560`
+- `HMW2`: `METHODWIRE=129`
+- `HMW20`: `METHOD method.walk_forward.split_plan.WF2.splits[].purge_gap_minutes=120`
+- `HMW21`: `METHOD method.walk_forward.split_plan.WF2.splits[].test_first_start_utc=2025-08-26T08:40:00+00:00`
+- `HMW22`: `METHOD method.walk_forward.split_plan.WF2.splits[].test_last_start_utc=2025-09-20T21:19:00+00:00`
+- `HMW23`: `METHOD method.walk_forward.split_plan.WF2.splits[].test_local_index_end=73519`
+- `HMW24`: `METHOD method.walk_forward.split_plan.WF2.splits[].test_local_index_start=36760`
+- `HMW25`: `METHOD method.walk_forward.split_plan.WF2.splits[].test_rows_before_role_finite_filter=36760`
+- `HMW26`: `METHOD method.walk_forward.split_plan.WF2.splits[].train_first_start_utc=2025-07-31T20:00:00+00:00`
+- `HMW27`: `METHOD method.walk_forward.split_plan.WF2.splits[].train_last_start_utc=2025-08-26T06:39:00+00:00`
+- `HMW28`: `ROLECID=ICL_LIB_DEC7F969A4B5969C`
+- `HMW29`: `ROLEORD=0`
+- `HMW3`: `METHOD governance.model_retrained=False`
+- `HMW30`: `WF2KEYS=augmented,baseline,brier_delta,evaluated_test_rows,log_loss_delta,positive_rate,purge_gap_rows,roc_auc_d`
+- `HMW31`: `WF2 evaluated_test_rows=34970`
+- `HMW32`: `WF2 purge_gap_rows=120`
+- `HMW33`: `WF2 positive_rate=0.14526737203317128`
+- `HMW34`: `WF2 target_threshold_bp=254.9472717285156`
+- `HMW35`: `WF2 log_loss_delta=-0.00015137558154298958`
+- `HMW36`: `WF3KEYS=augmented,baseline,brier_delta,evaluated_test_rows,log_loss_delta,positive_rate,purge_gap_rows,roc_auc_d`
+- `HMW37`: `WF3 evaluated_test_rows=49977`
+- `HMW38`: `WF3 purge_gap_rows=120`
+- `HMW39`: `WF3 positive_rate=0.14616723692898734`
+- `HMW4`: `METHOD method.evaluation.cross_fold_probability_pooling=False`
+- `HMW40`: `WF3 target_threshold_bp=243.2083969116211`
+- `HMW41`: `WF3 log_loss_delta=-4.354778254611613e-06`
+- `HMW42`: `CACHEKEY=168cd4ddc6e8a5c027d7`
+- `HMW43`: `SERIESKEYS=native_identity,stage2b_selection_provenance,stage3_full_year_representation`
+- `HMW44`: `CACHECOLS=cache_key,cache_contract,origin_candidate_id,source_sha256,market_data_contract,market_data_sha256,dat`
+- `HMW45`: `CACHEROW=YES`
+- `HMW46`: `CACHEFIELD market_data_contract=str:24`
+- `HMW47`: `CACHEFIELD market_data_sha256=str:64`
+- `HMW48`: `CACHEFIELD artifact_path=str:241`
+- `HMW49`: `CACHEFIELD artifact_manifest_path=str:240`
+- `HMW5`: `METHOD method.preprocessing.candidate_specific_validity=For each role and split, incumbent-only and augmented mo`
+- `HMW50`: `CACHEFIELD artifact_raw_json_sha256=str:64`
+- `HMW51`: `CACHEFIELD artifact_file_sha256=str:64`
+- `HMW52`: `COMPROWS=481200`
+- `HMW53`: `COMPCOLS=candidate_row_index,candle_epoch,candle_start_utc,fold,test_period,breakout_probability`
+- `HMW54`: `OUTROWS=460000`
+- `HMW55`: `OUTCOLS=row_i,date,period,ret_5_bp,abs_ret_5_bp,range_5_bp,vol_5_bp,trend_eff_5,mfe_long_5_bp,mae_long_5_bp,mfe_`
+- `HMW56`: `COMPHASH candidate_row_index=635c1f7502049d21`
+- `HMW57`: `COMPHASH candle_epoch=41f19522f7cfa446`
+- `HMW58`: `COMPHASH candle_start_utc=aa3c37a1494c6e4e`
+- `HMW59`: `TARGETCOL range_120_bp dtype=float32`
+- `HMW6`: `METHOD method.preprocessing.fit_scaler_on=TRAIN_ROWS_ONLY`
+- `HMW60`: `NORMHITS=11`
+- `HMW61`: `NORMSRC=168:) | 169:) | 171:selected = matches[0].get( | 172:&quot;selected_series&quot; | 173:) | 175:if not isinstance(`
+- `HMW62`: `NORMSRC=462:) | 464:transform = getattr( | 465:stage2b, | 466:&quot;candidate_plot_representations&quot;, | 467:None, | 46`
+- `HMW63`: `NORMSRC=804:) | 806:series_out.append( | 807:{ | 808:&quot;native_identity&quot;: { | 809:&quot;source_sha256&quot;: | 810:dbrow[ |`
+- `HMW64`: `NORMSRC=844:&quot;unique_count&quot; | 845:), | 846:}, | 848:&quot;stage3_full_year_representation&quot;: { | 849:&quot;representation&quot;:`
+- `HMW7`: `METHOD method.preprocessing.performance_metrics_as_features=False`
+- `HMW8`: `METHOD method.preprocessing.scaler=sklearn.preprocessing.StandardScaler`
+- `HMW9`: `METHOD method.target.WF2.definition=range_120_bp &gt;= 254.9472717285156`
 - `INCREMENTAL_RUN`: `NO`
 - `INSTALL`: `NO`
 - `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
 - `MODEL_TRAINING`: `NO`
-- `PARITY1`: `MASTERSTATE=YES`
-- `PARITY10`: `CLASSMISMATCH=0`
-- `PARITY11`: `COUNTS=CP:6,MIX:27,NON:52`
-- `PARITY12`: `COUNTMATCH=YES`
-- `PARITY13`: `FROZENRANK=6`
-- `PARITY14`: `RANKIDMISMATCH=0`
-- `PARITY15`: `RANKMETRICMISMATCH=0`
-- `PARITY16`: `RANKMETHOD={&quot;automatic_challenger_promotion&quot;: false, &quot;eligible_for_retrospective_incremental_shortlist&quot;: &quot;CONSIS`
-- `PARITY17`: `RANKORDER=NOTASSERTED`
-- `PARITY18`: `METRICPARITY=YES`
-- `PARITY19`: `NONE`
-- `PARITY2`: `ROLES=85`
-- `PARITY20`: `NONE`
-- `PARITY21`: `NONE`
-- `PARITY22`: `NONE`
-- `PARITY23`: `NONE`
-- `PARITY24`: `NONE`
-- `PARITY25`: `NONE`
-- `PARITY26`: `NONE`
-- `PARITY27`: `NONE`
-- `PARITY28`: `NONE`
-- `PARITY29`: `NONE`
-- `PARITY3`: `METHODCP=YES`
-- `PARITY30`: `NONE`
-- `PARITY4`: `METHODMIXED=YES`
-- `PARITY5`: `METHODNONPOS=YES`
-- `PARITY6`: `REPLAYED=85`
-- `PARITY7`: `MISSINGMETRIC=0`
-- `PARITY8`: `DELTAMISMATCH=0`
-- `PARITY9`: `MAXDELTAERR=0.000e+00`
 - `PREFLIGHT_RERUN`: `NO`
 - `PROSPECTIVE_ACTIVATION`: `NO`
 - `RESTART`: `NO`
