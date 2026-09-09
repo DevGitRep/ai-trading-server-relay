@@ -1,80 +1,56 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-09T11:05:43.010701+00:00`
-- Run ID: `20260909T110540Z`
-- Step: `DIAGNOSEROLERESOLUTION`
+- Published UTC: `2026-09-09T11:21:12.502336+00:00`
+- Run ID: `20260909T112109Z`
+- Step: `REPLAYCANARYRESOLVED`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `ROLEIDENTITYRESOLVED`
-- Next gate: `REPLAYCANARY180RESOLVED`
+- Verdict: `CANARYMODELPARITY`
+- Next gate: `REPLAYALLHISTROLES180`
 
 ## Facts
 
 - `BENCHTEST_RERUN`: `NO`
 - `BRAIN_ADMISSION`: `NO`
 - `BRAIN_IQ_CHANGE`: `NO`
+- `CPAR1`: `MASTERSTATE=YES`
+- `CPAR10`: `COMPROWS=481200`
+- `CPAR11`: `WF2PASS=YES`
+- `CPAR12`: `WF2ROWS=34970/34970`
+- `CPAR13`: `WF2DELTA=-0.000151375581543/-0.000151375581543`
+- `CPAR14`: `WF2MAXERR=0.000e+00`
+- `CPAR15`: `WF3PASS=YES`
+- `CPAR16`: `WF3ROWS=49977/49977`
+- `CPAR17`: `WF3DELTA=-4.35477825461e-06/-4.35477825461e-06`
+- `CPAR18`: `WF3MAXERR=0.000e+00`
+- `CPAR19`: `CANARY=PASS`
+- `CPAR2`: `SKLEARN=1.8.0`
+- `CPAR20`: `NONE`
+- `CPAR21`: `NONE`
+- `CPAR22`: `NONE`
+- `CPAR23`: `NONE`
+- `CPAR24`: `NONE`
+- `CPAR3`: `FROZEN=1.8.0`
+- `CPAR4`: `MARKETROWS=525600`
+- `CPAR5`: `CID=ICL_LIB_DEC7F969A4B5969C`
+- `CPAR6`: `VECSHA=062ec9d6fd4be47c`
+- `CPAR7`: `SHAMATCHES=1`
+- `CPAR8`: `REPINDEX=6`
+- `CPAR9`: `NATIVEID=YES`
 - `CURRENT_INCREMENTAL_RUN`: `NO`
-- `FACTS`: `56`
+- `FACTS`: `19`
+- `HISTORICAL_MODEL_TRAINING`: `YES`
 - `INSTALL`: `NO`
 - `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
-- `MODEL_TRAINING`: `NO`
 - `PACKAGE_CHANGE`: `NO`
 - `PREFLIGHT_RERUN`: `NO`
 - `PROD_CACHE_CHANGE`: `NO`
 - `PROD_DB_WRITE`: `NO`
 - `PROSPECTIVE_ACTIVATION`: `NO`
 - `RESTART`: `NO`
-- `ROLE1`: `MASTERSTATE=YES`
-- `ROLE10`: `RSRC=&quot;representation&quot;`
-- `ROLE11`: `RSRC=]`
-- `ROLE12`: `RSRC=)`
-- `ROLE13`: `RSRC=old_price_scale = bool(`
-- `ROLE14`: `RSRC=&quot;price_scale&quot;`
-- `ROLE15`: `CID=ICL_LIB_DEC7F969A4B5969C`
-- `ROLE16`: `SELKEYS=native_identity,stage2b_selection_provenance,stage3_full_year_representation`
-- `ROLE17`: `PROVKEYS=finite_count,price_scale,representation,series_sha256,unique_count`
-- `ROLE18`: `PROV finite_count=500`
-- `ROLE19`: `PROV price_scale=False`
-- `ROLE2`: `RESOLVERSIG=(selected, full_reps)`
-- `ROLE20`: `PROV representation=EVENT_PRESENCE`
-- `ROLE21`: `PROV series_sha256=db051b42d9dc1f46`
-- `ROLE22`: `PROV unique_count=2`
-- `ROLE23`: `STAGE3KEYS=finite_count,price_scale,representation,resolution,row_count,unique_count,values_float64_sha256`
-- `ROLE24`: `STAGE3 finite_count=525600`
-- `ROLE25`: `STAGE3 price_scale=False`
-- `ROLE26`: `STAGE3 representation=EVENT_PRESENCE`
-- `ROLE27`: `STAGE3 resolution=EXACT_REPRESENTATION`
-- `ROLE28`: `STAGE3 row_count=525600`
-- `ROLE29`: `STAGE3 unique_count=2`
-- `ROLE3`: `RESOLVERLINES=77`
-- `ROLE30`: `STAGE3 values_float64_sha256=062ec9d6fd4be47c`
-- `ROLE31`: `NATIVEKEYS=plot_index,plot_title,source_sha256`
-- `ROLE32`: `NATIVE plot_index=4`
-- `ROLE33`: `NATIVE plot_title=Short pulse intensity`
-- `ROLE34`: `NATIVE source_sha256=dec7f969a4b5969c`
-- `ROLE35`: `REPS=7`
-- `ROLE36`: `PROVRESOLVE=RuntimeError:AMBIGUOUS_EXACT_REPRESENTATION`
-- `ROLE37`: `SELECTEDRESOLVE=KeyError:&#x27;representation&#x27;`
-- `ROLE38`: `STAGE3RESOLVE=RuntimeError:AMBIGUOUS_EXACT_REPRESENTATION`
-- `ROLE39`: `NATIVERESOLVE=KeyError:&#x27;representation&#x27;`
-- `ROLE4`: `RSRC=def resolve_selected_role(`
-- `ROLE40`: `REP0=finite_count:525600,plot_index:0,price_scale:False,representation:NUMERIC_RAW,title:Tactical phase cohe`
-- `ROLE41`: `REP1=finite_count:525596,plot_index:1,price_scale:False,representation:NUMERIC_RAW,title:Tactical wave,uniqu`
-- `ROLE42`: `REP2=finite_count:525597,plot_index:2,price_scale:False,representation:NUMERIC_RAW,title:Structural wave,uni`
-- `ROLE43`: `REP3=finite_count:139703,plot_index:3,price_scale:False,representation:NUMERIC_RAW,title:Long pulse intensit`
-- `ROLE44`: `REP4=finite_count:525600,plot_index:3,price_scale:False,representation:EVENT_PRESENCE,title:Long pulse inten`
-- `ROLE45`: `REP5=finite_count:139879,plot_index:4,price_scale:False,representation:NUMERIC_RAW,title:Short pulse intensi`
-- `ROLE46`: `REP6=finite_count:525600,plot_index:4,price_scale:False,representation:EVENT_PRESENCE,title:Short pulse inte`
-- `ROLE47`: `COARSEMATCHES=2`
-- `ROLE48`: `COARSEIDS=4,6`
-- `ROLE5`: `RSRC=selected,`
-- `ROLE6`: `RSRC=full_reps,`
-- `ROLE7`: `RSRC=):`
-- `ROLE8`: `RSRC=old_rep = str(`
-- `ROLE9`: `RSRC=selected[`
 - `SCORE_PRODUCER_CHANGE`: `NO`
 - `SOURCE_CHANGE`: `NO`
 - `STAGE3_RERUN`: `NO`
-- `TEMP_REPORT_WRITE`: `NO`
+- `TEMP_REPORT_WRITE`: `YES`
