@@ -1,27 +1,18 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-09T19:32:11.307966+00:00`
-- Run ID: `20260909T193209Z`
-- Step: `EQUALIZELIBGAPS`
+- Published UTC: `2026-09-09T19:36:14.908776+00:00`
+- Run ID: `20260909T193612Z`
+- Step: `READGAPOWNERS`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `LIBRARYGAPSREADY`
-- Next gate: `VISUALCHECK`
+- Verdict: `GAPOWNERSREAD`
+- Next gate: `FIXEXACTGAPS`
 
 ## Facts
 
 - `BENCHTEST`: `NO`
-- `DASH_HTTP`: `200`
 - `DB_WRITE`: `NO`
-- `LAB_HTTP`: `200`
-- `MASTER_CHANGE`: `YES`
 - `MASTER_READ`: `YES`
-- `MENU_KEPT`: `YES`
-- `RESTART`: `YES`
-- `ROOT_HTTP`: `200`
-- `SEARCH_GRID_GAP`: `10PX`
-- `SERVICE`: `active`
-- `STATS_SEARCH_GAP`: `10PX`
-- `TEMPLATE_CHANGE`: `YES`
-- `TITLE_STATS_GAP`: `10PX`
+- `RESTART`: `NO`
+- `SOURCE_CHANGE`: `NO`
