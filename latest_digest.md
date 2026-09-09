@@ -1,53 +1,49 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-09T10:58:24.906766+00:00`
-- Run ID: `20260909T105821Z`
-- Step: `READMARKETSCHEMA`
+- Published UTC: `2026-09-09T11:02:49.843983+00:00`
+- Run ID: `20260909T110246Z`
+- Step: `REPLAYCANARY180FIX`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `MARKETSCHEMAREAD`
-- Next gate: `REPLAYCANARY180FIX`
+- Verdict: `CANARYBLOCKED`
+- Next gate: `REVIEWCANARY180`
 
 ## Facts
 
 - `BENCHTEST_RERUN`: `NO`
 - `BRAIN_ADMISSION`: `NO`
 - `BRAIN_IQ_CHANGE`: `NO`
+- `CANFIX1`: `MASTERSTATE=YES`
+- `CANFIX10`: `ERROR=RuntimeError:ROLE_RESOLUTION:2`
+- `CANFIX11`: `NONE`
+- `CANFIX12`: `NONE`
+- `CANFIX13`: `NONE`
+- `CANFIX14`: `NONE`
+- `CANFIX15`: `NONE`
+- `CANFIX16`: `NONE`
+- `CANFIX17`: `NONE`
+- `CANFIX18`: `NONE`
+- `CANFIX19`: `NONE`
+- `CANFIX2`: `SKLEARN=1.8.0`
+- `CANFIX20`: `NONE`
+- `CANFIX21`: `NONE`
+- `CANFIX22`: `NONE`
+- `CANFIX23`: `NONE`
+- `CANFIX24`: `NONE`
+- `CANFIX3`: `FROZEN=1.8.0`
+- `CANFIX4`: `COMPROWS=481200`
+- `CANFIX5`: `MARKETROWS=525600`
+- `CANFIX6`: `TIMEUNIT=ms`
+- `CANFIX7`: `TIMEFIRST=2025-07-31 00:00:00+00:00`
+- `CANFIX8`: `TIMELAST=2026-07-30 23:59:00+00:00`
+- `CANFIX9`: `CID=ICL_LIB_DEC7F969A4B5969C`
 - `CURRENT_INCREMENTAL_RUN`: `NO`
-- `FACTS`: `17`
+- `FACTS`: `10`
+- `HISTORICAL_MODEL_TRAINING`: `YES`
 - `INSTALL`: `NO`
-- `MARKET1`: `MASTERSTATE=YES`
-- `MARKET10`: `FIRSTKEYS=close,high,low,open,time,volume`
-- `MARKET11`: `RETURNS=1`
-- `MARKET12`: `RETURNSRC=return ( meta, candles, open_, close, )`
-- `MARKET13`: `CANDLELINES=3`
-- `MARKET14`: `CANDLESRC=212:meta[&quot;actual_candles&quot;]`
-- `MARKET15`: `CANDLESRC=242:candles = [`
-- `MARKET16`: `CANDLESRC=305:candles,`
-- `MARKET17`: `SCHEMAREADY=YES`
-- `MARKET18`: `NONE`
-- `MARKET19`: `NONE`
-- `MARKET2`: `RETURNLEN=4`
-- `MARKET20`: `NONE`
-- `MARKET21`: `NONE`
-- `MARKET22`: `NONE`
-- `MARKET23`: `NONE`
-- `MARKET24`: `NONE`
-- `MARKET25`: `NONE`
-- `MARKET26`: `NONE`
-- `MARKET27`: `NONE`
-- `MARKET28`: `NONE`
-- `MARKET3`: `META=type=dict len=20`
-- `MARKET4`: `CANDLES=type=list len=525600`
-- `MARKET5`: `OPEN=type=Series shape=(525600,) dtype=float64 len=525600`
-- `MARKET6`: `CLOSE=type=Series shape=(525600,) dtype=float64 len=525600`
-- `MARKET7`: `METAKEYS=actual_candles,benchtest_duration_contract,candidate_count_controls_duration,candidate_count_controls_n`
-- `MARKET8`: `CANDLELIST=YES`
-- `MARKET9`: `FIRSTTYPE=dict`
 - `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
-- `MODEL_TRAINING`: `NO`
 - `PACKAGE_CHANGE`: `NO`
 - `PREFLIGHT_RERUN`: `NO`
 - `PROD_CACHE_CHANGE`: `NO`
@@ -57,3 +53,4 @@
 - `SCORE_PRODUCER_CHANGE`: `NO`
 - `SOURCE_CHANGE`: `NO`
 - `STAGE3_RERUN`: `NO`
+- `TEMP_REPORT_WRITE`: `YES`
