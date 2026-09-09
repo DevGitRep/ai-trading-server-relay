@@ -1,13 +1,13 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-09T10:10:34.485594+00:00`
-- Run ID: `20260909T101031Z`
-- Step: `READARTIFACTSCHEMA`
+- Published UTC: `2026-09-09T10:25:31.769088+00:00`
+- Run ID: `20260909T102528Z`
+- Step: `EXTRACTROLEVECTOR`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `ARTIFACTSCHEMAREAD`
-- Next gate: `EXTRACTROLEVECTOR`
+- Verdict: `ROLEVECTOREXTRACTED`
+- Next gate: `REPLAYHISTORICALMODELS`
 
 ## Facts
 
@@ -16,7 +16,49 @@
 - `BRAIN_IQ_CHANGE`: `NO`
 - `CACHE_CHANGE`: `NO`
 - `DB_WRITE`: `NO`
-- `FACTS`: `41`
+- `EXTRACT1`: `MASTERSTATE=YES`
+- `EXTRACT10`: `PLOTS=11`
+- `EXTRACT11`: `NUMERICPLOTS=11`
+- `EXTRACT12`: `PLOTLENRANGE=525600-525600`
+- `EXTRACT13`: `REPS=7`
+- `EXTRACT14`: `REPKEYS=finite_count,plot_index,price_scale,representation,title,unique_count,values`
+- `EXTRACT15`: `BESTINDEX=6`
+- `EXTRACT16`: `BESTMATCH=8/9`
+- `EXTRACT17`: `VECTORFIELDS=1`
+- `EXTRACT18`: `VECTOR=values len=525600 finite=525600 unique=2 sha=062ec9d6fd4be47c`
+- `EXTRACT19`: `NORMWIRE=20`
+- `EXTRACT2`: `TRANSFORM=YES`
+- `EXTRACT20`: `NORMSRC=167:len(matches) | 168:) | 169:) | 171:selected = matches[0].get( | 172:&quot;selected_series&quot; | 173:) | 17`
+- `EXTRACT21`: `NORMSRC=227:return by_native | 230:def resolve_selected_role( | 231:selected, | 232:full_reps, | 233:): | 235:`
+- `EXTRACT22`: `NORMSRC=244:] | 245:) | 247:exact = [ | 248:rep | 249:for rep in full_reps | 250:if ( | 251:str( | 252:rep[ |`
+- `EXTRACT23`: `NORMSRC=290:if old_rep in NUMERIC_FAMILY: | 292:numeric = [ | 293:rep | 294:for rep in full_reps | 295:if str(`
+- `EXTRACT24`: `NORMSRC=658:raise RuntimeError( | 659:&quot;PLOTS_NOT_LIST:&quot; | 660:+ cid | 661:) | 663:full_reps = transform( | 664`
+- `EXTRACT25`: `FULLVECTORS=1`
+- `EXTRACT26`: `ROLEMATCH=YES`
+- `EXTRACT27`: `VECTORREADY=YES`
+- `EXTRACT28`: `ROLEVECTORREADY=YES`
+- `EXTRACT29`: `NONE`
+- `EXTRACT3`: `TRANSFORMSIG=(plots, close)`
+- `EXTRACT30`: `NONE`
+- `EXTRACT31`: `NONE`
+- `EXTRACT32`: `NONE`
+- `EXTRACT33`: `NONE`
+- `EXTRACT34`: `NONE`
+- `EXTRACT35`: `NONE`
+- `EXTRACT36`: `NONE`
+- `EXTRACT37`: `NONE`
+- `EXTRACT38`: `NONE`
+- `EXTRACT39`: `NONE`
+- `EXTRACT4`: `MARKETROWS=525600`
+- `EXTRACT40`: `NONE`
+- `EXTRACT41`: `NONE`
+- `EXTRACT42`: `NONE`
+- `EXTRACT5`: `CLOSEFINITE=525600`
+- `EXTRACT6`: `CID=ICL_LIB_DEC7F969A4B5969C`
+- `EXTRACT7`: `ROLECOUNT=7`
+- `EXTRACT8`: `CACHEKEY=168cd4ddc6e8a5c027d7`
+- `EXTRACT9`: `TARGETKEYS=native_identity,stage2b_selection_provenance,stage3_full_year_representation`
+- `FACTS`: `28`
 - `INCREMENTAL_RUN`: `NO`
 - `INSTALL`: `NO`
 - `MASTER_CHANGE`: `NO`
@@ -25,48 +67,6 @@
 - `PREFLIGHT_RERUN`: `NO`
 - `PROSPECTIVE_ACTIVATION`: `NO`
 - `RESTART`: `NO`
-- `SCHEMA1`: `MASTERSTATE=YES`
-- `SCHEMA10`: `PLOTSITEM2=dict:2 keys=title,values`
-- `SCHEMA11`: `VIZ=dict:12 keys=overlay,plots,bgcolors,barcolors,hlines,fills,shapes,chars,arrows,candles,plotbars,drawings`
-- `SCHEMA12`: `VIZCHILD overlay=bool`
-- `SCHEMA13`: `VIZCHILD plots=list:11 first=dict:10 keys=title,style,linewidth,offset,histbase,trackprice,forceOverlay,color,co`
-- `SCHEMA14`: `VIZCHILD bgcolors=list:1 first=dict:5 keys=title,offset,forceOverlay,color,colors`
-- `SCHEMA15`: `VIZCHILD barcolors=list:0`
-- `SCHEMA16`: `VIZCHILD hlines=list:3 first=dict:5 keys=title,price,color,linestyle,linewidth`
-- `SCHEMA17`: `VIZCHILD fills=list:0`
-- `SCHEMA18`: `VIZCHILD shapes=list:4 first=dict:11 keys=title,style,location,size,text,textcolor,offset,forceOverlay,color,col`
-- `SCHEMA19`: `VIZCHILD chars=list:0`
-- `SCHEMA2`: `CID=ICL_LIB_DEC7F969A4B5969C`
-- `SCHEMA20`: `VIZCHILD arrows=list:0`
-- `SCHEMA21`: `VIZCHILD candles=list:0`
-- `SCHEMA22`: `NORMHITS=15`
-- `SCHEMA23`: `NORMSRC=167:len(matches) | 168:) | 169:) | 171:selected = matches[0].get( | 172:&quot;selected_series&quot; | 173:) | 175:`
-- `SCHEMA24`: `NORMSRC=461:stage2b_path, | 462:) | 464:transform = getattr( | 465:stage2b, | 466:&quot;candidate_plot_representation`
-- `SCHEMA25`: `NORMSRC=477:( | 478:meta, | 479:candles, | 480:open_, | 481:close, | 482:) = bench.load_market_data() | 484:if (`
-- `SCHEMA26`: `NORMSRC=498:) | 500:if ( | 501:len(candles) | 502:!= EXPECTED_ROWS | 503:or len(close) | 504:!= EXPECTED_ROWS |`
-- `SCHEMA27`: `NORMSRC=645:raise RuntimeError( | 646:&quot;CACHE_NOT_PASS:&quot; | 647:+ cid | 648:) | 650:plots = artifact.get( | 651:&quot;p`
-- `SCHEMA28`: `NORMSRC=659:&quot;PLOTS_NOT_LIST:&quot; | 660:+ cid | 661:) | 663:full_reps = transform( | 664:plots, | 665:close, | 666:)`
-- `SCHEMA29`: `NORMSRC=906:&quot;series&quot;: | 907:series_out, | 908:} | 909:) | 911:con.close() | 913:# | 914:# Pilot-specific frozen`
-- `SCHEMA3`: `CACHEKEY=168cd4ddc6e8a5c027d7`
-- `SCHEMA30`: `NORMSRC=1162:&quot;different native values when executed with different &quot; | 1163:&quot;preceding history&quot; | 1164:), | 1166`
-- `SCHEMA31`: `WORKERHITS=67`
-- `SCHEMA32`: `WORKERSRC=466:required = { | 467:&quot;date&quot;, | 468:&quot;open&quot;, | 469:&quot;high&quot;, | 470:&quot;low&quot;, | 471:&quot;close&quot;, | 472:} | 474:m`
-- `SCHEMA33`: `WORKERSRC=492:[ | 493:&quot;date&quot;, | 494:&quot;open&quot;, | 495:&quot;high&quot;, | 496:&quot;low&quot;, | 497:&quot;close&quot;, | 498:] | 499:].copy() | 5`
-- `SCHEMA34`: `WORKERSRC=507:for column in ( | 508:&quot;open&quot;, | 509:&quot;high&quot;, | 510:&quot;low&quot;, | 511:&quot;close&quot;, | 512:): | 513:frame[colum`
-- `SCHEMA35`: `WORKERSRC=528:raise RuntimeError( | 529:&quot;CANONICAL_HISTORY_NOT_CHRONOLOGICAL&quot; | 530:) | 532:# | 533:# Frozen sco`
-- `SCHEMA36`: `WORKERSRC=685:raise RuntimeError( | 686:&quot;NONFINITE_BREAKOUT_PROBABILITY&quot; | 687:) | 689:# | 690:# Existing scorer`
-- `SCHEMA37`: `WORKERSRC=811:dataset, | 812:candles, | 813:) | 816:def candidate_plot_representations( | 817:plots, | 818:close`
-- `SCHEMA38`: `PLOTSSCHEMA=YES`
-- `SCHEMA39`: `VIZSCHEMA=YES`
-- `SCHEMA4`: `ARTIFACT=dict:4 keys=kind,resinVersion,plots,viz`
-- `SCHEMA40`: `CONSUMERLOGIC=YES`
-- `SCHEMA41`: `EXTRACTIONREADY=YES`
-- `SCHEMA42`: `NONE`
-- `SCHEMA5`: `KIND=str:9`
-- `SCHEMA6`: `RESINVERSION=str:5`
-- `SCHEMA7`: `PLOTS=list:11 first=dict:2 keys=title,values`
-- `SCHEMA8`: `PLOTSITEM0=dict:2 keys=title,values`
-- `SCHEMA9`: `PLOTSITEM1=dict:2 keys=title,values`
 - `SCORE_PRODUCER_CHANGE`: `NO`
 - `SOURCE_CHANGE`: `NO`
 - `STAGE3_RERUN`: `NO`
