@@ -1,13 +1,13 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-09T09:12:58.770918+00:00`
-- Run ID: `20260909T091256Z`
-- Step: `DESIGNISOLATEDREPLAY`
+- Published UTC: `2026-09-09T09:32:42.522793+00:00`
+- Run ID: `20260909T093240Z`
+- Step: `REVIEWREPLAYWIRING`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `REPLAYDESIGNREAD`
-- Next gate: `REVIEWREPLAYWIRING`
+- Verdict: `REPLAYWIRINGREAD`
+- Next gate: `VALIDATEHISTORICALREPLAY`
 
 ## Facts
 
@@ -16,71 +16,7 @@
 - `BRAIN_IQ_CHANGE`: `NO`
 - `CACHE_CHANGE`: `NO`
 - `DB_WRITE`: `NO`
-- `DESIGN1`: `MASTERSTATE=YES`
-- `DESIGN10`: `RULE method.preprocessing.imputation=NONE`
-- `DESIGN11`: `RULE method.preprocessing.performance_metrics_as_features=False`
-- `DESIGN12`: `RULE method.evaluation.primary_metric=LOG_LOSS`
-- `DESIGN13`: `RULE method.evaluation.primary_delta_definition=incumbent_only_log_loss - augmented_log_loss`
-- `DESIGN14`: `RULE method.evaluation.cross_fold_probability_pooling=False`
-- `DESIGN15`: `RULE method.evaluation.cross_fold_summary=Row-count-weighted mean of fold-specific metric deltas only; raw fold`
-- `DESIGN16`: `RULE method.target.WF2.test_period=2025`
-- `DESIGN17`: `RULE method.target.WF2.threshold_bp=254.9472717285156`
-- `DESIGN18`: `RULE method.target.WF3.test_period=2026_H1`
-- `DESIGN19`: `RULE method.target.WF3.threshold_bp=243.2083969116211`
-- `DESIGN2`: `RULE method.estimator.class=sklearn.linear_model.LogisticRegression`
-- `DESIGN20`: `CLASS CONSISTENT_POSITIVE=primary log-loss delta &gt; 0 in WF2 AND &gt; 0 in WF3`
-- `DESIGN21`: `CLASS MIXED=WF2 and WF3 primary log-loss deltas have different signs`
-- `DESIGN22`: `CLASS NON_POSITIVE=primary log-loss delta &lt;= 0 in WF2 AND &lt;= 0 in WF3`
-- `DESIGN23`: `CLASS no_minimum_effect_threshold=True`
-- `DESIGN24`: `CLASS no_p_value_threshold=True`
-- `DESIGN25`: `COMPROWS=481200`
-- `DESIGN26`: `COMPCOLS=6`
-- `DESIGN27`: `COLS=candidate_row_index,candle_epoch,candle_start_utc,fold,test_period,breakout_probability`
-- `DESIGN28`: `CENSUS fold=WF3:260640,WF2:220560`
-- `DESIGN29`: `RANGE candidate_row_index=0 to 481199`
-- `DESIGN3`: `RULE method.estimator.C=1.0`
-- `DESIGN30`: `RANGE candle_start_utc=2025-07-31 20:00:00+00:00 to 2026-06-30 23:59:00+00:00`
-- `DESIGN31`: `IDENTCAND=9`
-- `DESIGN32`: `IDENTSERIES=36`
-- `DESIGN33`: `CANDKEYS=cache_key,candidate_id,script_name,selected_role_count,series,source_sha256`
-- `DESIGN34`: `SERIESKEYS=native_identity,stage2b_selection_provenance,stage3_full_year_representation`
-- `DESIGN35`: `FIRSTCID=ICL_LIB_A54371FD6D088869`
-- `DESIGN36`: `DBRELEVANT=25`
-- `DESIGN37`: `TABLE benchtest_native_artifact_cache_v1 rows=665 cols=cache_key,cache_contract,origin_candidate_id,source_sha25`
-- `DESIGN38`: `TABLE benchtest_trades_v1 rows=1203272 cols=run_id,candidate_id,trade_no,raw_json,benchmark_mode`
-- `DESIGN39`: `TABLE candidate_events rows=41 cols=event_id,candidate_id,created_epoch_ms,event_type,payload_json`
-- `DESIGN4`: `RULE method.estimator.penalty=l2`
-- `DESIGN40`: `TABLE candidates rows=11775 cols=candidate_id,created_epoch_ms,updated_epoch_ms,intake_method,name,family,target`
-- `DESIGN41`: `TABLE conversion_jobs rows=12 cols=conversion_job_id,candidate_id,created_epoch_ms,updated_epoch_ms,source_sha25`
-- `DESIGN42`: `TABLE default_test_results_v1 rows=0 cols=run_id,candidate_id,source_sha256,contract_version,signal_contract,sco`
-- `DESIGN43`: `NORMWIREHITS=6`
-- `DESIGN44`: `WIRE=171:selected = matches[0].get( | 172:&quot;selected_series&quot; | 173:) | 175:if not isinstance(`
-- `DESIGN45`: `WIRE=464:transform = getattr( | 465:stage2b, | 466:&quot;candidate_plot_representations&quot;, | 467:None, | 468:)`
-- `DESIGN46`: `WIRE=896:], | 898:&quot;cache_key&quot;: | 899:manifest[ | 900:&quot;cache_key&quot; | 901:],`
-- `DESIGN47`: `WIRE=898:&quot;cache_key&quot;: | 899:manifest[ | 900:&quot;cache_key&quot; | 901:], | 903:&quot;selected_role_count&quot;:`
-- `DESIGN48`: `WIRE=1053:Path( | 1054:args.identity_output | 1055:).write_bytes( | 1056:identity_payload | 1057:)`
-- `DESIGN49`: `WIRE=1201:&quot;authority&quot;: | 1202:( | 1203:&quot;candidate_plot_representations&quot; | 1204:&quot;(plots, close)&quot; | 1205:),`
-- `DESIGN5`: `RULE method.estimator.solver=lbfgs`
-- `DESIGN50`: `HISTROLES=85`
-- `DESIGN51`: `ROLEKEYS=candidate_id,classification,deterministic_tie_break,folds,global_role_index,native_identity,ranking_pri`
-- `DESIGN52`: `ROLECID=ICL_LIB_DEC7F969A4B5969C`
-- `DESIGN53`: `ROLEORD=0`
-- `DESIGN54`: `FOLDKEYS=WF2,WF3`
-- `DESIGN55`: `WF2KEYS=augmented,baseline,brier_delta,evaluated_test_rows,log_loss_delta,positive_rate,purge_gap_rows,roc_auc_d`
-- `DESIGN56`: `WF2 augmentedkeys=brier,log_loss,roc_auc,rows`
-- `DESIGN57`: `WF2 target_threshold_bp=254.9472717285156`
-- `DESIGN58`: `WF3KEYS=augmented,baseline,brier_delta,evaluated_test_rows,log_loss_delta,positive_rate,purge_gap_rows,roc_auc_d`
-- `DESIGN59`: `WF3 augmentedkeys=brier,log_loss,roc_auc,rows`
-- `DESIGN6`: `RULE method.estimator.max_iter=1000`
-- `DESIGN60`: `WF3 target_threshold_bp=243.2083969116211`
-- `DESIGN61`: `COMPFOLD=YES`
-- `DESIGN62`: `COMPTIME=YES`
-- `DESIGN63`: `COMPPROB=YES`
-- `DESIGN64`: `COMPTARGET=NO`
-- `DESIGN7`: `RULE method.estimator.fit_intercept=True`
-- `DESIGN8`: `RULE method.preprocessing.scaler=sklearn.preprocessing.StandardScaler`
-- `DESIGN9`: `RULE method.preprocessing.fit_scaler_on=TRAIN_ROWS_ONLY`
-- `FACTS`: `67`
+- `FACTS`: `97`
 - `INCREMENTAL_RUN`: `NO`
 - `INSTALL`: `NO`
 - `MASTER_CHANGE`: `NO`
@@ -92,3 +28,67 @@
 - `SCORE_PRODUCER_CHANGE`: `NO`
 - `SOURCE_CHANGE`: `NO`
 - `STAGE3_RERUN`: `NO`
+- `WIRE1`: `MASTERSTATE=YES`
+- `WIRE10`: `OUTCOMEFILE=user_data/indicator_brain/cache/sol_indicator_discovery_v1a_20260818_105001_outcome_sample.feather`
+- `WIRE11`: `SUPPORT=indicator_original_training_argv1_lineage_v1.json refs=11`
+- `WIRE12`: `REF argv1_lineage.frozen_training_assignment=BINANCE = Path(sys.argv[1])`
+- `WIRE13`: `REF governance.model_retrained=False`
+- `WIRE14`: `REF outcomes_cache.arrow_metadata.pandas={&quot;index_columns&quot;: [{&quot;kind&quot;: &quot;range&quot;, &quot;name&quot;: null, &quot;start&quot;: 0, &quot;stop&quot;:`
+- `WIRE15`: `REF outcomes_cache.path=sol_indicator_discovery_v1a_20260818_105001_outcome_sample.feather`
+- `WIRE16`: `REF outcomes_cache.period_counts.2022=100000`
+- `WIRE17`: `REF outcomes_cache.period_counts.2023=100000`
+- `WIRE18`: `REF outcomes_cache.period_counts.2024=100000`
+- `WIRE19`: `REF outcomes_cache.period_counts.2025=100000`
+- `WIRE2`: `AUTHKEYS=comparator_manifest_sha256,comparator_sha256,frozen_identity_sha256,market_sha256,outcomes_sha256`
+- `WIRE20`: `REF outcomes_cache.period_counts.2026_H1=60000`
+- `WIRE21`: `REF outcomes_cache.rows=460000`
+- `WIRE22`: `REF outcomes_cache.sha256=9614c641e89f1f32`
+- `WIRE23`: `SUPPORT=indicator_wf2_wf3_oof_coverage_authority_v1.json refs=31`
+- `WIRE24`: `REF current_stage3_feature_coverage.candidate_epochs_sha256=3c2f3238f241b887`
+- `WIRE25`: `REF current_stage3_feature_coverage.epoch_hash_match=True`
+- `WIRE26`: `REF current_stage3_feature_coverage.fold_appropriate_rows=481200`
+- `WIRE27`: `REF current_stage3_feature_coverage.frozen_candidate_epochs_sha256=3c2f3238f241b887`
+- `WIRE28`: `REF current_stage3_feature_coverage.outside_coverage.first_confirmed_epoch=1782864060`
+- `WIRE29`: `REF current_stage3_feature_coverage.outside_coverage.first_start_utc=2026-07-01T00:00:00+00:00`
+- `WIRE3`: `AUTH comparator_manifest_sha256=5afb0ff3cb8cc258`
+- `WIRE30`: `REF current_stage3_feature_coverage.outside_coverage.last_confirmed_epoch=1785456000`
+- `WIRE31`: `REF current_stage3_feature_coverage.outside_coverage.last_start_utc=2026-07-30T23:59:00+00:00`
+- `WIRE32`: `REF current_stage3_feature_coverage.outside_coverage.rows=43200`
+- `WIRE33`: `REF current_stage3_feature_coverage.outside_frozen_test_fold_rows=43200`
+- `WIRE34`: `REF current_stage3_feature_coverage.total_rows=524400`
+- `WIRE35`: `REF folds.WF2.calibration=2024`
+- `WIRE36`: `REF folds.WF2.current_stage3_coverage.first_confirmed_epoch=1753992060`
+- `WIRE37`: `REF folds.WF2.current_stage3_coverage.first_start_utc=2025-07-31T20:00:00+00:00`
+- `WIRE38`: `SUPPORT=indicator_incumbent_comparator_classification_v1.json refs=25`
+- `WIRE39`: `REF important_semantics.cross_fold_evaluation_policy=evaluate fold-aware first; aggregate only with explicit fol`
+- `WIRE4`: `AUTH comparator_sha256=e27bfb1ef21f3cd3`
+- `WIRE40`: `REF important_semantics.deployment_wf3_backfill_over_training_history_may_be_called_oos=False`
+- `WIRE41`: `REF important_semantics.fold_appropriate_scores_are_out_of_fold_relative_to_incumbent_training=True`
+- `WIRE42`: `REF important_semantics.fold_breakout_thresholds_are_identical=False`
+- `WIRE43`: `REF important_semantics.fold_probability_scales_must_not_be_assumed_identical=True`
+- `WIRE44`: `REF reconstruction.feature_builder=build_exact_features(frame, source_path)`
+- `WIRE45`: `REF reconstruction.feature_builder_source=sol_indicator_orderflow_fusion_v2_breakout_scorer_20260818_183730.py`
+- `WIRE46`: `REF reconstruction.feature_builder_source_sha256=1a4d1482db895b4f`
+- `WIRE47`: `REF reconstruction.feature_count=14`
+- `WIRE48`: `REF reconstruction.folds[].breakout_threshold=278.92894287109374`
+- `WIRE49`: `REF reconstruction.folds[].calibration=2023`
+- `WIRE5`: `AUTH frozen_identity_sha256=58913337a555e3ee`
+- `WIRE50`: `REF reconstruction.folds[].fold=WF1`
+- `WIRE51`: `REF reconstruction.folds[].test=2024`
+- `WIRE52`: `SUPPORT=indicator_incumbent_full_year_feature_wf3_regression_v1.json refs=24`
+- `WIRE53`: `REF determinism.feature_exact=True`
+- `WIRE54`: `REF determinism.wf3_probability_exact=True`
+- `WIRE55`: `REF determinism.wf3_tail500_exact=True`
+- `WIRE56`: `REF feature.authority=build_exact_features(frame, source_path)`
+- `WIRE57`: `REF feature.feature_count=14`
+- `WIRE58`: `REF feature.feature_dtype=float32`
+- `WIRE59`: `REF feature.feature_matrix_sha256=01f2b5b56cc09530`
+- `WIRE6`: `AUTH market_sha256=b577ee5771839c9a`
+- `WIRE60`: `REF feature.feature_rows=524400`
+- `WIRE61`: `REF feature.finite_feature_matrix_sha256=01f2b5b56cc09530`
+- `WIRE62`: `REF feature.finite_mask_sha256=df181da1a854f993`
+- `WIRE63`: `REF feature.finite_rows=524400`
+- `WIRE64`: `REF feature.indicator_source_sha256=157ad75a62de3015`
+- `WIRE7`: `AUTH outcomes_sha256=9614c641e89f1f32`
+- `WIRE8`: `OUTCOMESHA=9614c641e89f1f32`
+- `WIRE9`: `OUTCOMEMATCHES=1`
