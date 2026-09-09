@@ -1,13 +1,13 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-09T08:56:40.235540+00:00`
-- Run ID: `20260909T085638Z`
-- Step: `READINCREMENTALRUNNER`
+- Published UTC: `2026-09-09T09:03:49.752386+00:00`
+- Run ID: `20260909T090346Z`
+- Step: `READINCREMENTALMETHOD`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `INCREMENTALRUNNERREAD`
-- Next gate: `READINCREMENTALMETHOD`
+- Verdict: `INCREMENTALMETHODREAD`
+- Next gate: `DESIGNISOLATEDREPLAY`
 
 ## Facts
 
@@ -16,66 +16,90 @@
 - `BRAIN_IQ_CHANGE`: `NO`
 - `CACHE_CHANGE`: `NO`
 - `DB_WRITE`: `NO`
-- `FACTS`: `20`
+- `FACTS`: `153`
 - `INCREMENTAL_RUN`: `NO`
 - `INSTALL`: `NO`
 - `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
+- `METHOD1`: `MASTERSTATE=YES`
+- `METHOD10`: `MSTRUCT contract=str`
+- `METHOD11`: `MSTRUCT created_at_utc=str`
+- `METHOD12`: `MSTRUCT formal_indicator_iq=int`
+- `METHOD13`: `MSTRUCT governance=dict:6`
+- `METHOD14`: `MSTRUCT governance.database_write=bool`
+- `METHOD15`: `MSTRUCT governance.discovery_executed=bool`
+- `METHOD16`: `MSTRUCT governance.formal_iq_changed=bool`
+- `METHOD17`: `MSTRUCT governance.indicator_brain_mutated=bool`
+- `METHOD18`: `MSTRUCT governance.model_retrained=bool`
+- `METHOD19`: `MSTRUCT governance.predictions_written=bool`
+- `METHOD2`: `METHODPATHS=101`
+- `METHOD20`: `MSTRUCT method=dict:14`
+- `METHOD21`: `METHODREFS=149`
+- `METHOD22`: `METHOD authorities.role_schema=$IDS.candidates[].series`
+- `METHOD23`: `METHOD method.evaluation.cross_fold_probability_pooling=False`
+- `METHOD24`: `METHOD method.evaluation.cross_fold_summary=Row-count-weighted mean of fold-specific metric deltas only; raw f`
+- `METHOD25`: `METHOD method.evaluation.positive_delta_means=LIBRARY_ROLE_IMPROVES_OUT_OF_SAMPLE_LOG_LOSS`
+- `METHOD26`: `METHOD method.evaluation.primary_delta_definition=incumbent_only_log_loss - augmented_log_loss`
+- `METHOD27`: `METHOD method.preprocessing.candidate_specific_validity=For each role and split, incumbent-only and augmented`
+- `METHOD28`: `METHOD method.preprocessing.fit_scaler_on=TRAIN_ROWS_ONLY`
+- `METHOD29`: `METHOD method.preprocessing.imputation=NONE`
+- `METHOD3`: `MSTRUCT authorities=dict:6`
+- `METHOD30`: `METHOD method.preprocessing.performance_metrics_as_features=False`
+- `METHOD31`: `METHOD method.preprocessing.scaler=sklearn.preprocessing.StandardScaler`
+- `METHOD32`: `METHOD method.retrospective_evidence_classification.CONSISTENT_POSITIVE=primary log-loss delta &gt; 0 in WF2 AND`
+- `METHOD33`: `METHOD method.retrospective_evidence_classification.MIXED=WF2 and WF3 primary log-loss deltas have different s`
+- `METHOD34`: `METHOD method.retrospective_evidence_classification.NON_POSITIVE=primary log-loss delta &lt;= 0 in WF2 AND &lt;= 0 i`
+- `METHOD35`: `METHOD method.retrospective_evidence_classification.no_minimum_effect_threshold=True`
+- `METHOD36`: `METHOD method.retrospective_evidence_classification.no_p_value_threshold=True`
+- `METHOD37`: `METHOD method.retrospective_evidence_classification.purpose=Retrospective discovery classification only, not p`
+- `METHOD38`: `METHOD method.role_count=85`
+- `METHOD39`: `METHOD method.target.WF2.definition=range_120_bp &gt;= 254.9472717285156`
+- `METHOD4`: `MSTRUCT authorities.comparator_semantic_sha256=str`
+- `METHOD40`: `METHOD method.target.WF2.test_period=2025`
+- `METHOD41`: `METHOD method.target.WF2.threshold_bp=254.9472717285156`
+- `METHOD42`: `METHOD method.target.WF3.definition=range_120_bp &gt;= 243.2083969116211`
+- `METHOD43`: `METHOD method.target.WF3.test_period=2026_H1`
+- `METHOD44`: `METHOD method.target.WF3.threshold_bp=243.2083969116211`
+- `METHOD45`: `METHOD method.target.fold_native=True`
+- `METHOD46`: `METHOD method.target.source=FROZEN_OUTCOMES_RANGE_120_BP`
+- `METHOD47`: `RETROPATHS=144`
+- `METHOD48`: `RSTRUCT authorities=dict:5`
+- `METHOD49`: `RSTRUCT authorities.comparator_manifest_sha256=str`
+- `METHOD5`: `MSTRUCT authorities.indicator_model_sha256=str`
+- `METHOD50`: `RSTRUCT authorities.comparator_sha256=str`
+- `METHOD51`: `RSTRUCT authorities.frozen_identity_sha256=str`
+- `METHOD52`: `RSTRUCT authorities.market_sha256=str`
+- `METHOD53`: `RSTRUCT authorities.outcomes_sha256=str`
+- `METHOD54`: `RSTRUCT automatic_brain_promotion=bool`
+- `METHOD55`: `RSTRUCT brain_value_proven=bool`
+- `METHOD56`: `RSTRUCT candidate_count=int`
+- `METHOD57`: `RSTRUCT classification_counts=dict:3`
+- `METHOD58`: `RSTRUCT classification_counts.CONSISTENT_POSITIVE=int`
+- `METHOD59`: `RSTRUCT classification_counts.MIXED=int`
+- `METHOD6`: `MSTRUCT authorities.normalizer_sha256=str`
+- `METHOD60`: `RSTRUCT classification_counts.NON_POSITIVE=int`
+- `METHOD61`: `RSTRUCT consistent_positive_count=int`
+- `METHOD62`: `RSTRUCT consistent_positive_ranking=list:6`
+- `METHOD63`: `RSTRUCT consistent_positive_ranking[].candidate_id=str`
+- `METHOD64`: `RETROREFS=21795`
+- `METHOD65`: `RETRO candidate_count=17`
+- `METHOD66`: `RETRO classification_counts.CONSISTENT_POSITIVE=6`
+- `METHOD67`: `RETRO classification_counts.MIXED=27`
+- `METHOD68`: `RETRO classification_counts.NON_POSITIVE=52`
+- `METHOD69`: `RETRO consistent_positive_ranking[].candidate_id=ICL_LIB_DEC7F969A4B5969C`
+- `METHOD7`: `MSTRUCT authorities.role_lengths=list:17`
+- `METHOD70`: `RETRO consistent_positive_ranking[].min_log_loss_delta=0.00016959631731428004`
+- `METHOD71`: `RETRO consistent_positive_ranking[].role_ordinal=2`
+- `METHOD72`: `RETRO consistent_positive_ranking[].weighted_mean_log_loss_delta=0.00021682659605243035`
+- `METHOD73`: `RETRO consistent_positive_ranking[].candidate_id=ICL_LIB_ADE006748BF49980`
+- `METHOD74`: `RETRO consistent_positive_ranking[].min_log_loss_delta=7.549851591603929e-05`
+- `METHOD75`: `RETRO consistent_positive_ranking[].role_ordinal=1`
+- `METHOD76`: `RETRO consistent_positive_ranking[].weighted_mean_log_loss_delta=0.00013114738214150528`
+- `METHOD8`: `MSTRUCT authorities.role_schema=str`
+- `METHOD9`: `MSTRUCT authorities.sklearn_version=str`
 - `PREFLIGHT_RERUN`: `NO`
 - `PROSPECTIVE_ACTIVATION`: `NO`
 - `RESTART`: `NO`
-- `RUNNER1`: `MASTERSTATE=YES`
-- `RUNNER10`: `LINEAGE method.estimator.max_iter=1000`
-- `RUNNER11`: `LINEAGE method.estimator.penalty=l2`
-- `RUNNER12`: `LINEAGE method.estimator.solver=lbfgs`
-- `RUNNER13`: `LINEAGE method.evaluation.cross_fold_probability_pooling=False`
-- `RUNNER14`: `LINEAGE method.evaluation.cross_fold_summary=Row-count-weighted mean of fold-specific metric deltas only; raw fo`
-- `RUNNER15`: `LINEAGE method.evaluation.metrics_computed=Separately per WF2 and WF3 from concatenated walk-forward test predic`
-- `RUNNER16`: `LINEAGE method.evaluation.positive_delta_means=LIBRARY_ROLE_IMPROVES_OUT_OF_SAMPLE_LOG_LOSS`
-- `RUNNER17`: `LINEAGE method.evaluation.primary_delta_definition=incumbent_only_log_loss - augmented_log_loss`
-- `RUNNER18`: `LINEAGE method.evaluation.primary_metric=LOG_LOSS`
-- `RUNNER19`: `CANDIDATES=0`
-- `RUNNER2`: `METHODLINEAGE=175`
-- `RUNNER20`: `STRONG=0`
-- `RUNNER21`: `NONE`
-- `RUNNER22`: `NONE`
-- `RUNNER23`: `NONE`
-- `RUNNER24`: `NONE`
-- `RUNNER25`: `NONE`
-- `RUNNER26`: `NONE`
-- `RUNNER27`: `NONE`
-- `RUNNER28`: `NONE`
-- `RUNNER29`: `NONE`
-- `RUNNER3`: `RETROLINEAGE=95`
-- `RUNNER30`: `NONE`
-- `RUNNER31`: `NONE`
-- `RUNNER32`: `NONE`
-- `RUNNER33`: `NONE`
-- `RUNNER34`: `NONE`
-- `RUNNER35`: `NONE`
-- `RUNNER36`: `NONE`
-- `RUNNER37`: `NONE`
-- `RUNNER38`: `NONE`
-- `RUNNER39`: `NONE`
-- `RUNNER4`: `CONTRACTLINEAGE=5`
-- `RUNNER40`: `NONE`
-- `RUNNER41`: `NONE`
-- `RUNNER42`: `NONE`
-- `RUNNER43`: `NONE`
-- `RUNNER44`: `NONE`
-- `RUNNER45`: `NONE`
-- `RUNNER46`: `NONE`
-- `RUNNER47`: `NONE`
-- `RUNNER48`: `NONE`
-- `RUNNER49`: `NONE`
-- `RUNNER5`: `LINEAGE method.candidate_count=17`
-- `RUNNER50`: `NONE`
-- `RUNNER51`: `NONE`
-- `RUNNER52`: `NONE`
-- `RUNNER6`: `LINEAGE method.estimator.C=1.0`
-- `RUNNER7`: `LINEAGE method.estimator.class=sklearn.linear_model.LogisticRegression`
-- `RUNNER8`: `LINEAGE method.estimator.fit_intercept=True`
-- `RUNNER9`: `LINEAGE method.estimator.hyperparameter_tuning=False`
 - `SCORE_PRODUCER_CHANGE`: `NO`
 - `SOURCE_CHANGE`: `NO`
 - `STAGE3_RERUN`: `NO`
