@@ -1,63 +1,66 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-09T07:46:11.653938+00:00`
-- Run ID: `20260909T074239Z`
-- Step: `RERUNSTAGE3VECTORBT`
+- Published UTC: `2026-09-09T08:06:57.636666+00:00`
+- Run ID: `20260909T080655Z`
+- Step: `READSTAGE2BSHA`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `STAGE3DRYRUNBLOCKED`
-- Next gate: `REVIEWSTAGE3DRYRUN`
+- Verdict: `STAGE2BSHAREAD`
+- Next gate: `RERUNNORMALIZER`
 
 ## Facts
 
 - `BENCHTEST_RERUN`: `NO`
 - `BRAIN_ADMISSION`: `NO`
 - `BRAIN_IQ_CHANGE`: `NO`
-- `FACTS`: `17`
+- `CACHE_CHANGE`: `NO`
+- `DB_WRITE`: `NO`
+- `FACTS`: `35`
 - `INSTALL`: `NO`
 - `MASTER_CHANGE`: `NO`
 - `MASTER_READ`: `YES`
 - `PREFLIGHT_RERUN`: `NO`
-- `PROD_CACHE_CHANGE`: `NO`
-- `PROD_DB_WRITE`: `NO`
 - `PROSPECTIVE_ACTIVATION`: `NO`
 - `RESTART`: `NO`
+- `SCORE_PRODUCER_CHANGE`: `NO`
+- `SHA1`: `MASTERSTATE=YES`
+- `SHA10`: `DRIFTCTX=431:!= args.expected_selection_sha | 432:): | 433:raise RuntimeError(`
+- `SHA11`: `EXPECTEDUSES=4`
+- `SHA12`: `EXPECTED 370:&quot;--expected-stage2b-sha&quot;,`
+- `SHA13`: `EXPECTED 423:!= args.expected_stage2b_sha`
+- `SHA14`: `EXPECTED 1016:args.expected_stage2b_sha,`
+- `SHA15`: `EXPECTED 1208:args.expected_stage2b_sha,`
+- `SHA16`: `ALIGNSHA=a2f700defb03c580`
+- `SHA17`: `SELSOURCE=a2f700defb03c580`
+- `SHA18`: `SELALIGNMATCH=YES`
+- `SHA19`: `POLICYREFS=4`
+- `SHA2`: `NORMEXISTS=YES`
+- `SHA20`: `POLICY authorities.stage2b_transformation_worker=indicator_incumbent_alignment_v1.py`
+- `SHA21`: `POLICY authorities.stage2b_transformation_worker_sha256=705ecf9c63e775f8`
+- `SHA22`: `POLICY authorities.stage3_representative_selection_sha256=b12021ecf6367f78`
+- `SHA23`: `POLICY normalizer_implementation_rules.must_reuse_stage2b_representation_semantics=True`
+- `SHA24`: `POLICYSHAUNIQUE=2`
+- `SHA25`: `POLICYSHA=705ecf9c63e775f8`
+- `SHA26`: `POLICYSHA=b12021ecf6367f78`
+- `SHA27`: `DRIFTBASIS=ARG,POLICY`
+- `SHA28`: `STDERRLINES=6`
+- `SHA29`: `STDERR=Traceback (most recent call last):`
+- `SHA3`: `POLICYEXISTS=YES`
+- `SHA30`: `STDERR=File &quot;PATH&quot;, line 1309, in &lt;module&gt;`
+- `SHA31`: `STDERR=main()`
+- `SHA32`: `STDERR=File &quot;PATH&quot;, line 425, in main`
+- `SHA33`: `STDERR=raise RuntimeError(`
+- `SHA34`: `STDERR=RuntimeError: STAGE2B_SHA_DRIFT`
+- `SHA35`: `SHASEMANTICS=RESOLVED`
+- `SHA36`: `NONE`
+- `SHA37`: `NONE`
+- `SHA38`: `NONE`
+- `SHA4`: `ALIGNEXISTS=YES`
+- `SHA5`: `SELECTIONEXISTS=YES`
+- `SHA6`: `DRIFTHITS=1`
+- `SHA7`: `DRIFTCTX=413:selection_path = Path( | 414:args.selection | 415:) | 417:policy_path = Path( | 418:args.policy`
+- `SHA8`: `DRIFTCTX=419:) | 421:if ( | 422:sha_file(stage2b_path) | 423:!= args.expected_stage2b_sha | 424:):`
+- `SHA9`: `DRIFTCTX=425:raise RuntimeError( | 426:&quot;STAGE2B_SHA_DRIFT&quot; | 427:) | 429:if ( | 430:sha_file(selection_path)`
 - `SOURCE_CHANGE`: `NO`
-- `STAGE3_EXECUTED`: `YES`
-- `TEMP`: `stage3_vectorbt_dryrun_20260909T074239Z`
-- `TEMP_DB_WRITE`: `YES`
-- `VBT1`: `MASTERSTATE=YES`
-- `VBT10`: `CACHERC=0`
-- `VBT11`: `CACHESTATUS=PASS`
-- `VBT12`: `CACHEBATCH=9`
-- `VBT13`: `CACHEPASS=9`
-- `VBT14`: `CACHEFAIL=0`
-- `VBT15`: `NORMRC=1`
-- `VBT16`: `NORMERROR=RuntimeError: STAGE2B_SHA_DRIFT`
-- `VBT17`: `ERROR=RuntimeError:NORMALIZER_STAGE_FAILED`
-- `VBT18`: `NONE`
-- `VBT19`: `NONE`
-- `VBT2`: `RUNTIME=VECTORBT`
-- `VBT20`: `NONE`
-- `VBT21`: `NONE`
-- `VBT22`: `NONE`
-- `VBT23`: `NONE`
-- `VBT24`: `NONE`
-- `VBT25`: `NONE`
-- `VBT26`: `NONE`
-- `VBT27`: `NONE`
-- `VBT28`: `NONE`
-- `VBT29`: `NONE`
-- `VBT3`: `CACHEAUTH=62e055d15b36868f`
-- `VBT30`: `NONE`
-- `VBT31`: `NONE`
-- `VBT32`: `NONE`
-- `VBT33`: `NONE`
-- `VBT34`: `NONE`
-- `VBT4`: `MARKETSHA=b577ee5771839c9a`
-- `VBT5`: `CACHECOPIES=2`
-- `VBT6`: `SELECTION=13to9`
-- `VBT7`: `CLUSTERFREE=5`
-- `VBT8`: `COVER=7/7`
-- `VBT9`: `TEMPDB=YES`
+- `STAGE3_RERUN`: `NO`
