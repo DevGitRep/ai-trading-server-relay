@@ -1,24 +1,25 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-09T19:46:14.127866+00:00",
-  "run_id": "20260909T194612Z",
-  "step": "FIXSEARCHGRIDGAP",
+  "published_at_utc": "2026-09-09T19:48:47.682819+00:00",
+  "run_id": "20260909T194845Z",
+  "step": "ALIGNBANNERLEFT",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "SEARCHGRIDGAPREADY",
+  "verdict": "BANNERLEFTALIGNED",
   "next_gate": "VISUALCHECK",
   "facts": {
     "BENCHTEST": "NO",
+    "CTA_POSITION": "KEPT",
     "DASH_HTTP": "200",
     "DB_WRITE": "NO",
+    "DESKTOP_SHIFT": "32PX",
     "LAB_HTTP": "200",
     "MASTER_CHANGE": "YES",
     "MASTER_READ": "YES",
+    "MOBILE_SHIFT": "14PX",
     "RESTART": "YES",
     "ROOT_HTTP": "200",
-    "SEARCH_GRID": "10PX",
     "SERVICE": "active",
-    "STATS_SEARCH": "10PX",
     "TEMPLATE_CHANGE": "YES"
   }
 }
