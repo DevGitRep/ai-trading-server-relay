@@ -1,34 +1,39 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-10T12:05:51.148080+00:00`
-- Run ID: `20260910T120548Z`
-- Step: `TYS_PREFLIGHT_TARGET_AUDIT`
+- Published UTC: `2026-09-10T12:07:55.062244+00:00`
+- Run ID: `20260910T120753Z`
+- Step: `TYS_EXACT_PREFLIGHT_SEAM_LOCATOR`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `TYS_PREFLIGHT_TARGET_DEFECT_CONFIRMED`
-- Next gate: `PATCH_AUTHORITATIVE_PREFLIGHT_ONLY`
+- Verdict: `TYS_PREFLIGHT_TARGET_UNRESOLVED`
+- Next gate: `READ_ONLY_EXACT_FUNCTION_CONTEXT`
 
 ## Facts
 
 - `BENCHTEST`: `NO`
+- `BOTROOTAST`: `NA`
+- `BOTROOTEX`: `NO`
+- `BOTROOTHOME`: `NA`
+- `BOTROOTSHA`: `NA`
+- `DASHROOTAST`: `NA`
+- `DASHROOTEX`: `NO`
+- `DASHROOTHOME`: `NA`
+- `DASHROOTSHA`: `NA`
 - `DB_WRITE`: `NO`
-- `LABAST`: `PASS`
-- `LABSHA`: `b33d1fa6d6bd10d4`
+- `HITS`: `156`
 - `MASTER_READ`: `YES`
-- `PFAST`: `PASS`
-- `PFDASH`: `YES`
-- `PFDB`: `DASH`
-- `PFEXPAND`: `NO`
-- `PFHOME`: `NO`
-- `PFPY`: `NONE`
-- `PFROOT`: `YES`
-- `PFSHA`: `af8824a8aaa534b4`
-- `PFTP`: `DASH`
+- `MASTTOOLS`: `YES`
 - `RESTART`: `NO`
 - `SOURCE_CHANGE`: `NO`
-- `TYSCALLS`: `2`
-- `TYSCWD`: `NONE`
-- `TYSFUNC`: `NO`
-- `TYSPF`: `UNKNOWN`
+- `TOOLSAST`: `PASS`
+- `TOOLSEX`: `YES`
+- `TOOLSHOME`: `NO`
+- `TOOLSSHA`: `af8824a8aaa534b4`
+- `TYSCWD`: `OTHER`
+- `TYSEXACT`: `YES`
+- `TYSFILE`: `test_your_script_v1.py`
+- `TYSFUNC`: `run_exact_preflight`
+- `TYSLINE`: `785`
 - `TYSPY`: `UNKNOWN`
+- `TYSTARGET`: `UNKNOWN`
