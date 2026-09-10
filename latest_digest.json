@@ -1,23 +1,22 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-10T21:21:43.341082+00:00",
-  "run_id": "20260910T212141Z",
-  "step": "PIN_SINGLE_STATUSDATA_CALL",
+  "published_at_utc": "2026-09-10T21:22:49.663458+00:00",
+  "run_id": "20260910T212247Z",
+  "step": "PIN_EXACT_STATUSDATA_RHS",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "SINGLE_STATUSDATA_ASSIGNMENT_PINNED",
-  "next_gate": "PATCH_ONLY_EXISTING_STATUSDATA_CALL",
+  "verdict": "EXACT_STATUSDATA_CALL_PINNED",
+  "next_gate": "PATCH_ONLY_THIS_STATUS_CALL_WITH_SUBMISSION_BINDING",
   "facts": {
     "BENCHTEST_RUN": "NO",
     "CLOUDFLARE_ACTION": "NO",
     "DB_WRITE": "NO",
-    "OWNER_FUNCTION": "NONE",
-    "OWNER_HAS_SUBMISSION_ARG": "NO",
-    "OWNER_LINE": "NONE",
     "RESTART": "NO",
     "SOURCE_CHANGE": "NO",
-    "STATUSDATA_ASSIGN_COUNT": "1",
-    "STATUSDATA_ASSIGN_LINE": "3716",
-    "STATUSDATA_HIT_COUNT": "3"
+    "STATUSDATA_ASSIGN": "const_statusData_=",
+    "STATUSDATA_LINE": "3716",
+    "STATUS_URL_LINE": "NONE",
+    "SUBMISSION_EXPR": "NONE",
+    "SUBMISSION_EXPR_COUNT": "0"
   }
 }
