@@ -1,23 +1,21 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-10T19:52:19.060092+00:00",
-  "run_id": "20260910T195216Z",
-  "step": "INSPECT_EXACT_BROWSER_SUBMISSION_SELECTION",
+  "published_at_utc": "2026-09-10T19:52:59.645446+00:00",
+  "run_id": "20260910T195257Z",
+  "step": "VERIFY_BROWSER_LINK_TARGET_ID",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "SUBMISSION_ID_COMES_FROM_BROWSER_REQUEST",
-  "next_gate": "VERIFY_BROWSER_LINK_TARGET_ID",
+  "verdict": "BROWSER_REQUEST_ID_NOT_VISIBLE_IN_JOURNAL",
+  "next_gate": "INSPECT_TOKEN_TO_SUBMISSION_MAPPING",
   "facts": {
     "BENCHTEST_RUN": "NO",
-    "CALLER_FUNCTION": "indicator_lab_test_your_script_private_report_v14",
+    "BROWSER_SUBMISSION_ID": "NONE",
     "CLOUDFLARE_ACTION": "NO",
     "DB_WRITE": "NO",
-    "LATEST_BENCHTEST_STATUS": "COMPLETE",
-    "LATEST_SUBMISSION_ROWID": "30",
+    "LATEST_COMPLETE_ROWID": "30",
+    "RECENT_REQUEST_HIT_COUNT": "0",
     "RESTART": "NO",
-    "SOURCE_CHANGE": "NO",
-    "SUBMISSION_ID_FROM_LATEST_QUERY": "NO",
-    "SUBMISSION_ID_FROM_REQUEST": "YES",
-    "SUBMISSION_ID_FROM_TOKEN": "YES"
+    "ROUTE_DECORATOR": "app.route/indicator-lab/test-your-script/report/submission_id,_methods=GET",
+    "SOURCE_CHANGE": "NO"
   }
 }
