@@ -1,21 +1,19 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-09T20:21:17.933154+00:00",
-  "run_id": "20260909T202116Z",
-  "step": "VERIFYCLOUDFLARED",
+  "published_at_utc": "2026-09-10T01:40:23.312373+00:00",
+  "run_id": "20260910T014021Z",
+  "step": "VERIFYCFTUNNEL",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "CLOUDFLAREDVERIFIED",
-  "next_gate": "CLOUDFLAREDOMAIN",
+  "verdict": "CFTUNNELCHECKED",
+  "next_gate": "PUBLISHAPP",
   "facts": {
-    "CF_CONFIG": "NO",
-    "CF_SERVICE": "inactive",
-    "CF_VERSION": "cloudflared-version-2026.9.0-(built-2026-09-09-16:30-UTC)",
-    "CLOUDFLARED": "YES",
+    "CF_ENABLED": "enabled",
+    "CF_SERVICE": "active",
     "DB_WRITE": "NO",
+    "LOCAL_HTTP": "200",
     "MASTER_READ": "YES",
     "RESTART": "NO",
-    "SOURCE_CHANGE": "NO",
-    "TAILSCALE": "active"
+    "SOURCE_CHANGE": "NO"
   }
 }
