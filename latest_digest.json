@@ -1,24 +1,24 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-10T18:35:26.586707+00:00",
-  "run_id": "20260910T183524Z",
-  "step": "CAPTURE_EXACT_SUCCESS_CLASSIFICATION_POINT",
+  "published_at_utc": "2026-09-10T18:44:08.080452+00:00",
+  "run_id": "20260910T184406Z",
+  "step": "FIND_HISTORICAL_TYS_COPIES",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "SUCCESS_CLASSIFIER_NEEDS_EXACT_SELECTION",
-  "next_gate": "SELECT_EXACT_CLASSIFIER_FROM_WINDOW",
+  "verdict": "HISTORICAL_DIFFERENT_TYS_WORKER_FOUND",
+  "next_gate": "COMPARE_FOUR_KNOWN_WORKER_POINTS",
   "facts": {
     "BENCHTEST_RUN": "NO",
-    "CLASSIFIER_COUNT": "4",
     "CLOUDFLARE_ACTION": "NO",
+    "CURRENT_WORKER_SHA": "00259d197a737783",
     "DB_WRITE": "NO",
-    "FIRST_DELIVERY_LINE": "479",
+    "DIFFERENT_WORKER_COUNT": "29",
+    "IDENTICAL_WORKER_COUNT": "0",
+    "NEWEST_DIFFERENT_COPY": "test_your_script_v1.py.pre_benchtest_stdout_capture",
+    "NEWEST_DIFFERENT_PARENT": "orderflow_dashboard",
+    "NEWEST_DIFFERENT_SHA": "72873e07141aac8e",
     "RESTART": "NO",
-    "SECOND_DELIVERY_LINE": "502",
     "SOURCE_CHANGE": "NO",
-    "SUBPROCESS_END_LINE": "484",
-    "SUCCESS_LIKE_COUNT": "0",
-    "SUCCESS_LIKE_LINES": "NONE",
-    "WORKER_COUNT": "1"
+    "TYS_COPY_COUNT": "29"
   }
 }
