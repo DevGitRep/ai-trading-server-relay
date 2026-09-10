@@ -1,25 +1,24 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-10T20:04:59.702265+00:00",
-  "run_id": "20260910T200457Z",
-  "step": "INSPECT_DECLARATIVE_TYS_STATUS_HOOKS",
+  "published_at_utc": "2026-09-10T20:05:46.398378+00:00",
+  "run_id": "20260910T200544Z",
+  "step": "INSPECT_ONLY_TYS_FORM_RENDER_BLOCK",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "STATUS_HOOKS_INCOMPLETE",
-  "next_gate": "INSPECT_ONLY_TYS_FORM_RENDER_BLOCK",
+  "verdict": "THIS_BLOCK_IS_API_NOT_VISIBLE_FORM",
+  "next_gate": "LOCATE_SINGLE_VISIBLE_TYS_TEMPLATE_OWNER",
   "facts": {
     "BENCHTEST_RUN": "NO",
+    "BLOCK_HAS_HTML": "NO",
+    "BLOCK_HAS_JSON": "YES",
+    "BLOCK_HAS_POLL": "NO",
+    "BLOCK_HAS_STATUS_URL": "YES",
+    "BLOCK_HAS_SUBMISSION_ID": "YES",
     "CLOUDFLARE_ACTION": "NO",
-    "CONTEXT_HAS_BENCHMARK_UI": "NO",
-    "CONTEXT_HAS_DATA_ATTR": "NO",
-    "CONTEXT_HAS_FORM": "NO",
-    "CONTEXT_HAS_SCRIPT": "NO",
-    "CONTEXT_HAS_STATUS_URL": "YES",
-    "CONTEXT_HAS_SUBMISSION_ID": "YES",
     "DB_WRITE": "NO",
+    "OWNERS": "indicator_lab_test_your_script_status_v8b,register_indicator_lab_routes",
+    "OWNER_COUNT": "2",
     "RESTART": "NO",
-    "SOURCE_CHANGE": "NO",
-    "STATUS_REF_COUNT": "4",
-    "STATUS_REF_LINES": "3280,3283,3284,3408"
+    "SOURCE_CHANGE": "NO"
   }
 }
