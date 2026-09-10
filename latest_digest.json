@@ -1,20 +1,25 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-10T20:54:51.448364+00:00",
-  "run_id": "20260910T205449Z",
-  "step": "PIN_EXACT_COMPLETE_RENDER_HELPER",
+  "published_at_utc": "2026-09-10T20:55:57.348133+00:00",
+  "run_id": "20260910T205555Z",
+  "step": "INSPECT_LOCAL_TYS_POLL_FUNCTION",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "HELPER_NOT_PINNED",
-  "next_gate": "INSPECT_ONLY_LOCAL_HELPER_DEFINITION",
+  "verdict": "LOCAL_POLL_FUNCTION_CONTEXT_CAPTURED",
+  "next_gate": "PATCH_ONLY_PROVEN_COMPLETE_UI_TRANSITION",
   "facts": {
     "BENCHTEST_RUN": "NO",
     "CLOUDFLARE_ACTION": "NO",
-    "COMPLETE_LINE": "3782",
     "DB_WRITE": "NO",
-    "RENDER_HELPER": "NONE",
+    "HAS_COMPLETE": "YES",
+    "HAS_DOM_UPDATE": "NO",
+    "HAS_ERROR": "NO",
+    "HAS_RELOAD": "NO",
+    "HAS_RUNNING": "YES",
+    "LOCAL_CALLS": "Error,cleanText,json,render,toUpperCase",
+    "POLL_FUNCTION": "NONE",
+    "POLL_FUNCTION_LINE": "NONE",
     "RESTART": "NO",
-    "RETURN_LINE": "NONE",
     "SOURCE_CHANGE": "NO"
   }
 }
