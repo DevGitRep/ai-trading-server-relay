@@ -1,22 +1,22 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-10T21:11:45.445634+00:00",
-  "run_id": "20260910T211143Z",
-  "step": "INSPECT_SUPPORTED_TYS_DOM_STATES",
+  "published_at_utc": "2026-09-10T21:14:36.806301+00:00",
+  "run_id": "20260910T211434Z",
+  "step": "PIN_TYS_POLL_LIFECYCLE",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "SUCCESS_DOM_STATE_IS_SUPPORTED",
-  "next_gate": "INSPECT_ONLY_COMPLETE_RENDER_TARGET_IDENTITY",
+  "verdict": "POLL_LIFECYCLE_BROKEN",
+  "next_gate": "PATCH_ONLY_MINIMAL_POLL_LIFECYCLE",
   "facts": {
     "BENCHTEST_RUN": "NO",
     "CLOUDFLARE_ACTION": "NO",
-    "COMPONENT_FILE_COUNT": "2",
+    "COMPLETE_BRANCH_PRESENT": "YES",
     "DB_WRITE": "NO",
-    "PASS_SUPPORTED": "NO",
+    "POLL_USES_SUBMISSION_ID": "NO",
+    "POST_STARTS_POLL": "NO",
     "RESTART": "NO",
+    "RUNNING_RESCHEDULES_POLL": "YES",
     "SOURCE_CHANGE": "NO",
-    "STATE_SELECTOR_COUNT": "3",
-    "SUCCESS_SUPPORTED": "YES",
-    "SUPPORTED_STATES": "error,running,success"
+    "STATUS_FETCH_COUNT": "0"
   }
 }
