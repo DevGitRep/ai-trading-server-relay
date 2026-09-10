@@ -1,19 +1,24 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-10T21:36:04.580371+00:00",
-  "run_id": "20260910T213602Z",
-  "step": "VERIFY_ACTIVE_TYS_PATCH_AFTER_RESTART",
+  "published_at_utc": "2026-09-10T21:50:43.530594+00:00",
+  "run_id": "20260910T215041Z",
+  "step": "PIN_TYS_BUTTON_AND_MODAL_CLOSE",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "TYS_PATCH_ACTIVE_READY_FOR_BROWSER_SMOKE",
-  "next_gate": "MANUAL_BROWSER_TYS_SMOKE",
+  "verdict": "TYS_UX_HOOKS_PARTIALLY_PINNED",
+  "next_gate": "PATCH_ONLY_USING_EXISTING_MODAL_ELEMENT",
   "facts": {
+    "BACKEND_BENCHTEST_CHANGE": "NO",
     "BENCHTEST_RUN": "NO",
-    "BINDING_COUNT": "1",
+    "BUTTON_HOOK_COUNT": "0",
+    "BUTTON_VAR": "NONE",
+    "CLOSE_CALL": "NONE",
+    "CLOSE_HOOK_COUNT": "0",
     "CLOUDFLARE_ACTION": "NO",
     "DB_WRITE": "NO",
+    "EMAIL_CHAIN_CHANGE": "NO",
     "RESTART": "NO",
-    "SERVICE_ACTIVE": "YES",
-    "SOURCE_CHANGE": "NO"
+    "SOURCE_CHANGE": "NO",
+    "SUBMISSION_SOURCE_PRESENT": "YES"
   }
 }
