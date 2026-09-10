@@ -1,21 +1,27 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-10T13:19:42.183194+00:00",
-  "run_id": "20260910T131940Z",
-  "step": "READ_LATEST_TYS_BENCH_FAILURE",
+  "published_at_utc": "2026-09-10T13:20:58.680182+00:00",
+  "run_id": "20260910T132056Z",
+  "step": "READ_TYS_WORKER_LAUNCH_SEAM",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "TYS_BENCH_FAILURE_READ",
-  "next_gate": "CAPTURE_EXACT_WORKER_ERROR",
+  "verdict": "TYS_WORKER_LAUNCH_SEAM_IDENTIFIED",
+  "next_gate": "FIX_EXACT_START_SEAM",
   "facts": {
     "BENCHTEST": "NO",
     "CLOUDFLARE": "UNTOUCHED",
+    "DB_BENCH_ERROR": "NONE",
+    "DB_BENCH_STATUS": "NONE",
     "DB_QUICKCHECK": "ok",
     "DB_WRITE": "NO",
-    "FAILURE_CLASS": "UNKNOWN",
+    "LAUNCH_KIND": "POPEN",
     "MASTER_READ": "YES",
     "RESTART": "NO",
     "SOURCE_CHANGE": "NO",
-    "WRAPPER": "BENCHTEST_1_RECENT"
+    "START_CMD": "sys.executable_strPath__file__.resolve_--tys-bench-worker_submission_id_candidate_id_source_sha256",
+    "START_CWD": "strROOT",
+    "WORKER_BENCH_SIMPLE": "YES",
+    "WORKER_CANDIDATE_MODE": "NO",
+    "WORKER_DISPATCH": "YES"
   }
 }
