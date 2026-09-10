@@ -1,27 +1,28 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-10T18:24:18.136124+00:00`
-- Run ID: `20260910T182415Z`
-- Step: `CAPTURE_EXACT_TYS_STATUS_WRITER_CONTRACT`
+- Published UTC: `2026-09-10T18:25:48.281332+00:00`
+- Run ID: `20260910T182546Z`
+- Step: `INSPECT_EXACT_STATUS_WRITER_HELPER`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `STATUS_WRITER_HELPER_IDENTIFIED`
-- Next gate: `PATCH_EXACT_STATUS_WRITER_HELPER`
+- Verdict: `STATUS_WRITER_HELPER_CONTRACT_CAPTURED`
+- Next gate: `PATCH_EXACT_STATUS_WRITER_CONDITION`
 
 ## Facts
 
 - `BENCHTEST_RUN`: `NO`
 - `CLOUDFLARE_ACTION`: `NO`
+- `COMPLETE_LITERAL_LINES`: `736,737`
 - `DB_WRITE`: `NO`
+- `ERROR_LITERAL_LINES`: `720,727,731,733,740,744`
+- `HELPER_CALLSITES`: `1`
+- `HELPER_CALL_OWNERS`: `_deliver_completed_report_email_v15`
+- `HELPER_GUARDS`: `8`
+- `HELPER_LINE_END`: `752`
+- `HELPER_LINE_START`: `707`
+- `HELPER_RETURNS`: `9`
+- `HELPER_WRITE_CALLS`: `7`
 - `RESTART`: `NO`
 - `SOURCE_CHANGE`: `NO`
-- `START_EXISTING_COMPLETE`: `YES`
-- `STATUS_WRITER_FUNCTIONS`: `issue_private_report_access_token_v14`
-- `TARGET_FUNCTION_COUNT`: `2`
-- `WORKER_COMPLETE_WRITER`: `NONE`
-- `WORKER_ERROR_WRITER`: `NONE`
-- `WORKER_PARAMS`: `submission_id,candidate_id,source_sha256`
-- `WORKER_RC_GUARD`: `NONE`
-- `WORKER_SUBPROCESS_ASSIGN`: `proc_=_subprocess.run_home_transformer_freqtrade_bot_user_data_orderflow_dashboard_tools_benchtest_,_1_,_recent_,_cwd=strROOT,_stdout=subprocess.PIPE,_stderr=subprocess.STDOUT,_`
-- `WORKER_WRITES_SUBMISSION`: `NONE`
+- `STATUS_WRITER_HELPER`: `issue_private_report_access_token_v14`
