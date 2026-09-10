@@ -1,22 +1,22 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-10T21:10:35.730832+00:00",
-  "run_id": "20260910T211033Z",
-  "step": "INSPECT_EXACT_RENDER_STATE_PARAMETER_USAGE",
+  "published_at_utc": "2026-09-10T21:11:45.445634+00:00",
+  "run_id": "20260910T211143Z",
+  "step": "INSPECT_SUPPORTED_TYS_DOM_STATES",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "STATE_PARAMETER_IS_PASSED_DIRECTLY_TO_DOM_STATE",
-  "next_gate": "INSPECT_ONLY_SUPPORTED_DOM_STATE_SELECTORS",
+  "verdict": "SUCCESS_DOM_STATE_IS_SUPPORTED",
+  "next_gate": "INSPECT_ONLY_COMPLETE_RENDER_TARGET_IDENTITY",
   "facts": {
     "BENCHTEST_RUN": "NO",
     "CLOUDFLARE_ACTION": "NO",
+    "COMPONENT_FILE_COUNT": "2",
     "DB_WRITE": "NO",
+    "PASS_SUPPORTED": "NO",
     "RESTART": "NO",
     "SOURCE_CHANGE": "NO",
-    "STATE_COMPARE_VALUES": "NONE",
-    "STATE_TO_CLASS": "NO",
-    "STATE_TO_DATASET": "YES",
-    "STATE_TO_TEMPLATE": "NO",
-    "STATE_USAGE_COUNT": "2"
+    "STATE_SELECTOR_COUNT": "3",
+    "SUCCESS_SUPPORTED": "YES",
+    "SUPPORTED_STATES": "error,running,success"
   }
 }
