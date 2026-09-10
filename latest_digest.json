@@ -1,23 +1,27 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-10T13:22:46.597409+00:00",
-  "run_id": "20260910T132244Z",
-  "step": "LOCATE_PROVEN_TYS_START_CALL",
+  "published_at_utc": "2026-09-10T13:24:09.830912+00:00",
+  "run_id": "20260910T132407Z",
+  "step": "READ_MASTER_TYS_CHAIN",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "NO_BACKUP_START_CALL_FOUND",
-  "next_gate": "READ_PREVIOUS_TYS_TRIGGER_SEAM",
+  "verdict": "MASTER_HAS_TYS_BUT_NOT_FULL_COMMAND_CHAIN",
+  "next_gate": "READ_MASTER_TYS_SECTION_EXACT",
   "facts": {
-    "BACKUPS_WITH_CALL": "0",
+    "APPROVAL": "YES",
     "BENCHTEST": "NO",
-    "BEST_BACKUP": "NONE",
-    "CALLER_FUNCTION": "NONE",
-    "CALL_LINE": "0",
+    "BENCHTEST_1_RECENT": "NO",
     "CLOUDFLARE": "UNTOUCHED",
-    "CURRENT_CALLS": "0",
     "DB_WRITE": "NO",
+    "EMAIL": "YES",
     "MASTER_READ": "YES",
+    "REPORT": "YES",
     "RESTART": "NO",
-    "SOURCE_CHANGE": "NO"
+    "SOURCE_CHANGE": "NO",
+    "START_EXACT": "NO",
+    "TECH_PASS": "NO",
+    "TESTPINE_1_RECENT": "NO",
+    "TYS": "YES",
+    "WORKER": "NO"
   }
 }
