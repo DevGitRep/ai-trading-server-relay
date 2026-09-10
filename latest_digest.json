@@ -1,22 +1,23 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-10T21:14:36.806301+00:00",
-  "run_id": "20260910T211434Z",
-  "step": "PIN_TYS_POLL_LIFECYCLE",
+  "published_at_utc": "2026-09-10T21:20:53.400628+00:00",
+  "run_id": "20260910T212051Z",
+  "step": "REPAIR_MINIMAL_TYS_STATUS_POLL_PLUMBING",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "POLL_LIFECYCLE_BROKEN",
-  "next_gate": "PATCH_ONLY_MINIMAL_POLL_LIFECYCLE",
+  "verdict": "STATUS_POLL_BINDING_NOT_SAFE_TO_AUTOPATCH",
+  "next_gate": "PIN_SINGLE_JSON_STATUS_CALL_ONLY",
   "facts": {
+    "BACKUP_CREATED": "NO",
     "BENCHTEST_RUN": "NO",
+    "BENCH_STATUS_OBJECT": "statusData",
     "CLOUDFLARE_ACTION": "NO",
-    "COMPLETE_BRANCH_PRESENT": "YES",
     "DB_WRITE": "NO",
-    "POLL_USES_SUBMISSION_ID": "NO",
-    "POST_STARTS_POLL": "NO",
+    "PATCH_KIND": "NONE",
     "RESTART": "NO",
-    "RUNNING_RESCHEDULES_POLL": "YES",
     "SOURCE_CHANGE": "NO",
-    "STATUS_FETCH_COUNT": "0"
+    "STATUS_JSON_CALL_COUNT": "0",
+    "SUBMISSION_VAR": "NONE",
+    "SUBMISSION_VAR_COUNT": "0"
   }
 }
