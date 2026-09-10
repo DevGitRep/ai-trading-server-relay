@@ -1,21 +1,16 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-10T08:10:39.216294+00:00",
-  "run_id": "20260910T081037Z",
-  "step": "READPUBLICTIER",
+  "published_at_utc": "2026-09-10T08:12:39.842386+00:00",
+  "run_id": "20260910T081237Z",
+  "step": "READLABTIER",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "PUBLICTIERREAD",
+  "verdict": "LABTIERREAD",
   "next_gate": "LOCKPUBLICFREE",
   "facts": {
-    "BENCHTEST": "NO",
     "DB_WRITE": "NO",
-    "FREE_ARG": "FREE",
-    "LAB_TIER": "FREE",
     "MASTER_READ": "YES",
-    "PRO_ARG": "PRO",
     "RESTART": "NO",
-    "ROOT_TIER": "FREE",
     "SOURCE_CHANGE": "NO",
     "WWW_FIX": "DEFERRED"
   }
