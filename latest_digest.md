@@ -1,28 +1,25 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-10T15:38:47.723632+00:00`
-- Run ID: `20260910T153845Z`
-- Step: `TRACE_RECENT_CANDIDATE_REGISTRATION_REGRESSION`
+- Published UTC: `2026-09-10T15:40:37.166175+00:00`
+- Run ID: `20260910T154035Z`
+- Step: `COMPARE_LAST_MAPPED_SRC_WITH_CURRENT_SRC_CREATION_PATH`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `ICL_SRC_REGISTRATION_RECENTLY_REGRESSED`
-- Next gate: `COMPARE_LAST_MAPPED_SRC_WITH_CURRENT_SRC_CREATION_PATH`
+- Verdict: `SRC_REGRESSION_PATH_IDENTIFIED`
+- Next gate: `IDENTIFY_MISSING_EXISTING_REGISTRATION_STEP`
 
 ## Facts
 
-- `ACTIVE_SRC_CREATOR_FUNCTIONS`: `MODULE,_candidate_id_for_source,register_indicator_lab_routes`
-- `ACTIVE_SRC_CREATOR_HITS`: `4`
 - `BENCHTEST_RUN`: `NO`
+- `CANDIDATE_WRITE_FUNCTIONS`: `indicator_lab_find_by_name,indicator_lab_paste_pine,initialize_indicator_lab_v1,register_indicator_lab_routes`
 - `CLOUDFLARE_ACTION`: `NO`
 - `DB_WRITE`: `NO`
 - `FAILURE`: `PIPELINE_INDICATOR_ROW_MISSING`
 - `LAST_MAPPED_SRC`: `ICL_SRC_5DDF4CA66408AD45`
-- `LAST_MAPPED_SRC_ROWID`: `2222`
-- `LIB_MAPPED`: `11760`
-- `LIB_MISSING`: `0`
+- `MISSING_SRC_COUNT`: `2`
 - `OLDER_SRC_MAPPING_EXISTS`: `YES`
+- `PIPELINE_TIMING`: `UNKNOWN`
 - `RESTART`: `NO`
 - `SOURCE_CHANGE`: `NO`
-- `SRC_MAPPED`: `12`
-- `SRC_MISSING`: `2`
+- `SRC_CREATOR_FUNCTIONS`: `_candidate_id_for_source,register_indicator_lab_routes`
