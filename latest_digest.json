@@ -1,26 +1,18 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-10T08:15:44.685095+00:00",
-  "run_id": "20260910T081542Z",
-  "step": "LOCKPUBLICFREE",
+  "published_at_utc": "2026-09-10T08:19:39.222656+00:00",
+  "run_id": "20260910T081937Z",
+  "step": "READFREETOOLS",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "PUBLICFREELOCKED",
-  "next_gate": "FIXWWW",
+  "verdict": "FREETOOLSREAD",
+  "next_gate": "FIXFREETOOLS",
   "facts": {
     "BENCHTEST": "NO",
     "DB_WRITE": "NO",
-    "FRONTEND_PUBLIC_FREE": "YES",
-    "MASTER_CHANGE": "YES",
     "MASTER_READ": "YES",
-    "PRIVATE_PRO": "PRO",
-    "PUBLIC_DEFAULT": "FREE",
-    "PUBLIC_PRO_ARG": "FREE",
-    "PUBLIC_PRO_REDIRECT": "302",
-    "RESTART": "YES",
-    "ROOT_HTTP": "200",
-    "SERVICE": "active",
-    "TAILSCALE_PRO_KEPT": "YES",
+    "RESTART": "NO",
+    "SOURCE_CHANGE": "NO",
     "WWW_FIX": "DEFERRED"
   }
 }
