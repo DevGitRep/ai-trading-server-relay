@@ -1,19 +1,34 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-10T12:03:23.962790+00:00`
-- Run ID: `20260910T120321Z`
-- Step: `GV1_RELAY_SELFTEST`
+- Published UTC: `2026-09-10T12:05:51.148080+00:00`
+- Run ID: `20260910T120548Z`
+- Step: `TYS_PREFLIGHT_TARGET_AUDIT`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `GV1_RELAY_FORMAT_PASS`
-- Next gate: `RETURN_TO_INTERNAL_ROUTE_404`
+- Verdict: `TYS_PREFLIGHT_TARGET_DEFECT_CONFIRMED`
+- Next gate: `PATCH_AUTHORITATIVE_PREFLIGHT_ONLY`
 
 ## Facts
 
 - `BENCHTEST`: `NO`
 - `DB_WRITE`: `NO`
-- `MASTER_CHANGE`: `NO`
+- `LABAST`: `PASS`
+- `LABSHA`: `b33d1fa6d6bd10d4`
 - `MASTER_READ`: `YES`
+- `PFAST`: `PASS`
+- `PFDASH`: `YES`
+- `PFDB`: `DASH`
+- `PFEXPAND`: `NO`
+- `PFHOME`: `NO`
+- `PFPY`: `NONE`
+- `PFROOT`: `YES`
+- `PFSHA`: `af8824a8aaa534b4`
+- `PFTP`: `DASH`
 - `RESTART`: `NO`
 - `SOURCE_CHANGE`: `NO`
+- `TYSCALLS`: `2`
+- `TYSCWD`: `NONE`
+- `TYSFUNC`: `NO`
+- `TYSPF`: `UNKNOWN`
+- `TYSPY`: `UNKNOWN`
