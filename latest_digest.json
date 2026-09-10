@@ -1,18 +1,19 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-10T10:18:14.805065+00:00",
-  "run_id": "20260910T101812Z",
-  "step": "RUNEXACTTECHDIAG",
+  "published_at_utc": "2026-09-10T10:20:07.549915+00:00",
+  "run_id": "20260910T102005Z",
+  "step": "FIXEXACTTECHSTATUS",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "EXACTTECHDIAGRUN",
-  "next_gate": "FIXEXACTTECH",
+  "verdict": "TECHSTATUSNORMALIZED",
+  "next_gate": "BUILDINTERNALREVIEW",
   "facts": {
     "BENCHTEST": "NO",
-    "CLOUDFLARE_CHANGE": "NO",
+    "CANONICAL_RUNTIME_FAILURE": "FAIL",
+    "DB_TECH_STATUS": "FAIL",
     "DB_WRITE": "TECHSTATUSONLY",
     "MASTER_READ": "YES",
     "RESTART": "NO",
-    "SOURCE_CHANGE": "NO"
+    "SOURCE_CHANGE": "YES"
   }
 }
