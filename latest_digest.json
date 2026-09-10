@@ -1,18 +1,16 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-10T09:08:27.616105+00:00",
-  "run_id": "20260910T090825Z",
-  "step": "READREVIEWMAPPING",
+  "published_at_utc": "2026-09-10T09:09:59.710246+00:00",
+  "run_id": "20260910T090957Z",
+  "step": "READPIPELINEMAPPING",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "REVIEWMAPPINGREAD",
+  "verdict": "PIPELINEMAPPINGREAD",
   "next_gate": "BUILDINTERNALREVIEW",
   "facts": {
     "BENCHTEST": "NO",
     "DB_WRITE": "NO",
     "MASTER_READ": "YES",
-    "PYSQLITE": "YES",
-    "READ_RC": "0",
     "RESTART": "NO",
     "SOURCE_CHANGE": "NO"
   }
