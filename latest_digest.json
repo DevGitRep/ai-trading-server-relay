@@ -1,21 +1,25 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-10T19:44:51.970011+00:00",
-  "run_id": "20260910T194449Z",
-  "step": "INSPECT_ONLY_VISIBLE_TEXT_OWNER",
+  "published_at_utc": "2026-09-10T19:48:02.814349+00:00",
+  "run_id": "20260910T194800Z",
+  "step": "INSPECT_EXACT_PRIVATE_RENDER_LITERAL_BRANCH",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "VISIBLE_TEXT_ONLY_IN_PRIVATE_REPORT_RENDERER",
-  "next_gate": "INSPECT_EXACT_PRIVATE_RENDER_LITERAL_BRANCH",
+  "verdict": "PRIVATE_BENCHMARK_LITERAL_UNGUARDED",
+  "next_gate": "PATCH_ONLY_PRIVATE_RENDER_RETURN_SELECTION",
   "facts": {
     "BENCHTEST_RUN": "NO",
     "CLOUDFLARE_ACTION": "NO",
     "DB_WRITE": "NO",
-    "GUARDED_VISIBLE_HIT_COUNT": "1",
+    "GUARD_COUNT": "0",
+    "GUARD_USES_BENCHTEST_STATUS": "NO",
+    "GUARD_USES_RESULT_STATUS": "NO",
+    "GUARD_USES_RUN_ID": "NO",
+    "GUARD_USES_TECHNICAL_STATUS": "NO",
+    "INNERMOST_GUARD": "NONE",
     "RESTART": "NO",
+    "RETURN_LINE": "NONE",
     "SOURCE_CHANGE": "NO",
-    "VISIBLE_TEXT_HITS": "12-month_benchmark:982:private_report_projection_v14",
-    "VISIBLE_TEXT_HIT_COUNT": "1",
-    "VISIBLE_TEXT_OWNERS": "private_report_projection_v14"
+    "TARGET_LINE": "982"
   }
 }
