@@ -1,23 +1,23 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-10T13:21:52.649007+00:00",
-  "run_id": "20260910T132150Z",
-  "step": "READ_TYS_START_RETURN_CONTRACT",
+  "published_at_utc": "2026-09-10T13:22:46.597409+00:00",
+  "run_id": "20260910T132244Z",
+  "step": "LOCATE_PROVEN_TYS_START_CALL",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "START_FUNCTION_NOT_CALLED",
-  "next_gate": "RESTORE_EXISTING_START_CALL",
+  "verdict": "NO_BACKUP_START_CALL_FOUND",
+  "next_gate": "READ_PREVIOUS_TYS_TRIGGER_SEAM",
   "facts": {
+    "BACKUPS_WITH_CALL": "0",
     "BENCHTEST": "NO",
-    "CALLS": "0",
+    "BEST_BACKUP": "NONE",
+    "CALLER_FUNCTION": "NONE",
+    "CALL_LINE": "0",
     "CLOUDFLARE": "UNTOUCHED",
+    "CURRENT_CALLS": "0",
     "DB_WRITE": "NO",
-    "HAS_POPEN": "YES",
-    "HAS_STATE_WRITE": "YES",
-    "HAS_TRY": "YES",
     "MASTER_READ": "YES",
     "RESTART": "NO",
-    "RETURNS": "started:_True_status:_RUNNING_pid:_proc.pid_logfile:_strlogfile_|_started:_False_status:_BLOCKED_reason:_reason_|_started:_False_status:_ERR",
     "SOURCE_CHANGE": "NO"
   }
 }
