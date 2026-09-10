@@ -1,18 +1,27 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-10T11:44:14.366869+00:00",
-  "run_id": "20260910T114412Z",
-  "step": "READFINALTECHSTATE",
+  "published_at_utc": "2026-09-10T11:47:24.202115+00:00",
+  "run_id": "20260910T114722Z",
+  "step": "FINALFIXANDHANDOFF",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "FINALTECHSTATEREAD",
-  "next_gate": "FINALFIXANDHANDOFF",
+  "verdict": "FINALCHECKNEEDSATTENTION",
+  "next_gate": "FINALDIAGNOSIS",
   "facts": {
     "BENCHTEST": "NO",
-    "DB_WRITE": "NO",
+    "DB_WRITE": "YES",
+    "HANDOFF": "YES",
+    "MASTER_CHANGE": "YES",
     "MASTER_READ": "YES",
-    "RESTART": "NO",
+    "PREFLIGHT_ROOTFIX": "NO",
+    "PREFLIGHT_TARGET": "DASH",
+    "PRIVATE_HTTP": "404",
+    "PUBLIC_HTTP": "404",
+    "RESTART": "YES",
+    "REVIEW_MARKER": "YES",
+    "REVIEW_ROWS": "0",
     "SERVICE": "active",
-    "SOURCE_CHANGE": "NO"
+    "TECH_REASON": "NO_ERROR_SUBMISSION",
+    "TECH_STATUS": "NOSMOKE"
   }
 }
