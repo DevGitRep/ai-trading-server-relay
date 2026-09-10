@@ -1,18 +1,20 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-10T10:53:07.282020+00:00",
-  "run_id": "20260910T105305Z",
-  "step": "READOUTPUTPARSER",
+  "published_at_utc": "2026-09-10T11:03:07.032183+00:00",
+  "run_id": "20260910T110305Z",
+  "step": "FIXOUTPUTPARSER",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "OUTPUTPARSERREAD",
-  "next_gate": "FIXOUTPUTPARSER",
+  "verdict": "OUTPUTPARSERPATCHED",
+  "next_gate": "BUILDINTERNALREVIEW",
   "facts": {
     "BENCHTEST": "NO",
-    "DB_WRITE": "NO",
+    "DB_WRITE": "YES",
     "MASTER_READ": "YES",
-    "PREFLIGHT_TARGET": "DASH",
+    "OUTPUT_PARSER": "ROBUST",
     "RESTART": "NO",
-    "SOURCE_CHANGE": "NO"
+    "SOURCE_CHANGE": "YES",
+    "TECH_REASON": "NONE",
+    "TECH_STATUS": "FAIL"
   }
 }
