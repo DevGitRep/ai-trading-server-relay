@@ -1,21 +1,22 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-10T12:25:53.950659+00:00",
-  "run_id": "20260910T122551Z",
-  "step": "TYS_FILE_NOT_FOUND_TARGET",
+  "published_at_utc": "2026-09-10T12:31:40.222108+00:00",
+  "run_id": "20260910T123128Z",
+  "step": "FIX_TYS_CANONICAL_TESTPINE_V2",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "TYS_BROKEN_EXECUTION_TARGET_IDENTIFIED",
-  "next_gate": "PATCH_TYS_TO_CANONICAL_TESTPINE",
+  "verdict": "TYS_CANONICAL_TESTPINE_PATCHED",
+  "next_gate": "RETRY_SIMPLE_TYS_STRATEGY",
   "facts": {
+    "ARGS": "1_RECENT",
     "BENCHTEST": "NO",
-    "BENCHTEST_BIN": "YES",
+    "CLOUDFLARE": "UNTOUCHED",
     "DB_WRITE": "NO",
+    "DETAIL": "PASS",
+    "EXACT_ENV": "PRESERVED",
     "MASTER_READ": "YES",
-    "PREFLIGHT": "YES",
-    "REASON": "OTHER_FILE_TARGET",
-    "RESTART": "NO",
-    "SOURCE_CHANGE": "NO",
-    "TESTPINE": "YES"
+    "RESTART": "YES",
+    "SOURCE_CHANGE": "YES",
+    "TARGET": "TESTPINE"
   }
 }
