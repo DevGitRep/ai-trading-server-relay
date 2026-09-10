@@ -1,21 +1,21 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-10T08:59:36.107600+00:00",
-  "run_id": "20260910T085934Z",
-  "step": "READSUBMISSIONREVIEW",
+  "published_at_utc": "2026-09-10T09:05:01.787914+00:00",
+  "run_id": "20260910T090459Z",
+  "step": "READTECHREVIEWCONTRACT",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "SUBMISSIONREVIEWREAD",
-  "next_gate": "FIXTECHANDREVIEW",
+  "verdict": "TECHREVIEWCONTRACTREAD",
+  "next_gate": "BUILDINTERNALREVIEW",
   "facts": {
+    "APPROVAL_STATE": "APPROVED",
     "BENCHTEST": "NO",
     "DB_WRITE": "NO",
-    "MANUAL_APPROVAL": "REQUIRED",
-    "MASTER_CHANGE": "YES",
+    "EXISTING_POLICY": "YES",
+    "EXISTING_SUBMISSIONS": "YES",
     "MASTER_READ": "YES",
-    "METRICS": "SIXCANONICAL",
     "PARALLEL_DB": "NO",
     "RESTART": "NO",
-    "REVIEW_PAGE": "SPECIFIED"
+    "SOURCE_CHANGE": "NO"
   }
 }
