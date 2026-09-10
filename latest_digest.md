@@ -1,28 +1,24 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-10T13:20:58.680182+00:00`
-- Run ID: `20260910T132056Z`
-- Step: `READ_TYS_WORKER_LAUNCH_SEAM`
+- Published UTC: `2026-09-10T13:21:52.649007+00:00`
+- Run ID: `20260910T132150Z`
+- Step: `READ_TYS_START_RETURN_CONTRACT`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `TYS_WORKER_LAUNCH_SEAM_IDENTIFIED`
-- Next gate: `FIX_EXACT_START_SEAM`
+- Verdict: `START_FUNCTION_NOT_CALLED`
+- Next gate: `RESTORE_EXISTING_START_CALL`
 
 ## Facts
 
 - `BENCHTEST`: `NO`
+- `CALLS`: `0`
 - `CLOUDFLARE`: `UNTOUCHED`
-- `DB_BENCH_ERROR`: `NONE`
-- `DB_BENCH_STATUS`: `NONE`
-- `DB_QUICKCHECK`: `ok`
 - `DB_WRITE`: `NO`
-- `LAUNCH_KIND`: `POPEN`
+- `HAS_POPEN`: `YES`
+- `HAS_STATE_WRITE`: `YES`
+- `HAS_TRY`: `YES`
 - `MASTER_READ`: `YES`
 - `RESTART`: `NO`
+- `RETURNS`: `started:_True_status:_RUNNING_pid:_proc.pid_logfile:_strlogfile_|_started:_False_status:_BLOCKED_reason:_reason_|_started:_False_status:_ERR`
 - `SOURCE_CHANGE`: `NO`
-- `START_CMD`: `sys.executable_strPath__file__.resolve_--tys-bench-worker_submission_id_candidate_id_source_sha256`
-- `START_CWD`: `strROOT`
-- `WORKER_BENCH_SIMPLE`: `YES`
-- `WORKER_CANDIDATE_MODE`: `NO`
-- `WORKER_DISPATCH`: `YES`

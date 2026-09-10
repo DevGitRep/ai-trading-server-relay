@@ -1,27 +1,23 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-10T13:20:58.680182+00:00",
-  "run_id": "20260910T132056Z",
-  "step": "READ_TYS_WORKER_LAUNCH_SEAM",
+  "published_at_utc": "2026-09-10T13:21:52.649007+00:00",
+  "run_id": "20260910T132150Z",
+  "step": "READ_TYS_START_RETURN_CONTRACT",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "TYS_WORKER_LAUNCH_SEAM_IDENTIFIED",
-  "next_gate": "FIX_EXACT_START_SEAM",
+  "verdict": "START_FUNCTION_NOT_CALLED",
+  "next_gate": "RESTORE_EXISTING_START_CALL",
   "facts": {
     "BENCHTEST": "NO",
+    "CALLS": "0",
     "CLOUDFLARE": "UNTOUCHED",
-    "DB_BENCH_ERROR": "NONE",
-    "DB_BENCH_STATUS": "NONE",
-    "DB_QUICKCHECK": "ok",
     "DB_WRITE": "NO",
-    "LAUNCH_KIND": "POPEN",
+    "HAS_POPEN": "YES",
+    "HAS_STATE_WRITE": "YES",
+    "HAS_TRY": "YES",
     "MASTER_READ": "YES",
     "RESTART": "NO",
-    "SOURCE_CHANGE": "NO",
-    "START_CMD": "sys.executable_strPath__file__.resolve_--tys-bench-worker_submission_id_candidate_id_source_sha256",
-    "START_CWD": "strROOT",
-    "WORKER_BENCH_SIMPLE": "YES",
-    "WORKER_CANDIDATE_MODE": "NO",
-    "WORKER_DISPATCH": "YES"
+    "RETURNS": "started:_True_status:_RUNNING_pid:_proc.pid_logfile:_strlogfile_|_started:_False_status:_BLOCKED_reason:_reason_|_started:_False_status:_ERR",
+    "SOURCE_CHANGE": "NO"
   }
 }
