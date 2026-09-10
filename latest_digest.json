@@ -1,24 +1,26 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-10T19:56:33.472811+00:00",
-  "run_id": "20260910T195631Z",
-  "step": "INSPECT_ONLY_MAIN_TYS_PROJECTION_SUBMISSION_ID",
+  "published_at_utc": "2026-09-10T19:57:48.226695+00:00",
+  "run_id": "20260910T195746Z",
+  "step": "PINPOINT_MAIN_TYS_POST_GET_PATH",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "MAIN_TYS_UI_USES_POST_CREATED_SUBMISSION_STATE",
-  "next_gate": "PATCH_ONLY_MAIN_PAGE_COMPLETE_RELOAD_SELECTION",
+  "verdict": "EXISTING_POST_REDIRECT_PATH_PRESENT",
+  "next_gate": "PATCH_ONLY_REDIRECT_TO_CURRENT_SUBMISSION",
   "facts": {
     "BENCHTEST_RUN": "NO",
     "CLOUDFLARE_ACTION": "NO",
     "DB_WRITE": "NO",
-    "MAIN_TYS_OWNERS": "register_indicator_lab_routes,indicator_lab_test_your_script_private_report_v14,indicator_lab_paste_pine,indicator_lab_test_your_script_status_v8b",
-    "MAIN_TYS_OWNER_COUNT": "4",
-    "MAIN_UI_USES_LATEST_QUERY": "NO",
-    "MAIN_UI_USES_POST_CREATED_SUBMISSION": "YES",
-    "MAIN_UI_USES_REQUEST_SUBMISSION": "YES",
-    "OUTCOME_MESSAGE_REF_COUNT": "0",
+    "PASTE_HAS_REDIRECT": "YES",
+    "PASTE_HAS_URL_FOR": "YES",
+    "PASTE_ROUTE_FOUND": "YES",
+    "PASTE_STARTS_BENCHTEST": "YES",
+    "PASTE_USES_REQUEST_ARG_SUBMISSION": "NO",
+    "PASTE_USES_REQUEST_FORM_SUBMISSION": "YES",
+    "PROVEN_CAUSE": "POST_CREATED_SUBMISSION_STATE_STAYS_ON_MAIN_UI",
     "RESTART": "NO",
+    "ROUTE_METHODS": "NONE",
     "SOURCE_CHANGE": "NO",
-    "SUBMISSION_ASSIGNMENT_COUNT": "10"
+    "STATUS_ROUTE_FOUND": "YES"
   }
 }
