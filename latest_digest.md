@@ -1,8 +1,8 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-10T12:45:25.178365+00:00`
-- Run ID: `20260910T124520Z`
+- Published UTC: `2026-09-10T12:47:07.624789+00:00`
+- Run ID: `20260910T124703Z`
 - Step: `FIX_TYS_BENCH_PRECONDITION`
 - Status: `SUCCESS`
 - Exit code: `0`
