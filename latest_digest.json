@@ -1,22 +1,21 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-10T08:38:46.545252+00:00",
-  "run_id": "20260910T083844Z",
-  "step": "READTESTSCRIPTROUTE",
+  "published_at_utc": "2026-09-10T08:59:36.107600+00:00",
+  "run_id": "20260910T085934Z",
+  "step": "READSUBMISSIONREVIEW",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "TESTSCRIPTROUTEREAD",
-  "next_gate": "FIXTESTSCRIPTTECH",
+  "verdict": "SUBMISSIONREVIEWREAD",
+  "next_gate": "FIXTECHANDREVIEW",
   "facts": {
     "BENCHTEST": "NO",
     "DB_WRITE": "NO",
-    "FREE_UI": "VERIFIED",
+    "MANUAL_APPROVAL": "REQUIRED",
     "MASTER_CHANGE": "YES",
     "MASTER_READ": "YES",
-    "PUBLIC_FREE": "LOCKED",
+    "METRICS": "SIXCANONICAL",
+    "PARALLEL_DB": "NO",
     "RESTART": "NO",
-    "TECH_CHECK": "FAILED",
-    "TEST_SCRIPT_PARSE": "PASS",
-    "WWW_FIX": "DEFERRED"
+    "REVIEW_PAGE": "SPECIFIED"
   }
 }
