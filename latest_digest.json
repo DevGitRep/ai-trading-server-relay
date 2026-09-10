@@ -1,22 +1,22 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-10T10:07:30.337843+00:00",
-  "run_id": "20260910T100728Z",
-  "step": "FIXOUTPUTPARSER",
+  "published_at_utc": "2026-09-10T10:14:52.732161+00:00",
+  "run_id": "20260910T101450Z",
+  "step": "FIXTECHROOTPATH",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "OUTPUTPARSERSTILLERROR",
+  "verdict": "TECHNICALCHECKSTILLERROR",
   "next_gate": "READTECHERROR",
   "facts": {
     "BENCHTEST": "NO",
+    "CLOUDFLARE_CHANGE": "NO",
     "DB_WRITE": "YES",
-    "HTTP": "200",
-    "MASTER_CHANGE": "YES",
     "MASTER_READ": "YES",
-    "PARSER_CHANGE": "YES",
-    "RESTART": "YES",
-    "SERVICE": "active",
-    "TECH_REASON": "EXACT_PREFLIGHT_RESULT_NOT_FOUND",
-    "TECH_STATUS": "ERROR"
+    "PREFLIGHT_TARGET": "DASH",
+    "RC": "4",
+    "RESTART": "NO",
+    "ROOT_EXPANSION": "PATHHOME",
+    "TECH_REASON": "NONE",
+    "TECH_STATUS": "NOTRUN"
   }
 }
