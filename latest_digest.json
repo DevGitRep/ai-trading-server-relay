@@ -1,26 +1,22 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-10T17:55:16.455121+00:00",
-  "run_id": "20260910T175514Z",
-  "step": "INSPECT_EXACT_TYS_COMPLETE_GUARDS",
+  "published_at_utc": "2026-09-10T17:57:16.465556+00:00",
+  "run_id": "20260910T175714Z",
+  "step": "CAPTURE_EXACT_TYS_COMPLETE_GUARD",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "STATUS_SYNC_GUARD_MISMATCH_READY_FOR_PATCH",
+  "verdict": "EXACT_TYS_COMPLETE_GUARD_CAPTURED",
   "next_gate": "PATCH_EXACT_COMPLETE_GUARD",
   "facts": {
     "BENCHTEST_RUN": "NO",
-    "CANDIDATE_ID": "ICL_SRC_0F466577DEE17F9F",
     "CLOUDFLARE_ACTION": "NO",
-    "COMPLETE_GUARD_COUNT": "4",
-    "COMPLETE_OWNERS": "_deliver_completed_report_email_v15,issue_private_report_access_token_v14,private_report_projection_v14,start_exact_benchtest",
-    "COMPLETE_OWNER_COUNT": "4",
-    "COMPLETE_PATH_COUNT": "5",
+    "COMPLETE_GUARD_COUNT": "5",
     "DB_WRITE": "NO",
-    "PIPELINE_RUN_EXISTS": "YES",
     "RESTART": "NO",
     "SOURCE_CHANGE": "NO",
-    "SUBMISSION_ROWID": "23",
-    "TYS_BENCHTEST_STATUS": "ERROR",
-    "VERSION_ID": "IV_0A03674922D94D1616AD"
+    "START_EXACT_COMPLETE_GUARD": "existing_is_not_None",
+    "START_EXACT_COMPLETE_LINE": "438",
+    "START_EXACT_RETURN_COUNT": "5",
+    "START_EXACT_STATUS_LINE_COUNT": "10"
   }
 }
