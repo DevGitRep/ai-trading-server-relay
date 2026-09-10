@@ -1,21 +1,21 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-10T21:30:40.794647+00:00",
-  "run_id": "20260910T213038Z",
-  "step": "VERIFY_TYS_BINDING_AFTER_FAILED_RESTART",
+  "published_at_utc": "2026-09-10T21:31:49.645800+00:00",
+  "run_id": "20260910T213147Z",
+  "step": "RESTART_DASHBOARD_SERVICE_ONLY",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "PATCH_PRESENT_RESTART_STILL_REQUIRED",
-  "next_gate": "RESTART_DASHBOARD_SERVICE_ONLY",
+  "verdict": "RESTART_REQUIRES_MANUAL_SUDO",
+  "next_gate": "MANUAL_SERVICE_RESTART_ONLY",
   "facts": {
-    "BACKUP_PRESENT": "YES",
     "BENCHTEST_RUN": "NO",
     "BINDING_COUNT": "1",
-    "BINDING_PRESENT": "YES",
     "CLOUDFLARE_ACTION": "NO",
     "DB_WRITE": "NO",
     "RESTART": "NO",
+    "RESTART_METHOD": "SUDO_NONINTERACTIVE",
     "SERVICE_ACTIVE": "YES",
-    "SOURCE_CHANGE": "NO"
+    "SOURCE_CHANGE": "NO",
+    "TYS_PATCH_PRESENT": "YES"
   }
 }
