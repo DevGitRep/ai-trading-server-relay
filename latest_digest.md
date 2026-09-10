@@ -1,26 +1,29 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-10T13:33:27.888891+00:00`
-- Run ID: `20260910T133325Z`
-- Step: `VERIFY_TYS_START_RESULT_HANDLING`
+- Published UTC: `2026-09-10T13:34:35.189320+00:00`
+- Run ID: `20260910T133433Z`
+- Step: `READ_WHY_TYS_BENCH_START_RETURNS_FALSE`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `BENCH_START_CONTRACT_MATCHES`
-- Next gate: `READ_WHY_START_RETURNS_FALSE`
+- Verdict: `PRECONDITIONS_PASS_START_FALSE_BRANCH_UNKNOWN`
+- Next gate: `READ_EXACT_FALSE_BRANCH`
 
 ## Facts
 
-- `ACTIVE_FILE`: `indicator_lab_v1.py`
+- `ALL_PRECONDITIONS`: `YES`
 - `BENCHTEST`: `NO`
-- `BENCH_CALL_LINE`: `3026`
-- `BENCH_VAR`: `bench`
-- `CALLER_KEYS`: `started,status`
+- `CANDIDATE_EXISTS`: `YES`
+- `CANDIDATE_ID`: `YES`
+- `CANDIDATE_SHA_MATCH`: `YES`
 - `CLOUDFLARE`: `UNTOUCHED`
+- `DB_QUICKCHECK`: `ok`
 - `DB_WRITE`: `NO`
-- `HANDLER`: `indicator_lab_paste_pine`
+- `FALSE_BRANCHES`: `4`
 - `MASTER_READ`: `YES`
-- `MISSING_KEYS`: `NONE`
+- `PREFLIGHT_PASS`: `YES`
 - `RESTART`: `NO`
-- `RETURNED_KEYS`: `already_started,logfile,pid,reason,result_status,reused_existing_result,run_id,started,status`
 - `SOURCE_CHANGE`: `NO`
+- `SOURCE_SHA`: `YES`
+- `SUBMISSION_ID`: `YES`
+- `TECH_PASS`: `YES`
