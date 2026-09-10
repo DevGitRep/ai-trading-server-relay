@@ -1,18 +1,27 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-10T08:12:39.842386+00:00`
-- Run ID: `20260910T081237Z`
-- Step: `READLABTIER`
+- Published UTC: `2026-09-10T08:15:44.685095+00:00`
+- Run ID: `20260910T081542Z`
+- Step: `LOCKPUBLICFREE`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `LABTIERREAD`
-- Next gate: `LOCKPUBLICFREE`
+- Verdict: `PUBLICFREELOCKED`
+- Next gate: `FIXWWW`
 
 ## Facts
 
+- `BENCHTEST`: `NO`
 - `DB_WRITE`: `NO`
+- `FRONTEND_PUBLIC_FREE`: `YES`
+- `MASTER_CHANGE`: `YES`
 - `MASTER_READ`: `YES`
-- `RESTART`: `NO`
-- `SOURCE_CHANGE`: `NO`
+- `PRIVATE_PRO`: `PRO`
+- `PUBLIC_DEFAULT`: `FREE`
+- `PUBLIC_PRO_ARG`: `FREE`
+- `PUBLIC_PRO_REDIRECT`: `302`
+- `RESTART`: `YES`
+- `ROOT_HTTP`: `200`
+- `SERVICE`: `active`
+- `TAILSCALE_PRO_KEPT`: `YES`
 - `WWW_FIX`: `DEFERRED`
