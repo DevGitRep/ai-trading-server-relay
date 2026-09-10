@@ -1,8 +1,8 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-10T16:27:13.551048+00:00`
-- Run ID: `20260910T162710Z`
+- Published UTC: `2026-09-10T16:30:47.365348+00:00`
+- Run ID: `20260910T163045Z`
 - Step: `BROWSER_SMOKE_VERIFY_NEW_PIPELINE_ROW`
 - Status: `SUCCESS`
 - Exit code: `0`
