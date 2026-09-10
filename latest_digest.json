@@ -1,17 +1,16 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-10T11:54:58.216708+00:00",
-  "run_id": "20260910T115456Z",
-  "step": "UPDATENEXTCHATHANDOFF",
+  "published_at_utc": "2026-09-10T12:03:23.962790+00:00",
+  "run_id": "20260910T120321Z",
+  "step": "GV1_RELAY_SELFTEST",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "NEXTCHATHANDOFFREADY",
-  "next_gate": "NEWCHAT",
+  "verdict": "GV1_RELAY_FORMAT_PASS",
+  "next_gate": "RETURN_TO_INTERNAL_ROUTE_404",
   "facts": {
     "BENCHTEST": "NO",
     "DB_WRITE": "NO",
-    "HANDOFF": "COMPLETE",
-    "MASTER_CHANGE": "YES",
+    "MASTER_CHANGE": "NO",
     "MASTER_READ": "YES",
     "RESTART": "NO",
     "SOURCE_CHANGE": "NO"
