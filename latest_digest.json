@@ -1,27 +1,26 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-10T14:06:40.380479+00:00",
-  "run_id": "20260910T140638Z",
-  "step": "TRACE_TYS_WORKER_LAUNCH_WRAPPER",
+  "published_at_utc": "2026-09-10T14:07:46.481285+00:00",
+  "run_id": "20260910T140744Z",
+  "step": "VALIDATE_EXACT_TYS_WORKER_LAUNCH",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "WORKER_PROCESS_LAUNCH_IDENTIFIED",
-  "next_gate": "VALIDATE_EXACT_LAUNCH_COMMAND",
+  "verdict": "EXACT_WORKER_LAUNCH_EXPOSED",
+  "next_gate": "CHECK_LAUNCH_TARGET_AND_ARGUMENTS",
   "facts": {
     "BENCHTEST_EXECUTABLE": "YES",
     "BENCHTEST_EXISTS": "YES",
     "BENCHTEST_RUN": "NO",
     "CLOUDFLARE_ACTION": "NO",
     "DB_WRITE": "NO",
-    "LOG_PARENT_EXISTS": "YES",
-    "LOG_PARENT_WRITABLE": "YES",
-    "OUTPUT_DEVNULL": "NO",
-    "PROCESS_LAUNCH_CALLS": "1",
+    "LAUNCH_ASSIGNMENTS": "0",
+    "PROCESS_LAUNCHES": "1",
     "RESTART": "NO",
     "SOURCE_CHANGE": "NO",
-    "STARTER_TO_WORKER_CALLS": "0",
+    "STARTER_LINE": "424",
     "START_GATE": "PASSED",
-    "WORKER_FUNCTION": "_run_tys_bench_worker",
-    "WORKER_LINE": "458"
+    "WORKER_LINE": "458",
+    "WORKER_MENTIONS_1_RECENT": "YES",
+    "WORKER_REFERENCES": "1"
   }
 }
