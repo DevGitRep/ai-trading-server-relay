@@ -1,17 +1,22 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-10T12:12:42.443189+00:00",
-  "run_id": "20260910T121240Z",
-  "step": "READ_TYS_THIN_WRAPPER",
+  "published_at_utc": "2026-09-10T12:15:41.310917+00:00",
+  "run_id": "20260910T121539Z",
+  "step": "RESTORE_TYS_PROVEN_PREFLIGHT",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "TYS_WRAPPER_CONTEXT_CAPTURED",
-  "next_gate": "PATCH_TYS_THIN_ORCHESTRATOR",
+  "verdict": "TYS_PROVEN_PREFLIGHT_RESTORED",
+  "next_gate": "ONE_REAL_TYS_SUBMISSION",
   "facts": {
+    "APPROVAL_FLOW": "PRESERVED",
     "BENCHTEST": "NO",
+    "CURRENT_ORCHESTRATOR": "PRESERVED",
     "DB_WRITE": "NO",
+    "EMAIL_FLOW": "PRESERVED",
     "MASTER_READ": "YES",
-    "RESTART": "NO",
-    "SOURCE_CHANGE": "NO"
+    "REPORT_FLOW": "PRESERVED",
+    "RESTART": "YES",
+    "SOURCE_CHANGE": "YES",
+    "V9_FUNCTION": "RESTORED"
   }
 }
