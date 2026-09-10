@@ -1,16 +1,14 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-10T22:15:40.358731+00:00",
-  "run_id": "20260910T221538Z",
-  "step": "FIX_TYS_PANEL_DETECTION",
+  "published_at_utc": "2026-09-10T22:16:42.971045+00:00",
+  "run_id": "20260910T221641Z",
+  "step": "RESTART_DASHBOARD_AFTER_TYS_PANEL_FIX",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "TYS_PANEL_DETECTION_FIXED",
-  "next_gate": "MANUAL_SERVICE_RESTART_ONLY",
+  "verdict": "TYS_PANEL_DETECTION_FIX_ACTIVE",
+  "next_gate": "FRESH_BROWSER_TYS_SMOKE",
   "facts": {
     "BACKEND_BENCHTEST_CHANGE": "NO",
-    "BACKGROUND_UX_PRESERVED": "YES",
-    "BACKUP_CREATED": "YES",
     "BENCHTEST_RUN": "NO",
     "BUTTON_LOOKUP_BY_TEXT": "YES",
     "CLOUDFLARE_ACTION": "NO",
@@ -19,8 +17,9 @@
     "PANEL_MATCHES_BENCHMARK": "YES",
     "PANEL_MATCHES_CANCEL": "YES",
     "PANEL_MATCHES_PREFLIGHT": "YES",
-    "RESTART": "NO",
-    "SOURCE_CHANGE": "YES",
+    "RESTART": "YES",
+    "SERVICE_ACTIVE": "YES",
+    "SOURCE_CHANGE": "NO",
     "SUBMISSION_BINDING_PRESERVED": "YES"
   }
 }
