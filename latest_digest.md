@@ -1,27 +1,29 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-10T13:31:46.791412+00:00`
-- Run ID: `20260910T133143Z`
-- Step: `IDENTIFY_ACTIVE_TYS_SUBMIT_HANDLER`
+- Published UTC: `2026-09-10T13:32:37.486632+00:00`
+- Run ID: `20260910T133235Z`
+- Step: `READ_ACTIVE_BENCH_START_BRANCH`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `ACTIVE_TYS_SUBMIT_CHAIN_FOUND`
-- Next gate: `READ_BENCH_START_BRANCH_CONDITION`
+- Verdict: `BENCH_START_BRANCH_IDENTIFIED`
+- Next gate: `VERIFY_START_RESULT_HANDLING`
 
 ## Facts
 
 - `ACTIVE_FILE`: `indicator_lab_v1.py`
+- `ACTIVE_FUNCTION`: `indicator_lab_paste_pine`
 - `BENCHTEST`: `NO`
+- `BENCH_START_ASSIGN`: `bench_=_start_exact_benchtest(submission_id=submission&#x27;submission_id&#x27;,_candidate_id=candidate_id,_source_sha256=source_sha)`
+- `BENCH_START_CALLS`: `1`
+- `BENCH_START_GATE`: `str(technical.get(&#x27;status&#x27;)_or_&#x27;&#x27;).upper()_==_&#x27;PASS&#x27;`
+- `BENCH_START_IFS`: `1`
+- `BENCH_START_LINE`: `3026`
 - `CLOUDFLARE`: `UNTOUCHED`
 - `DB_WRITE`: `NO`
-- `HANDLER_SCORE`: `36`
-- `HANDLER_TYS_CALLS`: `run_exact_preflight,catalog_entries_for_sha,create_submission,start_exact_benchtest,source_sha_is_public,update_submission_status`
-- `HAS_BENCH_START`: `YES`
-- `HAS_POST`: `YES`
-- `HAS_PREFLIGHT`: `YES`
 - `MASTER_READ`: `YES`
-- `PROBABLE_HANDLER`: `indicator_lab_paste_pine`
+- `PREFLIGHT_ASSIGN`: `technical_=_run_exact_preflight(submission_id=submission&#x27;submission_id&#x27;,_candidate_id=candidate_id,_source_sha256=source_sha)`
+- `PREFLIGHT_CALLS`: `1`
+- `PREFLIGHT_LINE`: `3008`
 - `RESTART`: `NO`
 - `SOURCE_CHANGE`: `NO`
-- `TYS_ROUTE_CALLERS`: `4`
