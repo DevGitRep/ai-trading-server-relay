@@ -1,21 +1,22 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-10T10:28:04.877459+00:00",
-  "run_id": "20260910T102802Z",
+  "published_at_utc": "2026-09-10T10:36:45.353443+00:00",
+  "run_id": "20260910T103643Z",
   "step": "FIXTECHNICALCHECK",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "TECHNICALCHECKDIAGNOSED",
-  "next_gate": "BUILDINTERNALREVIEW",
+  "verdict": "TECHNICALCHECKNEEDSFIX",
+  "next_gate": "FIXTECHNICALCHECK",
   "facts": {
     "BENCHTEST": "NO",
     "DB_WRITE": "YES",
     "MASTER_READ": "YES",
-    "PREFLIGHT_RESTORED": "NO",
     "PREFLIGHT_TARGET": "DASH",
+    "RC": "12",
     "RESTART": "NO",
+    "SERVICE": "active",
     "SOURCE_CHANGE": "NO",
-    "TECH_REASON": "NONE",
-    "TECH_STATUS": "FAIL"
+    "TECH_REASON": "UNKNOWN",
+    "TECH_STATUS": "UNKNOWN"
   }
 }
