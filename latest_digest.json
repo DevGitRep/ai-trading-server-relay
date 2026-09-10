@@ -1,22 +1,21 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-10T21:24:42.310226+00:00",
-  "run_id": "20260910T212440Z",
-  "step": "PIN_REAL_TYS_STATUS_REQUEST",
+  "published_at_utc": "2026-09-10T21:30:40.794647+00:00",
+  "run_id": "20260910T213038Z",
+  "step": "VERIFY_TYS_BINDING_AFTER_FAILED_RESTART",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "STATUS_REQUEST_SOURCE_PINNED",
-  "next_gate": "PATCH_ONLY_REAL_STATUS_REQUEST",
+  "verdict": "PATCH_PRESENT_RESTART_STILL_REQUIRED",
+  "next_gate": "RESTART_DASHBOARD_SERVICE_ONLY",
   "facts": {
+    "BACKUP_PRESENT": "YES",
     "BENCHTEST_RUN": "NO",
+    "BINDING_COUNT": "1",
+    "BINDING_PRESENT": "YES",
     "CLOUDFLARE_ACTION": "NO",
     "DB_WRITE": "NO",
-    "REQUEST_HAS_ENDPOINT": "NO",
-    "REQUEST_HAS_SUBMISSION": "NO",
-    "RESPONSE_LINE": "3696",
     "RESTART": "NO",
-    "SOURCE_CHANGE": "NO",
-    "SUBMISSION_SOURCE": "data.submission_id",
-    "SUBMISSION_SOURCE_COUNT": "1"
+    "SERVICE_ACTIVE": "YES",
+    "SOURCE_CHANGE": "NO"
   }
 }
