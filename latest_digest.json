@@ -1,17 +1,22 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-10T11:38:57.904398+00:00",
-  "run_id": "20260910T113855Z",
-  "step": "REPROTECHNICALCHECK",
+  "published_at_utc": "2026-09-10T11:42:36.389348+00:00",
+  "run_id": "20260910T114234Z",
+  "step": "FIXREVIEWANDREADTECH",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "TECHNICALCHECKREPRODUCED",
-  "next_gate": "FIXORBUILDREVIEW",
+  "verdict": "REVIEWFIXEDTECHREAD",
+  "next_gate": "FINALTECHDECISION",
   "facts": {
     "BENCHTEST": "NO",
-    "DB_WRITE": "YES",
+    "DB_WRITE": "NO",
+    "MASTER_CHANGE": "YES",
     "MASTER_READ": "YES",
-    "RESTART": "NO",
-    "SOURCE_CHANGE": "NO"
+    "RC": "2",
+    "RESTART": "YES",
+    "REVIEW_PRIVATE_HTTP": "NA",
+    "REVIEW_PUBLIC_HTTP": "NA",
+    "SERVICE": "NA",
+    "TECH_STATUS": "RESIN"
   }
 }
