@@ -1,22 +1,17 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-10T09:36:57.398109+00:00",
-  "run_id": "20260910T093655Z",
-  "step": "FIXTECHNICALCHECK",
+  "published_at_utc": "2026-09-10T09:38:56.890714+00:00",
+  "run_id": "20260910T093854Z",
+  "step": "READPREFLIGHTCANONICAL",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "TECHNICALCHECKNEEDSFOLLOWUP",
+  "verdict": "PREFLIGHTCANONICALREAD",
   "next_gate": "FIXTECHNICALCHECK",
   "facts": {
     "BENCHTEST": "NO",
     "DB_WRITE": "NO",
     "MASTER_READ": "YES",
-    "PATCH_RC": "45",
-    "PREFLIGHT_HOME": "PATHHOME",
-    "PREFLIGHT_TARGET": "DASH",
     "RESTART": "NO",
-    "SERVICE": "active",
-    "TECH_REASON": "NONE",
-    "TECH_STATUS": "UNKNOWN"
+    "SOURCE_CHANGE": "NO"
   }
 }
