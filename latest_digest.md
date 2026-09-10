@@ -1,12 +1,12 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-10T08:24:09.818996+00:00`
-- Run ID: `20260910T082407Z`
-- Step: `FIXFREETOOLS`
+- Published UTC: `2026-09-10T08:29:37.235313+00:00`
+- Run ID: `20260910T082935Z`
+- Step: `FIXFREEROWTWO`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `FREETOOLSROWREADY`
+- Verdict: `FREEROWTWOREADY`
 - Next gate: `VISUALCHECK`
 
 ## Facts
@@ -14,15 +14,13 @@
 - `BENCHTEST`: `NO`
 - `CSS_CHANGE`: `YES`
 - `DB_WRITE`: `NO`
-- `FREE_TIER`: `FREE`
-- `FREE_TOOLS_ROW`: `SINGLE`
+- `FREE_ROW`: `SINGLE`
+- `JS_CHANGE`: `YES`
 - `MASTER_CHANGE`: `YES`
 - `MASTER_READ`: `YES`
-- `PAGER`: `CENTER`
+- `PAGER_IN_TOOLS`: `YES`
 - `PRIVATE_PRO_CHANGE`: `NO`
 - `RESTART`: `YES`
 - `ROOT_HTTP`: `200`
-- `SEARCH`: `LEFT`
+- `SEARCH_WIDTH`: `40PCT`
 - `SERVICE`: `active`
-- `TEST_BUTTON`: `RIGHT`
-- `WWW_FIX`: `DEFERRED`
