@@ -1,23 +1,23 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-10T20:03:22.954343+00:00",
-  "run_id": "20260910T200321Z",
-  "step": "COMPARE_HISTORICAL_TYS_CLIENT_POLL",
+  "published_at_utc": "2026-09-10T20:04:12.044996+00:00",
+  "run_id": "20260910T200409Z",
+  "step": "PINPOINT_TYS_CURRENT_POST_CLIENT_MECHANISM",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "NO_HISTORICAL_CLIENT_POLL_FOUND",
-  "next_gate": "ADD_MINIMAL_STATUS_POLL_USING_EXISTING_ENDPOINT",
+  "verdict": "CURRENT_POST_MECHANISM_NOT_YET_IDENTIFIED",
+  "next_gate": "PATCH_DECLARATIVE_STATUS_POLL_ONLY",
   "facts": {
     "BENCHTEST_RUN": "NO",
+    "CLIENT_POST_MECHANISMS": "NONE",
     "CLOUDFLARE_ACTION": "NO",
-    "CURRENT_CLIENT_FETCH": "NO",
-    "CURRENT_CLIENT_POLL": "NO",
     "DB_WRITE": "NO",
-    "HISTORICAL_COPY_COUNT": "33",
-    "HISTORICAL_POLL_COUNT": "0",
-    "NEWEST_HISTORICAL_POLL_FILE": "NONE",
-    "NEWEST_HISTORICAL_POLL_SHA": "NONE",
+    "EXISTING_STATUS_ENDPOINT": "YES",
+    "FIRST_STATUS_ROUTE_REF_LINE": "3280",
+    "HISTORICAL_COMPLETION_POLL": "NO",
     "RESTART": "NO",
-    "SOURCE_CHANGE": "NO"
+    "SOURCE_CHANGE": "NO",
+    "STATUS_ROUTE": "app.route/indicator-lab/api/test-your-script/status,_methods=GET",
+    "STATUS_ROUTE_REF_COUNT": "4"
   }
 }
