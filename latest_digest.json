@@ -1,23 +1,23 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-10T16:36:16.168321+00:00",
-  "run_id": "20260910T163614Z",
-  "step": "TRACE_EXACT_STARTUP_MUTATION",
+  "published_at_utc": "2026-09-10T16:41:27.101662+00:00",
+  "run_id": "20260910T164125Z",
+  "step": "TRACE_IMPORTED_STARTUP_MODULES_FIXED",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "EXACT_STARTUP_MUTATION_NOT_RESOLVED",
-  "next_gate": "TRACE_IMPORTED_STARTUP_MODULES",
+  "verdict": "TARGET_REFERENCED_BUT_NO_DIRECT_WRITE_FOUND",
+  "next_gate": "TRACE_TARGET_REFERENCE_CALL_CHAIN",
   "facts": {
+    "ALL_WRITE_CALLS": "43",
     "BENCHTEST_RUN": "NO",
     "CLOUDFLARE_ACTION": "NO",
     "DB_WRITE": "NO",
-    "MUTATION_CALLS": "0",
-    "MUTATION_CONTEXTS": "0",
-    "MUTATION_FILES": "NONE",
-    "MUTATION_OWNERS": "NONE",
+    "EXACT_TARGET_WRITE_CALLS": "0",
+    "LOCAL_ENTRYPOINTS": "1",
+    "LOCAL_STARTUP_MODULES": "18",
     "PATCH_PRESENT_NOW": "NO",
     "RESTART": "NO",
-    "SERVICE_ENTRYPOINT_FILES": "2",
-    "SOURCE_CHANGE": "NO"
+    "SOURCE_CHANGE": "NO",
+    "TARGET_REFERENCE_HITS": "3"
   }
 }
