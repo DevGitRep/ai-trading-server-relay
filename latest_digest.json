@@ -1,18 +1,17 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-10T23:26:38.890182+00:00",
-  "run_id": "20260910T232636Z",
-  "step": "INSPECT_TYS_TOAST_REPEAT",
+  "published_at_utc": "2026-09-10T23:27:56.719312+00:00",
+  "run_id": "20260910T232754Z",
+  "step": "READ_TYS_TOAST_GUARD_CONTEXT",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "TOAST_BLOCK_FOUND",
-  "next_gate": "ADD_SINGLE_FIRE_GUARD",
+  "verdict": "TOAST_CONTEXT_READY",
+  "next_gate": "PATCH_SINGLE_FIRE_GUARD",
   "facts": {
     "BENCHTEST_RUN": "NO",
     "CLOUDFLARE_ACTION": "NO",
     "DB_WRITE": "NO",
     "RESTART": "NO",
-    "SOURCE_CHANGE": "NO",
-    "TOAST_LINE": "4186"
+    "SOURCE_CHANGE": "NO"
   }
 }

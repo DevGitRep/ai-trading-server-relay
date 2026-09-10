@@ -1,13 +1,13 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-10T23:26:38.890182+00:00`
-- Run ID: `20260910T232636Z`
-- Step: `INSPECT_TYS_TOAST_REPEAT`
+- Published UTC: `2026-09-10T23:27:56.719312+00:00`
+- Run ID: `20260910T232754Z`
+- Step: `READ_TYS_TOAST_GUARD_CONTEXT`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `TOAST_BLOCK_FOUND`
-- Next gate: `ADD_SINGLE_FIRE_GUARD`
+- Verdict: `TOAST_CONTEXT_READY`
+- Next gate: `PATCH_SINGLE_FIRE_GUARD`
 
 ## Facts
 
@@ -16,4 +16,3 @@
 - `DB_WRITE`: `NO`
 - `RESTART`: `NO`
 - `SOURCE_CHANGE`: `NO`
-- `TOAST_LINE`: `4186`
