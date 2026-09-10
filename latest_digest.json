@@ -1,23 +1,23 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-10T21:20:53.400628+00:00",
-  "run_id": "20260910T212051Z",
-  "step": "REPAIR_MINIMAL_TYS_STATUS_POLL_PLUMBING",
+  "published_at_utc": "2026-09-10T21:21:43.341082+00:00",
+  "run_id": "20260910T212141Z",
+  "step": "PIN_SINGLE_STATUSDATA_CALL",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "STATUS_POLL_BINDING_NOT_SAFE_TO_AUTOPATCH",
-  "next_gate": "PIN_SINGLE_JSON_STATUS_CALL_ONLY",
+  "verdict": "SINGLE_STATUSDATA_ASSIGNMENT_PINNED",
+  "next_gate": "PATCH_ONLY_EXISTING_STATUSDATA_CALL",
   "facts": {
-    "BACKUP_CREATED": "NO",
     "BENCHTEST_RUN": "NO",
-    "BENCH_STATUS_OBJECT": "statusData",
     "CLOUDFLARE_ACTION": "NO",
     "DB_WRITE": "NO",
-    "PATCH_KIND": "NONE",
+    "OWNER_FUNCTION": "NONE",
+    "OWNER_HAS_SUBMISSION_ARG": "NO",
+    "OWNER_LINE": "NONE",
     "RESTART": "NO",
     "SOURCE_CHANGE": "NO",
-    "STATUS_JSON_CALL_COUNT": "0",
-    "SUBMISSION_VAR": "NONE",
-    "SUBMISSION_VAR_COUNT": "0"
+    "STATUSDATA_ASSIGN_COUNT": "1",
+    "STATUSDATA_ASSIGN_LINE": "3716",
+    "STATUSDATA_HIT_COUNT": "3"
   }
 }
