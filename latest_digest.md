@@ -1,25 +1,25 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-10T21:04:06.068915+00:00`
-- Run ID: `20260910T210404Z`
-- Step: `INSPECT_COMPLETE_RENDER_FIVE_ARGS`
+- Published UTC: `2026-09-10T21:05:14.031113+00:00`
+- Run ID: `20260910T210512Z`
+- Step: `INSPECT_RENDER_STATE_MAPPING`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `COMPLETE_RENDER_STATE_LOOKS_FINAL`
-- Next gate: `INSPECT_ONLY_RENDER_STATE_MAPPING`
+- Verdict: `RENDER_STATE_MAPPING_INCOMPLETE`
+- Next gate: `PATCH_ONLY_RENDER_STATE_MAPPING`
 
 ## Facts
 
-- `ARG4`: `__label:_Script_detected,_status:_pass_,__label:_type_+__recognized,_status:_pass_,__label:_Script_structure_valid,_status:_pass_,__label:_Execution_s`
-- `ARG45_HAS_COMPLETE`: `YES`
-- `ARG45_HAS_PASS`: `YES`
-- `ARG45_HAS_RUNNING`: `NO`
-- `ARG45_HAS_SPINNER`: `NO`
-- `ARG5`: `success`
 - `BENCHTEST_RUN`: `NO`
 - `CLOUDFLARE_ACTION`: `NO`
 - `DB_WRITE`: `NO`
-- `RENDER_ARG_COUNT`: `5`
+- `DOM_WRITE_LINES`: `3172,3177,3190,3205`
+- `RENDER_HAS_COMPLETE`: `NO`
+- `RENDER_HAS_PASS`: `YES`
+- `RENDER_HAS_RUNNING`: `NO`
+- `RENDER_HAS_SPINNER`: `NO`
+- `RENDER_HAS_SUCCESS`: `NO`
 - `RESTART`: `NO`
 - `SOURCE_CHANGE`: `NO`
+- `STATUS_MAP_LINES`: `3197,3199,3201`
