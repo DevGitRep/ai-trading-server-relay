@@ -1,26 +1,21 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-10T12:24:40.988447+00:00",
-  "run_id": "20260910T122438Z",
-  "step": "TYS_STRATEGY_UNAVAILABLE_DIAGNOSIS",
+  "published_at_utc": "2026-09-10T12:25:53.950659+00:00",
+  "run_id": "20260910T122551Z",
+  "step": "TYS_FILE_NOT_FOUND_TARGET",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "TYS_PREFLIGHT_NOT_PERSISTED",
-  "next_gate": "FIX_EXISTING_TYS_PREFLIGHT_CALL",
+  "verdict": "TYS_BROKEN_EXECUTION_TARGET_IDENTIFIED",
+  "next_gate": "PATCH_TYS_TO_CANONICAL_TESTPINE",
   "facts": {
-    "BENCHSTATUS": "NOT_STARTED",
     "BENCHTEST": "NO",
-    "CANDIDATE": "FOUND",
-    "DB_QUICKCHECK": "ok",
+    "BENCHTEST_BIN": "YES",
     "DB_WRITE": "NO",
-    "DETAIL": "NONE",
-    "JOURNAL": "FILE_NOT_FOUND",
     "MASTER_READ": "YES",
-    "PREFLIGHT": "MISSING",
+    "PREFLIGHT": "YES",
+    "REASON": "OTHER_FILE_TARGET",
     "RESTART": "NO",
-    "SHA_MATCH": "YES",
     "SOURCE_CHANGE": "NO",
-    "SUBMISSION": "FOUND",
-    "TECHSTATUS": "ERROR"
+    "TESTPINE": "YES"
   }
 }
