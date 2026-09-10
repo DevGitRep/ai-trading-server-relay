@@ -1,30 +1,19 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-10T14:19:00.643581+00:00",
-  "run_id": "20260910T141858Z",
-  "step": "IDENTIFY_EXACT_VERSION1_WORKER_REGRESSION",
+  "published_at_utc": "2026-09-10T14:26:24.379326+00:00",
+  "run_id": "20260910T142622Z",
+  "step": "INSTALL_TYS_WORKER_RUNTIME_TRACE_V2",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "VERSION1_EXACT_NON_SELECTOR_DIFF_FOUND",
-  "next_gate": "RESTORE_VERSION1_PROVEN_CODE_DIFFERENCE",
+  "verdict": "TYS_WORKER_RUNTIME_TRACE_READY",
+  "next_gate": "SUBMIT_ONE_FRESH_TYS_TEST",
   "facts": {
-    "ADDED_LINES": "1",
     "BENCHTEST_RUN": "NO",
     "CANDIDATE_SELECTOR_RESTORE": "NO",
+    "CANONICAL_SELECTOR": "BENCHTEST_1_RECENT",
     "CLOUDFLARE_ACTION": "NO",
-    "CURRENT_HASH": "e1814ff78210fb0e",
-    "CURRENT_STATEMENTS": "36",
     "DB_WRITE": "NO",
-    "FEATURE_CHANGES": "NONE",
-    "NEW_1": "proc = subprocess.run([&#x27;&lt;PATH&gt;&#x27;, &#x27;1&#x27;, &#x27;recent&#x27;], cwd=str(ROOT), stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)",
-    "OLD_1": "proc = subprocess.run([&#x27;&lt;PATH&gt;&#x27;, &#x27;&lt;SELECTOR&gt;&#x27;, candidate_id], cwd=str(ROOT), stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)",
-    "OLD_STATEMENTS": "36",
-    "REMOVED_LINES": "1",
-    "RESTART": "NO",
-    "SELECTOR_DIFFERENCE_IGNORED": "YES",
-    "SOURCE_CHANGE": "NO",
-    "TARGET_SELECTOR": "BENCHTEST_1_RECENT",
-    "VERSION1_HASH": "ef08f10030895d53",
-    "VERSION1_TIMESTAMP": "2026-09-10T13:02:12.345065+00:00"
+    "RESTART": "YES",
+    "SOURCE_CHANGE": "YES"
   }
 }
