@@ -1,19 +1,24 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-10T23:03:03.168885+00:00",
-  "run_id": "20260910T230301Z",
-  "step": "CHECK_MASTER_TYS_HANDOFF_SECTION",
+  "published_at_utc": "2026-09-10T23:04:44.586330+00:00",
+  "run_id": "20260910T230442Z",
+  "step": "WRITE_MASTER_TYS_CANONICAL_HANDOFF",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "MASTER_CANONICAL_TYS_SECTION_NOT_COMPLETE",
-  "next_gate": "WRITE_MASTER_SECTION_WITH_SHORT_SAFE_PATCH",
+  "verdict": "MASTER_TYS_HANDOFF_WRITTEN",
+  "next_gate": "ADD_TYS_BACKGROUND_TOAST",
   "facts": {
+    "BACKGROUND_UX_PROVEN": "YES",
+    "BACKUP_CREATED": "YES",
     "BENCHTEST_RUN": "NO",
+    "CANONICAL_BENCHTEST": "YES",
+    "CANONICAL_TESTPINE": "YES",
     "CLOUDFLARE_ACTION": "NO",
     "DB_WRITE": "NO",
-    "END_MARKER_COUNT": "0",
+    "END_MARKER_COUNT": "1",
+    "REPORT_EMAIL_REVERIFY_REQUIRED": "YES",
     "RESTART": "NO",
-    "SOURCE_CHANGE": "NO",
-    "START_MARKER_COUNT": "0"
+    "SOURCE_CHANGE": "YES",
+    "START_MARKER_COUNT": "1"
   }
 }
