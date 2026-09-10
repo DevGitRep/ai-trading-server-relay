@@ -1,24 +1,24 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-10T23:07:32.157363+00:00",
-  "run_id": "20260910T230730Z",
-  "step": "RESTART_DASHBOARD_AFTER_TYS_TOAST",
+  "published_at_utc": "2026-09-10T23:19:17.766339+00:00",
+  "run_id": "20260910T231915Z",
+  "step": "PATCH_TYS_TOAST_POSITION_AND_FADE",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "TYS_BACKGROUND_TOAST_ACTIVE",
+  "verdict": "TYS_TOAST_TOP_CENTER_FADE_ACTIVE",
   "next_gate": "FRESH_BROWSER_TOAST_SMOKE",
   "facts": {
     "BACKEND_BENCHTEST_CHANGE": "NO",
-    "BACKGROUND_UX_PRESERVED": "YES",
+    "BACKUP_CREATED": "YES",
     "BENCHTEST_RUN": "NO",
     "CLOUDFLARE_ACTION": "NO",
     "DB_WRITE": "NO",
     "EMAIL_CHAIN_CHANGE": "NO",
+    "FADE_START_MS": "5400",
+    "REMOVE_MS": "6000",
     "RESTART": "YES",
-    "SERVICE_ACTIVE": "YES",
-    "SOURCE_CHANGE": "NO",
+    "SOURCE_CHANGE": "YES",
     "SUBMISSION_BINDING_PRESERVED": "YES",
-    "TOAST_DURATION_MS": "5000",
-    "TOAST_MARKER_COUNT": "1"
+    "TOAST_POSITION": "TOP_CENTER"
   }
 }
