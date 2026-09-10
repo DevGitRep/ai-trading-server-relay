@@ -1,19 +1,24 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-10T14:26:24.379326+00:00",
-  "run_id": "20260910T142622Z",
-  "step": "INSTALL_TYS_WORKER_RUNTIME_TRACE_V2",
+  "published_at_utc": "2026-09-10T14:31:42.876363+00:00",
+  "run_id": "20260910T143140Z",
+  "step": "READ_TYS_WORKER_RUNTIME_TRACE",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "TYS_WORKER_RUNTIME_TRACE_READY",
-  "next_gate": "SUBMIT_ONE_FRESH_TYS_TEST",
+  "verdict": "BENCHTEST_RETURNED_FAILURE",
+  "next_gate": "CLASSIFY_BENCHTEST_OUTPUT",
   "facts": {
+    "BENCHTEST_RC": "1",
     "BENCHTEST_RUN": "NO",
-    "CANDIDATE_SELECTOR_RESTORE": "NO",
-    "CANONICAL_SELECTOR": "BENCHTEST_1_RECENT",
     "CLOUDFLARE_ACTION": "NO",
     "DB_WRITE": "NO",
-    "RESTART": "YES",
-    "SOURCE_CHANGE": "YES"
+    "OUTPUT_LENGTH": "2843",
+    "RESTART": "NO",
+    "SOURCE_CHANGE": "NO",
+    "START_RETURN": "True",
+    "TRACE_AFTER": "YES",
+    "TRACE_BEFORE": "YES",
+    "WORKER_LOG_SIZE": "0",
+    "WORKER_PID_ALIVE": "NO"
   }
 }
