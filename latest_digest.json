@@ -1,23 +1,25 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-10T20:45:11.119088+00:00",
-  "run_id": "20260910T204509Z",
-  "step": "LOCATE_ACTIVE_VISIBLE_TYS_SOURCE",
+  "published_at_utc": "2026-09-10T20:46:53.877911+00:00",
+  "run_id": "20260910T204651Z",
+  "step": "INSPECT_ACTIVE_TYS_JS_VISIBLE_CONTEXT",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "ACTIVE_VISIBLE_TYS_SOURCE_IDENTIFIED",
-  "next_gate": "INSPECT_ONLY_ACTIVE_VISIBLE_SOURCE_CONTEXT",
+  "verdict": "ACTIVE_JS_ALREADY_HAS_COMPLETION_POLL",
+  "next_gate": "INSPECT_ONLY_BROKEN_POLL_CONDITION",
   "facts": {
-    "ACTIVE_HIT_COUNT": "3",
+    "ACTIVE_JS_FILE": "static/indicator_library_ui_v2.js",
     "BENCHTEST_RUN": "NO",
     "CLOUDFLARE_ACTION": "NO",
+    "CONTEXT_HAS_FETCH": "YES",
+    "CONTEXT_HAS_POLL_TIMER": "YES",
+    "CONTEXT_HAS_STATUS_ENDPOINT": "YES",
+    "CONTEXT_HAS_SUBMISSION_ID": "YES",
+    "CONTEXT_HAS_SUBMIT_LOGIC": "YES",
     "DB_WRITE": "NO",
-    "MANUAL_SUPPORT_EXCLUDED": "YES",
-    "PRIMARY_FILE": "static/indicator_library_ui_v2.js",
-    "PRIMARY_FIRST_LINE": "2409",
-    "PRIMARY_MATCH_COUNT": "2",
-    "PRIMARY_OWNER": "FILE",
     "RESTART": "NO",
-    "SOURCE_CHANGE": "NO"
+    "SOURCE_CHANGE": "NO",
+    "VISIBLE_HIT_COUNT": "13",
+    "VISIBLE_HIT_LINES": "2409,3550,3587,3643,3730,3765,3836,3850,3885,3905,3939,3982,4004"
   }
 }
