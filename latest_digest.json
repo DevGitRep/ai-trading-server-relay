@@ -1,23 +1,25 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-10T20:04:12.044996+00:00",
-  "run_id": "20260910T200409Z",
-  "step": "PINPOINT_TYS_CURRENT_POST_CLIENT_MECHANISM",
+  "published_at_utc": "2026-09-10T20:04:59.702265+00:00",
+  "run_id": "20260910T200457Z",
+  "step": "INSPECT_DECLARATIVE_TYS_STATUS_HOOKS",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "CURRENT_POST_MECHANISM_NOT_YET_IDENTIFIED",
-  "next_gate": "PATCH_DECLARATIVE_STATUS_POLL_ONLY",
+  "verdict": "STATUS_HOOKS_INCOMPLETE",
+  "next_gate": "INSPECT_ONLY_TYS_FORM_RENDER_BLOCK",
   "facts": {
     "BENCHTEST_RUN": "NO",
-    "CLIENT_POST_MECHANISMS": "NONE",
     "CLOUDFLARE_ACTION": "NO",
+    "CONTEXT_HAS_BENCHMARK_UI": "NO",
+    "CONTEXT_HAS_DATA_ATTR": "NO",
+    "CONTEXT_HAS_FORM": "NO",
+    "CONTEXT_HAS_SCRIPT": "NO",
+    "CONTEXT_HAS_STATUS_URL": "YES",
+    "CONTEXT_HAS_SUBMISSION_ID": "YES",
     "DB_WRITE": "NO",
-    "EXISTING_STATUS_ENDPOINT": "YES",
-    "FIRST_STATUS_ROUTE_REF_LINE": "3280",
-    "HISTORICAL_COMPLETION_POLL": "NO",
     "RESTART": "NO",
     "SOURCE_CHANGE": "NO",
-    "STATUS_ROUTE": "app.route/indicator-lab/api/test-your-script/status,_methods=GET",
-    "STATUS_ROUTE_REF_COUNT": "4"
+    "STATUS_REF_COUNT": "4",
+    "STATUS_REF_LINES": "3280,3283,3284,3408"
   }
 }
