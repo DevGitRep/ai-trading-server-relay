@@ -1,27 +1,24 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-10T13:26:12.221955+00:00`
-- Run ID: `20260910T132610Z`
-- Step: `LOCATE_MASTER_TYS_RESTORE_POINT`
+- Published UTC: `2026-09-10T13:28:52.470058+00:00`
+- Run ID: `20260910T132850Z`
+- Step: `LOCATE_GLOBAL_TYS_ENTRYPOINT`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `TYS_RESTORE_POINT_NOT_UNIQUE`
-- Next gate: `STOP_BEFORE_PATCH`
+- Verdict: `EXTERNAL_TYS_START_CALL_FOUND`
+- Next gate: `READ_ACTIVE_CALLER`
 
 ## Facts
 
-- `ALL_START_ARGS_AVAILABLE`: `NO`
 - `BENCHTEST`: `NO`
 - `CLOUDFLARE`: `UNTOUCHED`
 - `DB_WRITE`: `NO`
-- `HAS_BENCH_TEXT`: `NO`
-- `HAS_PREFLIGHT`: `NO`
+- `EXTERNAL_PREFLIGHT_CALLS`: `24`
+- `EXTERNAL_START_CALLS`: `19`
+- `IMPORTERS`: `184`
 - `MASTER_READ`: `YES`
-- `MESSAGE_OWNERS`: `0`
-- `PREFLIGHT_OWNERS`: `0`
 - `RESTART`: `NO`
-- `SEAM_FUNCTION`: `NONE`
-- `SEAM_SOURCE`: `AMBIGUOUS`
+- `ROUTE_FILES`: `backend.py,data/manual_support/indicator_library_batch_v25b_backup_20260904T100341Z/indicator_lab_library_ui_v1.py,data/manual_support/indicator_library_hotpath_v23c21_backup_20260904T092814Z/indicator_lab_library_ui_v1.`
 - `SOURCE_CHANGE`: `NO`
-- `START_ARGS`: `NONE`
+- `SUBMISSION_FILES`: `data/manual_support/test_your_script_async_bench_v10_backup_20260903T191529/test_your_script_v1.py,data/manual_support/test_your_script_email_v15_backup_20260903T205119/test_your_script_v1.py,data/manual_support/test_you`
