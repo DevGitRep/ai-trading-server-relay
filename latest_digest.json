@@ -1,29 +1,19 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-10T14:09:41.660200+00:00",
-  "run_id": "20260910T140939Z",
-  "step": "TRACE_TYS_WORKER_RESULT_HANDLING",
+  "published_at_utc": "2026-09-10T14:11:07.394806+00:00",
+  "run_id": "20260910T141105Z",
+  "step": "FIND_OLD_WORKING_TYS_WRAPPER",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "WORKER_CAPTURES_RESULT_AND_WRITES_LOG",
-  "next_gate": "TRACE_EXCEPTION_OR_EARLY_EXIT_BEFORE_LOG_WRITE",
+  "verdict": "HISTORICAL_WORKER_VERSIONS_FOUND",
+  "next_gate": "COMPARE_WITH_KNOWN_GOOD_WRAPPER",
   "facts": {
     "BENCHTEST_RUN": "NO",
-    "CANONICAL_COMMAND": "BENCHTEST_1_RECENT",
     "CLOUDFLARE_ACTION": "NO",
+    "CURRENT_WORKER_HASH": "e1814ff78210fb0e",
     "DB_WRITE": "NO",
-    "HAS_EXCEPT": "NO",
-    "HAS_TRY": "YES",
-    "LAUNCHES": "1",
+    "DISTINCT_HISTORICAL_WORKERS": "4",
     "RESTART": "NO",
-    "SOURCE_CHANGE": "NO",
-    "START_GATE": "PASSED",
-    "USES_RAISE": "NO",
-    "USES_RETURN_CODE": "YES",
-    "USES_STDOUT": "YES",
-    "USES_SUBPROCESS": "YES",
-    "USES_SYS_EXIT": "NO",
-    "USES_TIMEOUT": "NO",
-    "WRITES_LOG": "YES"
+    "SOURCE_CHANGE": "NO"
   }
 }
