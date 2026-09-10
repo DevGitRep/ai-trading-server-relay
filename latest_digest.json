@@ -1,24 +1,22 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-10T21:05:14.031113+00:00",
-  "run_id": "20260910T210512Z",
-  "step": "INSPECT_RENDER_STATE_MAPPING",
+  "published_at_utc": "2026-09-10T21:06:08.105084+00:00",
+  "run_id": "20260910T210606Z",
+  "step": "PIN_EXACT_RENDER_STATE_MAPPING",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "RENDER_STATE_MAPPING_INCOMPLETE",
-  "next_gate": "PATCH_ONLY_RENDER_STATE_MAPPING",
+  "verdict": "SUCCESS_STATE_MISSING_FROM_RENDER_MAPPING",
+  "next_gate": "PATCH_ONLY_SUCCESS_STATE_ALIAS_TO_EXISTING_PASS_MAPPING",
   "facts": {
     "BENCHTEST_RUN": "NO",
     "CLOUDFLARE_ACTION": "NO",
+    "COMPARISON1": "stage.status=pass",
+    "COMPARISON_COUNT": "3",
     "DB_WRITE": "NO",
-    "DOM_WRITE_LINES": "3172,3177,3190,3205",
-    "RENDER_HAS_COMPLETE": "NO",
-    "RENDER_HAS_PASS": "YES",
-    "RENDER_HAS_RUNNING": "NO",
-    "RENDER_HAS_SPINNER": "NO",
-    "RENDER_HAS_SUCCESS": "NO",
+    "MAPPING_HAS_COMPLETE": "NO",
+    "MAPPING_HAS_PASS": "YES",
+    "MAPPING_HAS_SUCCESS": "NO",
     "RESTART": "NO",
-    "SOURCE_CHANGE": "NO",
-    "STATUS_MAP_LINES": "3197,3199,3201"
+    "SOURCE_CHANGE": "NO"
   }
 }
