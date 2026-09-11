@@ -1,13 +1,13 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-11T10:20:01.363482+00:00`
-- Run ID: `20260911T101959Z`
-- Step: `IDENTIFY_REVIEW_RAW_RESULT_REUSE_PATH`
+- Published UTC: `2026-09-11T10:32:51.828136+00:00`
+- Run ID: `20260911T103249Z`
+- Step: `INSPECT_RAW_RESULT_SOURCE_LINES`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `RAW_RESULT_EXTRACTION_INLINE_ONLY`
-- Next gate: `MAP_SMALLEST_INLINE_EXTRACTION_BLOCK`
+- Verdict: `RAW_RESULT_INLINE_SECTION_LOCATED`
+- Next gate: `MAP_EXACT_INLINE_EXTRACTION_BOUNDARIES`
 
 ## Facts
 
@@ -15,14 +15,31 @@
 - `BENCHTEST_RUN`: `NO`
 - `CLOUDFLARE_ACTION`: `NO`
 - `DB_WRITE`: `NO`
+- `JSON_LOAD_LINES`: `796,863`
 - `LIBRARY_HELPER_CHANGE`: `NO`
-- `RAW_ASSIGN1`: `814:metrics_map[_secondary_id][_secondary_win_rate_pct_]_=__secondary_value`
-- `RAW_ASSIGN2`: `915:_primary_trades_=__num(_primary_trade_count_)`
-- `RAW_ASSIGN3`: `934:_trade_count_=__metrics.get(_trade_count_)`
-- `RAW_ASSIGN4`: `947:_win_rate_=__metrics.get(_win_rate_pct_)`
-- `RAW_ASSIGNMENT_COUNT`: `10`
-- `RAW_SECTION_LINE`: `782`
+- `LINE1`: `776:I8:_metrics_map[candidate_id]_=_metrics`
+- `LINE10`: `800:I12:__secondary_payload_=_{}`
+- `LINE11`: `803:I12:__secondary_value_=__secondary_payload.get(`
+- `LINE12`: `804:I16:_&quot;secondary_win_rate_pct&quot;`
+- `LINE13`: `806:I12:__secondary_value_=_(`
+- `LINE14`: `807:I16:_float(_secondary_value)`
+- `LINE15`: `808:I16:_if__secondary_value_is_not_None`
+- `LINE16`: `812:I12:__secondary_value_=_None`
+- `LINE17`: `814:I8:_metrics_map[_secondary_id][`
+- `LINE18`: `815:I12:_&quot;secondary_win_rate_pct&quot;`
+- `LINE19`: `816:I8:_]_=__secondary_value`
+- `LINE2`: `779:I4:_import_json_as__secondary_json`
+- `LINE20`: `818:I4:_for__secondary_metric_in_metrics_map.values():`
+- `LINE3`: `781:I4:__secondary_rows_=_conn.execute(`
+- `LINE4`: `783:I8:_SELECT_indicator_id,_&quot;raw_result_json&quot;`
+- `LINE5`: `789:I4:_for__secondary_row_in__secondary_rows:`
+- `LINE6`: `790:I8:__secondary_id_=_str(_secondary_row[0])`
+- `LINE7`: `792:I8:_if__secondary_id_not_in_metrics_map:`
+- `LINE8`: `796:I12:__secondary_payload_=__secondary_json.loads(`
+- `LINE9`: `797:I16:__secondary_row[1]_or_&quot;{}&quot;`
+- `METRICS_MAP_LINES`: `776,792,814,818,852`
+- `METRIC_LINES`: `804,815,821,916,929,932,934,935,939,940,941,945,948`
+- `RAW_LINES`: `783,835`
+- `RELEVANT_LINE_COUNT`: `56`
 - `RESTART`: `NO`
-- `REUSABLE_EXTRACTOR_COUNT`: `0`
-- `REVIEW_READS_RAW_RESULT`: `NO`
 - `SOURCE_CHANGE`: `NO`
