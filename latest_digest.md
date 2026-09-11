@@ -1,34 +1,41 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-11T07:09:31.145369+00:00`
-- Run ID: `20260911T070929Z`
-- Step: `MAP_TYS_COMPLETE_TO_EXISTING_REVIEW`
+- Published UTC: `2026-09-11T07:10:34.430754+00:00`
+- Run ID: `20260911T071032Z`
+- Step: `MAP_SIX_METRICS_AND_TYS_INSERTION_POINT`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `EXISTING_INTERNAL_REVIEW_OWNER_MAPPED`
-- Next gate: `MAP_SIX_METRICS_AND_TYS_INSERTION_POINT`
+- Verdict: `REVIEW_INSERTION_AND_SIX_METRICS_MAPPED`
+- Next gate: `CONNECT_TYS_COMPLETE_TO_EXISTING_REVIEW_ONLY`
 
 ## Facts
 
-- `APPROVAL1`: `test_your_script_v1.py:filter_public_shas:51`
-- `APPROVAL2`: `test_your_script_v1.py:create_submission:121`
-- `APPROVAL3`: `shadow_ai_governance_v11.py:model_audit:185`
-- `APPROVAL4`: `shadow_ai_governance_v11.py:update_governance:472`
-- `APPROVAL5`: `internal_test_submissions_v1.py:register_internal_test_submissions_v1:21`
-- `APPROVED_HANDLER_COUNT`: `15`
+- `ALL_SIX_ALREADY_IN_REVIEW_ROUTE`: `YES`
+- `ALL_SIX_IN_PIPELINE_LOADER`: `YES`
+- `APPROVAL_STATES`: `APPROVED_PRIVATE`
 - `BENCHTEST_RUN`: `NO`
 - `CLOUDFLARE_ACTION`: `NO`
 - `DB_WRITE`: `NO`
-- `INTERNAL_ROUTE_COUNT`: `1`
-- `PIPELINE_REVIEW_HIT_COUNT`: `10`
+- `LATEST_COMPLETE_TYS_PRESENT`: `YES`
+- `LATEST_PIPELINE_CURRENT_PRESENT`: `NO`
+- `LATEST_TYS_CANDIDATE_PRESENT`: `YES`
+- `MAX_DRAWDOWN_PCT_IN_PIPELINE_LOADER`: `YES`
+- `MAX_DRAWDOWN_PCT_IN_REVIEW_ROUTE`: `YES`
+- `NET_RETURN_PCT_IN_PIPELINE_LOADER`: `YES`
+- `NET_RETURN_PCT_IN_REVIEW_ROUTE`: `YES`
+- `PIPELINE_METRIC_LOADER_EXISTS`: `YES`
+- `PROFIT_FACTOR_IN_PIPELINE_LOADER`: `YES`
+- `PROFIT_FACTOR_IN_REVIEW_ROUTE`: `YES`
 - `RESTART`: `NO`
-- `REVIEW_ROUTE_COUNT`: `1`
-- `ROUTE1`: `internal_test_submissions_v1.py:internal_test_submissions:/internal/test-submissions`
+- `REVIEW_REGISTER_EXISTS`: `YES`
+- `REVIEW_ROUTE_EXISTS`: `YES`
+- `REVIEW_TABLE_REFS`: `candidates_internal_test_submissions_v1_pipeline_benchtest_runs_test_your_script_submissions_v1`
+- `SECONDARY_WIN_RATE_PCT_IN_PIPELINE_LOADER`: `YES`
+- `SECONDARY_WIN_RATE_PCT_IN_REVIEW_ROUTE`: `YES`
 - `SOURCE_CHANGE`: `NO`
-- `TYS1`: `test_your_script_v1.py:_benchtest_preconditions:404`
-- `TYS2`: `test_your_script_v1.py:_tys_ensure_email_columns_v15:657`
-- `TYS3`: `test_your_script_v1.py:_tys_set_email_state_v15:665`
-- `TYS4`: `test_your_script_v1.py:_deliver_completed_report_email_v15:751`
+- `TRADE_COUNT_IN_PIPELINE_LOADER`: `YES`
+- `TRADE_COUNT_IN_REVIEW_ROUTE`: `YES`
 - `TYS_E2E_PROVEN`: `YES`
-- `TYS_REVIEW_HIT_COUNT`: `10`
+- `WIN_RATE_PCT_IN_PIPELINE_LOADER`: `YES`
+- `WIN_RATE_PCT_IN_REVIEW_ROUTE`: `YES`
