@@ -1,12 +1,12 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-11T13:31:29.034647+00:00`
-- Run ID: `20260911T133126Z`
-- Step: `CAPTURE_LIBRARY_ROWS_FULL_FUNCTION`
+- Published UTC: `2026-09-11T13:32:50.025775+00:00`
+- Run ID: `20260911T133248Z`
+- Step: `CAPTURE_EXACT_LIBRARY_ROWS_FUNCTION`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `LIBRARY_ROWS_FULL_FUNCTION_CAPTURED`
+- Verdict: `EXACT_LIBRARY_ROWS_FUNCTION_CAPTURED`
 - Next gate: `PATCH_ONLY_MISSING_TYS_LIBRARY_ROW_SOURCE`
 
 ## Facts
@@ -14,60 +14,53 @@
 - `BENCHTEST_RUN`: `NO`
 - `CLOUDFLARE_ACTION`: `NO`
 - `DB_WRITE`: `NO`
-- `L35`: `if_value_is_None:`
-- `L36`: `return_None`
-- `L37`: `NONE`
-- `L38`: `try:`
-- `L39`: `return_int(value)`
-- `L40`: `except_(TypeError,_ValueError):`
-- `L41`: `return_None`
-- `L42`: `NONE`
-- `L43`: `NONE`
-- `L44`: `def__candidate_ids(`
-- `L45`: `conn,`
-- `L46`: `source_sha256,`
-- `L47`: `chart_url,`
-- `L48`: `):`
-- `L49`: `ids_=_[]`
-- `L50`: `NONE`
-- `L51`: `for_row_in_conn.execute(`
-- `L52`: `NONE`
-- `L53`: `SELECT_candidate_id`
-- `L54`: `FROM_candidates`
-- `L55`: `WHERE_source_sha256=`
-- `L56`: `ORDER_BY_updated_epoch_ms_DESC`
-- `L57`: `,`
-- `L58`: `(source_sha256,),`
-- `L59`: `):`
-- `L60`: `ids.append(`
-- `L61`: `row[candidate_id]`
-- `L62`: `)`
-- `L63`: `NONE`
-- `L64`: `#_Historical_fallback_retained_only_for_resolving`
-- `L65`: `#_a_library_script_to_its_candidate_id.`
-- `L66`: `if_chart_url:`
-- `L67`: `NONE`
-- `L68`: `for_row_in_conn.execute(`
-- `L69`: `NONE`
-- `L70`: `SELECT_candidate_id`
-- `L71`: `FROM_candidates`
-- `L72`: `WHERE_source_url=`
-- `L73`: `ORDER_BY_updated_epoch_ms_DESC`
-- `L74`: `,`
-- `L75`: `(chart_url,),`
-- `L76`: `):`
-- `L77`: `NONE`
-- `L78`: `candidate_id_=_row[`
-- `L79`: `candidate_id`
-- `L80`: `]`
-- `L81`: `NONE`
-- `L82`: `if_candidate_id_not_in_ids:`
-- `L83`: `ids.append(`
-- `L84`: `candidate_id`
-- `L85`: `)`
-- `L86`: `NONE`
-- `L87`: `return_ids`
-- `L88`: `NONE`
-- `L89`: `NONE`
+- `FUNCTION_END`: `526`
+- `FUNCTION_LINE_COUNT`: `116`
+- `FUNCTION_START`: `411`
 - `RESTART`: `NO`
 - `SOURCE_CHANGE`: `NO`
+- `SRC1`: `L411:def__library_rows(conn):`
+- `SRC10`: `L420:NONE`
+- `SRC11`: `L421:NONE`
+- `SRC12`: `L422:source_cols_=_{`
+- `SRC13`: `L423:row[1]`
+- `SRC14`: `L424:for_row_in_conn.execute(`
+- `SRC15`: `L425:&#x27;PRAGMA_table_info(sources)&#x27;`
+- `SRC16`: `L426:)`
+- `SRC17`: `L427:}`
+- `SRC18`: `L428:NONE`
+- `SRC19`: `L429:def_optional_source_column(name):`
+- `SRC2`: `L412:NONE`
+- `SRC20`: `L430:if_name_in_source_cols:`
+- `SRC21`: `L431:safe_=_name.replace(`
+- `SRC22`: `L432:&#x27;&#x27;,`
+- `SRC23`: `L433:&#x27;&#x27;,`
+- `SRC24`: `L434:)`
+- `SRC25`: `L435:NONE`
+- `SRC26`: `L436:return_(`
+- `SRC27`: `L437:f&#x27;so.{safe}_AS_{safe}&#x27;`
+- `SRC28`: `L438:)`
+- `SRC29`: `L439:NONE`
+- `SRC3`: `L413:Load_Pine_Library_metadata.`
+- `SRC30`: `L440:return_(`
+- `SRC31`: `L441:f&#x27;NULL_AS_{name}&#x27;`
+- `SRC32`: `L442:)`
+- `SRC33`: `L443:NONE`
+- `SRC34`: `L444:signal_role_=_optional_source_column(`
+- `SRC35`: `L445:signal_role`
+- `SRC36`: `L446:)`
+- `SRC37`: `L447:NONE`
+- `SRC38`: `L448:signal_role_reason_=_optional_source_column(`
+- `SRC39`: `L449:signal_role_reason`
+- `SRC4`: `L414:NONE`
+- `SRC40`: `L450:)`
+- `SRC41`: `L451:NONE`
+- `SRC42`: `L452:signal_role_updated_at_=_optional_source_column(`
+- `SRC43`: `L453:signal_role_updated_at`
+- `SRC44`: `L454:)`
+- `SRC45`: `L455:NONE`
+- `SRC5`: `L415:Historical_signal-role_fields_are_optional_UI_metadata.`
+- `SRC6`: `L416:Their_absence_must_not_break_the_current_Library.`
+- `SRC7`: `L417:NONE`
+- `SRC8`: `L418:This_function_intentionally_inspects_the_active_SQLite`
+- `SRC9`: `L419:schema_directly_and_does_not_depend_on_legacy_helpers.`
