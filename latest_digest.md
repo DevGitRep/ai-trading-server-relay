@@ -1,31 +1,37 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-11T11:13:58.659139+00:00`
-- Run ID: `20260911T111356Z`
-- Step: `INSPECT_EXACT_RESULT_DICT_BEFORE_INSERT`
+- Published UTC: `2026-09-11T11:17:03.189617+00:00`
+- Run ID: `20260911T111701Z`
+- Step: `TRACE_PRIMARY_SECONDARY_METRIC_SOURCE`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `RESULT_DICT_ALREADY_HAS_METRIC_KEYS`
-- Next gate: `TRACE_ONLY_EXISTING_METRIC_EXPRESSIONS`
+- Verdict: `PRIMARY_SECONDARY_SOURCE_EXPRESSIONS_RESOLVED`
+- Next gate: `PATCH_ONLY_UPSTREAM_METRIC_SOURCE_IF_CONFIRMED`
 
 ## Facts
 
+- `ASSIGN1`: `L4591:primary:_v2_signal_flip(candles,_signals[&#x27;long&#x27;],_signals[&#x27;short&#x27;])`
+- `ASSIGN2`: `L4593:secondary:_v2_indicator_atr_1_1_5(candles,_signals[&#x27;long&#x27;],_signals[&#x27;short&#x27;])`
+- `ASSIGN3`: `L4596:secondary:_v2_native_strategy(candles,_artifact)`
+- `ASSIGNMENT_COUNT`: `3`
 - `BENCHTEST_RUN`: `NO`
 - `CLOUDFLARE_ACTION`: `NO`
 - `DB_WRITE`: `NO`
-- `METRIC1`: `trade_count:primary.get(&#x27;trade_count&#x27;)`
-- `METRIC2`: `net_return_pct:primary.get(&#x27;net_return_pct&#x27;)`
-- `METRIC3`: `max_drawdown_pct:primary.get(&#x27;max_drawdown_pct&#x27;)`
-- `METRIC4`: `profit_factor:primary.get(&#x27;profit_factor&#x27;)`
-- `METRIC5`: `win_rate_pct:primary.get(&#x27;win_rate_pct&#x27;)`
-- `METRIC6`: `secondary_net_return_pct:secondary.get(&#x27;net_return_pct&#x27;)`
-- `METRIC7`: `secondary_max_drawdown_pct:secondary.get(&#x27;max_drawdown_pct&#x27;)`
-- `METRIC8`: `secondary_profit_factor:secondary.get(&#x27;profit_factor&#x27;)`
-- `METRIC9`: `secondary_win_rate_pct:secondary.get(&#x27;win_rate_pct&#x27;)`
-- `METRIC_KEYS_MISSING`: `NONE`
-- `METRIC_KEYS_PRESENT`: `trade_count,net_return_pct,max_drawdown_pct,profit_factor,win_rate_pct,secondary_net_return_pct,secondary_max_drawdown_pct,secondary_profit_factor,secondary_win_rate_pct`
+- `OP1`: `L4584:If:if_not_isinstance(signals,_dict)_or_signals.get(&#x27;status&#x27;)_!=_&#x27;PASS&#x27;:_raise_RuntimeError(&#x27;V2_SIGNAL_STATUS_NOT_PASS&#x27;)`
+- `OP10`: `L4605:Call:_v2_json({&#x27;mode&#x27;:_signals.get(&#x27;mode&#x27;),_&#x27;evidence&#x27;:_signals.get(&#x27;evidence&#x27;),_&#x27;primary&#x27;:__V2_PRIMARY_MODE,_&#x27;secondary&#x27;:_se`
+- `OP11`: `L4584:Call:isinstance(signals,_dict)`
+- `OP12`: `L4584:Call:signals.get(&#x27;status&#x27;)`
+- `OP13`: `L4605:Call:signals.get(&#x27;mode&#x27;)`
+- `OP14`: `L4605:Call:signals.get(&#x27;mode&#x27;)`
+- `OP2`: `L4591:Assign:primary_=__v2_signal_flip(candles,_signals[&#x27;long&#x27;],_signals[&#x27;short&#x27;])`
+- `OP3`: `L4592:If:if_script_kind_==_&#x27;indicator&#x27;:_secondary_=__v2_indicator_atr_1_1_5(candles,_signals[&#x27;long&#x27;],_signals[&#x27;short&#x27;])_secondary`
+- `OP4`: `L4605:Assign:result_=_{&#x27;run_id&#x27;:_run_id,_&#x27;candidate_id&#x27;:_candidate_id,_&#x27;source_sha256&#x27;:_source_sha,_&#x27;contract_version&#x27;:__V2_CONTRACT_`
+- `OP5`: `L4591:Call:_v2_signal_flip(candles,_signals[&#x27;long&#x27;],_signals[&#x27;short&#x27;])`
+- `OP6`: `L4593:Assign:secondary_=__v2_indicator_atr_1_1_5(candles,_signals[&#x27;long&#x27;],_signals[&#x27;short&#x27;])`
+- `OP7`: `L4596:Assign:secondary_=__v2_native_strategy(candles,_artifact)`
+- `OP8`: `L4593:Call:_v2_indicator_atr_1_1_5(candles,_signals[&#x27;long&#x27;],_signals[&#x27;short&#x27;])`
+- `OP9`: `L4605:Call:str(signals.get(&#x27;mode&#x27;)_or_&#x27;&#x27;)`
+- `RELATED_OP_COUNT`: `15`
 - `RESTART`: `NO`
-- `RESULT_DICT_LINE`: `4605`
-- `RESULT_KEY_COUNT`: `68`
 - `SOURCE_CHANGE`: `NO`
