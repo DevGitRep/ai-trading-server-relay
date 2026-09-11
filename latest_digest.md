@@ -1,42 +1,93 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-11T12:32:00.594404+00:00`
-- Run ID: `20260911T123158Z`
-- Step: `TRACE_APPROVED_TO_LIBRARY_PUBLICATION_BRIDGE`
+- Published UTC: `2026-09-11T12:32:50.166385+00:00`
+- Run ID: `20260911T123248Z`
+- Step: `TRACE_EXACT_LIBRARY_INCLUDE_CONDITION`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `APPROVED_TYS_SOURCE_RECORD_PRESENT_BUT_FILTERED`
-- Next gate: `TRACE_ONLY_EXACT_LIBRARY_INCLUDE_CONDITION`
+- Verdict: `LIBRARY_INCLUDE_CONDITION_CAPTURED`
+- Next gate: `FIX_ONLY_FAILED_LIBRARY_INCLUDE_CONDITION`
 
 ## Facts
 
 - `BENCHTEST_RUN`: `NO`
-- `CANDIDATES_MATCH_COUNT`: `1`
-- `CANDIDATE_ID`: `ICL_SRC_A465DEED5818C8FA`
+- `CAND1`: `candidate_id:ICL_SRC_A465DEED5818C8FA`
+- `CAND10`: `oos_status:NOT_TESTED`
+- `CAND11`: `robustness_status:NOT_TESTED`
+- `CAND12`: `brain_value_status:NOT_TESTED`
+- `CAND13`: `prospective_status:NOT_STARTED`
+- `CAND2`: `source_sha256:a465deed5818c8faf85f25a1f1b66cc4e94ef650363cc160cb6be18da74b80c0`
+- `CAND3`: `status:SOURCE_CAPTURED`
+- `CAND4`: `discovery_status:NOT_REQUIRED`
+- `CAND5`: `causality_status:PENDING`
+- `CAND6`: `repaint_status:PENDING`
+- `CAND7`: `conversion_status:NOT_STARTED`
+- `CAND8`: `parity_status:NOT_STARTED`
+- `CAND9`: `performance_status:NOT_TESTED`
+- `CANDIDATE_FIELD_COUNT`: `13`
+- `CANDIDATE_PRESENT`: `YES`
 - `CLOUDFLARE_ACTION`: `NO`
-- `CURRENT_MATCH_COUNT`: `NO_TABLE`
 - `DB_WRITE`: `NO`
-- `LIBRARY_LOADER_TRACE_LINE_COUNT`: `17`
-- `LOADER1`: `L43:from_test_your_script_v1_import_(`
-- `LOADER10`: `L129:FROM_sources`
-- `LOADER11`: `L130:WHERE_(`
-- `LOADER12`: `L163:_tys_filter_public_shas(`
-- `LOADER13`: `L177:row[source_sha256]`
-- `LOADER14`: `L250:sha_=_(row[source_sha256]_or_)`
-- `LOADER15`: `L256:FROM_sources`
-- `LOADER16`: `L257:WHERE_script_id_part=`
-- `LOADER17`: `L318:_card[realistic_score]_=__metrics.get(realistic_score)`
-- `LOADER2`: `L46:filter_public_shas_as`
-- `LOADER3`: `L47:_tys_filter_public_shas,`
-- `LOADER4`: `L53:_INDICATOR_LIBRARY_PUBLICATION_BATCH_V29L`
-- `LOADER5`: `L56:_source_sha_cache_v1_already_provides_source_sha256.`
-- `LOADER6`: `L68:_tys_filter_public_shas(`
-- `LOADER7`: `L70:str(item[source_sha256])`
-- `LOADER8`: `L72:if_item[source_sha256]`
-- `LOADER9`: `L80:if_item[source_sha256]:`
-- `PIPELINE_INDICATOR_ID`: `ICL_SRC_A465DEED5818C8FA`
-- `PIPELINE_VERSIONS_MATCH_COUNT`: `1`
+- `LOAD1`: `L118:script_id_part,`
+- `LOAD10`: `L127:version,`
+- `LOAD11`: `L128:source`
+- `LOAD12`: `L129:FROM_sources`
+- `LOAD13`: `L130:WHERE_(`
+- `LOAD14`: `L131:script_id_part,`
+- `LOAD15`: `L132:version`
+- `LOAD16`: `L133:)_IN_(`
+- `LOAD17`: `L134:{placeholders}`
+- `LOAD18`: `L135:)`
+- `LOAD19`: `L136:,`
+- `LOAD2`: `L119:source_version,`
+- `LOAD20`: `L137:params,`
+- `LOAD21`: `L138:).fetchall()`
+- `LOAD22`: `L139:NONE`
+- `LOAD23`: `L140:for_source_row_in_source_rows:`
+- `LOAD24`: `L141:source_=_(`
+- `LOAD25`: `L142:source_row[source]`
+- `LOAD26`: `L143:or_`
+- `LOAD27`: `L144:)`
+- `LOAD28`: `L145:NONE`
+- `LOAD29`: `L146:if_not_source:`
+- `LOAD3`: `L120:]`
+- `LOAD30`: `L147:continue`
+- `LOAD31`: `L148:NONE`
+- `LOAD32`: `L149:pair_=_(`
+- `LOAD33`: `L150:source_row[script_id_part],`
+- `LOAD34`: `L151:source_row[version],`
+- `LOAD35`: `L152:)`
+- `LOAD36`: `L153:NONE`
+- `LOAD37`: `L154:fallback_sha_by_pair[`
+- `LOAD38`: `L155:pair`
+- `LOAD39`: `L156:]_=_hashlib.sha256(`
+- `LOAD4`: `L121:)`
+- `LOAD40`: `L157:source.encode(`
+- `LOAD41`: `L158:utf-8`
+- `LOAD42`: `L159:)`
+- `LOAD43`: `L160:).hexdigest()`
+- `LOAD44`: `L161:NONE`
+- `LOAD45`: `L162:fallback_public_shas_=_set(`
+- `LOAD46`: `L163:_tys_filter_public_shas(`
+- `LOAD47`: `L164:list(`
+- `LOAD48`: `L165:fallback_sha_by_pair.values()`
+- `LOAD49`: `L166:)`
+- `LOAD5`: `L122:NONE`
+- `LOAD50`: `L167:)`
+- `LOAD51`: `L168:)`
+- `LOAD52`: `L169:NONE`
+- `LOAD53`: `L170:public_source_shas.update(`
+- `LOAD54`: `L171:fallback_public_shas`
+- `LOAD55`: `L172:)`
+- `LOAD56`: `L173:NONE`
+- `LOAD57`: `L174:for_row_in_library_rows:`
+- `LOAD58`: `L175:NONE`
+- `LOAD6`: `L123:source_rows_=_conn.execute(`
+- `LOAD7`: `L124:f`
+- `LOAD8`: `L125:SELECT`
+- `LOAD9`: `L126:script_id_part,`
+- `LOADER_LINE_COUNT`: `58`
 - `RESTART`: `NO`
 - `ROW41_PUBLICATION`: `APPROVED`
 - `SOURCE_CHANGE`: `NO`
