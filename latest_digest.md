@@ -1,26 +1,89 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-11T13:56:18.084479+00:00`
-- Run ID: `20260911T135616Z`
-- Step: `FINALIZE_APPROVED_TYS_CANONICAL_PUBLICATION`
+- Published UTC: `2026-09-11T14:06:54.389534+00:00`
+- Run ID: `20260911T140652Z`
+- Step: `TRACE_TYS_INITIAL_CHECK_UI_FLOW`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `TYS_MANUAL_APPROVAL_END_TO_END_COMPLETE`
-- Next gate: `COMPLETE`
+- Verdict: `TYS_INITIAL_CHECK_FLOW_CAPTURED`
+- Next gate: `PATCH_ONLY_FAIL_BEHAVIOR_AND_REVIEW_VISIBILITY`
 
 ## Facts
 
-- `APPROVED_TARGET_FOUND`: `YES`
 - `BENCHTEST_RUN`: `NO`
-- `CANONICAL_SCRIPT_COUNT`: `1`
-- `CANONICAL_SOURCE_COUNT`: `1`
 - `CLOUDFLARE_ACTION`: `NO`
-- `DB_WRITE`: `YES`
-- `PATCH_PREPARED`: `YES`
-- `PRIVATE_TARGET_FOUND`: `NO`
-- `RESTART`: `YES`
-- `REVIEW_HTTP_STATUS`: `200`
-- `ROLLBACK`: `NO`
-- `ROW41_BACKFILL`: `YES`
-- `SYNTAX_CHECK`: `YES`
+- `DB_WRITE`: `NO`
+- `H1`: `indicator_lab_v1.py:L259:con.commit()`
+- `H10`: `indicator_lab_v1.py:L338:NONE`
+- `H11`: `indicator_lab_v1.py:L339:return_[dict(row)_for_row_in_rows]`
+- `H12`: `indicator_lab_v1.py:L340:finally:`
+- `H13`: `indicator_lab_v1.py:L341:con.close()`
+- `H14`: `indicator_lab_v1.py:L342:NONE`
+- `H15`: `indicator_lab_v1.py:L343:NONE`
+- `H16`: `indicator_lab_v1.py:L344:def__get_candidate(candidate_id):`
+- `H17`: `indicator_lab_v1.py:L345:con_=__connect()`
+- `H18`: `indicator_lab_v1.py:L346:try:`
+- `H19`: `indicator_lab_v1.py:L371:[dict(r)_for_r_in_runs],`
+- `H2`: `indicator_lab_v1.py:L260:NONE`
+- `H20`: `indicator_lab_v1.py:L372:)`
+- `H21`: `indicator_lab_v1.py:L373:finally:`
+- `H22`: `indicator_lab_v1.py:L374:con.close()`
+- `H23`: `indicator_lab_v1.py:L375:NONE`
+- `H24`: `indicator_lab_v1.py:L376:NONE`
+- `H25`: `indicator_lab_v1.py:L377:def__summary():`
+- `H26`: `indicator_lab_v1.py:L378:con_=__connect()`
+- `H27`: `indicator_lab_v1.py:L379:try:`
+- `H28`: `indicator_lab_v1.py:L414:fee_free_primary_ranking:_False,`
+- `H29`: `indicator_lab_v1.py:L415:}`
+- `H3`: `indicator_lab_v1.py:L261:finally:`
+- `H30`: `indicator_lab_v1.py:L416:finally:`
+- `H31`: `indicator_lab_v1.py:L417:con.close()`
+- `H32`: `indicator_lab_v1.py:L418:NONE`
+- `H33`: `indicator_lab_v1.py:L419:NONE`
+- `H34`: `indicator_lab_v1.py:L420:NONE`
+- `H35`: `indicator_lab_v1.py:L421:#_===_INDICATOR_LAB_TIERED_RESEARCH_UI_V1_===`
+- `H36`: `indicator_lab_v1.py:L422:NONE`
+- `H37`: `indicator_lab_v1.py:L793:initialize_indicator_lab_v1()`
+- `H38`: `indicator_lab_v1.py:L794:NONE`
+- `H39`: `indicator_lab_v1.py:L795:NONE`
+- `H4`: `indicator_lab_v1.py:L262:con.close()`
+- `H40`: `indicator_lab_v1.py:L796:#_TEST_YOUR_SCRIPT_PRIVATE_REPORT_ROUTE_V14`
+- `H41`: `indicator_lab_v1.py:L797:app.route(`
+- `H42`: `indicator_lab_v1.py:L798:/indicator-lab/test-your-script/report/&lt;submission_id&gt;,`
+- `H43`: `indicator_lab_v1.py:L799:methods=[GET],`
+- `H44`: `indicator_lab_v1.py:L800:)`
+- `H45`: `indicator_lab_v1.py:L801:def_indicator_lab_test_your_script_private_report_v14(`
+- `H46`: `indicator_lab_v1.py:L802:submission_id,`
+- `H47`: `indicator_lab_v1.py:L803:):`
+- `H48`: `indicator_lab_v1.py:L804:from_test_your_script_v1_import_(`
+- `H49`: `indicator_lab_v1.py:L805:private_report_projection_v14,`
+- `H5`: `indicator_lab_v1.py:L263:NONE`
+- `H50`: `indicator_lab_v1.py:L806:)`
+- `H51`: `indicator_lab_v1.py:L807:NONE`
+- `H52`: `indicator_lab_v1.py:L808:raw_token_=_str(`
+- `H53`: `indicator_lab_v1.py:L809:request.args.get(`
+- `H54`: `indicator_lab_v1.py:L814:).strip()`
+- `H55`: `indicator_lab_v1.py:L815:NONE`
+- `H56`: `indicator_lab_v1.py:L816:report_=_private_report_projection_v14(`
+- `H57`: `indicator_lab_v1.py:L817:submission_id,`
+- `H58`: `indicator_lab_v1.py:L818:raw_token,`
+- `H59`: `indicator_lab_v1.py:L819:)`
+- `H6`: `indicator_lab_v1.py:L264:NONE`
+- `H60`: `indicator_lab_v1.py:L820:NONE`
+- `H61`: `indicator_lab_v1.py:L821:if_report_is_None:`
+- `H62`: `indicator_lab_v1.py:L822:abort(404)`
+- `H63`: `indicator_lab_v1.py:L823:NONE`
+- `H64`: `indicator_lab_v1.py:L824:response_=_app.make_response(`
+- `H65`: `indicator_lab_v1.py:L825:render_template(`
+- `H66`: `indicator_lab_v1.py:L826:test_your_script_report_v1.html,`
+- `H67`: `indicator_lab_v1.py:L827:report=report,`
+- `H68`: `indicator_lab_v1.py:L828:)`
+- `H69`: `indicator_lab_v1.py:L829:)`
+- `H7`: `indicator_lab_v1.py:L265:def__append_event(con,_candidate_id,_event_type,_payload):`
+- `H70`: `indicator_lab_v1.py:L830:NONE`
+- `H8`: `indicator_lab_v1.py:L266:con.execute(`
+- `H9`: `indicator_lab_v1.py:L267:NONE`
+- `MATCH_COUNT`: `2075`
+- `RESTART`: `NO`
+- `SOURCE_CHANGE`: `NO`
