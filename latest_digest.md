@@ -1,29 +1,23 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-11T10:40:24.414192+00:00`
-- Run ID: `20260911T104022Z`
-- Step: `MAP_RELATED_METRIC_KEY_NAMES`
+- Published UTC: `2026-09-11T10:41:20.090769+00:00`
+- Run ID: `20260911T104118Z`
+- Step: `INSPECT_RAW_PAYLOAD_SCHEMA`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `RELATED_METRIC_KEY_NAMES_STILL_PARTIAL`
-- Next gate: `INSPECT_ONLY_RAW_PAYLOAD_SCHEMA`
+- Verdict: `RAW_PAYLOAD_REQUIRED_METRIC_PATHS_INCOMPLETE`
+- Next gate: `TRACE_ONLY_RAW_PAYLOAD_PARENT_OBJECTS`
 
 ## Facts
 
-- `BENCHSCORE_CHANGE`: `NO`
 - `BENCHTEST_RUN`: `NO`
 - `CLOUDFLARE_ACTION`: `NO`
 - `DB_WRITE`: `NO`
-- `GET1`: `929:trade_count`
-- `GET2`: `934:trade_count`
-- `GET3`: `947:win_rate_pct`
-- `HAS_DRAWDOWN_KEY`: `NO`
-- `HAS_PROFIT_KEY`: `NO`
-- `HAS_RETURN_KEY`: `NO`
-- `HAS_WIN_RATE_KEY`: `YES`
-- `LIBRARY_HELPER_CHANGE`: `NO`
-- `RELATED_KEYS`: `Losses,Wins,losing_trades,primary_trade_count,trade_count,win_rate_pct`
+- `DRAWDOWN_PATH_COUNT`: `0`
+- `PROFIT_PATH_COUNT`: `0`
 - `RESTART`: `NO`
+- `RETURN_PATH_COUNT`: `0`
 - `SOURCE_CHANGE`: `NO`
-- `UNIQUE_RELATED_KEY_COUNT`: `6`
+- `TRADE_PATH_COUNT`: `0`
+- `WIN_PATH_COUNT`: `0`
