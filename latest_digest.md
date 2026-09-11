@@ -1,24 +1,22 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-11T17:20:06.930177+00:00`
-- Run ID: `20260911T172004Z`
-- Step: `CHECK_ANTIGRAVITY_HEADLESS`
+- Published UTC: `2026-09-11T17:22:13.840905+00:00`
+- Run ID: `20260911T172211Z`
+- Step: `TEST_FREE_GEMINI38_FLASH`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `ANTIGRAVITY_HEADLESS_CHECKED`
-- Next gate: `FIX_ANTIGRAVITY_HEADLESS_AUTH_OR_FLAGS`
+- Verdict: `GEMINI38_FREE_MODEL_CHECKED`
+- Next gate: `ANTIGRAVITY_REPO_TEST`
 
 ## Facts
 
-- `AGY_HEADLESS_OK`: `NO`
-- `AGY_LAST_OUTPUT`: `*_Quota_exceeded_for_metric:_generativelanguage.googleapis.com/generate_content_free_tier_requests,_limit:_0,_model:_gemini-3.1-pro_*_Quota_exceeded_for_metric:_generativelanguage.googleapis.com/generate_content_free_tier_input_token_count,`
-- `AGY_PROCESS_RC`: `1`
+- `AGY_PROCESS_RC`: `2`
 - `BENCHTEST_RUN`: `NO`
 - `CLOUDFLARE_ACTION`: `NO`
 - `CODEX_USED`: `NO`
 - `DB_WRITE`: `NO`
-- `GEMINI_KEY_VISIBLE`: `YES`
-- `PRINT_FLAG_SUPPORTED`: `YES`
+- `GEMINI38_OK`: `NO`
+- `LAST_OUTPUT`: `Error:_-p_took_&quot;--model&quot;_as_its_prompt,_so_the_intended_prompt_was_left_as_an_argument_and_ignored._Attach_the_prompt_to_the_flag_(-p=&#x27;your_prompt&#x27;)_and_move_--model_elsewhere_on_the_command_line._`
 - `RESTART`: `NO`
 - `SOURCE_CHANGE`: `NO`
