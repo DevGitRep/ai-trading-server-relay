@@ -1,27 +1,32 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-11T09:46:40.909420+00:00`
-- Run ID: `20260911T094638Z`
-- Step: `PATCH_REVIEW_CANONICAL_METRICS_BY_CANDIDATE_ID`
+- Published UTC: `2026-09-11T09:47:27.014880+00:00`
+- Run ID: `20260911T094724Z`
+- Step: `TRACE_ONLY_REVIEW_ROUTE_RUNTIME`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `REVIEW_ROUTE_NOT_200_AFTER_PATCH`
-- Next gate: `TRACE_ONLY_REVIEW_ROUTE_RUNTIME`
+- Verdict: `REVIEW_RUNTIME_ERROR_IDENTIFIED`
+- Next gate: `FIX_ONLY_EXACT_REVIEW_RUNTIME_ERROR`
 
 ## Facts
 
-- `BACKUP_CREATED`: `YES`
 - `BENCHTEST_RUN`: `NO`
+- `CANDIDATE_LOOKUP_PRESENT`: `YES`
+- `CANONICAL_HELPER_CALL_PRESENT`: `YES`
+- `CANONICAL_HELPER_IMPORT_PRESENT`: `YES`
 - `CLOUDFLARE_ACTION`: `NO`
 - `DB_WRITE`: `NO`
-- `LATEST_CANONICAL_METRIC_COUNT`: `0`
-- `PATCH_ERROR`: `NONE`
-- `PATCH_PREPARED`: `YES`
-- `PRIVILEGED_WRITE`: `YES`
-- `RESTART`: `YES`
+- `ERROR_TEXT`: `Cannot_operate_on_a_closed_database.`
+- `ERROR_TYPE`: `ProgrammingError`
+- `LOG1`: `Sep_11_09:47:24_[HOST]_python[456418]:_Traceback_(most_recent_call_last):`
+- `LOG2`: `Sep_11_09:47:24_[HOST]_python[456418]:_rv_=_self.handle_user_exception(e)`
+- `LOG3`: `Sep_11_09:47:24_[HOST]_python[456418]:_File_hometransformerfreqtrade-botuser_dataorderflow_dashboardinternal_test_submissions_v1.py,_line_251,_in_internal`
+- `LOG4`: `Sep_11_09:47:24_[HOST]_python[456418]:__canonical_metrics_map_=__bulk_pipeline_metrics_v1(con)`
+- `LOG5`: `Sep_11_09:47:24_[HOST]_python[456418]:_File_hometransformerfreqtrade-botuser_dataorderflow_dashboardindicator_lab_library_ui_v1.py,_line_747,_in__bulk_pip`
+- `LOG6`: `Sep_11_09:47:24_[HOST]_python[456418]:_sqlite3.ProgrammingError:_Cannot_operate_on_a_closed_database.`
+- `LOG_HIT_COUNT`: `17`
+- `PATCH_MARKER_PRESENT`: `YES`
+- `RESTART`: `NO`
 - `REVIEW_HTTP_STATUS`: `500`
-- `ROLLBACK`: `NO`
-- `SERVICE_ACTIVE`: `YES`
-- `SOURCE_CHANGED`: `YES`
-- `SYNTAX_CHECK`: `YES`
+- `SOURCE_CHANGE`: `NO`
