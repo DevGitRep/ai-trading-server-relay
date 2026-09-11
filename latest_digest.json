@@ -1,21 +1,26 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-11T06:29:04.184317+00:00",
-  "run_id": "20260911T062902Z",
-  "step": "TRACE_TOKEN_RESULT_STATUS_GUARD",
+  "published_at_utc": "2026-09-11T06:30:47.893412+00:00",
+  "run_id": "20260911T063045Z",
+  "step": "TRACE_EXISTING_EMAIL_CONFIG_READY",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "TOKEN_RESULT_STATUS_GUARD_PRESENT",
-  "next_gate": "VERIFY_DIRECTION_STATUS_EXPECTATION",
+  "verdict": "EMAIL_CONFIG_ASSIGNMENT_NOT_FOUND",
+  "next_gate": "INSPECT_EMAIL_FUNCTION_LINES_795_806",
   "facts": {
     "BENCHTEST_RUN": "NO",
     "CLOUDFLARE_ACTION": "NO",
+    "CONFIG_ASSIGN_EXPR": "NOT_FOUND",
+    "CONFIG_ASSIGN_LINE": "-1",
+    "CONFIG_ENV_COUNT": "0",
+    "CONFIG_HELPER": "UNKNOWN",
+    "CONFIG_HELPER_EXISTS": "NO",
+    "CONFIG_HELPER_RETURN_COUNT": "0",
+    "CONFIG_STATUS_LITERALS": "NONE",
     "DB_WRITE": "NO",
-    "G1_COND": "result_is_None",
-    "G1_LINE": "886",
+    "DIRECTION_STATUS_BLOCKS": "NO",
+    "EXACT_RESULT_EXISTS": "YES",
     "RESTART": "NO",
-    "RESULT_ACCESS_COUNT": "0",
-    "SOURCE_CHANGE": "NO",
-    "STATUS_GUARD_COUNT": "1"
+    "SOURCE_CHANGE": "NO"
   }
 }
