@@ -1,22 +1,16 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-11T15:44:02.508121+00:00`
-- Run ID: `20260911T154400Z`
-- Step: `CODEX_LOGIN_HELP`
+- Published UTC: `2026-09-11T15:45:10.056228+00:00`
+- Run ID: `20260911T154507Z`
+- Step: `CODEX_DEVICE_AUTH_FLAG`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `CODEX_LOGIN_METHODS_CHECKED`
-- Next gate: `AUTHENTICATE_CODEX`
+- Verdict: `CODEX_DEVICE_AUTH_FLAG_CAPTURED`
+- Next gate: `LOGIN_WITH_CHATGPT`
 
 ## Facts
 
-- `BENCHTEST_RUN`: `NO`
-- `CHATGPT_LOGIN_MENTIONED`: `NO`
 - `CLOUDFLARE_ACTION`: `NO`
-- `CODEX_VERSION`: `codex-cli_0.154.0`
-- `DB_WRITE`: `NO`
-- `DEVICE_AUTH_SUPPORTED`: `YES`
-- `RESTART`: `NO`
-- `SOURCE_CHANGE`: `NO`
-- `STDIN_AUTH_SUPPORTED`: `YES`
+- `DEVICE_LINE`: `______--device-auth`
+- `STDIN_LINE`: `__________Read_the_API_key_from_stdin_eg_printenv_OPENAI_API_KEY__codex_login_--with-api-key`
