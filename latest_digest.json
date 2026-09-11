@@ -1,26 +1,20 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-11T16:15:59.951071+00:00",
-  "run_id": "20260911T161557Z",
-  "step": "MERGE_AND_DEPLOY_TYS_FIX",
+  "published_at_utc": "2026-09-11T16:20:12.813573+00:00",
+  "run_id": "20260911T162010Z",
+  "step": "INSPECT_LATEST_TYS_TECHNICAL_FAIL",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "TYS_FIX_DEPLOYED",
-  "next_gate": "BROWSER_VERIFY_TYS_FAIL_UX",
+  "verdict": "LATEST_TYS_FAILURE_INSPECTED",
+  "next_gate": "EXPLAIN_TECHNICAL_COMPATIBILITY_FAILURE",
   "facts": {
-    "AFTER_SHA": "6066146b5e3f",
-    "BEFORE_SHA": "77bce0057296",
     "BENCHTEST_RUN": "NO",
-    "BRANCH": "fix/tys-initial-fail-20260911t160921z",
+    "BENCHTEST_STATUS": "NONE",
     "CLOUDFLARE_ACTION": "NO",
     "DB_WRITE": "NO",
-    "EXPECTED_COMMIT": "6066146b5e3f",
-    "FAST_FORWARD_MATCH": "YES",
-    "GITHUB_MAIN_PUSH": "YES",
-    "INTERNAL_REVIEW_HTTP": "000000",
-    "LIVE_WORKTREE_CLEAN": "YES",
-    "RESTART": "YES",
-    "SERVICE_ACTIVE": "YES",
-    "SOURCE_CHANGE": "YES"
+    "RESTART": "NO",
+    "SOURCE_CHANGE": "NO",
+    "SUBMISSION_ID": "TYS_02816FA4C4134012895BE1F51C97554C",
+    "TECHNICAL_STATUS": "FAIL"
   }
 }
