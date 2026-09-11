@@ -1,37 +1,36 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-11T15:01:40.809597+00:00`
-- Run ID: `20260911T150138Z`
-- Step: `CREATE_AI_BRAIN_REPO_MAP`
+- Published UTC: `2026-09-11T15:05:48.555140+00:00`
+- Run ID: `20260911T150546Z`
+- Step: `MAP_FDI_META_LAYER`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `AI_BRAIN_REPO_MAP_CREATED_AND_PUSHED`
-- Next gate: `USE_REPO_MAP_FOR_CODEX_WORKFLOW`
+- Verdict: `FDI_META_LAYER_MAPPED_AND_PUSHED`
+- Next gate: `VERIFY_FDI_AND_PREPARE_CODEX`
 
 ## Facts
 
 - `APP_SOURCE_CHANGE`: `NO`
 - `BENCHTEST_RUN`: `NO`
-- `BRAIN1_ENTRYPOINTS`: `16`
-- `BRAIN1_FILES`: `39`
-- `BRAIN2_ENTRYPOINTS`: `0`
-- `BRAIN2_FILES`: `0`
-- `BRAIN3_ENTRYPOINTS`: `20`
-- `BRAIN3_FILES`: `175`
-- `BRAIN4_ENTRYPOINTS`: `1`
-- `BRAIN4_FILES`: `1`
-- `BRAIN5_ENTRYPOINTS`: `1`
-- `BRAIN5_FILES`: `1`
-- `BRAIN6_ENTRYPOINTS`: `1`
-- `BRAIN6_FILES`: `2`
 - `CLOUDFLARE_ACTION`: `NO`
-- `COMMIT_SHA`: `80d04f4`
+- `COMMIT_SHA`: `69a81ff`
 - `DB_WRITE`: `NO`
 - `DOC_CHANGE`: `YES`
+- `FDI_DECLARED_IN_MASTER`: `YES`
+- `FDI_DEPENDENCIES`: `10`
+- `FDI_ENTRYPOINTS`: `5`
+- `FDI_FILE1`: `src/run_sol_indicator_orderflow_fusion_v2_evaluator.sh`
+- `FDI_FILE2`: `src/run_sol_indicator_orderflow_fusion_v2_scorer.sh`
+- `FDI_FILE3`: `src/sol_indicator_orderflow_fusion_v2_breakout_scorer_20260818_183730.py`
+- `FDI_FILE4`: `src/sol_indicator_orderflow_fusion_v2_evaluator_20260818_184254.py`
+- `FDI_FILE5`: `backend.py`
+- `FDI_FILE6`: `macro_research/data/prospective/probe_reports_v1/dukascopy_recent_source_capability_20260817_072140.json`
+- `FDI_FILE7`: `templates/dashboard.html`
+- `FDI_FILES`: `7`
 - `GITHUB_PUSH`: `YES`
-- `MAP_CREATED`: `YES`
-- `MAP_PATH`: `docs/AI_BRAIN_REPO_MAP.md`
+- `INDICATOR_MARKET_STRUCTURE_ADMITTED`: `YES`
+- `MAP_UPDATED`: `YES`
 - `REMOTE_VERIFIED`: `YES`
 - `RESTART`: `NO`
 - `WORKTREE_CLEAN`: `YES`
