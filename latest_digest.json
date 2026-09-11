@@ -1,20 +1,21 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-11T15:42:51.634957+00:00",
-  "run_id": "20260911T154249Z",
-  "step": "INSTALL_CODEX",
+  "published_at_utc": "2026-09-11T15:44:02.508121+00:00",
+  "run_id": "20260911T154400Z",
+  "step": "CODEX_LOGIN_HELP",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "CODEX_INSTALLED",
+  "verdict": "CODEX_LOGIN_METHODS_CHECKED",
   "next_gate": "AUTHENTICATE_CODEX",
   "facts": {
     "BENCHTEST_RUN": "NO",
+    "CHATGPT_LOGIN_MENTIONED": "NO",
     "CLOUDFLARE_ACTION": "NO",
     "CODEX_VERSION": "codex-cli_0.154.0",
     "DB_WRITE": "NO",
-    "NODE_VERSION": "v18.19.1",
-    "NPM_VERSION": "9.2.0",
+    "DEVICE_AUTH_SUPPORTED": "YES",
     "RESTART": "NO",
-    "SOURCE_CHANGE": "NO"
+    "SOURCE_CHANGE": "NO",
+    "STDIN_AUTH_SUPPORTED": "YES"
   }
 }
