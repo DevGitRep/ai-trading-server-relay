@@ -1,31 +1,34 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-11T08:29:41.623481+00:00`
-- Run ID: `20260911T082939Z`
-- Step: `VERIFY_PRIVATE_ABSENT_ALL_LIBRARY_PAGES`
+- Published UTC: `2026-09-11T08:40:21.440339+00:00`
+- Run ID: `20260911T084019Z`
+- Step: `DIAGNOSE_INTERNAL_REVIEW_MISSING_METRICS`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `PRIVATE_TYS_ABSENT_FROM_COMPLETE_LIVE_LIBRARY`
-- Next gate: `USER_CONFIRM_APPROVE_TEST_SUBMISSION`
+- Verdict: `REVIEW_ROWS_NOT_MATCHING_PIPELINE_CURRENT`
+- Next gate: `TRACE_ONLY_REVIEW_TO_PIPELINE_LINEAGE`
 
 ## Facts
 
+- `ANY_MATCHING_PIPELINE_CURRENT`: `NO`
+- `ANY_METRIC_VALUES`: `NO`
 - `BENCHTEST_RUN`: `NO`
 - `CLOUDFLARE_ACTION`: `NO`
 - `DB_WRITE`: `NO`
-- `EXISTING_APPROVAL_FILTER_PROVEN`: `YES`
-- `HTTP_STATUS`: `200`
-- `ITEMS_SCANNED`: `9294`
-- `LATEST_STATUS`: `PRIVATE`
-- `LIBRARY_PAGES`: `775`
-- `LIBRARY_PAGE_SIZE`: `12`
-- `LIBRARY_TOTAL`: `9294`
-- `PREVIOUS_APPROVAL_PATCH_APPLIED`: `NO`
-- `PRIVATE_ABSENT_COMPLETE_LIBRARY`: `YES`
-- `PRIVATE_CANDIDATE_FOUND`: `NO`
-- `PRIVATE_SHA_FOUND`: `NO`
-- `PRIVATE_SUBMISSION_FOUND`: `NO`
-- `RESPONSE_SCOPE_COMPLETE`: `YES`
+- `PIPELINE_CURRENT_TABLE`: `NO`
 - `RESTART`: `NO`
+- `REVIEW_ROW_COUNT`: `12`
+- `REVIEW_SOURCE_TERMS`: `pipeline_benchtest_runs_profit_factor_trade_count_win_rate_pct_secondary_win_rate_pct_net_return_pct_max_drawdown_pct_candidate_id_source_sha256`
+- `REVIEW_SQL_COUNT`: `2`
+- `ROW1`: `COMPLETE:CUR=NO:COLS=NONE:VALS=NONE`
+- `ROW2`: `COMPLETE:CUR=NO:COLS=NONE:VALS=NONE`
+- `ROW3`: `COMPLETE:CUR=NO:COLS=NONE:VALS=NONE`
+- `ROW4`: `COMPLETE:CUR=NO:COLS=NONE:VALS=NONE`
+- `ROW5`: `COMPLETE:CUR=NO:COLS=NONE:VALS=NONE`
+- `ROW6`: `COMPLETE:CUR=NO:COLS=NONE:VALS=NONE`
+- `ROW7`: `COMPLETE:CUR=NO:COLS=NONE:VALS=NONE`
+- `ROW8`: `COMPLETE:CUR=NO:COLS=NONE:VALS=NONE`
 - `SOURCE_CHANGE`: `NO`
+- `SQL1`: `SELECT_t.submission_id,_t.created_epoch_ms,_t.email,_t.technical_status,_t.benchtest_status,_c.name,_c.source_author,_COALESCE(_p.library_publication_status,_t.library_publication_`
+- `SQL2`: `SELECT_submission_id,_candidate_id,_source_sha256,_library_review_allowed,_technical_status,_benchtest_status_FROM_test_your_script_submissions_v1_WHERE_submission_id=_LIMIT_1`
