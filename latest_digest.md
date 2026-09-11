@@ -1,71 +1,24 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-11T06:13:54.760435+00:00`
-- Run ID: `20260911T061352Z`
-- Step: `TRACE_EMAIL_EARLY_RETURN_GUARDS`
+- Published UTC: `2026-09-11T06:17:32.533493+00:00`
+- Run ID: `20260911T061730Z`
+- Step: `VERIFY_TYS_EMAIL_RUN_ID_GUARD`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `EMAIL_EARLY_GUARDS_CAPTURED`
-- Next gate: `IDENTIFY_FIRST_FALSE_DELIVERY_GUARD`
+- Verdict: `RUN_ID_GUARD_NOT_BLOCKING`
+- Next gate: `CHECK_NEXT_EMAIL_GUARD`
 
 ## Facts
 
 - `BENCHTEST_RUN`: `NO`
+- `CANDIDATE_PRESENT`: `YES`
 - `CLOUDFLARE_ACTION`: `NO`
 - `DB_WRITE`: `NO`
-- `EMAIL_FUNCTION_LINE`: `751`
-- `HAS_BENCH_COMPLETE_GUARD`: `YES`
-- `HAS_CANDIDATE_GUARD`: `YES`
-- `HAS_EMAIL_ATTEMPT_WRITE`: `NO`
-- `HAS_REPORT_TOKEN_LOGIC`: `YES`
-- `HAS_SOURCE_SHA_GUARD`: `YES`
-- `HAS_TECHNICAL_PASS_GUARD`: `YES`
+- `PIPELINE_ROW_PRESENT`: `NO`
+- `PIPELINE_RUN_ID_PRESENT`: `NO`
 - `RESTART`: `NO`
-- `RETURN10_IF1`: `strsubemail_delivery_status_or_.upper__SENT`
-- `RETURN10_IF_DEPTH`: `1`
-- `RETURN10_LINE`: `782`
-- `RETURN11_IF1`: `strsubtechnical_status_or_.upper__PASS`
-- `RETURN11_IF_DEPTH`: `1`
-- `RETURN11_LINE`: `784`
-- `RETURN12_IF1`: `strsubbenchtest_status_or_.upper__COMPLETE`
-- `RETURN12_IF_DEPTH`: `1`
-- `RETURN12_LINE`: `786`
-- `RETURN13_IF1`: `result_is_None`
-- `RETURN13_IF_DEPTH`: `1`
-- `RETURN13_LINE`: `789`
-- `RETURN14_IF1`: `expected_run_and_expected_run__actual_run`
-- `RETURN14_IF_DEPTH`: `1`
-- `RETURN14_LINE`: `793`
-- `RETURN15_IF1`: `UNCONDITIONAL`
-- `RETURN15_IF_DEPTH`: `0`
-- `RETURN15_LINE`: `835`
-- `RETURN1_IF1`: `UNCONDITIONAL`
-- `RETURN1_IF_DEPTH`: `0`
-- `RETURN1_LINE`: `837`
-- `RETURN2_IF1`: `not_re.fullmatchss.s_recipient`
-- `RETURN2_IF_DEPTH`: `1`
-- `RETURN2_LINE`: `799`
-- `RETURN3_IF1`: `not_configready`
-- `RETURN3_IF_DEPTH`: `1`
-- `RETURN3_LINE`: `804`
-- `RETURN4_IF1`: `strtoken_result.getstatus_or_.upper__READY`
-- `RETURN4_IF_DEPTH`: `1`
-- `RETURN4_LINE`: `810`
-- `RETURN5_IF1`: `report_is_None`
-- `RETURN5_IF_DEPTH`: `1`
-- `RETURN5_LINE`: `819`
-- `RETURN6_IF1`: `UNCONDITIONAL`
-- `RETURN6_IF_DEPTH`: `0`
-- `RETURN6_LINE`: `844`
-- `RETURN7_IF1`: `sub_is_None`
-- `RETURN7_IF_DEPTH`: `1`
-- `RETURN7_LINE`: `776`
-- `RETURN8_IF1`: `strsubcandidate_id_or___cid`
-- `RETURN8_IF_DEPTH`: `1`
-- `RETURN8_LINE`: `778`
-- `RETURN9_IF1`: `strsubsource_sha256_or_.lower__sha`
-- `RETURN9_IF_DEPTH`: `1`
-- `RETURN9_LINE`: `780`
-- `RETURN_COUNT`: `15`
+- `RUN_IDS_MATCH`: `NO`
+- `RUN_ID_GUARD_BLOCKS`: `NO`
 - `SOURCE_CHANGE`: `NO`
+- `SUBMISSION_RUN_ID_PRESENT`: `NO`
