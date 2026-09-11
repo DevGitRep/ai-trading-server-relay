@@ -1,31 +1,31 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-11T15:07:09.900659+00:00`
-- Run ID: `20260911T150707Z`
-- Step: `CLASSIFY_FDI_CANONICALITY`
+- Published UTC: `2026-09-11T15:08:23.628571+00:00`
+- Run ID: `20260911T150821Z`
+- Step: `CODEX_WORKFLOW_PREFLIGHT`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `FDI_CANONICALITY_GUARD_ADDED`
-- Next gate: `PREPARE_CODEX_WORKFLOW`
+- Verdict: `CODEX_PREFLIGHT_COMPLETE`
+- Next gate: `INSTALL_OR_CONFIGURE_CODEX`
 
 ## Facts
 
-- `APP_SOURCE_CHANGE`: `NO`
+- `AGENTS_PRESENT`: `YES`
 - `BENCHTEST_RUN`: `NO`
-- `CANONICAL_PAIR_INDICATOR_MS`: `YES`
+- `BRAIN_MAP_PRESENT`: `YES`
 - `CLOUDFLARE_ACTION`: `NO`
-- `COMMIT_SHA`: `77bce00`
+- `CODEX_INSTALLED`: `NO`
+- `CODEX_VERSION`: `NONE`
 - `DB_WRITE`: `NO`
-- `DOC_CHANGE`: `YES`
-- `FUSION_FILE1`: `src/run_sol_indicator_orderflow_fusion_v2_evaluator.sh:inbound=2`
-- `FUSION_FILE2`: `src/run_sol_indicator_orderflow_fusion_v2_scorer.sh:inbound=2`
-- `FUSION_FILE3`: `src/sol_indicator_orderflow_fusion_v2_breakout_scorer_20260818_183730.py:inbound=4`
-- `FUSION_FILE4`: `src/sol_indicator_orderflow_fusion_v2_evaluator_20260818_184254.py:inbound=3`
-- `FUSION_NAMED_FILES`: `4`
-- `GITHUB_PUSH`: `YES`
-- `INDICATOR_ORDERFLOW_FUSION_REFS`: `9`
-- `MAP_CANONICALITY_GUARD`: `YES`
-- `MARKET_STRUCTURE_FUSION_REFS`: `4`
+- `GIT_BRANCH`: `main`
+- `GIT_ORIGIN_CONFIGURED`: `YES`
+- `MASTER_PRESENT`: `YES`
+- `NODE_INSTALLED`: `NO`
+- `NODE_VERSION`: `NONE`
+- `NPM_INSTALLED`: `NO`
+- `NPM_VERSION`: `NONE`
+- `NPX_INSTALLED`: `NO`
 - `RESTART`: `NO`
+- `SOURCE_CHANGE`: `NO`
 - `WORKTREE_CLEAN`: `YES`
