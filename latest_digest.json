@@ -1,19 +1,19 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-11T16:55:21.996697+00:00",
-  "run_id": "20260911T165519Z",
-  "step": "CHECK_LOCAL_AI_CAPACITY",
+  "published_at_utc": "2026-09-11T17:01:37.533155+00:00",
+  "run_id": "20260911T170135Z",
+  "step": "INSTALL_ANTIGRAVITY_CLI",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "LOCAL_AI_HARDWARE_CHECKED",
-  "next_gate": "SELECT_FREE_LOCAL_CODING_MODEL",
+  "verdict": "ANTIGRAVITY_CLI_INSTALLED",
+  "next_gate": "AUTHENTICATE_ANTIGRAVITY",
   "facts": {
+    "AGY_INSTALLED": "YES",
+    "AGY_VERSION": "1.2.1",
     "BENCHTEST_RUN": "NO",
     "CLOUDFLARE_ACTION": "NO",
-    "CPU_CORES": "8",
+    "CODEX_USED": "NO",
     "DB_WRITE": "NO",
-    "GPU": "NONE",
-    "RAM": "15Gi",
     "RESTART": "NO",
     "SOURCE_CHANGE": "NO"
   }
