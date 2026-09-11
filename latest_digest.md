@@ -1,24 +1,29 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-11T10:39:34.867122+00:00`
-- Run ID: `20260911T103932Z`
-- Step: `MAP_RAW_RESULT_METRIC_ASSIGNMENTS`
+- Published UTC: `2026-09-11T10:40:24.414192+00:00`
+- Run ID: `20260911T104022Z`
+- Step: `MAP_RELATED_METRIC_KEY_NAMES`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `RAW_METRIC_ASSIGNMENTS_PARTIALLY_RESOLVED`
-- Next gate: `MAP_RELATED_METRIC_KEY_NAMES`
+- Verdict: `RELATED_METRIC_KEY_NAMES_STILL_PARTIAL`
+- Next gate: `INSPECT_ONLY_RAW_PAYLOAD_SCHEMA`
 
 ## Facts
 
-- `ASSIGN1`: `932:trade_count:_primary_trades`
 - `BENCHSCORE_CHANGE`: `NO`
 - `BENCHTEST_RUN`: `NO`
 - `CLOUDFLARE_ACTION`: `NO`
 - `DB_WRITE`: `NO`
-- `FOUND_TARGET_KEYS`: `trade_count`
+- `GET1`: `929:trade_count`
+- `GET2`: `934:trade_count`
+- `GET3`: `947:win_rate_pct`
+- `HAS_DRAWDOWN_KEY`: `NO`
+- `HAS_PROFIT_KEY`: `NO`
+- `HAS_RETURN_KEY`: `NO`
+- `HAS_WIN_RATE_KEY`: `YES`
 - `LIBRARY_HELPER_CHANGE`: `NO`
-- `METRICS_ASSIGNMENT_COUNT`: `23`
-- `RELATED_ASSIGNMENT_COUNT`: `1`
+- `RELATED_KEYS`: `Losses,Wins,losing_trades,primary_trade_count,trade_count,win_rate_pct`
 - `RESTART`: `NO`
 - `SOURCE_CHANGE`: `NO`
+- `UNIQUE_RELATED_KEY_COUNT`: `6`
