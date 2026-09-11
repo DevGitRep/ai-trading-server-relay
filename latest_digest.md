@@ -1,97 +1,31 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-11T14:11:49.834163+00:00`
-- Run ID: `20260911T141147Z`
-- Step: `CAPTURE_TYS_RESPONSE_DECISION_AND_REVIEW_WHERE`
+- Published UTC: `2026-09-11T14:24:31.108828+00:00`
+- Run ID: `20260911T142428Z`
+- Step: `GITHUB_MIGRATION_PREFLIGHT`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `TYS_RESPONSE_DECISION_CAPTURED`
-- Next gate: `PATCH_INITIAL_FAIL_KEEP_MODAL_NO_TOAST_NO_REVIEW`
+- Verdict: `GITHUB_MIGRATION_PREFLIGHT_COMPLETE`
+- Next gate: `BUILD_SAFE_GITIGNORE_AND_REPO_BASELINE`
 
 ## Facts
 
 - `BENCHTEST_RUN`: `NO`
 - `CLOUDFLARE_ACTION`: `NO`
+- `CURRENT_BRANCH`: `NONE`
+- `DATABASE_FILE_COUNT`: `173`
 - `DB_WRITE`: `NO`
-- `J1`: `L2560:modal.classList.contains(irl-test-modal-open)`
-- `J10`: `L2569:NONE`
-- `J11`: `L2570:NONE`
-- `J12`: `L2571:function_irlTestYourScriptInit(){`
-- `J13`: `L2572:const_bind=()=&gt;{`
-- `J14`: `L2573:const_trigger=document.getElementById(`
-- `J15`: `L2574:irlTestYourScript`
-- `J16`: `L2575:)`
-- `J17`: `L2576:NONE`
-- `J18`: `L2577:if(!trigger){`
-- `J19`: `L2578:return_false`
-- `J2`: `L2561:){`
-- `J20`: `L2579:}`
-- `J21`: `L2580:NONE`
-- `J22`: `L2581:irlTestYourScriptCreateModal()`
-- `J23`: `L2582:return_true`
-- `J24`: `L2583:}`
-- `J25`: `L2584:NONE`
-- `J26`: `L2585:if(bind()){`
-- `J27`: `L2586:return`
-- `J28`: `L2587:}`
-- `J29`: `L2588:NONE`
-- `J3`: `L2562:close()`
-- `J30`: `L2589:const_observer=new_MutationObserver(()=&gt;{`
-- `J31`: `L2590:if(bind()){`
-- `J32`: `L2591:observer.disconnect()`
-- `J33`: `L2592:}`
-- `J34`: `L2593:})`
-- `J35`: `L2594:NONE`
-- `J36`: `L2595:observer.observe(`
-- `J37`: `L2596:document.documentElement,`
-- `J38`: `L2597:{`
-- `J39`: `L2598:childList:true,`
-- `J4`: `L2563:}`
-- `J40`: `L2599:subtree:true`
-- `J41`: `L2600:}`
-- `J42`: `L2601:)`
-- `J43`: `L2602:}`
-- `J44`: `L2603:NONE`
-- `J45`: `L2604:document.addEventListener(`
-- `J46`: `L2605:DOMContentLoaded,`
-- `J47`: `L2606:irlTestYourScriptInit`
-- `J48`: `L2607:)`
-- `J49`: `L2608:NONE`
-- `J5`: `L2564:})`
-- `J50`: `L2609:/*_TEST_YOUR_SCRIPT_UI_V1_END_*/`
-- `J51`: `L2610:NONE`
-- `J52`: `L2611:NONE`
-- `J53`: `L2612:NONE`
-- `J54`: `L2613:})()`
-- `J55`: `L2614:NONE`
-- `J6`: `L2565:NONE`
-- `J7`: `L2566:document.getElementById(irlTestYourScript)`
-- `J8`: `L2567:?.addEventListener(click,open)`
-- `J9`: `L2568:}`
-- `R1`: `L307:rows_=_con.execute(`
-- `R10`: `L316:NONE`
-- `R11`: `L317:c.name,`
-- `R12`: `L318:c.source_author,`
-- `R13`: `L319:NONE`
-- `R14`: `L320:COALESCE(`
-- `R15`: `L321:p.library_publication_status,`
-- `R16`: `L322:t.library_publication_status`
-- `R17`: `L323:)_AS_publication_status,`
-- `R18`: `L324:NONE`
-- `R19`: `L325:b.primary_profit_factor,`
-- `R2`: `L308:NONE`
-- `R20`: `L326:b.primary_trade_count,`
-- `R21`: `L327:b.primary_win_rate_pct,`
-- `R22`: `L328:b.secondary_win_rate_pct,`
-- `R23`: `L329:b.primary_net_return_pct,`
-- `R24`: `L330:b.primary_max_drawdown_pct`
-- `R3`: `L309:SELECT`
-- `R4`: `L310:t.submission_id,`
-- `R5`: `L311:t.candidate_id_AS_candidate_id,_--_INTERNAL_REVIEW_TYS_CANDIDATE_ALIAS_V1`
-- `R6`: `L312:t.created_epoch_ms,`
-- `R7`: `L313:t.email,`
-- `R8`: `L314:t.technical_status,`
-- `R9`: `L315:t.benchtest_status,`
+- `ENV_FILE_COUNT`: `0`
+- `GH_ACCOUNT`: `NONE`
+- `GH_AUTHENTICATED`: `NO`
+- `GH_INSTALLED`: `NO`
+- `GITIGNORE_EXISTS`: `NO`
+- `IS_GIT_REPO`: `NO`
+- `KEY_FILE_COUNT`: `19`
+- `LOG_FILE_COUNT`: `107`
+- `ORIGIN_REMOTE`: `NONE`
+- `PROJECT_SIZE`: `174G`
 - `RESTART`: `NO`
 - `SOURCE_CHANGE`: `NO`
+- `VENV_DIR_COUNT`: `6`
