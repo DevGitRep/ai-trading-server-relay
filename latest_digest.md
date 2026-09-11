@@ -1,26 +1,25 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-11T10:44:48.574768+00:00`
-- Run ID: `20260911T104446Z`
-- Step: `INSPECT_CURRENT_BENCHTEST_RUN_SCHEMA`
+- Published UTC: `2026-09-11T10:45:59.102331+00:00`
+- Run ID: `20260911T104557Z`
+- Step: `COMPARE_ALL_BENCHTEST_RUN_METRIC_PERSISTENCE`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `BENCHTEST_RUN_HAS_DIRECT_METRIC_COLUMNS`
-- Next gate: `MAP_DIRECT_RUN_METRICS_TO_SIX_REVIEW_FIELDS`
+- Verdict: `NO_RUN_FOR_INDICATOR_HAS_REQUIRED_METRICS`
+- Next gate: `TRACE_METRIC_PERSISTENCE_SOURCE`
 
 ## Facts
 
+- `AVAILABLE_SIX_METRIC_COLUMNS`: `primary_profit_factor,primary_trade_count,primary_win_rate_pct,secondary_win_rate_pct,primary_net_return_pct,primary_max_drawdown_pct`
 - `BENCHTEST_RUN`: `NO`
+- `BEST_IS_CURRENT`: `YES`
+- `BEST_METRIC_COUNT`: `0`
 - `CLOUDFLARE_ACTION`: `NO`
+- `CURRENT_METRIC_COUNT`: `0`
 - `DB_WRITE`: `NO`
-- `METRIC1`: `score_method:BENCH_SCORE_V2`
-- `METRIC_COLUMNS`: `score_method,primary_profit_factor,primary_net_return_pct,primary_max_drawdown_pct,primary_win_rate_pct,primary_trade_count,primary_sharpe,primary_sortino,secondary_profit_factor,secondary_net_return_pct,secondary_max_dr`
-- `METRIC_COLUMN_COUNT`: `19`
-- `NONEMPTY_METRIC_COUNT`: `1`
-- `NONEMPTY_STATUS_COUNT`: `2`
+- `POPULATED_RUN_COUNT`: `0`
 - `RESTART`: `NO`
-- `RUN_COLUMN_COUNT`: `33`
+- `RUN1`: `ROW22:M0:version_id=IV_0A03674922D94D1616AD,is_current=1,status=None,score_method=BENCH_SCORE_V2,benchtest_contract=BENCHTEST_DUAL_12MONTH_V2,created_at=2026-09-10T17:42:41.058345+00:00`
+- `RUN_COUNT`: `1`
 - `SOURCE_CHANGE`: `NO`
-- `STATUS1`: `benchtest_contract:BENCHTEST_DUAL_12MONTH_V2`
-- `STATUS2`: `raw_result_json:&lt;JSON_PRESENT&gt;`
