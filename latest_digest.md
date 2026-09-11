@@ -1,32 +1,31 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-11T16:12:25.785452+00:00`
-- Run ID: `20260911T160921Z`
-- Step: `CODEX_PATCH_TYS_INITIAL_FAIL`
+- Published UTC: `2026-09-11T16:14:20.875515+00:00`
+- Run ID: `20260911T161418Z`
+- Step: `REVIEW_TYS_FIX_DIFF`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `TYS_FIX_BRANCH_READY`
-- Next gate: `REVIEW_TYS_FIX_DIFF`
+- Verdict: `PASS`
+- Next gate: `MERGE_AND_DEPLOY_TYS_FIX`
 
 ## Facts
 
+- `ARCHITECTURE_PRESERVED`: `PASS`
 - `BENCHTEST_RUN`: `NO`
-- `CHANGED_FILE1`: `indicator_lab_v1.py`
-- `CHANGED_FILE2`: `internal_test_submissions_v1.py`
-- `CHANGED_FILE3`: `static/indicator_library_ui_v2.js`
-- `CHANGED_FILE4`: `test_your_script_v1.py`
-- `CHANGED_FILE_COUNT`: `4`
+- `BRANCH`: `fix/tys-initial-fail-20260911t160921z`
+- `BRANCH_DESCENDS_MAIN`: `YES`
 - `CLOUDFLARE_ACTION`: `NO`
 - `CODEX_PROCESS_RC`: `0`
-- `COMMIT_SHA`: `6066146`
+- `COMMIT_SHA`: `6066146b5e3f`
 - `DB_WRITE`: `NO`
-- `DIFF_CHECK`: `YES`
-- `FIX_BRANCH`: `fix/tys-initial-fail-20260911t160921z`
-- `GITHUB_BRANCH_PUSH`: `YES`
-- `JS_SYNTAX_CHECK`: `YES`
-- `LIVE_SOURCE_CHANGE`: `NO`
+- `DOWNSTREAM_GUARD_PRESERVED`: `PASS`
+- `ERROR_PROPAGATION`: `PASS`
+- `FRONTEND_FAIL_GATE`: `PASS`
 - `LIVE_WORKTREE_CLEAN`: `YES`
-- `PYTHON_SYNTAX_CHECK`: `YES`
+- `NO_CANDIDATE_INTRODUCED`: `PASS`
 - `RESTART`: `NO`
-- `SEMANTIC_GUARD`: `YES`
+- `REVIEW_FILTER`: `PASS`
+- `REVIEW_NOTE`: `Static_review_and_syntax_checks_confirm_the_FAIL_fix_preserves_the_modal,_propagates_failure_details,_and_retains_existing_PASS_flow_and_downstream_guards.`
+- `SOURCE_CHANGE`: `NO`
+- `SUCCESS_FLOW_PRESERVED`: `PASS`
