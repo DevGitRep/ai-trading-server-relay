@@ -1,22 +1,54 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-11T12:58:21.651859+00:00`
-- Run ID: `20260911T125819Z`
-- Step: `CORRECT_APPROVED_TYS_LIBRARY_PATCH`
+- Published UTC: `2026-09-11T13:03:09.799390+00:00`
+- Run ID: `20260911T130307Z`
+- Step: `CAPTURE_FINAL_LIBRARY_CARD_INCLUDE_BLOCK`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `CORRECTED_PATCH_DID_NOT_PUBLISH_ROW41`
-- Next gate: `STOP_NO_FURTHER_LIBRARY_CHANGES`
+- Verdict: `FINAL_CARD_INCLUDE_BLOCK_CAPTURED`
+- Next gate: `FIX_ONLY_ACTUAL_LIBRARY_EXCLUSION`
 
 ## Facts
 
 - `BENCHTEST_RUN`: `NO`
 - `CLOUDFLARE_ACTION`: `NO`
 - `DB_WRITE`: `NO`
-- `LIBRARY_HTTP_STATUS`: `000`
-- `PATCH_PREPARED`: `NO`
-- `PUBLIC_TARGET_FOUND`: `NO`
+- `L1435`: `if_source_row_is_not_None`
+- `L1436`: `else_`
+- `L1437`: `)_or_`
+- `L1438`: `NONE`
+- `L1439`: `sha_=_hashlib.sha256(`
+- `L1440`: `source.encode(utf-8)`
+- `L1441`: `).hexdigest()`
+- `L1442`: `NONE`
+- `L1443`: `candidate_ids_=_(`
+- `L1444`: `_candidate_ids_from_maps(`
+- `L1445`: `sha,`
+- `L1446`: `row[chart_url],`
+- `L1447`: `candidate_sha_map,`
+- `L1448`: `candidate_url_map,`
+- `L1449`: `)`
+- `L1450`: `)`
+- `L1451`: `NONE`
+- `L1452`: `metrics_=__best_metrics_from_map(`
+- `L1453`: `candidate_ids,`
+- `L1454`: `bench_metrics_map,`
+- `L1455`: `)`
+- `L1456`: `NONE`
+- `L1457`: `card[metrics]_=_(`
+- `L1458`: `metrics`
+- `L1459`: `or__empty_metrics()`
+- `L1460`: `)`
+- `L1461`: `NONE`
+- `L1462`: `cards.append(`
+- `L1463`: `card`
+- `L1464`: `)`
+- `L1465`: `NONE`
+- `L1466`: `if_pro:`
+- `L1467`: `NONE`
+- `L1468`: `_BenchTest_Realistic_Score_is_the_documented`
+- `L1469`: `_relative_ranking_authority.`
+- `L1470`: `NONE`
 - `RESTART`: `NO`
-- `ROLLBACK`: `NO`
-- `SYNTAX_CHECK`: `NO`
+- `SOURCE_CHANGE`: `NO`
