@@ -1,25 +1,21 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-11T17:42:08.564548+00:00",
-  "run_id": "20260911T174206Z",
-  "step": "RESUME_ANTIGRAVITY_TYS_FIX",
+  "published_at_utc": "2026-09-11T17:44:40.929837+00:00",
+  "run_id": "20260911T174438Z",
+  "step": "TEST_GEMINI25_FREE",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "ANTIGRAVITY_RESUME_COMPLETE",
-  "next_gate": "REVIEW_AGY_PATCH",
+  "verdict": "GEMINI25_FREE_CHECKED",
+  "next_gate": "USE_FREE_MODEL_FOR_TYS_FIX",
   "facts": {
-    "AGY_ERROR": "NONE",
     "AGY_PROCESS_RC": "1",
-    "AGY_STATUS": "UNREADABLE",
     "BENCHTEST_RUN": "NO",
-    "CHANGED_FILES": "",
     "CLOUDFLARE_ACTION": "NO",
     "CODEX_USED": "NO",
     "DB_WRITE": "NO",
-    "FIX_VERDICT": "UNVERIFIED",
-    "LIVE_SOURCE_CHANGE": "NO",
-    "REGRESSION_AFTER": "UNVERIFIED",
+    "GEMINI25_FREE_OK": "NO",
+    "LAST_OUTPUT": "__Gemini_3.6_Flash_(Medium)___Gemini_3.6_Flash_(Low)___Gemini_3.1_Pro_(High)___Gemini_3.1_Pro_(Low)_",
     "RESTART": "NO",
-    "ROOT_CAUSE": "UNVERIFIED"
+    "SOURCE_CHANGE": "NO"
   }
 }

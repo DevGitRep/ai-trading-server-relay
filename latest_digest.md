@@ -1,26 +1,22 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-11T17:42:08.564548+00:00`
-- Run ID: `20260911T174206Z`
-- Step: `RESUME_ANTIGRAVITY_TYS_FIX`
+- Published UTC: `2026-09-11T17:44:40.929837+00:00`
+- Run ID: `20260911T174438Z`
+- Step: `TEST_GEMINI25_FREE`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `ANTIGRAVITY_RESUME_COMPLETE`
-- Next gate: `REVIEW_AGY_PATCH`
+- Verdict: `GEMINI25_FREE_CHECKED`
+- Next gate: `USE_FREE_MODEL_FOR_TYS_FIX`
 
 ## Facts
 
-- `AGY_ERROR`: `NONE`
 - `AGY_PROCESS_RC`: `1`
-- `AGY_STATUS`: `UNREADABLE`
 - `BENCHTEST_RUN`: `NO`
-- `CHANGED_FILES`: ``
 - `CLOUDFLARE_ACTION`: `NO`
 - `CODEX_USED`: `NO`
 - `DB_WRITE`: `NO`
-- `FIX_VERDICT`: `UNVERIFIED`
-- `LIVE_SOURCE_CHANGE`: `NO`
-- `REGRESSION_AFTER`: `UNVERIFIED`
+- `GEMINI25_FREE_OK`: `NO`
+- `LAST_OUTPUT`: `__Gemini_3.6_Flash_(Medium)___Gemini_3.6_Flash_(Low)___Gemini_3.1_Pro_(High)___Gemini_3.1_Pro_(Low)_`
 - `RESTART`: `NO`
-- `ROOT_CAUSE`: `UNVERIFIED`
+- `SOURCE_CHANGE`: `NO`
