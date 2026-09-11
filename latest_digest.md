@@ -1,77 +1,24 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-11T12:33:58.591140+00:00`
-- Run ID: `20260911T123356Z`
-- Step: `TRACE_FINAL_LIBRARY_FILTER`
+- Published UTC: `2026-09-11T12:54:15.663961+00:00`
+- Run ID: `20260911T125413Z`
+- Step: `VERIFY_APPROVED_TYS_LIBRARY_FIX`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `FINAL_LIBRARY_FILTER_CAPTURED`
-- Next gate: `PATCH_ONLY_FAILED_LIBRARY_FILTER`
+- Verdict: `LIBRARY_PATCH_PRESENT_BUT_ROW41_STILL_NOT_PUBLIC`
+- Next gate: `FIX_ONLY_EXISTING_PATCH_EFFECT`
 
 ## Facts
 
 - `BENCHTEST_RUN`: `NO`
-- `CAND1`: `candidate_id:ICL_SRC_A465DEED5818C8FA`
-- `CAND2`: `source_sha256:a465deed5818c8faf85f25a1f1b66cc4e94ef650363cc160cb6be18da74b80c0`
-- `CAND3`: `status:SOURCE_CAPTURED`
-- `CAND4`: `performance_status:NOT_TESTED`
-- `CANDIDATE_PRESENT`: `YES`
 - `CLOUDFLARE_ACTION`: `NO`
 - `DB_WRITE`: `NO`
-- `FILTER1`: `L174:),`
-- `FILTER10`: `L183:NONE`
-- `FILTER11`: `L184:net_return_pct_=__num(`
-- `FILTER12`: `L185:row[net_return_pct]`
-- `FILTER13`: `L186:)`
-- `FILTER14`: `L187:NONE`
-- `FILTER15`: `L188:max_drawdown_pct_=__num(`
-- `FILTER16`: `L189:row[max_drawdown_pct]`
-- `FILTER17`: `L190:)`
-- `FILTER18`: `L191:NONE`
-- `FILTER19`: `L192:profit_factor_=__num(`
-- `FILTER2`: `L175:)`
-- `FILTER20`: `L193:row[profit_factor]`
-- `FILTER21`: `L194:)`
-- `FILTER22`: `L195:NONE`
-- `FILTER23`: `L196:win_rate_pct_=__num(`
-- `FILTER24`: `L197:row[win_rate_pct]`
-- `FILTER25`: `L198:)`
-- `FILTER26`: `L199:NONE`
-- `FILTER27`: `L200:realistic_score_=__num(`
-- `FILTER28`: `L201:row[realistic_score]`
-- `FILTER29`: `L202:)`
-- `FILTER3`: `L176:NONE`
-- `FILTER30`: `L203:NONE`
-- `FILTER31`: `L204:trade_count_=__integer(`
-- `FILTER32`: `L205:row[trade_count]`
-- `FILTER33`: `L206:)`
-- `FILTER34`: `L207:NONE`
-- `FILTER35`: `L208:score_cohort_size_=__integer(`
-- `FILTER36`: `L209:row[score_cohort_size]`
-- `FILTER37`: `L210:)`
-- `FILTER38`: `L211:NONE`
-- `FILTER39`: `L212:test_status_=_(`
-- `FILTER4`: `L177:NONE`
-- `FILTER40`: `L213:row[test_status]`
-- `FILTER41`: `L214:or_None`
-- `FILTER42`: `L215:)`
-- `FILTER43`: `L216:NONE`
-- `FILTER44`: `L217:return_{`
-- `FILTER45`: `L218:candidate_id:`
-- `FILTER46`: `L219:row[candidate_id],`
-- `FILTER47`: `L220:NONE`
-- `FILTER48`: `L221:signal_mode:`
-- `FILTER49`: `L222:row[signal_mode],`
-- `FILTER5`: `L178:NONE`
-- `FILTER50`: `L223:NONE`
-- `FILTER51`: `L224:test_status:`
-- `FILTER52`: `L225:test_status,`
-- `FILTER6`: `L179:_INDICATOR_LIBRARY_BATCH_LOOKUP_V25B`
-- `FILTER7`: `L180:def__bench_metrics_from_row_v25b(row):`
-- `FILTER8`: `L181:if_row_is_None:`
-- `FILTER9`: `L182:return_None`
-- `FILTER_LINE_COUNT`: `52`
+- `FOUND_PAGE`: `0`
+- `LIBRARY_HTTP_FIRST_PAGE`: `200`
+- `LIBRARY_PATCH_MARKER_COUNT`: `1`
+- `PAGES_CHECKED`: `899`
+- `PUBLIC_TARGET_FOUND`: `NO`
 - `RESTART`: `NO`
 - `ROW41_PUBLICATION`: `APPROVED`
 - `SOURCE_CHANGE`: `NO`
