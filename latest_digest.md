@@ -1,22 +1,22 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-11T17:22:13.840905+00:00`
-- Run ID: `20260911T172211Z`
-- Step: `TEST_FREE_GEMINI38_FLASH`
+- Published UTC: `2026-09-11T17:23:39.929611+00:00`
+- Run ID: `20260911T172337Z`
+- Step: `RETEST_ANTIGRAVITY_FREE_MODEL`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `GEMINI38_FREE_MODEL_CHECKED`
+- Verdict: `ANTIGRAVITY_FREE_MODEL_RETESTED`
 - Next gate: `ANTIGRAVITY_REPO_TEST`
 
 ## Facts
 
-- `AGY_PROCESS_RC`: `2`
+- `AGY_FREE_OK`: `YES`
+- `AGY_PROCESS_RC`: `0`
 - `BENCHTEST_RUN`: `NO`
 - `CLOUDFLARE_ACTION`: `NO`
 - `CODEX_USED`: `NO`
 - `DB_WRITE`: `NO`
-- `GEMINI38_OK`: `NO`
-- `LAST_OUTPUT`: `Error:_-p_took_&quot;--model&quot;_as_its_prompt,_so_the_intended_prompt_was_left_as_an_argument_and_ignored._Attach_the_prompt_to_the_flag_(-p=&#x27;your_prompt&#x27;)_and_move_--model_elsewhere_on_the_command_line._`
+- `LAST_OUTPUT`: `AGY_FREE_OK_`
 - `RESTART`: `NO`
 - `SOURCE_CHANGE`: `NO`

@@ -1,20 +1,20 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-11T17:22:13.840905+00:00",
-  "run_id": "20260911T172211Z",
-  "step": "TEST_FREE_GEMINI38_FLASH",
+  "published_at_utc": "2026-09-11T17:23:39.929611+00:00",
+  "run_id": "20260911T172337Z",
+  "step": "RETEST_ANTIGRAVITY_FREE_MODEL",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "GEMINI38_FREE_MODEL_CHECKED",
+  "verdict": "ANTIGRAVITY_FREE_MODEL_RETESTED",
   "next_gate": "ANTIGRAVITY_REPO_TEST",
   "facts": {
-    "AGY_PROCESS_RC": "2",
+    "AGY_FREE_OK": "YES",
+    "AGY_PROCESS_RC": "0",
     "BENCHTEST_RUN": "NO",
     "CLOUDFLARE_ACTION": "NO",
     "CODEX_USED": "NO",
     "DB_WRITE": "NO",
-    "GEMINI38_OK": "NO",
-    "LAST_OUTPUT": "Error:_-p_took_&quot;--model&quot;_as_its_prompt,_so_the_intended_prompt_was_left_as_an_argument_and_ignored._Attach_the_prompt_to_the_flag_(-p=&#x27;your_prompt&#x27;)_and_move_--model_elsewhere_on_the_command_line._",
+    "LAST_OUTPUT": "AGY_FREE_OK_",
     "RESTART": "NO",
     "SOURCE_CHANGE": "NO"
   }
