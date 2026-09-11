@@ -1,50 +1,46 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-11T14:29:44.517571+00:00`
-- Run ID: `20260911T142942Z`
-- Step: `MEASURE_REAL_PROJECT_SCOPE_PYTHON`
+- Published UTC: `2026-09-11T14:31:15.840591+00:00`
+- Run ID: `20260911T143113Z`
+- Step: `DEFINE_GITHUB_CODE_ONLY_SCOPE`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `REAL_PROJECT_SCOPE_MEASURED`
-- Next gate: `DEFINE_GITHUB_CODE_ONLY_SCOPE`
+- Verdict: `CODE_ONLY_SCOPE_INVENTORIED`
+- Next gate: `FINALIZE_REPOSITORY_SCOPE_AND_IGNORE_RULES`
 
 ## Facts
 
+- `BACKUPS_INCLUDED`: `NO`
 - `BENCHTEST_RUN`: `NO`
 - `CLOUDFLARE_ACTION`: `NO`
+- `CODE_EXTENSIONS`: `.py:3.8MB.json:3.0MB.md:734.6KB.html:407.6KB.js:170.6KB.css:50.6KB.txt:31.6KB.sql:24.3KB.sh:10.6KB`
 - `COMMIT_CREATED`: `NO`
-- `DASH1`: `162.2GB:data:files3543:pine2`
-- `DASH10`: `1016.8KB:templates:files41:pine0`
-- `DASH11`: `560.7KB:reference_sources:files6:pine6`
-- `DASH12`: `386.7KB:orderflow_dashboard:files8:pine0`
-- `DASH13`: `368.0KB:vendor:files28:pine0`
-- `DASH14`: `367.4KB:backend.py:files1:pine0`
-- `DASH15`: `367.4KB:backend.py.before_review_register_order_20260911T074928Z:files1:pine0`
-- `DASH2`: `2.5GB:runtime:files54117:pine9`
-- `DASH3`: `1.8GB:macro_research:files7723:pine0`
-- `DASH4`: `373.4MB:orderflow_v3:files28:pine0`
-- `DASH5`: `282.8MB:.venv:files9179:pine0`
-- `DASH6`: `210.2MB:tools:files5326:pine1`
-- `DASH7`: `208.3MB:backups:files172:pine0`
-- `DASH8`: `2.0MB:static:files30:pine0`
-- `DASH9`: `1.8MB:__pycache__:files63:pine0`
-- `DASHBOARD_TOTAL`: `167.6GB`
+- `DASH_CODE_COUNT`: `724`
+- `DASH_CODE_SIZE`: `8.2MB`
+- `DATABASES_INCLUDED`: `NO`
 - `DB_WRITE`: `NO`
 - `GITHUB_PUSH`: `NO`
-- `PINE_FILE_COUNT`: `18`
+- `LARGE_CODE1`: `677.7KB:user_data/orderflow_dashboard/tools/pinets_reference_runtime_v1/node/CHANGELOG.md`
+- `LARGE_CODE10`: `105.9KB:user_data/orderflow_dashboard/indicator_lab_v1.py`
+- `LARGE_CODE2`: `367.4KB:user_data/orderflow_dashboard/backend.py`
+- `LARGE_CODE3`: `324.1KB:user_data/orderflow_dashboard/macro_research/prospective_market_data/v1_canonical_reproducibility/canonical_run_2.json`
+- `LARGE_CODE4`: `324.1KB:user_data/orderflow_dashboard/macro_research/prospective_market_data/v1_canonical_reproducibility/canonical_run_1.json`
+- `LARGE_CODE5`: `321.3KB:user_data/orderflow_dashboard/templates/dashboard.html`
+- `LARGE_CODE6`: `210.2KB:user_data/orderflow_dashboard/generated_conversion_artifacts/ICL_NAME_25577A4EE5E423D4__VIPRASOL_RECOVERY_1_RAW_RESPONSE.json`
+- `LARGE_CODE7`: `150.5KB:user_data/orderflow_dashboard/macro_research/prospective_market_data/v2_production/r5va_validator_signature_correction/r5va_new_canonical.json`
+- `LARGE_CODE8`: `148.2KB:user_data/orderflow_dashboard/macro_research/prospective_market_data/v2_production/r5va_validator_signature_correction/r5va_overlap_canonical.`
+- `LARGE_CODE9`: `136.1KB:user_data/orderflow_dashboard/macro_research/prospective_market_data/v2_production/r5ua_retrieval_locator_discovery/r5ua_locator_discovery.jso`
+- `MACRO_CODE_COUNT`: `555`
+- `MACRO_CODE_SIZE`: `4.6MB`
+- `MANUAL_SUPPORT_COUNT`: `706`
+- `MANUAL_SUPPORT_SIZE`: `53.0MB`
+- `PINE_DATA_INCLUDED`: `NO`
 - `RESTART`: `NO`
-- `ROOT1`: `170.6GB:user_data:files81683:pine18`
-- `ROOT10`: `25.8KB:sol_trend_pullback_scalp_v1_development.log:files1:pine0`
-- `ROOT11`: `25.6KB:lightgbm_block30_v1_5d_backtest.log:files1:pine0`
-- `ROOT12`: `25.4KB:sol_volatility_breakout_scalp_v4_signals.log:files1:pine0`
-- `ROOT2`: `2.2GB:freqtrade-venv:files42785:pine0`
-- `ROOT3`: `870.8KB:logs:files14:pine0`
-- `ROOT4`: `68.0KB:binance_xgb_return_v3_120d_july_backtest.log:files1:pine0`
-- `ROOT5`: `66.1KB:scripts:files18:pine0`
-- `ROOT6`: `57.3KB:binance_sol_wma_kc_smi_ai_july.log:files1:pine0`
-- `ROOT7`: `31.5KB:xgboost_block30_v1_18d_backtest.log:files1:pine0`
-- `ROOT8`: `26.3KB:lightgbm_block30_v1_smoketest.log:files1:pine0`
-- `ROOT9`: `26.0KB:xgb_return_block30_v3_18d_backtest.log:files1:pine0`
-- `ROOT_TOTAL`: `172.8GB`
+- `ROOT_SCRIPTS_COUNT`: `15`
+- `ROOT_SCRIPTS_SIZE`: `39.8KB`
+- `RUNTIME_INCLUDED`: `NO`
 - `SOURCE_CHANGE`: `NO`
+- `TOOLS_CODE_COUNT`: `29`
+- `TOOLS_CODE_SIZE`: `851.9KB`
+- `VENVS_INCLUDED`: `NO`
