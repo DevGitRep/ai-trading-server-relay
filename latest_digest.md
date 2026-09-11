@@ -1,44 +1,35 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-11T12:06:28.826135+00:00`
-- Run ID: `20260911T120626Z`
-- Step: `INSPECT_ROW41_APPROVAL_CONTROL`
+- Published UTC: `2026-09-11T12:07:31.591994+00:00`
+- Run ID: `20260911T120729Z`
+- Step: `MAP_EXACT_CHECKBOX_DISABLE_CONDITION`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `ROW41_LIBRARY_CONTROL_RENDERED_DISABLED`
-- Next gate: `PATCH_ONLY_CONTROL_ENABLE_CONDITION_FOR_VALID_REVIEW_ROW`
+- Verdict: `CHECKBOX_DISABLE_CONDITION_LOCATED`
+- Next gate: `PATCH_ONLY_VALID_REVIEW_ROW_ENABLE_CONDITION`
 
 ## Facts
 
 - `BENCHTEST_RUN`: `NO`
 - `CLOUDFLARE_ACTION`: `NO`
 - `DB_WRITE`: `NO`
-- `HTTP`: `200`
-- `LIVE_APPROVAL_WORDS`: `Library,approve,approved`
-- `LIVE_CHECKBOX_PRESENT`: `YES`
-- `LIVE_DISABLED`: `YES`
-- `LIVE_FORM_PRESENT`: `YES`
+- `DISABLED_EXPR_PRESENT`: `YES`
+- `LINE1`: `296:approved:_(`
+- `LINE10`: `433:type=checkbox`
+- `LINE11`: `434:name=approved`
+- `LINE12`: `436:{%_if_r.approved_%}checked{%_endif_%}`
+- `LINE13`: `437:{%_if_not_r.ready_%}disabled{%_endif_%}`
+- `LINE14`: `438:onchange=this.form.submit()`
+- `LINE2`: `298:r[publication_status]`
+- `LINE3`: `301:==_APPROVED`
+- `LINE4`: `421:&lt;form_method=post&gt;`
+- `LINE5`: `422:&lt;input`
+- `LINE6`: `424:name=submission_id`
+- `LINE7`: `427:&lt;input`
+- `LINE8`: `429:name=approved`
+- `LINE9`: `432:&lt;input`
+- `RELEVANT_LINE_COUNT`: `14`
 - `RESTART`: `NO`
-- `ROW41_PRESENT`: `YES`
-- `ROW41_PUBLICATION`: `PRIVATE`
-- `ROW41_REVIEW_ALLOWED`: `1`
-- `ROW41_SUBMISSION`: `TYS_52A5CE02E0444D05BFED31AFD52665C5`
-- `SOURCE1`: `L54:approved_=_(`
-- `SOURCE10`: `L165:p.library_publication_status,`
-- `SOURCE11`: `L166:t.library_publication_status`
-- `SOURCE12`: `L215:WHERE_t.library_review_allowed=1`
-- `SOURCE13`: `L296:approved:_(`
-- `SOURCE14`: `L301:==_APPROVED`
-- `SOURCE15`: `L375:input[type=checkbox]{`
-- `SOURCE16`: `L429:name=approved`
-- `SOURCE2`: `L57:approved`
-- `SOURCE3`: `L67:library_review_allowed,`
-- `SOURCE4`: `L81:row[library_review_allowed]`
-- `SOURCE5`: `L86:if_approved:`
-- `SOURCE6`: `L103:APPROVED`
-- `SOURCE7`: `L104:if_approved`
-- `SOURCE8`: `L118:library_publication_status=,`
-- `SOURCE9`: `L133:library_publication_status=,`
+- `REVIEW_ALLOWED_REFERENCE`: `NO`
 - `SOURCE_CHANGE`: `NO`
-- `SOURCE_HIT_COUNT`: `20`
