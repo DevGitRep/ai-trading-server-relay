@@ -1,32 +1,29 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-11T06:50:51.911860+00:00`
-- Run ID: `20260911T065049Z`
-- Step: `COMPARE_OLD_ACTIVE_EMAIL_CONFIG_MECHANISM`
+- Published UTC: `2026-09-11T06:52:23.290262+00:00`
+- Run ID: `20260911T065221Z`
+- Step: `TRACE_TYS_EMAIL_CONFIG_INPUT_SOURCE`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `NO_MATERIAL_CONFIG_REQUIREMENT_DELTA`
-- Next gate: `COMPARE_OLDER_SMTP_INPUT_SOURCE`
+- Verdict: `EMAIL_CONFIG_INPUT_SOURCES_CAPTURED`
+- Next gate: `RESTORE_ONLY_PROVEN_CONFIG_SOURCE`
 
 ## Facts
 
-- `ACTIVE_CONFIG_READS`: `NONE`
-- `ACTIVE_ENV_KEYS`: `NONE`
-- `ACTIVE_RETURN_KEYS`: `base_url_missing_ready_smtp_from_smtp_host_smtp_password_smtp_port_smtp_security_smtp_user`
-- `ADDED_CONFIG_READS`: `NONE`
-- `ADDED_ENV_KEYS`: `NONE`
-- `ADDED_RETURN_KEYS`: `NONE`
+- `BASE_URL_SOURCE`: `NAME:base_url-CALL:rstrip(STRING_LITERAL)`
 - `BENCHTEST_RUN`: `NO`
 - `CLOUDFLARE_ACTION`: `NO`
 - `DB_WRITE`: `NO`
-- `DELIVERY_CALLS_CHANGED`: `NO`
-- `OLD_CONFIG_READS`: `NONE`
-- `OLD_ENV_KEYS`: `NONE`
-- `OLD_RETURN_KEYS`: `base_url_missing_ready_smtp_from_smtp_host_smtp_password_smtp_port_smtp_security_smtp_user`
-- `REMOVED_CONFIG_READS`: `NONE`
-- `REMOVED_ENV_KEYS`: `NONE`
-- `REMOVED_RETURN_KEYS`: `NONE`
+- `INTERESTING_CALLS`: `os.environ.get`
+- `MISSING_SOURCE`: `NAME:missing-EXPR:NONE`
+- `READY_SOURCE`: `EXPR:not_missing`
 - `RESTART`: `NO`
+- `SMTP_FROM_SOURCE`: `NAME:smtp_from-METHOD:strip-CALL:str-BOOLEAN_EXPRESSION`
+- `SMTP_HOST_SOURCE`: `NAME:smtp_host-METHOD:strip-CALL:str-BOOLEAN_EXPRESSION`
+- `SMTP_PASSWORD_SOURCE`: `NAME:smtp_password-CALL:str-BOOLEAN_EXPRESSION`
+- `SMTP_PORT_SOURCE`: `NAME:smtp_port-NONE_LITERAL`
+- `SMTP_SECURITY_SOURCE`: `NAME:security-METHOD:lower-METHOD:strip-CALL:str-BOOLEAN_EXPRESSION`
+- `SMTP_USER_SOURCE`: `NAME:smtp_user-METHOD:strip-CALL:str-BOOLEAN_EXPRESSION`
 - `SOURCE_CHANGE`: `NO`
 - `VALUES_EXPOSED`: `NO`
