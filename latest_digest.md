@@ -1,13 +1,13 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-11T10:32:51.828136+00:00`
-- Run ID: `20260911T103249Z`
-- Step: `INSPECT_RAW_RESULT_SOURCE_LINES`
+- Published UTC: `2026-09-11T10:35:27.387258+00:00`
+- Run ID: `20260911T103525Z`
+- Step: `MAP_EXACT_INLINE_EXTRACTION_BOUNDARIES`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `RAW_RESULT_INLINE_SECTION_LOCATED`
-- Next gate: `MAP_EXACT_INLINE_EXTRACTION_BOUNDARIES`
+- Verdict: `PRIMARY_RAW_RESULT_BLOCK_NOT_FULLY_RESOLVED`
+- Next gate: `EXPAND_ONLY_PRIMARY_RAW_RESULT_WINDOW`
 
 ## Facts
 
@@ -15,31 +15,37 @@
 - `BENCHTEST_RUN`: `NO`
 - `CLOUDFLARE_ACTION`: `NO`
 - `DB_WRITE`: `NO`
-- `JSON_LOAD_LINES`: `796,863`
+- `JSON_LOAD_LINE`: `863`
 - `LIBRARY_HELPER_CHANGE`: `NO`
-- `LINE1`: `776:I8:_metrics_map[candidate_id]_=_metrics`
-- `LINE10`: `800:I12:__secondary_payload_=_{}`
-- `LINE11`: `803:I12:__secondary_value_=__secondary_payload.get(`
-- `LINE12`: `804:I16:_&quot;secondary_win_rate_pct&quot;`
-- `LINE13`: `806:I12:__secondary_value_=_(`
-- `LINE14`: `807:I16:_float(_secondary_value)`
-- `LINE15`: `808:I16:_if__secondary_value_is_not_None`
-- `LINE16`: `812:I12:__secondary_value_=_None`
-- `LINE17`: `814:I8:_metrics_map[_secondary_id][`
-- `LINE18`: `815:I12:_&quot;secondary_win_rate_pct&quot;`
-- `LINE19`: `816:I8:_]_=__secondary_value`
-- `LINE2`: `779:I4:_import_json_as__secondary_json`
-- `LINE20`: `818:I4:_for__secondary_metric_in_metrics_map.values():`
-- `LINE3`: `781:I4:__secondary_rows_=_conn.execute(`
-- `LINE4`: `783:I8:_SELECT_indicator_id,_&quot;raw_result_json&quot;`
-- `LINE5`: `789:I4:_for__secondary_row_in__secondary_rows:`
-- `LINE6`: `790:I8:__secondary_id_=_str(_secondary_row[0])`
-- `LINE7`: `792:I8:_if__secondary_id_not_in_metrics_map:`
-- `LINE8`: `796:I12:__secondary_payload_=__secondary_json.loads(`
-- `LINE9`: `797:I16:__secondary_row[1]_or_&quot;{}&quot;`
-- `METRICS_MAP_LINES`: `776,792,814,818,852`
-- `METRIC_LINES`: `804,815,821,916,929,932,934,935,939,940,941,945,948`
-- `RAW_LINES`: `783,835`
-- `RELEVANT_LINE_COUNT`: `56`
+- `LINE1`: `829:I4:__profile_rows_=_conn.execute(`
+- `LINE10`: `852:I8:__metrics_=_metrics_map.get(`
+- `LINE11`: `853:I12:__profile_id`
+- `LINE12`: `857:I12:__metrics,`
+- `LINE13`: `863:I12:__payload_=__profile_json.loads(`
+- `LINE14`: `864:I16:__profile_row[3]_or_&quot;{}&quot;`
+- `LINE15`: `867:I12:__payload_=_{}`
+- `LINE16`: `870:I12:__profile_row[2],`
+- `LINE17`: `871:I12:__profile_row[1],`
+- `LINE18`: `874:I8:__metrics[&quot;indicator_dna_method&quot;]_=__dna[&quot;method&quot;]`
+- `LINE19`: `875:I8:__metrics[&quot;dna_trend_pct&quot;]_=__dna[&quot;trend_pct&quot;]`
+- `LINE2`: `831:I8:_SELECT`
+- `LINE20`: `876:I8:__metrics[&quot;dna_momentum_pct&quot;]_=__dna[&quot;momentum_pct&quot;]`
+- `LINE21`: `877:I8:__metrics[&quot;dna_reversal_pct&quot;]_=__dna[&quot;reversal_pct&quot;]`
+- `LINE22`: `878:I8:__metrics[&quot;dna_volume_pct&quot;]_=__dna[&quot;volume_pct&quot;]`
+- `LINE3`: `832:I12:_p.indicator_id,`
+- `LINE4`: `835:I12:_b.&quot;raw_result_json&quot;`
+- `LINE5`: `836:I8:_FROM_indicator_pipeline_current_p`
+- `LINE6`: `840:I10:_ON_b.indicator_id_=_p.indicator_id`
+- `LINE7`: `847:I4:_for__profile_row_in__profile_rows:`
+- `LINE8`: `848:I8:__profile_id_=_str(`
+- `LINE9`: `849:I12:__profile_row[0]`
+- `METRICS_LINES`: `852,857,874,875,876,877,878,879,880,881,922,923`
+- `PROFILE_LINES`: `848,853`
+- `RAW_BLOCK_HAS_CANDIDATE_ID`: `NO`
+- `RAW_BLOCK_HAS_INDICATOR_ID`: `YES`
+- `RAW_BLOCK_HAS_LEGACY_CANDIDATE_ID`: `NO`
+- `RAW_BLOCK_METRIC_KEYS`: `trade_count,win_rate_pct`
+- `RAW_QUERY_LINE`: `-1`
+- `RELEVANT_LINE_COUNT`: `44`
 - `RESTART`: `NO`
 - `SOURCE_CHANGE`: `NO`
