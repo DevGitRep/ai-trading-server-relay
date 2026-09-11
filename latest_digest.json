@@ -1,11 +1,11 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-11T13:41:10.793098+00:00",
-  "run_id": "20260911T134108Z",
+  "published_at_utc": "2026-09-11T13:43:51.225043+00:00",
+  "run_id": "20260911T134349Z",
   "step": "ADD_APPROVED_TYS_CANONICAL_PUBLICATION",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "CANONICAL_APPROVAL_PUBLICATION_NOT_CONFIRMED",
+  "verdict": "APPROVAL_CANONICAL_PUBLICATION_NOT_CONFIRMED",
   "next_gate": "STOP_NO_FURTHER_CHANGES",
   "facts": {
     "APPROVED_TARGET_FOUND": "NO",
@@ -14,12 +14,12 @@
     "CANONICAL_SOURCE_COUNT": "0",
     "CLOUDFLARE_ACTION": "NO",
     "DB_WRITE": "NO",
-    "PATCH_PREPARED": "NO",
+    "PATCH_PREPARED": "YES",
     "PRIVATE_TARGET_FOUND": "NO",
-    "RESTART": "NO",
-    "REVIEW_HTTP_STATUS": "000",
-    "ROLLBACK": "NO",
+    "RESTART": "YES",
+    "REVIEW_HTTP_STATUS": "200",
+    "ROLLBACK": "YES",
     "ROW41_BACKFILL": "NO",
-    "SYNTAX_CHECK": "NO"
+    "SYNTAX_CHECK": "YES"
   }
 }
