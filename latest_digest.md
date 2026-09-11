@@ -1,44 +1,24 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-11T10:38:54.371278+00:00`
-- Run ID: `20260911T103852Z`
-- Step: `INSPECT_NEXT_PRIMARY_RAW_RESULT_LINES`
+- Published UTC: `2026-09-11T10:39:34.867122+00:00`
+- Run ID: `20260911T103932Z`
+- Step: `MAP_RAW_RESULT_METRIC_ASSIGNMENTS`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `REMAINING_PRIMARY_RAW_METRICS_NOT_ALL_LOCATED`
-- Next gate: `INSPECT_ONLY_NEXT_RAW_RESULT_LINES`
+- Verdict: `RAW_METRIC_ASSIGNMENTS_PARTIALLY_RESOLVED`
+- Next gate: `MAP_RELATED_METRIC_KEY_NAMES`
 
 ## Facts
 
+- `ASSIGN1`: `932:trade_count:_primary_trades`
 - `BENCHSCORE_CHANGE`: `NO`
 - `BENCHTEST_RUN`: `NO`
 - `CLOUDFLARE_ACTION`: `NO`
 - `DB_WRITE`: `NO`
+- `FOUND_TARGET_KEYS`: `trade_count`
 - `LIBRARY_HELPER_CHANGE`: `NO`
-- `LINE1`: `960:I8:_if_(`
-- `LINE10`: `1012:I12:_elif__long_&gt;_0:`
-- `LINE11`: `1017:I8:_elif_(`
-- `LINE12`: `1018:I12:__trade_count_is_not_None`
-- `LINE13`: `1019:I12:_and__trade_count_&gt;_0`
-- `LINE14`: `1023:I16:__trade_count`
-- `LINE15`: `1028:I12:_if__losing_trades_is_None:`
-- `LINE16`: `1031:I20:__trade_count_-__wins,`
-- `LINE17`: `1040:I12:__metrics[`
-- `LINE18`: `1044:I12:__metrics[`
-- `LINE19`: `1048:I12:__metrics[`
-- `LINE2`: `969:I12:__metrics[`
-- `LINE20`: `1052:I12:__metrics[`
-- `LINE3`: `973:I12:__metrics[`
-- `LINE4`: `977:I12:__metrics[`
-- `LINE5`: `981:I12:__metrics[`
-- `LINE6`: `985:I12:__metrics[`
-- `LINE7`: `989:I12:__metrics[`
-- `LINE8`: `998:I12:__metrics[`
-- `LINE9`: `1007:I12:_if_(`
-- `MAP_LINES`: `NONE`
-- `METRIC_KEYS`: `trade_count`
-- `METRIC_LINES`: `1018,1019,1023,1031`
-- `RELEVANT_LINE_COUNT`: `20`
+- `METRICS_ASSIGNMENT_COUNT`: `23`
+- `RELATED_ASSIGNMENT_COUNT`: `1`
 - `RESTART`: `NO`
 - `SOURCE_CHANGE`: `NO`
