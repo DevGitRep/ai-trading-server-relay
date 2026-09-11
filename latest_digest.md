@@ -1,51 +1,26 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-11T10:43:43.181754+00:00`
-- Run ID: `20260911T104341Z`
-- Step: `MAP_RAW_RESULT_TOP_LEVEL_FIELDS`
+- Published UTC: `2026-09-11T10:44:48.574768+00:00`
+- Run ID: `20260911T104446Z`
+- Step: `INSPECT_CURRENT_BENCHTEST_RUN_SCHEMA`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `LIKELY_BENCHTEST_RESULT_FIELDS_IDENTIFIED`
-- Next gate: `INSPECT_ONLY_LIKELY_RESULT_FIELDS`
+- Verdict: `BENCHTEST_RUN_HAS_DIRECT_METRIC_COLUMNS`
+- Next gate: `MAP_DIRECT_RUN_METRICS_TO_SIX_REVIEW_FIELDS`
 
 ## Facts
 
 - `BENCHTEST_RUN`: `NO`
 - `CLOUDFLARE_ACTION`: `NO`
 - `DB_WRITE`: `NO`
-- `FIELD1`: `candidate_id:str:LEN24:JSONNO`
-- `FIELD10`: `error_detail:null:LEN0:JSONNO`
-- `FIELD11`: `market_data_contract:str:LEN24:JSONNO`
-- `FIELD12`: `market_data_sha256:str:LEN64:JSONNO`
-- `FIELD13`: `pair:str:LEN7:JSONNO`
-- `FIELD14`: `parameter_mode:str:LEN19:JSONNO`
-- `FIELD15`: `resin_detail:str:LEN37:JSONNO`
-- `FIELD16`: `resin_status:str:LEN4:JSONNO`
-- `FIELD17`: `resin_version:str:LEN5:JSONNO`
-- `FIELD18`: `run_id:str:LEN36:JSONNO`
-- `FIELD19`: `score_contract:str:LEN31:JSONNO`
-- `FIELD2`: `contract_version:str:LEN29:JSONNO`
-- `FIELD20`: `score_eligible:int:LEN0:JSONNO`
-- `FIELD21`: `score_status:str:LEN18:JSONNO`
-- `FIELD22`: `signal_contract:str:LEN25:JSONNO`
-- `FIELD23`: `signal_evidence_json:str:LEN2:JSONlist`
-- `FIELD24`: `signal_mode:null:LEN0:JSONNO`
-- `FIELD25`: `source_sha256:str:LEN64:JSONNO`
-- `FIELD26`: `test_status:str:LEN22:JSONNO`
-- `FIELD27`: `tested_at:str:LEN32:JSONNO`
-- `FIELD28`: `timeframe:str:LEN2:JSONNO`
-- `FIELD3`: `dataset_actual_candles:int:LEN0:JSONNO`
-- `FIELD4`: `dataset_coverage_pct:float:LEN0:JSONNO`
-- `FIELD5`: `dataset_end:str:LEN25:JSONNO`
-- `FIELD6`: `dataset_expected_candles:int:LEN0:JSONNO`
-- `FIELD7`: `dataset_start:str:LEN25:JSONNO`
-- `FIELD8`: `engine:str:LEN8:JSONNO`
-- `FIELD9`: `engine_version:str:LEN5:JSONNO`
+- `METRIC1`: `score_method:BENCH_SCORE_V2`
+- `METRIC_COLUMNS`: `score_method,primary_profit_factor,primary_net_return_pct,primary_max_drawdown_pct,primary_win_rate_pct,primary_trade_count,primary_sharpe,primary_sortino,secondary_profit_factor,secondary_net_return_pct,secondary_max_dr`
+- `METRIC_COLUMN_COUNT`: `19`
+- `NONEMPTY_METRIC_COUNT`: `1`
+- `NONEMPTY_STATUS_COUNT`: `2`
 - `RESTART`: `NO`
+- `RUN_COLUMN_COUNT`: `33`
 - `SOURCE_CHANGE`: `NO`
-- `SUSPECT1`: `score_contract:str:LEN31:JSONNO`
-- `SUSPECT2`: `score_eligible:int:LEN0:JSONNO`
-- `SUSPECT3`: `score_status:str:LEN18:JSONNO`
-- `SUSPECT_FIELD_COUNT`: `3`
-- `TOP_LEVEL_FIELD_COUNT`: `28`
+- `STATUS1`: `benchtest_contract:BENCHTEST_DUAL_12MONTH_V2`
+- `STATUS2`: `raw_result_json:&lt;JSON_PRESENT&gt;`
