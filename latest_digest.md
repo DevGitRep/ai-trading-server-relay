@@ -1,100 +1,53 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-11T14:08:50.998774+00:00`
-- Run ID: `20260911T140848Z`
-- Step: `CAPTURE_EXACT_TYS_SUBMIT_AND_REVIEW_BLOCKS`
+- Published UTC: `2026-09-11T14:10:22.248472+00:00`
+- Run ID: `20260911T141020Z`
+- Step: `CAPTURE_TYS_FAIL_HANDLER_COMPACT`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `EXACT_TYS_SUBMIT_BLOCKS_CAPTURED`
-- Next gate: `PATCH_FAIL_KEEP_MODAL_NO_TOAST_NO_REVIEW`
+- Verdict: `TYS_FAIL_HANDLER_COMPACT_CAPTURED`
+- Next gate: `PATCH_INITIAL_FAIL_KEEP_MODAL_NO_TOAST_NO_REVIEW`
 
 ## Facts
 
 - `BENCHTEST_RUN`: `NO`
 - `CLOUDFLARE_ACTION`: `NO`
 - `DB_WRITE`: `NO`
+- `J1`: `L2407:id=irlTestStart`
+- `J10`: `L2459:document.getElementById(irlTestStart)`
+- `J11`: `L2462:modal.classList.add(irl-test-modal-open)`
+- `J12`: `L2463:modal.setAttribute(aria-hidden,false)`
+- `J13`: `L2464:document.body.classList.add(irl-test-modal-lock)`
+- `J14`: `L2474:el.addEventListener(click,close)`
+- `J15`: `L2481:file?.addEventListener(change,()=&gt;{`
+- `J16`: `L2493:if(typeof_reader.result===string){`
+- `J17`: `L2494:source.value=reader.result`
+- `J18`: `L2501:document.getElementById(irlTestStart)`
+- `J19`: `L2502:?.addEventListener(click,()=&gt;{`
+- `J2`: `L2419:modal.classList.remove(irl-test-modal-open)`
+- `J20`: `L2508:const_email=(`
+- `J21`: `L2509:document.getElementById(irlTestEmail)?.value__`
+- `J22`: `L2520:const_status=document.getElementById(`
+- `J23`: `L2521:irlTestUiStatus`
+- `J24`: `L2531:!email_`
+- `J25`: `L2532:!/[s]+[s]+.[s]+/.test(email)`
+- `J26`: `L2534:message=Enter_a_valid_email_address.`
+- `J3`: `L2420:modal.setAttribute(aria-hidden,true)`
+- `J4`: `L2421:document.body.classList.remove(irl-test-modal-lock)`
+- `J5`: `L2427://_therefore_start_with_a_genuinely_fresh_submission_form.`
+- `J6`: `L2430:irlTestEmail,`
+- `J7`: `L2454:const_freshStatus=`
+- `J8`: `L2455:document.getElementById(irlTestUiStatus)`
+- `J9`: `L2456:if(freshStatus)_freshStatus.textContent=`
+- `JS_MATCHES`: `26`
+- `R1`: `L216:SELECT`
+- `R2`: `L220:library_review_allowed,`
+- `R3`: `L221:technical_status,`
+- `R4`: `L222:benchtest_status`
+- `R5`: `L223:FROM_test_your_script_submissions_v1`
+- `R6`: `L224:WHERE_submission_id=?`
+- `R7`: `L234:row[library_review_allowed]`
 - `RESTART`: `NO`
+- `REVIEW_MATCHES`: `7`
 - `SOURCE_CHANGE`: `NO`
-- `X1`: `JS:L2262:)`
-- `X10`: `JS:L2271:}`
-- `X11`: `JS:L2272:}`
-- `X12`: `JS:L2273:NONE`
-- `X13`: `JS:L2274:irlReportNativeChartV28C()`
-- `X14`: `JS:L2275:}`
-- `X15`: `JS:L2276:NONE`
-- `X16`: `JS:L2277:NONE`
-- `X17`: `JS:L2278:document.addEventListener(DOMContentLoaded,()=&gt;{if(!library()){const_o=new_MutationObserver(()=&gt;{if(library())o.disconnect()})o.observe(document.documentElement,{childList:true,subtree:true}`
-- `X18`: `JS:L2279:NONE`
-- `X19`: `JS:L2280:/*_TEST_YOUR_SCRIPT_UI_V1_BEGIN_*/`
-- `X2`: `JS:L2263:NONE`
-- `X20`: `JS:L2281:NONE`
-- `X21`: `JS:L2282:function_irlTestYourScriptCreateModal(){`
-- `X22`: `JS:L2283:if(document.getElementById(irlTestScriptModal)){`
-- `X23`: `JS:L2284:return`
-- `X24`: `JS:L2285:}`
-- `X25`: `JS:L2286:NONE`
-- `X26`: `JS:L2287:const_modal=document.createElement(div)`
-- `X27`: `JS:L2288:modal.id=irlTestScriptModal`
-- `X28`: `JS:L2289:modal.className=irl-test-modal`
-- `X29`: `JS:L2290:modal.setAttribute(aria-hidden,true)`
-- `X3`: `JS:L2264:if(h){`
-- `X30`: `JS:L2291:NONE`
-- `X31`: `JS:L2292:modal.innerHTML=`
-- `X32`: `JS:L2293:&lt;div_class=irl-test-modal-backdrop`
-- `X33`: `JS:L2294:data-irl-test-close=1&gt;&lt;/div&gt;`
-- `X34`: `JS:L2295:NONE`
-- `X35`: `JS:L2296:&lt;section_class=irl-test-dialog`
-- `X36`: `JS:L2297:role=dialog`
-- `X37`: `JS:L2298:aria-modal=true`
-- `X38`: `JS:L2299:aria-labelledby=irlTestTitle&gt;`
-- `X39`: `JS:L2300:NONE`
-- `X4`: `JS:L2265:h.insertAdjacentElement(`
-- `X40`: `JS:L2301:&lt;button_type=button`
-- `X41`: `JS:L2302:class=irl-test-close`
-- `X42`: `JS:L2303:aria-label=Close`
-- `X43`: `JS:L2304:data-irl-test-close=1&gt;&lt;/button&gt;`
-- `X44`: `JS:L2305:NONE`
-- `X45`: `JS:L2306:&lt;div_class=irl-test-kicker&gt;`
-- `X46`: `JS:L2307:FREE_SCRIPT_CHECK`
-- `X47`: `JS:L2308:&lt;/div&gt;`
-- `X48`: `JS:L2309:NONE`
-- `X49`: `JS:L2310:&lt;h2_id=irlTestTitle&gt;Test_your_Pine_Script&lt;/h2&gt;`
-- `X5`: `JS:L2266:afterend,`
-- `X50`: `JS:L2311:NONE`
-- `X51`: `JS:L2312:&lt;p_class=irl-test-intro&gt;`
-- `X52`: `JS:L2313:Check_whether_your_indicator_or_strategy_can_be_objectively_tested.`
-- `X53`: `JS:L2314:You_will_see_the_initial_compatibility_result_here.`
-- `X54`: `JS:L2315:Scripts_that_qualify_continue_to_a_free_12-month_SOL/USDT_benchmark.`
-- `X55`: `JS:L2316:The_completed_report_will_be_sent_by_email.`
-- `X56`: `JS:L2317:&lt;/p&gt;`
-- `X57`: `JS:L2318:NONE`
-- `X58`: `JS:L2407:id=irlTestStart`
-- `X59`: `JS:L2408:class=irl-test-primary&gt;`
-- `X6`: `JS:L2267:link`
-- `X60`: `JS:L2409:Start_free_check`
-- `X61`: `JS:L2410:&lt;/button&gt;`
-- `X62`: `JS:L2411:NONE`
-- `X63`: `JS:L2412:&lt;/div&gt;`
-- `X64`: `JS:L2413:&lt;/section&gt;`
-- `X65`: `JS:L2414:NONE`
-- `X66`: `JS:L2415:NONE`
-- `X67`: `JS:L2416:document.body.appendChild(modal)`
-- `X68`: `JS:L2417:NONE`
-- `X69`: `JS:L2418:const_close=()=&gt;{`
-- `X7`: `JS:L2268:)`
-- `X70`: `JS:L2419:modal.classList.remove(irl-test-modal-open)`
-- `X71`: `JS:L2420:modal.setAttribute(aria-hidden,true)`
-- `X72`: `JS:L2421:document.body.classList.remove(irl-test-modal-lock)`
-- `X73`: `JS:L2422:}`
-- `X74`: `JS:L2423:NONE`
-- `X75`: `JS:L2424:const_open=()=&gt;{`
-- `X76`: `JS:L2425://_TEST_YOUR_SCRIPT_FRESH_FORM_V22D`
-- `X77`: `JS:L2426://_This_modal_is_reused_in_the_DOM._A_new_customer_open_must`
-- `X78`: `JS:L2427://_therefore_start_with_a_genuinely_fresh_submission_form.`
-- `X79`: `JS:L2428:[`
-- `X8`: `JS:L2269:}`
-- `X80`: `JS:L2429:irlTestName,`
-- `X81`: `JS:L2430:irlTestEmail,`
-- `X82`: `JS:L2431:irlTestAuthor,`
-- `X9`: `JS:L2270:}`
