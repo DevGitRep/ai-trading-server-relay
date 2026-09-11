@@ -1,13 +1,13 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-11T11:17:56.343507+00:00`
-- Run ID: `20260911T111754Z`
-- Step: `CONFIRM_UPSTREAM_HELPER_METRIC_RETURNS`
+- Published UTC: `2026-09-11T11:19:11.053231+00:00`
+- Run ID: `20260911T111909Z`
+- Step: `CONFIRM_METRICS_DICT_ASSIGNMENTS_IN_UPSTREAM_HELPERS`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `UPSTREAM_HELPER_METRIC_KEYS_MISSING`
-- Next gate: `PATCH_ONLY_MISSING_HELPER_RETURN_METRICS`
+- Verdict: `UPSTREAM_HELPER_METRIC_ASSIGNMENTS_INCOMPLETE`
+- Next gate: `PATCH_ONLY_CONFIRMED_MISSING_METRIC_ASSIGNMENTS`
 
 ## Facts
 
@@ -15,23 +15,16 @@
 - `CLOUDFLARE_ACTION`: `NO`
 - `DB_WRITE`: `NO`
 - `HELPER1`: `_v2_signal_flip`
+- `HELPER1_METRIC_ASSIGN_COUNT`: `0`
 - `HELPER1_MISSING`: `profit_factor,net_return_pct,max_drawdown_pct,win_rate_pct,trade_count`
 - `HELPER1_PRESENT`: `NONE`
-- `HELPER1_RETURN1`: `L2494:metrics`
-- `HELPER1_RETURN2`: `L2247:entry_capital_(1.0+gross)`
-- `HELPER1_RETURN3`: `L2232:cash`
-- `HELPER1_RETURN_COUNT`: `3`
 - `HELPER2`: `_v2_indicator_atr_1_1_5`
+- `HELPER2_METRIC_ASSIGN_COUNT`: `0`
 - `HELPER2_MISSING`: `profit_factor,net_return_pct,max_drawdown_pct,win_rate_pct,trade_count`
 - `HELPER2_PRESENT`: `NONE`
-- `HELPER2_RETURN1`: `L3051:metrics`
-- `HELPER2_RETURN2`: `L2598:entry_capital_(1.0+gross)`
-- `HELPER2_RETURN3`: `L2583:cash`
-- `HELPER2_RETURN_COUNT`: `3`
 - `HELPER3`: `_v2_native_strategy`
+- `HELPER3_METRIC_ASSIGN_COUNT`: `0`
 - `HELPER3_MISSING`: `profit_factor,net_return_pct,max_drawdown_pct,win_rate_pct,trade_count`
 - `HELPER3_PRESENT`: `NONE`
-- `HELPER3_RETURN1`: `L3348:metrics`
-- `HELPER3_RETURN_COUNT`: `1`
 - `RESTART`: `NO`
 - `SOURCE_CHANGE`: `NO`
