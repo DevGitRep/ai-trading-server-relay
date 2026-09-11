@@ -1,33 +1,34 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-11T16:27:33.734959+00:00`
-- Run ID: `20260911T162731Z`
-- Step: `TRACE_REAL_TYS_SOURCE_AND_COMPATIBILITY`
+- Published UTC: `2026-09-11T16:36:19.971399+00:00`
+- Run ID: `20260911T163034Z`
+- Step: `FIX_RESIN_OUTPUT_PARSE_FALSE_NEGATIVE`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `REAL_SOURCE_ANALYZED`
-- Next gate: `EXPLAIN_EXACT_FAIL`
+- Verdict: `RESIN_OUTPUT_PARSE_FIX_DEPLOYED`
+- Next gate: `RETEST_SAME_TYS_SCRIPT`
 
 ## Facts
 
 - `BENCHTEST_RUN`: `NO`
-- `BUY_COMPATIBLE`: `YES`
-- `BUY_PRESENT`: `YES`
+- `BRANCH`: `fix/resin-output-parse-20260911t163034z`
+- `BRANCH_PUSH`: `YES`
+- `CHANGED_FILE1`: `tools/resin_pine_adapter.mjs`
+- `CHANGED_FILE_COUNT`: `1`
 - `CLOUDFLARE_ACTION`: `NO`
-- `CODEX_PROCESS_RC`: `0`
+- `CODEX_FIX_RC`: `0`
+- `CODEX_REVIEW_RC`: `0`
+- `COMMIT_SHA`: `3faf36c8804d`
 - `DB_WRITE`: `NO`
-- `FAIL_CAUSE`: `OUTPUT_PARSE:_Resin_adapter_stdout_could_not_be_decoded_as_a_result`
-- `FALSE_NEGATIVE`: `YES`
-- `FIX_SUMMARY`: `Ensure_complete_JSON_output_before_adapter_exit;_revalidate_the_exact_source`
-- `PROBLEM_LOCATION`: `CHECKER`
-- `REAL_SOURCE_FOUND`: `YES`
-- `RESTART`: `NO`
-- `SELL_COMPATIBLE`: `YES`
-- `SELL_PRESENT`: `YES`
-- `SOURCE_CHANGE`: `NO`
-- `SOURCE_COLUMN`: `pine_source`
-- `SOURCE_LENGTH`: `38529`
-- `SOURCE_SHA`: `cec9b86a38ab67bce85da15ca341671c7a51da5ea8353bd03b8b63910a265483`
-- `SOURCE_TABLE`: `candidates`
-- `SUBMISSION_ID`: `TYS_02816FA4C4134012895BE1F51C97554C`
+- `DIFF_CHECK`: `YES`
+- `FAST_FORWARD_MERGE`: `YES`
+- `INDEPENDENT_REVIEW`: `PASS`
+- `JS_SYNTAX_CHECK`: `YES`
+- `LIVE_WORKTREE_CLEAN`: `YES`
+- `MAIN_PUSH`: `YES`
+- `PYTHON_SYNTAX_CHECK`: `YES`
+- `REAL_SOURCE_LENGTH`: `38529`
+- `REGRESSION_GUARD`: `YES`
+- `RESTART`: `YES`
+- `SERVICE_ACTIVE`: `YES`
