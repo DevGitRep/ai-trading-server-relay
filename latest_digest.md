@@ -1,8 +1,8 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-10T23:47:29.948797+00:00`
-- Run ID: `20260910T234727Z`
+- Published UTC: `2026-09-11T02:15:07.300979+00:00`
+- Run ID: `20260911T021505Z`
 - Step: `READ_LATEST_TYS_EMAIL_DELIVERY_STATE`
 - Status: `SUCCESS`
 - Exit code: `0`
