@@ -1,26 +1,22 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-11T07:34:05.326521+00:00",
-  "run_id": "20260911T073403Z",
-  "step": "RESOLVE_REVIEW_HOST_CLOSURE_GATE",
+  "published_at_utc": "2026-09-11T07:36:20.593493+00:00",
+  "run_id": "20260911T073618Z",
+  "step": "RESOLVE_NONPUBLIC_HOST_CLASSIFIER",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "REVIEW_HOST_GATE_EXACTLY_RESOLVED",
-  "next_gate": "TEST_REVIEW_WITH_ALLOWED_HOST_CLASS",
+  "verdict": "PUBLIC_HOST_CLASSIFIER_ORIGIN_NOT_FOUND",
+  "next_gate": "INSPECT_EXACT_BACKEND_SYMBOL_REFERENCE_ONLY",
   "facts": {
-    "BACKEND_HOST_DEF_COUNT": "0",
     "BENCHTEST_RUN": "NO",
-    "BLOCKED_HOST_CLASS": "PUBLIC_BLOCKED",
     "CLOUDFLARE_ACTION": "NO",
     "DB_WRITE": "NO",
-    "HOST_404_GUARD": "is_public_host()",
-    "HOST_404_GUARD_COUNT": "1",
-    "HOST_GUARD_COUNT": "1",
-    "REGISTER_CALL": "register_internal_test_submissions_v1(_app,__aitb_is_public_host_v1,_)",
-    "REGISTER_CALL_COUNT": "1",
-    "REGISTER_HOST_ARG": "is_public_host",
+    "HOST_STRING_COUNT": "0",
+    "PUBLIC_HOST_BLOCKED": "YES",
     "RESTART": "NO",
     "REVIEW_ELIGIBLE": "YES",
-    "SOURCE_CHANGE": "NO"
+    "SOURCE_CHANGE": "NO",
+    "SYMBOL_DEF_COUNT": "0",
+    "SYMBOL_ORIGIN_COUNT": "0"
   }
 }
