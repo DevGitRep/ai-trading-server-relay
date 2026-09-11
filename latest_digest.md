@@ -1,25 +1,58 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-11T13:23:43.702049+00:00`
-- Run ID: `20260911T132341Z`
-- Step: `FINAL_CANONICAL_APPROVED_TYS_LIBRARY_FIX`
+- Published UTC: `2026-09-11T13:24:37.483418+00:00`
+- Run ID: `20260911T132435Z`
+- Step: `LOCATE_LIBRARY_ROWS_SOURCE`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `CANONICAL_SHA_RECHECK_NOT_CONFIRMED`
-- Next gate: `STOP_NO_FURTHER_LIBRARY_CHANGES`
+- Verdict: `LIBRARY_ROWS_SOURCE_CAPTURED`
+- Next gate: `FIX_ONLY_MISSING_LIBRARY_ROW_SOURCE`
 
 ## Facts
 
-- `APPROVED_TARGET_FOUND`: `NO`
 - `BENCHTEST_RUN`: `NO`
-- `CANONICAL_SHA_GATE_PATCH`: `YES`
 - `CLOUDFLARE_ACTION`: `NO`
 - `DB_WRITE`: `NO`
-- `LIBRARY_HTTP_STATUS`: `200`
-- `PATCH_PREPARED`: `YES`
-- `PRIVATE_TARGET_FOUND`: `NO`
-- `RESTART`: `YES`
-- `ROLLBACK`: `YES`
-- `SYNTAX_CHECK`: `YES`
-- `WRONG_METRICS_PATCH_REMOVED`: `YES`
+- `LIBRARY_ROWS_ASSIGNMENT_COUNT`: `1`
+- `LIBRARY_ROWS_ASSIGNMENT_LINES`: `1217`
+- `RESTART`: `NO`
+- `ROW41_CANDIDATE`: `ICL_SRC_A465DEED5818C8FA`
+- `ROW41_CANDIDATE_PRESENT`: `YES`
+- `ROW41_SHA`: `a465deed5818c8faf85f25a1f1b66cc4e94ef650363cc160cb6be18da74b80c0`
+- `SOURCE_CHANGE`: `NO`
+- `SRC1`: `L1205:_bulk_pipeline_metrics_v1(conn)`
+- `SRC10`: `L1214:)`
+- `SRC11`: `L1215:NONE`
+- `SRC12`: `L1216:#_INDICATOR_LIBRARY_BATCH_PUBLIC_GATE_V25D`
+- `SRC13`: `L1217:library_rows_=__library_rows(conn)`
+- `SRC14`: `L1218:NONE`
+- `SRC15`: `L1219:#_INDICATOR_LIBRARY_PUBLICATION_BATCH_V29L`
+- `SRC16`: `L1220:#`
+- `SRC17`: `L1221:#_Normal_path:`
+- `SRC18`: `L1222:#_source_sha_cache_v1_already_provides_source_sha256.`
+- `SRC19`: `L1223:#`
+- `SRC2`: `L1206:)`
+- `SRC20`: `L1224:#_Historical/cache-miss_path_used_to_call`
+- `SRC21`: `L1225:#_script_is_public()_once_per_row._That_caused_thousands`
+- `SRC22`: `L1226:#_of_repeated_SQLite_connections_/_table_checks.`
+- `SRC23`: `L1227:#`
+- `SRC24`: `L1228:#_Preserve_the_exact_same_publication_authority,_but`
+- `SRC25`: `L1229:#_recover_missing_source_SHAs_in_batches_by_the_exact`
+- `SRC26`: `L1230:#_script_id_part_+_source_version_already_represented_by`
+- `SRC27`: `L1231:#_the_Library_row,_then_run_the_existing_publication_gate`
+- `SRC28`: `L1232:#_once_over_those_SHAs.`
+- `SRC29`: `L1233:public_source_shas_=_set(`
+- `SRC3`: `L1207:NONE`
+- `SRC30`: `L1234:_tys_filter_public_shas(`
+- `SRC31`: `L1235:[`
+- `SRC32`: `L1236:str(item[source_sha256])`
+- `SRC33`: `L1237:for_item_in_library_rows`
+- `SRC34`: `L1238:if_item[source_sha256]`
+- `SRC35`: `L1239:]`
+- `SRC4`: `L1208:#_TEST_YOUR_SCRIPT_LIBRARY_GATE_V8B`
+- `SRC5`: `L1209:from_test_your_script_v1_import_(`
+- `SRC6`: `L1210:script_is_public_as`
+- `SRC7`: `L1211:_tys_script_is_public,`
+- `SRC8`: `L1212:filter_public_shas_as`
+- `SRC9`: `L1213:_tys_filter_public_shas,`
