@@ -1,59 +1,22 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-11T13:04:46.141836+00:00`
-- Run ID: `20260911T130444Z`
-- Step: `CAPTURE_LIBRARY_ROWS_CONSTRUCTION`
+- Published UTC: `2026-09-11T13:11:57.368472+00:00`
+- Run ID: `20260911T131155Z`
+- Step: `FIX_ROW41_ACTUAL_LIBRARY_EXCLUSION`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `LIBRARY_ROWS_CONSTRUCTION_CAPTURED`
-- Next gate: `PATCH_ONLY_ROW41_LIBRARY_ROWS_EXCLUSION`
+- Verdict: `TARGETED_TYS_SHA_FALLBACK_DID_NOT_PUBLISH`
+- Next gate: `STOP_NO_FURTHER_LIBRARY_CHANGES`
 
 ## Facts
 
 - `BENCHTEST_RUN`: `NO`
 - `CLOUDFLARE_ACTION`: `NO`
 - `DB_WRITE`: `NO`
-- `HIT_COUNT`: `4`
-- `HIT_LINES`: `1329,1336,1340,1355`
-- `L1324`: `utf-8`
-- `L1325`: `)`
-- `L1326`: `).hexdigest()`
-- `L1327`: `NONE`
-- `L1328`: `fallback_public_shas_=_set(`
-- `L1329`: `_tys_filter_public_shas(`
-- `L1330`: `list(`
-- `L1331`: `fallback_sha_by_pair.values()`
-- `L1332`: `)`
-- `L1333`: `)`
-- `L1334`: `)`
-- `L1335`: `NONE`
-- `L1336`: `public_source_shas.update(`
-- `L1337`: `fallback_public_shas`
-- `L1338`: `)`
-- `L1339`: `NONE`
-- `L1340`: `for_row_in_library_rows:`
-- `L1341`: `NONE`
-- `L1342`: `row_public_sha_=_(`
-- `L1343`: `row[source_sha256]`
-- `L1344`: `or_fallback_sha_by_pair.get(`
-- `L1345`: `(`
-- `L1346`: `row[script_id_part],`
-- `L1347`: `row[source_version],`
-- `L1348`: `),`
-- `L1350`: `)`
-- `L1351`: `or_`
-- `L1352`: `)`
-- `L1353`: `NONE`
-- `L1354`: `if_row_public_sha:`
-- `L1355`: `if_row_public_sha_not_in_public_source_shas:`
-- `L1356`: `continue`
-- `L1357`: `NONE`
-- `L1358`: `_True_source-less_legacy_edge_case_only.`
-- `L1359`: `_Retain_the_existing_authority_as_final_fallback.`
-- `L1360`: `elif_not__tys_script_is_public(`
-- `L1361`: `str(`
-- `L1362`: `row[script_id_part]`
-- `L1363`: `)`
+- `LIBRARY_HTTP_STATUS`: `000`
+- `PATCH_PREPARED`: `NO`
+- `PUBLIC_TARGET_FOUND`: `NO`
 - `RESTART`: `NO`
-- `SOURCE_CHANGE`: `NO`
+- `ROLLBACK`: `NO`
+- `SYNTAX_CHECK`: `NO`
