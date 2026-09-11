@@ -1,89 +1,42 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-11T13:34:52.021568+00:00`
-- Run ID: `20260911T133450Z`
-- Step: `CAPTURE_LIBRARY_ROWS_QUERY_BODY`
+- Published UTC: `2026-09-11T13:36:10.380824+00:00`
+- Run ID: `20260911T133608Z`
+- Step: `VERIFY_TYS_CANONICAL_LIBRARY_SOURCE_RECORD`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `LIBRARY_ROWS_QUERY_BODY_CAPTURED`
-- Next gate: `PATCH_ONLY_MISSING_TYS_LIBRARY_ROW_SOURCE`
+- Verdict: `APPROVED_TYS_HAS_NO_CANONICAL_SCRIPT_SOURCE_RECORD`
+- Next gate: `PATCH_ONLY_APPROVAL_TO_EXISTING_SCRIPTS_SOURCES_PUBLICATION`
 
 ## Facts
 
 - `BENCHTEST_RUN`: `NO`
+- `CAND1`: `candidate_id:ICL_SRC_A465DEED5818C8FA`
+- `CAND10`: `causality_status:PENDING`
+- `CAND11`: `repaint_status:PENDING`
+- `CAND12`: `conversion_status:NOT_STARTED`
+- `CAND2`: `name:Gianni2`
+- `CAND3`: `source_url:NULL`
+- `CAND4`: `source_author:Gianni2`
+- `CAND5`: `source_license:NULL`
+- `CAND6`: `source_sha256:a465deed5818c8faf85f25a1f1b66cc4e94ef650363cc160cb6be18da74b80c0`
+- `CAND7`: `pine_source://version=5_strategy(AI_Trader_Bench_Manual_Approval_E2E,_overlay=true)_fast_=_ta.sma(close,_7)_slow_=_ta.sma(close,_21)_longSignal_=_ta.cro`
+- `CAND8`: `status:SOURCE_CAPTURED`
+- `CAND9`: `discovery_status:NOT_REQUIRED`
 - `CLOUDFLARE_ACTION`: `NO`
 - `DB_WRITE`: `NO`
-- `L456`: `sql_=_f`
-- `L457`: `SELECT`
-- `L458`: `s.script_id_part,`
-- `L459`: `s.name,`
-- `L460`: `s.author,`
-- `L461`: `s.chart_url,`
-- `L462`: `s.image_url,`
-- `L463`: `s.created_at,`
-- `L464`: `s.updated_at,`
-- `L465`: `so.version_AS_source_version,`
-- `L466`: `so.fetched_at_AS_source_fetched_at,`
-- `L467`: `sc.source_sha256_AS_source_sha256,`
-- `L468`: `{signal_role},`
-- `L469`: `{signal_role_reason},`
-- `L470`: `{signal_role_updated_at}`
-- `L471`: `NONE`
-- `L472`: `FROM_scripts_s`
-- `L473`: `NONE`
-- `L474`: `JOIN_sources_so`
-- `L475`: `ON_so.rowid_=_(`
-- `L476`: `SELECT_x.rowid`
-- `L477`: `FROM_sources_x`
-- `L478`: `WHERE`
-- `L479`: `x.script_id_part=`
-- `L480`: `s.script_id_part`
-- `L481`: `ORDER_BY`
-- `L482`: `COALESCE(`
-- `L483`: `x.fetched_at,`
-- `L484`: `&#x27;&#x27;`
-- `L485`: `)_DESC,`
-- `L486`: `x.rowid_DESC`
-- `L487`: `LIMIT_1`
-- `L488`: `)`
-- `L489`: `NONE`
-- `L490`: `LEFT_JOIN_source_sha_cache_v1_sc`
-- `L491`: `ON_sc.script_id_part=so.script_id_part`
-- `L492`: `AND_sc.version=so.version`
-- `L493`: `AND_(`
-- `L494`: `sc.fetched_at=so.fetched_at`
-- `L495`: `OR_(`
-- `L496`: `sc.fetched_at_IS_NULL`
-- `L497`: `AND_so.fetched_at_IS_NULL`
-- `L498`: `)`
-- `L499`: `)`
-- `L500`: `NONE`
-- `L501`: `WHERE`
-- `L502`: `lower(`
-- `L503`: `COALESCE(`
-- `L504`: `s.script_type,`
-- `L505`: `&#x27;&#x27;`
-- `L506`: `)`
-- `L507`: `)_LIKE_&#x27;indicator%&#x27;`
-- `L508`: `NONE`
-- `L509`: `ORDER_BY`
-- `L510`: `COALESCE(`
-- `L511`: `NULLIF(`
-- `L512`: `s.updated_at,`
-- `L513`: `&#x27;&#x27;`
-- `L514`: `),`
-- `L515`: `NULLIF(`
-- `L516`: `s.created_at,`
-- `L517`: `&#x27;&#x27;`
-- `L518`: `),`
-- `L519`: `&#x27;&#x27;`
-- `L520`: `)_DESC,`
-- `L521`: `s.rowid_DESC`
-- `L522`: `NONE`
-- `L523`: `NONE`
-- `L524`: `return_conn.execute(`
-- `L525`: `sql`
-- `L526`: `).fetchall()`
+- `DIRECT_SCRIPT_MATCH_COUNT`: `0`
+- `LINKED_SCRIPT_COUNT`: `0`
+- `LINKED_SCRIPT_IDS`: `NONE`
+- `LINKED_SOURCE_COUNT`: `0`
 - `RESTART`: `NO`
+- `ROW41_CANDIDATE`: `ICL_SRC_A465DEED5818C8FA`
+- `ROW41_PUBLICATION`: `APPROVED`
+- `SCRIPTS_COLUMNS`: `script_id_part,name,author,script_type,open_source,version,created_at,updated_at,chart_url,image_url,description,fetched_at,signal_role,signal_role_reason,signal_role_updated_at`
+- `SHA_CACHE_MATCH_COUNT`: `0`
+- `SOURCES_COLUMNS`: `script_id_part,version,source,pine_version,kind,script_name,fetched_at`
 - `SOURCE_CHANGE`: `NO`
+- `TYS1`: `candidate_id:ICL_SRC_A465DEED5818C8FA`
+- `TYS2`: `source_sha256:a465deed5818c8faf85f25a1f1b66cc4e94ef650363cc160cb6be18da74b80c0`
+- `TYS3`: `report_access_token_sha256:1b92b710fdb26f7ac5577a478a3f41c8fff2332c231079ede5e7388addd7f2e7`
