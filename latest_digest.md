@@ -1,64 +1,24 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-11T06:21:16.483461+00:00`
-- Run ID: `20260911T062114Z`
-- Step: `TRACE_EXISTING_TOKEN_HELPER_GUARDS`
+- Published UTC: `2026-09-11T06:24:46.205738+00:00`
+- Run ID: `20260911T062444Z`
+- Step: `VERIFY_TOKEN_RESULT_LOOKUP`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `TOKEN_HELPER_GUARDS_CAPTURED`
-- Next gate: `FIX_ONLY_PROVEN_TOKEN_GUARD_BREAK`
+- Verdict: `TOKEN_RESULT_LOOKUP_IDENTIFIED`
+- Next gate: `VERIFY_LOOKUP_AGAINST_FRESH_COMPLETE`
 
 ## Facts
 
 - `BENCHTEST_RUN`: `NO`
-- `BENCHTEST_STATUS`: `COMPLETE`
-- `CANDIDATE_ID_PRESENT`: `YES`
 - `CLOUDFLARE_ACTION`: `NO`
 - `DB_WRITE`: `NO`
-- `HELPER_LINE`: `854`
-- `R1_DEPTH`: `1`
-- `R1_IF`: `not_sid`
-- `R1_LINE`: `867`
-- `R1_STATUS`: `ERROR`
-- `R2_DEPTH`: `0`
-- `R2_IF`: `UNCONDITIONAL`
-- `R2_LINE`: `897`
-- `R2_STATUS`: `READY`
-- `R3_DEPTH`: `1`
-- `R3_IF`: `row_is_None`
-- `R3_LINE`: `874`
-- `R3_STATUS`: `ERROR`
-- `R4_DEPTH`: `1`
-- `R4_IF`: `candidate_id_is_not_None_and_str(candidate_id)_!_cid`
-- `R4_LINE`: `878`
-- `R4_STATUS`: `ERROR`
-- `R5_DEPTH`: `1`
-- `R5_IF`: `source_sha256_is_not_None_and_str(source_sha256).lower()_!_sha`
-- `R5_LINE`: `880`
-- `R5_STATUS`: `ERROR`
-- `R6_DEPTH`: `1`
-- `R6_IF`: `str(row&#x27;technical_status&#x27;_or_&#x27;&#x27;).upper()_!_&#x27;PASS&#x27;`
-- `R6_LINE`: `882`
-- `R6_STATUS`: `BLOCKED`
-- `R7_DEPTH`: `1`
-- `R7_IF`: `str(row&#x27;benchtest_status&#x27;_or_&#x27;&#x27;).upper()_!_&#x27;COMPLETE&#x27;`
-- `R7_LINE`: `884`
-- `R7_STATUS`: `BLOCKED`
-- `R8_DEPTH`: `1`
-- `R8_IF`: `result_is_None`
-- `R8_LINE`: `887`
-- `R8_STATUS`: `ERROR`
-- `R9_DEPTH`: `1`
-- `R9_IF`: `expected_run_and_actual_run_!_expected_run`
-- `R9_LINE`: `891`
-- `R9_STATUS`: `ERROR`
+- `PIPELINE_FALLBACK_PRESENT`: `YES`
+- `RESIN_PASS_MAPPING_PRESENT`: `YES`
 - `RESTART`: `NO`
-- `RETURN_COUNT`: `9`
-- `RUN_ID_PRESENT`: `NO`
+- `RESULT_ASSIGN_LINE`: `885`
+- `RESULT_EXPR`: `_exact_benchtest_result(con,_cid,_sha)`
+- `RESULT_HELPER`: `_exact_benchtest_result`
+- `RESULT_HELPER_EXISTS`: `YES`
 - `SOURCE_CHANGE`: `NO`
-- `SOURCE_SHA_PRESENT`: `YES`
-- `SUBMISSION_ID_PRESENT`: `YES`
-- `TECHNICAL_STATUS`: `PASS`
-- `TOKEN_CREATED`: `NO`
-- `TOKEN_SHA_PRESENT`: `NO`
