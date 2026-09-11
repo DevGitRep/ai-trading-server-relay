@@ -1,25 +1,31 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-11T10:58:35.108620+00:00`
-- Run ID: `20260911T105833Z`
-- Step: `TRACE_CALLER_THAT_BUILDS_VALUES_PAYLOAD`
+- Published UTC: `2026-09-11T11:13:58.659139+00:00`
+- Run ID: `20260911T111356Z`
+- Step: `INSPECT_EXACT_RESULT_DICT_BEFORE_INSERT`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `CALLER_METRIC_PAYLOAD_PRODUCER_RESOLVED`
-- Next gate: `TRACE_EXACT_SOURCE_VALUES_CAUSING_NULL_METRICS`
+- Verdict: `RESULT_DICT_ALREADY_HAS_METRIC_KEYS`
+- Next gate: `TRACE_ONLY_EXISTING_METRIC_EXPRESSIONS`
 
 ## Facts
 
 - `BENCHTEST_RUN`: `NO`
-- `CALL1`: `L463:FNinsert_result:convalues`
-- `CALL2`: `L4612:FN_v2_finish_from_signals:conresult`
 - `CLOUDFLARE_ACTION`: `NO`
 - `DB_WRITE`: `NO`
-- `LITERAL_PAYLOAD_KEY_COUNT`: `0`
-- `METRIC_PRODUCER1`: `C4612:L4605:_v2_finish_from_signals:result_=_{&#x27;run_id&#x27;:_run_id,_&#x27;candidate_id&#x27;:_candidate_id,_&#x27;source_sha256&#x27;:_source_sha,_&#x27;contract_version&#x27;:__V2_CONTRACT_VERSI`
-- `METRIC_PRODUCER_COUNT`: `1`
+- `METRIC1`: `trade_count:primary.get(&#x27;trade_count&#x27;)`
+- `METRIC2`: `net_return_pct:primary.get(&#x27;net_return_pct&#x27;)`
+- `METRIC3`: `max_drawdown_pct:primary.get(&#x27;max_drawdown_pct&#x27;)`
+- `METRIC4`: `profit_factor:primary.get(&#x27;profit_factor&#x27;)`
+- `METRIC5`: `win_rate_pct:primary.get(&#x27;win_rate_pct&#x27;)`
+- `METRIC6`: `secondary_net_return_pct:secondary.get(&#x27;net_return_pct&#x27;)`
+- `METRIC7`: `secondary_max_drawdown_pct:secondary.get(&#x27;max_drawdown_pct&#x27;)`
+- `METRIC8`: `secondary_profit_factor:secondary.get(&#x27;profit_factor&#x27;)`
+- `METRIC9`: `secondary_win_rate_pct:secondary.get(&#x27;win_rate_pct&#x27;)`
+- `METRIC_KEYS_MISSING`: `NONE`
+- `METRIC_KEYS_PRESENT`: `trade_count,net_return_pct,max_drawdown_pct,profit_factor,win_rate_pct,secondary_net_return_pct,secondary_max_drawdown_pct,secondary_profit_factor,secondary_win_rate_pct`
 - `RESTART`: `NO`
+- `RESULT_DICT_LINE`: `4605`
+- `RESULT_KEY_COUNT`: `68`
 - `SOURCE_CHANGE`: `NO`
-- `V2_INSERT_RESULT_CALL_COUNT`: `2`
-- `VALUES_PRODUCER_COUNT`: `2`
