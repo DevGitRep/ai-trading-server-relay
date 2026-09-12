@@ -1,28 +1,22 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-12T15:12:06.822930+00:00`
-- Run ID: `20260912T151204Z`
-- Step: `RESOLVESCRIPTIDEXPRESSION`
+- Published UTC: `2026-09-12T15:21:13.480640+00:00`
+- Run ID: `20260912T152111Z`
+- Step: `FREEPROFILEALLINONEDIAG`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `REPORT_ROUTE_IDENTIFIER_CONTEXT_CAPTURED`
-- Next gate: `APPLY_MINIMAL_CONFIRMED_IDENTIFIER_FIX`
+- Verdict: `METRICS_MAP_ID_MATCH_FAILURE`
+- Next gate: `APPLY_TARGETED_FIX_FROM_ALL_IN_ONE_DIAGNOSIS`
 
 ## Facts
 
-- `ROUTE01`: `L2343:SELECT *`
-- `ROUTE02`: `L2344:FROM scripts`
-- `ROUTE03`: `L2345:WHERE script_id_part=?`
-- `ROUTE04`: `L2347:(candidate_id,),`
-- `ROUTE05`: `L2348:).fetchone()`
-- `ROUTE06`: `L2354:record = dict(script)`
-- `ROUTE07`: `L2358:SELECT`
-- `ROUTE08`: `L2359:script_id_part,`
-- `ROUTE09`: `L2367:WHERE script_id_part=?`
-- `ROUTE10`: `L2371:(candidate_id,),`
-- `ROUTE11`: `L2372:).fetchone()`
-- `ROUTE12`: `L2407:_pine_report_metrics(`
-- `ROUTE13`: `L2408:candidate_id,`
-- `ROUTE14`: `L2416:_pine_report_metrics(`
-- `ROUTE15`: `L2417:candidate_id,`
+- `COPYMISSING`: `NONE`
+- `EXPECTED`: `direction_left_count,direction_left_label,direction_left_pct,direction_mode,direction_right_count,direction_right_label,direction_right_pct,dna_momentum_pct,dna_reversal_pct,dna_trend_pct,dna_volatility_pct,dna_volu`
+- `FAILSAMPLE`: `sid=ICL_SRC_A465DEED5818C8FA;ids=1;hit=0;selected=None;source_profile=False;dna=False;dir=False;activity=False;trade=None;exp=None;mode=None`
+- `GOODSAMPLE`: `NONE`
+- `TESTED`: `40`
+- `WITHHIT`: `0`
+- `WITHIDS`: `40`
+- `WITHSOURCEPROFILE`: `0`
+- `WITHVALUES`: `0`
