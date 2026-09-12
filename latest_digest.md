@@ -1,21 +1,58 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-12T17:32:08.967183+00:00`
-- Run ID: `20260912T173206Z`
-- Step: `APPLYFREEPROFILECURRENTIDFIX`
+- Published UTC: `2026-09-12T17:33:06.798391+00:00`
+- Run ID: `20260912T173304Z`
+- Step: `TRACEPROFILEJSONEXTRACTION`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `NO_CHANGE_AUTOMATIC_SAFETY_REVERT`
-- Next gate: `USE_RUNTIME_GATE_RESULT`
+- Verdict: `PROFILE_JSON_AND_EXTRACTION_CAPTURED`
+- Next gate: `APPLY_MINIMAL_PROFILE_HYDRATION_FIX`
 
 ## Facts
 
-- `AFTERVALUES`: `0`
-- `BEFOREVALUES`: `0`
-- `CHANGED`: `NO`
-- `NEWKEYS`: `11`
-- `PROTECTEDCHANGES`: `0`
-- `REASON`: `NO_PROFILE_VALUE_IMPROVEMENT_REVERTED`
-- `SERVICE`: `NOT_RESTARTED`
-- `TESTED`: `40`
+- `PROFILE01`: `indicator_id=ICL_SRC_CEC9B86A38AB67BC`
+- `PROFILE02`: `json:losing_trades=30166`
+- `PROFILE03`: `json:primary_exposure_pct=99.99562404870625`
+- `PROFILE04`: `json:secondary_exposure_pct=38.43873668188737`
+- `PROFILE05`: `json:secondary_losing_trades=56897`
+- `PROFILE06`: `json:secondary_trade_count=64608`
+- `PROFILE07`: `json:secondary_winning_trades=7711`
+- `PROFILE08`: `json:signal_research_v1.best_observed.direction=&#x27;SHORT&#x27;`
+- `PROFILE09`: `json:trade_count=34787`
+- `PROFILE10`: `json:trade_count_percentile=None`
+- `PROFILE11`: `json:winning_trades=4621`
+- `PROFILE12`: `code:L751:metrics_map = {}`
+- `PROFILE13`: `code:L762:primary_trade_count`
+- `PROFILE14`: `code:L770:metrics = dict(metrics_map.get(candidate_id) or {})`
+- `PROFILE15`: `code:L779:&quot;trade_count&quot;: row[&quot;primary_trade_count&quot;],`
+- `PROFILE16`: `code:L782:metrics_map[candidate_id] = metrics`
+- `PROFILE17`: `code:L785:import json as _secondary_json`
+- `PROFILE18`: `code:L787:_secondary_rows = conn.execute(`
+- `PROFILE19`: `code:L789:SELECT indicator_id, &quot;raw_result_json&quot;`
+- `PROFILE20`: `code:L795:for _secondary_row in _secondary_rows:`
+- `PROFILE21`: `code:L796:_secondary_id = str(_secondary_row[0])`
+- `PROFILE22`: `code:L798:if _secondary_id not in metrics_map:`
+- `PROFILE23`: `code:L802:_secondary_payload = _secondary_json.loads(`
+- `PROFILE24`: `code:L803:_secondary_row[1] or &quot;{}&quot;`
+- `PROFILE25`: `code:L806:_secondary_payload = {}`
+- `PROFILE26`: `code:L809:_secondary_value = _secondary_payload.get(`
+- `PROFILE27`: `code:L812:_secondary_value = (`
+- `PROFILE28`: `code:L813:float(_secondary_value)`
+- `PROFILE29`: `code:L814:if _secondary_value is not None`
+- `PROFILE30`: `code:L818:_secondary_value = None`
+- `PROFILE31`: `code:L820:metrics_map[_secondary_id][`
+- `PROFILE32`: `code:L822:] = _secondary_value`
+- `PROFILE33`: `code:L824:for _secondary_metric in metrics_map.values():`
+- `PROFILE34`: `code:L825:if isinstance(_secondary_metric, dict):`
+- `PROFILE35`: `code:L826:_secondary_metric.setdefault(`
+- `PROFILE36`: `code:L832:# TRADING_PROFILE_V1 report/Library metric enrichment.`
+- `PROFILE37`: `code:L833:import json as _profile_json`
+- `PROFILE38`: `code:L835:_profile_rows = conn.execute(`
+- `PROFILE39`: `code:L841:b.&quot;raw_result_json&quot;`
+- `PROFILE40`: `code:L853:for _profile_row in _profile_rows:`
+- `PROFILE41`: `code:L854:_profile_id = str(`
+- `PROFILE42`: `code:L855:_profile_row[0]`
+- `PROFILE43`: `code:L858:_metrics = metrics_map.get(`
+- `PROFILE44`: `code:L859:_profile_id`
+- `PROFILE45`: `code:L869:_payload = _profile_json.loads(`
