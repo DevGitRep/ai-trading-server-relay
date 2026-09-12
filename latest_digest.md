@@ -1,21 +1,55 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-12T15:26:44.536045+00:00`
-- Run ID: `20260912T152642Z`
-- Step: `APPLYMETRICALIASFIX`
+- Published UTC: `2026-09-12T16:06:13.303906+00:00`
+- Run ID: `20260912T160611Z`
+- Step: `RESOLVEREALIDENTIFIERJOIN`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `NO_CHANGE_GUARD_PREVENTED_UNPROVEN_FIX`
-- Next gate: `USE_ALIAS_DISCOVERY_RESULT`
+- Verdict: `REAL_IDENTIFIER_CHAIN_CAPTURED`
+- Next gate: `APPLY_CONFIRMED_MINIMAL_PROVIDER_FIX`
 
 ## Facts
 
-- `AFTERVALUES`: `0`
-- `BEFOREVALUES`: `0`
-- `BRIDGECOLUMN`: `NONE`
-- `BRIDGETABLE`: `NONE`
-- `CHANGED`: `NO`
-- `REASON`: `NO_DB_ALIAS_BRIDGE_FOUND`
-- `SERVICE`: `NOT_RESTARTED`
-- `TESTED`: `30`
+- `JOIN01`: `script_id_part=ICL_SRC_A465DEED5818C8FA`
+- `JOIN02`: `source_sha=a465deed5818c8faf85f25a1f1b66cc4e94ef650363cc160cb6be18da74b80c0`
+- `JOIN03`: `chart_url=None`
+- `JOIN04`: `candidate_ids=ICL_SRC_A465DEED5818C8FA`
+- `JOIN05`: `metrics_map_count=17`
+- `JOIN06`: `map_sample=ICL_LIB_0D272A5A803DB579,ICL_LIB_108376CDFC6B964C,ICL_LIB_13D116EF34B21491,ICL_LIB_1CA1EF5616B27279,ICL_LIB_2E37E6F4A2EFB086,ICL_LIB_2EE7DC9960E5F511,ICL_LIB_3672C9A6E8C8A6BE,ICL_LIB_45F65B21D5674C2C,ICL_`
+- `JOIN07`: `direct_hits=`
+- `JOIN08`: `cid_hit=ICL_SRC_A465DEED5818C8FA;table=benchtest_native_artifact_cache_v1;col=origin_candidate_id;origin_candidate_id=ICL_SRC_A465DEED5818C8FA;source_sha256=a465deed5818c8faf85f25a1f1b66cc4e94ef650363cc160cb6be18da7`
+- `JOIN09`: `cid_hit=ICL_SRC_A465DEED5818C8FA;table=candidate_events;col=candidate_id;candidate_id=ICL_SRC_A465DEED5818C8FA`
+- `JOIN10`: `cid_hit=ICL_SRC_A465DEED5818C8FA;table=candidates;col=candidate_id;candidate_id=ICL_SRC_A465DEED5818C8FA;source_author=Gianni2;source_sha256=a465deed5818c8faf85f25a1f1b66cc4e94ef650363cc160cb6be18da74b80c0;pine_sour`
+- `JOIN11`: `cid_hit=ICL_SRC_A465DEED5818C8FA;table=pipeline_benchtest_runs;col=indicator_id;indicator_id=ICL_SRC_A465DEED5818C8FA;is_current=1;migration_source=tools/benchtest`
+- `JOIN12`: `cid_hit=ICL_SRC_A465DEED5818C8FA;table=pipeline_benchtest_runs;col=raw_result_json;indicator_id=ICL_SRC_A465DEED5818C8FA;is_current=1;migration_source=tools/benchtest`
+- `JOIN13`: `cid_hit=ICL_SRC_A465DEED5818C8FA;table=pipeline_indicator_versions;col=indicator_id;indicator_id=ICL_SRC_A465DEED5818C8FA;source_kind=MIGRATED_SCRIPT;is_current=1`
+- `JOIN14`: `cid_hit=ICL_SRC_A465DEED5818C8FA;table=pipeline_indicators;col=indicator_id;indicator_id=ICL_SRC_A465DEED5818C8FA;legacy_candidate_id=ICL_SRC_A465DEED5818C8FA`
+- `JOIN15`: `cid_hit=ICL_SRC_A465DEED5818C8FA;table=pipeline_indicators;col=legacy_candidate_id;indicator_id=ICL_SRC_A465DEED5818C8FA;legacy_candidate_id=ICL_SRC_A465DEED5818C8FA`
+- `JOIN16`: `cid_hit=ICL_SRC_A465DEED5818C8FA;table=resin_native_outputs;col=candidate_id;candidate_id=ICL_SRC_A465DEED5818C8FA;source_sha256=a465deed5818c8faf85f25a1f1b66cc4e94ef650363cc160cb6be18da74b80c0;script_kind=strategy`
+- `JOIN17`: `cid_hit=ICL_SRC_A465DEED5818C8FA;table=scripts;col=script_id_part;script_id_part=ICL_SRC_A465DEED5818C8FA;script_type=indicator_tys;open_source=1;description=Approved Test Your Script submission`
+- `JOIN18`: `cid_hit=ICL_SRC_A465DEED5818C8FA;table=sources;col=script_id_part;script_id_part=ICL_SRC_A465DEED5818C8FA;source=//@version=5 strategy(&quot;AI Trader Bench Manual Approval E2E&quot;, overlay=true) fast = ta.sma(close, 7) slo`
+- `JOIN19`: `cid_hit=ICL_SRC_A465DEED5818C8FA;table=test_your_script_submissions_v1;col=candidate_id;candidate_id=ICL_SRC_A465DEED5818C8FA;source_sha256=a465deed5818c8faf85f25a1f1b66cc4e94ef650363cc160cb6be18da74b80c0;library_pu`
+- `JOIN20`: `raw_match=indicator_id=ICL_SRC_A465DEED5818C8FA;candidate_id=ICL_SRC_A465DEED5818C8FA;source_sha256=a465deed5818c8faf85f25a1f1b66cc4e94ef650363cc160cb6be18da74b80c0`
+- `JOIN21`: `alias_code=L785:import json as _secondary_json`
+- `JOIN22`: `alias_code=L787:_secondary_rows = conn.execute(`
+- `JOIN23`: `alias_code=L789:SELECT indicator_id, &quot;raw_result_json&quot;`
+- `JOIN24`: `alias_code=L795:for _secondary_row in _secondary_rows:`
+- `JOIN25`: `alias_code=L796:_secondary_id = str(_secondary_row[0])`
+- `JOIN26`: `alias_code=L798:if _secondary_id not in metrics_map:`
+- `JOIN27`: `alias_code=L802:_secondary_payload = _secondary_json.loads(`
+- `JOIN28`: `alias_code=L803:_secondary_row[1] or &quot;{}&quot;`
+- `JOIN29`: `alias_code=L806:_secondary_payload = {}`
+- `JOIN30`: `alias_code=L809:_secondary_value = _secondary_payload.get(`
+- `JOIN31`: `alias_code=L812:_secondary_value = (`
+- `JOIN32`: `alias_code=L813:float(_secondary_value)`
+- `JOIN33`: `alias_code=L814:if _secondary_value is not None`
+- `JOIN34`: `alias_code=L818:_secondary_value = None`
+- `JOIN35`: `alias_code=L820:metrics_map[_secondary_id][`
+- `JOIN36`: `alias_code=L822:] = _secondary_value`
+- `JOIN37`: `alias_code=L824:for _secondary_metric in metrics_map.values():`
+- `JOIN38`: `alias_code=L825:if isinstance(_secondary_metric, dict):`
+- `JOIN39`: `alias_code=L826:_secondary_metric.setdefault(`
+- `JOIN40`: `alias_code=L838:p.indicator_id,`
+- `JOIN41`: `alias_code=L841:b.&quot;raw_result_json&quot;`
+- `JOIN42`: `alias_code=L846:ON b.indicator_id = p.indicator_id`
