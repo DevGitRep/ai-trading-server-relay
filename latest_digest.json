@@ -1,17 +1,26 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-12T10:29:06.953785+00:00",
-  "run_id": "20260912T102903Z",
-  "step": "DEPLOY_SAFE_UI_REPORT_EMAIL_FIXES",
+  "published_at_utc": "2026-09-12T10:54:12.220471+00:00",
+  "run_id": "20260912T105117Z",
+  "step": "VERIFY_BRANDED_TYS_DEPLOYMENT",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "LOCAL_HEADER_DIFF_DIVERGED",
-  "next_gate": "TRACE_LOCAL_HEADER_DIFF",
+  "verdict": "BRANDED_REPORT_DEPLOYED",
+  "next_gate": "VISUAL_CONFIRMATION",
   "facts": {
     "BENCHTEST_RUN": "NO",
+    "BRANDED_EMAIL": "YES",
+    "BRANDED_REPORT": "YES",
     "CLOUDFLARE_ACTION": "NO",
+    "CODE_CHANGED": "NO",
+    "DATE_ONLY_FORMAT": "YES",
     "DB_WRITE": "NO",
-    "DEPLOYED": "NO",
-    "RESTART": "NO"
+    "EMAIL_SENT": "NO",
+    "GITHUB_PUSHED": "NO",
+    "LOCAL_REMOTE_MATCH": "YES",
+    "MOBILE_HEADER_FIX": "YES",
+    "PUBLIC_LIBRARY_HTTP": "502",
+    "RESTART": "YES",
+    "SERVICE_ACTIVE": "YES"
   }
 }
