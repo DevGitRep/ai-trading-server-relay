@@ -1,21 +1,36 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-12T17:57:22.957982+00:00`
-- Run ID: `20260912T175720Z`
-- Step: `CODEXFREEPROFILEFIX`
+- Published UTC: `2026-09-12T18:40:48.406263+00:00`
+- Run ID: `20260912T184046Z`
+- Step: `INSPECTCODEXCLI`
 - Status: `SUCCESS`
-- Exit code: `2`
-- Verdict: `CODEX_NO_CONFIRMED_FIX`
-- Next gate: `REVIEW_CODEX_FINDINGS`
+- Exit code: `0`
+- Verdict: `CODEX_CLI_SYNTAX_CAPTURED`
+- Next gate: `RUN_ALL_IN_ONE_CODEX_FIX_WITH_VALID_SYNTAX`
 
 ## Facts
 
-- `AFTER`: `NOT_REPORTED`
-- `BEFORE`: `NOT_REPORTED`
-- `BROWSER`: `NOT_REPORTED`
-- `FILES`: `NOT_REPORTED`
-- `PROTECTED`: `NOT_REPORTED`
-- `RESULT`: `NOT_REPORTED`
-- `ROOTCAUSE`: `NOT_REPORTED`
-- `SERVICE`: `NOT_REPORTED`
+- `CODEX01`: `VERSION_RC=0`
+- `CODEX02`: `VERSION=codex-cli 0.154.0`
+- `CODEX03`: `EXEC_HELP_RC=0`
+- `CODEX04`: `HELP=Usage: codex exec [OPTIONS] [PROMPT]`
+- `CODEX05`: `HELP=[PROMPT]`
+- `CODEX06`: `HELP=instructions are read from stdin. If stdin is piped and a prompt is also provided, stdin`
+- `CODEX07`: `HELP=is appended as a `&lt;stdin&gt;` block`
+- `CODEX08`: `HELP=Examples: - `-c model=&quot;o3&quot;` - `-c &#x27;sandbox_permissions=[&quot;disk-full-read-access&quot;]&#x27;` - `-c`
+- `CODEX09`: `HELP=Optional image(s) to attach to the initial prompt`
+- `CODEX10`: `HELP=-s, --sandbox &lt;SANDBOX_MODE&gt;`
+- `CODEX11`: `HELP=Select the sandbox policy to use when executing model-generated shell commands`
+- `CODEX12`: `HELP=Route approval requests through automatic review using the workspace-write sandbox`
+- `CODEX13`: `HELP=--dangerously-bypass-approvals-and-sandbox`
+- `CODEX14`: `HELP=Skip all confirmation prompts and execute commands without sandboxing. EXTREMELY`
+- `CODEX15`: `HELP=DANGEROUS. Intended solely for running in environments that are externally sandboxed`
+- `CODEX16`: `HELP=--dangerously-bypass-hook-trust`
+- `CODEX17`: `HELP=Tell the agent to use the specified directory as its working root`
+- `CODEX18`: `HELP=--output-schema &lt;FILE&gt;`
+- `CODEX19`: `HELP=Path to a JSON Schema file describing the model&#x27;s final response shape`
+- `CODEX20`: `HELP=Specifies color settings for use in the output`
+- `CODEX21`: `HELP=--json`
+- `CODEX22`: `HELP=Print events to stdout as JSONL`
+- `CODEX23`: `HELP=-o, --output-last-message &lt;FILE&gt;`
