@@ -1,14 +1,22 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-12T20:09:32.283874+00:00",
-  "run_id": "20260912T200930Z",
-  "step": "CODEXRUNNERSMOKE",
+  "published_at_utc": "2026-09-12T20:13:35.084708+00:00",
+  "run_id": "20260912T201333Z",
+  "step": "CODEXFREEPROFILEFIXTRUSTED",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "CODEX_RUNNER_FAILURE_CAPTURED",
-  "next_gate": "CORRECT_CODEX_INVOCATION",
+  "verdict": "CODEX_NO_CONFIRMED_FIX",
+  "next_gate": "REVIEW_CODEX_FINDINGS",
   "facts": {
-    "CODEXRC": "1",
-    "OUTPUT01": "Not inside a trusted directory and --skip-git-repo-check was not specified."
+    "AFTER": "-1",
+    "BEFORE": "-1",
+    "CODEXRC": "0",
+    "COMPILE": "FAIL",
+    "FILES": "NONE",
+    "PROTECTED": "0",
+    "REASON": "CODEX_NO_CONFIRMED_FIX",
+    "RESULT": "NO_CHANGE",
+    "ROOTCAUSE": "Undetermined because sandbox startup fails with ?bwrap: loopback: Failed RTM_NEWADDR: Operation not permitted?; runtime counts are unavailable (-1).",
+    "SERVICE": "NOT_RESTARTED"
   }
 }
