@@ -1,21 +1,14 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-12T20:08:23.356281+00:00",
-  "run_id": "20260912T200821Z",
-  "step": "CODEXFREEPROFILEFIXV2",
+  "published_at_utc": "2026-09-12T20:09:32.283874+00:00",
+  "run_id": "20260912T200930Z",
+  "step": "CODEXRUNNERSMOKE",
   "status": "SUCCESS",
-  "exit_code": 1,
-  "verdict": "CODEX_NO_CONFIRMED_FIX",
-  "next_gate": "REVIEW_CODEX_FINDINGS",
+  "exit_code": 0,
+  "verdict": "CODEX_RUNNER_FAILURE_CAPTURED",
+  "next_gate": "CORRECT_CODEX_INVOCATION",
   "facts": {
-    "AFTER": "NOT_REPORTED",
-    "BEFORE": "NOT_REPORTED",
-    "COMPILE": "NOT_REPORTED",
-    "FILES": "NOT_REPORTED",
-    "PROTECTED": "NOT_REPORTED",
-    "REASON": "CODEX_DID_NOT_APPLY_CONFIRMED_FIX",
-    "RESULT": "NOT_REPORTED",
-    "ROOTCAUSE": "NOT_REPORTED",
-    "SERVICE": "NOT_RESTARTED"
+    "CODEXRC": "1",
+    "OUTPUT01": "Not inside a trusted directory and --skip-git-repo-check was not specified."
   }
 }

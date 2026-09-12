@@ -1,22 +1,15 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-12T20:08:23.356281+00:00`
-- Run ID: `20260912T200821Z`
-- Step: `CODEXFREEPROFILEFIXV2`
+- Published UTC: `2026-09-12T20:09:32.283874+00:00`
+- Run ID: `20260912T200930Z`
+- Step: `CODEXRUNNERSMOKE`
 - Status: `SUCCESS`
-- Exit code: `1`
-- Verdict: `CODEX_NO_CONFIRMED_FIX`
-- Next gate: `REVIEW_CODEX_FINDINGS`
+- Exit code: `0`
+- Verdict: `CODEX_RUNNER_FAILURE_CAPTURED`
+- Next gate: `CORRECT_CODEX_INVOCATION`
 
 ## Facts
 
-- `AFTER`: `NOT_REPORTED`
-- `BEFORE`: `NOT_REPORTED`
-- `COMPILE`: `NOT_REPORTED`
-- `FILES`: `NOT_REPORTED`
-- `PROTECTED`: `NOT_REPORTED`
-- `REASON`: `CODEX_DID_NOT_APPLY_CONFIRMED_FIX`
-- `RESULT`: `NOT_REPORTED`
-- `ROOTCAUSE`: `NOT_REPORTED`
-- `SERVICE`: `NOT_RESTARTED`
+- `CODEXRC`: `1`
+- `OUTPUT01`: `Not inside a trusted directory and --skip-git-repo-check was not specified.`
