@@ -1,45 +1,17 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-12T14:20:44.293216+00:00`
-- Run ID: `20260912T142042Z`
-- Step: `CONFIRMCALLERARGUMENT`
+- Published UTC: `2026-09-12T14:22:03.955325+00:00`
+- Run ID: `20260912T142202Z`
+- Step: `APPLYFREEPROFILEIDFIX`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `CALLER_AND_PROVIDER_ARGUMENTS_CAPTURED`
-- Next gate: `APPLY_MINIMAL_CONFIRMED_FIX`
+- Verdict: `NO_CHANGE_SAFETY_GUARD_TRIGGERED`
+- Next gate: `RESOLVE_SCRIPT_ID_EXPRESSION`
 
 ## Facts
 
-- `ARG01`: `CALL:L2371:(candidate_id,),`
-- `ARG02`: `CALL:L2406:benchtest_metrics = (`
-- `ARG03`: `CALL:L2407:_pine_report_metrics(`
-- `ARG04`: `CALL:L2408:candidate_id,`
-- `ARG05`: `CALL:L2416:_pine_report_metrics(`
-- `ARG06`: `CALL:L2417:candidate_id,`
-- `ARG07`: `CALL:L2422:benchtest_metrics = dict(`
-- `ARG08`: `PROVIDER:L1524:def load_report_metrics(script_id_part, effective_tier):`
-- `ARG09`: `PROVIDER:L1525:&quot;&quot;&quot;`
-- `ARG10`: `PROVIDER:L1526:Return the same authoritative 12-month BenchTest result`
-- `ARG11`: `PROVIDER:L1527:used by the Indicator Library card, plus optional report`
-- `ARG12`: `PROVIDER:L1528:metadata.`
-- `ARG13`: `PROVIDER:L1530:FREE remains result-free.`
-- `ARG14`: `PROVIDER:L1531:&quot;&quot;&quot;`
-- `ARG15`: `PROVIDER:L1532:tier = str(effective_tier or &#x27;FREE&#x27;).upper()`
-- `ARG16`: `PROVIDER:L1533:report_paid = tier in PRO_TIERS`
-- `ARG17`: `PROVIDER:L1534:conn = sqlite3.connect(DB)`
-- `ARG18`: `PROVIDER:L1535:conn.row_factory = sqlite3.Row`
-- `ARG19`: `PROVIDER:L1536:try:`
-- `ARG20`: `PROVIDER:L1537:source_cols = {row[1] for row in conn.execute(&#x27;PRAGMA table_info(&quot;sources&quot;)&#x27;)}`
-- `ARG21`: `PROVIDER:L1539:def optional_source_column(name):`
-- `ARG22`: `PROVIDER:L1540:if name in source_cols:`
-- `ARG23`: `PROVIDER:L1541:safe = name.replace(&#x27;&quot;&#x27;, &#x27;&quot;&quot;&#x27;)`
-- `ARG24`: `PROVIDER:L1542:return f&#x27;so.&quot;{safe}&quot; AS &quot;{safe}&quot;&#x27;`
-- `ARG25`: `PROVIDER:L1543:return f&#x27;NULL AS &quot;{name}&quot;&#x27;`
-- `ARG26`: `PROVIDER:L1544:signal_role = optional_source_column(&#x27;signal_role&#x27;)`
-- `ARG27`: `PROVIDER:L1545:signal_role_reason = optional_source_column(&#x27;signal_role_reason&#x27;)`
-- `ARG28`: `PROVIDER:L1546:signal_role_updated_at = optional_source_column(&#x27;signal_role_updated_at&#x27;)`
-- `ARG29`: `PROVIDER:L1547:row = conn.execute(f&quot;\n SELECT\n s.chart_url,\n so.source,\n {signal_role},\n {signal_role_reason},\n {signal_role_updated_at}\n\n FROM scripts s\n\n JOIN sources so\n ON so.rowid = (\n SELE`
-- `ARG30`: `PROVIDER:L1548:if row is None:`
-- `ARG31`: `PROVIDER:L1549:metrics = _empty_metrics()`
-- `ARG32`: `PROVIDER:L1550:metrics.update({&#x27;signal_role&#x27;: None, &#x27;signal_role_reason&#x27;: None, &#x27;signal_role_updated_at&#x27;: None})`
+- `CHANGED`: `NO`
+- `EXPRESSION`: `NONE`
+- `REASON`: `NO_SAFE_SCRIPT_ID_EXPRESSION`
+- `SERVICE`: `NOT_RESTARTED`
