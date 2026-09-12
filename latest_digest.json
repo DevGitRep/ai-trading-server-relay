@@ -1,11 +1,15 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-12T11:43:10.467343+00:00",
-  "run_id": "20260912T114308Z",
-  "step": "PINEREPORTMETRICS",
+  "published_at_utc": "2026-09-12T11:44:35.044704+00:00",
+  "run_id": "20260912T114433Z",
+  "step": "LOCATEMETRICPROVIDER",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "FUNCTION_NOT_FOUND",
-  "next_gate": "LOCATE_METRIC_PROVIDER",
-  "facts": {}
+  "verdict": "METRIC_PROVIDER_REFERENCES_CAPTURED",
+  "next_gate": "INSPECT_PROVIDER_RETURN_KEYS",
+  "facts": {
+    "PROVIDER01": "indicator_lab_v1.py:2329:as _pine_report_metrics,",
+    "PROVIDER02": "indicator_lab_v1.py:2407:_pine_report_metrics(",
+    "PROVIDER03": "indicator_lab_v1.py:2416:_pine_report_metrics("
+  }
 }
