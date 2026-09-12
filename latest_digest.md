@@ -1,51 +1,45 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-12T14:00:18.255494+00:00`
-- Run ID: `20260912T140016Z`
-- Step: `CONFIRMIDMAPPING`
+- Published UTC: `2026-09-12T14:20:44.293216+00:00`
+- Run ID: `20260912T142042Z`
+- Step: `CONFIRMCALLERARGUMENT`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `ID_MAPPING_EVIDENCE_CAPTURED`
-- Next gate: `APPLY_MINIMAL_PROVIDER_MAPPING_FIX`
+- Verdict: `CALLER_AND_PROVIDER_ARGUMENTS_CAPTURED`
+- Next gate: `APPLY_MINIMAL_CONFIRMED_FIX`
 
 ## Facts
 
-- `MAP01`: `_best_metrics_from_map:LINES=352-388`
-- `MAP02`: `_best_metrics_from_map:L352:def _best_metrics_from_map(`
-- `MAP03`: `_best_metrics_from_map:L353:candidate_ids,`
-- `MAP04`: `_best_metrics_from_map:L354:metrics_by_candidate,`
-- `MAP05`: `_best_metrics_from_map:L355:):`
-- `MAP06`: `_best_metrics_from_map:L356:best = None`
-- `MAP07`: `_best_metrics_from_map:L358:for candidate_id in candidate_ids:`
-- `MAP08`: `_best_metrics_from_map:L359:metrics = metrics_by_candidate.get(`
-- `MAP09`: `_best_metrics_from_map:L360:candidate_id`
-- `MAP10`: `_best_metrics_from_map:L361:)`
-- `MAP11`: `_best_metrics_from_map:L363:if metrics is None:`
-- `MAP12`: `_best_metrics_from_map:L364:# LIBRARY_REPORT_MISSING_METRICS_SAFE_V1`
-- `MAP13`: `_best_metrics_from_map:L365:#`
-- `MAP14`: `_best_metrics_from_map:L366:# Publication eligibility is decided by the caller.`
-- `MAP15`: `_best_metrics_from_map:L367:# This helper only chooses among available BenchTest`
-- `MAP16`: `_best_metrics_from_map:L368:# results. Missing metrics must therefore be skipped;`
-- `MAP17`: `_best_metrics_from_map:L369:# the existing card/report callers supply _empty_metrics().`
-- `MAP18`: `_best_metrics_from_map:L370:continue`
-- `MAP19`: `_best_metrics_from_map:L372:if (`
-- `MAP20`: `_best_metrics_from_map:L373:best is None`
-- `MAP21`: `_best_metrics_from_map:L374:or _metric_preference(`
-- `MAP22`: `_best_metrics_from_map:L375:metrics`
-- `MAP23`: `_best_metrics_from_map:L376:)`
-- `MAP24`: `_best_metrics_from_map:L377:&gt; _metric_preference(`
-- `MAP25`: `_best_metrics_from_map:L378:best`
-- `MAP26`: `_best_metrics_from_map:L379:)`
-- `MAP27`: `_best_metrics_from_map:L380:):`
-- `MAP28`: `_best_metrics_from_map:L381:best = metrics`
-- `MAP29`: `_best_metrics_from_map:L383:return best`
-- `MAP30`: `bulk:L785:import json as _secondary_json`
-- `MAP31`: `bulk:L787:_secondary_rows = conn.execute(`
-- `MAP32`: `bulk:L788:&#x27;&#x27;&#x27;`
-- `MAP33`: `bulk:L789:SELECT indicator_id, &quot;raw_result_json&quot;`
-- `MAP34`: `bulk:L790:FROM pipeline_benchtest_runs`
-- `MAP35`: `bulk:L791:WHERE is_current=1`
-- `MAP36`: `bulk:L792:&#x27;&#x27;&#x27;`
-- `MAP37`: `bulk:L793:).fetchall()`
-- `MAP38`: `bulk:L795:for _secondary_row in _secondary_rows:`
+- `ARG01`: `CALL:L2371:(candidate_id,),`
+- `ARG02`: `CALL:L2406:benchtest_metrics = (`
+- `ARG03`: `CALL:L2407:_pine_report_metrics(`
+- `ARG04`: `CALL:L2408:candidate_id,`
+- `ARG05`: `CALL:L2416:_pine_report_metrics(`
+- `ARG06`: `CALL:L2417:candidate_id,`
+- `ARG07`: `CALL:L2422:benchtest_metrics = dict(`
+- `ARG08`: `PROVIDER:L1524:def load_report_metrics(script_id_part, effective_tier):`
+- `ARG09`: `PROVIDER:L1525:&quot;&quot;&quot;`
+- `ARG10`: `PROVIDER:L1526:Return the same authoritative 12-month BenchTest result`
+- `ARG11`: `PROVIDER:L1527:used by the Indicator Library card, plus optional report`
+- `ARG12`: `PROVIDER:L1528:metadata.`
+- `ARG13`: `PROVIDER:L1530:FREE remains result-free.`
+- `ARG14`: `PROVIDER:L1531:&quot;&quot;&quot;`
+- `ARG15`: `PROVIDER:L1532:tier = str(effective_tier or &#x27;FREE&#x27;).upper()`
+- `ARG16`: `PROVIDER:L1533:report_paid = tier in PRO_TIERS`
+- `ARG17`: `PROVIDER:L1534:conn = sqlite3.connect(DB)`
+- `ARG18`: `PROVIDER:L1535:conn.row_factory = sqlite3.Row`
+- `ARG19`: `PROVIDER:L1536:try:`
+- `ARG20`: `PROVIDER:L1537:source_cols = {row[1] for row in conn.execute(&#x27;PRAGMA table_info(&quot;sources&quot;)&#x27;)}`
+- `ARG21`: `PROVIDER:L1539:def optional_source_column(name):`
+- `ARG22`: `PROVIDER:L1540:if name in source_cols:`
+- `ARG23`: `PROVIDER:L1541:safe = name.replace(&#x27;&quot;&#x27;, &#x27;&quot;&quot;&#x27;)`
+- `ARG24`: `PROVIDER:L1542:return f&#x27;so.&quot;{safe}&quot; AS &quot;{safe}&quot;&#x27;`
+- `ARG25`: `PROVIDER:L1543:return f&#x27;NULL AS &quot;{name}&quot;&#x27;`
+- `ARG26`: `PROVIDER:L1544:signal_role = optional_source_column(&#x27;signal_role&#x27;)`
+- `ARG27`: `PROVIDER:L1545:signal_role_reason = optional_source_column(&#x27;signal_role_reason&#x27;)`
+- `ARG28`: `PROVIDER:L1546:signal_role_updated_at = optional_source_column(&#x27;signal_role_updated_at&#x27;)`
+- `ARG29`: `PROVIDER:L1547:row = conn.execute(f&quot;\n SELECT\n s.chart_url,\n so.source,\n {signal_role},\n {signal_role_reason},\n {signal_role_updated_at}\n\n FROM scripts s\n\n JOIN sources so\n ON so.rowid = (\n SELE`
+- `ARG30`: `PROVIDER:L1548:if row is None:`
+- `ARG31`: `PROVIDER:L1549:metrics = _empty_metrics()`
+- `ARG32`: `PROVIDER:L1550:metrics.update({&#x27;signal_role&#x27;: None, &#x27;signal_role_reason&#x27;: None, &#x27;signal_role_updated_at&#x27;: None})`
