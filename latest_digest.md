@@ -1,45 +1,20 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-14T10:57:24.489329+00:00`
-- Run ID: `20260914T105722Z`
-- Step: `TRACE_PROVIDER_LOADER`
+- Published UTC: `2026-09-14T11:21:34.750542+00:00`
+- Run ID: `20260914T112126Z`
+- Step: `PROVE_SIGNAL_RESTART`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `PROVIDER_LOADER_TRACED`
-- Next gate: `FIX_FIRST_EMPTY_RETURN`
+- Verdict: `SIGNAL_RESTART_PROVEN`
+- Next gate: `DEPLOY_VALIDATED_FREE_PROFILE_FIX`
 
 ## Facts
 
-- `BULK_EXPOSURE`: `99.99562404870625`
-- `BULK_MAP_COUNT`: `17`
-- `BULK_TARGET_PRESENT`: `YES`
-- `BULK_TRADE`: `34787`
-- `FREE_EVENT_COUNT`: `10`
-- `FREE_FIRST_EMPTY`: `NONE`
-- `FREE_RESULT`: `DICT:19|TARGET:NO`
-- `FREE_TRACE_01`: `CALL:load_report_metrics:D1:script_id_part:ICL_SRC_CEC9B86A38AB67BC,effective_tier:FREE`
-- `FREE_TRACE_02`: `CALL:optional_source_column:D2:-`
-- `FREE_TRACE_03`: `RET:optional_source_column:D2:str:NULL_AS_&quot;signal_role&quot;`
-- `FREE_TRACE_04`: `CALL:optional_source_column:D2:-`
-- `FREE_TRACE_05`: `RET:optional_source_column:D2:str:NULL_AS_&quot;signal_role_reason&quot;`
-- `FREE_TRACE_06`: `CALL:optional_source_column:D2:-`
-- `FREE_TRACE_07`: `RET:optional_source_column:D2:str:NULL_AS_&quot;signal_role_updated_at&quot;`
-- `FREE_TRACE_08`: `CALL:_empty_metrics:D2:-`
-- `FREE_TRACE_09`: `RET:_empty_metrics:D2:DICT:16|TARGET:NO`
-- `FREE_TRACE_10`: `RET:load_report_metrics:D1:DICT:19|TARGET:NO`
-- `LOAD_CALLS`: `_best_metrics_from_map,_bulk_pipeline_metrics_v1,_candidate_ids,_empty_metrics,append,close,connect,dict,encode,execute,fetchone,get,hexdigest,isinstance,optional_source_column,replace,sha256,str,update,upper`
-- `LOAD_DEF_RANGE`: `1524-1694`
-- `PRO_EVENT_COUNT`: `10`
-- `PRO_FIRST_EMPTY`: `NONE`
-- `PRO_RESULT`: `DICT:19|TARGET:NO`
-- `PRO_TRACE_01`: `CALL:load_report_metrics:D1:script_id_part:ICL_SRC_CEC9B86A38AB67BC,effective_tier:PRO`
-- `PRO_TRACE_02`: `CALL:optional_source_column:D2:-`
-- `PRO_TRACE_03`: `RET:optional_source_column:D2:str:NULL_AS_&quot;signal_role&quot;`
-- `PRO_TRACE_04`: `CALL:optional_source_column:D2:-`
-- `PRO_TRACE_05`: `RET:optional_source_column:D2:str:NULL_AS_&quot;signal_role_reason&quot;`
-- `PRO_TRACE_06`: `CALL:optional_source_column:D2:-`
-- `PRO_TRACE_07`: `RET:optional_source_column:D2:str:NULL_AS_&quot;signal_role_updated_at&quot;`
-- `PRO_TRACE_08`: `CALL:_empty_metrics:D2:-`
-- `PRO_TRACE_09`: `RET:_empty_metrics:D2:DICT:16|TARGET:NO`
-- `PRO_TRACE_10`: `RET:load_report_metrics:D1:DICT:19|TARGET:NO`
+- `NEW_PID`: `1144444`
+- `NEW_RESTARTS`: `1`
+- `OLD_PID`: `711995`
+- `OLD_RESTARTS`: `0`
+- `RECOVERED`: `YES`
+- `SERVICE_ACTIVE`: `active`
+- `SERVICE_SUBSTATE`: `running`
