@@ -1,33 +1,33 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-14T15:49:35.991695+00:00`
-- Run ID: `20260914T153439Z`
-- Step: `BUILD_ACCOUNT_SUBSCRIPTION_V1_SEMANTIC_SCOPE`
+- Published UTC: `2026-09-14T16:03:11.082100+00:00`
+- Run ID: `20260914T155341Z`
+- Step: `DEPLOY_VALIDATED_ACCOUNT_SUBSCRIPTION_V1`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `ACCOUNT_SUBSCRIPTION_V1_BLOCKED_RC_32`
+- Verdict: `ACCOUNT_SUBSCRIPTION_V1_BLOCKED_RC_27`
 - Next gate: `INSPECT_SUBSCRIPTION_RESULT`
 
 ## Facts
 
-- `AUTH_MODEL`: `Normalized email; salted PBKDF2-SHA256; opaque hashed expiring sessions; one active login; server-bound CSRF`
+- `AUTH_MODEL`: `SCRYPT_HASHED_OPAQUE_EXPIRING_SINGLE_SESSION`
 - `BLOCKER`: `NONE`
 - `CHANGED_COUNT`: `12`
-- `CHECKOUT_MODEL`: `Stripe REST hosted mode=payment; NL EUR199 iDEAL; US USD199 card; webhook-only annual activation; no auto-renew`
+- `CHECKOUT_MODEL`: `STRIPE_REST_PAYMENT_ANNUAL_NO_RENEWAL`
 - `CURRENT_PID`: `1163333`
-- `DEVICE_PROTECTION`: `Server-random opaque hashed device tokens; Secure HttpOnly SameSite=Lax cookies; maximum 3 devices`
-- `INTERNAL_RC`: `32`
+- `DEVICE_PROTECTION`: `HASHED_OPAQUE_COOKIE_MAX_3`
+- `INTERNAL_RC`: `27`
+- `LOGIN_HTTP`: `NA`
 - `NEW_PID`: `NA`
 - `OLD_PID`: `NA`
 - `PAYMENT_DB`: `data/customer_accounts_v1.db`
-- `PRO_GATE_MODEL`: `Server-side paid UTC entitlement; anonymous and unpaid FREE; secret-header internal preview only`
+- `PRO_GATE_MODEL`: `SERVER_SESSION_AND_PAID_UTC_ENTITLEMENT`
 - `READY`: `YES`
 - `REGISTER_HTTP`: `NA`
-- `REVIEW_SAFE`: `YES`
-- `REVIEW_SUMMARY`: `?????? ???????, ???????/??????, ????, ???-???? ?????? ???????, ???????, ?? ??? ?????? ?????; ?? ?????????? ???????? ???????.`
+- `REVIEW_SAFE`: `UNKNOWN`
 - `ROLLBACK`: `NO`
 - `SERVICE_ACTIVE`: `active`
-- `STAGE`: `VALIDATE`
+- `STAGE`: `REVIEW`
 - `SUBSCRIBE_HTTP`: `NA`
 - `TEST_STATUS`: `PASS`
