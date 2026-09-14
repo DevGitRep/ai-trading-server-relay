@@ -1,19 +1,23 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-14T12:39:31.185304+00:00",
-  "run_id": "20260914T123929Z",
-  "step": "FINALIZE_MASTER_HANDOFF_GITHUB",
+  "published_at_utc": "2026-09-14T12:41:12.852727+00:00",
+  "run_id": "20260914T124110Z",
+  "step": "INSPECT_BLOCKED_COMMIT_FILE",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "UPDATE_BLOCKED_RC_23",
-  "next_gate": "INSPECT_COMMIT_GATE",
+  "verdict": "BLOCKING_FILE_INSPECTED",
+  "next_gate": "COMMIT_RELEVANT_SET",
   "facts": {
-    "COMMIT_SHA": "NA",
-    "FINAL_HEAD": "a63cebfdee2a",
-    "FINAL_STATUS_COUNT": "5",
-    "HANDOFF_ACTION": "UNCHANGED",
-    "INTERNAL_RC": "23",
-    "PUSHED": "NO",
-    "STAGE": "SEMANTIC_GATES"
+    "DIRTY_COUNT": "5",
+    "HANDOFF_CHANGED": "NO",
+    "HANDOFF_EXISTS": "YES",
+    "HANDOFF_TRACKED": "NO",
+    "HEAD": "a63cebfdee2a",
+    "LAB_NUMSTAT": "35:0",
+    "LAB_PROFILE": "NO",
+    "LAB_REPORT_METADATA": "NO",
+    "LAB_SIGNAL_RESEARCH": "NO",
+    "LAB_TYS": "NO",
+    "MASTER_CHANGED": "YES"
   }
 }
