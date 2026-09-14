@@ -1,23 +1,28 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-12T20:13:35.084708+00:00`
-- Run ID: `20260912T201333Z`
-- Step: `CODEXFREEPROFILEFIXTRUSTED`
+- Published UTC: `2026-09-14T10:49:05.397246+00:00`
+- Run ID: `20260914T104903Z`
+- Step: `VERIFY_FREE_PROFILE_RUNTIME`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `CODEX_NO_CONFIRMED_FIX`
-- Next gate: `REVIEW_CODEX_FINDINGS`
+- Verdict: `LOAD_REPORT_METRICS_FAILURE`
+- Next gate: `TRACE_PROVIDER_LOADER`
 
 ## Facts
 
-- `AFTER`: `-1`
-- `BEFORE`: `-1`
-- `CODEXRC`: `0`
-- `COMPILE`: `FAIL`
-- `FILES`: `NONE`
-- `PROTECTED`: `0`
-- `REASON`: `CODEX_NO_CONFIRMED_FIX`
-- `RESULT`: `NO_CHANGE`
-- `ROOTCAUSE`: `Undetermined because sandbox startup fails with ?bwrap: loopback: Failed RTM_NEWADDR: Operation not permitted?; runtime counts are unavailable (-1).`
-- `SERVICE`: `NOT_RESTARTED`
+- `FREE_EXPOSURE`: `NA`
+- `FREE_TRADE`: `NA`
+- `MAIN_PID`: `711995`
+- `MERGED_DIRECTION`: `0`
+- `MERGED_DNA`: `0`
+- `MERGED_EXPOSURE`: `NA`
+- `MERGED_OK`: `NO`
+- `MERGED_TRADE`: `NA`
+- `PROCESS_START_EPOCH`: `1789210446`
+- `PROVIDER_MTIME`: `1789381065`
+- `PRO_EXPOSURE`: `NA`
+- `PRO_TRADE`: `NA`
+- `PYTHON_NEWER_THAN_PROCESS`: `YES`
+- `ROUTE_MTIME`: `1789152291`
+- `SERVICE_ACTIVE`: `active`
