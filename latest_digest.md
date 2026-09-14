@@ -1,27 +1,19 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-14T16:51:39.014593+00:00`
-- Run ID: `20260914T165134Z`
-- Step: `BUILD_DEPLOY_ACCOUNT_SUBSCRIPTION_V1`
+- Published UTC: `2026-09-14T19:11:07.064075+00:00`
+- Run ID: `20260914T191102Z`
+- Step: `CODEX_HEALTH_CHECK_V2`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `ACCOUNT_SUBSCRIPTION_V1_BLOCKED`
-- Next gate: `INSPECT_BUILD_RESULT`
+- Verdict: `CODEX_HEALTH_CAPTURED`
+- Next gate: `RESOLVE_OR_RESUME_BUILD`
 
 ## Facts
 
-- `CHANGED_COUNT`: `0`
+- `CODEX_HEALTH`: `FAIL`
 - `CODEX_RC`: `1`
-- `CURRENT_PID`: `1163333`
-- `GIT_DIRTY`: `0`
-- `INTERNAL_RC`: `20`
-- `LOGIN_HTTP`: `NA`
-- `NEW_PID`: `NA`
-- `OLD_PID`: `NA`
-- `REGISTER_HTTP`: `NA`
-- `ROLLBACK`: `NO`
-- `SERVICE_ACTIVE`: `active`
-- `STAGE`: `BUILD`
-- `SUBSCRIBE_HTTP`: `NA`
-- `TEST_RC`: `NA`
+- `CODEX_VERSION`: `codex-cli 0.154.0`
+- `ERROR_CLASS`: `QUOTA`
+- `GIT_DIRTY_AFTER`: `0`
+- `GIT_DIRTY_BEFORE`: `0`
