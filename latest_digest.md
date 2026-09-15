@@ -1,23 +1,19 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-15T11:07:06.434492+00:00`
-- Run ID: `20260915T110704Z`
-- Step: `CHECK_STRIPE_ENV_ADMIN_ROUTE`
+- Published UTC: `2026-09-15T11:12:55.576697+00:00`
+- Run ID: `20260915T111253Z`
+- Step: `INSPECT_STRIPE_WEBHOOK_CONTRACT`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `ENVFILE_REQUIRES_INTERACTIVE_SUDO`
-- Next gate: `USE_SUDOEDIT_FOR_STRIPE_TEST_VALUES`
+- Verdict: `STRIPE_WEBHOOK_CONTRACT_IDENTIFIED`
+- Next gate: `CONFIGURE_STRIPE_TEST_DASHBOARD_AND_ENV`
 
 ## Facts
 
-- `ENVFILE_NAME`: `tys-mail.env`
-- `PARENT_ACCESSIBLE`: `NO`
-- `SERVICE_ACTIVE`: `active`
-- `STRIPE_CLI_CONFIG_PRESENT`: `NO`
-- `STRIPE_CLI_PRESENT`: `NO`
-- `STRIPE_ENV_NAME_COUNT`: `0`
-- `SUDO_FILE_EXISTS`: `UNKNOWN`
-- `SUDO_NOPASS`: `NO`
-- `USER_FILE_READABLE`: `NO`
-- `USER_FILE_WRITABLE`: `NO`
+- `ENV_NAMES`: `ATB_PUBLIC_BASE_URL,STRIPE_SECRET_KEY,STRIPE_WEBHOOK_SECRET`
+- `ENV_NAME_COUNT`: `3`
+- `EVENTS`: `checkout.session.async_payment_failed,checkout.session.async_payment_succeeded,checkout.session.completed`
+- `EVENT_COUNT`: `3`
+- `WEBHOOK_ROUTE`: `NONE`
+- `WEBHOOK_URL`: `NONE`
