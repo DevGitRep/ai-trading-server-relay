@@ -1,24 +1,25 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-15T12:59:25.342981+00:00",
-  "run_id": "20260915T125751Z",
-  "step": "FINALIZE_PRO_ACCESS_TERMS_CTA_ORDER",
+  "published_at_utc": "2026-09-15T13:15:42.708733+00:00",
+  "run_id": "20260915T131144Z",
+  "step": "BUILD_INLINE_ACCOUNT_TO_STRIPE_FLOW",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "PRO_PURCHASE_ORDER_FINALIZED",
-  "next_gate": "BROWSER_VISUAL_CHECK",
+  "verdict": "INLINE_ACCOUNT_CHECKOUT_FLOW_DEPLOYED",
+  "next_gate": "BROWSER_PURCHASE_FLOW_CHECK",
   "facts": {
     "CODEX_RC": "0",
     "FAILURE": "NONE",
     "INTERNAL_RC": "0",
     "LOCAL_HTTP": "200",
-    "NEW_PID": "1396878",
-    "OLD_PID": "1392612",
+    "NEW_PID": "1400317",
+    "OLD_PID": "1396878",
     "PUBLIC_HTTP": "200",
+    "REAL_BENCH_COUNT": "0",
     "SERVICE_ACTIVE": "active",
     "STAGE": "COMPLETE",
-    "TEST_FILE_TOUCHED": "YES",
     "TEST_RC": "0",
-    "TOUCHED_COUNT": "2"
+    "TOUCHED_COUNT": "3",
+    "TOUCHED_SCOPE_OK": "YES"
   }
 }
