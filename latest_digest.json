@@ -1,25 +1,25 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-15T13:15:42.708733+00:00",
-  "run_id": "20260915T131144Z",
-  "step": "BUILD_INLINE_ACCOUNT_TO_STRIPE_FLOW",
+  "published_at_utc": "2026-09-15T13:41:59.058565+00:00",
+  "run_id": "20260915T134148Z",
+  "step": "LOAD_AND_VALIDATE_ROTATED_WEBHOOK_SECRET",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "INLINE_ACCOUNT_CHECKOUT_FLOW_DEPLOYED",
-  "next_gate": "BROWSER_PURCHASE_FLOW_CHECK",
+  "verdict": "ROTATED_WEBHOOK_SECRET_ACTIVE",
+  "next_gate": "CONTINUE_STRIPE_BRANDING_OR_E2E",
   "facts": {
-    "CODEX_RC": "0",
+    "BASE_URL_OK": "YES",
     "FAILURE": "NONE",
     "INTERNAL_RC": "0",
-    "LOCAL_HTTP": "200",
-    "NEW_PID": "1400317",
-    "OLD_PID": "1396878",
-    "PUBLIC_HTTP": "200",
+    "NEW_PID": "1404702",
+    "OLD_PID": "1400317",
     "REAL_BENCH_COUNT": "0",
     "SERVICE_ACTIVE": "active",
     "STAGE": "COMPLETE",
-    "TEST_RC": "0",
-    "TOUCHED_COUNT": "3",
-    "TOUCHED_SCOPE_OK": "YES"
+    "STRIPE_API_HTTP": "200",
+    "STRIPE_MODE": "TEST",
+    "SUBSCRIBE_HTTP": "200",
+    "UNSIGNED_WEBHOOK_HTTP": "400",
+    "WEBHOOK_SECRET_OK": "YES"
   }
 }
