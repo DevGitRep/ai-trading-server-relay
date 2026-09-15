@@ -1,23 +1,19 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-15T12:54:10.924652+00:00",
-  "run_id": "20260915T125304Z",
-  "step": "MOVE_SHORT_ACCESS_COPY_ABOVE_TERMS",
+  "published_at_utc": "2026-09-15T12:56:07.942213+00:00",
+  "run_id": "20260915T125601Z",
+  "step": "INSPECT_SUBSCRIPTION_COPY_TEST_FAILURE",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "PRO_PURCHASE_COPY_CHANGE_BLOCKED",
-  "next_gate": "INSPECT_RESULT",
+  "verdict": "CURRENT_SUBSCRIPTION_TESTS_PASS",
+  "next_gate": "UPDATE_COPY_WITH_TARGETED_TEST_CHANGE",
   "facts": {
-    "CODEX_RC": "0",
-    "FAILURE": "SUBSCRIPTION_TESTS_FAILED",
-    "INTERNAL_RC": "28",
-    "LOCAL_HTTP": "NA",
-    "NEW_PID": "NA",
-    "OLD_PID": "NA",
-    "PUBLIC_HTTP": "NA",
-    "SERVICE_ACTIVE": "active",
-    "STAGE": "TEST",
-    "TEST_RC": "1",
-    "TOUCHED_COUNT": "1"
+    "ASSERT_CLASS": "NONE",
+    "CURRENT_LONG_COPY": "YES",
+    "CURRENT_SHORT_COPY": "YES",
+    "FAIL_TEST": "NONE",
+    "OLD_COPY_TESTED": "NO",
+    "SHORT_COPY_TESTED": "YES",
+    "TEST_RC": "0"
   }
 }
