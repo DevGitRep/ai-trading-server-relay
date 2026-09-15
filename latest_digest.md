@@ -1,21 +1,24 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-15T08:03:35.277969+00:00`
-- Run ID: `20260915T080332Z`
-- Step: `INSPECT_SUBSCRIPTION_TEST_FAILURES`
+- Published UTC: `2026-09-15T08:05:24.234907+00:00`
+- Run ID: `20260915T080522Z`
+- Step: `RERUN_SUBSCRIPTION_TESTS_WITH_SERVICE_PYTHON`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `SUBSCRIPTION_TEST_FAILURES_CAPTURED`
-- Next gate: `FIX_SPECIFIC_FAILING_TESTS`
+- Verdict: `PRODUCTION_PYTHON_FLASK_UNAVAILABLE`
+- Next gate: `INSPECT_SERVICE_RUNTIME`
 
 ## Facts
 
 - `CANDIDATE_COUNT`: `1`
-- `ERROR_COUNT`: `1`
-- `ERROR_NAMES`: `test_subscription_v1 (unittest.loader._FailedTest.test_subscription_v1)`
-- `ERROR_SUMMARY`: `FAILED (errors:1)`
+- `CURRENT_PID`: `1163333`
+- `ERROR_COUNT`: `0`
+- `ERROR_NAMES`: `NONE`
+- `ERROR_TYPE`: `NONE`
 - `FAILURE_COUNT`: `0`
 - `FAILURE_NAMES`: `NONE`
+- `FLASK_IMPORT`: `NO`
 - `PRODUCTION_GIT_DIRTY`: `0`
-- `TEST_RC`: `1`
+- `SERVICE_PYTHON`: `/usr/bin/python3.12`
+- `TEST_RC`: `127`
