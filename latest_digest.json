@@ -1,24 +1,21 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-15T10:53:10.820425+00:00",
-  "run_id": "20260915T105308Z",
-  "step": "CHECK_STRIPE_TEST_READINESS",
+  "published_at_utc": "2026-09-15T10:57:52.528169+00:00",
+  "run_id": "20260915T105750Z",
+  "step": "INSPECT_STRIPE_ENV_CONFIGURATION_ROUTE",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "STRIPE_TEST_CONFIG_MISSING",
-  "next_gate": "CONFIGURE_STRIPE_TEST_MODE",
+  "verdict": "SYSTEMD_ENVFILE_ROUTE_AVAILABLE",
+  "next_gate": "ADD_STRIPE_TEST_ENV_TO_EXISTING_ENVFILE",
   "facts": {
-    "ACCOUNT_HTTP": "302",
-    "BASE_URL_OK": "NO",
-    "BASE_URL_PRESENT": "NO",
+    "DOTENV_GITIGNORED": "YES",
+    "ENVFILE_COUNT": "1",
+    "ENVFILE_NAMES": "tys-mail.env",
     "GIT_DIRTY": "11",
-    "LOGIN_HTTP": "200",
-    "REGISTER_HTTP": "200",
-    "SERVICE_ACTIVE": "active",
-    "STRIPE_API_HTTP": "NA",
-    "STRIPE_MODE": "MISSING",
-    "SUBSCRIBE_HTTP": "200",
-    "WEBHOOK_SECRET_PRESENT": "NO",
-    "WEBHOOK_SECRET_SHAPE": "NO"
+    "PROJECT_ENV_FILES": "NONE",
+    "RUNTIME_STRIPE_ENV_COUNT": "0",
+    "SERVICE_USER": "transformer",
+    "SYSTEMD_ENVFILE_DIRECTIVE": "YES",
+    "SYSTEMD_ENV_DIRECTIVE": "YES"
   }
 }
