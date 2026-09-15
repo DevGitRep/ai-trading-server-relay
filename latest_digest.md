@@ -1,19 +1,27 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-15T11:12:55.576697+00:00`
-- Run ID: `20260915T111253Z`
-- Step: `INSPECT_STRIPE_WEBHOOK_CONTRACT`
+- Published UTC: `2026-09-15T12:20:03.289429+00:00`
+- Run ID: `20260915T122001Z`
+- Step: `VALIDATE_STRIPE_TEST_CONFIGURATION`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `STRIPE_WEBHOOK_CONTRACT_IDENTIFIED`
-- Next gate: `CONFIGURE_STRIPE_TEST_DASHBOARD_AND_ENV`
+- Verdict: `STRIPE_TEST_MODE_NOT_READY`
+- Next gate: `FIX_TEST_CONFIGURATION`
 
 ## Facts
 
-- `ENV_NAMES`: `ATB_PUBLIC_BASE_URL,STRIPE_SECRET_KEY,STRIPE_WEBHOOK_SECRET`
-- `ENV_NAME_COUNT`: `3`
-- `EVENTS`: `checkout.session.async_payment_failed,checkout.session.async_payment_succeeded,checkout.session.completed`
-- `EVENT_COUNT`: `3`
-- `WEBHOOK_ROUTE`: `NONE`
-- `WEBHOOK_URL`: `NONE`
+- `BASE_URL_OK`: `NO`
+- `FAILURE`: `BACKTEST_ACTIVE`
+- `INTERNAL_RC`: `11`
+- `LOGIN_HTTP`: `NA`
+- `NEW_PID`: `NA`
+- `OLD_PID`: `NA`
+- `REGISTER_HTTP`: `NA`
+- `SERVICE_ACTIVE`: `active`
+- `STAGE`: `PREFLIGHT`
+- `STRIPE_API_HTTP`: `NA`
+- `STRIPE_MODE`: `UNKNOWN`
+- `SUBSCRIBE_HTTP`: `NA`
+- `UNSIGNED_WEBHOOK_HTTP`: `NA`
+- `WEBHOOK_SECRET_OK`: `NO`

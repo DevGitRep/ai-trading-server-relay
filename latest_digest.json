@@ -1,18 +1,26 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-15T11:12:55.576697+00:00",
-  "run_id": "20260915T111253Z",
-  "step": "INSPECT_STRIPE_WEBHOOK_CONTRACT",
+  "published_at_utc": "2026-09-15T12:20:03.289429+00:00",
+  "run_id": "20260915T122001Z",
+  "step": "VALIDATE_STRIPE_TEST_CONFIGURATION",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "STRIPE_WEBHOOK_CONTRACT_IDENTIFIED",
-  "next_gate": "CONFIGURE_STRIPE_TEST_DASHBOARD_AND_ENV",
+  "verdict": "STRIPE_TEST_MODE_NOT_READY",
+  "next_gate": "FIX_TEST_CONFIGURATION",
   "facts": {
-    "ENV_NAMES": "ATB_PUBLIC_BASE_URL,STRIPE_SECRET_KEY,STRIPE_WEBHOOK_SECRET",
-    "ENV_NAME_COUNT": "3",
-    "EVENTS": "checkout.session.async_payment_failed,checkout.session.async_payment_succeeded,checkout.session.completed",
-    "EVENT_COUNT": "3",
-    "WEBHOOK_ROUTE": "NONE",
-    "WEBHOOK_URL": "NONE"
+    "BASE_URL_OK": "NO",
+    "FAILURE": "BACKTEST_ACTIVE",
+    "INTERNAL_RC": "11",
+    "LOGIN_HTTP": "NA",
+    "NEW_PID": "NA",
+    "OLD_PID": "NA",
+    "REGISTER_HTTP": "NA",
+    "SERVICE_ACTIVE": "active",
+    "STAGE": "PREFLIGHT",
+    "STRIPE_API_HTTP": "NA",
+    "STRIPE_MODE": "UNKNOWN",
+    "SUBSCRIBE_HTTP": "NA",
+    "UNSIGNED_WEBHOOK_HTTP": "NA",
+    "WEBHOOK_SECRET_OK": "NO"
   }
 }
