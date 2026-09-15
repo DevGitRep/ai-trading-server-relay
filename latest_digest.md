@@ -1,28 +1,21 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-15T08:02:51.817781+00:00`
-- Run ID: `20260915T080151Z`
-- Step: `REPAIR_VALIDATE_DEPLOY_SUBSCRIPTION_V1`
+- Published UTC: `2026-09-15T08:03:35.277969+00:00`
+- Run ID: `20260915T080332Z`
+- Step: `INSPECT_SUBSCRIPTION_TEST_FAILURES`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `ACCOUNT_SUBSCRIPTION_V1_REPAIR_BLOCKED`
-- Next gate: `INSPECT_REPAIR_RESULT`
+- Verdict: `SUBSCRIPTION_TEST_FAILURES_CAPTURED`
+- Next gate: `FIX_SPECIFIC_FAILING_TESTS`
 
 ## Facts
 
-- `CHANGED_COUNT`: `0`
-- `CODEX_RC`: `0`
-- `CURRENT_PID`: `1163333`
-- `GIT_DIRTY`: `0`
-- `INTERNAL_RC`: `21`
-- `LOGIN_HTTP`: `NA`
-- `NEW_PID`: `NA`
-- `OLD_PID`: `NA`
-- `REGISTER_HTTP`: `NA`
-- `ROLLBACK`: `NO`
-- `SERVICE_ACTIVE`: `active`
-- `STAGE`: `TEST_AFTER`
-- `SUBSCRIBE_HTTP`: `NA`
-- `TEST_AFTER_RC`: `1`
-- `TEST_BEFORE_RC`: `1`
+- `CANDIDATE_COUNT`: `1`
+- `ERROR_COUNT`: `1`
+- `ERROR_NAMES`: `test_subscription_v1 (unittest.loader._FailedTest.test_subscription_v1)`
+- `ERROR_SUMMARY`: `FAILED (errors:1)`
+- `FAILURE_COUNT`: `0`
+- `FAILURE_NAMES`: `NONE`
+- `PRODUCTION_GIT_DIRTY`: `0`
+- `TEST_RC`: `1`
