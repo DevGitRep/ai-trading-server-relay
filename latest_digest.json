@@ -1,25 +1,19 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-15T09:07:20.127569+00:00",
-  "run_id": "20260915T090718Z",
-  "step": "RESTORE_THREE_PANEL_SUBSCRIBE",
+  "published_at_utc": "2026-09-15T09:21:54.475521+00:00",
+  "run_id": "20260915T092147Z",
+  "step": "LOCATE_LIVE_SUBSCRIBE_TEMPLATE",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "THREE_PANEL_SUBSCRIBE_BLOCKED",
-  "next_gate": "INSPECT_VISUAL_CHANGE_RESULT",
+  "verdict": "SUBSCRIBE_ROUTE_TEMPLATE_LOCATED",
+  "next_gate": "RESTORE_THREE_PANEL_VISUAL",
   "facts": {
-    "CODEX_RC": "NA",
-    "CURRENT_PID": "1351837",
-    "FAILURE": "SUBSCRIBE_ROUTE_NOT_FOUND",
-    "INTERNAL_RC": "10",
-    "LOCAL_HTTP": "NA",
-    "MODIFIED_COUNT": "0",
-    "NEW_PID": "NA",
-    "OLD_PID": "NA",
-    "PUBLIC_HTTP": "NA",
-    "SERVICE_ACTIVE": "active",
-    "STAGE": "DISCOVER",
-    "TEMPLATE": "NONE",
-    "TEST_RC": "NA"
+    "GIT_DIRTY": "11",
+    "OLD_STATIC_EXISTS": "YES",
+    "ROUTE_FILE": "subscription_v1.py",
+    "ROUTE_HIT_COUNT": "3",
+    "TEMPLATE_CANDIDATE_COUNT": "0",
+    "TEMPLATE_EXISTS": "YES",
+    "TEMPLATE_FILE": "subscription_v1.html"
   }
 }
