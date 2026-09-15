@@ -1,29 +1,16 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-15T16:24:49.716068+00:00",
-  "run_id": "20260915T162210Z",
-  "step": "FINALIZE_SUBSCRIPTION_V1_RELEASE",
+  "published_at_utc": "2026-09-15T16:41:52.489712+00:00",
+  "run_id": "20260915T164148Z",
+  "step": "START_DETACHED_BENCHTEST_2000_RECENT",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "SUBSCRIPTION_V1_RELEASED",
-  "next_gate": "LIVE_STRIPE_READINESS_WHEN_READY",
+  "verdict": "BENCHTEST_STARTED_DETACHED",
+  "next_gate": "LET_BENCHTEST_RUN",
   "facts": {
-    "CODEX_RC": "0",
-    "COMMIT_CREATED": "YES",
-    "COMMIT_SHORT": "090ad4e59e01",
-    "CORE_SCOPE": "PASS",
-    "DIRTY_BEFORE": "11",
-    "DOCS_TOUCHED": "YES",
-    "FAILURE": "NONE",
-    "FULL_TEST_RC": "0",
-    "GIT_CLEAN": "YES",
-    "INTERNAL_RC": "0",
-    "PUBLIC_HTTP": "200",
-    "PUSH_RC": "0",
-    "SECRET_SCAN": "PASS",
-    "SERVICE_ACTIVE": "active",
-    "STAGE": "COMPLETE",
-    "STAGED_COUNT": "13",
-    "SUB_TEST_RC": "0"
+    "EXISTING_COUNT": "0",
+    "LOG_NAME": "benchtest_2000_recent_20260915T164148Z.log",
+    "PID": "1432979",
+    "STARTED": "YES"
   }
 }
