@@ -1,26 +1,25 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-15T08:17:38.470730+00:00`
-- Run ID: `20260915T081735Z`
-- Step: `INSPECT_POST_DEPLOY_502`
+- Published UTC: `2026-09-15T08:18:48.713734+00:00`
+- Run ID: `20260915T081846Z`
+- Step: `TRACE_SUBSCRIPTION_SQLITE_STARTUP_LOCK`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `SERVICE_RECOVERED`
-- Next gate: `RECHECK_PUBLIC_ROUTES`
+- Verdict: `SQLITE_LOCK_TRACE_IDENTIFIED`
+- Next gate: `FIX_STARTUP_DATABASE_LOCK`
 
 ## Facts
 
-- `ACTIVE_STATE`: `active`
+- `CANDIDATE_COUNT`: `1`
+- `CHANGED_FRAME`: `YES`
+- `CONTEXT_KIND`: `DB_INIT_OR_MIGRATION`
 - `CURRENT_PID`: `1348227`
-- `ERROR_CLASS`: `SQLITE_LOCK`
-- `ERROR_LINE`: `Sep 15 08:17:00 [HOST] systemd[1]: orderflow-dashboard.service: Failed with result &#x27;exit-code&#x27;.`
-- `EXEC_STATUS`: `0`
-- `EXTERNAL_HTTP`: `200`
+- `ERROR_FILE`: `indicator_lab_v1.py`
+- `ERROR_FUNCTION`: `initialize_indicator_lab_v1`
+- `ERROR_LINE_NO`: `203`
 - `GIT_DIRTY`: `0`
-- `LISTEN_PORT_COUNT`: `1`
-- `LOCAL_ROOT_HTTP`: `200`
-- `LOCAL_SUBSCRIBE_HTTP`: `404`
-- `RESTART_COUNT`: `8`
-- `SUBSTATE`: `running`
-- `TESTED_PORT`: `5000`
+- `LOCK_COUNT`: `2`
+- `SERVICE_ACTIVE`: `active`
+- `STARTUP_DB_INIT`: `NO`
+- `STARTUP_FILE`: `NONE`
