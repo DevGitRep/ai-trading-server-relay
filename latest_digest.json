@@ -1,25 +1,22 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-15T14:48:36.559093+00:00",
-  "run_id": "20260915T144542Z",
-  "step": "ADD_PRIVATE_STRIPE_TEST_PURCHASE_GATE",
+  "published_at_utc": "2026-09-15T14:52:10.072705+00:00",
+  "run_id": "20260915T145159Z",
+  "step": "LOAD_PRIVATE_TEST_EMAIL_ALLOWLIST",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "STRIPE_TEST_PURCHASE_GATE_DEPLOYED",
-  "next_gate": "CONFIGURE_PRIVATE_TEST_EMAIL_ALLOWLIST",
+  "verdict": "PRIVATE_TEST_ALLOWLIST_ACTIVE",
+  "next_gate": "RUN_US_CARD_E2E",
   "facts": {
-    "CODEX_RC": "0",
+    "ALLOWLIST_COUNT": "2",
+    "ALLOWLIST_VALID": "YES",
     "FAILURE": "NONE",
     "INTERNAL_RC": "0",
-    "LOCAL_HTTP": "200",
-    "NEW_PID": "1415569",
-    "OLD_PID": "1404702",
-    "PUBLIC_HTTP": "200",
-    "REAL_BENCH_COUNT": "0",
+    "NEW_PID": "1416195",
+    "OLD_PID": "1415569",
     "SERVICE_ACTIVE": "active",
     "STAGE": "COMPLETE",
-    "TEST_RC": "0",
-    "TOUCHED_COUNT": "2",
-    "TOUCHED_SCOPE_OK": "YES"
+    "STRIPE_MODE": "TEST",
+    "SUBSCRIBE_HTTP": "200"
   }
 }
