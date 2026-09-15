@@ -1,17 +1,19 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-14T19:20:01.362449+00:00`
-- Run ID: `20260914T191959Z`
-- Step: `INSPECT_EXISTING_GOOGLE_AI_BRIDGE`
+- Published UTC: `2026-09-15T07:45:52.970914+00:00`
+- Run ID: `20260915T074545Z`
+- Step: `CODEX_HEALTH_RECHECK`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `GOOGLE_AI_BRIDGE_INSPECTED`
-- Next gate: `USE_EXISTING_GOOGLE_AI_BRIDGE`
+- Verdict: `CODEX_HEALTH_RECHECKED`
+- Next gate: `RESUME_SUBSCRIPTION_BUILD`
 
 ## Facts
 
-- `BRIDGE_FILES`: `bridge-run,bridge-run-dual,bridge-run-dual.pre_gv1_20260819T191254Z,bridge-run.pre-v2-20260909T144421Z,bridge-run.pre-v2-key-20260909T151349Z,bridge.lock,relay-publish`
-- `GOOGLE_BRIDGE`: `UNKNOWN`
-- `GOOGLE_HIT_FILES`: `bridge-run,bridge-run.pre-v2-20260909T144421Z,bridge-run.pre-v2-key-20260909T151349Z,relay-publish`
-- `RELEVANT_ENV_NAMES`: `NONE`
+- `CODEX_HEALTH`: `PASS`
+- `CODEX_RC`: `0`
+- `CODEX_VERSION`: `codex-cli 0.154.0`
+- `ERROR_CLASS`: `NONE`
+- `GIT_DIRTY_AFTER`: `0`
+- `GIT_DIRTY_BEFORE`: `0`

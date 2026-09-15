@@ -1,16 +1,18 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-14T19:20:01.362449+00:00",
-  "run_id": "20260914T191959Z",
-  "step": "INSPECT_EXISTING_GOOGLE_AI_BRIDGE",
+  "published_at_utc": "2026-09-15T07:45:52.970914+00:00",
+  "run_id": "20260915T074545Z",
+  "step": "CODEX_HEALTH_RECHECK",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "GOOGLE_AI_BRIDGE_INSPECTED",
-  "next_gate": "USE_EXISTING_GOOGLE_AI_BRIDGE",
+  "verdict": "CODEX_HEALTH_RECHECKED",
+  "next_gate": "RESUME_SUBSCRIPTION_BUILD",
   "facts": {
-    "BRIDGE_FILES": "bridge-run,bridge-run-dual,bridge-run-dual.pre_gv1_20260819T191254Z,bridge-run.pre-v2-20260909T144421Z,bridge-run.pre-v2-key-20260909T151349Z,bridge.lock,relay-publish",
-    "GOOGLE_BRIDGE": "UNKNOWN",
-    "GOOGLE_HIT_FILES": "bridge-run,bridge-run.pre-v2-20260909T144421Z,bridge-run.pre-v2-key-20260909T151349Z,relay-publish",
-    "RELEVANT_ENV_NAMES": "NONE"
+    "CODEX_HEALTH": "PASS",
+    "CODEX_RC": "0",
+    "CODEX_VERSION": "codex-cli 0.154.0",
+    "ERROR_CLASS": "NONE",
+    "GIT_DIRTY_AFTER": "0",
+    "GIT_DIRTY_BEFORE": "0"
   }
 }
