@@ -1,23 +1,23 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-16T21:49:17.884906+00:00",
-  "run_id": "20260916T214913Z",
-  "step": "FINISH_MASTER_HANDOFF_GITHUB_UPDATE",
+  "published_at_utc": "2026-09-16T22:17:31.886683+00:00",
+  "run_id": "20260916T221659Z",
+  "step": "FIX_VECTORBT_REFERENCE_PLOTLY_COMPATIBILITY",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "PREFLIGHT_V2_MILESTONE_COMMITTED_AND_PUSHED",
-  "next_gate": "VECTORBT_QUANT_ENGINE_RESEARCH",
+  "verdict": "VECTORBT_REFERENCE_BASELINE_READY",
+  "next_gate": "MAP_VECTORBT_MODULES_TO_ATB_QUANT_STACK",
   "facts": {
-    "BRANCH": "main",
-    "COMMIT": "c4df03c577e0",
-    "COMMITTED": "YES",
-    "DASHBOARD_RESTART": "NO",
+    "ATB_CHANGED": "NO",
+    "COMMIT": "34b6d5935e3e",
+    "DB_WRITES": "0",
     "FAILURE": "NONE",
     "INTERNAL_RC": "0",
-    "PASSED": "5042",
-    "PROCESSED": "7721",
-    "PUSHED": "YES",
-    "RUNTIME_ARTIFACTS_COMMITTED": "NO",
-    "RUN_STATE": "RUNNING"
+    "PLOTLY_AFTER": "5.24.1",
+    "PLOTLY_BEFORE": "7.1.0",
+    "PY_MODULES": "95",
+    "SMOKE": "PASS",
+    "TRADES": "2",
+    "VECTORBT_VERSION": "1.1.0"
   }
 }
