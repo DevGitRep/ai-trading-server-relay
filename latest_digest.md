@@ -1,27 +1,53 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-16T15:26:00.363294+00:00`
-- Run ID: `20260916T152554Z`
-- Step: `FIND_EXISTING_PINE2AST_BOOTSTRAP`
+- Published UTC: `2026-09-16T15:30:45.843627+00:00`
+- Run ID: `20260916T152812Z`
+- Step: `CLASSIFY_100_NO_SIGNAL_CONTRACTS`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `V2_PINE2AST_BOOTSTRAP_SEARCH_COMPLETE`
-- Next gate: `USE_DISCOVERED_EXISTING_BOOTSTRAP`
+- Verdict: `V2_100_NO_CONTRACT_REASONS_CAPTURED`
+- Next gate: `REVIEW_MISSING_SIGNAL_EVIDENCE`
 
 ## Facts
 
-- `BOOTSTRAP_HIT_1`: `fallback.py:92:from_importlib.metadata_import_version`
-- `BOOTSTRAP_HIT_2`: `orchestrator.py:6:import_importlib.machinery`
-- `BOOTSTRAP_HIT_COUNT`: `8`
-- `EXTERNAL_BOOTSTRAP_1`: `test_gyp.py`
-- `EXTERNAL_BOOTSTRAP_COUNT`: `1`
+- `BASELINE_MATCH`: `YES`
+- `CAPTURED_NO_CONTRACT`: `31`
+- `CLI_RC`: `0`
+- `DB_WRITES`: `0`
+- `ERRORS`: `35`
 - `FAILURE`: `NONE`
-- `IMPORT_CHAIN_1`: `atb_preflight_v2.orchestrator:main`
-- `IMPORT_CHAIN_COUNT`: `1`
-- `INIT_LINE_COUNT`: `3`
-- `INIT_SAMPLE`: `__init__.py:1:Shadow_Preflight:_thin_Pine2AST_-_existing_Resin_compatibility_boundary.`
+- `GIT_UNCHANGED`: `YES`
 - `INTERNAL_RC`: `0`
-- `READ_ONLY`: `YES`
-- `TOP_LEVEL_CALL_1`: `NONE`
-- `TOP_LEVEL_CALL_COUNT`: `0`
+- `LANE_1`: `NONE`
+- `LANE_2`: `NONE`
+- `LANE_3`: `NONE`
+- `LANE_4`: `NONE`
+- `LANE_5`: `NONE`
+- `LANE_COUNT_1`: `31`
+- `LANE_COUNT_2`: `0`
+- `LANE_COUNT_3`: `0`
+- `LANE_COUNT_4`: `0`
+- `LANE_COUNT_5`: `0`
+- `NO_CONTRACT`: `31`
+- `PROCESSED`: `100`
+- `PROVIDER_1`: `NONE`
+- `PROVIDER_2`: `NONE`
+- `PROVIDER_3`: `NONE`
+- `PROVIDER_4`: `NONE`
+- `PROVIDER_COUNT_1`: `31`
+- `PROVIDER_COUNT_2`: `0`
+- `PROVIDER_COUNT_3`: `0`
+- `PROVIDER_COUNT_4`: `0`
+- `READY`: `34`
+- `REASON_1`: `EVIDENCE_LANES_EXHAUSTED`
+- `REASON_2`: `NONE`
+- `REASON_3`: `NONE`
+- `REASON_4`: `NONE`
+- `REASON_5`: `NONE`
+- `REASON_COUNT_1`: `31`
+- `REASON_COUNT_2`: `0`
+- `REASON_COUNT_3`: `0`
+- `REASON_COUNT_4`: `0`
+- `REASON_COUNT_5`: `0`
+- `RESTORED`: `YES`
