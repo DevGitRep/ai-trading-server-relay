@@ -1,48 +1,29 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-16T15:06:47.679819+00:00`
-- Run ID: `20260916T150412Z`
-- Step: `CLASSIFY_100_PROVIDER_ERROR_REASONS`
+- Published UTC: `2026-09-16T15:11:48.097451+00:00`
+- Run ID: `20260916T151146Z`
+- Step: `MAP_EXACT_EXISTING_V2_API_SHAPES`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `V2_100_PROVIDER_REASON_DISTRIBUTION_CAPTURED`
-- Next gate: `DECIDE_MINIMAL_RESCUE_VS_ACCEPT_LIMITS`
+- Verdict: `V2_EXISTING_API_SHAPES_MAPPED`
+- Next gate: `RUN_RESCUE_USING_EXACT_EXISTING_CALL_FLOW`
 
 ## Facts
 
-- `AST_PARSE_FAILED`: `15`
-- `BASELINE_MATCH`: `YES`
-- `CAPTURED_ERRORS`: `35`
-- `CLI_RC`: `0`
-- `DB_WRITES`: `0`
-- `ERRORS`: `35`
+- `ANALYZE_PROVIDER_CALL`: `parser:1:0`
+- `ANALYZE_RUNTIME_CALL`: `runner:2:0`
+- `ANALYZE_SIG`: `analyze(source,candles,parser=parse,runner=resin,validator=validate,recognizer=recognize)`
+- `CLI_IMPORTS`: `atb_preflight_v2.orchestrator:main`
+- `CLI_MAIN_CALLS`: `NONE`
+- `CLI_MAIN_SIG`: `NONE`
 - `FAILURE`: `NONE`
-- `GIT_UNCHANGED`: `YES`
 - `INTERNAL_RC`: `0`
-- `NO_CONTRACT`: `31`
-- `OTHER_REASONS`: `0`
-- `PROCESSED`: `100`
-- `READY`: `34`
-- `RESIN_RUN_FAILED`: `3`
-- `RESIN_TRANSPILE_FAILED`: `16`
-- `RESTORED`: `YES`
-- `SECURITY_REJECTION`: `1`
-- `TOP1_CLASS`: `PINE2AST_PARSE_ERROR`
-- `TOP1_COUNT`: `15`
-- `TOP1_REASON`: `AST_PARSE_FAILED`
-- `TOP2_CLASS`: `UNSUPPORTED_PINE`
-- `TOP2_COUNT`: `8`
-- `TOP2_REASON`: `RESIN_TRANSPILE_FAILED`
-- `TOP3_CLASS`: `RESIN_EXECUTION_ERROR`
-- `TOP3_COUNT`: `8`
-- `TOP3_REASON`: `RESIN_TRANSPILE_FAILED`
-- `TOP4_CLASS`: `RESIN_EXECUTION_ERROR`
-- `TOP4_COUNT`: `3`
-- `TOP4_REASON`: `RESIN_RUN_FAILED`
-- `TOP5_CLASS`: `PINE2AST_PARSE_ERROR`
-- `TOP5_COUNT`: `1`
-- `TOP5_REASON`: `PINE2AST_SECURITY_REJECTION`
-- `TOP6_CLASS`: `NONE`
-- `TOP6_COUNT`: `0`
-- `TOP6_REASON`: `NONE`
+- `PARSE_LOCAL_SIG`: `parse_local(source)`
+- `READ_ONLY`: `YES`
+- `RUNTIME_FUNCS`: `probe_source,resin,runtime_candidates,validate,validate_runtime`
+- `RUNTIME_PRIMARY_CALLS`: `tempfile.TemporaryDirectory:0:1,Path:1:0,pine.write_text:1:1,data.write_text:1:1,subprocess.run:1:5,json.dumps`
+- `RUNTIME_PRIMARY_SIG`: `resin(source,candles)`
+- `SELECT_PROD_CALLS`: `production.load_testpine:0:0`
+- `SELECT_RECENT_CALLS`: `load_script:1:0,production.load_testpine:0:0,sqlite3.connect:1:1,conn.execute:1:0,SimpleNamespace:0:2,tp.selec`
+- `SELECT_RECENT_SIG`: `select_recent(count,production=None,testpine=None)`
