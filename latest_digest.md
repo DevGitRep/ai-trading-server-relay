@@ -1,39 +1,27 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-16T15:24:05.145748+00:00`
-- Run ID: `20260916T152402Z`
-- Step: `MAP_PARSE_LOCAL_SYMBOL_ORIGINS`
+- Published UTC: `2026-09-16T15:26:00.363294+00:00`
+- Run ID: `20260916T152554Z`
+- Step: `FIND_EXISTING_PINE2AST_BOOTSTRAP`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `PARSE_LOCAL_SYMBOL_ORIGINS_MAPPED`
-- Next gate: `USE_EXACT_EXISTING_PROVIDER_ROUTE`
+- Verdict: `V2_PINE2AST_BOOTSTRAP_SEARCH_COMPLETE`
+- Next gate: `USE_DISCOVERED_EXISTING_BOOTSTRAP`
 
 ## Facts
 
-- `AST_TO_JSON_ORIGIN`: `UNRESOLVED`
-- `CALL1_NAME`: `ParseOptions`
-- `CALL1_ORIGIN`: `LOCAL_IMPORT:pine2ast.ParseOptions`
-- `CALL2_NAME`: `RuntimeError`
-- `CALL2_ORIGIN`: `BUILTIN`
-- `CALL3_NAME`: `any`
-- `CALL3_ORIGIN`: `BUILTIN`
-- `CALL4_NAME`: `ast_to_dict`
-- `CALL4_ORIGIN`: `UNRESOLVED`
-- `CALL5_NAME`: `bool`
-- `CALL5_ORIGIN`: `BUILTIN`
-- `CALL6_NAME`: `int`
-- `CALL6_ORIGIN`: `BUILTIN`
-- `CALL7_NAME`: `parse_code`
-- `CALL7_ORIGIN`: `LOCAL_IMPORT:pine2ast.parse_code`
-- `CALL8_NAME`: `re.search`
-- `CALL8_ORIGIN`: `IMPORT:re`
+- `BOOTSTRAP_HIT_1`: `fallback.py:92:from_importlib.metadata_import_version`
+- `BOOTSTRAP_HIT_2`: `orchestrator.py:6:import_importlib.machinery`
+- `BOOTSTRAP_HIT_COUNT`: `8`
+- `EXTERNAL_BOOTSTRAP_1`: `test_gyp.py`
+- `EXTERNAL_BOOTSTRAP_COUNT`: `1`
 - `FAILURE`: `NONE`
+- `IMPORT_CHAIN_1`: `atb_preflight_v2.orchestrator:main`
+- `IMPORT_CHAIN_COUNT`: `1`
+- `INIT_LINE_COUNT`: `3`
+- `INIT_SAMPLE`: `__init__.py:1:Shadow_Preflight:_thin_Pine2AST_-_existing_Resin_compatibility_boundary.`
 - `INTERNAL_RC`: `0`
-- `LOCAL_IMPORT_COUNT`: `7`
-- `LOCAL_IMPORT_SAMPLE`: `ParseOptions=pine2ast.ParseOptions`
-- `PARSE_CALLS`: `strip,re.search,parse_code,any,bool,RuntimeError,revision.startswith,RuntimeError,int,ParseOptions,ast_to_dict,RuntimeEr`
-- `PARSE_CALL_COUNT`: `15`
-- `PARSE_CODE_ORIGIN`: `LOCAL_IMPORT:pine2ast.parse_code`
-- `PARSE_OPTIONS_ORIGIN`: `LOCAL_IMPORT:pine2ast.ParseOptions`
 - `READ_ONLY`: `YES`
+- `TOP_LEVEL_CALL_1`: `NONE`
+- `TOP_LEVEL_CALL_COUNT`: `0`
