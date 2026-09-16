@@ -1,28 +1,39 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-16T14:44:14.122064+00:00`
-- Run ID: `20260916T144412Z`
-- Step: `CLASSIFY_REMAINING_V2_ERROR_PATHS`
+- Published UTC: `2026-09-16T14:47:15.342374+00:00`
+- Run ID: `20260916T144713Z`
+- Step: `CAPTURE_V2_ERROR_DETAILS_FIXED_LOADER`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `V2_ERROR_PATHS_CLASSIFIED`
-- Next gate: `DECIDE_PROVIDER_LIMIT_VS_INTEGRATION_FIX`
+- Verdict: `V2_ERROR_DETAIL_CAPTURE_BLOCKED`
+- Next gate: `DISCARD_DIAGNOSTIC`
 
 ## Facts
 
-- `CLI_FLAG_COUNT`: `0`
-- `CLI_FLAG_SAMPLE`: `NONE`
-- `DETAIL_FIELD_COUNT`: `1`
-- `ERROR1_CONTEXT`: `orchestrator.py:131:if_not_parsedok:_outcome.update(status=ERROR,_reason=parsedreason,_error_class=parsed.get(error_clas`
-- `ERROR1_FUNCTION`: `orchestrator.py:analyze`
-- `ERROR1_LOCATION_COUNT`: `2`
-- `ERROR2_CONTEXT`: `errors.py:7:PINE2AST_PARSE_ERROR,_PINE2AST_ENV_ERROR,_PINE_SOURCE_ERROR,_RESIN_EXECUTION_ERROR,_RESIN_CONTRACT_ERROR,_CA`
-- `ERROR2_FUNCTION`: `errors.py:runtime_class`
-- `ERROR2_LOCATION_COUNT`: `2`
-- `ERROR3_CONTEXT`: `orchestrator.py:83:runtime_=_runner(source,_candles)_except_Exception_as_exc:_raise_V2Error(exception_class(exc,_RESIN_E`
-- `ERROR3_FUNCTION`: `orchestrator.py:analyze`
-- `ERROR3_LOCATION_COUNT`: `4`
+- `BASELINE_MATCH`: `NO`
+- `CAPTURED_ERRORS`: `0`
+- `CLI_RC`: `NA`
+- `DB_WRITES`: `UNKNOWN`
+- `E1_CLASS`: `NONE`
+- `E1_REASON`: `NONE`
+- `E1_STAGE`: `NONE`
+- `E2_CLASS`: `NONE`
+- `E2_REASON`: `NONE`
+- `E2_STAGE`: `NONE`
+- `E3_CLASS`: `NONE`
+- `E3_REASON`: `NONE`
+- `E3_STAGE`: `NONE`
+- `E4_CLASS`: `NONE`
+- `E4_REASON`: `NONE`
+- `E4_STAGE`: `NONE`
+- `E5_CLASS`: `NONE`
+- `E5_REASON`: `NONE`
+- `E5_STAGE`: `NONE`
+- `ERRORS`: `UNKNOWN`
+- `FAILURE`: `ANALYZE_NOT_FOUND`
+- `INTERNAL_RC`: `11`
+- `NO_CONTRACT`: `UNKNOWN`
+- `PROCESSED`: `UNKNOWN`
+- `READY`: `UNKNOWN`
 - `READ_ONLY`: `YES`
-- `REASON_FIELD_COUNT`: `1`
-- `STAGE_FIELD_COUNT`: `1`
