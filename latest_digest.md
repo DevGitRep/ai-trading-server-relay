@@ -1,27 +1,29 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-16T16:51:19.282472+00:00`
-- Run ID: `20260916T165114Z`
-- Step: `MAP_PINER_EVIDENCE_SCHEMA_FROM_CORRECT_RUNTIME`
+- Published UTC: `2026-09-16T16:58:03.970859+00:00`
+- Run ID: `20260916T165800Z`
+- Step: `BUILD_ROBUST_PINER_HYPOTHESIS_ADAPTER`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `PINER_EVIDENCE_SCHEMA_MAPPED`
-- Next gate: `DESIGN_MINIMAL_PINER_HYPOTHESIS_ADAPTER`
+- Verdict: `PINER_HYPOTHESIS_ADAPTER_SMOKE_INCOMPLETE`
+- Next gate: `INSPECT_MISSING_HYPOTHESIS_LANE`
 
 ## Facts
 
-- `COMPILE_KEYS`: `diagnostics,interpret,main,metadata,source`
-- `FAILURE`: `NONE`
-- `HAS_ALERTS`: `YES`
-- `HAS_AST_LIKE`: `NO`
-- `HAS_COLORS`: `YES`
-- `HAS_PLOTS`: `YES`
-- `HAS_SEMANTIC_LIKE`: `YES`
-- `HAS_SERIES`: `YES`
-- `HAS_SHAPES`: `YES`
-- `INTERNAL_RC`: `0`
-- `NESTED_KEY_COUNT`: `381`
-- `NESTED_KEY_SAMPLE`: `alerts,alerts.0,alerts.0.bar,alerts.0.message,barColorFirstSeen,barColorFirstSeen.1,barColors,barColors.1,barColors.1.0,bgColorFir`
-- `OUTPUT_KEYS`: `alerts,barColorFirstSeen,barColors,bgColorFirstSeen,bgColors,candleFirstSeen,candles,currentBar,fillFirstSeen,fills,gradientFirstS`
-- `READ_ONLY`: `YES`
+- `ADAPTER_CREATED`: `YES`
+- `ATB_GIT_UNCHANGED`: `YES`
+- `COLOR_COUNT`: `12`
+- `COLOR_OK`: `YES`
+- `COLOR_TYPES`: `COLOR_REGIME`
+- `CROSS_COUNT`: `15`
+- `CROSS_OK`: `YES`
+- `CROSS_TYPES`: `CROSSOVER,EXTREMA,SERIES_OUTPUT,THRESHOLD_LEVEL,ZERO_CROSS`
+- `EXPLICIT_COUNT`: `24`
+- `EXPLICIT_OK`: `YES`
+- `EXPLICIT_TYPES`: `AUTHOR_ALERT,VISUAL_MARKER`
+- `EXTREMA_COUNT`: `12`
+- `EXTREMA_OK`: `NO`
+- `EXTREMA_TYPES`: `THRESHOLD_LEVEL`
+- `FAILURE`: `SMOKE_LANE_MISSING`
+- `INTERNAL_RC`: `20`
