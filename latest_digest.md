@@ -1,37 +1,33 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-16T16:30:17.403439+00:00`
-- Run ID: `20260916T163015Z`
-- Step: `MAP_MAIN_TO_ANALYZE_DRIVER_CALL_CHAIN`
+- Published UTC: `2026-09-16T16:32:36.308193+00:00`
+- Run ID: `20260916T163234Z`
+- Step: `MAP_RUN_BATCH_FINAL_RESULT_BOUNDARY`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `ANALYZE_DRIVER_MAPPING_BLOCKED`
-- Next gate: `INSPECT_CALL_GRAPH_RESULT`
+- Verdict: `RUN_BATCH_BOUNDARY_MAPPED`
+- Next gate: `MAP_FINAL_RESULT_INSIDE_RUN_BATCH`
 
 ## Facts
 
-- `CHAIN_1`: `NONE`
-- `CHAIN_2`: `NONE`
-- `CHAIN_3`: `NONE`
-- `CHAIN_4`: `NONE`
-- `CHAIN_COUNT`: `0`
-- `DIRECT_ANALYZE_CALLERS`: `NONE`
-- `DRIVER`: `NONE`
-- `DRIVER_LINE`: `NONE`
-- `DRIVER_LOOP_1`: `NONE`
-- `DRIVER_LOOP_2`: `NONE`
-- `DRIVER_LOOP_3`: `NONE`
-- `DRIVER_LOOP_4`: `NONE`
-- `DRIVER_LOOP_COUNT`: `0`
-- `DRIVER_STMT_1`: `NONE`
-- `DRIVER_STMT_2`: `NONE`
-- `DRIVER_STMT_3`: `NONE`
-- `DRIVER_STMT_4`: `NONE`
-- `DRIVER_STMT_5`: `NONE`
-- `DRIVER_STMT_6`: `NONE`
-- `DRIVER_STMT_COUNT`: `0`
-- `FAILURE`: `ANALYZE_CALLER_NOT_FOUND`
-- `INTERNAL_RC`: `11`
-- `MAIN_CALLS`: `load_script,run_batch,select_recent`
+- `ANALYZE_REFS`: `145:analyze`
+- `FAILURE`: `NONE`
+- `INTERNAL_RC`: `0`
+- `MAIN_RUN_BATCH_ARGS`: `arg1=items,arg2=candles`
+- `MAIN_RUN_BATCH_CALL`: `run_batch(items,_candles)`
 - `READ_ONLY`: `YES`
+- `RUN_BATCH_LOOP_1`: `149:item_in_items`
+- `RUN_BATCH_LOOP_2`: `172:(index,_(category,_count))_in_enumerate(sorted(errors.items(),_key=lambda_x:_(-x[1],_x[0]))[:5],_1)`
+- `RUN_BATCH_LOOP_3`: `NONE`
+- `RUN_BATCH_LOOP_4`: `NONE`
+- `RUN_BATCH_LOOP_COUNT`: `2`
+- `RUN_BATCH_ORIGIN`: `LOCAL_FUNCTION`
+- `RUN_BATCH_SIG`: `run_batch(items,candles,analyze_fn)`
+- `RUN_BATCH_STMT_1`: `146:totals_=_dict.fromkeys([&#x27;PROCESSED&#x27;,_&#x27;BENCHTEST_READY_SHADOW&#x27;,_SUMMARY_LANES.values(),_&#x27;NO_SIGNAL_CONTRACT&#x27;,_&#x27;ERRORS&#x27;],_0)`
+- `RUN_BATCH_STMT_2`: `148:errors_=_Counter()`
+- `RUN_BATCH_STMT_3`: `149:for_item_in_items:_totals[&#x27;PROCESSED&#x27;]_+=_1_try:_result_=_analyze_fn(item[&#x27;source&#x27;],_candles)_if_result[&#x27;status&#x27;]_==_&#x27;BENCHTEST_READY_SHADOW&#x27;:_tot`
+- `RUN_BATCH_STMT_4`: `172:for_index,_(category,_count)_in_enumerate(sorted(errors.items(),_key=lambda_x:_(-x[1],_x[0]))[:5],_1):_print(f&#x27;ERROR_CLASS_{index}={category}nERRO`
+- `RUN_BATCH_STMT_5`: `174:return_totals`
+- `RUN_BATCH_STMT_6`: `NONE`
+- `RUN_BATCH_STMT_COUNT`: `5`
