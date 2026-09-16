@@ -1,38 +1,26 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-16T19:25:36.639231+00:00`
-- Run ID: `20260916T192534Z`
-- Step: `INSPECT_FULL_PREFLIGHT_V2_EARLY_EXIT`
+- Published UTC: `2026-09-16T19:37:57.469079+00:00`
+- Run ID: `20260916T192939Z`
+- Step: `ADD_MINIMAL_PREFLIGHT_V2_WRITE_MODE`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `PREFLIGHT_V2_EARLY_EXIT_CAUSE_CAPTURED`
-- Next gate: `FIX_ONLY_REPORTED_PREFLIGHT_V2_FAILURE`
+- Verdict: `PREFLIGHT_V2_WRITE_MODE_BLOCKED`
+- Next gate: `FIX_ONLY_REPORTED_WRITE_MODE_FAILURE`
 
 ## Facts
 
-- `DB_WRITES`: `0`
-- `ERROR_1`: `usage:_testpine-preflight-v2_[-h]_--dry-run_count_recent`
-- `ERROR_2`: `testpine-preflight-v2:_error:_the_following_arguments_are_required:_--dry-run`
-- `ERROR_3`: `NONE`
-- `ERROR_4`: `NONE`
-- `ERROR_5`: `NONE`
-- `ERROR_6`: `NONE`
-- `FAILURE`: `NONE`
-- `HEAD_1`: `usage:_testpine-preflight-v2_[-h]_--dry-run_count_recent`
-- `HEAD_2`: `testpine-preflight-v2:_error:_the_following_arguments_are_required:_--dry-run`
-- `HEAD_3`: `NONE`
-- `HEAD_4`: `NONE`
-- `HEAD_5`: `NONE`
-- `INTERESTING_COUNT`: `2`
-- `INTERNAL_RC`: `0`
-- `LOG_LINES`: `2`
-- `PID_STATE`: `EXITED`
-- `TAIL_1`: `usage:_testpine-preflight-v2_[-h]_--dry-run_count_recent`
-- `TAIL_2`: `testpine-preflight-v2:_error:_the_following_arguments_are_required:_--dry-run`
-- `TAIL_3`: `NONE`
-- `TAIL_4`: `NONE`
-- `TAIL_5`: `NONE`
-- `TAIL_6`: `NONE`
-- `TAIL_7`: `NONE`
-- `TAIL_8`: `NONE`
+- `EXPECTED_ERRORS`: `26`
+- `EXPECTED_NO_SIGNAL`: `21`
+- `EXPECTED_READY`: `53`
+- `FAILURE`: `expected_&#x27;except&#x27;_or_&#x27;finally&#x27;_block_(&lt;unknown&gt;,_line_176)`
+- `INTERNAL_RC`: `20`
+- `LIVE_DB_WRITES`: `0`
+- `LIVE_MARKERS_AFTER`: `0`
+- `LIVE_MARKERS_BEFORE`: `0`
+- `PRODUCTION_UNCHANGED`: `YES`
+- `PROD_IMPORT`: `YES`
+- `REGRESSION`: `NOT_RUN`
+- `TEMP_SAVE_RESULT`: `YES`
+- `WRITE_FLAG`: `NO`
