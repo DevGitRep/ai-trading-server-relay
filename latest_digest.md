@@ -1,28 +1,35 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-16T23:23:55.923741+00:00`
-- Run ID: `20260916T232353Z`
-- Step: `TRACE_PREFLIGHT_V2_SIGNAL_EVENT_DATAFLOW`
+- Published UTC: `2026-09-16T23:25:24.446123+00:00`
+- Run ID: `20260916T232522Z`
+- Step: `IDENTIFY_EXACT_PREFLIGHT_SIGNAL_CONTRACT_PATCH_POINTS`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `PREFLIGHT_SIGNAL_EVENT_SOURCE_LOCATED`
-- Next gate: `ADD_SIGNAL_BARS_DIRS_AT_LOCATED_SOURCE_AND_THREAD_THROUGH_PERSISTENCE`
+- Verdict: `PREFLIGHT_SIGNAL_CONTRACT_PATCH_POINTS_IDENTIFIED`
+- Next gate: `PATCH_PREFLIGHT_V2_SIGNAL_BARS_DIRS_AND_ADD_REGRESSION`
 
 ## Facts
 
+- `ADAPTER_DIRECTION_VARS`: `NONE`
+- `ADAPTER_FUNCTIONS`: `walk(value),name(node),arg(node,index,keyword),literal(node),snippet(source,node),direction(label),boolean(node,dec`
+- `ADAPTER_RETURNS`: `NONE`
+- `ANALYZE_ASSIGNMENTS`: `_piner_selected-_select_piner_candidate,source-replace,_piner_events-get,parsed-parser,runtime-runner,candidates-ru`
+- `ANALYZE_CALLS`: `_select_piner_candidate,runtime_candidates,fallback_candidate,runtime_class`
+- `ANALYZE_EVENT_VARS`: `_piner_events`
+- `ANALYZE_RETURNS`: `outcome,DICT:statusparse_reasonattemptsexamined_lanesfallback_consideredselectedlong_countshort_countreason,success`
+- `ANALYZE_SIGNATURE`: `analyze(source,candles,parser,runner,validator,recognizer)`
 - `ATB_CHANGED`: `NO`
-- `BAR_IDENTIFIERS`: `adapter.py:index,fallback.py:candles,orchestrator.py:candles,orchestrator.py:index,orchestrator.py:load_candle`
-- `CALL_EDGES`: `orchestrator.py:analyzerunner,orchestrator.py:analyzeruntime_candidates,orchestrator.py:analyzeruntime_class,o`
 - `DASHBOARD_RESTART`: `NO`
 - `DB_WRITES`: `0`
-- `EVENT_DATA_VISIBLE`: `YES`
-- `EVENT_SOURCE_FILE`: `orchestrator.py`
-- `EVENT_SOURCE_FUNCTION`: `analyze`
 - `FAILURE`: `NONE`
-- `FUNCTIONS_WITH_DIRECTION`: `NONE`
 - `INTERNAL_RC`: `0`
-- `PATCH_FILE`: `adapter.py`
-- `PATCH_FUNCTION`: `UNKNOWN`
-- `RETURN_KEYSETS`: `fallback.py:oracle=eventsokreasonstart,fallback.py:oracle=okreason,orchestrator.py:analyze=attemptsexamined_la`
-- `SIGNAL_IDENTIFIERS`: `adapter.py:direction,fallback.py:long,fallback.py:short,piner_provider.py:longs,piner_provider.py:shorts`
+- `PATCH_ADAPTER`: `adapter.py:walk(value)`
+- `PATCH_PERSISTENCE`: `persistence.py:persist_v2_result(item,result)`
+- `PATCH_ROUTE`: `orchestrator.analyze&gt;adapter&gt;persistence`
+- `PATCH_SOURCE`: `orchestrator.py:analyze:_piner_events`
+- `PERSIST_FUNCTIONS`: `persist_v2_result`
+- `PERSIST_KEYS`: `NONE`
+- `PERSIST_SIGNATURES`: `persist_v2_result(item,result)`
+- `PROVIDER_RETURN_KEYS`: `piner_provider.py:select_piner_candidate=events,fallback.py:oracle=events`
+- `PROVIDER_SIGNAL_VARS`: `piner_provider.py:_sort_key:longs,piner_provider.py:_sort_key:shorts,piner_provider.py:select_piner_candidate:longs`
