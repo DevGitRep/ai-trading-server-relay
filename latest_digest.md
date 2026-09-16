@@ -1,54 +1,30 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-16T17:52:56.871862+00:00`
-- Run ID: `20260916T175254Z`
-- Step: `MAP_REAL_ORCHESTRATOR_ANALYZE_BINDINGS`
+- Published UTC: `2026-09-16T18:01:53.423586+00:00`
+- Run ID: `20260916T180137Z`
+- Step: `CALIBRATE_PINER_PRIMARY_LEGACY_FALLBACK_UNION`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `ORCHESTRATOR_ANALYZE_BINDINGS_MAPPED`
-- Next gate: `RERUN_TEN_CASE_COMPARE_WITH_REAL_BINDINGS`
+- Verdict: `HYBRID_PINER_PRIMARY_LEGACY_FALLBACK_CALIBRATED`
+- Next gate: `IMPLEMENT_PINER_DIRECTIONAL_EVENT_CONTRACT`
 
 ## Facts
 
-- `ANALYZE_CALLEES`: `V2Error,any,append,asdict,attempt,bool,check,discover,exception_class,fallback_candidate,get,isinstance,len,list,next,parser,reason_class,recognizer,removeprefix,replace,runner,run`
-- `ANALYZE_DEFAULTS`: `parser=parse,runner=resin,validator=validate,recognizer=recognize`
-- `ANALYZE_LINE_1`: `64:def_analyze(source,_candles,_parser=parse,_runner=resin,_validator=validate,`
-- `ANALYZE_LINE_10`: `115:return_outcome`
-- `ANALYZE_LINE_11`: `122:specs_=_recognizer(source,_tree)_if_tree_else_[]`
-- `ANALYZE_LINE_12`: `127:return_outcome`
-- `ANALYZE_LINE_2`: `65:recognizer=recognize):`
-- `ANALYZE_LINE_3`: `70:parsed_=_parser(source)`
-- `ANALYZE_LINE_4`: `81:runtime_=_runner(source,_candles)`
-- `ANALYZE_LINE_5`: `87:return_outcome`
-- `ANALYZE_LINE_6`: `91:candidates_=_runtime_candidates(runtime,_candles)`
-- `ANALYZE_LINE_7`: `96:check_=_validate_runtime_if_&#x27;runtime_output&#x27;_in_item.evidence_else_validator`
-- `ANALYZE_LINE_8`: `97:success_=_check(source,_candles,_item,_runner=runner)`
-- `ANALYZE_LINE_9`: `108:return_success`
-- `ANALYZE_SIG`: `(source,_candles,_parser=function_parse_at_0x76c7ef97dee0,_runner=function_resin_at_0x76c7ef97e700,_validator=function_validate_at_0x76c7ef9e20c0,_recognizer=function_recognize_at_`
+- `BOTH`: `24`
+- `COMPILE_FAIL`: `4`
 - `DB_WRITES`: `0`
 - `FAILURE`: `NONE`
+- `HYBRID_UNION`: `53`
 - `INTERNAL_RC`: `0`
-- `MAIN_LINE_1`: `178:parser_=_argparse.ArgumentParser(description=&#x27;Read-only_Preflight_V2_SHADOW&#x27;)`
-- `MAIN_LINE_2`: `179:parser.add_argument(&#x27;count&#x27;,_type=int)`
-- `MAIN_LINE_3`: `180:parser.add_argument(&#x27;order&#x27;,_choices=[&#x27;recent&#x27;])`
-- `MAIN_LINE_4`: `181:parser.add_argument(&#x27;--dry-run&#x27;,_action=&#x27;store_true&#x27;,_required=True)`
-- `MAIN_LINE_5`: `182:args_=_parser.parse_args(argv)`
-- `MAIN_LINE_6`: `184:parser.error(&#x27;count_must_be_=_1&#x27;)`
-- `MAIN_LINE_7`: `189:parser.error(&#x27;exact_manual_targeting_is_not_enabled_in_shadow_CLI&#x27;)`
-- `MAIN_LINE_8`: `191:production_=_load_script(&#x27;testpine-preflight&#x27;)`
-- `MAIN_SIG`: `(argv=None)`
+- `LEGACY_ONLY`: `10`
+- `LEGACY_READY_PRESERVED`: `34`
+- `NEITHER`: `47`
+- `NO_CONTRACT_PINER_ONLY`: `10`
+- `PINER_ONLY`: `19`
+- `READY_BOTH`: `24`
+- `READY_LEGACY_ONLY`: `10`
 - `READ_ONLY`: `YES`
-- `RUN_BATCH_CALLEES`: `Counter,analyze_fn,enumerate,exception_class,fromkeys,fullmatch,get,items,print,sorted,values`
-- `RUN_BATCH_DEFAULTS`: `analyze_fn=analyze`
-- `RUN_BATCH_LINE_1`: `145:def_run_batch(items,_candles,_analyze_fn=analyze):`
-- `RUN_BATCH_LINE_10`: `165:if_not_re.fullmatch(r&#x27;[A-Z][A-Z0-9_]*&#x27;,_reason):`
-- `RUN_BATCH_LINE_2`: `146:totals_=_dict.fromkeys([&#x27;PROCESSED&#x27;,_&#x27;BENCHTEST_READY_SHADOW&#x27;,_*SUMMARY_LANES.values(),`
-- `RUN_BATCH_LINE_3`: `152:result_=_analyze_fn(item[&#x27;source&#x27;],_candles)`
-- `RUN_BATCH_LINE_4`: `153:if_result[&#x27;status&#x27;]_==_&#x27;BENCHTEST_READY_SHADOW&#x27;:`
-- `RUN_BATCH_LINE_5`: `155:totals[SUMMARY_LANES[result[&#x27;selected&#x27;][&#x27;lane&#x27;]]]_+=_1`
-- `RUN_BATCH_LINE_6`: `156:elif_result[&#x27;status&#x27;]_==_&#x27;NO_SIGNAL_CONTRACT&#x27;:`
-- `RUN_BATCH_LINE_7`: `160:category_=_result.get(&#x27;error_class&#x27;,_&#x27;UNKNOWN_ERROR&#x27;)`
-- `RUN_BATCH_LINE_8`: `162:_Progress_is_ordinalPATH_Never_print_source,_IDs_or_errors`
-- `RUN_BATCH_LINE_9`: `164:reason_=_result[&#x27;reason&#x27;]`
-- `RUN_BATCH_SIG`: `(items,_candles,_analyze_fn=function_analyze_at_0x76c7ef9e3ba0)`
+- `RUNTIME_FAIL`: `3`
+- `RUN_OK`: `93`
+- `TECH_ERROR_PINER_ONLY`: `9`
