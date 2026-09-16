@@ -1,34 +1,27 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-16T19:40:08.361480+00:00`
-- Run ID: `20260916T194006Z`
-- Step: `MAP_SAFE_V2_WRITE_HOOK_INSERTION_POINT`
+- Published UTC: `2026-09-16T19:58:47.149606+00:00`
+- Run ID: `20260916T194600Z`
+- Step: `PATCH_PREFLIGHT_V2_WRITE_MODE_AT_SAFE_TRY_BOUNDARY`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `V2_WRITE_HOOK_INSERTION_POINT_MAPPED`
-- Next gate: `PATCH_WRITE_MODE_AT_SAFE_AST_BOUNDARY`
+- Verdict: `PREFLIGHT_V2_WRITE_MODE_READY`
+- Next gate: `START_FULL_PREFLIGHT_V2_11742_WITH_WRITE`
 
 ## Facts
 
-- `ANALYZE_LINE`: `170`
-- `ANALYZE_PARENT`: `TryForFunctionDefModule`
-- `DB_WRITES`: `0`
-- `DRY_LINE`: `199`
+- `EXPECTED_ERRORS`: `26`
+- `EXPECTED_NO_SIGNAL`: `21`
+- `EXPECTED_READY`: `53`
 - `FAILURE`: `NONE`
 - `INTERNAL_RC`: `0`
-- `MAIN_LINE`: `195`
-- `PARSE_LINE`: `200`
-- `READ_ONLY`: `YES`
-- `RUN_BATCH_LINE`: `163`
-- `SRC_1`: `165:_&#x27;NO_SIGNAL_CONTRACT&#x27;,_&#x27;ERRORS&#x27;],_0)`
-- `SRC_10`: `174:_elif_result[&#x27;status&#x27;]_==_&#x27;NO_SIGNAL_CONTRACT&#x27;:`
-- `SRC_2`: `166:_errors_=_Counter()`
-- `SRC_3`: `167:_for_item_in_items:`
-- `SRC_4`: `168:_totals[&#x27;PROCESSED&#x27;]_+=_1`
-- `SRC_5`: `169:_try:`
-- `SRC_6`: `170:_result_=_analyze_fn(item[&#x27;source&#x27;],_candles)`
-- `SRC_7`: `171:_if_result[&#x27;status&#x27;]_==_&#x27;BENCHTEST_READY_SHADOW&#x27;:`
-- `SRC_8`: `172:_totals[&#x27;BENCHTEST_READY_SHADOW&#x27;]_+=_1`
-- `SRC_9`: `173:_totals[SUMMARY_LANES[result[&#x27;selected&#x27;][&#x27;lane&#x27;]]]_+=_1`
-- `TRY_LINE`: `169`
+- `LIVE_AFTER`: `0`
+- `LIVE_BEFORE`: `0`
+- `LIVE_DB_WRITES`: `0`
+- `PRODUCTION_UNCHANGED`: `YES`
+- `PROD_HELPER`: `YES`
+- `REGRESSION`: `PASS`
+- `TEMP_HOOK`: `YES`
+- `TEMP_SAVE`: `YES`
+- `WRITE_FLAG`: `YES`
