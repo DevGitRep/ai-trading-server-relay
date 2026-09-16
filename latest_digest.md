@@ -1,27 +1,40 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-16T18:58:05.748532+00:00`
-- Run ID: `20260916T185803Z`
-- Step: `RESET_LIVE_PREFLIGHT_MARKERS`
+- Published UTC: `2026-09-16T18:59:09.153189+00:00`
+- Run ID: `20260916T185906Z`
+- Step: `MAP_LIVE_PREFLIGHT_MARKER_CARDINALITY`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `LIVE_PREFLIGHT_RESET_BLOCKED`
-- Next gate: `FIX_ONLY_REPORTED_RESET_FAILURE`
+- Verdict: `PREFLIGHT_MARKER_CARDINALITY_MAPPED`
+- Next gate: `RESET_ONLY_CURRENT_PREFLIGHT_MARKERS`
 
 ## Facts
 
-- `AFTER_PASSED`: `0`
-- `AFTER_PROCESSED`: `0`
-- `AFTER_ROWS`: `0`
-- `BACKUP`: `NONE`
-- `BEFORE_PASSED`: `0`
-- `BEFORE_PROCESSED`: `0`
-- `BEFORE_ROWS`: `11778`
-- `CHANGED_ROWS`: `0`
-- `DB`: `indicator_challenger_lab_v1.db`
-- `FAILURE`: `MARKER_CARDINALITY_NOT_ONE`
-- `INTERNAL_RC`: `20`
-- `OTHER_NOTES_PRESERVED`: `0`
-- `RESET`: `NO`
-- `TABLE`: `candidates`
+- `CARDINALITY_0`: `11761`
+- `CARDINALITY_1`: `0`
+- `CARDINALITY_2`: `0`
+- `CARDINALITY_3`: `0`
+- `CARDINALITY_4`: `0`
+- `CURRENT_SHA_LOGIC`: `def__indicator_library_ui_v2_current_executable_shas(con,_tables):_if_scripts_not_in_tables_or_sources_not_in_tables:_return_set()_import_hashlib_from`
+- `DB_WRITES`: `0`
+- `FAILURE`: `NONE`
+- `HELPER_QUERY`: `con.execute(SELECT__+__indicator_library_ui_v2_q(identity)_+_,notes_FROM_candidates__+_WHERE_notes_LIKE_,_(TESTPINE_PREFLIGHT_V1=,))`
+- `IDENTITY_EXPR`: `source_sha256_if_source_sha256_in_cols_else_source_sha_if_source_sha_in_cols_else_None`
+- `INTERNAL_RC`: `0`
+- `MAX_MARKERS_PER_ROW`: `0`
+- `MULTI_MARKER_ROWS`: `0`
+- `MULTI_MIXED`: `0`
+- `MULTI_PASS_ONLY`: `0`
+- `NONPASS_MARKERS`: `0`
+- `PASS_MARKERS`: `0`
+- `READ_ONLY`: `YES`
+- `ROWS_WITH_MARKER`: `11761`
+- `SINGLE_MARKER_ROWS`: `0`
+- `TABLE_ROWS`: `11778`
+- `TOTAL_MARKERS`: `0`
+- `VALUE_1`: `NONE`
+- `VALUE_2`: `NONE`
+- `VALUE_3`: `NONE`
+- `VALUE_4`: `NONE`
+- `VALUE_5`: `NONE`
