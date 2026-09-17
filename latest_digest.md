@@ -1,32 +1,29 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-17T06:48:39.910569+00:00`
-- Run ID: `20260917T064837Z`
-- Step: `RESOLVE_REAL_FULL_YEAR_RUNTIME_AND_DATA_SEAMS`
+- Published UTC: `2026-09-17T06:53:44.613152+00:00`
+- Run ID: `20260917T064944Z`
+- Step: `RESOLVE_YEAR_DATA_SEAM_WITHOUT_RG`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `REAL_FULL_YEAR_EXECUTION_SEAM_RESOLUTION_BLOCKED`
-- Next gate: `FIX_ONLY_REPORTED_EXECUTION_SEAM_RESOLUTION_FAILURE`
+- Verdict: `REAL_SOL_YEAR_EXECUTION_SEAMS_READY`
+- Next gate: `RUN_REAL_SOL_1M_YEAR_HYPOTHESIS_TO_QUANT_ACCEPTANCE`
 
 ## Facts
 
-- `ARCHITECTURE_REDISCOVERY`: `NO`
 - `ATB_CHANGED`: `NO`
 - `DASHBOARD_RESTART`: `NO`
 - `DB_WRITES`: `0`
-- `EVENT_CALLS`: `_piner_selected.get(events,_),len(_piner_events.get(LONG,_[])),len(_piner_events.get(SHORT,_[])),outcome.update(status`
-- `EXECUTION_SEAM`: `NONE`
-- `FAILURE`: `[Errno_2]_No_such_file_or_directory:_rg`
-- `INTERNAL_RC`: `20`
-- `PINER_SIGNATURES`: `select_piner_candidate(source,candles)`
-- `READY_TO_EXECUTE`: `NO`
-- `RUNNER_CALLS`: `runner(source,_candles),check(source,_candles,_item,_runner=runner)`
-- `RUNTIME_SIGNATURES`: `runtime_candidates(result,candles),validate_runtime(source,candles,candidate,runner)`
-- `SELECTED_CALLS`: `_piner_selected.get(events,_)`
-- `SELECT_ARGS`: `source,candles`
-- `SELECT_ASSIGNMENT`: `_piner_selected_=__select_piner_candidate(source,_candles)`
+- `EXECUTION_SEAM`: `SELECTED_HYPOTHESIS_AND_EXISTING_RUNNER_CONFIRMED`
+- `FAILURE`: `NONE`
+- `INTERNAL_RC`: `0`
+- `READY_TO_EXECUTE`: `YES`
+- `RUNNER_CALLS`: `runner(source,_candles)`
+- `RUNTIME_SIGNATURES`: `runtime_candidates(result,candles),validate_runtime(source,candles,candidate,runner),validate(source,candles,candidate`
 - `SELECT_CALL`: `_select_piner_candidate`
-- `YEAR_DATA_REFS`: `NONE`
-- `YEAR_DATA_SEAM`: `NONE`
-- `YEAR_LOADER_REFS`: `NONE`
+- `YEAR_DATA_REFS`: `.venv/lib/python3.12/site-packages/charset_normalizer/cd.py:historical,.venv/lib/python3.12/site-packages/click/core.p`
+- `YEAR_DATA_SEAM`: `EXISTING_YEAR_LOADER_FOUND`
+- `YEAR_FUNCTIONS`: `.venv/lib/python3.12/site-packages/flask/wrappers.py:_load_form_data,.venv/lib/python3.12/site-packages/flask/wrappers`
+- `YEAR_LOADER`: `data/manual_support/benchtest_v2_score_recent100_v31m_backup_20260905T131100Z/benchtest.v31m.py:load_market_data()`
+- `YEAR_LOADER_REFS`: `data/manual_support/benchtest_v2_score_recent100_v31m_backup_20260905T131100Z/benchtest.v31m.py:load_market_data(),dat`
+- `YEAR_SIGNATURES`: `.venv/lib/python3.12/site-packages/flask/wrappers.py:_load_form_data(self),.venv/lib/python3.12/site-packages/flask/wr`
