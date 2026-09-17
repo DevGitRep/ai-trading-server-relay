@@ -1,20 +1,26 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-17T19:45:18.733375+00:00`
-- Run ID: `20260917T194513Z`
-- Step: `BENCHTESTCLIEXACT3`
-- Status: `SUCCESS`
-- Exit code: `0`
-- Verdict: `BENCHTESTCLIEXACTLYMAPPED`
-- Next gate: `RUNSOL1Y1MWITHCORRECTCLI`
+- Published UTC: `2026-09-17T19:47:05.857971+00:00`
+- Run ID: `20260917T194653Z`
+- Step: `SOL1Y1MBENCHTESTCORRECTCLI1`
+- Status: `FAIL`
+- Exit code: `2`
+- Verdict: `SOL1Y1MBENCHTESTFAILED`
+- Next gate: `FIXREALBENCHTESTRUN`
 
 ## Facts
 
-- `ARG1_ROLE`: `count`
-- `ARG2_ROLE`: `candidate_id`
-- `DB_WRITE`: `NO`
+- `BENCHTEST`: `NO`
+- `CANDIDATE_ID`: `ICL_LIB_FFD660A2D24D3772`
+- `CANDIDATE_LIMIT`: `1`
+- `DB_WRITE`: `YES`
 - `HEAD`: `95836ad0df55`
-- `REPO_CLEAN`: `YES`
+- `PAIR`: `SOL_USDT`
+- `PERIOD`: `12MONTH`
+- `REPO_CLEAN`: `NO`
 - `RESTART`: `NO`
-- `USAGE`: `Usage:`
+- `RESULT_PERSISTED`: `NO`
+- `TIMEFRAME`: `1m`
+- `TRADE_LEDGER_CHECKED`: `NO`
+- `TRADE_ROWS`: `UNKNOWN`
