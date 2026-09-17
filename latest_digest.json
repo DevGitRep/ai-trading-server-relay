@@ -1,27 +1,17 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-17T13:40:03.929656+00:00",
-  "run_id": "20260917T133951Z",
-  "step": "CREATE_RECORDS_GOLDEN_CONTRACT_BATCH",
+  "published_at_utc": "2026-09-17T13:45:44.210270+00:00",
+  "run_id": "20260917T134538Z",
+  "step": "FIX_RECORDS_GOLDEN_COUNT_SEMANTICS",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "RECORDS_GOLDEN_CONTRACT_BATCH_BLOCKED",
+  "verdict": "RECORDS_GOLDEN_FIX_BLOCKED",
   "next_gate": "FIX_ONLY_REPORTED_RECORDS_GOLDEN_FAILURE",
   "facts": {
     "ATB_CHANGED": "NO",
-    "BEHAVIOR_METHODS": "NONE",
-    "COL0_COUNT": "0",
-    "COL1_COUNT": "0",
     "DASHBOARD_RESTART": "NO",
     "DB_WRITES": "0",
-    "FAILURE": "VECTORBT_RECORDS_GOLDEN_FAILED_n___bool___raise_ValueError(_ValueError:_The_truth_value_of_a_Series_",
-    "FIELD_COUNT": "0",
-    "GOLDEN_CREATED": "YES",
-    "INFRA_METHODS": "NONE",
-    "INTERNAL_RC": "20",
-    "MASKED_COUNT": "0",
-    "RECORD_COUNT": "0",
-    "UNCATEGORIZED_METHODS": "NONE",
-    "VECTORBT_VERSION": "1.1.0"
+    "FAILURE": "Traceback_(most_recent_call_last):_File_hometransformeratb-thirdpartyvectorbt-reference-testsgolden_",
+    "INTERNAL_RC": "20"
   }
 }

@@ -1,28 +1,18 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-17T13:40:03.929656+00:00`
-- Run ID: `20260917T133951Z`
-- Step: `CREATE_RECORDS_GOLDEN_CONTRACT_BATCH`
+- Published UTC: `2026-09-17T13:45:44.210270+00:00`
+- Run ID: `20260917T134538Z`
+- Step: `FIX_RECORDS_GOLDEN_COUNT_SEMANTICS`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `RECORDS_GOLDEN_CONTRACT_BATCH_BLOCKED`
+- Verdict: `RECORDS_GOLDEN_FIX_BLOCKED`
 - Next gate: `FIX_ONLY_REPORTED_RECORDS_GOLDEN_FAILURE`
 
 ## Facts
 
 - `ATB_CHANGED`: `NO`
-- `BEHAVIOR_METHODS`: `NONE`
-- `COL0_COUNT`: `0`
-- `COL1_COUNT`: `0`
 - `DASHBOARD_RESTART`: `NO`
 - `DB_WRITES`: `0`
-- `FAILURE`: `VECTORBT_RECORDS_GOLDEN_FAILED_n___bool___raise_ValueError(_ValueError:_The_truth_value_of_a_Series_`
-- `FIELD_COUNT`: `0`
-- `GOLDEN_CREATED`: `YES`
-- `INFRA_METHODS`: `NONE`
+- `FAILURE`: `Traceback_(most_recent_call_last):_File_hometransformeratb-thirdpartyvectorbt-reference-testsgolden_`
 - `INTERNAL_RC`: `20`
-- `MASKED_COUNT`: `0`
-- `RECORD_COUNT`: `0`
-- `UNCATEGORIZED_METHODS`: `NONE`
-- `VECTORBT_VERSION`: `1.1.0`
