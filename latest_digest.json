@@ -1,22 +1,25 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-17T21:32:50.463390+00:00",
-  "run_id": "20260917T213240Z",
-  "step": "PROVEOVERRIDEENDTOEND39",
+  "published_at_utc": "2026-09-17T21:34:14.807523+00:00",
+  "run_id": "20260917T213410Z",
+  "step": "BUILDLARGESWEEPGRID40",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "PARAMETEROVERRIDEENDTOENDPROVEN",
-  "next_gate": "BUILDLARGESWEEPGRID",
+  "verdict": "LARGESWEEPGRIDREADY",
+  "next_gate": "EXECUTELARGESWEEPPILOT",
   "facts": {
+    "COHORT": "584",
     "DB_WRITE": "NO",
-    "DEFAULT_EQUALS_EMPTY": "YES",
-    "DEFAULT_RUN": "YES",
-    "EMPTY_RUN": "YES",
+    "FIRST_CANDIDATE": "ICL_LIB_0930A703546BD5BB",
+    "FIRST_CONFIGS": "3",
     "HEAD": "87d3b519e011",
-    "OVERRIDE_DIFFERS": "YES",
-    "OVERRIDE_RUN": "YES",
+    "MAX_CONFIGS": "177",
+    "NUMERIC_INPUTS": "4001",
+    "PLANNED_CONFIGS": "8339",
+    "PLAN_VALID": "YES",
     "REPO_CLEAN": "YES",
-    "RESIN_ARTIFACT": "YES",
-    "RESTART": "NO"
+    "RESTART": "NO",
+    "SWEEPABLE": "440",
+    "UNSWEEPABLE": "144"
   }
 }
