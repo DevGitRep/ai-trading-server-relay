@@ -1,21 +1,25 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-17T21:54:12.673078+00:00",
-  "run_id": "20260917T215410Z",
-  "step": "MAPBENCHTESTSIGNALCONTRACT54",
+  "published_at_utc": "2026-09-17T21:56:12.766475+00:00",
+  "run_id": "20260917T215610Z",
+  "step": "INSPECTEVALUATECONTRACT55",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "BENCHTESTSIGNALCONTRACTEXACT",
+  "verdict": "EVALUATECONTRACTMAPPED",
   "next_gate": "BUILDCHECKPOINTEDLARGESWEEPRUNNER",
   "facts": {
+    "C1": "821:base.extract_signals",
+    "C2": "850:_v2_finish_from_signals",
+    "C3": "971:insert_result",
+    "C4": "796:artifact.get",
+    "C5": "822:artifact.get",
+    "C6": "823:artifact.get",
+    "CALLS": "10",
     "DB_WRITE": "NO",
-    "EVALUATE_COUNT": "1",
-    "EVAL_CALL": "evaluate(con, resin_host, row, meta, candles, open_, close)",
-    "EVAL_TARGET": "result",
-    "FINISH_CALL": "UNKNOWN",
-    "FINISH_COUNT": "0",
     "HEAD": "87d3b519e011",
     "REPO_CLEAN": "YES",
-    "RESTART": "NO"
+    "RESTART": "NO",
+    "RETURNS": "5",
+    "SIGNATURE": "con, resin_host, row, meta, candles, open_, close"
   }
 }
