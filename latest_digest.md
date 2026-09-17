@@ -1,37 +1,30 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-17T11:40:35.074015+00:00`
-- Run ID: `20260917T114033Z`
-- Step: `INSPECT_EXACT_PINER_EXTREMA_RULE`
+- Published UTC: `2026-09-17T11:44:07.005740+00:00`
+- Run ID: `20260917T114405Z`
+- Step: `INSPECT_PINER_EXTREMA_DIRECTION_MAPPING`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `PINER_EXTREMA_EXACT_RULE_INSPECTED`
-- Next gate: `IMPLEMENT_PARSER_AGAINST_EXACT_PINER_EXTREMA_RULE`
+- Verdict: `PINER_EXTREMA_DIRECTION_MAPPING_INSPECTED`
+- Next gate: `IMPLEMENT_OSCILLATOR_EXTREMA_AND_RETURNS_BATCH2`
 
 ## Facts
 
 - `ATB_CHANGED`: `NO`
+- `CONTEXT_LINES`: `66`
 - `DASHBOARD_RESTART`: `NO`
 - `DB_WRITES`: `0`
 - `FAILURE`: `NONE`
-- `HAS_LONG`: `NO`
-- `HAS_MAXIMA`: `YES`
-- `HAS_MINIMA`: `YES`
-- `HAS_SHORT`: `NO`
 - `INTERNAL_RC`: `0`
+- `LONG_MINIMA`: `YES`
+- `MAPPING_LINES`: `5`
+- `MAP_1`: `L189:return_{minima,maxima}`
+- `MAP_2`: `L439:long_events:ex.minima,`
+- `MAP_3`: `L440:short_events:ex.maxima,`
+- `MAP_4`: `L448:long_events:ex.maxima,`
+- `MAP_5`: `L449:short_events:ex.minima,`
+- `MEANREV_MAXIMA`: `YES`
+- `MEANREV_MINIMA`: `YES`
 - `READ_ONLY`: `YES`
-- `RELEVANT_LINES`: `12`
-- `RULE_1`: `2:const_minima=[]`
-- `RULE_10`: `16:if(b&gt;a_&amp;&amp;_b&gt;c)`
-- `RULE_11`: `17:maxima.push(candleEvent(candles,i))`
-- `RULE_12`: `21:return_minima,maxima`
-- `RULE_2`: `3:const_maxima=[]`
-- `RULE_3`: `5:for(let_i=1i&lt;series.length-1i++)`
-- `RULE_4`: `6:const_a=series[i-1]`
-- `RULE_5`: `7:const_b=series[i]`
-- `RULE_6`: `8:const_c=series[i+1]`
-- `RULE_7`: `10:if(![a,b,c].every(Number.isFinite))_continue`
-- `RULE_8`: `12:if(b&lt;a_&amp;&amp;_b&lt;c)`
-- `RULE_9`: `13:minima.push(candleEvent(candles,i))`
-- `THREE_POINT_LOOP`: `YES`
+- `SHORT_MAXIMA`: `YES`
