@@ -1,48 +1,66 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-17T11:18:10.522357+00:00`
-- Run ID: `20260917T111753Z`
-- Step: `COMMIT_ZERO_THRESHOLD_RETURNS_CORE`
+- Published UTC: `2026-09-17T11:24:09.135265+00:00`
+- Run ID: `20260917T112238Z`
+- Step: `MAP_REMAINING_SIGNALS_AND_RETURNS_BATCH`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `ZERO_THRESHOLD_RETURNS_CORE_COMMITTED_AND_PUSHED`
-- Next gate: `MAP_REMAINING_SIGNAL_FAMILIES_AND_EXPAND_RETURNS_PARITY`
+- Verdict: `REMAINING_SIGNALS_AND_RETURNS_BATCH_MAPPED`
+- Next gate: `IMPLEMENT_REMAINING_SIGNALS_AND_SECOND_RETURNS_GOLDENS`
 
 ## Facts
 
-- `ADAPTER_REGRESSION`: `YES`
-- `BRANCH`: `main`
-- `COMMITTED`: `YES`
-- `COMMIT_ID`: `b1f7279372ae`
+- `ATB_CHANGED`: `NO`
 - `DASHBOARD_RESTART`: `NO`
 - `DB_WRITES`: `0`
-- `DOCS_UPDATED`: `YES`
-- `EXTERNAL_COMMITTED`: `NA`
-- `EXTERNAL_COMMIT_ID`: `NONE`
-- `EXTERNAL_GIT`: `NO`
-- `EXTERNAL_PUSHED`: `NA`
-- `EXTERNAL_SCOPE`: `NA`
+- `DIRECTION_COUNTS`: `OSCILLATOR_EXTREMA_LONG:1,OSCILLATOR_EXTREMA_SHORT:1`
 - `FAILURE`: `NONE`
 - `INTERNAL_RC`: `0`
-- `PORTFOLIO_STATS_REGRESSION`: `YES`
-- `POST_DIRTY_COUNT`: `0`
-- `PUSHED`: `YES`
-- `QUANT_REGRESSION`: `YES`
-- `RETURNS_DETERMINISTIC`: `YES`
-- `RETURNS_GOLDEN`: `YES`
-- `RETURNS_METRICS`: `7`
-- `SCOPE_OK`: `YES`
-- `SIGNAL_BRIDGE_REGRESSION`: `YES`
-- `SIGNAL_UNIT`: `YES`
-- `STAGED_COUNT`: `6`
-- `THRESHOLD_SAFE`: `6`
-- `THRESHOLD_TOTAL`: `6`
-- `THRESHOLD_YEAR_EVENTS`: `32778`
-- `THRESHOLD_YEAR_TRADES`: `25727`
-- `VECTORBT_PIN`: `34b6d5935e3e`
-- `VECTORBT_VERSION`: `1.1.0`
-- `ZERO_SAFE`: `8`
-- `ZERO_TOTAL`: `8`
-- `ZERO_YEAR_EVENTS`: `40326`
-- `ZERO_YEAR_TRADES`: `35909`
+- `OSCILLATOR_EXTREMA_TOTAL`: `2`
+- `OSC_EXAMPLE`: `PINER::OSCILLATOR_EXTREMA|plot:0:PriceOscillator_Correlation|MEAN_REVERSION::LONG`
+- `OSC_PATTERNS`: `plots=1hlines=0labels=0dir=LONG:1,plots=1hlines=0labels=0dir=SHORT:1`
+- `OSC_RUNTIME`: `ROOT_PLOTS_1:2,VIZ_SHAPES_0:2,VIZ_PLOTS_1:2`
+- `OSC_SOURCE_HINTS`: `PIVOT:2`
+- `READ_ONLY`: `YES`
+- `RETURNS_ALPHA`: `args=self,benchmark_rets,risk_free,engine,wrap_kwargskwonly=defaults=4kwdefaults=0`
+- `RETURNS_ALPHA_PRESENT`: `YES`
+- `RETURNS_BETA`: `args=self,benchmark_rets,engine,wrap_kwargskwonly=defaults=3kwdefaults=0`
+- `RETURNS_BETA_PRESENT`: `YES`
+- `RETURNS_CAPTURE`: `args=self,benchmark_rets,engine,wrap_kwargskwonly=defaults=3kwdefaults=0`
+- `RETURNS_CAPTURE_PRESENT`: `YES`
+- `RETURNS_COMMON_SENSE_RATIO`: `args=self,engine,wrap_kwargskwonly=defaults=2kwdefaults=0`
+- `RETURNS_COMMON_SENSE_RATIO_PRESENT`: `YES`
+- `RETURNS_COND_VALUE_AT_RISK`: `args=self,cutoff,engine,wrap_kwargskwonly=defaults=3kwdefaults=0`
+- `RETURNS_COND_VALUE_AT_RISK_PRESENT`: `YES`
+- `RETURNS_DOWNSIDE_RISK`: `args=self,required_return,engine,wrap_kwargskwonly=defaults=3kwdefaults=0`
+- `RETURNS_DOWNSIDE_RISK_PRESENT`: `YES`
+- `RETURNS_DOWN_CAPTURE`: `args=self,benchmark_rets,engine,wrap_kwargskwonly=defaults=3kwdefaults=0`
+- `RETURNS_DOWN_CAPTURE_PRESENT`: `YES`
+- `RETURNS_INFORMATION_RATIO`: `args=self,benchmark_rets,ddof,engine,wrap_kwargskwonly=defaults=4kwdefaults=0`
+- `RETURNS_INFORMATION_RATIO_PRESENT`: `YES`
+- `RETURNS_NEXT_PRESENT_COUNT`: `17`
+- `RETURNS_OMEGA_RATIO`: `args=self,risk_free,required_return,engine,wrap_kwargskwonly=defaults=4kwdefaults=0`
+- `RETURNS_OMEGA_RATIO_PRESENT`: `YES`
+- `RETURNS_ROLLING_ALPHA`: `args=self,benchmark_rets,window,minp,risk_free,engine,wrap_kwargskwonly=defaults=6kwdefaults=0`
+- `RETURNS_ROLLING_ALPHA_PRESENT`: `YES`
+- `RETURNS_ROLLING_BETA`: `args=self,benchmark_rets,window,minp,engine,wrap_kwargskwonly=defaults=5kwdefaults=0`
+- `RETURNS_ROLLING_BETA_PRESENT`: `YES`
+- `RETURNS_ROLLING_MAX_DRAWDOWN`: `args=self,window,minp,engine,wrap_kwargskwonly=defaults=4kwdefaults=0`
+- `RETURNS_ROLLING_MAX_DRAWDOWN_PRESENT`: `YES`
+- `RETURNS_ROLLING_SHARPE_RATIO`: `args=self,window,minp,risk_free,ddof,engine,wrap_kwargskwonly=defaults=6kwdefaults=0`
+- `RETURNS_ROLLING_SHARPE_RATIO_PRESENT`: `YES`
+- `RETURNS_ROLLING_SORTINO_RATIO`: `args=self,window,minp,required_return,engine,wrap_kwargskwonly=defaults=5kwdefaults=0`
+- `RETURNS_ROLLING_SORTINO_RATIO_PRESENT`: `YES`
+- `RETURNS_TAIL_RATIO`: `args=self,engine,wrap_kwargskwonly=defaults=2kwdefaults=0`
+- `RETURNS_TAIL_RATIO_PRESENT`: `YES`
+- `RETURNS_UP_CAPTURE`: `args=self,benchmark_rets,engine,wrap_kwargskwonly=defaults=3kwdefaults=0`
+- `RETURNS_UP_CAPTURE_PRESENT`: `YES`
+- `RETURNS_VALUE_AT_RISK`: `args=self,cutoff,engine,wrap_kwargskwonly=defaults=3kwdefaults=0`
+- `RETURNS_VALUE_AT_RISK_PRESENT`: `YES`
+- `STATE_EXAMPLE`: `NONE`
+- `STATE_PATTERNS`: `NONE`
+- `STATE_RUNTIME`: `NONE`
+- `STATE_SOURCE_HINTS`: `NONE`
+- `STATE_TRANSITION_TOTAL`: `0`
+- `VECTORBT_VERSION_TARGET`: `1.1.0`
