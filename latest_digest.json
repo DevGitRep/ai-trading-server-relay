@@ -1,25 +1,18 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-17T22:01:04.777497+00:00",
-  "run_id": "20260917T220102Z",
-  "step": "EXTRACTPUREV2SWEEPSHAPE59",
+  "published_at_utc": "2026-09-17T22:03:15.544801+00:00",
+  "run_id": "20260917T220313Z",
+  "step": "DIAGNOSESIGNALEXTRACTOR61",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "PUREV2SWEEPSHAPEEXACT",
-  "next_gate": "BUILDCHECKPOINTEDLARGESWEEPRUNNER",
+  "verdict": "SIGNALEXTRACTORFAILUREIDENTIFIED",
+  "next_gate": "FIXSIGNALEXTRACTORMAP",
   "facts": {
-    "ATR_R1": "metrics",
     "DB_WRITE": "NO",
+    "ERROR": "RuntimeError: EXTRACT_SIGNALS_NOT_FOUND",
     "HEAD": "87d3b519e011",
-    "HELPER5": "_v2_float",
-    "HELPER5_ARGS": "value, default=None",
-    "HELPER6": "_v2_ohlc",
-    "HELPER6_ARGS": "candles",
-    "HELPER7": "_v2_stats",
-    "HELPER7_ARGS": "*, starting_equity, ending_equity, equity_curve, trade_rows, exposure_bars, total_bars",
-    "NATIVE_R1": "metrics",
+    "LAST_LINE": "RuntimeError: EXTRACT_SIGNALS_NOT_FOUND",
     "REPO_CLEAN": "YES",
-    "RESTART": "NO",
-    "SIGNAL_FLIP_R1": "metrics"
+    "RESTART": "NO"
   }
 }
