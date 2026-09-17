@@ -1,16 +1,24 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-17T17:55:09.485063+00:00`
-- Run ID: `20260917T175506Z`
-- Step: `GLOBAL31FINISH2`
-- Status: `FAIL`
-- Exit code: `45`
-- Verdict: `VECTORBTRUNTIMEIMPORTFOUND`
-- Next gate: `REMOVERUNTIMEIMPORT`
+- Published UTC: `2026-09-17T17:57:01.888214+00:00`
+- Run ID: `20260917T175655Z`
+- Step: `GLOBAL31FINALIZE3`
+- Status: `SUCCESS`
+- Exit code: `0`
+- Verdict: `GLOBALVECTORBTQUANTPARITYCOMPLETE`
+- Next gate: `QUANTROADMAPCOMPLETECHECK`
 
 ## Facts
 
+- `BASE_HEAD`: `1c11c973bc91`
 - `DB_WRITE`: `NO`
-- `HEAD`: `1c11c973bc91`
+- `DOCS`: `YES`
+- `FINAL_GAPS`: `0`
+- `HEAD`: `54d2bac530ce`
+- `PARITY`: `YES`
+- `PUSHED`: `YES`
+- `REGRESSIONS`: `YES`
+- `REPO_CLEAN`: `YES`
 - `RESTART`: `NO`
+- `VECTORBT_RUNTIME_IMPORT`: `NO`
