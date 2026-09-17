@@ -1,20 +1,19 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-17T14:20:36.711832+00:00`
-- Run ID: `20260917T142024Z`
-- Step: `IMPLEMENT_COMMIT_RECORDS_SELECTION_INDEXING`
+- Published UTC: `2026-09-17T14:23:22.183120+00:00`
+- Run ID: `20260917T142304Z`
+- Step: `CREATE_IMPLEMENT_COMMIT_RECORDS_VIEWS_BATCH`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `RECORDS_SELECTION_INDEXING_COMMITTED_AND_REMAINING_MAPPED`
-- Next gate: `CREATE_AND_IMPLEMENT_RECORDS_REMAINING_FUNCTIONAL_BATCH`
+- Verdict: `RECORDS_VIEWS_BATCH_COMMITTED_AND_REMAINING_MAPPED`
+- Next gate: `CREATE_AND_IMPLEMENT_NEXT_RECORDS_FUNCTIONAL_BATCH`
 
 ## Facts
 
 - `BRANCH`: `main`
-- `COL_MAPPER`: `YES`
 - `COMMITTED`: `YES`
-- `COMMIT_ID`: `a67e6da5d252`
+- `COMMIT_ID`: `b61c5f166d77`
 - `CORE_RECORDS`: `YES`
 - `DASHBOARD_RESTART`: `NO`
 - `DB_WRITES`: `0`
@@ -22,20 +21,26 @@
 - `DRAWDOWNS`: `YES`
 - `FAILURE`: `NONE`
 - `FIELD_MAPPING`: `YES`
+- `IDX_ARR`: `YES`
+- `ID_ARR`: `YES`
 - `INTERNAL_RC`: `0`
 - `LIFECYCLE`: `YES`
 - `PORTFOLIO`: `YES`
 - `POST_DIRTY_COUNT`: `0`
 - `PUSHED`: `YES`
 - `QUANT`: `YES`
-- `REMAINING_RECORDS_GAPS`: `13`
-- `REMAINING_SAMPLE`: `Records.engine,Records.indexing_func_meta,Records.records_arr,Records.recarray,Records.records_readable,Record`
+- `RECARRAY`: `YES`
+- `RECORDS_ARR`: `YES`
+- `RECORDS_READABLE`: `YES`
+- `REMAINING_RECORDS_GAPS`: `8`
+- `REMAINING_SAMPLE`: `Records.engine,Records.indexing_func_meta,Records.get_field_title,Records.is_sorted,Records.sort,Records.map_a`
 - `RESULT_STORE`: `YES`
 - `RETURNS_BATCH2`: `YES`
 - `RETURNS_CORE`: `YES`
 - `SCOPE_OK`: `YES`
-- `SELECTION_CONTRACTS`: `1`
 - `SELECTION_INDEXING`: `YES`
 - `STAGED_COUNT`: `4`
 - `TRADES`: `YES`
 - `VECTORBT_VERSION`: `1.1.0`
+- `VIEWS`: `YES`
+- `VIEW_CONTRACTS`: `5`
