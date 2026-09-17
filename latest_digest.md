@@ -1,11 +1,11 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-17T16:41:56.963240+00:00`
-- Run ID: `20260917T164154Z`
-- Step: `PORTFOLIOPERF3`
+- Published UTC: `2026-09-17T16:46:01.887639+00:00`
+- Run ID: `20260917T164555Z`
+- Step: `PORTFOLIOPERF4`
 - Status: `FAIL`
-- Exit code: `1`
+- Exit code: `41`
 - Verdict: `PORTFOLIOPERFORMANCEFAILED`
 - Next gate: `FIXPORTFOLIOPERFORMANCE`
 
@@ -13,9 +13,9 @@
 
 - `BASE_HEAD`: `a7633a07d58c`
 - `DB_WRITE`: `NO`
-- `DIRTY_SCOPE`: `NO`
+- `DIRTY_SCOPE`: `YES`
 - `DOCS`: `NO`
-- `GOLDEN`: `NO`
+- `GOLDEN`: `YES`
 - `HEAD`: `UNKNOWN`
 - `NEXT_METHODS`: `UNKNOWN`
 - `PARITY`: `NO`
