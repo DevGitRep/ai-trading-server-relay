@@ -1,17 +1,24 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-17T13:45:44.210270+00:00",
-  "run_id": "20260917T134538Z",
-  "step": "FIX_RECORDS_GOLDEN_COUNT_SEMANTICS",
+  "published_at_utc": "2026-09-17T13:47:38.097375+00:00",
+  "run_id": "20260917T134732Z",
+  "step": "PINPOINT_RECORDS_GOLDEN_FAILURE_2",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "RECORDS_GOLDEN_FIX_BLOCKED",
-  "next_gate": "FIX_ONLY_REPORTED_RECORDS_GOLDEN_FAILURE",
+  "verdict": "RECORDS_GOLDEN_FAILURE_PINPOINTED",
+  "next_gate": "FIX_ONLY_PINPOINTED_RECORDS_GOLDEN_FIXTURE",
   "facts": {
     "ATB_CHANGED": "NO",
+    "CONTEXT": "CTX188:col_mapper_arr,CTX189:col0_count:CTX190:int(FAIL191:len(by_col_0.records_arr)CTX192:),CTX193:col1_count:CTX194:int(",
     "DASHBOARD_RESTART": "NO",
     "DB_WRITES": "0",
-    "FAILURE": "Traceback_(most_recent_call_last):_File_hometransformeratb-thirdpartyvectorbt-reference-testsgolden_",
-    "INTERNAL_RC": "20"
+    "ERROR_MESSAGE": "numpy.ndarray_object_has_no_attribute_records_arr",
+    "ERROR_TYPE": "AttributeError",
+    "FAIL_CODE": "len(by_col_0.records_arr)",
+    "FAIL_LINE": "191",
+    "INTERNAL_RC": "0",
+    "READ_ONLY": "YES",
+    "SCRIPT_RC": "1",
+    "VECTORBT_VERSION": "1.1.0"
   }
 }
