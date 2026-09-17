@@ -1,25 +1,24 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-17T19:47:05.857971+00:00",
-  "run_id": "20260917T194653Z",
-  "step": "SOL1Y1MBENCHTESTCORRECTCLI1",
+  "published_at_utc": "2026-09-17T19:50:10.726384+00:00",
+  "run_id": "20260917T195005Z",
+  "step": "SOL1Y1MCANDIDATEEXACT1",
   "status": "FAIL",
-  "exit_code": 2,
+  "exit_code": 1,
   "verdict": "SOL1Y1MBENCHTESTFAILED",
-  "next_gate": "FIXREALBENCHTESTRUN",
+  "next_gate": "FIXREALBENCHTESTRUNTIME",
   "facts": {
-    "BENCHTEST": "NO",
+    "BENCHTEST": "YES",
     "CANDIDATE_ID": "ICL_LIB_FFD660A2D24D3772",
-    "CANDIDATE_LIMIT": "1",
     "DB_WRITE": "YES",
+    "FAILURE": "NONE",
     "HEAD": "95836ad0df55",
     "PAIR": "SOL_USDT",
     "PERIOD": "12MONTH",
     "REPO_CLEAN": "NO",
     "RESTART": "NO",
-    "RESULT_PERSISTED": "NO",
+    "RESULT": "NO",
     "TIMEFRAME": "1m",
-    "TRADE_LEDGER_CHECKED": "NO",
-    "TRADE_ROWS": "UNKNOWN"
+    "TRADE_ROWS": "0"
   }
 }
