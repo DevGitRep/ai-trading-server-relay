@@ -1,66 +1,35 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-17T11:24:09.135265+00:00`
-- Run ID: `20260917T112238Z`
-- Step: `MAP_REMAINING_SIGNALS_AND_RETURNS_BATCH`
+- Published UTC: `2026-09-17T11:38:21.528814+00:00`
+- Run ID: `20260917T113819Z`
+- Step: `IMPLEMENT_OSCILLATOR_EXTREMA_RETURNS_BATCH2`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `REMAINING_SIGNALS_AND_RETURNS_BATCH_MAPPED`
-- Next gate: `IMPLEMENT_REMAINING_SIGNALS_AND_SECOND_RETURNS_GOLDENS`
+- Verdict: `OSCILLATOR_EXTREMA_RETURNS_BATCH2_BLOCKED`
+- Next gate: `FIX_ONLY_REPORTED_OSCILLATOR_RETURNS_BATCH2_FAILURE`
 
 ## Facts
 
+- `ADAPTER_REGRESSION`: `NO`
 - `ATB_CHANGED`: `NO`
 - `DASHBOARD_RESTART`: `NO`
+- `DATA_ROWS`: `0`
 - `DB_WRITES`: `0`
-- `DIRECTION_COUNTS`: `OSCILLATOR_EXTREMA_LONG:1,OSCILLATOR_EXTREMA_SHORT:1`
-- `FAILURE`: `NONE`
-- `INTERNAL_RC`: `0`
-- `OSCILLATOR_EXTREMA_TOTAL`: `2`
-- `OSC_EXAMPLE`: `PINER::OSCILLATOR_EXTREMA|plot:0:PriceOscillator_Correlation|MEAN_REVERSION::LONG`
-- `OSC_PATTERNS`: `plots=1hlines=0labels=0dir=LONG:1,plots=1hlines=0labels=0dir=SHORT:1`
-- `OSC_RUNTIME`: `ROOT_PLOTS_1:2,VIZ_SHAPES_0:2,VIZ_PLOTS_1:2`
-- `OSC_SOURCE_HINTS`: `PIVOT:2`
-- `READ_ONLY`: `YES`
-- `RETURNS_ALPHA`: `args=self,benchmark_rets,risk_free,engine,wrap_kwargskwonly=defaults=4kwdefaults=0`
-- `RETURNS_ALPHA_PRESENT`: `YES`
-- `RETURNS_BETA`: `args=self,benchmark_rets,engine,wrap_kwargskwonly=defaults=3kwdefaults=0`
-- `RETURNS_BETA_PRESENT`: `YES`
-- `RETURNS_CAPTURE`: `args=self,benchmark_rets,engine,wrap_kwargskwonly=defaults=3kwdefaults=0`
-- `RETURNS_CAPTURE_PRESENT`: `YES`
-- `RETURNS_COMMON_SENSE_RATIO`: `args=self,engine,wrap_kwargskwonly=defaults=2kwdefaults=0`
-- `RETURNS_COMMON_SENSE_RATIO_PRESENT`: `YES`
-- `RETURNS_COND_VALUE_AT_RISK`: `args=self,cutoff,engine,wrap_kwargskwonly=defaults=3kwdefaults=0`
-- `RETURNS_COND_VALUE_AT_RISK_PRESENT`: `YES`
-- `RETURNS_DOWNSIDE_RISK`: `args=self,required_return,engine,wrap_kwargskwonly=defaults=3kwdefaults=0`
-- `RETURNS_DOWNSIDE_RISK_PRESENT`: `YES`
-- `RETURNS_DOWN_CAPTURE`: `args=self,benchmark_rets,engine,wrap_kwargskwonly=defaults=3kwdefaults=0`
-- `RETURNS_DOWN_CAPTURE_PRESENT`: `YES`
-- `RETURNS_INFORMATION_RATIO`: `args=self,benchmark_rets,ddof,engine,wrap_kwargskwonly=defaults=4kwdefaults=0`
-- `RETURNS_INFORMATION_RATIO_PRESENT`: `YES`
-- `RETURNS_NEXT_PRESENT_COUNT`: `17`
-- `RETURNS_OMEGA_RATIO`: `args=self,risk_free,required_return,engine,wrap_kwargskwonly=defaults=4kwdefaults=0`
-- `RETURNS_OMEGA_RATIO_PRESENT`: `YES`
-- `RETURNS_ROLLING_ALPHA`: `args=self,benchmark_rets,window,minp,risk_free,engine,wrap_kwargskwonly=defaults=6kwdefaults=0`
-- `RETURNS_ROLLING_ALPHA_PRESENT`: `YES`
-- `RETURNS_ROLLING_BETA`: `args=self,benchmark_rets,window,minp,engine,wrap_kwargskwonly=defaults=5kwdefaults=0`
-- `RETURNS_ROLLING_BETA_PRESENT`: `YES`
-- `RETURNS_ROLLING_MAX_DRAWDOWN`: `args=self,window,minp,engine,wrap_kwargskwonly=defaults=4kwdefaults=0`
-- `RETURNS_ROLLING_MAX_DRAWDOWN_PRESENT`: `YES`
-- `RETURNS_ROLLING_SHARPE_RATIO`: `args=self,window,minp,risk_free,ddof,engine,wrap_kwargskwonly=defaults=6kwdefaults=0`
-- `RETURNS_ROLLING_SHARPE_RATIO_PRESENT`: `YES`
-- `RETURNS_ROLLING_SORTINO_RATIO`: `args=self,window,minp,required_return,engine,wrap_kwargskwonly=defaults=5kwdefaults=0`
-- `RETURNS_ROLLING_SORTINO_RATIO_PRESENT`: `YES`
-- `RETURNS_TAIL_RATIO`: `args=self,engine,wrap_kwargskwonly=defaults=2kwdefaults=0`
-- `RETURNS_TAIL_RATIO_PRESENT`: `YES`
-- `RETURNS_UP_CAPTURE`: `args=self,benchmark_rets,engine,wrap_kwargskwonly=defaults=3kwdefaults=0`
-- `RETURNS_UP_CAPTURE_PRESENT`: `YES`
-- `RETURNS_VALUE_AT_RISK`: `args=self,cutoff,engine,wrap_kwargskwonly=defaults=3kwdefaults=0`
-- `RETURNS_VALUE_AT_RISK_PRESENT`: `YES`
-- `STATE_EXAMPLE`: `NONE`
-- `STATE_PATTERNS`: `NONE`
-- `STATE_RUNTIME`: `NONE`
-- `STATE_SOURCE_HINTS`: `NONE`
-- `STATE_TRANSITION_TOTAL`: `0`
-- `VECTORBT_VERSION_TARGET`: `1.1.0`
+- `EXTERNAL_GOLDENS_CHANGED`: `NO`
+- `EXTREMA_RULE`: `NONE`
+- `FAILURE`: `PINER_EXTREMA_COMPARISONS_UNRECOGNIZED`
+- `INDICATOR_RECALCULATION`: `NO`
+- `INTERNAL_RC`: `20`
+- `OSC_SAFE`: `0`
+- `OSC_TOTAL`: `0`
+- `OSC_YEAR_EVENTS`: `0`
+- `OSC_YEAR_TRADES`: `0`
+- `QUANT_REGRESSION`: `NO`
+- `RETURNS_BATCH2_METRICS`: `17`
+- `RETURNS_GOLDEN`: `NO`
+- `RETURNS_MATCH`: `NO`
+- `SIGNAL_BRIDGE_REGRESSION`: `NO`
+- `SIGNAL_UNIT`: `NO`
+- `STATE_TRANSITION_SAMPLE`: `0`
+- `YEAR_ROWS`: `0`
