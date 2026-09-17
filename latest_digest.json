@@ -1,19 +1,18 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-17T21:25:56.363944+00:00",
-  "run_id": "20260917T212554Z",
-  "step": "RESOLVEACTIVERESINADAPTER36",
+  "published_at_utc": "2026-09-17T21:27:22.016789+00:00",
+  "run_id": "20260917T212720Z",
+  "step": "RESINEXECUTIONCONTRACT37",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "ACTIVERESINADAPTERRESOLVED",
+  "verdict": "RESINEXECUTIONCONTRACTMAPPED",
   "next_gate": "PATCHPARAMETEROVERRIDEADAPTER",
   "facts": {
-    "ACTIVE_ADAPTER": "_dash / &#x27;tools&#x27; / &#x27;resin_pine_adapter.mjs&#x27;",
-    "BENCHTEST_ADAPTER_EXISTS": "YES",
     "DB_WRITE": "NO",
     "HEAD": "2045f91959b7",
+    "PYTHON_COMPLETE": "YES",
     "REPO_CLEAN": "YES",
-    "RESIN_ADAPTER_EXISTS": "YES",
-    "RESTART": "NO"
+    "RESTART": "NO",
+    "RUNTIME_HITS": "27"
   }
 }
