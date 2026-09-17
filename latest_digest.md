@@ -1,29 +1,38 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-17T08:37:36.253349+00:00`
-- Run ID: `20260917T083734Z`
-- Step: `TRACE_PINER_EVENT_SEMANTICS`
+- Published UTC: `2026-09-17T08:39:00.599516+00:00`
+- Run ID: `20260917T083855Z`
+- Step: `MAP_SELECTED_HYPOTHESIS_EXECUTION_INPUTS`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `PINER_PROVIDER_RETURNS_HYPOTHESIS_BUT_HAS_NO_EVENT_EVALUATOR`
-- Next gate: `IMPLEMENT_THIN_EXPRESSION_TO_EVENT_EVALUATOR_THEN_RUN_REAL_YEAR`
+- Verdict: `SELECTED_HYPOTHESIS_EXECUTION_INPUTS_MAPPED`
+- Next gate: `IMPLEMENT_MINIMAL_SELECTED_EXPRESSION_EVENT_EVALUATOR`
 
 ## Facts
 
 - `ATB_CHANGED`: `NO`
+- `CANDIDATE_ID`: `ICL_SRC_A465DEED5818C8FA`
 - `DASHBOARD_RESTART`: `NO`
 - `DB_WRITES`: `0`
-- `EVENT_EVALUATOR`: `NONE`
-- `EVENT_EVALUATOR_FOUND`: `NO`
-- `EXPRESSIONS_ONLY_PROVIDER`: `YES`
+- `EVIDENCE_SCHEMA`: `piner_contract_count:int,piner_contract_id:str,piner_contract_type:str,piner_interpretation:str,piner_runtime_`
+- `EXPRESSION_SCALARS`: `LONG=PINER::CROSSOVER|plot:0:Fast_SMA|plot:1:Slow_SMA|FOLLOW::LONG,SHORT=PINER::CROSSOVER|plot:0:Fast_SMA|plot`
+- `EXPRESSION_SCHEMA`: `LONG:str,SHORT:str`
 - `FAILURE`: `NONE`
 - `INTERNAL_RC`: `0`
-- `ORCH_ATTACH_CALLS`: `L178:_attach_provider_signal_contract:_attach_provider_signal_contract(outcome,__atb_signal_events,_len(candles)`
-- `ORCH_PINER_EVENT_ASSIGNMENTS`: `L71:_piner_events=_piner_selected.get(events,_{})`
-- `PINER_EVENT_ASSIGNMENTS`: `NONE`
-- `PINER_EVENT_CALLS`: `NONE`
-- `PINER_EXPRESSION_ASSIGNMENTS`: `L144:expressions={}`
-- `PINER_RETURN_FIELDS`: `lane=LANE_BY_TYPE[ctype],expressions=expressions,evidence=evidence,author_label=label,priority=TYPE_PRIORITY[cty`
-- `PINER_SELECTED_FIELDS`: `NONE`
+- `MINIMAL_EVALUATOR_SCOPE`: `USE_EXISTING_RUNTIME_SERIES_PLUS_THIN_EVENT_OPERATOR`
+- `NUMERIC_SERIES_PATHS`: `root.plots[0].values:len500,root.plots[1].values:len500,root.viz.plots[0].values:len500,root.viz.plots[1].valu`
+- `PINER_LABEL`: `CROSSOVER|plot:0:Fast_SMA|plot:1:Slow_SMA|FOLLOW`
+- `PINER_LANE`: `CROSSOVER`
+- `PINER_PRIORITY`: `30`
+- `PINER_PROVIDER`: `piner/0.13.0:signal_contract_v1`
+- `PINER_REASON`: `DETERMINISTIC_EVENTS`
+- `PLOT_LIKE_PATHS`: `root.plots:list,root.plots[0].values:list,root.plots[1].values:list,root.viz.plots:list,root.viz.plots[0].valu`
+- `PREFLIGHT_STATUS`: `BENCHTEST_READY_SHADOW`
+- `RAW_RUNTIME_KEYS`: `kind,resinVersion,plots,strategy,viz`
+- `RAW_RUNTIME_TYPE`: `dict`
 - `READ_ONLY`: `YES`
+- `RUNNER_FOUND`: `YES`
+- `RUNNER_NAME`: `resin`
+- `RUNTIME_HAS_SERIES`: `YES`
+- `SOURCE_MATCHES`: `L4:fast_=_ta.sma(close,_7),L5:slow_=_ta.sma(close,_21),L7:longSignal_=_ta.crossover(fast,_slow),L8:shortSignal`
