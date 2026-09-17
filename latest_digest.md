@@ -1,30 +1,54 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-17T12:02:48.456970+00:00`
-- Run ID: `20260917T120238Z`
-- Step: `DIAGNOSE_RETURNS_BATCH2_MISMATCH`
+- Published UTC: `2026-09-17T12:04:35.964044+00:00`
+- Run ID: `20260917T120434Z`
+- Step: `TRACE_THREE_RETURNS_MISMATCH_FORMULAS`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `RETURNS_BATCH2_MISMATCHES_IDENTIFIED`
-- Next gate: `FIX_ONLY_MISMATCHED_RETURNS_FORMULAS`
+- Verdict: `THREE_RETURNS_MISMATCH_FORMULAS_TRACED`
+- Next gate: `FIX_THREE_RETURNS_FORMULAS_AND_COMPLETE_OSCILLATOR_BATCH2`
 
 ## Facts
 
-- `ALPHA_MAX_ABS`: `0.982716221839`
-- `ALPHA_MAX_REL`: `0.462797655469`
+- `ALPHA_1D_NB_1`: `L530:def_alpha_1d_nb(returns:_tp.Array1d,_benchmark_rets:_tp.Array1d,_ann_factor:_float,_risk_free:_float_=_0.0)_-&gt;_float:`
+- `ALPHA_1D_NB_2`: `L532:if_returns.shape[0]_&lt;_2:`
+- `ALPHA_1D_NB_3`: `L533:return_np.nan`
+- `ALPHA_1D_NB_4`: `L535:adj_returns_=_returns_-_risk_free`
+- `ALPHA_1D_NB_5`: `L536:adj_benchmark_rets_=_benchmark_rets_-_risk_free`
+- `ALPHA_1D_NB_6`: `L537:beta_=_beta_1d_nb(returns,_benchmark_rets)`
+- `ALPHA_1D_NB_7`: `L538:alpha_series_=_adj_returns_-_(beta_*_adj_benchmark_rets)`
+- `ALPHA_1D_NB_8`: `L539:return_(np.nanmean(alpha_series)_+_1)_**_ann_factor_-_1`
+- `ALPHA_1D_NB_LINES`: `8`
+- `ALPHA_NB_1`: `L543:def_alpha_nb(returns:_tp.Array2d,_benchmark_rets:_tp.Array2d,_ann_factor:_float,_risk_free:_float_=_0.0)_-&gt;_tp.Array1d:`
+- `ALPHA_NB_2`: `L545:out_=_np.empty(returns.shape[1],_dtype=np.float64)`
+- `ALPHA_NB_3`: `L546:for_col_in_range(returns.shape[1]):`
+- `ALPHA_NB_4`: `L547:out[col]_=_alpha_1d_nb(returns[:,_col],_benchmark_rets[:,_col],_ann_factor,_risk_free)`
+- `ALPHA_NB_5`: `L548:return_out`
+- `ALPHA_NB_LINES`: `5`
 - `ATB_CHANGED`: `NO`
 - `DASHBOARD_RESTART`: `NO`
 - `DB_WRITES`: `0`
 - `FAILURE`: `NONE`
 - `INTERNAL_RC`: `0`
-- `MATCH_COUNT`: `14`
-- `METRIC_COUNT`: `17`
-- `MISMATCH_COUNT`: `3`
-- `MISMATCH_METRICS`: `ALPHA,ROLLING_ALPHA,ROLLING_MAX_DRAWDOWN`
+- `MAX_DRAWDOWN_1D_NB_1`: `L229:def_max_drawdown_1d_nb(returns:_tp.Array1d)_-&gt;_float:`
+- `MAX_DRAWDOWN_1D_NB_2`: `L231:return_np.min(drawdown_1d_nb(returns))`
+- `MAX_DRAWDOWN_1D_NB_LINES`: `2`
 - `READ_ONLY`: `YES`
-- `ROLLING_ALPHA_MAX_ABS`: `7.35649444997`
-- `ROLLING_ALPHA_MAX_REL`: `0.824747226706`
-- `ROLLING_MAX_DRAWDOWN_MAX_ABS`: `0.02`
-- `ROLLING_MAX_DRAWDOWN_MAX_REL`: `1`
-- `VECTORBT_REFERENCE`: `1.1.0`
+- `ROLLING_ALPHA_NB_1`: `L552:def_rolling_alpha_nb(`
+- `ROLLING_ALPHA_NB_10`: `L563:return_alpha_1d_nb(_returns,__benchmark_rets[i_+_1_-_len(_returns)_:_i_+_1,_col],__ann_factor,__risk_free)`
+- `ROLLING_ALPHA_NB_11`: `L565:return_generic_nb.rolling_apply_nb(returns,_window,_minp,__apply_func_nb,_benchmark_rets,_ann_factor,_risk_free)`
+- `ROLLING_ALPHA_NB_2`: `L553:returns:_tp.Array2d,`
+- `ROLLING_ALPHA_NB_3`: `L554:window:_int,`
+- `ROLLING_ALPHA_NB_4`: `L555:minp:_tp.Optional[int],`
+- `ROLLING_ALPHA_NB_5`: `L556:benchmark_rets:_tp.Array2d,`
+- `ROLLING_ALPHA_NB_6`: `L557:ann_factor:_float,`
+- `ROLLING_ALPHA_NB_7`: `L558:risk_free:_float_=_0.0,`
+- `ROLLING_ALPHA_NB_8`: `L559:)_-&gt;_tp.Array2d:`
+- `ROLLING_ALPHA_NB_9`: `L562:def__apply_func_nb(i,_col,__returns,__benchmark_rets,__ann_factor,__risk_free):`
+- `ROLLING_ALPHA_NB_LINES`: `11`
+- `ROLLING_MAX_DRAWDOWN_NB_1`: `L244:def_rolling_max_drawdown_nb(returns:_tp.Array2d,_window:_int,_minp:_tp.Optional[int])_-&gt;_tp.Array2d:`
+- `ROLLING_MAX_DRAWDOWN_NB_2`: `L247:def__apply_func_nb(i,_col,__returns):`
+- `ROLLING_MAX_DRAWDOWN_NB_3`: `L248:return_max_drawdown_1d_nb(_returns)`
+- `ROLLING_MAX_DRAWDOWN_NB_4`: `L250:return_generic_nb.rolling_apply_nb(returns,_window,_minp,__apply_func_nb)`
+- `ROLLING_MAX_DRAWDOWN_NB_LINES`: `4`
