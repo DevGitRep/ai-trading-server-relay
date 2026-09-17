@@ -1,24 +1,22 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-17T21:31:01.832614+00:00",
-  "run_id": "20260917T213024Z",
-  "step": "PATCHPARAMETEROVERRIDEADAPTER38",
+  "published_at_utc": "2026-09-17T21:32:50.463390+00:00",
+  "run_id": "20260917T213240Z",
+  "step": "PROVEOVERRIDEENDTOEND39",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "PARAMETEROVERRIDEADAPTERCOMPLETE",
-  "next_gate": "PROVEOVERRIDEENDTOEND",
+  "verdict": "PARAMETEROVERRIDEENDTOENDPROVEN",
+  "next_gate": "BUILDLARGESWEEPGRID",
   "facts": {
-    "BASE_HEAD": "2045f91959b7",
-    "COVERAGE": "YES",
     "DB_WRITE": "NO",
-    "DIFF": "YES",
-    "NEW_HEAD": "87d3b519e011",
-    "PATCH": "YES",
-    "PUSHED": "YES",
-    "RECOGNIZED_CANDIDATES": "7699",
-    "RECOGNIZED_INPUTS": "66941",
+    "DEFAULT_EQUALS_EMPTY": "YES",
+    "DEFAULT_RUN": "YES",
+    "EMPTY_RUN": "YES",
+    "HEAD": "87d3b519e011",
+    "OVERRIDE_DIFFERS": "YES",
+    "OVERRIDE_RUN": "YES",
     "REPO_CLEAN": "YES",
-    "RESTART": "NO",
-    "UNIT": "YES"
+    "RESIN_ARTIFACT": "YES",
+    "RESTART": "NO"
   }
 }
