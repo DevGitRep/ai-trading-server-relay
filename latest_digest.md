@@ -1,30 +1,32 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-17T07:21:55.211663+00:00`
-- Run ID: `20260917T072152Z`
-- Step: `CONFIRM_PREFLIGHT_WINDOW_AND_ACTIVE_YEAR_DATA_SEAM`
+- Published UTC: `2026-09-17T07:23:20.408144+00:00`
+- Run ID: `20260917T072318Z`
+- Step: `TRACE_ACTIVE_BENCHTEST_FULL_YEAR_CANDLE_SOURCE`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `PREFLIGHT_WINDOW_AND_ACTIVE_YEAR_DATA_SEAM_CONFIRMED`
-- Next gate: `RUN_REAL_SOL_1M_YEAR_HYPOTHESIS_TO_QUANT_ACCEPTANCE`
+- Verdict: `ACTIVE_BENCHTEST_CANDLE_SOURCE_TRACE_BLOCKED`
+- Next gate: `FIX_ONLY_REPORTED_CANDLE_SOURCE_TRACE_FAILURE`
 
 ## Facts
 
-- `ACTIVE_ONLY`: `YES`
+- `ACTIVE_FILE`: `benchtest`
 - `ATB_CHANGED`: `NO`
-- `BENCH_FILES`: `benchtest_resin_adapter.mjs,benchtest.before_v2_evaluate_lock_fix_20260906T125603Z,benchtest,benchtest-re`
+- `CANDLE_ASSIGNMENTS`: `NONE`
+- `CANDLE_SOURCE_CALLS`: `NONE`
+- `CANDLE_VAR`: `candles`
 - `DASHBOARD_RESTART`: `NO`
 - `DB_WRITES`: `0`
-- `FAILURE`: `NONE`
-- `INTERNAL_RC`: `0`
-- `PREFLIGHT_CANDLES`: `500`
-- `PREFLIGHT_FIRST`: `1785426000000`
-- `PREFLIGHT_IS_500`: `YES`
-- `PREFLIGHT_LAST`: `1785455940000`
+- `FAILURE`: `CANDLE_VARIABLE_ASSIGNMENT_NOT_FOUND`
+- `FULL_YEAR_DATA_SOURCE`: `NONE`
+- `FULL_YEAR_SOURCE_CONFIRMED`: `NO`
+- `INTERNAL_RC`: `20`
+- `MARKET_HINTS`: `NONE`
+- `OHLC_CALL`: `_v2_ohlc(_candles_)`
+- `OHLC_SCOPE`: `_v2_signal_flip`
+- `READY_FOR_REAL_RUN`: `NO`
 - `READ_ONLY`: `YES`
-- `YEAR_CALL`: `benchtest:_v2_ohlc(_candles_)`
-- `YEAR_CALLS`: `benchtest.before_v2_evaluate_lock_fix_20260906T125603Z:common_fields(_row,_meta,_),benchtest.before_v2_ev`
-- `YEAR_LOADER`: `benchtest:_v2_ohlc(candles)`
-- `YEAR_LOADERS`: `benchtest.before_v2_evaluate_lock_fix_20260906T125603Z:load_market_data(),benchtest.before_v2_evaluate_lo`
-- `YEAR_SEAM_READY`: `YES`
+- `SOURCE_FUNCTIONS`: `NONE`
+- `SOURCE_IO_HINTS`: `NONE`
+- `SOURCE_SIGNATURES`: `NONE`
