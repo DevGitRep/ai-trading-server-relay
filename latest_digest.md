@@ -1,35 +1,27 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-16T23:25:24.446123+00:00`
-- Run ID: `20260916T232522Z`
-- Step: `IDENTIFY_EXACT_PREFLIGHT_SIGNAL_CONTRACT_PATCH_POINTS`
+- Published UTC: `2026-09-17T06:08:20.439724+00:00`
+- Run ID: `20260917T060818Z`
+- Step: `PATCH_PREFLIGHT_V2_SIGNAL_BARS_DIRS_AND_ADD_REGRESSION`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `PREFLIGHT_SIGNAL_CONTRACT_PATCH_POINTS_IDENTIFIED`
-- Next gate: `PATCH_PREFLIGHT_V2_SIGNAL_BARS_DIRS_AND_ADD_REGRESSION`
+- Verdict: `PREFLIGHT_V2_MACHINE_SIGNAL_CONTRACT_BLOCKED`
+- Next gate: `FIX_ONLY_REPORTED_SIGNAL_CONTRACT_FAILURE`
 
 ## Facts
 
-- `ADAPTER_DIRECTION_VARS`: `NONE`
-- `ADAPTER_FUNCTIONS`: `walk(value),name(node),arg(node,index,keyword),literal(node),snippet(source,node),direction(label),boolean(node,dec`
-- `ADAPTER_RETURNS`: `NONE`
-- `ANALYZE_ASSIGNMENTS`: `_piner_selected-_select_piner_candidate,source-replace,_piner_events-get,parsed-parser,runtime-runner,candidates-ru`
-- `ANALYZE_CALLS`: `_select_piner_candidate,runtime_candidates,fallback_candidate,runtime_class`
-- `ANALYZE_EVENT_VARS`: `_piner_events`
-- `ANALYZE_RETURNS`: `outcome,DICT:statusparse_reasonattemptsexamined_lanesfallback_consideredselectedlong_countshort_countreason,success`
-- `ANALYZE_SIGNATURE`: `analyze(source,candles,parser,runner,validator,recognizer)`
-- `ATB_CHANGED`: `NO`
+- `CONTRACT_CREATED`: `YES`
+- `CONTRACT_REGRESSION`: `NO`
 - `DASHBOARD_RESTART`: `NO`
 - `DB_WRITES`: `0`
-- `FAILURE`: `NONE`
-- `INTERNAL_RC`: `0`
-- `PATCH_ADAPTER`: `adapter.py:walk(value)`
-- `PATCH_PERSISTENCE`: `persistence.py:persist_v2_result(item,result)`
-- `PATCH_ROUTE`: `orchestrator.analyze&gt;adapter&gt;persistence`
-- `PATCH_SOURCE`: `orchestrator.py:analyze:_piner_events`
-- `PERSIST_FUNCTIONS`: `persist_v2_result`
-- `PERSIST_KEYS`: `NONE`
-- `PERSIST_SIGNATURES`: `persist_v2_result(item,result)`
-- `PROVIDER_RETURN_KEYS`: `piner_provider.py:select_piner_candidate=events,fallback.py:oracle=events`
-- `PROVIDER_SIGNAL_VARS`: `piner_provider.py:_sort_key:longs,piner_provider.py:_sort_key:shorts,piner_provider.py:select_piner_candidate:longs`
+- `DIRECTION_ENCODING`: `LONG1_SHORT-1`
+- `FAILURE`: `SIGNAL_CONTRACT_REGRESSION_FAILED`
+- `HYBRID_REGRESSION`: `NO`
+- `INTERNAL_RC`: `20`
+- `ORCHESTRATOR_PATCHED`: `YES`
+- `PERSISTENCE_PASSTHROUGH`: `YES`
+- `PERSISTENCE_PATCHED`: `YES`
+- `PREFLIGHT_DECISION_LOGIC_CHANGED`: `NO`
+- `REAL_DRYRUN_SMOKE`: `NO`
+- `SIGNAL_BARS_DIRS_PRESENT`: `NO`
