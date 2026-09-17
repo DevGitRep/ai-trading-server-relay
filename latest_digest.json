@@ -1,18 +1,24 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-17T21:27:22.016789+00:00",
-  "run_id": "20260917T212720Z",
-  "step": "RESINEXECUTIONCONTRACT37",
+  "published_at_utc": "2026-09-17T21:31:01.832614+00:00",
+  "run_id": "20260917T213024Z",
+  "step": "PATCHPARAMETEROVERRIDEADAPTER38",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "RESINEXECUTIONCONTRACTMAPPED",
-  "next_gate": "PATCHPARAMETEROVERRIDEADAPTER",
+  "verdict": "PARAMETEROVERRIDEADAPTERCOMPLETE",
+  "next_gate": "PROVEOVERRIDEENDTOEND",
   "facts": {
+    "BASE_HEAD": "2045f91959b7",
+    "COVERAGE": "YES",
     "DB_WRITE": "NO",
-    "HEAD": "2045f91959b7",
-    "PYTHON_COMPLETE": "YES",
+    "DIFF": "YES",
+    "NEW_HEAD": "87d3b519e011",
+    "PATCH": "YES",
+    "PUSHED": "YES",
+    "RECOGNIZED_CANDIDATES": "7699",
+    "RECOGNIZED_INPUTS": "66941",
     "REPO_CLEAN": "YES",
     "RESTART": "NO",
-    "RUNTIME_HITS": "27"
+    "UNIT": "YES"
   }
 }
