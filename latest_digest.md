@@ -1,19 +1,24 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-17T21:45:18.621404+00:00`
-- Run ID: `20260917T214516Z`
-- Step: `DIAGNOSEPILOT47FAILURE48`
+- Published UTC: `2026-09-17T21:47:38.092922+00:00`
+- Run ID: `20260917T214731Z`
+- Step: `PROVEBENCHTESTRUNTIME50`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `PILOT47FAILUREIDENTIFIED`
-- Next gate: `FIXLARGESWEEPPILOT`
+- Verdict: `BENCHTESTRUNTIMEPROVEN`
+- Next gate: `RUNLARGESWEEPPILOTINBENCHTESTRUNTIME`
 
 ## Facts
 
+- `BARS`: `525600`
+- `CLOSE_COUNT`: `525600`
 - `DB_WRITE`: `NO`
-- `ERROR`: `ModuleNotFoundError: No module named &#x27;pandas&#x27;`
 - `HEAD`: `87d3b519e011`
-- `LAST_LINE`: `ModuleNotFoundError: No module named &#x27;pandas&#x27;`
+- `LOAD_MARKET_DATA`: `YES`
+- `OPEN_COUNT`: `525600`
+- `PANDAS`: `YES:3.0.5`
+- `PROBE_PASS`: `YES`
+- `PYARROW`: `YES:25.0.1`
 - `REPO_CLEAN`: `YES`
 - `RESTART`: `NO`
