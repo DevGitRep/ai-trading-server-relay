@@ -1,46 +1,33 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-17T14:23:22.183120+00:00`
-- Run ID: `20260917T142304Z`
-- Step: `CREATE_IMPLEMENT_COMMIT_RECORDS_VIEWS_BATCH`
+- Published UTC: `2026-09-17T14:25:38.055623+00:00`
+- Run ID: `20260917T142532Z`
+- Step: `COMPLETE_REMAINING_RECORDS_FUNCTIONAL_PARITY`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `RECORDS_VIEWS_BATCH_COMMITTED_AND_REMAINING_MAPPED`
-- Next gate: `CREATE_AND_IMPLEMENT_NEXT_RECORDS_FUNCTIONAL_BATCH`
+- Verdict: `RECORDS_FINAL_FUNCTIONAL_BATCH_BLOCKED`
+- Next gate: `FIX_ONLY_REPORTED_RECORDS_FINAL_FAILURE`
 
 ## Facts
 
 - `BRANCH`: `main`
-- `COMMITTED`: `YES`
-- `COMMIT_ID`: `b61c5f166d77`
-- `CORE_RECORDS`: `YES`
+- `COMMITTED`: `NO`
+- `CORE_RECORDS`: `NO`
 - `DASHBOARD_RESTART`: `NO`
 - `DB_WRITES`: `0`
-- `DOCS`: `YES`
-- `DRAWDOWNS`: `YES`
-- `FAILURE`: `NONE`
-- `FIELD_MAPPING`: `YES`
-- `IDX_ARR`: `YES`
-- `ID_ARR`: `YES`
-- `INTERNAL_RC`: `0`
-- `LIFECYCLE`: `YES`
-- `PORTFOLIO`: `YES`
-- `POST_DIRTY_COUNT`: `0`
-- `PUSHED`: `YES`
-- `QUANT`: `YES`
-- `RECARRAY`: `YES`
-- `RECORDS_ARR`: `YES`
-- `RECORDS_READABLE`: `YES`
-- `REMAINING_RECORDS_GAPS`: `8`
-- `REMAINING_SAMPLE`: `Records.engine,Records.indexing_func_meta,Records.get_field_title,Records.is_sorted,Records.sort,Records.map_a`
-- `RESULT_STORE`: `YES`
-- `RETURNS_BATCH2`: `YES`
-- `RETURNS_CORE`: `YES`
-- `SCOPE_OK`: `YES`
-- `SELECTION_INDEXING`: `YES`
-- `STAGED_COUNT`: `4`
-- `TRADES`: `YES`
-- `VECTORBT_VERSION`: `1.1.0`
-- `VIEWS`: `YES`
-- `VIEW_CONTRACTS`: `5`
+- `DRAWDOWNS`: `NO`
+- `FAILURE`: `FINAL_GOLDEN_FAILED___File___home_transformer_atb-thirdparty_vectorbt-reference-tests_golden_records_functional_final_v1.py_,_line_373,_in__`
+- `FIELD_MAPPING`: `NO`
+- `FUNCTIONAL`: `NO`
+- `INTERNAL_RC`: `20`
+- `LIFECYCLE`: `NO`
+- `PORTFOLIO`: `NO`
+- `PUSHED`: `NO`
+- `QUANT`: `NO`
+- `RESULT_STORE`: `NO`
+- `RETURNS_BATCH2`: `NO`
+- `RETURNS_CORE`: `NO`
+- `SELECTION_INDEXING`: `NO`
+- `TRADES`: `NO`
+- `VIEWS`: `NO`
