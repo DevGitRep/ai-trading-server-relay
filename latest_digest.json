@@ -1,21 +1,29 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-17T15:28:49.775387+00:00",
-  "run_id": "20260917T152839Z",
-  "step": "FIX_PORTFOLIO_EXPOSURE_FORMULAS",
+  "published_at_utc": "2026-09-17T15:34:48.329200+00:00",
+  "run_id": "20260917T153442Z",
+  "step": "IMPLEMENT_VECTORBT_PORTFOLIO_PERFORMANCE",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "PORTFOLIO_EXPOSURE_FORMULAS_BLOCKED",
-  "next_gate": "FIX_ONLY_REPORTED_EXPOSURE_FAILURE",
+  "verdict": "PORTFOLIO_PERFORMANCE_BATCH_BLOCKED",
+  "next_gate": "FIX_ONLY_REPORTED_VECTORBT_PARITY_FAILURE",
   "facts": {
     "BRANCH": "main",
     "COMMITTED": "NO",
+    "CORE": "NO",
     "DASHBOARD_RESTART": "NO",
     "DB_WRITES": "0",
-    "FAILURE": "REFERENCE_FORMULA_CLASSIFICATION_FAILED_Traceback_(most_recent_call_last):___File__PATH_line_267,_in_&lt;module&gt;_",
-    "FORMULAS": "NO",
+    "DRAWDOWNS": "NO",
+    "FAILURE": "VECTORBT_PARITY_FAILED_Traceback_(most_recent_call_last):___File___home_transformer_freqtrade-bot_user_da",
     "INTERNAL_RC": "20",
+    "LIFECYCLE": "NO",
+    "PARITY": "NO",
     "PUSHED": "NO",
-    "TESTS": "NO"
+    "QUANT": "NO",
+    "RECORDS": "NO",
+    "RESULT_STORE": "NO",
+    "RETURNS_BATCH2": "NO",
+    "RETURNS_CORE": "NO",
+    "TRADES": "NO"
   }
 }
