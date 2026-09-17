@@ -1,24 +1,22 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-17T17:27:11.989312+00:00",
-  "run_id": "20260917T172702Z",
-  "step": "PORTFOLIOFINAL2",
+  "published_at_utc": "2026-09-17T17:28:30.020459+00:00",
+  "run_id": "20260917T172821Z",
+  "step": "PORTFOLIOLASTGAP1",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "PORTFOLIOSURFACECOMMITTED",
-  "next_gate": "CONTINUEAFTERPORTFOLIO",
+  "verdict": "LASTPORTFOLIOGAPMAPPED",
+  "next_gate": "IMPLEMENTLASTPORTFOLIOGAP",
   "facts": {
-    "BASE_HEAD": "d250109b29e5",
     "DB_WRITE": "NO",
-    "DOCS": "YES",
+    "DEPENDENCIES": "NONE",
     "HEAD": "7a8bb7d1f9d1",
-    "PARITY": "YES",
-    "PATCHED": "YES",
-    "PUSHED": "YES",
-    "REGRESSIONS": "YES",
+    "METHOD": "trades",
+    "NATIVE_HITS": "[REDACTED_EMAIL],[REDACTED_EMAIL],[REDACTED_EMAIL],[REDACTED_EMAIL],[REDACTED_EMAIL],[REDACTED_EMAIL],[REDACTED_EMAIL],run_standardized_tra",
     "REMAINING_COUNT": "1",
+    "REPORT": "portfolio_last_functional_gap_v1.json",
     "REPO_CLEAN": "YES",
     "RESTART": "NO",
-    "VECTORBT_IMPORT": "NO"
+    "SIGNATURE": "(*args,_**kwargs)_-&gt;_Any"
   }
 }
