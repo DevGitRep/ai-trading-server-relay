@@ -1,37 +1,32 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-17T06:45:02.667512+00:00`
-- Run ID: `20260917T064255Z`
-- Step: `BUILD_FULL_YEAR_SIGNAL_HYPOTHESIS_EVALUATION_BRIDGE`
+- Published UTC: `2026-09-17T06:48:39.910569+00:00`
+- Run ID: `20260917T064837Z`
+- Step: `RESOLVE_REAL_FULL_YEAR_RUNTIME_AND_DATA_SEAMS`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `ATB_FULL_YEAR_HYPOTHESIS_BRIDGE_READY`
-- Next gate: `WIRE_SELECTED_PREFLIGHT_HYPOTHESIS_TO_EXISTING_RUNNER_AND_RUN_REAL_SOL_1M_YEAR_ACCEPTANCE`
+- Verdict: `REAL_FULL_YEAR_EXECUTION_SEAM_RESOLUTION_BLOCKED`
+- Next gate: `FIX_ONLY_REPORTED_EXECUTION_SEAM_RESOLUTION_FAILURE`
 
 ## Facts
 
-- `ADAPTER_REGRESSION`: `YES`
-- `BRIDGE_OWNS_HYPOTHESIS_SELECTION`: `NO`
-- `BRIDGE_OWNS_PINE_LOGIC`: `NO`
-- `BRIDGE_OWNS_SIGNAL_CLEANING`: `NO`
-- `BRIDGE_REGRESSION`: `YES`
-- `CREATED`: `YES`
+- `ARCHITECTURE_REDISCOVERY`: `NO`
+- `ATB_CHANGED`: `NO`
 - `DASHBOARD_RESTART`: `NO`
 - `DB_WRITES`: `0`
-- `EVALUATOR_SAW_FULL_YEAR`: `YES`
-- `FAILURE`: `NONE`
-- `FULL_YEAR_BARS`: `525600`
-- `HYBRID_REGRESSION`: `YES`
-- `HYPOTHESIS_IDENTITY_PRESERVED`: `YES`
-- `INTERNAL_RC`: `0`
-- `LATE_SIGNAL_BAR`: `500000`
-- `LATE_SIGNAL_PASSED`: `YES`
-- `QUANT_ACCEPTED`: `YES`
-- `QUANT_REGRESSION`: `YES`
-- `QUANT_TRADES`: `3`
-- `REAL_SOL_YEAR_RUN`: `NO`
-- `RUNNER_DEPENDENCY_AVAILABLE`: `YES`
-- `SELECTED_HYPOTHESIS_AVAILABLE`: `YES`
-- `SOURCE_CODE_COPIED`: `NO`
-- `VECTORBT_IMPORTED_BY_ATB`: `NO`
+- `EVENT_CALLS`: `_piner_selected.get(events,_),len(_piner_events.get(LONG,_[])),len(_piner_events.get(SHORT,_[])),outcome.update(status`
+- `EXECUTION_SEAM`: `NONE`
+- `FAILURE`: `[Errno_2]_No_such_file_or_directory:_rg`
+- `INTERNAL_RC`: `20`
+- `PINER_SIGNATURES`: `select_piner_candidate(source,candles)`
+- `READY_TO_EXECUTE`: `NO`
+- `RUNNER_CALLS`: `runner(source,_candles),check(source,_candles,_item,_runner=runner)`
+- `RUNTIME_SIGNATURES`: `runtime_candidates(result,candles),validate_runtime(source,candles,candidate,runner)`
+- `SELECTED_CALLS`: `_piner_selected.get(events,_)`
+- `SELECT_ARGS`: `source,candles`
+- `SELECT_ASSIGNMENT`: `_piner_selected_=__select_piner_candidate(source,_candles)`
+- `SELECT_CALL`: `_select_piner_candidate`
+- `YEAR_DATA_REFS`: `NONE`
+- `YEAR_DATA_SEAM`: `NONE`
+- `YEAR_LOADER_REFS`: `NONE`
