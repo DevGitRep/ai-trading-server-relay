@@ -1,23 +1,33 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-17T17:10:54.050419+00:00`
-- Run ID: `20260917T171051Z`
-- Step: `PORTFOLIOSURFACEDIAG1`
+- Published UTC: `2026-09-17T17:15:41.259731+00:00`
+- Run ID: `20260917T171539Z`
+- Step: `PORTFOLIOFIVE1`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `PORTFOLIOSURFACEDIAGNOSTICCOMPLETE`
-- Next gate: `FIXFAILINGPORTFOLIOCONTRACTS`
+- Verdict: `FIVECONTRACTSRESOLVED`
+- Next gate: `PATCHFIVEPORTFOLIOCONTRACTS`
 
 ## Facts
 
+- `ANNUAL_DEPS`: `get_returns_acc`
+- `ANNUAL_FAIL`: `grouped:ERROR:ModuleNotFoundError:No module named &#x27;pandas&#x27;;ungrouped:ERROR:ModuleNotFoundError:No module named &#x27;pandas&#x27;`
+- `ANNUAL_NATIVE`: `[REDACTED_EMAIL],[REDACTED_EMAIL],[REDACTED_EMAIL],[REDACTED_EMAIL],[REDACTED_EMAIL]`
+- `DAILY_DEPS`: `get_returns_acc`
+- `DAILY_FAIL`: `grouped:ERROR:ModuleNotFoundError:No module named &#x27;pandas&#x27;;ungrouped:ERROR:ModuleNotFoundError:No module named &#x27;pandas&#x27;`
+- `DAILY_NATIVE`: `[REDACTED_EMAIL],[REDACTED_EMAIL],[REDACTED_EMAIL],[REDACTED_EMAIL],[REDACTED_EMAIL],[REDACTED_EMAIL],[REDACTED_EMAIL],dai`
 - `DB_WRITE`: `NO`
-- `FAILED_CHECKS`: `10`
-- `FAILED_LABELS`: `ungrouped:drawdown,ungrouped:daily_returns,ungrouped:annual_returns,ungrouped:deflated_sharpe_ratio,ungrouped:returns_stats,grouped:drawdown,grouped:daily_returns,grouped:annual_returns,grouped:deflated_sharpe_ratio,grou`
-- `FAILED_METHODS`: `annual_returns,daily_returns,deflated_sharpe_ratio,drawdown,returns_stats`
-- `GOLDEN`: `YES`
+- `DRAWDOWN_DEPS`: `get_returns_acc`
+- `DRAWDOWN_FAIL`: `grouped:VALUE:-9.150000000002212e-05&gt;0.0;ungrouped:VALUE:-9.999999999998899e-05&gt;0.0`
+- `DRAWDOWN_NATIVE`: `[REDACTED_EMAIL],[REDACTED_EMAIL],[REDACTED_EMAIL],[REDACTED_EMAIL],[REDACTED_EMAIL],[REDACTED_EMAIL]`
+- `DSR_DEPS`: `get_returns_acc`
+- `DSR_FAIL`: `grouped:ERROR:ModuleNotFoundError:No module named &#x27;pandas&#x27;;ungrouped:ERROR:ModuleNotFoundError:No module named &#x27;pandas&#x27;`
+- `DSR_NATIVE`: `[REDACTED_EMAIL],[REDACTED_EMAIL],[REDACTED_EMAIL]`
+- `FAILED_METHODS`: `drawdown,daily_returns,annual_returns,deflated_sharpe_ratio,returns_stats`
 - `HEAD`: `d250109b29e5`
-- `PASSED_CHECKS`: `24`
-- `REPORT`: `portfolio_surface_failure_diagnostic_v1.json`
+- `REPORT`: `portfolio_five_contract_resolution_v1.json`
 - `RESTART`: `NO`
-- `TOTAL_CHECKS`: `34`
+- `STATS_DEPS`: `get_returns_acc`
+- `STATS_FAIL`: `grouped:ERROR:ModuleNotFoundError:No module named &#x27;pandas&#x27;;ungrouped:ERROR:ModuleNotFoundError:No module named &#x27;pandas&#x27;`
+- `STATS_NATIVE`: `[REDACTED_EMAIL],[REDACTED_EMAIL],[REDACTED_EMAIL],[REDACTED_EMAIL],[REDACTED_EMAIL],[REDACTED_EMAIL],[REDACTED_EMAIL],portfolio_stats@stats`
