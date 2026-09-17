@@ -1,24 +1,15 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-17T17:52:07.834480+00:00",
-  "run_id": "20260917T175158Z",
-  "step": "GLOBAL31FIX1",
+  "published_at_utc": "2026-09-17T17:55:09.485063+00:00",
+  "run_id": "20260917T175506Z",
+  "step": "GLOBAL31FINISH2",
   "status": "FAIL",
-  "exit_code": 1,
-  "verdict": "GLOBAL31FIXFAILED",
-  "next_gate": "FIXREMAININGGLOBAL31",
+  "exit_code": 45,
+  "verdict": "VECTORBTRUNTIMEIMPORTFOUND",
+  "next_gate": "REMOVERUNTIMEIMPORT",
   "facts": {
-    "BASE_HEAD": "1c11c973bc91",
     "DB_WRITE": "NO",
-    "DOCS": "NO",
-    "FINAL_GAPS": "UNKNOWN",
-    "GOLDEN": "YES",
-    "HEAD": "UNKNOWN",
-    "PARITY": "NO",
-    "PATCHED": "YES",
-    "PUSHED": "NO",
-    "REGRESSIONS": "NO",
-    "REPO_CLEAN": "NO",
+    "HEAD": "1c11c973bc91",
     "RESTART": "NO"
   }
 }
