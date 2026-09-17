@@ -1,26 +1,19 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-17T21:43:18.585035+00:00`
-- Run ID: `20260917T214316Z`
-- Step: `REUSEBENCHTESTLOADERINPILOT47`
-- Status: `FAIL`
-- Exit code: `1`
-- Verdict: `LARGESWEEPPILOTFAILED`
+- Published UTC: `2026-09-17T21:45:18.621404+00:00`
+- Run ID: `20260917T214516Z`
+- Step: `DIAGNOSEPILOT47FAILURE48`
+- Status: `SUCCESS`
+- Exit code: `0`
+- Verdict: `PILOT47FAILUREIDENTIFIED`
 - Next gate: `FIXLARGESWEEPPILOT`
 
 ## Facts
 
-- `CANDIDATE`: `UNKNOWN`
-- `CHANGED_SERIES_MAX`: `UNKNOWN`
-- `CONFIGS`: `UNKNOWN`
 - `DB_WRITE`: `NO`
-- `DISTINCT_BEHAVIOR`: `UNKNOWN`
+- `ERROR`: `ModuleNotFoundError: No module named &#x27;pandas&#x27;`
 - `HEAD`: `87d3b519e011`
-- `NUMERIC_INPUTS`: `UNKNOWN`
-- `OVERRIDES_APPLIED`: `UNKNOWN`
-- `OVERRIDE_CONFIGS_CHANGED`: `UNKNOWN`
-- `PILOT_BARS`: `UNKNOWN`
+- `LAST_LINE`: `ModuleNotFoundError: No module named &#x27;pandas&#x27;`
 - `REPO_CLEAN`: `YES`
 - `RESTART`: `NO`
-- `TOTAL_BARS`: `UNKNOWN`
