@@ -1,29 +1,29 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-17T16:46:01.887639+00:00`
-- Run ID: `20260917T164555Z`
-- Step: `PORTFOLIOPERF4`
-- Status: `FAIL`
-- Exit code: `41`
-- Verdict: `PORTFOLIOPERFORMANCEFAILED`
-- Next gate: `FIXPORTFOLIOPERFORMANCE`
+- Published UTC: `2026-09-17T16:47:59.485108+00:00`
+- Run ID: `20260917T164745Z`
+- Step: `PORTFOLIOPERF5`
+- Status: `SUCCESS`
+- Exit code: `0`
+- Verdict: `PORTFOLIOPERFORMANCECOMMITTED`
+- Next gate: `IMPLEMENTNEXTFUNCTIONALPORTFOLIOGAPS`
 
 ## Facts
 
 - `BASE_HEAD`: `a7633a07d58c`
 - `DB_WRITE`: `NO`
 - `DIRTY_SCOPE`: `YES`
-- `DOCS`: `NO`
+- `DOCS`: `YES`
 - `GOLDEN`: `YES`
-- `HEAD`: `UNKNOWN`
-- `NEXT_METHODS`: `UNKNOWN`
-- `PARITY`: `NO`
-- `PUSHED`: `NO`
-- `REGRESSIONS`: `NO`
-- `REMAINING_COUNT`: `UNKNOWN`
-- `REPO_CLEAN`: `NO`
+- `HEAD`: `d250109b29e5`
+- `NEXT_METHODS`: `annual_returns,asset_returns,benchmark_rets,daily_returns,deflated_sharpe_ratio,drawdown,drawdowns,entry_trades,exit_trades,final_value`
+- `PARITY`: `YES`
+- `PUSHED`: `YES`
+- `REGRESSIONS`: `YES`
+- `REMAINING_COUNT`: `18`
+- `REPO_CLEAN`: `YES`
 - `RESTART`: `NO`
-- `SHORT_PARITY`: `NO`
-- `TEST_RUNNER`: `UNKNOWN`
-- `VECTORBT_IMPORT`: `UNKNOWN`
+- `SHORT_PARITY`: `YES`
+- `TEST_RUNNER`: `YES`
+- `VECTORBT_IMPORT`: `NO`
