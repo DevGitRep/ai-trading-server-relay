@@ -1,30 +1,31 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-17T15:18:58.725967+00:00`
-- Run ID: `20260917T151856Z`
-- Step: `PINPOINT_PORTFOLIO_PERFORMANCE_NATIVE_FAILURE`
+- Published UTC: `2026-09-17T15:22:01.571451+00:00`
+- Run ID: `20260917T152150Z`
+- Step: `IMPLEMENT_PORTFOLIO_PERFORMANCE_BENCHMARK_EXPOSURE`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `PORTFOLIO_PERFORMANCE_FAILURE_PINPOINTED`
-- Next gate: `FIX_IMPLEMENT_TEST_COMMIT_PORTFOLIO_PERFORMANCE`
+- Verdict: `PORTFOLIO_PERFORMANCE_BATCH_BLOCKED`
+- Next gate: `FIX_ONLY_REPORTED_PORTFOLIO_PERFORMANCE_FAILURE`
 
 ## Facts
 
-- `ATB_CHANGED`: `NO`
 - `BRANCH`: `main`
+- `COMMITTED`: `NO`
 - `DASHBOARD_RESTART`: `NO`
 - `DB_WRITES`: `0`
-- `ERROR_MESSAGE`: `UNKNOWN`
-- `ERROR_TYPE`: `UNKNOWN`
-- `FAILURE`: `NONE`
-- `FAIL_FILE`: `UNKNOWN`
-- `FAIL_LINE`: `0`
-- `GOLDEN_CONTRACTS`: `benchmark_returns,benchmark_value,gross_exposure,net_exposure,returns,total_profit`
-- `INTERNAL_RC`: `0`
-- `NATIVE_FUNCTIONS`: `_portfolio_close_2d,_portfolio_restore_shape,_signal,asset_flow,asset_value,assets,cash,cash_flow,si`
-- `READ_ONLY`: `YES`
-- `REPO_DIRTY_COUNT`: `0`
-- `SOURCE_LINE`: `UNKNOWN`
-- `TEST_RC`: `99`
-- `TEST_STATE`: `ROLLED_BACK`
+- `DRAWDOWNS`: `NO`
+- `FAILURE`: `FORMULA_INFERENCE_FAILED`
+- `INTERNAL_RC`: `20`
+- `LIFECYCLE`: `NO`
+- `PERFORMANCE`: `NO`
+- `PORTFOLIO_STATS`: `NO`
+- `PUSHED`: `NO`
+- `QUANT`: `NO`
+- `RECORDS`: `NO`
+- `RESULT_STORE`: `NO`
+- `RETURNS_BATCH2`: `NO`
+- `RETURNS_CORE`: `NO`
+- `STATE`: `NO`
+- `TRADES`: `NO`
