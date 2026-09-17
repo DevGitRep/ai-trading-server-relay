@@ -1,16 +1,25 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-17T19:01:49.217821+00:00",
-  "run_id": "20260917T190147Z",
-  "step": "BENCHTESTCALLCHAIN1",
+  "published_at_utc": "2026-09-17T19:04:23.718013+00:00",
+  "run_id": "20260917T190417Z",
+  "step": "BENCHTESTTRACKEDENTRYPOINT2",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "BENCHTESTCALLCHAININSPECTED",
-  "next_gate": "PATCHTRACKEDBENCHTESTENTRYPOINT",
+  "verdict": "BENCHTESTREQUIREDQUANTCAPABILITIESCOMPLETE",
+  "next_gate": "RUNSOL1Y1MBENCHTEST",
   "facts": {
+    "BASE_HEAD": "54d2bac530ce",
     "DB_WRITE": "NO",
-    "HEAD": "54d2bac530ce",
-    "REPO_CLEAN": "NO",
-    "RESTART": "NO"
+    "HEAD": "191c84329240",
+    "PUSHED": "YES",
+    "REGRESSIONS": "YES",
+    "REPO_CLEAN": "YES",
+    "RESTART": "NO",
+    "RUNTIME_RESTORED": "YES",
+    "SIGNAL_PROVENANCE": "YES",
+    "TIMEFRAME_SETTINGS": "YES",
+    "TOP_N": "YES",
+    "TRACKED_ENTRYPOINT": "YES",
+    "TRADE_CHART_EVIDENCE": "YES"
   }
 }
