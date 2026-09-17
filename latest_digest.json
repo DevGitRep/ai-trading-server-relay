@@ -1,19 +1,19 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-17T21:40:43.734066+00:00",
-  "run_id": "20260917T214041Z",
-  "step": "INSPECTLOADMARKETDATA45",
+  "published_at_utc": "2026-09-17T21:42:20.384717+00:00",
+  "run_id": "20260917T214218Z",
+  "step": "EXTRACTLOADMARKETDATASHAPE46",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "LOADMARKETDATACONTRACTMAPPED",
+  "verdict": "LOADMARKETDATASHAPEEXACT",
   "next_gate": "REUSEBENCHTESTLOADERINPILOT",
   "facts": {
-    "CALLERS": "2",
+    "CALLER1": "execute|1053|load_market_data()",
+    "CALLER2": "main|1384|load_market_data()",
     "DB_WRITE": "NO",
     "HEAD": "87d3b519e011",
     "REPO_CLEAN": "YES",
     "RESTART": "NO",
-    "RETURNS": "1",
-    "SIGNATURE": ""
+    "RETURN": "(meta, candles, open_, close)"
   }
 }
