@@ -1,35 +1,28 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-17T08:35:30.556998+00:00`
-- Run ID: `20260917T083525Z`
-- Step: `DIAGNOSE_READY_SIGNAL_ORIGIN`
+- Published UTC: `2026-09-17T08:36:30.052351+00:00`
+- Run ID: `20260917T083628Z`
+- Step: `TRACE_READY_SHADOW_SEMANTICS`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `READY_SIGNAL_ORIGIN_DIAGNOSED`
-- Next gate: `RUN_FULL_YEAR_USING_CONFIRMED_SIGNAL_ORIGIN`
+- Verdict: `READY_SHADOW_SEMANTICS_RESOLVED`
+- Next gate: `USE_ACTUAL_READY_HYPOTHESIS_SEMANTICS_FOR_FULL_YEAR_SIGNAL_EVALUATION`
 
 ## Facts
 
-- `ANALYZE_PROVIDER`: `NONE`
-- `ANALYZE_REASON`: `DETERMINISTIC_EVENTS`
-- `ANALYZE_SIGNAL_EVENTS`: `0`
-- `ANALYZE_STATUS`: `BENCHTEST_READY_SHADOW`
+- `ANALYZE_BRANCHES`: `L70:_piner_selected_is_not_None,L176:_piner_events_in_locals()_and__piner_events,L108:_piner_events_in_locals()_`
+- `ANALYZE_RETURNS`: `L72:{_status:_BENCHTEST_READY_SHADOW,_parse_reason:_PINER_PRIMARY,_attempts:_[],_examined_lanes:_list(LANES[:-1]`
 - `ATB_CHANGED`: `NO`
-- `CANDIDATE_ID`: `ICL_SRC_A465DEED5818C8FA`
 - `DASHBOARD_RESTART`: `NO`
 - `DB_WRITES`: `0`
+- `DETERMINISTIC_MEANING`: `READINESS_CLASSIFICATION_NOT_MACHINE_EVENT_COUNT`
+- `DETERMINISTIC_OCCURRENCES`: `L81:_piner_selected_is_not_None`
 - `FAILURE`: `NONE`
 - `INTERNAL_RC`: `0`
-- `PINER_EVENTS`: `0`
-- `PINER_PROVIDER`: `piner0.13.0:signal_contract_v1`
-- `PINER_REASON`: `DETERMINISTIC_EVENTS`
-- `PINER_RESULT`: `YES`
-- `PREFLIGHT_CANDLES`: `500`
+- `MACHINE_EVENTS_REQUIRED_FOR_READY`: `NO`
+- `PINER_OCCURRENCES`: `L69:_select_piner_candidate:_select_piner_candidate(source,_candles)`
+- `READY_CONDITION`: `_piner_selected_is_not_None`
+- `READY_OCCURRENCES`: `L73:_piner_selected_is_not_None,L128:success`
 - `READ_ONLY`: `YES`
-- `RUNNER_FOUND`: `YES`
-- `RUNNER_NAME`: `resin`
-- `RUNTIME_CANDIDATES`: `0`
-- `RUNTIME_EVENTS`: `0`
-- `RUNTIME_EVENT_CANDIDATES`: `0`
-- `SIGNAL_ORIGIN`: `NO_MACHINE_EVENTS`
+- `SIGNAL_ATTACH_OCCURRENCES`: `L178:_attach_provider_signal_contract:_attach_provider_signal_contract(outcome,__atb_signal_events,_len(candles)`
