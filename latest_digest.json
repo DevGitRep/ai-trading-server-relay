@@ -1,19 +1,25 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-17T19:56:39.594754+00:00",
-  "run_id": "20260917T195637Z",
-  "step": "BENCHTESTV2STOREEXACT1",
+  "published_at_utc": "2026-09-17T19:59:55.418726+00:00",
+  "run_id": "20260917T195749Z",
+  "step": "SOL1Y1MFRESHRECENT1",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "BENCHTESTV2STOREINSPECTED",
-  "next_gate": "VERIFYORRUNFRESH1Y1MCANDIDATE",
+  "verdict": "SOL1Y1MFRESHBENCHTESTCOMPLETED",
+  "next_gate": "VERIFYTRADECHARTRESULT",
   "facts": {
-    "CANDIDATE_ID": "ICL_LIB_FFD660A2D24D3772",
-    "DB_WRITE": "NO",
-    "DIRTY_COUNT": "0",
+    "BENCHTEST_COMPLETE": "YES",
+    "CANDIDATE_ID": "ICL_LIB_FFB33C96DDA8B838",
+    "CANDIDATE_STATUS": "PASS",
+    "DB_WRITE": "YES",
     "HEAD": "95836ad0df55",
-    "PREVIOUS_SELECTION": "ZERO",
-    "REASON": "ALREADY_FILTERED_BY_RESULT_GATE",
-    "RESTART": "NO"
+    "PAIR": "SOL_USDT",
+    "PERIOD": "12MONTH",
+    "PROCESSED": "1",
+    "REPO_CLEAN": "YES",
+    "RESTART": "NO",
+    "SELECTED": "1",
+    "TIMEFRAME": "1m",
+    "TRADES": "32452"
   }
 }
