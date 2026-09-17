@@ -1,20 +1,26 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-17T21:42:20.384717+00:00`
-- Run ID: `20260917T214218Z`
-- Step: `EXTRACTLOADMARKETDATASHAPE46`
-- Status: `SUCCESS`
-- Exit code: `0`
-- Verdict: `LOADMARKETDATASHAPEEXACT`
-- Next gate: `REUSEBENCHTESTLOADERINPILOT`
+- Published UTC: `2026-09-17T21:43:18.585035+00:00`
+- Run ID: `20260917T214316Z`
+- Step: `REUSEBENCHTESTLOADERINPILOT47`
+- Status: `FAIL`
+- Exit code: `1`
+- Verdict: `LARGESWEEPPILOTFAILED`
+- Next gate: `FIXLARGESWEEPPILOT`
 
 ## Facts
 
-- `CALLER1`: `execute|1053|load_market_data()`
-- `CALLER2`: `main|1384|load_market_data()`
+- `CANDIDATE`: `UNKNOWN`
+- `CHANGED_SERIES_MAX`: `UNKNOWN`
+- `CONFIGS`: `UNKNOWN`
 - `DB_WRITE`: `NO`
+- `DISTINCT_BEHAVIOR`: `UNKNOWN`
 - `HEAD`: `87d3b519e011`
+- `NUMERIC_INPUTS`: `UNKNOWN`
+- `OVERRIDES_APPLIED`: `UNKNOWN`
+- `OVERRIDE_CONFIGS_CHANGED`: `UNKNOWN`
+- `PILOT_BARS`: `UNKNOWN`
 - `REPO_CLEAN`: `YES`
 - `RESTART`: `NO`
-- `RETURN`: `(meta, candles, open_, close)`
+- `TOTAL_BARS`: `UNKNOWN`
