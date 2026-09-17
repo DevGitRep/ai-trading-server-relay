@@ -1,9 +1,9 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-17T08:41:53.701442+00:00`
-- Run ID: `20260917T084151Z`
-- Step: `SELECTED_EXPRESSION_EVENTS`
+- Published UTC: `2026-09-17T08:44:10.768875+00:00`
+- Run ID: `20260917T084408Z`
+- Step: `SELECTED_EXPRESSION_E2E`
 - Status: `SUCCESS`
 - Exit code: `0`
 - Verdict: `SELECTED_EXPRESSION_REAL_YEAR_E2E_BLOCKED`
@@ -11,7 +11,7 @@
 
 ## Facts
 
-- `ADAPTER_REGRESSION`: `NO`
+- `ADAPTER_REGRESSION`: `YES`
 - `ATB_CHANGED`: `NO`
 - `CANDIDATE_ID`: `NONE`
 - `DASHBOARD_RESTART`: `NO`
@@ -20,15 +20,13 @@
 - `DB_WRITES`: `0`
 - `EVENTS_500`: `0`
 - `EVENT_YEAR_SECONDS`: `0.000000`
-- `EXPRESSION_LONG`: `NONE`
-- `EXPRESSION_SHORT`: `NONE`
-- `FAILURE`: `ADAPTER_REGRESSION_FAILED_ht-v2-vectorbt-signal-adapter,_line_6,_in_&lt;module&gt;_____import_numpy`
+- `FAILURE`: `QUANT_REGRESSION_FAILED_t-numba-multisignal,_line_7,_in_&lt;module&gt;_____import_numpy_as_np_Modul`
 - `FULL_YEAR_EVENTS`: `0`
 - `INDICATOR_RECALCULATION`: `NO`
 - `INTERNAL_RC`: `20`
 - `LONG_500`: `0`
 - `LONG_YEAR`: `0`
-- `MODULE_WRITTEN`: `YES`
+- `MODULE_WRITTEN`: `NO`
 - `PINE_REINTERPRETER`: `NO`
 - `PREFLIGHT_EXACT_MATCH`: `NO`
 - `PREFLIGHT_STATUS`: `NONE`
@@ -39,7 +37,7 @@
 - `RESIN_YEAR_SECONDS`: `0.000000`
 - `SHORT_500`: `0`
 - `SHORT_YEAR`: `0`
-- `TEST_WRITTEN`: `YES`
-- `UNIT_TEST`: `YES`
+- `TEST_WRITTEN`: `NO`
+- `UNIT_TEST`: `NO`
 - `YEAR_RESELECTION`: `NO`
 - `YEAR_ROWS`: `0`
