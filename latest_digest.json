@@ -1,17 +1,17 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-17T21:37:44.427221+00:00",
-  "run_id": "20260917T213742Z",
-  "step": "DIAGNOSELARGESWEEPPILOT42",
+  "published_at_utc": "2026-09-17T21:38:35.152950+00:00",
+  "run_id": "20260917T213833Z",
+  "step": "MAPBENCHTESTMARKETLOADER43",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "LARGESWEEPPILOTFAILUREIDENTIFIED",
-  "next_gate": "FIXLARGESWEEPPILOT",
+  "verdict": "BENCHTESTMARKETLOADERMAPPED",
+  "next_gate": "REUSEBENCHTESTLOADERINPILOT",
   "facts": {
+    "BENCH_FUNCTIONS": "4",
     "DB_WRITE": "NO",
-    "ERROR": "RuntimeError: PYARROW_FEATHER_UNAVAILABLE:ModuleNotFoundError",
     "HEAD": "87d3b519e011",
-    "LAST_LINE": "RuntimeError: PYARROW_FEATHER_UNAVAILABLE:ModuleNotFoundError",
+    "HITS": "37",
     "REPO_CLEAN": "YES",
     "RESTART": "NO"
   }
