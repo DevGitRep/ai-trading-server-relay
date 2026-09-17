@@ -1,17 +1,19 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-17T21:38:35.152950+00:00",
-  "run_id": "20260917T213833Z",
-  "step": "MAPBENCHTESTMARKETLOADER43",
+  "published_at_utc": "2026-09-17T21:39:32.726276+00:00",
+  "run_id": "20260917T213930Z",
+  "step": "EXTRACTBENCHTESTLOADER44",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "BENCHTESTMARKETLOADERMAPPED",
+  "verdict": "BENCHTESTLOADEREXACTLYIDENTIFIED",
   "next_gate": "REUSEBENCHTESTLOADERINPILOT",
   "facts": {
-    "BENCH_FUNCTIONS": "4",
     "DB_WRITE": "NO",
+    "F1": "load_module(name, path)",
+    "F2": "load_market_data()",
+    "F3": "load_resin_host()",
+    "F4": "load_source( con, candidate_id, source_sha, )",
     "HEAD": "87d3b519e011",
-    "HITS": "37",
     "REPO_CLEAN": "YES",
     "RESTART": "NO"
   }
