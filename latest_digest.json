@@ -1,11 +1,11 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-17T15:22:01.571451+00:00",
-  "run_id": "20260917T152150Z",
-  "step": "IMPLEMENT_PORTFOLIO_PERFORMANCE_BENCHMARK_EXPOSURE",
+  "published_at_utc": "2026-09-17T15:25:40.161225+00:00",
+  "run_id": "20260917T152534Z",
+  "step": "IMPLEMENT_PORTFOLIO_PERFORMANCE_V2",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "PORTFOLIO_PERFORMANCE_BATCH_BLOCKED",
+  "verdict": "PORTFOLIO_PERFORMANCE_V2_BLOCKED",
   "next_gate": "FIX_ONLY_REPORTED_PORTFOLIO_PERFORMANCE_FAILURE",
   "facts": {
     "BRANCH": "main",
@@ -13,18 +13,19 @@
     "DASHBOARD_RESTART": "NO",
     "DB_WRITES": "0",
     "DRAWDOWNS": "NO",
-    "FAILURE": "FORMULA_INFERENCE_FAILED",
+    "FAILURE": "FORMULA_MISMATCH_gross_exposure,net_exposure",
+    "FORMULAS": "NO",
     "INTERNAL_RC": "20",
     "LIFECYCLE": "NO",
     "PERFORMANCE": "NO",
-    "PORTFOLIO_STATS": "NO",
+    "PORTFOLIO_TESTS": "NO",
     "PUSHED": "NO",
     "QUANT": "NO",
     "RECORDS": "NO",
+    "REFERENCE": "YES",
     "RESULT_STORE": "NO",
     "RETURNS_BATCH2": "NO",
     "RETURNS_CORE": "NO",
-    "STATE": "NO",
     "TRADES": "NO"
   }
 }
