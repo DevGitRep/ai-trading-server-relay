@@ -1,38 +1,45 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-17T08:39:00.599516+00:00`
-- Run ID: `20260917T083855Z`
-- Step: `MAP_SELECTED_HYPOTHESIS_EXECUTION_INPUTS`
+- Published UTC: `2026-09-17T08:41:53.701442+00:00`
+- Run ID: `20260917T084151Z`
+- Step: `SELECTED_EXPRESSION_EVENTS`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `SELECTED_HYPOTHESIS_EXECUTION_INPUTS_MAPPED`
-- Next gate: `IMPLEMENT_MINIMAL_SELECTED_EXPRESSION_EVENT_EVALUATOR`
+- Verdict: `SELECTED_EXPRESSION_REAL_YEAR_E2E_BLOCKED`
+- Next gate: `FIX_ONLY_REPORTED_SELECTED_EXPRESSION_FAILURE`
 
 ## Facts
 
+- `ADAPTER_REGRESSION`: `NO`
 - `ATB_CHANGED`: `NO`
-- `CANDIDATE_ID`: `ICL_SRC_A465DEED5818C8FA`
+- `CANDIDATE_ID`: `NONE`
 - `DASHBOARD_RESTART`: `NO`
+- `DATASET_SELECTED`: `NO`
+- `DATA_ROWS`: `0`
 - `DB_WRITES`: `0`
-- `EVIDENCE_SCHEMA`: `piner_contract_count:int,piner_contract_id:str,piner_contract_type:str,piner_interpretation:str,piner_runtime_`
-- `EXPRESSION_SCALARS`: `LONG=PINER::CROSSOVER|plot:0:Fast_SMA|plot:1:Slow_SMA|FOLLOW::LONG,SHORT=PINER::CROSSOVER|plot:0:Fast_SMA|plot`
-- `EXPRESSION_SCHEMA`: `LONG:str,SHORT:str`
-- `FAILURE`: `NONE`
-- `INTERNAL_RC`: `0`
-- `MINIMAL_EVALUATOR_SCOPE`: `USE_EXISTING_RUNTIME_SERIES_PLUS_THIN_EVENT_OPERATOR`
-- `NUMERIC_SERIES_PATHS`: `root.plots[0].values:len500,root.plots[1].values:len500,root.viz.plots[0].values:len500,root.viz.plots[1].valu`
-- `PINER_LABEL`: `CROSSOVER|plot:0:Fast_SMA|plot:1:Slow_SMA|FOLLOW`
-- `PINER_LANE`: `CROSSOVER`
-- `PINER_PRIORITY`: `30`
-- `PINER_PROVIDER`: `piner/0.13.0:signal_contract_v1`
-- `PINER_REASON`: `DETERMINISTIC_EVENTS`
-- `PLOT_LIKE_PATHS`: `root.plots:list,root.plots[0].values:list,root.plots[1].values:list,root.viz.plots:list,root.viz.plots[0].valu`
-- `PREFLIGHT_STATUS`: `BENCHTEST_READY_SHADOW`
-- `RAW_RUNTIME_KEYS`: `kind,resinVersion,plots,strategy,viz`
-- `RAW_RUNTIME_TYPE`: `dict`
-- `READ_ONLY`: `YES`
-- `RUNNER_FOUND`: `YES`
-- `RUNNER_NAME`: `resin`
-- `RUNTIME_HAS_SERIES`: `YES`
-- `SOURCE_MATCHES`: `L4:fast_=_ta.sma(close,_7),L5:slow_=_ta.sma(close,_21),L7:longSignal_=_ta.crossover(fast,_slow),L8:shortSignal`
+- `EVENTS_500`: `0`
+- `EVENT_YEAR_SECONDS`: `0.000000`
+- `EXPRESSION_LONG`: `NONE`
+- `EXPRESSION_SHORT`: `NONE`
+- `FAILURE`: `ADAPTER_REGRESSION_FAILED_ht-v2-vectorbt-signal-adapter,_line_6,_in_&lt;module&gt;_____import_numpy`
+- `FULL_YEAR_EVENTS`: `0`
+- `INDICATOR_RECALCULATION`: `NO`
+- `INTERNAL_RC`: `20`
+- `LONG_500`: `0`
+- `LONG_YEAR`: `0`
+- `MODULE_WRITTEN`: `YES`
+- `PINE_REINTERPRETER`: `NO`
+- `PREFLIGHT_EXACT_MATCH`: `NO`
+- `PREFLIGHT_STATUS`: `NONE`
+- `QUANT_RAN`: `NO`
+- `QUANT_REGRESSION`: `NO`
+- `QUANT_SECONDS`: `0.000000`
+- `QUANT_TRADES`: `0`
+- `RESIN_YEAR_SECONDS`: `0.000000`
+- `SHORT_500`: `0`
+- `SHORT_YEAR`: `0`
+- `TEST_WRITTEN`: `YES`
+- `UNIT_TEST`: `YES`
+- `YEAR_RESELECTION`: `NO`
+- `YEAR_ROWS`: `0`
