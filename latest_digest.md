@@ -1,54 +1,40 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-17T12:04:35.964044+00:00`
-- Run ID: `20260917T120434Z`
-- Step: `TRACE_THREE_RETURNS_MISMATCH_FORMULAS`
+- Published UTC: `2026-09-17T12:09:48.147230+00:00`
+- Run ID: `20260917T120747Z`
+- Step: `COMPLETE_OSCILLATOR_EXTREMA_RETURNS_BATCH2`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `THREE_RETURNS_MISMATCH_FORMULAS_TRACED`
-- Next gate: `FIX_THREE_RETURNS_FORMULAS_AND_COMPLETE_OSCILLATOR_BATCH2`
+- Verdict: `OSCILLATOR_EXTREMA_RETURNS_BATCH2_REAL_YEAR_PASSED`
+- Next gate: `COMMIT_OSCILLATOR_EXTREMA_AND_RETURNS_BATCH2`
 
 ## Facts
 
-- `ALPHA_1D_NB_1`: `L530:def_alpha_1d_nb(returns:_tp.Array1d,_benchmark_rets:_tp.Array1d,_ann_factor:_float,_risk_free:_float_=_0.0)_-&gt;_float:`
-- `ALPHA_1D_NB_2`: `L532:if_returns.shape[0]_&lt;_2:`
-- `ALPHA_1D_NB_3`: `L533:return_np.nan`
-- `ALPHA_1D_NB_4`: `L535:adj_returns_=_returns_-_risk_free`
-- `ALPHA_1D_NB_5`: `L536:adj_benchmark_rets_=_benchmark_rets_-_risk_free`
-- `ALPHA_1D_NB_6`: `L537:beta_=_beta_1d_nb(returns,_benchmark_rets)`
-- `ALPHA_1D_NB_7`: `L538:alpha_series_=_adj_returns_-_(beta_*_adj_benchmark_rets)`
-- `ALPHA_1D_NB_8`: `L539:return_(np.nanmean(alpha_series)_+_1)_**_ann_factor_-_1`
-- `ALPHA_1D_NB_LINES`: `8`
-- `ALPHA_NB_1`: `L543:def_alpha_nb(returns:_tp.Array2d,_benchmark_rets:_tp.Array2d,_ann_factor:_float,_risk_free:_float_=_0.0)_-&gt;_tp.Array1d:`
-- `ALPHA_NB_2`: `L545:out_=_np.empty(returns.shape[1],_dtype=np.float64)`
-- `ALPHA_NB_3`: `L546:for_col_in_range(returns.shape[1]):`
-- `ALPHA_NB_4`: `L547:out[col]_=_alpha_1d_nb(returns[:,_col],_benchmark_rets[:,_col],_ann_factor,_risk_free)`
-- `ALPHA_NB_5`: `L548:return_out`
-- `ALPHA_NB_LINES`: `5`
-- `ATB_CHANGED`: `NO`
+- `ADAPTER_REGRESSION`: `YES`
+- `ATB_CHANGED`: `YES`
 - `DASHBOARD_RESTART`: `NO`
+- `DATA_ROWS`: `2407680`
 - `DB_WRITES`: `0`
+- `EXTERNAL_GOLDENS_CHANGED`: `YES`
+- `EXTREMA_RULE`: `STRICT_LOCAL_MIN_MAX_3PT`
 - `FAILURE`: `NONE`
+- `INDICATOR_RECALCULATION`: `NO`
 - `INTERNAL_RC`: `0`
-- `MAX_DRAWDOWN_1D_NB_1`: `L229:def_max_drawdown_1d_nb(returns:_tp.Array1d)_-&gt;_float:`
-- `MAX_DRAWDOWN_1D_NB_2`: `L231:return_np.min(drawdown_1d_nb(returns))`
-- `MAX_DRAWDOWN_1D_NB_LINES`: `2`
-- `READ_ONLY`: `YES`
-- `ROLLING_ALPHA_NB_1`: `L552:def_rolling_alpha_nb(`
-- `ROLLING_ALPHA_NB_10`: `L563:return_alpha_1d_nb(_returns,__benchmark_rets[i_+_1_-_len(_returns)_:_i_+_1,_col],__ann_factor,__risk_free)`
-- `ROLLING_ALPHA_NB_11`: `L565:return_generic_nb.rolling_apply_nb(returns,_window,_minp,__apply_func_nb,_benchmark_rets,_ann_factor,_risk_free)`
-- `ROLLING_ALPHA_NB_2`: `L553:returns:_tp.Array2d,`
-- `ROLLING_ALPHA_NB_3`: `L554:window:_int,`
-- `ROLLING_ALPHA_NB_4`: `L555:minp:_tp.Optional[int],`
-- `ROLLING_ALPHA_NB_5`: `L556:benchmark_rets:_tp.Array2d,`
-- `ROLLING_ALPHA_NB_6`: `L557:ann_factor:_float,`
-- `ROLLING_ALPHA_NB_7`: `L558:risk_free:_float_=_0.0,`
-- `ROLLING_ALPHA_NB_8`: `L559:)_-&gt;_tp.Array2d:`
-- `ROLLING_ALPHA_NB_9`: `L562:def__apply_func_nb(i,_col,__returns,__benchmark_rets,__ann_factor,__risk_free):`
-- `ROLLING_ALPHA_NB_LINES`: `11`
-- `ROLLING_MAX_DRAWDOWN_NB_1`: `L244:def_rolling_max_drawdown_nb(returns:_tp.Array2d,_window:_int,_minp:_tp.Optional[int])_-&gt;_tp.Array2d:`
-- `ROLLING_MAX_DRAWDOWN_NB_2`: `L247:def__apply_func_nb(i,_col,__returns):`
-- `ROLLING_MAX_DRAWDOWN_NB_3`: `L248:return_max_drawdown_1d_nb(_returns)`
-- `ROLLING_MAX_DRAWDOWN_NB_4`: `L250:return_generic_nb.rolling_apply_nb(returns,_window,_minp,__apply_func_nb)`
-- `ROLLING_MAX_DRAWDOWN_NB_LINES`: `4`
+- `OSC_CONFIRMATION_SHIFT`: `1`
+- `OSC_LOOKAHEAD_SAFE`: `YES`
+- `OSC_SAFE`: `2`
+- `OSC_TOTAL`: `2`
+- `OSC_YEAR_EVENTS`: `135635`
+- `OSC_YEAR_TRADES`: `72159`
+- `PINER_MAPPING`: `YES`
+- `PORTFOLIO_REGRESSION`: `YES`
+- `QUANT_REGRESSION`: `YES`
+- `RETURNS_CORE`: `YES`
+- `RETURNS_GOLDEN`: `YES`
+- `RETURNS_MATCH`: `YES`
+- `RETURNS_MATCH_COUNT`: `17`
+- `SIGNAL_BRIDGE_REGRESSION`: `YES`
+- `SIGNAL_UNIT`: `YES`
+- `STATE_TRANSITION_SAMPLE`: `0`
+- `YEAR_ROWS`: `525600`
