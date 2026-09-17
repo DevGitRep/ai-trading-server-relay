@@ -1,17 +1,25 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-17T18:54:44.750204+00:00",
-  "run_id": "20260917T185442Z",
-  "step": "BENCHTESTSOURCEOFTRUTH1",
-  "status": "SUCCESS",
-  "exit_code": 0,
-  "verdict": "BENCHTESTRUNTIMESOURCEOFTRUTHMAPPED",
-  "next_gate": "MOVEINTEGRATIONTOTRACKEDSOURCE",
+  "published_at_utc": "2026-09-17T18:57:02.294065+00:00",
+  "run_id": "20260917T185659Z",
+  "step": "BENCHTESTTRACKEDSOURCEFINAL1",
+  "status": "FAIL",
+  "exit_code": 1,
+  "verdict": "BENCHTESTSOURCEINTEGRATIONFAILED",
+  "next_gate": "FIXTRACKEDSOURCE",
   "facts": {
+    "BASE_HEAD": "54d2bac530ce",
     "DB_WRITE": "NO",
     "HEAD": "54d2bac530ce",
+    "PUSHED": "NO",
+    "REGRESSIONS": "NO",
     "REPO_CLEAN": "NO",
     "RESTART": "NO",
-    "TEMP_RUNTIME_WRAPPER": "YES"
+    "RUNTIME_WRAPPER": "YES",
+    "SIGNAL_PROVENANCE": "YES",
+    "SOURCE": "UNKNOWN",
+    "TIMEFRAME_SETTINGS": "YES",
+    "TOP_N": "YES",
+    "TRADE_CHART_EVIDENCE": "YES"
   }
 }
