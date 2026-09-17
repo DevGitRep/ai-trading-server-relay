@@ -1,22 +1,24 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-17T17:28:30.020459+00:00",
-  "run_id": "20260917T172821Z",
-  "step": "PORTFOLIOLASTGAP1",
+  "published_at_utc": "2026-09-17T17:30:10.997208+00:00",
+  "run_id": "20260917T172956Z",
+  "step": "PORTFOLIOTRADES1",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "LASTPORTFOLIOGAPMAPPED",
-  "next_gate": "IMPLEMENTLASTPORTFOLIOGAP",
+  "verdict": "PORTFOLIOFUNCTIONALPARITYCOMPLETE",
+  "next_gate": "CONTINUEQUANTROADMAP",
   "facts": {
+    "BASE_HEAD": "7a8bb7d1f9d1",
     "DB_WRITE": "NO",
-    "DEPENDENCIES": "NONE",
-    "HEAD": "7a8bb7d1f9d1",
-    "METHOD": "trades",
-    "NATIVE_HITS": "[REDACTED_EMAIL],[REDACTED_EMAIL],[REDACTED_EMAIL],[REDACTED_EMAIL],[REDACTED_EMAIL],[REDACTED_EMAIL],[REDACTED_EMAIL],run_standardized_tra",
-    "REMAINING_COUNT": "1",
-    "REPORT": "portfolio_last_functional_gap_v1.json",
+    "DOCS": "YES",
+    "HEAD": "1c11c973bc91",
+    "PARITY": "YES",
+    "PATCHED": "YES",
+    "PUSHED": "YES",
+    "REGRESSIONS": "YES",
+    "REMAINING_COUNT": "0",
     "REPO_CLEAN": "YES",
     "RESTART": "NO",
-    "SIGNATURE": "(*args,_**kwargs)_-&gt;_Any"
+    "VBT_ALIAS": "YES"
   }
 }
