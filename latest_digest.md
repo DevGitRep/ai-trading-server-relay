@@ -1,42 +1,28 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-17T13:36:52.151400+00:00`
-- Run ID: `20260917T133650Z`
-- Step: `MAP_NEXT_VECTORBT_PARITY_BATCH`
+- Published UTC: `2026-09-17T13:40:03.929656+00:00`
+- Run ID: `20260917T133951Z`
+- Step: `CREATE_RECORDS_GOLDEN_CONTRACT_BATCH`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `REMAINING_VECTORBT_PARITY_MAPPED`
-- Next gate: `CREATE_RECORDS_GOLDEN_CONTRACT_BATCH`
+- Verdict: `RECORDS_GOLDEN_CONTRACT_BATCH_BLOCKED`
+- Next gate: `FIX_ONLY_REPORTED_RECORDS_GOLDEN_FAILURE`
 
 ## Facts
 
 - `ATB_CHANGED`: `NO`
+- `BEHAVIOR_METHODS`: `NONE`
+- `COL0_COUNT`: `0`
+- `COL1_COUNT`: `0`
 - `DASHBOARD_RESTART`: `NO`
 - `DB_WRITES`: `0`
-- `FAILURE`: `NONE`
-- `INTERNAL_RC`: `0`
-- `NEXT_BATCH`: `CREATE_RECORDS_GOLDEN_CONTRACT_BATCH`
-- `NEXT_DOMAIN`: `RECORDS`
-- `ORDERS_FUNCTIONAL`: `1`
-- `ORDERS_GAP`: `0`
-- `ORDERS_GAP_SAMPLE`: `NONE`
-- `ORDERS_MATCHED`: `1`
-- `ORDERS_PUBLIC`: `8`
-- `PORTFOLIO_FUNCTIONAL`: `72`
-- `PORTFOLIO_GAP`: `54`
-- `PORTFOLIO_GAP_SAMPLE`: `asset_flow,assets,benchmark_value,call_seq,cash_flow,cash_sharing,entry_trades,exit_trades,fillna_close,from_h`
-- `PORTFOLIO_MATCHED`: `18`
-- `PORTFOLIO_PUBLIC`: `79`
-- `READ_ONLY`: `YES`
-- `RECORDS_FUNCTIONAL`: `29`
-- `RECORDS_GAP`: `23`
-- `RECORDS_GAP_SAMPLE`: `col_arr,col_mapper,get_apply_mapping_arr,get_by_col_idxs,get_field_arr,get_field_mapping,get_field_name,get_fi`
-- `RECORDS_MATCHED`: `6`
-- `RECORDS_PUBLIC`: `37`
-- `RETURNS_FUNCTIONAL`: `54`
-- `RETURNS_GAP`: `25`
-- `RETURNS_GAP_SAMPLE`: `annual,benchmark_rets,daily,defaults,deflated_sharpe_ratio,df_accessor_cls,from_value,qs,resample_total_return`
-- `RETURNS_MATCHED`: `29`
-- `RETURNS_PUBLIC`: `60`
+- `FAILURE`: `VECTORBT_RECORDS_GOLDEN_FAILED_n___bool___raise_ValueError(_ValueError:_The_truth_value_of_a_Series_`
+- `FIELD_COUNT`: `0`
+- `GOLDEN_CREATED`: `YES`
+- `INFRA_METHODS`: `NONE`
+- `INTERNAL_RC`: `20`
+- `MASKED_COUNT`: `0`
+- `RECORD_COUNT`: `0`
+- `UNCATEGORIZED_METHODS`: `NONE`
 - `VECTORBT_VERSION`: `1.1.0`
