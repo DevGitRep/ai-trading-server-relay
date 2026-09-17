@@ -1,27 +1,32 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-17T19:23:18.595381+00:00`
-- Run ID: `20260917T192259Z`
-- Step: `BACKTESTINGPYREFERENCEGOLDEN1`
+- Published UTC: `2026-09-17T19:26:15.875797+00:00`
+- Run ID: `20260917T192613Z`
+- Step: `ATBVSBACKTESTINGPYCOMPARE1`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `BACKTESTINGPYEXECUTIONSEMANTICSGOLDENREADY`
-- Next gate: `COMPAREATBTOBACKTESTINGPYGOLDEN`
+- Verdict: `ATBBACKTESTINGPYEXACTCOMPARISONREADY`
+- Next gate: `IMPLEMENTBACKTESTINGPYSEMANTICPARITY`
 
 ## Facts
 
+- `ASSERTION_TESTS`: `2`
+- `ATB_COSTS`: `Y`
+- `ATB_ENTRY_BAR`: `Y`
+- `ATB_GAP`: `N`
+- `ATB_NEXT_OPEN`: `Y`
+- `ATB_PYRAMIDING`: `N`
+- `ATB_SAME_BAR`: `Y`
+- `ATB_STOP_LOSS`: `Y`
+- `ATB_TAKE_PROFIT`: `Y`
 - `BACKTESTINGPY_VERSION`: `0.6.6`
-- `COMMISSION`: `0.203`
 - `DB_WRITE`: `NO`
-- `ENTRY_BAR`: `2@98.0`
-- `GAP_STOP`: `96.0`
 - `HEAD`: `191c84329240`
-- `NEXT_OPEN`: `YES`
-- `OPEN_SIGNAL_POLICY`: `3/1`
-- `REPORT`: `backtestingpy_execution_semantics_golden_v1.json`
+- `REPORT`: `atb_vs_backtestingpy_semantic_comparison_v1.json`
 - `REPO_CLEAN`: `YES`
 - `RESTART`: `NO`
-- `SAME_BAR`: `98.0`
-- `STOP_1R`: `98.0`
-- `TARGET_1_5R`: `103.0`
+- `UI1`: `advanced_orderflow_strategy copy.py`
+- `UI2`: `advanced_orderflow_strategy.py`
+- `UI3`: `backend copy.py`
+- `UI_RENDER`: `entry_price:Y,exit_price:Y,exit_reason:Y,marker_language:Y,r_multiple:Y,reads_signal_provenance:Y,reads_trade_chart_evidence:Y,stop_loss:Y,take_profit:Y`
