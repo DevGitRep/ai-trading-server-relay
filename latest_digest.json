@@ -1,29 +1,18 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-17T20:58:30.523786+00:00",
-  "run_id": "20260917T205827Z",
-  "step": "INSPECTMATCHEDPERSISTEDRUN17",
+  "published_at_utc": "2026-09-17T20:59:43.995287+00:00",
+  "run_id": "20260917T205941Z",
+  "step": "MAPREALV2TRADEWRITER18",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "MATCHEDPERSISTEDRUNSHAPEMAPPED",
-  "next_gate": "PATCHREALPERSISTENCEFIELDS",
+  "verdict": "REALV2TRADEWRITEREXACTLYMAPPED",
+  "next_gate": "PATCHREALV2TRADEWRITER",
   "facts": {
-    "CHART_EVIDENCE_PRESENT": "0",
     "DB_WRITE": "NO",
-    "ERROR_LAST": "NONE",
-    "EXIT_REASON_PRESENT": "0",
-    "EXPECTED_HEAD": "95836ad0df55",
     "HEAD": "95836ad0df55",
-    "PRIMARY_ROWS": "32452",
-    "PROVENANCE_PRESENT": "0",
-    "PYTHON_COMPLETE": "YES",
-    "PYTHON_RC": "0",
+    "OWNERS": "ensure_schema,save_trades,TEXT_REFERENCE,_v2_insert_trades,_v2_finish_from_signals",
+    "REFERENCE_COUNT": "6",
     "REPO_CLEAN": "YES",
-    "RESTART": "NO",
-    "RESULT_FOUND": "YES",
-    "R_MULTIPLE_PRESENT": "0",
-    "SECONDARY_ROWS": "33262",
-    "STOP_LOSS_PRESENT": "0",
-    "TAKE_PROFIT_PRESENT": "0"
+    "RESTART": "NO"
   }
 }
