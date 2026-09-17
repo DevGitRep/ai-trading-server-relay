@@ -1,22 +1,24 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-17T20:54:38.604176+00:00",
-  "run_id": "20260917T205436Z",
-  "step": "SHAPE13RAWERROR14",
+  "published_at_utc": "2026-09-17T20:55:58.214722+00:00",
+  "run_id": "20260917T205556Z",
+  "step": "REALSHAPEINSPECTIONFIXED15",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "SHAPE13FAILUREEXACTLYIDENTIFIED",
-  "next_gate": "RERUNREALSHAPEINSPECTIONFIXED",
+  "verdict": "REALSHAPEINSPECTIONCAPTURED",
+  "next_gate": "PATCHREALPERSISTENCEFIELDS",
   "facts": {
     "DB_WRITE": "NO",
-    "ERROR_TYPE": "NONE",
+    "ERROR_LAST": "RESULT_NOT_FOUND_FOR_REQUESTED_RUN",
     "EXPECTED_HEAD": "95836ad0df55",
     "HEAD": "95836ad0df55",
-    "OUTPUT_PRESENT": "YES",
-    "PRIMARY_ROWS_PRESENT": "NO",
+    "PRIMARY_ROWS": "UNKNOWN",
+    "PYTHON_COMPLETE": "UNKNOWN",
+    "PYTHON_RC": "1",
     "REPO_CLEAN": "YES",
     "RESTART": "NO",
-    "SECONDARY_ROWS_PRESENT": "NO",
-    "TRACEBACK": "NO"
+    "RESULT_FOUND": "NO",
+    "SECONDARY_ROWS": "UNKNOWN",
+    "TOTAL_ROWS": "UNKNOWN"
   }
 }
