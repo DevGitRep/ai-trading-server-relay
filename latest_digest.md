@@ -1,25 +1,28 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-17T13:47:38.097375+00:00`
-- Run ID: `20260917T134732Z`
-- Step: `PINPOINT_RECORDS_GOLDEN_FAILURE_2`
+- Published UTC: `2026-09-17T13:49:27.789763+00:00`
+- Run ID: `20260917T134922Z`
+- Step: `FIX_RECORDS_COLUMN_ARRAY_SEMANTICS`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `RECORDS_GOLDEN_FAILURE_PINPOINTED`
-- Next gate: `FIX_ONLY_PINPOINTED_RECORDS_GOLDEN_FIXTURE`
+- Verdict: `RECORDS_GOLDEN_CONTRACT_BATCH_CREATED`
+- Next gate: `MAP_NATIVE_RECORDS_CORE_TO_GOLDEN`
 
 ## Facts
 
 - `ATB_CHANGED`: `NO`
-- `CONTEXT`: `CTX188:col_mapper_arr,CTX189:col0_count:CTX190:int(FAIL191:len(by_col_0.records_arr)CTX192:),CTX193:col1_count:CTX194:int(`
+- `COL0_COUNT`: `4`
+- `COL1_COUNT`: `4`
+- `COLUMN_IDS_DIRECT_FIELD_ACCESS`: `YES`
 - `DASHBOARD_RESTART`: `NO`
 - `DB_WRITES`: `0`
-- `ERROR_MESSAGE`: `numpy.ndarray_object_has_no_attribute_records_arr`
-- `ERROR_TYPE`: `AttributeError`
-- `FAIL_CODE`: `len(by_col_0.records_arr)`
-- `FAIL_LINE`: `191`
+- `EXTERNAL_GOLDEN_CHANGED`: `YES`
+- `FAILURE`: `NONE`
+- `FIELD_COUNT`: `7`
+- `GET_BY_COL_IDXS_RETURNS`: `STRUCTURED_ARRAY`
+- `GOLDEN_CREATED`: `YES`
 - `INTERNAL_RC`: `0`
-- `READ_ONLY`: `YES`
-- `SCRIPT_RC`: `1`
+- `MASKED_COUNT`: `4`
+- `RECORD_COUNT`: `8`
 - `VECTORBT_VERSION`: `1.1.0`
