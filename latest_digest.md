@@ -1,30 +1,25 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-17T21:57:42.584950+00:00`
-- Run ID: `20260917T215740Z`
-- Step: `INSPECTEVALUATECORE56`
+- Published UTC: `2026-09-17T22:00:27.962679+00:00`
+- Run ID: `20260917T220025Z`
+- Step: `MAPPUREV2SWEEPCONTRACT58`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `EVALUATECOREMAPPED`
+- Verdict: `PUREV2SWEEPCONTRACTMAPPED`
 - Next gate: `BUILDCHECKPOINTEDLARGESWEEPRUNNER`
 
 ## Facts
 
-- `C1`: `796:artifact.get`
-- `C2`: `807:artifact.get`
-- `C3`: `821:base.extract_signals`
-- `C4`: `822:artifact.get`
-- `C5`: `823:artifact.get`
-- `C6`: `824:artifact.get`
-- `CALLS`: `8`
+- `ATR_RETURNS`: `3`
 - `DB_WRITE`: `NO`
 - `HEAD`: `87d3b519e011`
-- `R1`: `742`
-- `R2`: `812`
-- `R3`: `844`
-- `R4`: `850`
-- `R5`: `983`
+- `HELPER1`: `_v2_atr14`
+- `HELPER2`: `_v2_bool_events`
+- `HELPER3`: `_v2_cost_contract`
+- `HELPER4`: `_v2_fill_price`
+- `HELPERS`: `7`
+- `NATIVE_RETURNS`: `1`
 - `REPO_CLEAN`: `YES`
 - `RESTART`: `NO`
-- `RETURNS`: `5`
+- `SIGNAL_FLIP_RETURNS`: `3`
