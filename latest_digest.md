@@ -1,48 +1,28 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-17T12:17:38.940858+00:00`
-- Run ID: `20260917T121737Z`
-- Step: `MAP_ATB_TRADE_LEDGER_TO_VECTORBT_GOLDEN`
+- Published UTC: `2026-09-17T12:23:42.076793+00:00`
+- Run ID: `20260917T122339Z`
+- Step: `IMPLEMENT_NATIVE_TRADES_CORE_GOLDEN_PARITY`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `ATB_TRADE_LEDGER_VECTORBT_FIELD_MAP_COMPLETED`
-- Next gate: `IMPLEMENT_NATIVE_TRADES_CORE_GOLDEN_PARITY`
+- Verdict: `NATIVE_TRADES_CORE_GOLDEN_PARITY_BLOCKED`
+- Next gate: `FIX_ONLY_REPORTED_TRADES_CORE_FAILURE`
 
 ## Facts
 
+- `ATB_ALIAS_MATCH`: `NO`
 - `ATB_CHANGED`: `NO`
-- `ATB_FIELD_MATCHES`: `12`
-- `CAP_DIRECTION`: `YES`
-- `CAP_ENTRY_BAR`: `YES`
-- `CAP_ENTRY_PRICE`: `YES`
-- `CAP_EXIT_BAR`: `YES`
-- `CAP_EXIT_PRICE`: `YES`
-- `CAP_EXIT_REASON`: `NO`
-- `CAP_FEES`: `YES`
-- `CAP_PNL`: `YES`
-- `CAP_RETURN`: `YES`
 - `DASHBOARD_RESTART`: `NO`
 - `DB_WRITES`: `0`
-- `EXISTING_METRICS`: `win_rate`
-- `FAILURE`: `NONE`
-- `FIELD_1`: `avg_entry_price:ALIAS:entry_price&gt;ledger.py`
-- `FIELD_10`: `pnl:EXACT:pnl&gt;ledger.py`
-- `FIELD_11`: `position_id:ALIAS:position&gt;lifecycle.py`
-- `FIELD_12`: `return:EXACT:return&gt;ledger.py`
-- `FIELD_13`: `size:EXACT:size&gt;ledger.py`
-- `FIELD_14`: `status:EXACT:status&gt;ledger.py`
-- `FIELD_2`: `avg_exit_price:ALIAS:exit_price&gt;ledger.py`
-- `FIELD_3`: `column:MISSING:NONE`
-- `FIELD_4`: `direction:EXACT:direction&gt;ledger.py`
-- `FIELD_5`: `entry_fees:EXACT:entry_fees&gt;ledger.py`
-- `FIELD_6`: `entry_timestamp:ALIAS:entry_bar&gt;packed_ledger.py`
-- `FIELD_7`: `exit_fees:EXACT:exit_fees&gt;ledger.py`
-- `FIELD_8`: `exit_timestamp:ALIAS:exit_bar&gt;packed_ledger.py`
-- `FIELD_9`: `exit_trade_id:MISSING:NONE`
-- `INTERNAL_RC`: `0`
-- `MISSING_FIELDS`: `column,exit_trade_id`
-- `MISSING_METRICS`: `winning,losing,expectancy,profit_factor,winning_streak,losing_streak`
-- `READ_ONLY`: `YES`
-- `VBT_RECORD_FIELDS`: `14`
+- `DUPLICATE_LEDGER`: `NO`
+- `FAILURE`: `name_np_is_not_defined`
+- `GOLDEN_MATCH`: `NO`
+- `INTERNAL_RC`: `20`
+- `LEDGER_COMPATIBLE`: `YES`
+- `RECORD_MAP`: `NO`
+- `SYNTHESIZED_METADATA`: `COLUMN,EXIT_TRADE_ID`
+- `TRADE_METRICS`: `WINNING,LOSING,WIN_RATE,EXPECTANCY,PROFIT_FACTOR,WIN_STREAK,LOSS_STREAK`
+- `TRADE_METRICS_MATCHED`: `0`
+- `VECTORBT_RECORD_FIELDS`: `14`
 - `VECTORBT_VERSION`: `1.1.0`
