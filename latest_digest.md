@@ -1,24 +1,24 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-17T17:57:01.888214+00:00`
-- Run ID: `20260917T175655Z`
-- Step: `GLOBAL31FINALIZE3`
+- Published UTC: `2026-09-17T18:23:51.198676+00:00`
+- Run ID: `20260917T181328Z`
+- Step: `BENCHTESTCOMPLETIONMAP1`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `GLOBALVECTORBTQUANTPARITYCOMPLETE`
-- Next gate: `QUANTROADMAPCOMPLETECHECK`
+- Verdict: `BENCHTESTCOMPLETIONGAPSMAPPED`
+- Next gate: `IMPLEMENTTRADEEVIDENCEANDLARGESWEEPS`
 
 ## Facts
 
-- `BASE_HEAD`: `1c11c973bc91`
 - `DB_WRITE`: `NO`
-- `DOCS`: `YES`
-- `FINAL_GAPS`: `0`
 - `HEAD`: `54d2bac530ce`
-- `PARITY`: `YES`
-- `PUSHED`: `YES`
-- `REGRESSIONS`: `YES`
+- `REPORT`: `benchtest_completion_gap_map_v1.json`
 - `REPO_CLEAN`: `YES`
 - `RESTART`: `NO`
-- `VECTORBT_RUNTIME_IMPORT`: `NO`
+- `SWEEP_FILES`: `6619`
+- `SWEEP_PROBE`: `chunk:Y,grid:Y,result_store:Y,resume:Y,sweep:Y,timeframe:Y,top_n:Y`
+- `TIMEFRAME_FILES`: `513`
+- `TRADE_FILES`: `3547`
+- `TRADE_PROBE`: `backtesting:Y,chart:Y,entry:Y,exit:Y,ledger:Y,pnl:Y,provenance:N`
+- `VECTORBT_GAPS`: `0`
