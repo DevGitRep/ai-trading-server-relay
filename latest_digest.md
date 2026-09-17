@@ -1,7 +1,7 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-17T13:49:27.789763+00:00`
+- Published UTC: `2026-09-17T13:51:25.142709+00:00`
 - Run ID: `20260917T134922Z`
 - Step: `FIX_RECORDS_COLUMN_ARRAY_SEMANTICS`
 - Status: `SUCCESS`
