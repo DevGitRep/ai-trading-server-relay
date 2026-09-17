@@ -1,8 +1,8 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-17T10:04:12.255997+00:00`
-- Run ID: `20260917T100240Z`
+- Published UTC: `2026-09-17T10:10:15.428432+00:00`
+- Run ID: `20260917T100844Z`
 - Step: `INVENTORY_SIGNAL_DOMAIN_AND_RETURNS`
 - Status: `SUCCESS`
 - Exit code: `0`
