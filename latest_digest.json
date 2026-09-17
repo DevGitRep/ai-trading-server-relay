@@ -1,23 +1,25 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-17T21:47:38.092922+00:00",
-  "run_id": "20260917T214731Z",
-  "step": "PROVEBENCHTESTRUNTIME50",
+  "published_at_utc": "2026-09-17T21:48:40.371499+00:00",
+  "run_id": "20260917T214831Z",
+  "step": "RUNLARGESWEEPPILOT51",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "BENCHTESTRUNTIMEPROVEN",
-  "next_gate": "RUNLARGESWEEPPILOTINBENCHTESTRUNTIME",
+  "verdict": "LARGESWEEPPILOTPROVEN",
+  "next_gate": "BUILDCHECKPOINTEDLARGESWEEPRUNNER",
   "facts": {
-    "BARS": "525600",
-    "CLOSE_COUNT": "525600",
+    "CANDIDATE": "ICL_LIB_0930A703546BD5BB",
+    "CHANGED_SERIES_MAX": "2",
+    "CONFIGS": "3",
     "DB_WRITE": "NO",
+    "DISTINCT_BEHAVIOR": "3",
     "HEAD": "87d3b519e011",
-    "LOAD_MARKET_DATA": "YES",
-    "OPEN_COUNT": "525600",
-    "PANDAS": "YES:3.0.5",
-    "PROBE_PASS": "YES",
-    "PYARROW": "YES:25.0.1",
+    "NUMERIC_INPUTS": "1",
+    "OVERRIDES_APPLIED": "YES",
+    "OVERRIDE_CONFIGS_CHANGED": "2",
+    "PILOT_BARS": "12000",
     "REPO_CLEAN": "YES",
-    "RESTART": "NO"
+    "RESTART": "NO",
+    "TOTAL_BARS": "525600"
   }
 }
