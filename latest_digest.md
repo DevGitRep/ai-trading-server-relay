@@ -1,31 +1,40 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-17T08:02:17.720769+00:00`
-- Run ID: `20260917T080215Z`
-- Step: `MAP_EXACT_PINER_RAW_OUTPUT_TO_SELECTION_SEAM`
+- Published UTC: `2026-09-17T08:05:12.573052+00:00`
+- Run ID: `20260917T080459Z`
+- Step: `RUN_REAL_YEAR_WITH_PRESELECTED_PINER_RAW_CONTRACT`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `PINER_SELECTION_INTERNAL_SEAM_MAPPED`
-- Next gate: `RUN_PINER_RAW_PRESELECTION_OUTPUT_ON_REAL_SOL_YEAR_AND_MATCH_PREFLIGHT_HYPOTHESIS`
+- Verdict: `REAL_SOL_1M_YEAR_PRESELECTED_PINER_HYPOTHESIS_QUANT_ACCEPTANCE_BLOCKED`
+- Next gate: `FIX_ONLY_REPORTED_PINER_REAL_YEAR_ACCEPTANCE_FAILURE`
 
 ## Facts
 
 - `ATB_CHANGED`: `NO`
-- `CALLS`: `120:obj.get,139:str,140:str,141:list,142:list,171:str,94:PINER_CONTRACT.exists,98:subprocess.run,111:json.loads,`
+- `ATR`: `14`
+- `CANDIDATE_ID`: `ICL_SRC_A465DEED5818C8FA`
 - `DASHBOARD_RESTART`: `NO`
+- `DATA_FILE`: `SOL_USDT-1m.feather`
 - `DB_WRITES`: `0`
-- `FAILURE`: `NONE`
-- `INTERNAL_RC`: `0`
-- `JSON_CALLS`: `json.loads(proc.stdout_or_{})`
-- `KEY_ASSIGNMENTS`: `contracts=[],contract_id=str(selected.get(contract_id)_or_ctype)`
-- `LOOPS`: `contract_in_obj.get(contracts,_[]),key_in_(_title,_message,_series,_series_a,_series_b,_threshold,_level_)`
-- `PRESELECTION_LIST_FOUND`: `YES`
-- `RAW_COLLECTION`: `contracts`
-- `READ_ONLY`: `YES`
-- `RETURNS`: `{_lane:_LANE_BY_TYPE[ctype],_expressions:_expressions,_evidence:_evidence,_author_label:_label,_priority:_TYPE_P`
-- `SELECTION_EXPR`: `{_lane:_LANE_BY_TYPE[ctype],_expressions:_expressions,_evidence:_evidence,_author_label:_label,_priority:_TYPE_P`
-- `SIGNATURE`: `select_piner_candidate(source,candles)`
-- `SORTS`: `sorted(contracts,_key=_sort_key)`
-- `SUBPROCESS_CALL`: `subprocess.run(_[node,_str(PINER_CONTRACT)],_cwd=PINER_ROOT,_input=json.dumps({_source:_source,_candles:__candle`
+- `ENTRY`: `NEXT_OPEN`
+- `FAILURE`: `PRESELECTED_RAW_CONTRACT_YEAR_MATCH_COUNT_2`
+- `FULL_YEAR_EVENTS`: `0`
+- `INTERNAL_RC`: `20`
+- `LONG_EVENTS`: `0`
+- `PAIR_SOL_USDT`: `YES`
+- `PINER_EXISTING_SELECTOR`: `YES`
+- `PREFLIGHT_RAW_CONTRACTS`: `2`
+- `PREFLIGHT_STATUS`: `BENCHTEST_READY_SHADOW`
+- `PRESELECTED_RAW_ID`: `2155047485863086456`
+- `QUANT_RAN`: `NO`
+- `QUANT_TRADES`: `0`
+- `RAW_ROWS`: `1578012`
+- `SAME_EXPRESSIONS`: `NO`
+- `SHORT_EVENTS`: `0`
+- `STOP_R`: `1`
+- `TARGET_R`: `1.5`
+- `TIMEFRAME_1M`: `YES`
+- `YEAR_PINER_RESULT`: `NO`
 - `YEAR_RESELECTION`: `NO`
+- `YEAR_ROWS`: `525600`
