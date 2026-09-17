@@ -1,31 +1,21 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-17T15:25:40.161225+00:00",
-  "run_id": "20260917T152534Z",
-  "step": "IMPLEMENT_PORTFOLIO_PERFORMANCE_V2",
+  "published_at_utc": "2026-09-17T15:28:49.775387+00:00",
+  "run_id": "20260917T152839Z",
+  "step": "FIX_PORTFOLIO_EXPOSURE_FORMULAS",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "PORTFOLIO_PERFORMANCE_V2_BLOCKED",
-  "next_gate": "FIX_ONLY_REPORTED_PORTFOLIO_PERFORMANCE_FAILURE",
+  "verdict": "PORTFOLIO_EXPOSURE_FORMULAS_BLOCKED",
+  "next_gate": "FIX_ONLY_REPORTED_EXPOSURE_FAILURE",
   "facts": {
     "BRANCH": "main",
     "COMMITTED": "NO",
     "DASHBOARD_RESTART": "NO",
     "DB_WRITES": "0",
-    "DRAWDOWNS": "NO",
-    "FAILURE": "FORMULA_MISMATCH_gross_exposure,net_exposure",
+    "FAILURE": "REFERENCE_FORMULA_CLASSIFICATION_FAILED_Traceback_(most_recent_call_last):___File__PATH_line_267,_in_&lt;module&gt;_",
     "FORMULAS": "NO",
     "INTERNAL_RC": "20",
-    "LIFECYCLE": "NO",
-    "PERFORMANCE": "NO",
-    "PORTFOLIO_TESTS": "NO",
     "PUSHED": "NO",
-    "QUANT": "NO",
-    "RECORDS": "NO",
-    "REFERENCE": "YES",
-    "RESULT_STORE": "NO",
-    "RETURNS_BATCH2": "NO",
-    "RETURNS_CORE": "NO",
-    "TRADES": "NO"
+    "TESTS": "NO"
   }
 }
