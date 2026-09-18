@@ -1,16 +1,32 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-18T17:18:48.581737+00:00`
-- Run ID: `20260918T171845Z`
-- Step: `FINISHFINALDOCUPDATE191`
-- Status: `FAIL`
-- Exit code: `1`
-- Verdict: `FINALDOCUPDATEFAILED`
-- Next gate: `DIAGNOSEFINALDOCUPDATE191`
+- Published UTC: `2026-09-18T17:20:10.680434+00:00`
+- Run ID: `20260918T172008Z`
+- Step: `DIAGNOSEFINALDOCUPDATE192`
+- Status: `SUCCESS`
+- Exit code: `0`
+- Verdict: `FINALDOCUPDATESTATEKNOWN`
+- Next gate: `COMPLETEFINALDOCUPDATE`
 
 ## Facts
 
+- `AHEAD`: `0`
+- `BEHIND`: `0`
+- `COMMIT`: `NO`
+- `CURRENT_HEADING`: `0`
 - `DB_WRITE`: `NO`
-- `PROD_DB_WRITE`: `NO`
+- `DIFF_CHECK`: `PASS`
+- `DOCS_WRITTEN`: `NO`
+- `FINAL_COMMIT`: `NO`
+- `HANDOFF_MARKER`: `0`
+- `HEAD`: `db59ab7044b5`
+- `MASTER_MARKER`: `0`
+- `OLD_FLOW_REMOVED`: `NO`
+- `PROOF_CLOSED`: `0`
+- `PUSH`: `NO`
+- `REPO_WRITE`: `NO`
 - `RESTART`: `NO`
+- `TARGETED`: `1`
+- `UPSTREAM_SYNCED`: `YES`
+- `WORKTREE`: `0`
