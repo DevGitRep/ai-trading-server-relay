@@ -1,26 +1,23 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-17T22:13:12.553826+00:00`
-- Run ID: `20260917T221302Z`
-- Step: `BUILDCHECKPOINTEDLARGESWEEPRUNNER64`
-- Status: `FAIL`
-- Exit code: `1`
-- Verdict: `CHECKPOINTEDLARGESWEEPRUNNERFAILED`
-- Next gate: `FIXCHECKPOINTEDLARGESWEEPRUNNER`
+- Published UTC: `2026-09-18T02:15:10.592755+00:00`
+- Run ID: `20260918T021503Z`
+- Step: `MAPHOMEPAGEMETRICS65`
+- Status: `SUCCESS`
+- Exit code: `0`
+- Verdict: `HOMEPAGEMETRICSMAPPED`
+- Next gate: `PATCHHOMEPAGEMETRICS`
 
 ## Facts
 
-- `BASE_HEAD`: `87d3b519e011`
-- `CHECKPOINT_DB_WRITE`: `YES`
-- `NEW_HEAD`: `UNKNOWN`
-- `PATCH`: `YES`
-- `PRODUCTION_DB_WRITE`: `NO`
-- `PUSHED`: `NO`
+- `DB_WRITE`: `NO`
+- `FILE1`: `backups/dashboard_pre_canonical_pine_entry_sound_20260821T162400Z.html`
+- `FILE2`: `backups/dashboard_pre_fix_js_9190_20260815_082111.html`
+- `FILE3`: `backups/dashboard_pre_integrity_v1_20260815_075227.html`
+- `FILES`: `72`
+- `HEAD`: `87d3b519e011`
+- `HITS`: `8270`
+- `PASS`: `YES`
 - `REPO_CLEAN`: `YES`
 - `RESTART`: `NO`
-- `SMOKE`: `NO`
-- `SMOKE_COMPLETED`: `0`
-- `SMOKE_ERRORS`: `3`
-- `SMOKE_SIGNAL_HASHES`: `1`
-- `UNIT`: `YES`
