@@ -1,16 +1,26 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-18T16:06:24.602579+00:00",
-  "run_id": "20260918T160606Z",
-  "step": "RUNTRUEKINETICSIGNALPARAMETERS179",
-  "status": "FAIL",
-  "exit_code": 1,
-  "verdict": "TRUEKINETICPARAMETERRUNFAILED",
-  "next_gate": "DIAGNOSETRUEKINETIC179",
+  "published_at_utc": "2026-09-18T16:12:14.744772+00:00",
+  "run_id": "20260918T161211Z",
+  "step": "DIAGNOSETRUEKINETIC179",
+  "status": "SUCCESS",
+  "exit_code": 0,
+  "verdict": "TRUEKINETIC179DIAGNOSED",
+  "next_gate": "RESUMETRUEKINETICBENCHTEST",
   "facts": {
     "COMMIT": "NO",
+    "DB_ROWS": "4",
+    "DB_STATUSES": "PASS:4",
+    "DB_WRITE": "NO",
+    "FIRST_ERROR": "NONE",
+    "HEAD": "db59ab7044b5",
     "PROD_DB_WRITE": "NO",
+    "REPO_CLEAN": "YES",
     "REPO_WRITE": "NO",
-    "RESTART": "NO"
+    "RESTART": "NO",
+    "RUNS_FINISHED": "3",
+    "RUNS_STARTED": "3",
+    "RUN_OUTPUTS": "3",
+    "SELECTED": "3"
   }
 }
