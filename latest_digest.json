@@ -1,27 +1,18 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-18T18:28:26.915999+00:00",
-  "run_id": "20260918T182822Z",
-  "step": "TRACESELECTUNTESTED214",
-  "status": "SUCCESS",
-  "exit_code": 0,
-  "verdict": "SELECTUNTESTEDLOGICTRACED",
-  "next_gate": "EXPLAINMISSING81",
+  "published_at_utc": "2026-09-18T18:32:05.103193+00:00",
+  "run_id": "20260918T183203Z",
+  "step": "RESOLVETPSELECTUNTESTED215",
+  "status": "FAIL",
+  "exit_code": 1,
+  "verdict": "TPRESOLUTIONFAILED",
+  "next_gate": "DIAGNOSETPIMPORT",
   "facts": {
     "COMMIT": "NO",
     "DB_WRITE": "NO",
-    "HEAD": "398294cb1bc9",
-    "LINE1": "28:def select_recent(count, production:None, testpine:None):",
-    "LINE2": "57:selected : tp.select_untested(sys.maxsize, &#x27;recent&#x27;)",
-    "LINE3": "69:_piner_selected : _select_piner_candidate(source, candles)",
-    "LINE4": "237:parser.add_argument(&#x27;order&#x27;, choices:[&#x27;recent&#x27;])",
-    "LINE5": "241:if bool(args.dry_run) :: bool(args.write):",
-    "LINE6": "244:_WRITE_RESULTS_V2 : bool(args.write)",
+    "ERROR_TYPE": "ImportError: attempted relative import with no known parent package",
     "REPO_CLEAN": "YES",
     "REPO_WRITE": "NO",
-    "RESTART": "NO",
-    "SELECTION_FACTS": "9",
-    "SELECT_UNTESTED_DEFS": "0",
-    "TP_MODULE": "UNKNOWN"
+    "RESTART": "NO"
   }
 }
