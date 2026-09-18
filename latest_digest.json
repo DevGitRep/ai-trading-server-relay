@@ -1,20 +1,19 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-18T02:29:37.997498+00:00",
-  "run_id": "20260918T022935Z",
-  "step": "MAPWINRATEFIELDORIGIN75",
+  "published_at_utc": "2026-09-18T02:31:43.197685+00:00",
+  "run_id": "20260918T023141Z",
+  "step": "INSPECTHOMEPAGECARDBLOCK77",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "WINRATEFIELDORIGINMAPPED",
+  "verdict": "HOMEPAGECARDBLOCKREADY",
   "next_gate": "PATCHHOMEPAGEMETRICS",
   "facts": {
-    "BE_SECONDARY_COUNT": "1",
-    "BE_WIN_COUNT": "2",
+    "CARDMETRICS_COUNT": "4",
     "DB_WRITE": "NO",
     "HEAD": "87d3b519e011",
+    "METRICDEF_COUNT": "2",
+    "REALISTIC_COUNT": "6",
     "REPO_CLEAN": "YES",
-    "RESTART": "NO",
-    "UI_SECONDARY_COUNT": "1",
-    "UI_WIN_COUNT": "2"
+    "RESTART": "NO"
   }
 }
