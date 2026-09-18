@@ -1,26 +1,21 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-18T02:45:04.624086+00:00`
-- Run ID: `20260918T024456Z`
-- Step: `DIAGNOSEFIRSTSWEEPCONFIG86`
+- Published UTC: `2026-09-18T02:45:54.167690+00:00`
+- Run ID: `20260918T024552Z`
+- Step: `VERIFYPREFLIGHTIMPORTPATH87`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `SWEEPFAILUREDIAGNOSED`
+- Verdict: `PREFLIGHTIMPORTPATHCHECKED`
 - Next gate: `FIXCHECKPOINTEDSWEEPRUNNER`
 
 ## Facts
 
-- `BARS`: `12000`
-- `CANDIDATE`: `ICL_LIB_0006E6B8CA659FC1`
-- `CONFIGS`: `35`
-- `ERROR`: `ModuleNotFoundError: No module named &#x27;atb_quant_engine&#x27;`
 - `HEAD`: `d9df8c3c97ca`
-- `OVERRIDES`: `0`
+- `IMPORT_FIX`: `YES`
+- `PLAIN`: `PASS`
 - `PROD_DB_WRITE`: `NO`
 - `REPO_CLEAN`: `YES`
 - `REPO_WRITE`: `NO`
 - `RESTART`: `NO`
-- `RESULT`: `FAIL`
-- `SOURCE`: `DB`
-- `STAGE`: `PREFLIGHT`
+- `WITH_TOOLS`: `PASS`

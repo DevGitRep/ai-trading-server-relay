@@ -1,25 +1,20 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-18T02:45:04.624086+00:00",
-  "run_id": "20260918T024456Z",
-  "step": "DIAGNOSEFIRSTSWEEPCONFIG86",
+  "published_at_utc": "2026-09-18T02:45:54.167690+00:00",
+  "run_id": "20260918T024552Z",
+  "step": "VERIFYPREFLIGHTIMPORTPATH87",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "SWEEPFAILUREDIAGNOSED",
+  "verdict": "PREFLIGHTIMPORTPATHCHECKED",
   "next_gate": "FIXCHECKPOINTEDSWEEPRUNNER",
   "facts": {
-    "BARS": "12000",
-    "CANDIDATE": "ICL_LIB_0006E6B8CA659FC1",
-    "CONFIGS": "35",
-    "ERROR": "ModuleNotFoundError: No module named &#x27;atb_quant_engine&#x27;",
     "HEAD": "d9df8c3c97ca",
-    "OVERRIDES": "0",
+    "IMPORT_FIX": "YES",
+    "PLAIN": "PASS",
     "PROD_DB_WRITE": "NO",
     "REPO_CLEAN": "YES",
     "REPO_WRITE": "NO",
     "RESTART": "NO",
-    "RESULT": "FAIL",
-    "SOURCE": "DB",
-    "STAGE": "PREFLIGHT"
+    "WITH_TOOLS": "PASS"
   }
 }
