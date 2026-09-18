@@ -1,30 +1,30 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-18T18:46:16.813290+00:00`
-- Run ID: `20260918T184614Z`
-- Step: `INSPECTACTIVESELECTUNTESTED222`
+- Published UTC: `2026-09-18T18:58:42.243315+00:00`
+- Run ID: `20260918T185840Z`
+- Step: `INSPECTALREADYTESTED223`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `ACTIVESELECTUNTESTEDREAD`
-- Next gate: `EXPLAINWHY81NOTSELECTED`
+- Verdict: `ALREADYTESTEDLOGICREAD`
+- Next gate: `PROVEMISSING81MISMATCH`
 
 ## Facts
 
+- `ALREADY_TESTED_END`: `67`
+- `ALREADY_TESTED_LINE`: `44`
 - `COMMIT`: `NO`
 - `DB_WRITE`: `NO`
-- `DEF_END`: `265`
-- `DEF_LINE`: `168`
 - `HEAD`: `398294cb1bc9`
-- `LOGIC1`: `168:def select_untested(count, order):`
-- `LOGIC2`: `192:SELECT x.rowid`
-- `LOGIC3`: `194:WHERE x.script_id_part:s.script_id_part`
-- `LOGIC4`: `195:ORDER BY`
-- `LOGIC5`: `198:LIMIT 1`
-- `LOGIC6`: `206:ORDER BY`
-- `LOGIC7`: `226:if already_tested(conn, sha):`
-- `LOGIC8`: `229:candidate_id : ensure_candidate(`
-- `LOGIC_FACTS`: `13`
+- `LOGIC1`: `44:def already_tested(conn, sha):`
+- `LOGIC2`: `47:SELECT 1`
+- `LOGIC3`: `48:FROM candidates`
+- `LOGIC4`: `49:WHERE source_sha256:?`
+- `LOGIC5`: `53:OR conversion_status IS NOT NULL`
+- `LOGIC6`: `54:OR causality_status IS NOT NULL`
+- `LOGIC7`: `55:OR repaint_status IS NOT NULL`
+- `LOGIC8`: `56:OR parity_status IS NOT NULL`
+- `LOGIC_FACTS`: `14`
 - `REPO_CLEAN`: `YES`
 - `REPO_WRITE`: `NO`
 - `RESTART`: `NO`
