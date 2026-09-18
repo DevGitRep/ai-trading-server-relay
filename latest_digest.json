@@ -1,19 +1,21 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-18T02:24:15.923484+00:00",
-  "run_id": "20260918T022414Z",
-  "step": "INSPECTLIVEHOMEPAGEMETRICS71",
+  "published_at_utc": "2026-09-18T02:25:08.232211+00:00",
+  "run_id": "20260918T022506Z",
+  "step": "EXTRACTHOMEPAGERENDERCONTRACT72",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "LIVEHOMEPAGEMETRICCONTRACTEXACT",
+  "verdict": "HOMEPAGERENDERCONTRACTEXACT",
   "next_gate": "PATCHHOMEPAGEMETRICS",
   "facts": {
-    "BACKEND_HITS": "172",
+    "CANDIDATE_KEYS": "4",
     "DB_WRITE": "NO",
     "HEAD": "87d3b519e011",
     "PASS": "YES",
     "REPO_CLEAN": "YES",
     "RESTART": "NO",
-    "UI_HITS": "39"
+    "ROUTE_HITS": "1",
+    "UI_RANGE": "374-404",
+    "UI_SCORE": "5"
   }
 }
