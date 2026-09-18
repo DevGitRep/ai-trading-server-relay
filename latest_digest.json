@@ -1,23 +1,23 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-18T03:18:08.676648+00:00",
-  "run_id": "20260918T031806Z",
-  "step": "MAPFULLNATIVESTRATEGYCONTRACT105",
+  "published_at_utc": "2026-09-18T03:18:49.531125+00:00",
+  "run_id": "20260918T031847Z",
+  "step": "EXTRACTNATIVETRADEROWMAPPING106",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "FULLNATIVESTRATEGYCONTRACTMAPPED",
+  "verdict": "NATIVETRADEROWMAPPINGREADY",
   "next_gate": "PATCHACTIVERESINNATIVESTRATEGYCONTRACT",
   "facts": {
-    "ACTIVE_CLOSEDTRADE_KEYS": "UNKNOWN",
-    "ACTIVE_STRATEGY_KEYS": "strategy,closedTrades,winTrades,lossTrades,evenTrades,realizedPnl,grossProfit,grossLoss,posSize,posAvgPrice,initialCapital,openProfit,equity,maxDrawdown,maxRunup",
-    "BENCH_STRATEGY_KEYS": "executionModel,nativeTrades,nativeTradesCaptured,initialCapital,equity,nativeEquitySeries,nativePositionSizeSeries,openPositionAtEnd",
-    "CLOSED_CONTEXTS": "2",
-    "ERRORS": "V2_NATIVE_STRATEGY_PAYLOAD_MISSING,V2_NATIVE_STRATEGY_MODEL_INVALID,V2_NATIVE_TRADE_LEDGER_MISSING,V2_NATIVE_TRADE_LEDGER_COUNT_MISMATCH,V2_NATIVE_CAPITAL_STATE_INVALID,V2_NATIVE_TRADE_ROW_INVALID_,V2_NATIVE_TRADE_PNL_IN",
+    "CLOSED1": "290:plots: | 291:nativeRun?.plots | 292:?? [], | 293: | 294:strategy: { | 295:closedTrades: | 296:Number( | 297:s.closedTrades | 298:?? 0 | 299:), | 300: | 301:winTrades: | 302:Num",
+    "CLOSED2": "292:?? [], | 293: | 294:strategy: { | 295:closedTrades: | 296:Number( | 297:s.closedTrades | 298:?? 0 | 299:), | 300: | 301:winTrades: | 302:Number( | 303:s.winTrades | 304:?? 0 |",
     "HEAD": "d9df8c3c97ca",
-    "MISSING_STRATEGY_KEYS": "executionModel,nativeTrades,nativeTradesCaptured,nativeEquitySeries,nativePositionSizeSeries,openPositionAtEnd",
     "PROD_DB_WRITE": "NO",
     "REPO_CLEAN": "YES",
     "REPO_WRITE": "NO",
-    "RESTART": "NO"
+    "RESTART": "NO",
+    "VAR1": "ARTIFACT:strategy",
+    "VAR2": "OPEN_END:isOpen",
+    "VAR3": "ROW:profit,profitPercent,closeReason",
+    "VAR_COUNT": "4"
   }
 }
