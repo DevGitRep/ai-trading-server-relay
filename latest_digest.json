@@ -1,29 +1,16 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-18T13:31:21.517695+00:00",
-  "run_id": "20260918T133119Z",
-  "step": "VERIFYFINALBENCHTESTACCEPTANCE173",
-  "status": "SUCCESS",
-  "exit_code": 0,
-  "verdict": "FINALBENCHTESTACCEPTANCEPASS",
-  "next_gate": "STARTREALTARGETEDBENCHTESTING",
+  "published_at_utc": "2026-09-18T14:05:46.704204+00:00",
+  "run_id": "20260918T134053Z",
+  "step": "STARTREALTARGETEDBENCHTEST174",
+  "status": "FAIL",
+  "exit_code": 1,
+  "verdict": "TARGETEDBENCHTESTBATCHFAILED",
+  "next_gate": "DIAGNOSETARGETEDBATCH174",
   "facts": {
-    "ACCEPT_ROWS": "3",
-    "CHANGED_CANDIDATE": "ICL_LIB_11C375231F976F2A",
-    "CHANGED_INDEX": "1",
-    "CHANGED_ROUTE": "PASS",
     "COMMIT": "NO",
-    "DB_WRITE": "NO",
-    "HEAD": "db59ab7044b5",
-    "NATIVE_STRATEGY": "YES",
-    "OFFICIAL_INDICATOR_METRICS": "YES",
     "PROD_DB_WRITE": "NO",
-    "REPO_CLEAN": "YES",
     "REPO_WRITE": "NO",
-    "RESTART": "NO",
-    "SKIP_ROUTE": "PASS",
-    "STRATEGY_CANDIDATE": "ICL_LIB_023B442AA868751E",
-    "STRATEGY_INDEX": "0",
-    "STRATEGY_ROUTE": "PASS"
+    "RESTART": "NO"
   }
 }
