@@ -1,25 +1,27 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-18T03:40:16.374811+00:00`
-- Run ID: `20260918T034014Z`
-- Step: `READWRITEVIZDIFF123`
-- Status: `SUCCESS`
+- Published UTC: `2026-09-18T03:41:46.150456+00:00`
+- Run ID: `20260918T034144Z`
+- Step: `PATCHNATIVEDIFFBLOCKS124`
+- Status: `FAIL`
 - Exit code: `0`
-- Verdict: `WRITEVIZDIFFEXACT`
-- Next gate: `PATCHNATIVEDIFFBLOCKS`
+- Verdict: `PATCHFAILED`
+- Next gate: `READPATCHERROR`
 
 ## Facts
 
-- `B1`: `replace|A:20-20|R:20-20`
-- `B2`: `replace|A:25-25|R:25-25`
-- `B3`: `replace|A:41-41|R:41-41`
-- `B4`: `replace|A:97-97|R:97-97`
-- `B5`: `replace|A:148-148|R:148-148`
-- `B6`: `replace|A:179-179|R:179-179`
-- `BLOCKS`: `6`
-- `HEAD`: `d9df8c3c97ca`
+- `BARS`: `0`
+- `BASE_HEAD`: `d9df8c3c97ca`
+- `EQ_POINTS`: `0`
+- `FULLYEAR`: `NO`
+- `LEDGER_ROWS`: `0`
+- `NEW_HEAD`: `d9df8c3c97ca`
+- `PATCH_BLOCKS`: `0`
+- `POS_POINTS`: `0`
 - `PROD_DB_WRITE`: `NO`
+- `PUSHED`: `NO`
 - `REPO_CLEAN`: `YES`
-- `REPO_WRITE`: `NO`
 - `RESTART`: `NO`
+- `STATIC_TEST`: `NO`
+- `SYNTAX`: `NO`
