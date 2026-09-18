@@ -1,22 +1,24 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-18T21:41:18.180319+00:00",
-  "run_id": "20260918T214116Z",
-  "step": "INSPECTSELECTORCLIASSERT245",
+  "published_at_utc": "2026-09-18T21:45:56.290023+00:00",
+  "run_id": "20260918T214554Z",
+  "step": "INSPECTSELECTORRETURN246",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "SELECTORCLIASSERTCONTEXTINSPECTED",
-  "next_gate": "PATCHSELECTORCLIEXPECTATION",
+  "verdict": "SELECTORCLIRETURNCODEIDENTIFIED",
+  "next_gate": "PATCHCLIEXPECTATIONORFIXMAIN",
   "facts": {
+    "ACTUAL_RETURN": "1",
+    "CALL_USES_WRITE": "YES",
     "COMMIT": "NO",
     "DB_WRITE": "NO",
-    "HAS_WRITE_ASSERT": "YES",
-    "HAS_WRITE_CALL": "YES",
+    "EXPECTED_RETURN": "0",
+    "FAIL_LINE": "317",
     "HEAD": "398294cb1bc9",
-    "OUTPUT_SIGNALS": "2",
-    "PATCHES_RUN_BATCH": "YES",
-    "PATCHES_SELECT_RECENT": "NO",
+    "LOAD_SCRIPT_PATCH": "NO",
+    "PATCH_TARGETS": "atb_preflight_v2.orchestrator.run_batch",
     "REPO_WRITE": "NO",
-    "RESTART": "NO"
+    "RESTART": "NO",
+    "RUN_BATCH_PATCH": "YES"
   }
 }
