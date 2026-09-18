@@ -1,20 +1,15 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-18T16:59:18.074566+00:00",
-  "run_id": "20260918T165916Z",
-  "step": "INSPECTMASTERHANDOFF186",
-  "status": "SUCCESS",
-  "exit_code": 0,
-  "verdict": "DOCSREADYFORFINALUPDATE",
-  "next_gate": "PATCHCOMMITPUSHFINALDOCS",
+  "published_at_utc": "2026-09-18T17:16:08.282305+00:00",
+  "run_id": "20260918T171606Z",
+  "step": "PATCHCOMMITPUSHFINALDOCS189",
+  "status": "FAIL",
+  "exit_code": 1,
+  "verdict": "FINALDOCUPDATEFAILED",
+  "next_gate": "DIAGNOSEFINALDOCUPDATE189",
   "facts": {
-    "COMMIT": "NO",
-    "HANDOFF_PRESENT": "YES",
-    "HEAD": "db59ab7044b5",
-    "MASTER_PRESENT": "YES",
-    "PUSH": "NO",
-    "REPO_CLEAN": "YES",
-    "REPO_WRITE": "NO",
+    "DB_WRITE": "NO",
+    "PROD_DB_WRITE": "NO",
     "RESTART": "NO"
   }
 }
