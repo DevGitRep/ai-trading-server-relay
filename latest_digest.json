@@ -1,21 +1,21 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-18T11:07:26.627089+00:00",
-  "run_id": "20260918T110651Z",
-  "step": "COMPAREFULLPAYLOADS151",
+  "published_at_utc": "2026-09-18T11:20:05.404269+00:00",
+  "run_id": "20260918T111702Z",
+  "step": "SHORTSIGNALDIAGNOSTIC153",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "FULLPAYLOADSCOMPARED",
-  "next_gate": "DECIDEOVERRIDEVALIDATION",
+  "verdict": "EXTREMESIGNALSDIAGNOSED",
+  "next_gate": "HARDENSWEEPCONFIGSELECTION",
   "facts": {
-    "ATR_EXACT_SAME": "5",
+    "ARTIFACT_CHANGED": "2",
     "CANDIDATES": "5",
-    "FLIP_EXACT_SAME": "5",
     "HEAD": "a3f3bbb7e3bd",
-    "NUMERIC_CHANGED": "0",
     "PROD_DB_WRITE": "NO",
     "REPO_CLEAN": "YES",
     "REPO_WRITE": "NO",
-    "RESTART": "NO"
+    "RESTART": "NO",
+    "SIGNAL_CHANGED": "0",
+    "SIGNAL_SAME": "5"
   }
 }
