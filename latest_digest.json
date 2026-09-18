@@ -1,19 +1,21 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-18T02:26:02.418851+00:00",
-  "run_id": "20260918T022600Z",
-  "step": "EXACTHOMEPAGEFIELDS73",
+  "published_at_utc": "2026-09-18T02:27:23.691706+00:00",
+  "run_id": "20260918T022721Z",
+  "step": "FINALHOMEPAGECONTRACT74",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "HOMEPAGEFIELDSREADYFORPATCH",
+  "verdict": "HOMEPAGEMETRICPATCHCONTRACTREADY",
   "next_gate": "PATCHHOMEPAGEMETRICS",
   "facts": {
-    "CANDIDATE_KEYS": "4,secondary_win,secondary_win_rate_pct,win_rate,win_rate_pct",
     "DB_WRITE": "NO",
     "HEAD": "87d3b519e011",
     "REPO_CLEAN": "YES",
     "RESTART": "NO",
-    "ROUTE_LINE": "1760",
-    "UI_RANGE": "365-415"
+    "ROUTE_SECONDARY_WIN": "NO",
+    "ROUTE_WIN_RATE_PCT": "NO",
+    "UI_SECONDARY_WIN": "YES",
+    "UI_TYPE_TOKENS": "UNKNOWN",
+    "UI_WIN_RATE_PCT": "YES"
   }
 }
