@@ -1,25 +1,21 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-18T13:27:16.231573+00:00",
-  "run_id": "20260918T132714Z",
-  "step": "DIAGNOSEACCEPTANCE170",
+  "published_at_utc": "2026-09-18T13:28:49.324700+00:00",
+  "run_id": "20260918T132846Z",
+  "step": "INSPECTACCEPTANCEROWS171",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "FINALACCEPTANCEFAILUREDIAGNOSED",
-  "next_gate": "CORRECTFINALACCEPTANCE",
+  "verdict": "ACCEPTANCEROWSINSPECTED",
+  "next_gate": "FIXFINALASSERTIONONLY",
   "facts": {
     "COMMIT": "NO",
-    "DB_EXISTS": "YES",
-    "DB_ROWS": "3",
-    "DB_STATUSES": "PASS:2,SIGNAL_GATE_SKIP:1",
-    "DISCOVERY_CHANGED": "2",
-    "DISCOVERY_PROBES": "1",
-    "FIRST_ERROR": "FAIL=0",
+    "DB_WRITE": "NO",
     "HEAD": "db59ab7044b5",
     "PROD_DB_WRITE": "NO",
     "REPO_CLEAN": "YES",
     "REPO_WRITE": "NO",
     "RESTART": "NO",
-    "SELECTION_EXISTS": "YES"
+    "ROWS": "3",
+    "STATUSES": "PASS:2,SIGNAL_GATE_SKIP:1"
   }
 }
