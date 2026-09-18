@@ -1,20 +1,16 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-18T12:37:41.494564+00:00",
-  "run_id": "20260918T123739Z",
-  "step": "INSPECTTARGETEDSWEEPSHAPE165",
-  "status": "SUCCESS",
-  "exit_code": 0,
-  "verdict": "TARGETEDSWEEPSHAPEREADY",
-  "next_gate": "RUNFIVECONFIGSIGNALGATESWEEP",
+  "published_at_utc": "2026-09-18T12:51:51.724907+00:00",
+  "run_id": "20260918T125149Z",
+  "step": "RUNFIVECONFIGSIGNALGATESWEEP166",
+  "status": "FAIL",
+  "exit_code": 1,
+  "verdict": "FIVECONFIGSIGNALGATESWEEPFAILED",
+  "next_gate": "DIAGNOSEGATESWEEP166",
   "facts": {
-    "CLI": "--plan,--checkpoint,--bars,--max-new-configs,--candidate-id,--config-index,--config-id,--fail-fast,--summary-only,--indicator-signal-gate-bars",
-    "HEAD": "e48b78ce021e",
-    "PATHS": "10",
+    "COMMIT": "NO",
     "PROD_DB_WRITE": "NO",
-    "REPO_CLEAN": "YES",
     "REPO_WRITE": "NO",
-    "RESTART": "NO",
-    "TARGETS": "5"
+    "RESTART": "NO"
   }
 }
