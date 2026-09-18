@@ -1,24 +1,25 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-18T21:45:56.290023+00:00",
-  "run_id": "20260918T214554Z",
-  "step": "INSPECTSELECTORRETURN246",
+  "published_at_utc": "2026-09-18T21:47:11.792661+00:00",
+  "run_id": "20260918T214709Z",
+  "step": "INSPECTMAINRETURNCODE247",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "SELECTORCLIRETURNCODEIDENTIFIED",
-  "next_gate": "PATCHCLIEXPECTATIONORFIXMAIN",
+  "verdict": "MAINRETURNPATHINSPECTED",
+  "next_gate": "FIXMAINORTESTFIXTURE",
   "facts": {
-    "ACTUAL_RETURN": "1",
-    "CALL_USES_WRITE": "YES",
     "COMMIT": "NO",
     "DB_WRITE": "NO",
-    "EXPECTED_RETURN": "0",
-    "FAIL_LINE": "317",
+    "HAS_ERROR_COUNTER": "YES",
+    "HAS_FAILED_COUNTER": "NO",
+    "HAS_WRITE_BRANCH": "NO",
     "HEAD": "398294cb1bc9",
-    "LOAD_SCRIPT_PATCH": "NO",
-    "PATCH_TARGETS": "atb_preflight_v2.orchestrator.run_batch",
     "REPO_WRITE": "NO",
     "RESTART": "NO",
-    "RUN_BATCH_PATCH": "YES"
+    "RETURN_COUNT": "2",
+    "RUN_BATCH_LINES": "274",
+    "RUN_BATCH_PATCHES": "1",
+    "TEST_PATCHES_RUN_BATCH": "YES",
+    "WRITE_BRANCHES": "0"
   }
 }
