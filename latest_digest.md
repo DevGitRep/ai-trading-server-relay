@@ -1,31 +1,25 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-18T03:38:36.571830+00:00`
-- Run ID: `20260918T033834Z`
-- Step: `COMPAREENCLOSINGADAPTERFUNCTION122`
+- Published UTC: `2026-09-18T03:40:16.374811+00:00`
+- Run ID: `20260918T034014Z`
+- Step: `READWRITEVIZDIFF123`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `ADAPTERFUNCTIONSCOMPARED`
-- Next gate: `PATCHACTIVEADAPTERV2`
+- Verdict: `WRITEVIZDIFFEXACT`
+- Next gate: `PATCHNATIVEDIFFBLOCKS`
 
 ## Facts
 
-- `ACTIVE_LINES`: `188`
-- `ACTIVE_NAME`: `writeViz`
-- `ACTIVE_REMOVE`: `0`
-- `DIFF_BLOCKS`: `6`
+- `B1`: `replace|A:20-20|R:20-20`
+- `B2`: `replace|A:25-25|R:25-25`
+- `B3`: `replace|A:41-41|R:41-41`
+- `B4`: `replace|A:97-97|R:97-97`
+- `B5`: `replace|A:148-148|R:148-148`
+- `B6`: `replace|A:179-179|R:179-179`
+- `BLOCKS`: `6`
 - `HEAD`: `d9df8c3c97ca`
-- `NON_NATIVE`: `6`
-- `NON_NATIVE1`: `function fail(`
-- `NON_NATIVE2`: `emit({`
 - `PROD_DB_WRITE`: `NO`
-- `REF_INSERT`: `0`
-- `REF_LINES`: `188`
-- `REF_NAME`: `writeViz`
-- `REPLACE_ACTIVE`: `6`
-- `REPLACE_REF`: `6`
 - `REPO_CLEAN`: `YES`
 - `REPO_WRITE`: `NO`
 - `RESTART`: `NO`
-- `SAME`: `182`
