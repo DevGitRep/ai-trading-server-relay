@@ -1,24 +1,24 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-18T03:54:19.678930+00:00",
-  "run_id": "20260918T034932Z",
+  "published_at_utc": "2026-09-18T08:34:02.375047+00:00",
+  "run_id": "20260918T083400Z",
   "step": "BUILDCHECKPOINTEDSWEEPRUNNER131",
-  "status": "SUCCESS",
+  "status": "FAIL",
   "exit_code": 0,
-  "verdict": "CHECKPOINTEDFULLYEARSWEEPRUNNERGREEN",
-  "next_gate": "BENCHMARKSWEEPRUNTIMEANDLAUNCH",
+  "verdict": "HEADMISMATCH",
+  "next_gate": "REVIEW",
   "facts": {
     "BASE_HEAD": "ddb0ed25d0ca",
-    "INDICATOR_PASS": "1",
-    "NEW_HEAD": "69727f48efd1",
-    "PLAN_CONFIGS": "8339",
+    "INDICATOR_PASS": "0",
+    "NEW_HEAD": "ddb0ed25d0ca",
+    "PLAN_CONFIGS": "0",
     "PROD_DB_WRITE": "NO",
-    "PUSHED": "YES",
+    "PUSHED": "NO",
     "REPO_CLEAN": "YES",
     "RESTART": "NO",
-    "RESUME_SKIPPED": "1",
-    "SHORT_PRECHECK": "3",
-    "STRATEGY_PASS": "1",
-    "UNIT_TESTS": "YES"
+    "RESUME_SKIPPED": "0",
+    "SHORT_PRECHECK": "0",
+    "STRATEGY_PASS": "0",
+    "UNIT_TESTS": "NO"
   }
 }
