@@ -1,16 +1,16 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-18T16:24:14.808845+00:00",
-  "run_id": "20260918T162056Z",
-  "step": "DASHBOARDTARGETEDSWEEP183",
+  "published_at_utc": "2026-09-18T16:49:15.974573+00:00",
+  "run_id": "20260918T162856Z",
+  "step": "ADAPTIVETARGETEDSWEEP184",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "DASHBOARDTARGETEDSWEEPCOMPLETE",
-  "next_gate": "REVIEWDASHBOARDORNEXTCANDIDATE",
+  "verdict": "ADAPTIVETARGETEDSWEEPCOMPLETE",
+  "next_gate": "REVIEWADAPTIVEORNEXTCANDIDATE",
   "facts": {
     "COMMIT": "NO",
-    "COMPARE_ROWS": "1",
-    "FULL_YEAR_VARIANTS": "0",
+    "COMPARE_ROWS": "4",
+    "FULL_YEAR_VARIANTS": "3",
     "HEAD": "db59ab7044b5",
     "PROBES": "6",
     "PROD_DB_WRITE": "NO",
@@ -18,6 +18,6 @@
     "REPO_WRITE": "NO",
     "RESTART": "NO",
     "RESULT_DB": "targeted_batch_01.sqlite",
-    "SIGNAL_CHANGED": "0"
+    "SIGNAL_CHANGED": "3"
   }
 }
