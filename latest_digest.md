@@ -1,30 +1,28 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-18T03:03:00.816508+00:00`
-- Run ID: `20260918T030242Z`
-- Step: `DIAGNOSESTRATEGYNATIVE93`
+- Published UTC: `2026-09-18T03:04:37.708046+00:00`
+- Run ID: `20260918T030435Z`
+- Step: `INSPECTNATIVESTRATEGYMODEL94`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `STRATEGYNATIVEFAILUREDIAGNOSED`
+- Verdict: `NATIVESTRATEGYMODELCONTRACTINSPECTED`
 - Next gate: `FIXSTRATEGYSWEEPSEMANTICS`
 
 ## Facts
 
-- `ARTIFACT_STRATEGY_TRUTHY`: `YES`
-- `ARTIFACT_STRATEGY_TYPE`: `dict`
-- `ATR`: `dict`
-- `BARS`: `525600`
-- `CANDIDATE`: `ICL_LIB_023B442AA868751E`
-- `CONFIGS`: `7`
-- `ERROR`: `RuntimeError: V2_NATIVE_STRATEGY_MODEL_INVALID:`
-- `FLIP`: `dict`
+- `FUNCTION_START`: `3116`
 - `HEAD`: `d9df8c3c97ca`
-- `NATIVE`: `UNKNOWN`
 - `PROD_DB_WRITE`: `NO`
+- `R1`: `3116:def _v2_native_strategy(`
+- `R2`: `3121:SECONDARY Strategy benchmark.`
+- `R3`: `3123:No reconstructed trades and no 1:1.5 overlay.`
+- `R4`: `3134:strategy=(`
+- `R5`: `3136:&quot;strategy&quot;`
+- `R6`: `3146:strategy,`
+- `RELEVANT_COUNT`: `34`
 - `REPO_CLEAN`: `YES`
 - `REPO_WRITE`: `NO`
 - `RESTART`: `NO`
-- `RESULT`: `FAIL`
-- `SOURCE_STRATEGY`: `YES`
-- `STAGE`: `NATIVE`
+- `STRATEGY_KEYS`: `closedTrades,equity,evenTrades,grossLoss,grossProfit,initialCapital,lossTrades,maxDrawdown,maxRunup,openProfit,posAvgPrice,posSize,realizedPnl,winTrades`
+- `STRATEGY_TYPE`: `dict`
