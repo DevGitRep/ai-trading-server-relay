@@ -1,29 +1,19 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-18T18:02:29.051501+00:00",
-  "run_id": "20260918T180225Z",
-  "step": "CLASSIFYEXACTPREFLIGHTGAP204",
-  "status": "SUCCESS",
-  "exit_code": 0,
-  "verdict": "EXACT81PREFLIGHTGAPCLASSIFIED",
-  "next_gate": "DECIDEPREFLIGHTGAPACTION",
+  "published_at_utc": "2026-09-18T18:06:14.330201+00:00",
+  "run_id": "20260918T180610Z",
+  "step": "CLASSIFYEXACTPREFLIGHTGAP205",
+  "status": "FAIL",
+  "exit_code": 1,
+  "verdict": "CLASSIFIEREXECUTIONFAILED",
+  "next_gate": "FIXCLASSIFIER",
   "facts": {
     "COMMIT": "NO",
-    "CURRENT_METHOD": "",
     "DB_WRITE": "NO",
-    "GAP": "",
-    "GAP_CLASSES": "",
-    "GAP_TYPES": "",
+    "ERROR": "Traceback (most recent call last): File &quot;&lt;stdin&gt;&quot;, line 51, in &lt;module&gt; sqlite3.OperationalError: attempt to write a readonly database",
     "HEAD": "398294cb1bc9",
-    "MATCH_DB": "",
-    "PREFLIGHT_PASSED": "",
-    "PREFLIGHT_TOTAL": "",
-    "PROCESSED_SET": "",
     "REPO_CLEAN": "YES",
     "REPO_WRITE": "NO",
-    "RESTART": "NO",
-    "SAMPLE_IDS": "",
-    "SEMANTICS": "",
-    "TOTAL_UI": "11742"
+    "RESTART": "NO"
   }
 }

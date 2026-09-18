@@ -1,30 +1,20 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-18T18:02:29.051501+00:00`
-- Run ID: `20260918T180225Z`
-- Step: `CLASSIFYEXACTPREFLIGHTGAP204`
-- Status: `SUCCESS`
-- Exit code: `0`
-- Verdict: `EXACT81PREFLIGHTGAPCLASSIFIED`
-- Next gate: `DECIDEPREFLIGHTGAPACTION`
+- Published UTC: `2026-09-18T18:06:14.330201+00:00`
+- Run ID: `20260918T180610Z`
+- Step: `CLASSIFYEXACTPREFLIGHTGAP205`
+- Status: `FAIL`
+- Exit code: `1`
+- Verdict: `CLASSIFIEREXECUTIONFAILED`
+- Next gate: `FIXCLASSIFIER`
 
 ## Facts
 
 - `COMMIT`: `NO`
-- `CURRENT_METHOD`: ``
 - `DB_WRITE`: `NO`
-- `GAP`: ``
-- `GAP_CLASSES`: ``
-- `GAP_TYPES`: ``
+- `ERROR`: `Traceback (most recent call last): File &quot;&lt;stdin&gt;&quot;, line 51, in &lt;module&gt; sqlite3.OperationalError: attempt to write a readonly database`
 - `HEAD`: `398294cb1bc9`
-- `MATCH_DB`: ``
-- `PREFLIGHT_PASSED`: ``
-- `PREFLIGHT_TOTAL`: ``
-- `PROCESSED_SET`: ``
 - `REPO_CLEAN`: `YES`
 - `REPO_WRITE`: `NO`
 - `RESTART`: `NO`
-- `SAMPLE_IDS`: ``
-- `SEMANTICS`: ``
-- `TOTAL_UI`: `11742`
