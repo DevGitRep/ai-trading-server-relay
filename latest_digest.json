@@ -1,22 +1,24 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-18T17:46:22.486879+00:00",
-  "run_id": "20260918T174537Z",
-  "step": "TRACEPREFLIGHTDASHBOARDMETRICS197",
+  "published_at_utc": "2026-09-18T17:49:26.633146+00:00",
+  "run_id": "20260918T174846Z",
+  "step": "TRACEEXACTPREFLIGHTMETRICS198",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "PREFLIGHTDASHBOARDMETRICSTRACED",
-  "next_gate": "QUERYEXACTPREFLIGHTGAP",
+  "verdict": "EXACTPREFLIGHTMETRICSLOCATED",
+  "next_gate": "QUERYEXACT81CANDIDATES",
   "facts": {
     "COMMIT": "NO",
     "DB_WRITE": "NO",
+    "EXACT_FILES": "42",
     "GAP": "81",
     "HEAD": "398294cb1bc9",
-    "MATCHED_FILES": "356",
+    "IDENTIFIER_GROUPS": "13",
     "PREFLIGHT_UI": "11661",
     "REPO_CLEAN": "YES",
     "REPO_WRITE": "NO",
     "RESTART": "NO",
+    "SQLISH": "41",
     "TOTAL_UI": "11742"
   }
 }
