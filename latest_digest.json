@@ -1,26 +1,24 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-18T19:28:48.936442+00:00",
-  "run_id": "20260918T192845Z",
-  "step": "VERIFYVARIABLECOUNTAND81SELECTION228",
+  "published_at_utc": "2026-09-18T19:43:42.625434+00:00",
+  "run_id": "20260918T194340Z",
+  "step": "DIAGNOSEREGRESSION229",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "VARIABLECOUNTAND81SELECTIONVERIFIED",
-  "next_gate": "RUNREGRESSIONTESTS",
+  "verdict": "REGRESSIONABORTCAUSEINSPECTED",
+  "next_gate": "FIXTESTSORVERIFYDB",
   "facts": {
-    "ALWAYS_WRITE": "YES",
     "COMMIT": "NO",
-    "COUNT_SLICE": "YES",
-    "CURRENT_TOTAL": "11742",
+    "DB_MATCHES_HEAD": "UNKNOWN",
+    "DB_MTIME": "2026-09-18 19:42:55",
+    "DB_TRACKED": "NO",
     "DB_WRITE": "NO",
-    "DRY_RUN_PRESENT": "NO",
+    "DIRTY_COUNT": "1",
+    "ERROR_KIND": "FAILED (failures=3, errors=4)",
     "HEAD": "398294cb1bc9",
-    "MARKED_V1": "11661",
-    "RECENT_10": "10",
-    "RECENT_200": "81",
-    "RECENT_50": "50",
+    "ONLY_ORCHESTRATOR_DIRTY": "YES",
     "REPO_WRITE": "NO",
     "RESTART": "NO",
-    "UNMARKED_V1": "81"
+    "TEST_RC": "1"
   }
 }
