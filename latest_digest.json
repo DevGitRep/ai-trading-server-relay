@@ -1,26 +1,18 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-18T18:33:11.708572+00:00",
-  "run_id": "20260918T183307Z",
-  "step": "STATICTRACESELECTUNTESTED216",
-  "status": "SUCCESS",
-  "exit_code": 0,
-  "verdict": "TPANDSELECTUNTESTEDSTATICALLYTRACED",
-  "next_gate": "EXPLAINWHY81NOTSELECTED",
+  "published_at_utc": "2026-09-18T18:35:14.479299+00:00",
+  "run_id": "20260918T183512Z",
+  "step": "TRACEPRODUCTIONTESTPINE217",
+  "status": "FAIL",
+  "exit_code": 1,
+  "verdict": "TESTPINETRACEFAILED",
+  "next_gate": "DIAGNOSETESTPINETRACE",
   "facts": {
-    "BINDING1": "36:ASSIGN tp=testpine or production.load_testpine()",
-    "BINDING2": "NONE",
     "COMMIT": "NO",
     "DB_WRITE": "NO",
-    "HEAD": "398294cb1bc9",
+    "ERROR_TYPE": "UNKNOWN",
     "REPO_CLEAN": "YES",
     "REPO_WRITE": "NO",
-    "RESTART": "NO",
-    "TP_BINDINGS": "1",
-    "UNT1": "test_atb_preflight_v2.py:332:tp.select_untested : writer",
-    "UNT2": "orchestrator.py:57:selected : tp.select_untested(sys.maxsize, &#x27;recent&#x27;)",
-    "UNT3": "NONE",
-    "UNT4": "NONE",
-    "UNTESTED_HITS": "2"
+    "RESTART": "NO"
   }
 }
