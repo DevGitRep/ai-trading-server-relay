@@ -1,25 +1,23 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-18T09:56:11.969638+00:00",
-  "run_id": "20260918T095610Z",
-  "step": "INSPECTOOMPROCESSFOOTPRINT144",
+  "published_at_utc": "2026-09-18T10:05:45.083320+00:00",
+  "run_id": "20260918T100542Z",
+  "step": "INSPECTRAMMODULES147",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "OOMFOOTPRINTINSPECTED",
-  "next_gate": "SETSWEEPMEMORYPOLICY",
+  "verdict": "RAMMODULESINSPECTED",
+  "next_gate": "RECOMMENDEXACTRAMPURCHASE",
   "facts": {
+    "EDAC_DIMMS": "0",
     "HEAD": "a3f3bbb7e3bd",
-    "KILLED_NAME": "python",
-    "KILLED_RSS_GB": "4.50",
-    "KILLED_VM_GB": "8.58",
+    "LSHW_BANKS": "0",
+    "MODULE_SIZES": "16GiB",
+    "PRODUCT": "200 Series/Z370 Chipset Family Power Management Controller",
     "PROD_DB_WRITE": "NO",
     "REPO_CLEAN": "YES",
     "REPO_WRITE": "NO",
     "RESTART": "NO",
-    "TASK_ROWS": "0",
-    "TOP1": "UNKNOWN",
-    "TOP2": "UNKNOWN",
-    "TOP3": "UNKNOWN",
-    "TOP4": "UNKNOWN"
+    "SPEED": "33MHz (30.3ns)",
+    "VENDOR": "Intel Corporation"
   }
 }

@@ -1,26 +1,24 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-18T09:56:11.969638+00:00`
-- Run ID: `20260918T095610Z`
-- Step: `INSPECTOOMPROCESSFOOTPRINT144`
+- Published UTC: `2026-09-18T10:05:45.083320+00:00`
+- Run ID: `20260918T100542Z`
+- Step: `INSPECTRAMMODULES147`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `OOMFOOTPRINTINSPECTED`
-- Next gate: `SETSWEEPMEMORYPOLICY`
+- Verdict: `RAMMODULESINSPECTED`
+- Next gate: `RECOMMENDEXACTRAMPURCHASE`
 
 ## Facts
 
+- `EDAC_DIMMS`: `0`
 - `HEAD`: `a3f3bbb7e3bd`
-- `KILLED_NAME`: `python`
-- `KILLED_RSS_GB`: `4.50`
-- `KILLED_VM_GB`: `8.58`
+- `LSHW_BANKS`: `0`
+- `MODULE_SIZES`: `16GiB`
+- `PRODUCT`: `200 Series/Z370 Chipset Family Power Management Controller`
 - `PROD_DB_WRITE`: `NO`
 - `REPO_CLEAN`: `YES`
 - `REPO_WRITE`: `NO`
 - `RESTART`: `NO`
-- `TASK_ROWS`: `0`
-- `TOP1`: `UNKNOWN`
-- `TOP2`: `UNKNOWN`
-- `TOP3`: `UNKNOWN`
-- `TOP4`: `UNKNOWN`
+- `SPEED`: `33MHz (30.3ns)`
+- `VENDOR`: `Intel Corporation`
