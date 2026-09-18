@@ -1,21 +1,23 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-18T08:39:27.937144+00:00",
-  "run_id": "20260918T083925Z",
-  "step": "INSPECTPOSTNATIVEHEAD133",
+  "published_at_utc": "2026-09-18T08:47:22.167669+00:00",
+  "run_id": "20260918T084614Z",
+  "step": "BUILDCHECKPOINTEDSWEEPRUNNER134",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "POSTNATIVECOMMITSINSPECTED",
-  "next_gate": "BUILDRUNNERONCURRENTHEAD",
+  "verdict": "CHECKPOINTEDSWEEPRUNNERGREEN",
+  "next_gate": "BENCHMARKONEFULLYEARCONFIG",
   "facts": {
-    "BASE": "ddb0ed25d0ca",
-    "COMMITS_AFTER_BASE": "1",
-    "HEAD": "69727f48efd1",
-    "IS_ANCESTOR": "YES",
-    "MERGE_BASE": "ddb0ed25d0ca",
+    "BASE_HEAD": "69727f48efd1",
+    "NEW_HEAD": "a3f3bbb7e3bd",
+    "PLAN_CONFIGS": "8339",
     "PROD_DB_WRITE": "NO",
+    "PUSHED": "YES",
     "REPO_CLEAN": "YES",
-    "REPO_WRITE": "NO",
-    "RESTART": "NO"
+    "RESTART": "NO",
+    "RESUME_POLICY": "YES",
+    "SHORT_FAIL": "0",
+    "SHORT_PRECHECK": "3",
+    "UNIT_TESTS": "YES"
   }
 }
