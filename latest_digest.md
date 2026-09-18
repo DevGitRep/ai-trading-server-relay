@@ -1,26 +1,28 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-18T18:27:12.880127+00:00`
-- Run ID: `20260918T182710Z`
-- Step: `INSPECTPREFLIGHTSELECTION213`
+- Published UTC: `2026-09-18T18:28:26.915999+00:00`
+- Run ID: `20260918T182822Z`
+- Step: `TRACESELECTUNTESTED214`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `PREFLIGHTRECENTLOGICLOCATED`
-- Next gate: `EXPLAINWHY81NOTSELECTED`
+- Verdict: `SELECTUNTESTEDLOGICTRACED`
+- Next gate: `EXPLAINMISSING81`
 
 ## Facts
 
 - `COMMIT`: `NO`
 - `DB_WRITE`: `NO`
-- `ORCHESTRATOR`: `tools/atb_preflight_v2/orchestrator.py`
-- `PACKAGE_FILES`: `12`
-- `RECENT1`: `orchestrator.py:57:selected : tp.select_untested(sys.maxsize, &#x27;recent&#x27;)`
-- `RECENT2`: `orchestrator.py:237:parser.add_argument(&#x27;order&#x27;, choices:[&#x27;recent&#x27;])`
-- `RECENT3`: `orchestrator.py:248:# unrelated recent candidates if a production TYS selector is inherited.`
-- `RECENT4`: `NONE`
-- `RECENT_HITS`: `3`
+- `HEAD`: `398294cb1bc9`
+- `LINE1`: `28:def select_recent(count, production:None, testpine:None):`
+- `LINE2`: `57:selected : tp.select_untested(sys.maxsize, &#x27;recent&#x27;)`
+- `LINE3`: `69:_piner_selected : _select_piner_candidate(source, candles)`
+- `LINE4`: `237:parser.add_argument(&#x27;order&#x27;, choices:[&#x27;recent&#x27;])`
+- `LINE5`: `241:if bool(args.dry_run) :: bool(args.write):`
+- `LINE6`: `244:_WRITE_RESULTS_V2 : bool(args.write)`
 - `REPO_CLEAN`: `YES`
 - `REPO_WRITE`: `NO`
 - `RESTART`: `NO`
-- `SELECTION_HITS`: `83`
+- `SELECTION_FACTS`: `9`
+- `SELECT_UNTESTED_DEFS`: `0`
+- `TP_MODULE`: `UNKNOWN`
