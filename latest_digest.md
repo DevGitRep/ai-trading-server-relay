@@ -1,36 +1,24 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-18T23:48:14.671760+00:00`
-- Run ID: `20260918T234553Z`
-- Step: `FINALPREFLIGHTV2FIX257`
+- Published UTC: `2026-09-18T23:49:40.407918+00:00`
+- Run ID: `20260918T234938Z`
+- Step: `DIAGNOSEFINAL257FAILURES`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `FINALFIXNOTACCEPTED`
-- Next gate: `FIXREMAINING`
+- Verdict: `EXACTREMAININGFAILURESIDENTIFIED`
+- Next gate: `PATCHSELECTORANDTESTISOLATION`
 
 ## Facts
 
+- `CANDLE_DETAIL`: `AssertionError: &#x27;DB_WRITES=0&#x27; not found in &#x27;&#x27; AssertionError: &#x27;CROSSOVER&#x27; != &#x27;CANONICAL_TA_FALLBACK&#x27;`
 - `COMMIT`: `NO`
-- `COMPILE_RC`: `0`
-- `COUNT`: `VARIABLE_LIMIT`
 - `DB_WRITE`: `NO`
-- `DB_WRITE_ACCOUNTING`: `YES`
-- `DRY_RUN`: `REMOVED`
-- `FULL_FAILURES`: `test_candle_failure_is_classified_before_writes,test_real_six_fallback_families_and_talib_callable`
-- `FULL_TEST_RC`: `1`
-- `HEAD_FALLBACK_RC`: `1`
-- `MARKER`: `SOURCE_SHA_PLUS_NOTES_V1`
-- `NEW_HEAD`: `398294cb1bc9`
-- `OLD_HEAD`: `398294cb1bc9`
-- `PRODUCTION_DB_UNCHANGED`: `NO`
-- `PUSH`: `NO`
-- `RECENT_10`: `NA`
-- `RECENT_200`: `NA`
-- `RECENT_50`: `NA`
-- `REPO_CLEAN`: `NO`
+- `DIRTY_COUNT`: `3`
+- `HEAD`: `398294cb1bc9`
+- `REPO_WRITE`: `NO`
 - `RESTART`: `NO`
-- `SEMANTIC_RC`: `1`
-- `TARGET_TEST_RC`: `1`
-- `UNEXPECTED`: `YES`
-- `WRITE_FLAG`: `COMPATIBILITY_NOOP`
+- `SEM_ERROR`: `Traceback (most recent call last): TypeError: select_recent.&lt;locals&gt;.identity() takes 3 positional arguments but 4 were given`
+- `TARGET_FAILURES`: `test_candle_failure_is_classified_before_writes,test_cli_summary_always_write_and_dry_run_rejected,test_production_files_unchanged,test_readonly_selector_exact_canonical_order_and_`
+- `V1_MARKERS`: `0`
+- `V2_MARKERS`: `0`
