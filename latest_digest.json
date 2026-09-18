@@ -1,23 +1,25 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-18T03:18:49.531125+00:00",
-  "run_id": "20260918T031847Z",
-  "step": "EXTRACTNATIVETRADEROWMAPPING106",
+  "published_at_utc": "2026-09-18T03:19:30.007174+00:00",
+  "run_id": "20260918T031927Z",
+  "step": "TRACEACTIVENATIVETRADESOURCE107",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "NATIVETRADEROWMAPPINGREADY",
+  "verdict": "ACTIVENATIVETRADESOURCETRACED",
   "next_gate": "PATCHACTIVERESINNATIVESTRATEGYCONTRACT",
   "facts": {
-    "CLOSED1": "290:plots: | 291:nativeRun?.plots | 292:?? [], | 293: | 294:strategy: { | 295:closedTrades: | 296:Number( | 297:s.closedTrades | 298:?? 0 | 299:), | 300: | 301:winTrades: | 302:Num",
-    "CLOSED2": "292:?? [], | 293: | 294:strategy: { | 295:closedTrades: | 296:Number( | 297:s.closedTrades | 298:?? 0 | 299:), | 300: | 301:winTrades: | 302:Number( | 303:s.winTrades | 304:?? 0 |",
+    "H1": "271:const nativeRun = await run(",
+    "H2": "278:nativeRun?.viz",
+    "H3": "291:nativeRun?.plots",
+    "H4": "295:closedTrades:",
+    "H5": "297:s.closedTrades",
+    "H6": "UNKNOWN",
     "HEAD": "d9df8c3c97ca",
+    "HITS": "5",
     "PROD_DB_WRITE": "NO",
     "REPO_CLEAN": "YES",
     "REPO_WRITE": "NO",
     "RESTART": "NO",
-    "VAR1": "ARTIFACT:strategy",
-    "VAR2": "OPEN_END:isOpen",
-    "VAR3": "ROW:profit,profitPercent,closeReason",
-    "VAR_COUNT": "4"
+    "VAR4": "STRATEGY:executionModel,nativeTrades,nativeTradesCaptured,initialCapital,equity,nativeEquitySeries,nativePositionSizeSeries,openPositionAtEnd"
   }
 }

@@ -1,24 +1,26 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-18T03:18:49.531125+00:00`
-- Run ID: `20260918T031847Z`
-- Step: `EXTRACTNATIVETRADEROWMAPPING106`
+- Published UTC: `2026-09-18T03:19:30.007174+00:00`
+- Run ID: `20260918T031927Z`
+- Step: `TRACEACTIVENATIVETRADESOURCE107`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `NATIVETRADEROWMAPPINGREADY`
+- Verdict: `ACTIVENATIVETRADESOURCETRACED`
 - Next gate: `PATCHACTIVERESINNATIVESTRATEGYCONTRACT`
 
 ## Facts
 
-- `CLOSED1`: `290:plots: | 291:nativeRun?.plots | 292:?? [], | 293: | 294:strategy: { | 295:closedTrades: | 296:Number( | 297:s.closedTrades | 298:?? 0 | 299:), | 300: | 301:winTrades: | 302:Num`
-- `CLOSED2`: `292:?? [], | 293: | 294:strategy: { | 295:closedTrades: | 296:Number( | 297:s.closedTrades | 298:?? 0 | 299:), | 300: | 301:winTrades: | 302:Number( | 303:s.winTrades | 304:?? 0 |`
+- `H1`: `271:const nativeRun = await run(`
+- `H2`: `278:nativeRun?.viz`
+- `H3`: `291:nativeRun?.plots`
+- `H4`: `295:closedTrades:`
+- `H5`: `297:s.closedTrades`
+- `H6`: `UNKNOWN`
 - `HEAD`: `d9df8c3c97ca`
+- `HITS`: `5`
 - `PROD_DB_WRITE`: `NO`
 - `REPO_CLEAN`: `YES`
 - `REPO_WRITE`: `NO`
 - `RESTART`: `NO`
-- `VAR1`: `ARTIFACT:strategy`
-- `VAR2`: `OPEN_END:isOpen`
-- `VAR3`: `ROW:profit,profitPercent,closeReason`
-- `VAR_COUNT`: `4`
+- `VAR4`: `STRATEGY:executionModel,nativeTrades,nativeTradesCaptured,initialCapital,equity,nativeEquitySeries,nativePositionSizeSeries,openPositionAtEnd`
