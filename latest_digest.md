@@ -1,18 +1,24 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-18T18:13:54.947632+00:00`
-- Run ID: `20260918T181352Z`
-- Step: `DIAGNOSEPREFLIGHTCLASSIFIER207`
+- Published UTC: `2026-09-18T18:20:37.381364+00:00`
+- Run ID: `20260918T182035Z`
+- Step: `INSPECTPREFLIGHTV2RECENT210`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `EXACTSQLITEERRORCAPTURED`
-- Next gate: `FIXREADONLYPROBE`
+- Verdict: `PREFLIGHTRECENTSEMANTICSINSPECTED`
+- Next gate: `COMPAREMISSING81TORECENT`
 
 ## Facts
 
 - `COMMIT`: `NO`
 - `DB_WRITE`: `NO`
-- `ERROR_TYPE`: `sqlite3.ProgrammingError: Cannot operate on a closed database.`
+- `HEAD`: `398294cb1bc9`
+- `HITS`: `1`
+- `RECENT1`: `NONE`
+- `RECENT2`: `NONE`
+- `RECENT3`: `NONE`
+- `RECENT_HITS`: `0`
+- `REPO_CLEAN`: `YES`
 - `REPO_WRITE`: `NO`
 - `RESTART`: `NO`

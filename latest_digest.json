@@ -1,16 +1,22 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-18T18:13:54.947632+00:00",
-  "run_id": "20260918T181352Z",
-  "step": "DIAGNOSEPREFLIGHTCLASSIFIER207",
+  "published_at_utc": "2026-09-18T18:20:37.381364+00:00",
+  "run_id": "20260918T182035Z",
+  "step": "INSPECTPREFLIGHTV2RECENT210",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "EXACTSQLITEERRORCAPTURED",
-  "next_gate": "FIXREADONLYPROBE",
+  "verdict": "PREFLIGHTRECENTSEMANTICSINSPECTED",
+  "next_gate": "COMPAREMISSING81TORECENT",
   "facts": {
     "COMMIT": "NO",
     "DB_WRITE": "NO",
-    "ERROR_TYPE": "sqlite3.ProgrammingError: Cannot operate on a closed database.",
+    "HEAD": "398294cb1bc9",
+    "HITS": "1",
+    "RECENT1": "NONE",
+    "RECENT2": "NONE",
+    "RECENT3": "NONE",
+    "RECENT_HITS": "0",
+    "REPO_CLEAN": "YES",
     "REPO_WRITE": "NO",
     "RESTART": "NO"
   }
