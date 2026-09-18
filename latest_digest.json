@@ -1,16 +1,27 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-18T17:25:32.364162+00:00",
-  "run_id": "20260918T172529Z",
-  "step": "PATCHFINALDOCSCONFIRMED194",
-  "status": "FAIL",
-  "exit_code": 1,
-  "verdict": "FINALDOCPATCHFAILED",
-  "next_gate": "DIAGNOSEFINALDOCPATCH194",
+  "published_at_utc": "2026-09-18T17:29:32.964254+00:00",
+  "run_id": "20260918T172928Z",
+  "step": "PATCHFINALDOCS195",
+  "status": "SUCCESS",
+  "exit_code": 0,
+  "verdict": "BENCHTESTDOCSFINALIZED",
+  "next_gate": "REGULARTARGETEDBENCHTESTING",
   "facts": {
+    "COMMIT": "YES",
     "DB_WRITE": "NO",
-    "PHASE": "BUILD",
+    "HANDOFF_UPDATED": "YES",
+    "HEAD_AFTER": "398294cb1bc9",
+    "HEAD_BEFORE": "db59ab7044b5",
+    "MASTER_UPDATED": "YES",
+    "OLD_HANDOFF_FLOW_REMOVED": "YES",
+    "PRODUCTION_READY_MARKER": "YES",
     "PROD_DB_WRITE": "NO",
-    "RESTART": "NO"
+    "PROOF_PHASE_CLOSED": "YES",
+    "PUSH": "YES",
+    "REPO_CLEAN": "YES",
+    "RESTART": "NO",
+    "TARGETED_1_TO_10": "YES",
+    "UPSTREAM_SYNCED": "YES"
   }
 }
