@@ -1,36 +1,17 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-18T22:13:42.840054+00:00`
-- Run ID: `20260918T221120Z`
-- Step: `FINISHPREFLIGHTV2REGRESSION252`
-- Status: `SUCCESS`
+- Published UTC: `2026-09-18T23:09:28.761415+00:00`
+- Run ID: `20260918T230926Z`
+- Step: `FINALPREFLIGHTV2FIX254`
+- Status: `FAIL`
 - Exit code: `0`
-- Verdict: `REGRESSIONFAILURESREMAIN`
-- Next gate: `FIXREMAININGFAILURES`
+- Verdict: `PATCHFAILEDANDROLLEDBACK`
+- Next gate: `FIXPATCH`
 
 ## Facts
 
-- `CLI_ALWAYS_WRITE`: `YES`
 - `COMMIT`: `NO`
-- `COUNT`: `VARIABLE_LIMIT`
-- `DB_HASH_UNCHANGED`: `NO`
-- `DB_WRITE_ACCOUNTING`: `YES`
-- `DIRTY_FILES`: `3`
-- `DRY_RUN_MODE`: `REMOVED`
-- `DRY_RUN_REJECTION_LITERALS`: `1`
-- `FAILURES`: `test_cli_summary_always_write_and_dry_run_rejected,test_production_files_unchanged,test_real_six_fallback_families_and_talib_callable`
-- `FAIL_DETAIL`: `AssertionError: 14 != 13 AssertionError: &#x27;12574f4a864c263e309a360b0a2c7037ba0b7a940a99858d1c40b8ab3bcd2342&#x27; != &#x27;af8824a8aaa534b43e02a6586c45489325d6ad73770922334b2d963e452df449&#x27;`
-- `FULL_TEST_RC`: `1`
-- `HEAD`: `398294cb1bc9`
-- `HEAD_FALLBACK_RC`: `1`
-- `MARKER`: `SOURCE_SHA_PLUS_NOTES_V1`
-- `RECENT_10`: `10`
-- `RECENT_200`: `200`
-- `RECENT_50`: `50`
-- `REPO_WRITE`: `YES`
+- `DB_WRITE`: `NO`
+- `ERROR`: `Traceback (most recent call last): File &quot;&lt;stdin&gt;&quot;, line 234, in &lt;module&gt; RuntimeError: expected exactly one explicit DB_WRITES print, got 2`
 - `RESTART`: `NO`
-- `SEMANTIC_RC`: `0`
-- `TARGET_TEST_RC`: `1`
-- `UNIQUE_200`: `0`
-- `WRITE_COMPAT`: `YES`
