@@ -1,32 +1,24 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-18T09:47:59.993959+00:00`
-- Run ID: `20260918T093800Z`
-- Step: `COMPLETEMISSINGCONFIGS141`
+- Published UTC: `2026-09-18T09:54:22.903084+00:00`
+- Run ID: `20260918T095420Z`
+- Step: `DIAGNOSESWEEPMEMORY143`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `PRACTICAL10CONFIGSWEEPCOMPLETE`
-- Next gate: `REVIEWPRACTICALSWEEPRESULTS`
+- Verdict: `MEMORYCAPACITYREAD`
+- Next gate: `SETSAFESWEEPCONCURRENCY`
 
 ## Facts
 
-- `ARTIFACT_CHANGED`: `2`
-- `ARTIFACT_SAME`: `3`
-- `AVG_RUN_SECONDS`: `262.758`
-- `BARS_PER_CONFIG`: `525600`
-- `COMPLETE_PAIRS`: `5`
+- `CGROUP_MEMORY_MAX`: `UNKNOWN`
 - `HEAD`: `a3f3bbb7e3bd`
-- `MISSING_CONFIGS`: `2`
-- `MISSING_FAIL`: `0`
-- `MISSING_PASS`: `2`
+- `MEM_AVAILABLE_GB`: `14.0`
+- `MEM_TOTAL_GB`: `15.5`
+- `OOM_KILLED`: `Sep 18 09:22:59 [HOST] kernel: Out of memory: Killed process 2418693 (python) total-vm:8997448kB, anon-rss:4720620kB, file-rss:2944kB, shmem-rss:0kB, UID:1000 pgtables:12964kB oom_score_adj:0`
 - `PROD_DB_WRITE`: `NO`
 - `REPO_CLEAN`: `YES`
 - `REPO_WRITE`: `NO`
 - `RESTART`: `NO`
-- `TOTAL_FAIL`: `0`
-- `TOTAL_PASS`: `10`
-- `TOTAL_ROWS`: `10`
-- `UNIQUE_CANDIDATES`: `5`
-- `UNIQUE_CONFIGS`: `10`
-- `WALL_SECONDS`: `597`
+- `SWAP_FREE_GB`: `3.6`
+- `SWAP_TOTAL_GB`: `4.0`
