@@ -1,28 +1,22 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-18T03:10:20.875215+00:00`
-- Run ID: `20260918T031018Z`
-- Step: `READSTRATEGYPAYLOADEXACT99`
+- Published UTC: `2026-09-18T03:12:26.561509+00:00`
+- Run ID: `20260918T031224Z`
+- Step: `DIAGNOSESTRATEGYMODELPATCHFAILURE101`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `STRATEGYPAYLOADPATCHPOINTREADY`
-- Next gate: `PATCHSTRATEGYEXECUTIONMODEL`
+- Verdict: `STRATEGYMODELPATCHFAILUREREAD`
+- Next gate: `FIXSTRATEGYEXECUTIONMODELPATCH`
 
 ## Facts
 
-- `A1`: `282:const s = ctx.strategy;`
-- `A2`: `287:kind: &quot;strategy&quot;,`
-- `A3`: `294:strategy: {`
-- `ACTIVE_COUNT`: `7`
-- `ACTIVE_LINE`: `295`
+- `ERROR`: `RuntimeError: V2_NATIVE_TRADE_LEDGER_MISSING`
+- `EXPECTED_HEAD`: `d9df8c3c97ca`
 - `HEAD`: `d9df8c3c97ca`
+- `MODEL_COUNT`: `0`
+- `OUT_EXISTS`: `YES`
 - `PROD_DB_WRITE`: `NO`
-- `R1`: `585:kind: &quot;strategy&quot;,`
-- `R2`: `592:strategy: {`
-- `R3`: `598:executionModel:`
-- `REF_COUNT`: `4`
-- `REF_LINE`: `599`
 - `REPO_CLEAN`: `YES`
 - `REPO_WRITE`: `NO`
 - `RESTART`: `NO`
