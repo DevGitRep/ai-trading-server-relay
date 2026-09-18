@@ -1,24 +1,30 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-18T23:49:40.407918+00:00`
-- Run ID: `20260918T234938Z`
-- Step: `DIAGNOSEFINAL257FAILURES`
+- Published UTC: `2026-09-18T23:51:15.649219+00:00`
+- Run ID: `20260918T235050Z`
+- Step: `SAFETYINVENTORY258`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `EXACTREMAININGFAILURESIDENTIFIED`
-- Next gate: `PATCHSELECTORANDTESTISOLATION`
+- Verdict: `SELECTORSIGNATUREANDDBSTATECAPTURED`
+- Next gate: `FINALREPAIRANDREGRESSION`
 
 ## Facts
 
-- `CANDLE_DETAIL`: `AssertionError: &#x27;DB_WRITES=0&#x27; not found in &#x27;&#x27; AssertionError: &#x27;CROSSOVER&#x27; != &#x27;CANONICAL_TA_FALLBACK&#x27;`
+- `ACTIVE_V1`: `0`
+- `ACTIVE_V1_ANY`: `0`
+- `BEST_BACKUP_FILE`: `indicator_challenger_lab_v1.db`
+- `BEST_BACKUP_V1`: `0`
 - `COMMIT`: `NO`
 - `DB_WRITE`: `NO`
-- `DIRTY_COUNT`: `3`
+- `ENSURE_SIGNATURE`: `(conn, row, source, sha)`
 - `HEAD`: `398294cb1bc9`
 - `REPO_WRITE`: `NO`
 - `RESTART`: `NO`
-- `SEM_ERROR`: `Traceback (most recent call last): TypeError: select_recent.&lt;locals&gt;.identity() takes 3 positional arguments but 4 were given`
-- `TARGET_FAILURES`: `test_candle_failure_is_classified_before_writes,test_cli_summary_always_write_and_dry_run_rejected,test_production_files_unchanged,test_readonly_selector_exact_canonical_order_and_`
-- `V1_MARKERS`: `0`
-- `V2_MARKERS`: `0`
+- `TEST_DBWRITES0`: `2`
+- `TEST_DBWRITES2`: `1`
+- `TEST_DRYRUN`: `1`
+- `TEST_LEN13`: `0`
+- `TEST_LEN14`: `1`
+- `WAL`: `YES`
+- `WAL_SIZE`: `0`
