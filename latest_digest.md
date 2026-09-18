@@ -1,21 +1,27 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-18T03:45:45.700543+00:00`
-- Run ID: `20260918T034543Z`
-- Step: `READPATCH128ERROR129`
+- Published UTC: `2026-09-18T03:47:08.915979+00:00`
+- Run ID: `20260918T034652Z`
+- Step: `PATCHREALNATIVEBLOCKS130`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `PATCH128ERRORREAD`
-- Next gate: `FIXPATCH128MECHANICS`
+- Verdict: `ACTIVERESINNATIVESTRATEGYGREEN`
+- Next gate: `BUILDCHECKPOINTEDFULLYEARSWEEPRUNNER`
 
 ## Facts
 
-- `ERROR`: `Traceback (most recent call last): File &quot;/tmp/native_real_blocks128.py&quot;, line 141, in &lt;module&gt; raise RuntimeError( RuntimeError: FINAL_PATCH_MISSING:executionModel: &quot;NATIVE_STRATEGY_LOGIC&quot;`
-- `FAILED_DIFF_BYTES`: `0`
-- `HEAD`: `d9df8c3c97ca`
-- `LOG_EXISTS`: `YES`
+- `BARS`: `525600`
+- `BASE_HEAD`: `d9df8c3c97ca`
+- `EQ_POINTS`: `525600`
+- `FULLYEAR`: `PASS`
+- `LEDGER_ROWS`: `19445`
+- `NEW_HEAD`: `ddb0ed25d0ca`
+- `PATCH_BLOCKS`: `3`
+- `POS_POINTS`: `525600`
 - `PROD_DB_WRITE`: `NO`
+- `PUSHED`: `YES`
 - `REPO_CLEAN`: `YES`
-- `REPO_WRITE`: `NO`
 - `RESTART`: `NO`
+- `STATIC_TEST`: `YES`
+- `SYNTAX`: `YES`
