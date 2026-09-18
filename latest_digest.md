@@ -1,26 +1,28 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-18T17:55:55.934935+00:00`
-- Run ID: `20260918T175534Z`
-- Step: `TRACEPREFLIGHTDOMAPI201`
+- Published UTC: `2026-09-18T18:00:11.676781+00:00`
+- Run ID: `20260918T180009Z`
+- Step: `INSPECTPREFLIGHTSEMANTICS203`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `PREFLIGHTDOMAPITRACED`
-- Next gate: `QUERYEXACT81PREFLIGHTGAP`
+- Verdict: `PREFLIGHTSEMANTICSEXTRACTED`
+- Next gate: `CLASSIFYEXACT81GAP`
 
 ## Facts
 
+- `COLUMNS`: `NO_CANDIDATES_TABLE,NO_PROVEN_PREFLIGHT_MARKER,NO_SOURCE_SHA_IDENTITY,TESTPINE_PREFLIGHT_V1,TESTPINE_PREFLIGHT_V1_CURRENT_EXECUTABLE_SOURCES,_indicator_library_ui_v2_preflight,candidates,current_shas,passed,source_sha,source_sha256`
 - `COMMIT`: `NO`
 - `DB_WRITE`: `NO`
-- `DOM_TOKENS`: `data-desktop-columns,irl-v2-stat,irl-v2-stats,irlPreflight,irlTotal`
+- `FUNCTION_LINES`: `72`
+- `FUNCTION_RANGE`: `15046-15117`
 - `GAP`: `81`
 - `HEAD`: `398294cb1bc9`
-- `LABEL_FILE`: `static/indicator_library_ui_v2.js`
-- `LOCAL_API_LINES`: `31`
 - `PREFLIGHT_UI`: `11661`
-- `REFS`: `80`
 - `REPO_CLEAN`: `YES`
 - `REPO_WRITE`: `NO`
 - `RESTART`: `NO`
+- `SQL_BLOCKS`: `1`
+- `STATUS_LITERALS`: `%TESTPINE_PREFLIGHT_V1=%,(?:^|[\r\n;])\s*TESTPINE_PREFLIGHT_V1=([^;\r\n]+),NO_PROVEN_PREFLIGHT_MARKER,PASS,TESTPINE_PREFLIGHT_V1_CURRENT_EXECUTABLE_SOURCES`
+- `TABLES`: `candidates`
 - `TOTAL_UI`: `11742`
