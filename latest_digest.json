@@ -1,22 +1,24 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-18T12:54:28.095511+00:00",
-  "run_id": "20260918T125425Z",
-  "step": "DIAGNOSEGATESWEEP166",
+  "published_at_utc": "2026-09-18T13:04:04.176574+00:00",
+  "run_id": "20260918T130034Z",
+  "step": "RUNFIVECONFIGSIGNALGATESWEEP167",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "GATESWEEPFAILUREDIAGNOSED",
-  "next_gate": "CORRECTFIVECONFIGGATERUN",
+  "verdict": "CORRECTEDFIVECONFIGGATESWEEPPASS",
+  "next_gate": "DOCUMENTSIGNALGATEWORKFLOW",
   "facts": {
+    "BARS_12000": "5",
     "COMMIT": "NO",
-    "DB_EXISTS": "YES",
-    "DB_ROWS": "0",
-    "DB_STATUSES": "NO_TABLE",
-    "FIRST_ERROR": "PLAN_CONFIGS=8339",
     "HEAD": "e48b78ce021e",
+    "NULL_METRICS": "5",
+    "OVERRIDE_MATCH": "5",
     "PROD_DB_WRITE": "NO",
     "REPO_CLEAN": "YES",
     "REPO_WRITE": "NO",
-    "RESTART": "NO"
+    "RESTART": "NO",
+    "ROWS": "5",
+    "SIGNAL_GATE_SKIP": "5",
+    "TEMP_CHECKPOINT": "/tmp/atb_signal_gate_five167.sqlite"
   }
 }
