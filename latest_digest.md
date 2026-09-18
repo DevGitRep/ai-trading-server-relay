@@ -1,23 +1,29 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-18T02:35:15.694588+00:00`
-- Run ID: `20260918T023513Z`
-- Step: `READREMAININGHOMEPAGELINES81`
+- Published UTC: `2026-09-18T02:38:08.938943+00:00`
+- Run ID: `20260918T023758Z`
+- Step: `PATCHHOMEPAGEMETRICS83`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `HOMEPAGEPATCHCONTEXTCOMPLETE`
-- Next gate: `PATCHHOMEPAGEMETRICS`
+- Verdict: `HOMEPAGEMETRICSPATCHED`
+- Next gate: `RESUMELARGESWEEPRUNNER`
 
 ## Facts
 
 - `DB_WRITE`: `NO`
-- `HEAD`: `87d3b519e011`
-- `L11`: `526:metrics.className=&quot;metrics&quot;;`
-- `L12`: `527:metrics.dataset.sharedMetrics=&quot;yes&quot;;`
-- `L13`: `529:const sourceMetrics=(`
-- `L14`: `530:card.metrics`
-- `L15`: `536:const tile=document.createElement(`
-- `L16`: `546:const labelEl=document.createElement(`
+- `DOCS`: `YES`
+- `INDICATOR_WIN`: `SECONDARY`
+- `NEW_HEAD`: `d9df8c3c97ca`
+- `NEW_PID`: `2356019`
+- `OLD_HEAD`: `87d3b519e011`
+- `OLD_PID`: `2094078`
+- `ORDER`: `PF_WIN_RETURN_DD_RETURNDD_SCORE`
+- `PUSHED`: `YES`
 - `REPO_CLEAN`: `YES`
-- `RESTART`: `NO`
+- `RETURN_DD`: `YES`
+- `SERVICE`: `ACTIVE`
+- `STRATEGY_WIN`: `OWN`
+- `TRADES_DATA_REMOVED`: `NO`
+- `TRADES_HEADLINE`: `NO`
+- `UI_CONTRACT`: `YES`
