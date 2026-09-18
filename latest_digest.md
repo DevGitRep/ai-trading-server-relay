@@ -1,25 +1,20 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-18T03:35:52.196162+00:00`
-- Run ID: `20260918T033550Z`
-- Step: `PATCHVALIDATENATIVEADAPTER119`
-- Status: `FAIL`
+- Published UTC: `2026-09-18T03:36:24.766007+00:00`
+- Run ID: `20260918T033622Z`
+- Step: `READPATCHERROR120`
+- Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `PATCHCONSTRUCTIONFAILED`
-- Next gate: `READPATCHERROR`
+- Verdict: `PATCHERRORREAD`
+- Next gate: `FIXPATCHERANDRETRY`
 
 ## Facts
 
-- `BARS`: `0`
-- `BASE_HEAD`: `d9df8c3c97ca`
-- `FULLYEAR`: `NO`
-- `LEDGER_ROWS`: `0`
-- `NEW_HEAD`: `d9df8c3c97ca`
-- `PATCHED`: `NO`
+- `ERROR`: `Traceback (most recent call last): File &quot;/tmp/native_adapter_patch119.py&quot;, line 259, in &lt;module&gt; raise RuntimeError( RuntimeError: REFERENCE_RUN_TOKEN_MISSING:nativeTradeValue`
+- `HEAD`: `d9df8c3c97ca`
+- `PATCH_BYTES`: `0`
 - `PROD_DB_WRITE`: `NO`
-- `PUSHED`: `NO`
 - `REPO_CLEAN`: `YES`
+- `REPO_WRITE`: `NO`
 - `RESTART`: `NO`
-- `STATIC_TEST`: `NO`
-- `SYNTAX`: `NO`
