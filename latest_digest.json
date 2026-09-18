@@ -1,21 +1,17 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-18T02:15:10.592755+00:00",
-  "run_id": "20260918T021503Z",
-  "step": "MAPHOMEPAGEMETRICS65",
+  "published_at_utc": "2026-09-18T02:17:51.870950+00:00",
+  "run_id": "20260918T021749Z",
+  "step": "READUICONTEXTFROMDOCS67",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "HOMEPAGEMETRICSMAPPED",
+  "verdict": "MASTERHANDOFFUICONTEXTREAD",
   "next_gate": "PATCHHOMEPAGEMETRICS",
   "facts": {
     "DB_WRITE": "NO",
-    "FILE1": "backups/dashboard_pre_canonical_pine_entry_sound_20260821T162400Z.html",
-    "FILE2": "backups/dashboard_pre_fix_js_9190_20260815_082111.html",
-    "FILE3": "backups/dashboard_pre_integrity_v1_20260815_075227.html",
-    "FILES": "72",
+    "HANDOFF_HITS": "160",
     "HEAD": "87d3b519e011",
-    "HITS": "8270",
-    "PASS": "YES",
+    "MASTER_HITS": "160",
     "REPO_CLEAN": "YES",
     "RESTART": "NO"
   }
