@@ -1,18 +1,16 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-18T18:06:14.330201+00:00",
-  "run_id": "20260918T180610Z",
-  "step": "CLASSIFYEXACTPREFLIGHTGAP205",
-  "status": "FAIL",
-  "exit_code": 1,
-  "verdict": "CLASSIFIEREXECUTIONFAILED",
-  "next_gate": "FIXCLASSIFIER",
+  "published_at_utc": "2026-09-18T18:13:54.947632+00:00",
+  "run_id": "20260918T181352Z",
+  "step": "DIAGNOSEPREFLIGHTCLASSIFIER207",
+  "status": "SUCCESS",
+  "exit_code": 0,
+  "verdict": "EXACTSQLITEERRORCAPTURED",
+  "next_gate": "FIXREADONLYPROBE",
   "facts": {
     "COMMIT": "NO",
     "DB_WRITE": "NO",
-    "ERROR": "Traceback (most recent call last): File &quot;&lt;stdin&gt;&quot;, line 51, in &lt;module&gt; sqlite3.OperationalError: attempt to write a readonly database",
-    "HEAD": "398294cb1bc9",
-    "REPO_CLEAN": "YES",
+    "ERROR_TYPE": "sqlite3.ProgrammingError: Cannot operate on a closed database.",
     "REPO_WRITE": "NO",
     "RESTART": "NO"
   }
