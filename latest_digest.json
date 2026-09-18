@@ -1,20 +1,22 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-18T12:15:29.621796+00:00",
-  "run_id": "20260918T121527Z",
-  "step": "IMPLEMENTINDICATORSIGNALGATE162",
+  "published_at_utc": "2026-09-18T12:27:46.308723+00:00",
+  "run_id": "20260918T122408Z",
+  "step": "VALIDATEREALSIGNALGATE163",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "SIGNALGATEPATCHTESTED",
-  "next_gate": "VALIDATESIGNALGATEONREALINDICATORS",
+  "verdict": "REALSIGNALGATEVALIDATED",
+  "next_gate": "COMMITINDICATORSIGNALGATE",
   "facts": {
-    "CHANGED_FILES": "2",
     "COMMIT": "NO",
-    "GATE_MARKERS": "13",
-    "HEAD_BEFORE": "a3f3bbb7e3bd",
-    "OK_COUNT": "2",
+    "DIRTY_FILES": "2",
+    "EXECUTE_ONE": "PASS",
+    "EXECUTE_STATUS": "SIGNAL_GATE_SKIP",
+    "HEAD": "a3f3bbb7e3bd",
     "PROD_DB_WRITE": "NO",
+    "REAL_CANDIDATES": "5",
     "RESTART": "NO",
-    "TEST_RUNS": "2"
+    "SIGNAL_CHANGED": "0",
+    "SIGNAL_SAME": "5"
   }
 }
