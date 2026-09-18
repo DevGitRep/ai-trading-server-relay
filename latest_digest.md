@@ -1,24 +1,24 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-18T10:05:45.083320+00:00`
-- Run ID: `20260918T100542Z`
-- Step: `INSPECTRAMMODULES147`
+- Published UTC: `2026-09-18T10:18:33.365431+00:00`
+- Run ID: `20260918T101831Z`
+- Step: `INSPECTRAMSLOTLAYOUT148`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `RAMMODULESINSPECTED`
+- Verdict: `RAMSLOTLAYOUTINSPECTED`
 - Next gate: `RECOMMENDEXACTRAMPURCHASE`
 
 ## Facts
 
-- `EDAC_DIMMS`: `0`
+- `EMPTY_SLOTS`: `0`
 - `HEAD`: `a3f3bbb7e3bd`
-- `LSHW_BANKS`: `0`
-- `MODULE_SIZES`: `16GiB`
-- `PRODUCT`: `200 Series/Z370 Chipset Family Power Management Controller`
+- `INSTALLED_MODULES`: `0`
+- `MODULE_LAYOUT`: `UNKNOWN`
 - `PROD_DB_WRITE`: `NO`
+- `READ_ERRORS`: `17-0:PermissionError,17-1:PermissionError,17-2:PermissionError,17-3:PermissionError`
 - `REPO_CLEAN`: `YES`
 - `REPO_WRITE`: `NO`
 - `RESTART`: `NO`
-- `SPEED`: `33MHz (30.3ns)`
-- `VENDOR`: `Intel Corporation`
+- `TOTAL_FROM_DMI_GB`: `UNKNOWN`
+- `TYPE17_RECORDS`: `0`
