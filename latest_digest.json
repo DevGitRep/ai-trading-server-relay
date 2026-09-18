@@ -1,24 +1,24 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-18T21:37:47.433912+00:00",
-  "run_id": "20260918T213745Z",
-  "step": "PATCHSELECTORREGRESSION243",
+  "published_at_utc": "2026-09-18T21:40:27.104088+00:00",
+  "run_id": "20260918T214024Z",
+  "step": "DIAGNOSESELECTORWRITEFAILURE244",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "SELECTORREGRESSIONUPDATED",
-  "next_gate": "PATCHREMAININGCLITESTS",
+  "verdict": "SELECTORWRITETESTFAILUREINSPECTED",
+  "next_gate": "FIXTESTWRITEISOLATION",
   "facts": {
-    "CANONICAL_21": "PRESERVED",
     "COMMIT": "NO",
-    "COUNT_EXPECTATIONS": "PRESERVED",
     "DB_WRITE": "NO",
-    "DIRTY_FILES": "2",
-    "DRY_RUN": "REMOVED_FROM_SELECTOR_TEST",
+    "ERROR_KIND": "ASSERTION",
+    "FAIL_LINE": "317",
+    "HAS_WRITE_CALL": "YES",
     "HEAD": "398294cb1bc9",
-    "REPO_WRITE": "YES",
-    "RESTART": "NO",
-    "SELECTOR_TEST": "FAIL",
-    "SELECTOR_TEST_RC": "1",
-    "WRITE_COMPAT": "TESTED"
+    "MAIN_CALLS": "1",
+    "PATCHES": "2",
+    "PATCHES_PERSIST": "NO",
+    "PATCHES_RUN_BATCH": "YES",
+    "REPO_WRITE": "NO",
+    "RESTART": "NO"
   }
 }
