@@ -1,8 +1,8 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-18T23:40:02.390338+00:00",
-  "run_id": "20260918T233959Z",
-  "step": "FINALPREFLIGHTV2FIX255",
+  "published_at_utc": "2026-09-18T23:44:01.124488+00:00",
+  "run_id": "20260918T234358Z",
+  "step": "FINALPREFLIGHTV2FIX256",
   "status": "FAIL",
   "exit_code": 0,
   "verdict": "PATCHFAILEDANDROLLEDBACK",
@@ -10,7 +10,7 @@
   "facts": {
     "COMMIT": "NO",
     "DB_WRITE": "NO",
-    "ERROR": "Traceback (most recent call last): File &quot;&lt;stdin&gt;&quot;, line 222, in &lt;module&gt; RuntimeError: no explicit DB_WRITES prints found",
+    "ERROR": "Traceback (most recent call last): File &quot;&lt;stdin&gt;&quot;, line 681, in &lt;module&gt; RuntimeError: source SHA capture missing",
     "RESTART": "NO"
   }
 }
