@@ -1,26 +1,21 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-18T20:27:35.878628+00:00",
-  "run_id": "20260918T202733Z",
-  "step": "ALIGNSELECTORWITHDASHBOARD240",
+  "published_at_utc": "2026-09-18T20:29:20.192473+00:00",
+  "run_id": "20260918T202918Z",
+  "step": "DIAGNOSESELECTORTEST241",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "SELECTORMARKERSEMANTICSALIGNED",
-  "next_gate": "PATCHCLIREGRESSIONTESTS",
+  "verdict": "SELECTORREGRESSIONFAILUREINSPECTED",
+  "next_gate": "FIXSELECTORTESTORIMPLEMENTATION",
   "facts": {
-    "BROAD_SCAN": "REMOVED",
+    "ASSERTS": "15",
     "COMMIT": "NO",
-    "COUNT": "VARIABLE_LIMIT",
     "DB_WRITE": "NO",
-    "DIFF_FILES": "1",
+    "FAILURE": "NONE",
     "HEAD": "398294cb1bc9",
-    "MARKER_COLUMN": "notes",
-    "MARKER_PATTERN": "V1_COLON",
-    "REPO_WRITE": "YES",
+    "INSERT_CALLS": "4",
+    "REPO_WRITE": "NO",
     "RESTART": "NO",
-    "SELECTOR_ISOLATION": "PRESERVED",
-    "SELECTOR_TEST": "FAIL",
-    "SELECTOR_TEST_RC": "1",
-    "SOURCE_KEY": "source_sha256"
+    "TEST_RC": "1"
   }
 }
