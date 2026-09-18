@@ -1,24 +1,25 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-18T15:27:56.595034+00:00",
-  "run_id": "20260918T152753Z",
-  "step": "INSPECTKINETICSIGNALPARAMS177",
+  "published_at_utc": "2026-09-18T15:29:01.118948+00:00",
+  "run_id": "20260918T152857Z",
+  "step": "TRACEKINETICSIGNALDEPENDENCIES178",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "KINETICSIGNALPARAMETERSINSPECTED",
-  "next_gate": "SELECTTARGETEDSIGNALPARAMETERS",
+  "verdict": "KINETICSIGNALDEPENDENCIESTRACED",
+  "next_gate": "RUNTRUEKINETICSIGNALPARAMETERS",
   "facts": {
     "COMMIT": "NO",
     "DB_WRITE": "NO",
     "HEAD": "db59ab7044b5",
-    "NUMERIC_INPUTS": "0",
-    "PROBES": "40",
+    "PLAN_INPUT_MATCHES": "55",
+    "PLAN_PARAMS": "55",
     "PROD_DB_WRITE": "NO",
     "REPO_CLEAN": "YES",
     "REPO_WRITE": "NO",
     "RESTART": "NO",
-    "SIGNALISH_LINES": "131",
-    "UNIQUE_PROBED_PARAMS": "20",
-    "UNPROBED_INPUTS": "0"
+    "SIGNAL_EMITTERS": "2",
+    "SIGNAL_PARAM_NAMES": "h24short1Length,h24short2Length,h24short3Length,h24short4Length,h24short5Length,h24short6Length,short1Length,short2Length,short3Length,short4Length,short5Length,short6Length",
+    "SIGNAL_PLAN_PARAMS": "12",
+    "SOURCE_NUMERIC_INPUTS": "55"
   }
 }
