@@ -1,27 +1,24 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-18T15:10:51.963886+00:00",
-  "run_id": "20260918T151050Z",
-  "step": "DIAGNOSEPARAMETERSWEEP176",
+  "published_at_utc": "2026-09-18T15:27:56.595034+00:00",
+  "run_id": "20260918T152753Z",
+  "step": "INSPECTKINETICSIGNALPARAMS177",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "PARAMETERSWEEPFAILUREDIAGNOSED",
-  "next_gate": "RESUMEFIRSTREALPARAMETERSWEEP",
+  "verdict": "KINETICSIGNALPARAMETERSINSPECTED",
+  "next_gate": "SELECTTARGETEDSIGNALPARAMETERS",
   "facts": {
     "COMMIT": "NO",
-    "DB_EXISTS": "YES",
     "DB_WRITE": "NO",
-    "DISCOVERY_PROBES": "40",
-    "FIRST_ERROR": "NONE",
     "HEAD": "db59ab7044b5",
-    "KINETIC_ROWS": "1",
-    "KINETIC_STATUSES": "PASS:1",
+    "NUMERIC_INPUTS": "0",
+    "PROBES": "40",
     "PROD_DB_WRITE": "NO",
     "REPO_CLEAN": "YES",
     "REPO_WRITE": "NO",
     "RESTART": "NO",
-    "RUNS_FINISHED": "0",
-    "RUNS_STARTED": "0",
-    "SELECTED": "0"
+    "SIGNALISH_LINES": "131",
+    "UNIQUE_PROBED_PARAMS": "20",
+    "UNPROBED_INPUTS": "0"
   }
 }
