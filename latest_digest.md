@@ -1,22 +1,21 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-18T12:32:14.163981+00:00`
-- Run ID: `20260918T123210Z`
-- Step: `COMMITSIGNALGATE164`
+- Published UTC: `2026-09-18T12:37:41.494564+00:00`
+- Run ID: `20260918T123739Z`
+- Step: `INSPECTTARGETEDSWEEPSHAPE165`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `INDICATORSIGNALGATECOMMITTED`
-- Next gate: `DOCUMENTANDPRACTICALTARGETEDSWEEP`
+- Verdict: `TARGETEDSWEEPSHAPEREADY`
+- Next gate: `RUNFIVECONFIGSIGNALGATESWEEP`
 
 ## Facts
 
-- `COMMIT`: `e48b78ce021efc0e8aff9a9af8ac14e2a102e613`
-- `GATE_FUNCTIONS`: `1`
-- `GATE_TESTS`: `4`
-- `HEAD_AFTER`: `e48b78ce021e`
-- `HEAD_BEFORE`: `a3f3bbb7e3bd`
+- `CLI`: `--plan,--checkpoint,--bars,--max-new-configs,--candidate-id,--config-index,--config-id,--fail-fast,--summary-only,--indicator-signal-gate-bars`
+- `HEAD`: `e48b78ce021e`
+- `PATHS`: `10`
 - `PROD_DB_WRITE`: `NO`
-- `PUSHED`: `YES`
 - `REPO_CLEAN`: `YES`
+- `REPO_WRITE`: `NO`
 - `RESTART`: `NO`
+- `TARGETS`: `5`
