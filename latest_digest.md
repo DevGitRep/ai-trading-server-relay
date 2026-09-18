@@ -1,25 +1,20 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-18T08:34:02.375047+00:00`
-- Run ID: `20260918T083400Z`
-- Step: `BUILDCHECKPOINTEDSWEEPRUNNER131`
-- Status: `FAIL`
+- Published UTC: `2026-09-18T08:34:59.813483+00:00`
+- Run ID: `20260918T083457Z`
+- Step: `INSPECTHEADAFTERMISMATCH132`
+- Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `HEADMISMATCH`
-- Next gate: `REVIEW`
+- Verdict: `HEADSTATEINSPECTED`
+- Next gate: `REBASERUNNERBUILDONCURRENTHEAD`
 
 ## Facts
 
-- `BASE_HEAD`: `ddb0ed25d0ca`
-- `INDICATOR_PASS`: `0`
-- `NEW_HEAD`: `ddb0ed25d0ca`
-- `PLAN_CONFIGS`: `0`
+- `BRANCH`: `main`
+- `CURRENT_HEAD`: `69727f48efd1`
+- `EXPECTED_HEAD`: `ddb0ed25d0ca`
 - `PROD_DB_WRITE`: `NO`
-- `PUSHED`: `NO`
 - `REPO_CLEAN`: `YES`
+- `REPO_WRITE`: `NO`
 - `RESTART`: `NO`
-- `RESUME_SKIPPED`: `0`
-- `SHORT_PRECHECK`: `0`
-- `STRATEGY_PASS`: `0`
-- `UNIT_TESTS`: `NO`
