@@ -1,21 +1,20 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-18T12:10:16.868029+00:00",
-  "run_id": "20260918T121014Z",
-  "step": "DIAGNOSEPATCHFAILURE161",
+  "published_at_utc": "2026-09-18T12:15:29.621796+00:00",
+  "run_id": "20260918T121527Z",
+  "step": "IMPLEMENTINDICATORSIGNALGATE162",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "PATCHFAILUREDIAGNOSED",
-  "next_gate": "CORRECTSIGNALGATEPATCH",
+  "verdict": "SIGNALGATEPATCHTESTED",
+  "next_gate": "VALIDATESIGNALGATEONREALINDICATORS",
   "facts": {
+    "CHANGED_FILES": "2",
     "COMMIT": "NO",
-    "DIRTY_COUNT": "0",
-    "FAILED_ANCHORS": "HAS_GATE_FUNCTION,HAS_GATE_CLI,HAS_GATE_STATUS,HAS_PRECHECK_STATUS_BLOCK",
-    "HEAD": "a3f3bbb7e3bd",
+    "GATE_MARKERS": "13",
+    "HEAD_BEFORE": "a3f3bbb7e3bd",
+    "OK_COUNT": "2",
     "PROD_DB_WRITE": "NO",
-    "REPO_WRITE": "NO",
     "RESTART": "NO",
-    "RUNNER_DIRTY": "NO",
-    "TEST_GATE_EXISTS": "NO"
+    "TEST_RUNS": "2"
   }
 }
