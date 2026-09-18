@@ -1,17 +1,16 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-18T18:35:14.479299+00:00",
-  "run_id": "20260918T183512Z",
-  "step": "TRACEPRODUCTIONTESTPINE217",
-  "status": "FAIL",
-  "exit_code": 1,
-  "verdict": "TESTPINETRACEFAILED",
-  "next_gate": "DIAGNOSETESTPINETRACE",
+  "published_at_utc": "2026-09-18T18:36:06.558448+00:00",
+  "run_id": "20260918T183604Z",
+  "step": "DIAGNOSETESTPINETRACE218",
+  "status": "SUCCESS",
+  "exit_code": 0,
+  "verdict": "TESTPINETRACEERRORCAPTURED",
+  "next_gate": "FIXTESTPINETRACE",
   "facts": {
     "COMMIT": "NO",
     "DB_WRITE": "NO",
-    "ERROR_TYPE": "UNKNOWN",
-    "REPO_CLEAN": "YES",
+    "ERROR_TAIL": "Traceback (most recent call last): File &quot;&lt;stdin&gt;&quot;, line 25, in &lt;module&gt; AssertionError",
     "REPO_WRITE": "NO",
     "RESTART": "NO"
   }
