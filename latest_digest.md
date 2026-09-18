@@ -1,18 +1,24 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-18T19:22:24.457834+00:00`
-- Run ID: `20260918T192222Z`
-- Step: `PATCHPREFLIGHTV2SEMANTICS226`
-- Status: `FAIL`
-- Exit code: `1`
-- Verdict: `PATCHFAILED`
-- Next gate: `DIAGNOSEPATCH`
+- Published UTC: `2026-09-18T19:26:11.765791+00:00`
+- Run ID: `20260918T192609Z`
+- Step: `FIXPREFLIGHTV2PATCH227`
+- Status: `SUCCESS`
+- Exit code: `0`
+- Verdict: `PREFLIGHTV2PATCHCOMPILES`
+- Next gate: `VERIFYVARIABLECOUNTAND81SELECTION`
 
 ## Facts
 
+- `ALWAYS_WRITE`: `YES`
 - `COMMIT`: `NO`
+- `COUNT`: `VARIABLE_LIMIT`
 - `DB_WRITE`: `NO`
-- `ERROR`: `File &quot;&lt;unknown&gt;&quot;, line 59 def _already_has_v1_marker(conn, sha): ^^^ SyntaxError: expected &#x27;except&#x27; or &#x27;finally&#x27; block`
+- `DIFF_FILES`: `1`
+- `DRY_RUN`: `REMOVED`
 - `HEAD`: `398294cb1bc9`
+- `RECENT`: `UNMARKED_V1_CURRENT_CANDIDATES`
+- `REPO_WRITE`: `YES`
 - `RESTART`: `NO`
+- `WRITE_FLAG`: `COMPATIBILITY_NOOP`

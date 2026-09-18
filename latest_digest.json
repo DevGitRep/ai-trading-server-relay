@@ -1,17 +1,23 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-18T19:22:24.457834+00:00",
-  "run_id": "20260918T192222Z",
-  "step": "PATCHPREFLIGHTV2SEMANTICS226",
-  "status": "FAIL",
-  "exit_code": 1,
-  "verdict": "PATCHFAILED",
-  "next_gate": "DIAGNOSEPATCH",
+  "published_at_utc": "2026-09-18T19:26:11.765791+00:00",
+  "run_id": "20260918T192609Z",
+  "step": "FIXPREFLIGHTV2PATCH227",
+  "status": "SUCCESS",
+  "exit_code": 0,
+  "verdict": "PREFLIGHTV2PATCHCOMPILES",
+  "next_gate": "VERIFYVARIABLECOUNTAND81SELECTION",
   "facts": {
+    "ALWAYS_WRITE": "YES",
     "COMMIT": "NO",
+    "COUNT": "VARIABLE_LIMIT",
     "DB_WRITE": "NO",
-    "ERROR": "File &quot;&lt;unknown&gt;&quot;, line 59 def _already_has_v1_marker(conn, sha): ^^^ SyntaxError: expected &#x27;except&#x27; or &#x27;finally&#x27; block",
+    "DIFF_FILES": "1",
+    "DRY_RUN": "REMOVED",
     "HEAD": "398294cb1bc9",
-    "RESTART": "NO"
+    "RECENT": "UNMARKED_V1_CURRENT_CANDIDATES",
+    "REPO_WRITE": "YES",
+    "RESTART": "NO",
+    "WRITE_FLAG": "COMPATIBILITY_NOOP"
   }
 }
