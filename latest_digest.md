@@ -1,27 +1,21 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-18T03:41:46.150456+00:00`
-- Run ID: `20260918T034144Z`
-- Step: `PATCHNATIVEDIFFBLOCKS124`
-- Status: `FAIL`
+- Published UTC: `2026-09-18T03:42:14.437412+00:00`
+- Run ID: `20260918T034212Z`
+- Step: `READPATCHERROR125`
+- Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `PATCHFAILED`
-- Next gate: `READPATCHERROR`
+- Verdict: `PATCH124ERRORREAD`
+- Next gate: `FIXDIFFPATCHER`
 
 ## Facts
 
-- `BARS`: `0`
-- `BASE_HEAD`: `d9df8c3c97ca`
-- `EQ_POINTS`: `0`
-- `FULLYEAR`: `NO`
-- `LEDGER_ROWS`: `0`
-- `NEW_HEAD`: `d9df8c3c97ca`
-- `PATCH_BLOCKS`: `0`
-- `POS_POINTS`: `0`
+- `ERROR`: `Traceback (most recent call last): File &quot;/tmp/native_diff_patch124.py&quot;, line 152, in &lt;module&gt; raise RuntimeError( RuntimeError: TOO_FEW_NATIVE_BLOCKS_SELECTED:0`
+- `FAILED_DIFF_BYTES`: `0`
+- `HEAD`: `d9df8c3c97ca`
+- `LOG_EXISTS`: `YES`
 - `PROD_DB_WRITE`: `NO`
-- `PUSHED`: `NO`
 - `REPO_CLEAN`: `YES`
+- `REPO_WRITE`: `NO`
 - `RESTART`: `NO`
-- `STATIC_TEST`: `NO`
-- `SYNTAX`: `NO`
