@@ -1,28 +1,17 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-19T05:52:51.194203+00:00`
-- Run ID: `20260919T054424Z`
-- Step: `PRODUCTIONV1PERSISTENCEPROOF275`
+- Published UTC: `2026-09-19T05:54:55.459708+00:00`
+- Run ID: `20260919T055453Z`
+- Step: `CANARYWRITEFORENSICS276`
 - Status: `FAIL`
 - Exit code: `0`
-- Verdict: `PRODUCTIONCANARYFAILED`
-- Next gate: `REVIEWPERSISTENCE`
+- Verdict: `FORENSICSFAILED`
+- Next gate: `STOP`
 
 ## Facts
 
-- `BACKUP`: `YES`
-- `CANARY_ERRORS`: `1`
-- `CANARY_MARKED`: `NO`
-- `CANARY_PROCESSED`: `1`
-- `CANARY_RC`: `0`
-- `CANARY_WRITES`: `1`
-- `DB_WRITE`: `YES`
-- `GAP_AFTER`: `79`
-- `GAP_PRE_CANARY`: `79`
-- `HEAD`: `d7e12df126bd`
-- `NORMALIZED`: `1`
+- `DB_WRITE`: `NO`
+- `ERROR`: `PERSIST_SIGNATURE=(item, result) PERSIST_SOURCE=def persist_v2_result(item, result): status = ( &quot;PASS&quot; if isinstance(result, dict) and result.get(&quot;status&quot;) == &quot;BENCHTEST_READY_SHADOW&quot; else &quot;FAIL&quot; ) _p`
+- `REPO_WRITE`: `NO`
 - `RESTART`: `NO`
-- `V1_AFTER`: `11663`
-- `V1_PRE_CANARY`: `11663`
-- `WRITE_FLAG_USED`: `NO`
