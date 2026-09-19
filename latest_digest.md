@@ -1,18 +1,39 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-19T06:06:10.770142+00:00`
-- Run ID: `20260919T060529Z`
-- Step: `FINALIZEPREFLIGHTV2282`
-- Status: `FAIL`
+- Published UTC: `2026-09-19T06:15:49.922187+00:00`
+- Run ID: `20260919T060804Z`
+- Step: `FINALCLOSEPREFLIGHT283`
+- Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `REGRESSIONFAILED`
-- Next gate: `STOP`
+- Verdict: `PREFLIGHTV2FULLYCLOSED`
+- Next gate: `DONE`
 
 ## Facts
 
-- `COMMIT`: `NO`
-- `DB_WRITE`: `NO`
-- `FAILURES`: `test_production_files_unchanged,test_readonly_selector_exact_canonical_order_and_identity,test_real_six_fallback_families_and_talib_callable`
-- `FULL_RC`: `1`
+- `ALL_SELECTED_MARKED`: `YES`
+- `BACKUP`: `YES`
+- `CANARY_ERRORS`: `1`
+- `CANARY_MARKED`: `YES`
+- `CANARY_PROCESSED`: `1`
+- `CANARY_RC`: `0`
+- `CANARY_WRITES`: `1`
+- `COMMIT`: `YES`
+- `CURRENT_AFTER`: `11742`
+- `CURRENT_BEFORE`: `11742`
+- `DB_WRITE`: `YES`
+- `EQUALS_AFTER`: `0`
+- `EQUALS_BEFORE`: `1`
+- `GAP_AFTER`: `0`
+- `GAP_BEFORE`: `79`
+- `HEAD`: `c2721dcc11b9`
+- `PUSH`: `YES`
+- `RECENT_AFTER`: `0`
+- `REMAINDER_BATCHES`: `1`
+- `REMAINDER_ERRORS`: `78`
+- `REMAINDER_PROCESSED`: `78`
+- `REMAINDER_WRITES`: `78`
 - `RESTART`: `NO`
+- `V1_AFTER`: `11742`
+- `V1_BEFORE`: `11663`
+- `WRITE_FLAG_USED`: `NO`
