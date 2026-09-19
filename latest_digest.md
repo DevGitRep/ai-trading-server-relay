@@ -1,23 +1,28 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-19T16:52:42.439569+00:00`
-- Run ID: `20260919T165240Z`
-- Step: `IDENTIFYINTERVENINGHEAD308`
+- Published UTC: `2026-09-19T17:12:59.382495+00:00`
+- Run ID: `20260919T171257Z`
+- Step: `DIAGNOSEBENCHTESTMETRICS309`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `INTERVENINGHEADIDENTIFIED`
-- Next gate: `UPDATEMASTERHANDOFFCURRENTHEAD`
+- Verdict: `BENCHTESTMETRICSDIAGNOSEDCAPTURED`
+- Next gate: `CLASSIFYMETRICBEHAVIOR`
 
 ## Facts
 
-- `AUTHOR`: `DevGitRep`
+- `CACHE_ROWS`: `11`
+- `CODE_HITS`: `39`
 - `CODE_WRITE`: `NO`
-- `COMMIT`: `NO`
+- `CURRENT_RUNS`: `11`
 - `DB_WRITE`: `NO`
-- `FILES`: `data/manual_support/AI_TRADING_SYSTEM_HANDOFF.md,data/manual_support/AI_TRADING_SYSTEM_MASTER.md`
-- `HEAD`: `e40f9755c8a3`
-- `PUSH`: `NO`
-- `REPO_CLEAN`: `YES`
+- `GROSS_NAN`: `0`
+- `PASS_COUNT`: `5`
+- `PASS_DD_GE_99`: `5`
+- `PASS_GROSS_NAN`: `0`
+- `PASS_NET_LE_MINUS99`: `5`
+- `PIPELINE_RUN_ROWS`: `11`
 - `RESTART`: `NO`
-- `SUBJECT`: `docs:_record_benchtest_selector_fix_and_fresh_canary`
+- `SCORE_ELIGIBLE`: `5`
+- `SCORE_ELIGIBLE_GROSS_NAN`: `0`
+- `TRADES_ROWS`: `179089`
