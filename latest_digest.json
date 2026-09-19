@@ -1,20 +1,22 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-19T15:40:05.401759+00:00",
-  "run_id": "20260919T154003Z",
-  "step": "CLEANBENCHTESTARTIFACTS300",
+  "published_at_utc": "2026-09-19T15:40:54.824699+00:00",
+  "run_id": "20260919T154052Z",
+  "step": "FINALDISKCHECK301",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "OLDBENCHTESTARTIFACTSCLEANED",
-  "next_gate": "FINALDISKCHECK",
+  "verdict": "DISKCLEANUPFINALIZED",
+  "next_gate": "STARTNEW12MONTHBENCHTEST",
   "facts": {
-    "CACHE_ROWS": "0",
+    "BENCHTEST_ARTIFACTS_GIB": "0.0",
     "CODE_WRITE": "NO",
+    "DASHBOARD_GIB": "27.1",
     "DB_WRITE": "NO",
     "DISK_AVAIL_GIB": "364",
-    "FREED_GIB": "58.9",
-    "REMAINING_FILES": "0",
-    "RESTART": "NO",
-    "TRACKED_FILES": "0"
+    "DISK_SIZE_GIB": "466",
+    "DISK_USED_GIB": "83",
+    "DISK_USE_PCT": "19",
+    "MANUAL_SUPPORT_GIB": "20.8",
+    "RESTART": "NO"
   }
 }
