@@ -1,11 +1,11 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-19T19:21:32.652717+00:00",
-  "run_id": "20260919T192130Z",
-  "step": "APPLYATBSUITENATIVEMIGRATION330",
+  "published_at_utc": "2026-09-19T19:50:05.233982+00:00",
+  "run_id": "20260919T195002Z",
+  "step": "ATBSUITENAMINGMIGRATION331",
   "status": "FAIL",
   "exit_code": 0,
-  "verdict": "ATBNATIVEINFINITESIZINGUNSUPPORTED",
+  "verdict": "ATBQUANTTESTSFAILED",
   "next_gate": "STOP",
   "facts": {
     "CODE_WRITE": "NO",
@@ -13,6 +13,7 @@
     "DB_WRITE": "NO",
     "HEAD": "e40f9755c8a3",
     "PUSH": "NO",
-    "RESTART": "NO"
+    "RESTART": "NO",
+    "ROLLBACK": "YES"
   }
 }

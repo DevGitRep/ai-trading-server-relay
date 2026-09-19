@@ -1,12 +1,12 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-19T19:21:32.652717+00:00`
-- Run ID: `20260919T192130Z`
-- Step: `APPLYATBSUITENATIVEMIGRATION330`
+- Published UTC: `2026-09-19T19:50:05.233982+00:00`
+- Run ID: `20260919T195002Z`
+- Step: `ATBSUITENAMINGMIGRATION331`
 - Status: `FAIL`
 - Exit code: `0`
-- Verdict: `ATBNATIVEINFINITESIZINGUNSUPPORTED`
+- Verdict: `ATBQUANTTESTSFAILED`
 - Next gate: `STOP`
 
 ## Facts
@@ -17,3 +17,4 @@
 - `HEAD`: `e40f9755c8a3`
 - `PUSH`: `NO`
 - `RESTART`: `NO`
+- `ROLLBACK`: `YES`
