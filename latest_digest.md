@@ -1,30 +1,27 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-18T23:51:15.649219+00:00`
-- Run ID: `20260918T235050Z`
-- Step: `SAFETYINVENTORY258`
+- Published UTC: `2026-09-19T00:00:09.417542+00:00`
+- Run ID: `20260918T235254Z`
+- Step: `FORENSICMARKERRECOVERY259`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `SELECTORSIGNATUREANDDBSTATECAPTURED`
-- Next gate: `FINALREPAIRANDREGRESSION`
+- Verdict: `V1MARKERRECOVERYSOURCESINVENTORIED`
+- Next gate: `REPAIRDATABASEANDSELECTOR`
 
 ## Facts
 
-- `ACTIVE_V1`: `0`
-- `ACTIVE_V1_ANY`: `0`
-- `BEST_BACKUP_FILE`: `indicator_challenger_lab_v1.db`
-- `BEST_BACKUP_V1`: `0`
+- `ALL_TABLE_V1`: `0`
+- `BEST_COPY`: `indicator_challenger_lab_v1-before-final-preflight-reset-20260916T190423Z.db`
+- `BEST_COPY_V1`: `0`
 - `COMMIT`: `NO`
 - `DB_WRITE`: `NO`
 - `ENSURE_SIGNATURE`: `(conn, row, source, sha)`
+- `FREELIST`: `0`
 - `HEAD`: `398294cb1bc9`
+- `PERSIST_NOTES`: `NO`
+- `PERSIST_UPDATE`: `NO`
+- `RAW_V1`: `0`
+- `RAW_V1_ANY`: `70313`
 - `REPO_WRITE`: `NO`
 - `RESTART`: `NO`
-- `TEST_DBWRITES0`: `2`
-- `TEST_DBWRITES2`: `1`
-- `TEST_DRYRUN`: `1`
-- `TEST_LEN13`: `0`
-- `TEST_LEN14`: `1`
-- `WAL`: `YES`
-- `WAL_SIZE`: `0`
