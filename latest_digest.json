@@ -1,26 +1,16 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-19T10:29:14.935776+00:00",
-  "run_id": "20260919T102827Z",
-  "step": "CHECK12MONTHRESETSTATE291",
-  "status": "SUCCESS",
+  "published_at_utc": "2026-09-19T10:38:56.363022+00:00",
+  "run_id": "20260919T103705Z",
+  "step": "RESET12MONTHBENCHTEST292",
+  "status": "FAIL",
   "exit_code": 0,
-  "verdict": "RESETSTATECAPTURED",
-  "next_gate": "COMPLETE12MONTHRESET",
+  "verdict": "BENCHTEST12MONTHRESETFAILED",
+  "next_gate": "STOP",
   "facts": {
-    "BACKUP_PASSED": "5937",
-    "BACKUP_PROCESSED": "11742",
-    "BACKUP_ROWS": "31055684",
-    "CACHE": "2803",
+    "BACKUP": "YES",
     "CODE_WRITE": "NO",
-    "CURRENT_PASSED": "5937",
-    "CURRENT_PROCESSED": "11742",
-    "CURRENT_ROWS": "31055684",
-    "DB_WRITE": "NO",
-    "RESTART": "NO",
-    "RESULTS_V1": "-1",
-    "RESULTS_V2": "-1",
-    "RUNS": "2626",
-    "TRADES": "31050255"
+    "DB_WRITE": "MAYBE",
+    "RESTART": "NO"
   }
 }
