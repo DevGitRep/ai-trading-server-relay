@@ -1,24 +1,25 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-19T13:49:56.353958+00:00",
-  "run_id": "20260919T134952Z",
-  "step": "UPDATEMASTERHANDOFF295",
+  "published_at_utc": "2026-09-19T15:28:23.194221+00:00",
+  "run_id": "20260919T151849Z",
+  "step": "SAFEBACKUPCLEANUP296",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "MASTERHANDOFFANDGITHUBUPDATED",
-  "next_gate": "STARTNEW12MONTHBENCHTEST",
+  "verdict": "OLDBACKUPSCLEANEDSAFELY",
+  "next_gate": "DISKUSAGECHECK",
   "facts": {
+    "BACKUP_GIB": "18.1",
+    "BACKUP_VERIFIED": "YES",
     "BENCHTEST_ROWS": "0",
+    "CANDIDATE_FREED_GIB": "164.6",
     "CODE_WRITE": "NO",
-    "COMMIT": "YES",
     "DB_WRITE": "NO",
-    "FILES": "data/manual_support/AI_TRADING_SYSTEM_HANDOFF.md,data/manual_support/AI_TRADING_SYSTEM_MASTER.md",
-    "NEW_HEAD": "6bdf3b3caca6",
-    "OLD_HEAD": "60ac77feacd7",
+    "DELETED_FILES": "710",
+    "DISK_GAIN_GIB": "146.5",
     "PREFLIGHT_PASSED": "5937",
     "PREFLIGHT_PROCESSED": "11742",
-    "PUSH": "YES",
     "REPO_CLEAN": "YES",
-    "RESTART": "NO"
+    "RESTART": "NO",
+    "TRACKED_SKIPPED": "0"
   }
 }
