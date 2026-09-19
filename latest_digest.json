@@ -1,18 +1,17 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-19T15:58:31.114215+00:00",
-  "run_id": "20260919T155828Z",
-  "step": "IDENTIFYBENCHTESTSELECTIONSTATE303",
+  "published_at_utc": "2026-09-19T16:01:00.311577+00:00",
+  "run_id": "20260919T160049Z",
+  "step": "INSPECTBENCHTESTSELECTOR304",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "BENCHTESTSELECTIONSTATECAPTURED",
-  "next_gate": "RESETBENCHTESTSELECTIONSTATE",
+  "verdict": "BENCHTESTSELECTORCAPTURED",
+  "next_gate": "FIXBENCHTESTSELECTOR",
   "facts": {
-    "ANY_BENCHTEST_NOTES": "5937",
     "CODE_WRITE": "NO",
     "DB_WRITE": "NO",
-    "READY_SHADOW": "5937",
-    "RESTART": "NO",
-    "TOP_MARKERS": ""
+    "FILES_FOUND": "41",
+    "READY_SHADOW_COUNT": "5937",
+    "RESTART": "NO"
   }
 }
