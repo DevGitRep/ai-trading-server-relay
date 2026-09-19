@@ -1,30 +1,19 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-19T19:52:53.926718+00:00",
-  "run_id": "20260919T195251Z",
-  "step": "BASELINEATBQUANTTESTS332",
-  "status": "SUCCESS",
+  "published_at_utc": "2026-09-19T19:56:08.157008+00:00",
+  "run_id": "20260919T195604Z",
+  "step": "FINALATBSUITENAMING333",
+  "status": "FAIL",
   "exit_code": 0,
-  "verdict": "BASELINEATBQUANTTESTSHASPREEXISTINGFAILURES",
-  "next_gate": "FINALATBSUITENAMINGPATCHWITHBASELINEGATE",
+  "verdict": "ADAPTERREGRESSIONINTRODUCED",
+  "next_gate": "STOP",
   "facts": {
     "CODE_WRITE": "NO",
     "COMMIT": "NO",
     "DB_WRITE": "NO",
-    "FAIL_1": "",
-    "FAIL_2": "",
-    "FAIL_3": "",
-    "FAIL_4": "",
-    "FAIL_5": "",
-    "FAIL_6": "",
-    "FAIL_7": "",
-    "FAIL_8": "",
-    "FAIL_COUNT": "0",
     "HEAD": "e40f9755c8a3",
     "PUSH": "NO",
-    "PYTEST_RC": "1",
-    "REPO_CLEAN": "YES",
     "RESTART": "NO",
-    "TEST_SUMMARY": ""
+    "ROLLBACK": "YES"
   }
 }
