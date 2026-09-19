@@ -1,28 +1,20 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-19T00:48:16.253871+00:00",
-  "run_id": "20260919T003936Z",
+  "published_at_utc": "2026-09-19T05:24:34.623385+00:00",
+  "run_id": "20260919T052429Z",
   "step": "CURRENTSEMANTICSPRODUCTION269",
   "status": "FAIL",
   "exit_code": 0,
-  "verdict": "PRODUCTIONCANARYFAILED",
-  "next_gate": "REVIEWCANARY",
+  "verdict": "CURRENTDASHBOARDANDSELECTORDONOTMATCH",
+  "next_gate": "STOP",
   "facts": {
-    "CANARY_ERRORS": "1",
-    "CANARY_PROCESSED": "1",
-    "CANARY_RC": "0",
-    "CANARY_WRITES": "1",
-    "CURRENT_AFTER": "11742",
-    "CURRENT_BEFORE": "11742",
-    "DB_WRITE": "YES",
-    "GAP_AFTER": "81",
-    "GAP_BEFORE": "81",
+    "ALL_DB_SHA": "11775",
+    "CURRENT": "11742",
+    "DB_WRITE": "NO",
+    "GAP": "81",
     "HEAD": "2b409d489d94",
-    "RECENT_AFTER": "81",
-    "RECENT_BEFORE": "81",
+    "RECENT": "81",
     "RESTART": "NO",
-    "V1_AFTER": "11661",
-    "V1_BEFORE": "11661",
-    "WRITE_FLAG_USED": "NO"
+    "V1": "11661"
   }
 }
