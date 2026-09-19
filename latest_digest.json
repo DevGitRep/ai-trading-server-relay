@@ -1,26 +1,18 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-19T06:32:10.556250+00:00",
-  "run_id": "20260919T063122Z",
-  "step": "MASTERHANDOFFCLEANUP284C",
+  "published_at_utc": "2026-09-19T07:37:04.931800+00:00",
+  "run_id": "20260919T073658Z",
+  "step": "RESTARTDASHBOARDBACKEND287",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "MASTERHANDOFFANDGITHUBCLEANED",
-  "next_gate": "DONE",
+  "verdict": "DASHBOARDBACKENDRESTARTED",
+  "next_gate": "UIREFRESH",
   "facts": {
-    "ACTIVE_TESTPINE_RETAINED": "YES",
-    "COMMIT": "YES",
+    "CODE_WRITE": "NO",
     "DB_WRITE": "NO",
-    "FULL_FAILURES": "test_production_files_unchanged,test_real_six_fallback_families_and_talib_callable",
-    "FULL_TEST_RC": "1",
-    "GIT_HISTORY_REWRITTEN": "NO",
-    "HANDOFF_UPDATED": "YES",
-    "MASTER_UPDATED": "YES",
-    "NEW_HEAD": "5653842e5f9d",
-    "OLD_HEAD": "c2721dcc11b9",
-    "PUSH": "YES",
-    "REPO_CLEAN": "YES",
-    "RESTART": "NO",
-    "TRACKED_CRUFT_REMOVED": "0"
+    "NEW_PID": "2647058",
+    "OLD_PID": "2356019",
+    "PROCESS_ALIVE": "YES",
+    "RESTART": "YES"
   }
 }
