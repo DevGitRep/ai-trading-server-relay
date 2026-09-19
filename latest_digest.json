@@ -1,16 +1,18 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-19T00:36:08.367796+00:00",
-  "run_id": "20260919T003605Z",
-  "step": "RUNPRODUCTIONV2WITHOUTWRITEFLAG267",
+  "published_at_utc": "2026-09-19T00:37:30.887276+00:00",
+  "run_id": "20260919T003727Z",
+  "step": "RUNPRODUCTIONCURRENTGAP268",
   "status": "FAIL",
   "exit_code": 0,
-  "verdict": "PRODUCTIONBASELINEUNEXPECTED",
+  "verdict": "SELECTORANDDASHBOARDGAPDONOTMATCH",
   "next_gate": "STOP",
   "facts": {
     "DB_WRITE": "NO",
+    "EQUALS_BEFORE": "0",
     "GAP_BEFORE": "114",
     "HEAD": "2b409d489d94",
+    "RECENT_BEFORE": "81",
     "RESTART": "NO",
     "TOTAL_BEFORE": "11775",
     "V1_BEFORE": "11661"
