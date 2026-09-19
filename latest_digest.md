@@ -1,13 +1,13 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-19T23:27:15.491568+00:00`
-- Run ID: `20260919T232713Z`
-- Step: `MAPPRIMARYSCOREWIRING339`
-- Status: `SUCCESS`
+- Published UTC: `2026-09-19T23:33:32.901878+00:00`
+- Run ID: `20260919T233330Z`
+- Step: `REMOVESIGNALFLIPPRIMARY340`
+- Status: `FAIL`
 - Exit code: `0`
-- Verdict: `PRIMARYANDSCOREWIRINGCAPTURED`
-- Next gate: `PATCHSTANDARDIZEDRRPRIMARY`
+- Verdict: `ACTIVEFLIPREFERENCESREMAIN`
+- Next gate: `STOP`
 
 ## Facts
 
@@ -17,3 +17,4 @@
 - `HEAD`: `cafb30113ba3`
 - `PUSH`: `NO`
 - `RESTART`: `NO`
+- `ROLLBACK`: `YES`
