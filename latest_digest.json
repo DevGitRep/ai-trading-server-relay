@@ -1,27 +1,16 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-19T17:12:59.382495+00:00",
-  "run_id": "20260919T171257Z",
-  "step": "DIAGNOSEBENCHTESTMETRICS309",
+  "published_at_utc": "2026-09-19T17:18:18.863516+00:00",
+  "run_id": "20260919T171816Z",
+  "step": "INSPECTBENCHTESTCALCULATION311",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "BENCHTESTMETRICSDIAGNOSEDCAPTURED",
-  "next_gate": "CLASSIFYMETRICBEHAVIOR",
+  "verdict": "BENCHTESTCALCULATIONCODECAPTURED",
+  "next_gate": "CLASSIFYBENCHTESTBEHAVIOR",
   "facts": {
-    "CACHE_ROWS": "11",
-    "CODE_HITS": "39",
     "CODE_WRITE": "NO",
-    "CURRENT_RUNS": "11",
     "DB_WRITE": "NO",
-    "GROSS_NAN": "0",
-    "PASS_COUNT": "5",
-    "PASS_DD_GE_99": "5",
-    "PASS_GROSS_NAN": "0",
-    "PASS_NET_LE_MINUS99": "5",
-    "PIPELINE_RUN_ROWS": "11",
-    "RESTART": "NO",
-    "SCORE_ELIGIBLE": "5",
-    "SCORE_ELIGIBLE_GROSS_NAN": "0",
-    "TRADES_ROWS": "179089"
+    "HEAD": "e40f9755c8a3",
+    "RESTART": "NO"
   }
 }
