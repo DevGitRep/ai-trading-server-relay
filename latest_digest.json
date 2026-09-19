@@ -1,12 +1,12 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-19T17:18:18.863516+00:00",
-  "run_id": "20260919T171816Z",
-  "step": "INSPECTBENCHTESTCALCULATION311",
+  "published_at_utc": "2026-09-19T17:28:03.152116+00:00",
+  "run_id": "20260919T172801Z",
+  "step": "VERIFYBENCHTESTNATIVEENGINE312",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "BENCHTESTCALCULATIONCODECAPTURED",
-  "next_gate": "CLASSIFYBENCHTESTBEHAVIOR",
+  "verdict": "BENCHTESTENGINEWIRINGCAPTURED",
+  "next_gate": "CLASSIFYNATIVEVSLEGACYPATH",
   "facts": {
     "CODE_WRITE": "NO",
     "DB_WRITE": "NO",
