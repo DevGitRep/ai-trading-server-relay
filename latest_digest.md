@@ -1,29 +1,19 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-19T16:40:00.114502+00:00`
-- Run ID: `20260919T163956Z`
+- Published UTC: `2026-09-19T16:51:36.647767+00:00`
+- Run ID: `20260919T165134Z`
 - Step: `UPDATEMASTERHANDOFF307`
-- Status: `SUCCESS`
+- Status: `FAIL`
 - Exit code: `0`
-- Verdict: `MASTERHANDOFFSYNCEDWITHBENCHTESTFIX`
-- Next gate: `RUN500RECENT`
+- Verdict: `UNEXPECTEDHEAD`
+- Next gate: `STOP`
 
 ## Facts
 
-- `CANARY_CACHE`: `1`
-- `CANARY_RUNS`: `1`
-- `CANARY_SELECTED`: `1`
 - `CODE_WRITE`: `NO`
-- `COMMIT`: `YES`
+- `COMMIT`: `NO`
 - `DB_WRITE`: `NO`
-- `DISK_AVAIL_GIB`: `364`
-- `FILES`: `data/manual_support/AI_TRADING_SYSTEM_HANDOFF.md,data/manual_support/AI_TRADING_SYSTEM_MASTER.md`
-- `NEW_HEAD`: `e40f9755c8a3`
-- `OLD_HEAD`: `707d33b4c938`
-- `PREFLIGHT_PASSED`: `5937`
-- `PREFLIGHT_PROCESSED`: `11742`
-- `PUSH`: `YES`
-- `REPO_CLEAN`: `YES`
+- `HEAD`: `e40f9755c8a3`
+- `PUSH`: `NO`
 - `RESTART`: `NO`
-- `SELECTOR_FIX_HEAD`: `707d33b4c938`

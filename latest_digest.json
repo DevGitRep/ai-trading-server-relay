@@ -1,28 +1,18 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-19T16:40:00.114502+00:00",
-  "run_id": "20260919T163956Z",
+  "published_at_utc": "2026-09-19T16:51:36.647767+00:00",
+  "run_id": "20260919T165134Z",
   "step": "UPDATEMASTERHANDOFF307",
-  "status": "SUCCESS",
+  "status": "FAIL",
   "exit_code": 0,
-  "verdict": "MASTERHANDOFFSYNCEDWITHBENCHTESTFIX",
-  "next_gate": "RUN500RECENT",
+  "verdict": "UNEXPECTEDHEAD",
+  "next_gate": "STOP",
   "facts": {
-    "CANARY_CACHE": "1",
-    "CANARY_RUNS": "1",
-    "CANARY_SELECTED": "1",
     "CODE_WRITE": "NO",
-    "COMMIT": "YES",
+    "COMMIT": "NO",
     "DB_WRITE": "NO",
-    "DISK_AVAIL_GIB": "364",
-    "FILES": "data/manual_support/AI_TRADING_SYSTEM_HANDOFF.md,data/manual_support/AI_TRADING_SYSTEM_MASTER.md",
-    "NEW_HEAD": "e40f9755c8a3",
-    "OLD_HEAD": "707d33b4c938",
-    "PREFLIGHT_PASSED": "5937",
-    "PREFLIGHT_PROCESSED": "11742",
-    "PUSH": "YES",
-    "REPO_CLEAN": "YES",
-    "RESTART": "NO",
-    "SELECTOR_FIX_HEAD": "707d33b4c938"
+    "HEAD": "e40f9755c8a3",
+    "PUSH": "NO",
+    "RESTART": "NO"
   }
 }
