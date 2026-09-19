@@ -1,16 +1,26 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-19T10:38:56.363022+00:00",
-  "run_id": "20260919T103705Z",
-  "step": "RESET12MONTHBENCHTEST292",
-  "status": "FAIL",
+  "published_at_utc": "2026-09-19T11:20:02.412430+00:00",
+  "run_id": "20260919T104733Z",
+  "step": "RESET12MONTHBENCHTEST294",
+  "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "BENCHTEST12MONTHRESETFAILED",
-  "next_gate": "STOP",
+  "verdict": "BENCHTEST12MONTHRESETTOZERO",
+  "next_gate": "UIZEROCHECK",
   "facts": {
     "BACKUP": "YES",
+    "CACHE_AFTER": "0",
     "CODE_WRITE": "NO",
-    "DB_WRITE": "MAYBE",
-    "RESTART": "NO"
+    "DB_WRITE": "YES",
+    "PREFLIGHT_PASSED": "5937",
+    "PREFLIGHT_PROCESSED": "11742",
+    "RESTART": "YES",
+    "RESULTS_V1_AFTER": "0",
+    "RESULTS_V2_AFTER": "0",
+    "ROWS_AFTER": "0",
+    "ROWS_BEFORE": "31055684",
+    "RUNS_AFTER": "0",
+    "TABLES": "benchtest_trades_v1,benchtest_native_artifact_cache_v1,pipeline_benchtest_runs",
+    "TRADES_AFTER": "0"
   }
 }
