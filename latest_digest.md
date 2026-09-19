@@ -1,22 +1,27 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-19T05:25:48.462846+00:00`
-- Run ID: `20260919T052543Z`
-- Step: `PYTHONATOMICPRODUCTION270`
-- Status: `FAIL`
+- Published UTC: `2026-09-19T05:26:58.008436+00:00`
+- Run ID: `20260919T052652Z`
+- Step: `CLASSIFYLEGACYEQUALSMARKER271`
+- Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `BASELINESEMANTICSMISMATCH`
-- Next gate: `STOP`
+- Verdict: `EQUALSCLASSIFIED`
+- Next gate: `NORMALIZEORIGNOREEQUALS`
 
 ## Facts
 
-- `ALL_DB_SHA`: `11775`
+- `COMMIT`: `NO`
 - `CURRENT`: `11742`
 - `DB_WRITE`: `NO`
-- `EQUALS`: `1`
+- `EQUALS_ALSO_COLON`: `0`
+- `EQUALS_CURRENT`: `1`
+- `EQUALS_CURRENT_ALSO_COLON`: `0`
+- `EQUALS_HISTORICAL`: `0`
+- `EQUALS_ROWS`: `1`
+- `EQUALS_SHA`: `1`
 - `GAP`: `81`
-- `HEAD`: `2b409d489d94`
 - `RECENT`: `81`
+- `REPO_WRITE`: `NO`
 - `RESTART`: `NO`
 - `V1`: `11661`
