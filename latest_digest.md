@@ -1,29 +1,18 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-19T05:57:18.945378+00:00`
-- Run ID: `20260919T055712Z`
-- Step: `REALPERSISTENCEPATH278`
-- Status: `SUCCESS`
+- Published UTC: `2026-09-19T05:58:16.294186+00:00`
+- Run ID: `20260919T055814Z`
+- Step: `FINALPERSISTENCEBINDING279`
+- Status: `FAIL`
 - Exit code: `0`
-- Verdict: `REALPERSISTENCEPATHCAPTURED`
-- Next gate: `PATCHFINALPERSISTENCE`
+- Verdict: `BINDINGINSPECTIONFAILED`
+- Next gate: `STOP`
 
 ## Facts
 
-- `ASSIGNMENT`: `NONE`
-- `ASSIGNMENTS`: `0`
-- `CALL`: `_persist_v2_result(item, result if isinstance(result, dict) else {&#x27;status&#x27;: &#x27;ERROR&#x27;, &#x27;reason&#x27;: &#x27;ANALYZE_EXCEPTION&#x27;})`
-- `CALLS`: `1`
 - `COMMIT`: `NO`
-- `CURRENT`: `11742`
 - `DB_WRITE`: `NO`
-- `EQUALS`: `1`
-- `GAP`: `79`
-- `MARKER_NODES`: `6`
-- `ORCH_DEFS`: `run_batch`
-- `RECENT`: `79`
+- `ERROR`: `SAVE_INTERESTING_8=notes = re.sub(pattern, &#x27;&#x27;, notes) SAVE_INTERESTING_9=notes.strip(&#x27; ;\n&#x27;) SAVE_INTERESTING_10=conn.execute(&#x27;\n UPDATE candidates\n SET notes=?\n WHERE candidate_id=?\n &#x27;, (notes, ca`
 - `REPO_WRITE`: `NO`
 - `RESTART`: `NO`
-- `SAVE_IFS`: `1`
-- `V1`: `11663`
