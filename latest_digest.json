@@ -1,17 +1,19 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-20T11:23:43.885925+00:00",
-  "run_id": "20260920T112338Z",
-  "step": "CLASSIFY_EXTERNAL_ATBSUITE_NAMING",
+  "published_at_utc": "2026-09-20T11:25:42.673363+00:00",
+  "run_id": "20260920T112537Z",
+  "step": "CREATE_ATBSUITE_REFERENCE_VENV_ALIAS",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "EXTERNAL_NAMING_CLASSIFIED",
-  "next_gate": "DECIDE_EXTERNAL_VENV_CUTOVER",
+  "verdict": "ATBSUITE_VENV_ALIAS_CREATED",
+  "next_gate": "RESUME_PORTFOLIO_PERFORMANCE",
   "facts": {
-    "ATBSUITE_REF_SYMLINK": "YES",
-    "ATBSUITE_TESTS_SYMLINK": "YES",
-    "ATBSUITE_VENV_SYMLINK": "NO",
+    "ALIAS_EXISTS": "YES",
+    "ALIAS_TARGET_OK": "YES",
     "DASHBOARD_RESTART": "NO",
-    "DB_WRITES": "0"
+    "DB_WRITES": "0",
+    "EXECUTABLE": "YES",
+    "REFERENCE_IMPORT": "YES",
+    "REFERENCE_VERSION": "1.1.0"
   }
 }
