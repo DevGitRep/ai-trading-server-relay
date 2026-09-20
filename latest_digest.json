@@ -1,18 +1,17 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-20T11:31:04.851495+00:00",
-  "run_id": "20260920T113102Z",
-  "step": "RUN_PORTFOLIO_PERFORMANCE_PARITY_DIRECT",
-  "status": "BLOCKED",
+  "published_at_utc": "2026-09-20T11:31:55.745981+00:00",
+  "run_id": "20260920T113153Z",
+  "step": "INSPECT_EXTERNAL_GOLDEN_METADATA_SCHEMA",
+  "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "PORTFOLIO_PERFORMANCE_PARITY_REAL_FAILURE",
-  "next_gate": "DIAGNOSE_EXACT_PERFORMANCE_CONTRACT",
+  "verdict": "GOLDEN_METADATA_SCHEMA_INSPECTED",
+  "next_gate": "PATCH_ATBSUITE_METADATA_COMPATIBILITY",
   "facts": {
     "DASHBOARD_RESTART": "NO",
     "DB_WRITES": "0",
-    "HEAD": "cafb30113ba3",
-    "PERFORMANCE_PARITY": "NO",
-    "REPO_CLEAN": "YES",
-    "RUNTIME": "freqtrade-venv"
+    "JSON_FILES": "0",
+    "OLD_NAMING_FILES": "70",
+    "OLD_NAMING_MATCHES": "11183"
   }
 }
