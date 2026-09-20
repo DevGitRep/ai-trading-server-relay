@@ -1,18 +1,18 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-20T11:29:27.804481+00:00",
-  "run_id": "20260920T112924Z",
-  "step": "SELECT_RUNTIME_AND_RUN_PORTFOLIO_PERFORMANCE_PARITY",
+  "published_at_utc": "2026-09-20T11:31:04.851495+00:00",
+  "run_id": "20260920T113102Z",
+  "step": "RUN_PORTFOLIO_PERFORMANCE_PARITY_DIRECT",
   "status": "BLOCKED",
   "exit_code": 0,
-  "verdict": "NO_COMPATIBLE_ATB_PYTHON_FOUND",
-  "next_gate": "LOCATE_RUNTIME_FROM_ACTIVE_SERVICES",
+  "verdict": "PORTFOLIO_PERFORMANCE_PARITY_REAL_FAILURE",
+  "next_gate": "DIAGNOSE_EXACT_PERFORMANCE_CONTRACT",
   "facts": {
     "DASHBOARD_RESTART": "NO",
     "DB_WRITES": "0",
     "HEAD": "cafb30113ba3",
     "PERFORMANCE_PARITY": "NO",
     "REPO_CLEAN": "YES",
-    "SELECTED_PYTHON": "NONE"
+    "RUNTIME": "freqtrade-venv"
   }
 }
