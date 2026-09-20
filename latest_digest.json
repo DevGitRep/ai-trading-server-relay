@@ -1,26 +1,16 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-20T15:56:03.453385+00:00",
-  "run_id": "20260920T154157Z",
-  "step": "REMOVE_OBSOLETE_ALTERNATE_BENCHMARK_COMPLETELY",
+  "published_at_utc": "2026-09-20T18:05:39.745064+00:00",
+  "run_id": "20260920T180537Z",
+  "step": "INVENTORY_BENCHTEST_TABLES_BEFORE_FRESH_500_RESET",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "PRIMARY_V3_ONLY_CURRENT_STATE_GREEN",
-  "next_gate": "RUN_BENCHTEST_500_RECENT",
+  "verdict": "BENCHTEST_RESET_SCOPE_INVENTORIED",
+  "next_gate": "RESET_ONLY_BENCHTEST_RESULT_CORPUS_TO_ZERO",
   "facts": {
-    "BENCHTEST_SELFTEST": "YES",
-    "CHECKPOINT_CLEAN": "YES",
-    "COMMITTED": "YES",
-    "DASHBOARD_RESTART": "YES",
-    "DB_CLEAN": "YES",
-    "DB_WRITES": "YES",
-    "EXECUTION_SELFTEST": "YES",
+    "DASHBOARD_RESTART": "NO",
+    "DB_WRITES": "0",
     "HEAD": "600332d5b8f5",
-    "PUSHED": "YES",
-    "REPO_CLEAN": "YES",
-    "SIGNAL_REGRESSION": "YES",
-    "STANDALONE_TESTS": "21",
-    "STANDARDIZED_TEST": "YES",
-    "UNITTESTS": "YES"
+    "REPO_CLEAN": "YES"
   }
 }
