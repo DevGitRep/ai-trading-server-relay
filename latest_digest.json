@@ -1,14 +1,14 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-20T14:35:21.912980+00:00",
-  "run_id": "20260920T143517Z",
+  "published_at_utc": "2026-09-20T14:36:03.179608+00:00",
+  "run_id": "20260920T143601Z",
   "step": "CUTOVER_CANONICAL_PRIMARY_1R_1_5R_V3",
   "status": "BLOCKED",
   "exit_code": 0,
-  "verdict": "CANONICAL_EXECUTION_SELFTEST_FAILED",
-  "next_gate": "FIX_ONLY_CANONICAL_EXECUTION_FAILURE",
+  "verdict": "BLOCKED_DIRTY_REPO",
+  "next_gate": "INSPECT_DIRTY_STATE",
   "facts": {
-    "BENCHTEST_SELFTEST": "YES",
+    "BENCHTEST_SELFTEST": "NO",
     "COMMITTED": "NO",
     "DASHBOARD_RESTART": "NO",
     "DB_WRITES": "0",
@@ -18,7 +18,7 @@
     "REPO_CLEAN": "NO",
     "SIGNAL_REGRESSION": "NO",
     "STANDARDIZED_REGRESSION": "NO",
-    "UI_CHECKS": "YES",
+    "UI_CHECKS": "NO",
     "UNITTESTS": "NO"
   }
 }
