@@ -1,23 +1,16 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-20T18:17:35.050078+00:00",
-  "run_id": "20260920T181732Z",
-  "step": "RESET_BENCHTEST_RESULT_CORPUS_TO_FRESH_V3_ZERO",
-  "status": "BLOCKED",
+  "published_at_utc": "2026-09-20T18:18:30.495124+00:00",
+  "run_id": "20260920T181828Z",
+  "step": "INSPECT_DIRTY_STATE_BEFORE_FRESH_V3_RESET",
+  "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "BLOCKED_DIRTY_REPO",
-  "next_gate": "INSPECT_DIRTY_STATE",
+  "verdict": "DIRTY_STATE_INSPECTED",
+  "next_gate": "RESOLVE_DIRTY_STATE_THEN_RESET_BENCHTEST",
   "facts": {
-    "CACHE_PRESERVED": "NO",
-    "COMMITTED": "NO",
     "DASHBOARD_RESTART": "NO",
-    "DB_RESET": "NO",
-    "DB_WRITES": "YES",
-    "HANDOFF_UPDATED": "NO",
+    "DB_WRITES": "0",
     "HEAD": "600332d5b8f5",
-    "MASTER_UPDATED": "NO",
-    "PREFLIGHT_PRESERVED": "NO",
-    "PUSHED": "NO",
     "REPO_CLEAN": "NO"
   }
 }
