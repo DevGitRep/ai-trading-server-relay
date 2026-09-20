@@ -1,23 +1,24 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-20T14:27:25.123654+00:00",
-  "run_id": "20260920T142722Z",
-  "step": "MAKE_ATR_1R_1_5R_CANONICAL_PRIMARY",
+  "published_at_utc": "2026-09-20T14:35:21.912980+00:00",
+  "run_id": "20260920T143517Z",
+  "step": "CUTOVER_CANONICAL_PRIMARY_1R_1_5R_V3",
   "status": "BLOCKED",
   "exit_code": 0,
-  "verdict": "PRIMARY_CONTRACT_PATCH_FAILED",
-  "next_gate": "FIX_ONLY_REPORTED_PATCH_FAILURE",
+  "verdict": "CANONICAL_EXECUTION_SELFTEST_FAILED",
+  "next_gate": "FIX_ONLY_CANONICAL_EXECUTION_FAILURE",
   "facts": {
-    "BENCHTEST_SELFTEST": "NO",
+    "BENCHTEST_SELFTEST": "YES",
     "COMMITTED": "NO",
     "DASHBOARD_RESTART": "NO",
     "DB_WRITES": "0",
     "EXECUTION_SELFTEST": "NO",
     "HEAD": "266228c41b8f",
     "PUSHED": "NO",
-    "REPO_CLEAN": "YES",
+    "REPO_CLEAN": "NO",
     "SIGNAL_REGRESSION": "NO",
     "STANDARDIZED_REGRESSION": "NO",
+    "UI_CHECKS": "YES",
     "UNITTESTS": "NO"
   }
 }
