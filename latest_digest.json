@@ -1,12 +1,12 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-20T13:47:36.173406+00:00",
-  "run_id": "20260920T134734Z",
-  "step": "REMAP_CURRENT_PORTFOLIO_SURFACE",
+  "published_at_utc": "2026-09-20T13:48:41.535490+00:00",
+  "run_id": "20260920T134839Z",
+  "step": "IDENTIFY_POST_PORTFOLIO_ACTIVE_ROADMAP",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "PORTFOLIO_REMAP_COMPLETED",
-  "next_gate": "CLASSIFY_REMAP_RESULT",
+  "verdict": "ROADMAP_INVENTORY_COMPLETE",
+  "next_gate": "SELECT_CURRENT_ACTIVE_GATE",
   "facts": {
     "DASHBOARD_RESTART": "NO",
     "DB_WRITES": "0",
