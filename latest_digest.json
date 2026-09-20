@@ -1,27 +1,17 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-20T11:22:32.235967+00:00",
-  "run_id": "20260920T112230Z",
-  "step": "VERIFY_ATBSUITE_NAMING_CUTOVER",
+  "published_at_utc": "2026-09-20T11:23:43.885925+00:00",
+  "run_id": "20260920T112338Z",
+  "step": "CLASSIFY_EXTERNAL_ATBSUITE_NAMING",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "NAMING_INSPECTION_COMPLETE",
-  "next_gate": "CLASSIFY_AND_PATCH_NAMING_RESIDUE",
+  "verdict": "EXTERNAL_NAMING_CLASSIFIED",
+  "next_gate": "DECIDE_EXTERNAL_VENV_CUTOVER",
   "facts": {
-    "ATBSUITE_REF": "YES",
-    "ATBSUITE_TESTS": "YES",
-    "ATBSUITE_VENV": "NO",
-    "BRANCH": "main",
+    "ATBSUITE_REF_SYMLINK": "YES",
+    "ATBSUITE_TESTS_SYMLINK": "YES",
+    "ATBSUITE_VENV_SYMLINK": "NO",
     "DASHBOARD_RESTART": "NO",
-    "DB_WRITES": "0",
-    "DIRTY_FILES": "0",
-    "HEAD": "cafb30113ba3",
-    "NAMING_COMMIT_PRESENT": "YES",
-    "OLD_REF": "YES",
-    "OLD_TESTS": "YES",
-    "OLD_VENV": "YES",
-    "VECTORBT_FILENAMES": "0",
-    "VECTORBT_FILES": "0",
-    "VECTORBT_MATCHES": "0"
+    "DB_WRITES": "0"
   }
 }
