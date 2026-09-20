@@ -1,25 +1,21 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-20T13:44:36.735745+00:00",
-  "run_id": "20260920T134416Z",
-  "step": "PATCH_REGRESS_COMMIT_ATBSUITE_VECTORBT_SEPARATION",
-  "status": "BLOCKED",
+  "published_at_utc": "2026-09-20T13:45:57.349053+00:00",
+  "run_id": "20260920T134551Z",
+  "step": "FIX_FINAL31_ORACLE_AND_COMPLETE_SEPARATION",
+  "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "DIRECT_PARITY_REGRESSION_FAILED",
-  "next_gate": "FIX_ONLY_REPORTED_PARITY_FAILURE",
+  "verdict": "ATBSUITE_VECTORBT_SEPARATION_GREEN_COMMITTED_PUSHED",
+  "next_gate": "REMAP_REMAINING_PORTFOLIO_SURFACE",
   "facts": {
-    "ATBSUITE_REFERENCE_ALIASES": "0",
-    "ATBSUITE_REFERENCE_PATHS": "0",
-    "COMMITTED": "NO",
+    "COMMITTED": "YES",
     "DASHBOARD_RESTART": "NO",
     "DB_WRITES": "0",
-    "DIRECT_TESTS": "0",
-    "HEAD": "cafb30113ba3",
-    "PRODUCTION_VECTORBT_IMPORTS": "0",
-    "PUSHED": "NO",
-    "REPO_CLEAN": "NO",
-    "STANDALONE_TESTS": "22",
-    "UNITTESTS": "0",
-    "VECTORBT_REFERENCE_PATHS": "30"
+    "DIRECT_TESTS": "7",
+    "HEAD": "4c5ca8010d51",
+    "ORACLE_FILE": "global_vectorbt_final31_golden_v1.json",
+    "PUSHED": "YES",
+    "REPO_CLEAN": "YES",
+    "UNITTESTS": "YES"
   }
 }
