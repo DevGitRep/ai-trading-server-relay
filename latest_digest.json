@@ -1,24 +1,16 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-20T11:40:51.222849+00:00",
-  "run_id": "20260920T114049Z",
-  "step": "REGRESS_COMMIT_ATBSUITE_VECTORBT_SEPARATION",
-  "status": "BLOCKED",
+  "published_at_utc": "2026-09-20T13:39:32.294132+00:00",
+  "run_id": "20260920T133930Z",
+  "step": "INSPECT_REMAINING_ATBSUITE_REFERENCE_PATHS",
+  "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "ARCHITECTURE_GUARD_FAILED",
-  "next_gate": "FIX_ONLY_ARCHITECTURE_GUARD",
+  "verdict": "REMAINING_REFERENCE_PATHS_IDENTIFIED",
+  "next_gate": "PATCH_ONLY_REMAINING_REFERENCE_PATHS",
   "facts": {
-    "ATBSUITE_REFERENCE_ALIASES": "0",
-    "ATBSUITE_REFERENCE_PATHS": "8",
-    "COMMITTED": "NO",
+    "ATBSUITE_REFERENCE_FILES": "8",
+    "ATBSUITE_REFERENCE_MATCHES": "8",
     "DASHBOARD_RESTART": "NO",
-    "DB_WRITES": "0",
-    "DIRECT_TESTS": "0",
-    "HEAD": "cafb30113ba3",
-    "PRODUCTION_VECTORBT_IMPORTS": "0",
-    "PUSHED": "NO",
-    "REPO_CLEAN": "NO",
-    "STANDALONE_TESTS": "0",
-    "VECTORBT_REFERENCE_PATHS": "22"
+    "DB_WRITES": "0"
   }
 }
