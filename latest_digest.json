@@ -1,16 +1,18 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-20T13:48:41.535490+00:00",
-  "run_id": "20260920T134839Z",
-  "step": "IDENTIFY_POST_PORTFOLIO_ACTIVE_ROADMAP",
+  "published_at_utc": "2026-09-20T13:50:06.059602+00:00",
+  "run_id": "20260920T135003Z",
+  "step": "AUDIT_PRODUCTION_ATBSUITE_RUNTIME_SEPARATION",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "ROADMAP_INVENTORY_COMPLETE",
-  "next_gate": "SELECT_CURRENT_ACTIVE_GATE",
+  "verdict": "PRODUCTION_RUNTIME_IMPORT_AUDIT_COMPLETE",
+  "next_gate": "CLASSIFY_PRODUCTION_ORACLE_DEPENDENCY",
   "facts": {
+    "BENCHTEST_ORACLE_IMPORTS": "1",
     "DASHBOARD_RESTART": "NO",
     "DB_WRITES": "0",
     "HEAD": "4c5ca8010d51",
-    "REPO_CLEAN": "YES"
+    "REPO_CLEAN": "YES",
+    "TRACKED_ORACLE_IMPORTS": "2"
   }
 }
