@@ -1,25 +1,17 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-20T15:05:33.662887+00:00",
-  "run_id": "20260920T150511Z",
-  "step": "RUN_ONE_REAL_V3_INDICATOR_CANARY",
-  "status": "BLOCKED",
+  "published_at_utc": "2026-09-20T15:07:38.735079+00:00",
+  "run_id": "20260920T150736Z",
+  "step": "INSPECT_CANARY_NONPASS_AND_NATIVE_CACHE",
+  "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "V3_CANARY_PERSISTENCE_VALIDATION_FAILED",
-  "next_gate": "FIX_ONLY_REPORTED_CANARY_PERSISTENCE_FAILURE",
+  "verdict": "CANARY_CACHE_LAYOUT_INSPECTED",
+  "next_gate": "SELECT_OBJECTIVE_DIRECTION_INDICATOR_READ_ONLY",
   "facts": {
-    "CANDIDATE": "ICL_LIB_FFD660A2D24D3772",
+    "CANARY": "ICL_LIB_FFD660A2D24D3772",
     "DASHBOARD_RESTART": "NO",
-    "DB_WRITES": "YES",
-    "FLIP_FREE": "NA",
+    "DB_WRITES": "0",
     "HEAD": "77379ed864d6",
-    "NEXT_CANDIDATE": "NA",
-    "PRIMARY_MODE": "NA",
-    "REPO_CLEAN": "YES",
-    "RESELECTED": "NA",
-    "SECONDARY_NULL": "NA",
-    "TRADE_COUNT": "NA",
-    "TRADE_ROWS": "NA",
-    "WIN_RATE": "NA"
+    "REPO_CLEAN": "YES"
   }
 }
