@@ -1,17 +1,14 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-20T11:27:23.022233+00:00",
-  "run_id": "20260920T112721Z",
-  "step": "REPRODUCE_PORTFOLIO_PERFORMANCE_PARITY",
-  "status": "BLOCKED",
+  "published_at_utc": "2026-09-20T11:28:24.771716+00:00",
+  "run_id": "20260920T112822Z",
+  "step": "DISCOVER_FREQTRADE_PYTHON",
+  "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "PORTFOLIO_PERFORMANCE_PARITY_REPRODUCED",
-  "next_gate": "FIX_ONLY_REPRODUCED_PERFORMANCE_GAP",
+  "verdict": "PYTHON_RUNTIME_DISCOVERY_COMPLETE",
+  "next_gate": "RERUN_PORTFOLIO_PERFORMANCE_PARITY",
   "facts": {
     "DASHBOARD_RESTART": "NO",
-    "DB_WRITES": "0",
-    "HEAD": "cafb30113ba3",
-    "PERFORMANCE_PARITY": "NO",
-    "REPO_CLEAN": "YES"
+    "DB_WRITES": "0"
   }
 }
