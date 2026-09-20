@@ -1,14 +1,18 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-20T11:28:24.771716+00:00",
-  "run_id": "20260920T112822Z",
-  "step": "DISCOVER_FREQTRADE_PYTHON",
-  "status": "SUCCESS",
+  "published_at_utc": "2026-09-20T11:29:27.804481+00:00",
+  "run_id": "20260920T112924Z",
+  "step": "SELECT_RUNTIME_AND_RUN_PORTFOLIO_PERFORMANCE_PARITY",
+  "status": "BLOCKED",
   "exit_code": 0,
-  "verdict": "PYTHON_RUNTIME_DISCOVERY_COMPLETE",
-  "next_gate": "RERUN_PORTFOLIO_PERFORMANCE_PARITY",
+  "verdict": "NO_COMPATIBLE_ATB_PYTHON_FOUND",
+  "next_gate": "LOCATE_RUNTIME_FROM_ACTIVE_SERVICES",
   "facts": {
     "DASHBOARD_RESTART": "NO",
-    "DB_WRITES": "0"
+    "DB_WRITES": "0",
+    "HEAD": "cafb30113ba3",
+    "PERFORMANCE_PARITY": "NO",
+    "REPO_CLEAN": "YES",
+    "SELECTED_PYTHON": "NONE"
   }
 }
