@@ -1,12 +1,12 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-21T06:14:14.702205+00:00",
-  "run_id": "20260921T061412Z",
-  "step": "CHECK_INTERRUPTED_BENCHTEST_500_PROGRESS",
+  "published_at_utc": "2026-09-21T06:19:38.011677+00:00",
+  "run_id": "20260921T061935Z",
+  "step": "VERIFY_INTERRUPTED_500_EXACT_RESUME_POINT",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "BENCHTEST_500_RUNTIME_STATE_INSPECTED",
-  "next_gate": "RESUME_OR_LEAVE_RUNNING_BASED_ON_PROCESS_STATE",
+  "verdict": "ORIGINAL_500_RESUME_POINT_VERIFIED",
+  "next_gate": "RESUME_ONLY_MISSING_ORIGINAL_383",
   "facts": {
     "DASHBOARD_RESTART": "NO",
     "DB_WRITES": "0",
