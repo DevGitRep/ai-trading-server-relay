@@ -1,27 +1,29 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-21T21:38:01.061546+00:00`
-- Run ID: `20260921T213758Z`
-- Step: `CASE3CROSSLOGIC`
+- Published UTC: `2026-09-21T21:39:47.278938+00:00`
+- Run ID: `20260921T213944Z`
+- Step: `CASE3HELPER`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `CASE3_GMMACROSS_LOGIC_RECOVERED`
+- Verdict: `CASE3_GMMACROSS_BODY_RECOVERED`
 - Next gate: `IMPLEMENT_CASE3_MTF_SIGNAL_PORT`
 
 ## Facts
 
-- `BEAR`: `crossCount  EQ  EQ  -5 and ta.crossunder(s6Cross, 0)`
-- `BULL`: `crossCount  EQ  EQ  5 and ta.crossover(s6Cross, 0)`
 - `DASHBOARD_RESTART`: `NO`
-- `GMMA_TF`: `15`
-- `H24_SHORT_LENGTHS`: `22,37,59,74,89,111`
+- `H1`: `gmmaCross(gmma)  EQ &gt; ; int flag  EQ  0 ; if( ; gmma &gt; long1 and`
+- `H2`: `gmma &gt; long2 and ; gmma &gt; long3 and ; gmma &gt; long4 and ; gmma &gt; long5 and`
+- `H24_LONG_LENGTHS`: `222,258,295,332,406,443`
+- `H3`: `gmma &gt; long6 ; ) ; flag : EQ  1 ; if( ; gmma &lt; long1 and ; gmma &lt; long2 and`
+- `H4`: `gmma &lt; long3 and ; gmma &lt; long4 and ; gmma &lt; long5 and ; gmma &lt; long6 ; )`
+- `H5`: `flag : EQ  -1 ; flag`
+- `H6`: `NONE`
+- `H7`: `NONE`
+- `H8`: `NONE`
 - `HEAD`: `939755327f6d`
-- `HELPER1`: `gmmaCross(gmma)  EQ &gt;`
-- `HELPER2`: `int flag  EQ  0`
-- `HELPER3`: `if(`
+- `HELPER_LINES`: `21`
+- `LONG_LENGTHS`: `60,70,80,90,110,120`
 - `PRODUCTION_CODE_WRITES`: `0`
 - `PRODUCTION_DB_WRITES`: `0`
 - `REPO_CLEAN`: `YES`
-- `SHORT_LENGTHS`: `6,10,16,20,24,30`
-- `USE24H`: `false`
