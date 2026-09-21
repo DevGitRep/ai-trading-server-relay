@@ -1,16 +1,17 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-21T12:08:18.988463+00:00",
-  "run_id": "20260921T120816Z",
-  "step": "DIAGNOSE_SHARPE_STATIC_CONTRACT_FAILURE",
+  "published_at_utc": "2026-09-21T12:15:27.800053+00:00",
+  "run_id": "20260921T121525Z",
+  "step": "FULL_REPOSITORY_SHARPE_CUTOVER_IMPACT_AUDIT",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "SHARPE_STATIC_FAILURE_IDENTIFIED",
-  "next_gate": "FIX_ONLY_IDENTIFIED_STATIC_CONTRACT_FAILURE",
+  "verdict": "FULL_TRACKED_REPOSITORY_IMPACT_MAP_CAPTURED",
+  "next_gate": "BUILD_ONE_COHERENT_SHARPE_PATCH_FROM_COMPLETE_IMPACT_MAP",
   "facts": {
     "DASHBOARD_RESTART": "NO",
     "DB_WRITES": "0",
     "HEAD": "24b180a45669",
-    "REPO_CLEAN": "NO"
+    "REPO_CLEAN": "NO",
+    "TRACKED_FILES": "453"
   }
 }
