@@ -1,8 +1,8 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-21T14:06:43.341758+00:00`
-- Run ID: `20260921T140635Z`
+- Published UTC: `2026-09-21T14:08:05.866631+00:00`
+- Run ID: `20260921T140757Z`
 - Step: `FINALIZE_SHARPE_PRIMARY_CUTOVER_WITH_CORRECT_TEST_IMPORT_ROOT`
 - Status: `BLOCKED`
 - Exit code: `0`
