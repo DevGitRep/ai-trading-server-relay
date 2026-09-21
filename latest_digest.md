@@ -1,8 +1,8 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-21T22:28:23.694800+00:00`
-- Run ID: `20260921T222809Z`
+- Published UTC: `2026-09-21T22:31:27.669238+00:00`
+- Run ID: `20260921T223114Z`
 - Step: `CASE4VWAPEMPIRICAL`
 - Status: `FAIL`
 - Exit code: `1`
