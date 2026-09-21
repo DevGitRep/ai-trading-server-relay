@@ -1,35 +1,29 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-21T22:46:37.971318+00:00`
-- Run ID: `20260921T224624Z`
-- Step: `CASE4LEANRUN`
-- Status: `FAIL`
-- Exit code: `1`
-- Verdict: `CASE4_LEAN_HARNESS_BUILD_FAILED`
-- Next gate: `DIAGNOSE_CASE4_CSHARP_BUILD`
+- Published UTC: `2026-09-21T22:51:59.805697+00:00`
+- Run ID: `20260921T225156Z`
+- Step: `CASE4CSBUILDDIAG`
+- Status: `SUCCESS`
+- Exit code: `0`
+- Verdict: `CASE4_CSHARP_BUILD_ERROR_DIAGNOSED`
+- Next gate: `PATCH_CASE4_CSHARP_BUILD_ERROR`
 
 ## Facts
 
-- `ATB_LONG`: `0`
-- `ATB_SHORT`: `0`
-- `BAR_COUNT`: `0`
+- `BUILD_RC`: `1`
 - `DASHBOARD_RESTART`: `NO`
-- `EXACT_PARITY`: `NO`
-- `EXTRA_LONG`: `0`
-- `EXTRA_SHORT`: `0`
-- `FIRST_MISMATCH`: `NONE`
+- `DOTNET_VERSION`: `10.0.401`
+- `ERROR_COUNT`: `2`
+- `FIRST_ERROR`: `Top-level statements must precede namespace and type declarations.`
+- `FIRST_ERROR_CODE`: `CS8803`
+- `FIRST_ERROR_LINE`: `1180`
 - `HEAD`: `939755327f6d`
-- `LEAN_COMMIT`: `985ef30ad3ac774218c5ac516b4cb0aa2655730f`
-- `LEAN_LONG`: `0`
-- `LEAN_REFERENCE_LOADED`: `NO`
-- `LEAN_SHORT`: `0`
-- `MATCHING_LONG`: `0`
-- `MATCHING_SHORT`: `0`
-- `MISMATCH_PERCENT`: `NA`
-- `MISSING_LONG`: `0`
-- `MISSING_SHORT`: `0`
 - `PRODUCTION_CODE_WRITES`: `0`
 - `PRODUCTION_DB_WRITES`: `0`
+- `PROGRAM_EXISTS`: `YES`
+- `PROJECT_EXISTS`: `YES`
 - `REPO_CLEAN`: `YES`
-- `VWAP_RESET`: `CONTINUOUS_CUMULATIVE`
+- `SECOND_ERROR`: `Top-level statements must precede namespace and type declarations.`
+- `SECOND_ERROR_CODE`: `CS8803`
+- `SECOND_ERROR_LINE`: `1180`
