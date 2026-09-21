@@ -1,16 +1,22 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-21T11:18:43.045691+00:00",
-  "run_id": "20260921T111829Z",
-  "step": "DIAGNOSE_INTERMITTENT_DASHBOARD_HTTP_500",
-  "status": "SUCCESS",
+  "published_at_utc": "2026-09-21T11:30:44.861242+00:00",
+  "run_id": "20260921T113012Z",
+  "step": "FIX_INTERMITTENT_LIBRARY_REFRESH_DB_LOCK_500",
+  "status": "BLOCKED",
   "exit_code": 0,
-  "verdict": "INTERMITTENT_HTTP_500_DIAGNOSTICS_CAPTURED",
-  "next_gate": "FIX_ONLY_CONFIRMED_REQUEST_FAILURE_PATH",
+  "verdict": "LIBRARY_REFRESH_STILL_FAILING",
+  "next_gate": "INSPECT_REMAINING_LOCKED_REQUEST_PATH",
   "facts": {
-    "DASHBOARD_RESTART": "NO",
-    "DB_WRITES": "0",
-    "HEAD": "180c97421024",
-    "REPO_CLEAN": "YES"
+    "COMMITTED": "YES",
+    "DASHBOARD_RESTART": "YES",
+    "HEAD": "24b180a45669",
+    "LIBRARY_QUERY_ONLY": "YES",
+    "LIBRARY_READ_BUSY_TIMEOUT_MS": "60000",
+    "PATCHED": "YES",
+    "PRODUCTION_DB_DIRECT_WRITES": "0",
+    "PUSHED": "YES",
+    "REPO_CLEAN": "YES",
+    "VALIDATED": "YES"
   }
 }
