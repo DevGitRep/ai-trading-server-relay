@@ -1,16 +1,21 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-21T06:19:38.011677+00:00",
-  "run_id": "20260921T061935Z",
-  "step": "VERIFY_INTERRUPTED_500_EXACT_RESUME_POINT",
+  "published_at_utc": "2026-09-21T06:21:49.554241+00:00",
+  "run_id": "20260921T062139Z",
+  "step": "LAUNCH_DETACHED_EXACT_REMAINDER_OF_ORIGINAL_500",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "ORIGINAL_500_RESUME_POINT_VERIFIED",
-  "next_gate": "RESUME_ONLY_MISSING_ORIGINAL_383",
+  "verdict": "ORIGINAL_383_RESUME_LAUNCHED_DETACHED",
+  "next_gate": "MONITOR_RESUMED_383",
   "facts": {
+    "ALREADY_COMPLETE": "117",
     "DASHBOARD_RESTART": "NO",
-    "DB_WRITES": "0",
+    "DB_WRITES": "YES_BACKGROUND",
+    "DETACHED_STARTED": "YES",
     "HEAD": "11188f901450",
-    "REPO_CLEAN": "YES"
+    "REMAINING_TARGET": "383",
+    "REPO_CLEAN": "YES",
+    "RESUME_LOG": "/tmp/benchtest500_resume_383_20260921T062139Z.log",
+    "RESUME_PID": "353049"
   }
 }
