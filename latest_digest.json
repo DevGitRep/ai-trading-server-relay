@@ -1,16 +1,16 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-21T10:02:11.710081+00:00",
-  "run_id": "20260921T100209Z",
-  "step": "INSPECT_PARTIAL_SHARPE_PATCH_STATE",
-  "status": "SUCCESS",
+  "published_at_utc": "2026-09-21T10:06:49.224790+00:00",
+  "run_id": "20260921T100547Z",
+  "step": "RESTORE_PARTIAL_PATCH_AND_AUDIT_PREFLIGHT_11742",
+  "status": "BLOCKED",
   "exit_code": 0,
-  "verdict": "PARTIAL_PATCH_STATE_INSPECTED",
-  "next_gate": "RESTORE_OR_COMPLETE_SHARPE_PATCH_SAFELY",
+  "verdict": "PREFLIGHT_FUNNEL_AUDIT_FAILED",
+  "next_gate": "FIX_ONLY_AUDIT_QUERY",
   "facts": {
     "DASHBOARD_RESTART": "NO",
     "DB_WRITES": "0",
     "HEAD": "11188f901450",
-    "REPO_CLEAN": "NO"
+    "REPO_CLEAN": "YES"
   }
 }
