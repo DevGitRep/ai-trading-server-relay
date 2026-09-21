@@ -1,28 +1,28 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-21T23:37:47.306184+00:00`
-- Run ID: `20260921T233745Z`
-- Step: `CASE4CANONCOLOR`
+- Published UTC: `2026-09-21T23:42:32.976894+00:00`
+- Run ID: `20260921T234230Z`
+- Step: `CASE4CANONSTATE`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `CASE4_CANONICAL_COLOR_STATE_LOGIC_RECOVERED`
-- Next gate: `REBUILD_CASE4_EXPECTED_EVENTS_WITH_CANONICAL_COLOR_LOGIC`
+- Verdict: `CASE4_CANONICAL_REBUILD_STATE_RECOVERED`
+- Next gate: `REBUILD_CASE4_EXPECTED_EVENTS_WITH_EXACT_SIGNATURE`
 
 ## Facts
 
-- `COLOR_ASSIGNMENT`: `L666:color_state  EQ  False`
+- `ARTIFACTS_PRESENT`: `NO`
+- `CANON_LONG`: `NA`
+- `CANON_SHORT`: `NA`
 - `DASHBOARD_RESTART`: `NO`
-- `FILE_FOUND`: `YES`
-- `FUNCTION`: `extract_signals`
-- `FUNCTION_END`: `864`
-- `FUNCTION_START`: `471`
-- `GREEN_RULE`: `L668:if source_green_red_semantics(`
+- `FIRST_LONG`: `NONE`
+- `FIRST_SHORT`: `NONE`
+- `FUNCTION_SIGNATURE`: `extract_signals(plots,viz,strategy,source)`
 - `HEAD`: `939755327f6d`
-- `NONE_RULE`: `L851:if color_state`
-- `PREV_RULE`: `L726:green_prev  EQ  (`
+- `LONG_PRESENT`: `NO`
 - `PRODUCTION_CODE_WRITES`: `0`
 - `PRODUCTION_DB_WRITES`: `0`
-- `RED_RULE`: `L668:if source_green_red_semantics(`
+- `REPORT_PRESENT`: `NO`
 - `REPO_CLEAN`: `YES`
-- `TRANSITION_RULE`: `L748:long_transition  EQ  (`
+- `REQUIRED_PARAMS`: `plots,viz,strategy,source`
+- `SHORT_PRESENT`: `NO`
