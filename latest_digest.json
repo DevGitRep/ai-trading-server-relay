@@ -1,12 +1,12 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-21T15:27:50.366159+00:00",
-  "run_id": "20260921T152732Z",
-  "step": "DIAGNOSE_CLOUDFLARE_522_ORIGIN_PATH",
+  "published_at_utc": "2026-09-21T15:29:45.096912+00:00",
+  "run_id": "20260921T152923Z",
+  "step": "AUDIT_TRANSIENT_522_AND_PRO_PATH_LATENCY",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "ORIGIN_PATH_DIAGNOSTICS_CAPTURED",
-  "next_gate": "FIX_ONLY_CONFIRMED_FAILING_ORIGIN_LAYER",
+  "verdict": "TRANSIENT_522_AND_PRO_LATENCY_EVIDENCE_CAPTURED",
+  "next_gate": "PATCH_ONLY_IF_PRO_OR_ORIGIN_BLOCKING_CONFIRMED",
   "facts": {
     "CLOUDFLARE_CHANGES": "0",
     "DASHBOARD_RESTART": "NO",
