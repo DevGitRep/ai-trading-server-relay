@@ -1,23 +1,16 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-21T12:05:42.971884+00:00",
-  "run_id": "20260921T120540Z",
-  "step": "APPLY_INTEGRAL_SHARPE_PRIMARY_CUTOVER",
-  "status": "BLOCKED",
+  "published_at_utc": "2026-09-21T12:08:18.988463+00:00",
+  "run_id": "20260921T120816Z",
+  "step": "DIAGNOSE_SHARPE_STATIC_CONTRACT_FAILURE",
+  "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "SHARPE_STATIC_CONTRACT_FAILED",
-  "next_gate": "FIX_ONLY_STATIC_CONTRACT_FAILURE",
+  "verdict": "SHARPE_STATIC_FAILURE_IDENTIFIED",
+  "next_gate": "FIX_ONLY_IDENTIFIED_STATIC_CONTRACT_FAILURE",
   "facts": {
-    "BEST_OVERALL": "PRIMARY_SHARPE_DESC",
-    "COMMITTED": "NO",
     "DASHBOARD_RESTART": "NO",
+    "DB_WRITES": "0",
     "HEAD": "24b180a45669",
-    "HEADLINE_METRICS": "PF_WR_NETRETURN_MAXDD_TRADES_SHARPE",
-    "PATCHED": "YES",
-    "PRODUCTION_DB_WRITES": "0",
-    "PROPRIETARY_SCORE_RUNTIME": "REMOVED",
-    "PUSHED": "NO",
-    "REPO_CLEAN": "NO",
-    "VALIDATED": "NO"
+    "REPO_CLEAN": "NO"
   }
 }
