@@ -1,29 +1,35 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-21T21:39:47.278938+00:00`
-- Run ID: `20260921T213944Z`
-- Step: `CASE3HELPER`
+- Published UTC: `2026-09-21T21:42:56.891438+00:00`
+- Run ID: `20260921T214236Z`
+- Step: `CASE3RUN`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `CASE3_GMMACROSS_BODY_RECOVERED`
-- Next gate: `IMPLEMENT_CASE3_MTF_SIGNAL_PORT`
+- Verdict: `CASE3_SIGNAL_GENERATION_MISMATCH`
+- Next gate: `DIAGNOSE_CASE3_MTF_ALIGNMENT`
 
 ## Facts
 
+- `ATB_LONG`: `180`
+- `ATB_SHORT`: `178`
+- `BAR_COUNT`: `525600`
 - `DASHBOARD_RESTART`: `NO`
-- `H1`: `gmmaCross(gmma)  EQ &gt; ; int flag  EQ  0 ; if( ; gmma &gt; long1 and`
-- `H2`: `gmma &gt; long2 and ; gmma &gt; long3 and ; gmma &gt; long4 and ; gmma &gt; long5 and`
-- `H24_LONG_LENGTHS`: `222,258,295,332,406,443`
-- `H3`: `gmma &gt; long6 ; ) ; flag : EQ  1 ; if( ; gmma &lt; long1 and ; gmma &lt; long2 and`
-- `H4`: `gmma &lt; long3 and ; gmma &lt; long4 and ; gmma &lt; long5 and ; gmma &lt; long6 ; )`
-- `H5`: `flag : EQ  -1 ; flag`
-- `H6`: `NONE`
-- `H7`: `NONE`
-- `H8`: `NONE`
+- `EXACT_PARITY`: `NO`
+- `EXTRA_LONG`: `182`
+- `EXTRA_SHORT`: `178`
+- `FIRST_MISMATCH`: `29`
 - `HEAD`: `939755327f6d`
-- `HELPER_LINES`: `21`
-- `LONG_LENGTHS`: `60,70,80,90,110,120`
+- `LEAN_LONG`: `182`
+- `LEAN_REFERENCE_LOADED`: `YES`
+- `LEAN_SHORT`: `178`
+- `MATCHING_LONG`: `0`
+- `MATCHING_SHORT`: `0`
+- `MISMATCH_PERCENT`: `0.068302891933`
+- `MISMATCH_SIDE`: `LONG`
+- `MISSING_LONG`: `180`
+- `MISSING_SHORT`: `178`
+- `MTF_ALIGNMENT`: `LAST1MBAROF15M`
 - `PRODUCTION_CODE_WRITES`: `0`
 - `PRODUCTION_DB_WRITES`: `0`
 - `REPO_CLEAN`: `YES`
