@@ -1,20 +1,21 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-21T20:44:11.866567+00:00",
-  "run_id": "20260921T204409Z",
-  "step": "CASE1BUILDDIAG",
+  "published_at_utc": "2026-09-21T20:44:59.525018+00:00",
+  "run_id": "20260921T204457Z",
+  "step": "CASE1BUILDCLASSIFY",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "CASE1_LEAN_BUILD_ERROR_IDENTIFIED",
-  "next_gate": "REPAIR_CASE1_LEAN_BUILD",
+  "verdict": "CASE1_BUILD_FAILURE_CLASSIFIED",
+  "next_gate": "REPAIR_CASE1_BUILD_FAILURE",
   "facts": {
-    "BUILD_ERROR_COUNT": "0",
+    "BUILD_RC": "127",
     "DASHBOARD_RESTART": "NO",
-    "FIRST_ERROR": "NONE",
+    "ERROR_CLASS": "OTHER",
+    "FIRST_ERROR_CODE": "NONE",
+    "FIRST_ERROR_TEXT": "NONE",
     "HEAD": "939755327f6d",
     "PRODUCTION_CODE_WRITES": "0",
     "PRODUCTION_DB_WRITES": "0",
-    "PROJECT_FOUND": "YES",
     "REPO_CLEAN": "YES"
   }
 }
