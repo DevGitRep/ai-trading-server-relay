@@ -1,28 +1,28 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-21T22:05:38.359874+00:00`
-- Run ID: `20260921T220536Z`
-- Step: `CASE4COLORS`
+- Published UTC: `2026-09-21T22:09:26.861858+00:00`
+- Run ID: `20260921T220921Z`
+- Step: `CASE4TRANSITIONS`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `CASE4_PLOT_COLOR_FORMULAS_RECOVERED`
-- Next gate: `RECOVER_CASE4_COLOR_STATE_TRANSITIONS`
+- Verdict: `CASE4_COLOR_STATE_TRANSITIONS_RECOVERED`
+- Next gate: `IMPLEMENT_CASE4_INDEPENDENT_LEAN_SIGNAL_PORT`
 
 ## Facts
 
+- `COLOR0`: `ema8Color:ema8Up ? color.new(colEMA8Up, 90 - (ema8Intensity * 0.7)) : ema8Down ? color.new(c`
+- `COLOR1`: `ema21Color:ema21Up ? color.new(colEMA21Up, 90 - (ema21Intensity * 0.7)) : ema21Down ? color.`
+- `COLOR2`: `sma20Color:sma20Up ? color.new(colSMA20Up, 90 - (sma20Intensity * 0.7)) : sma20Down ? color.`
+- `COLOR3`: `NONE`
+- `COLOR4`: `showBackground ? color.new(bgCol, 93) : na`
+- `COLOR5`: `showRSIpane and rsi &gt; 70 ? color.new(color.red, 95) : showRSIpane and rsi &lt; 30 ? color.new(c`
 - `DASHBOARD_RESTART`: `NO`
-- `DEP_COUNT`: `19`
-- `E1`: `kind:SOURCE_PROVEN_GREEN_RED_STATE;role:BOTH;count:116546;path:viz.plots[0].colors`
-- `E2`: `kind:SOURCE_PROVEN_GREEN_RED_STATE;role:BOTH;count:73770;path:viz.plots[1].colors`
-- `E3`: `kind:SOURCE_PROVEN_GREEN_RED_STATE;role:BOTH;count:56935;path:viz.plots[2].colors`
-- `E4`: `kind:SOURCE_PROVEN_GREEN_RED_STATE;role:BOTH;count:266496;path:viz.plots[6].colors`
-- `E5`: `kind:SOURCE_PROVEN_GREEN_RED_STATE;role:BOTH;count:25114;path:viz.bgcolors[0].colors`
-- `E6`: `kind:SOURCE_PROVEN_GREEN_RED_STATE;role:BOTH;count:13162;path:viz.bgcolors[1].colors`
-- `EVIDENCE_COUNT`: `6`
 - `HEAD`: `939755327f6d`
-- `PLOT0_COLOR`: `ema8Color`
-- `PLOT1_COLOR`: `ema21Color`
+- `LONG_TRANSITION`: `RED_TO_GREEN`
 - `PRODUCTION_CODE_WRITES`: `0`
 - `PRODUCTION_DB_WRITES`: `0`
 - `REPO_CLEAN`: `YES`
+- `SHORT_TRANSITION`: `GREEN_TO_RED`
+- `SOURCE_COUNT`: `6`
+- `TRANSITION_RULE`: `LONG:RED_TO_GREEN;SHORT:GREEN_TO_RED`
