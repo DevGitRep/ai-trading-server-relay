@@ -1,29 +1,24 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-21T21:16:04.754819+00:00`
-- Run ID: `20260921T211553Z`
-- Step: `CASE2INSPECT`
+- Published UTC: `2026-09-21T21:20:44.015882+00:00`
+- Run ID: `20260921T212041Z`
+- Step: `CASE2SMOOTHING`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `CASE2_SOURCE_AND_RESIN_MAPPING_RECOVERED`
+- Verdict: `CASE2_SMOOTHING_LOGIC_RECOVERED`
 - Next gate: `IMPLEMENT_CASE2_INDEPENDENT_LEAN_SIGNAL_PORT`
 
 ## Facts
 
-- `CASE_ID`: `ICL_LIB_626E63DFB8E731B5`
 - `DASHBOARD_RESTART`: `NO`
+- `EXTRA`: `NONE`
 - `HEAD`: `939755327f6d`
-- `LONG_PATH`: `viz.shapes[0].condition`
-- `NATIVE_FOUND`: `YES`
+- `HELPER_COUNT`: `0`
 - `PRODUCTION_CODE_WRITES`: `0`
 - `PRODUCTION_DB_WRITES`: `0`
-- `PROVENANCE_MODE`: `EXPLICIT_RESIN_EVENTS`
 - `REPO_CLEAN`: `YES`
-- `SHAPE0_TRUE_COUNT`: `1352`
-- `SHAPE1_TRUE_COUNT`: `1071`
-- `SHAPE_COUNT`: `2`
-- `SHORT_PATH`: `viz.shapes[1].condition`
+- `SMA1`: `cloudType  EQ  EQ  &quot;Optimized&quot; ? optimizedSMA1 : cloudType  EQ  EQ  &quot;EMA&quot; ? ta.ema(source, length1) : cloudType  EQ  EQ  &quot;SMA&quot; ? ta.sma(source, length1) : ta.hma(source`
+- `SMA2`: `cloudType  EQ  EQ  &quot;Optimized&quot; ? optimizedSMA2 : cloudType  EQ  EQ  &quot;EMA&quot; ? ta.ema(source, length2) : cloudType  EQ  EQ  &quot;SMA&quot; ? ta.sma(source, length2) : ta.hma(source`
 - `SOURCE_FOUND`: `YES`
-- `SOURCE_LINES`: `142`
 - `SOURCE_SHA_MATCH`: `YES`
