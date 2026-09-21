@@ -1,22 +1,33 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-21T21:22:10.491364+00:00`
-- Run ID: `20260921T212208Z`
-- Step: `CASE2OPTIMIZED`
+- Published UTC: `2026-09-21T21:27:01.236264+00:00`
+- Run ID: `20260921T212641Z`
+- Step: `CASE2RUN`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `CASE2_OPTIMIZED_FORMULAS_RECOVERED`
-- Next gate: `IMPLEMENT_CASE2_INDEPENDENT_LEAN_SIGNAL_PORT_AND_COMPARE_525600_BARS`
+- Verdict: `CASE2_SIGNAL_GENERATION_EXACT_PARITY`
+- Next gate: `INSPECT_CASE3_SOURCE_AND_RESIN_MAPPING`
 
 ## Facts
 
-- `CORE_READY`: `YES`
+- `ATB_LONG`: `1352`
+- `ATB_SHORT`: `1071`
+- `BAR_COUNT`: `525600`
 - `DASHBOARD_RESTART`: `NO`
-- `EXTRA_USE`: `58:extraLength  EQ  input.int(50, minval EQ 1, title EQ &quot;Extra Smoothing Length&quot;) ; 64:optimizedSMA1  EQ  (ta.ema(source, length1) + ta.ema(source, length2) + ta.ema(source, extraLength)) / 3`
+- `EXACT_PARITY`: `YES`
+- `EXTRA_LONG`: `0`
+- `EXTRA_SHORT`: `0`
+- `FIRST_MISMATCH`: `NONE`
 - `HEAD`: `939755327f6d`
-- `OPT1`: `(ta.ema(source, length1) + ta.ema(source, length2) + ta.ema(source, extraLength)) / 3`
-- `OPT2`: `(ta.ema(source, math.round(length1 * 1.5)) + ta.ema(source, math.round(length2 * 1.5)) + ta.ema(source, math.round(extraLength * 1.5))) / 3`
+- `LEAN_LONG`: `1352`
+- `LEAN_REFERENCE_LOADED`: `YES`
+- `LEAN_SHORT`: `1071`
+- `MATCHING_LONG`: `1352`
+- `MATCHING_SHORT`: `1071`
+- `MISMATCH_PERCENT`: `0`
+- `MISSING_LONG`: `0`
+- `MISSING_SHORT`: `0`
 - `PRODUCTION_CODE_WRITES`: `0`
 - `PRODUCTION_DB_WRITES`: `0`
 - `REPO_CLEAN`: `YES`
