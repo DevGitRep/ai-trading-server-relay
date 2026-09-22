@@ -1,16 +1,26 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-22T17:22:45.248848+00:00",
-  "run_id": "20260922T172243Z",
-  "step": "REMOVELEGACYBACKENDCOPY",
-  "status": "FAIL",
-  "exit_code": 1,
-  "verdict": "UNEXPECTED_REPO_CHANGE_DETECTED",
-  "next_gate": "INSPECT_REPO_CHANGES",
+  "published_at_utc": "2026-09-22T17:25:39.090518+00:00",
+  "run_id": "20260922T172537Z",
+  "step": "INSPECTBACKENDCOPYFAILEDREMOVE",
+  "status": "SUCCESS",
+  "exit_code": 0,
+  "verdict": "FAILED_BACKEND_COPY_REMOVAL_STATE_INSPECTED",
+  "next_gate": "RESTORE_OR_COMPLETE_BACKEND_COPY_CLEANUP",
   "facts": {
-    "AI_BRAIN_WRITES": "0",
+    "BACKEND_COPY_EXISTS": "YES",
+    "BACKEND_COPY_TRACKED": "YES",
     "DASHBOARD_RESTART": "NO",
     "EMAIL_SENDS": "0",
-    "PRODUCTION_DB_WRITES": "0"
+    "FILE_DELETES": "0",
+    "GIT_COMMITS": "0",
+    "GIT_PUSHES": "0",
+    "HANDOFF_CLEANUP_SECTION_PRESENT": "NO",
+    "HEAD": "5f5ce7a15c66",
+    "PRODUCTION_CODE_WRITES": "0",
+    "PRODUCTION_DB_WRITES": "0",
+    "REPO_CLEAN": "YES",
+    "STAGED_FILES": "0",
+    "UNSTAGED_FILES": "0"
   }
 }
