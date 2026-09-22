@@ -1,49 +1,36 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-22T00:57:55.908470+00:00`
-- Run ID: `20260922T005753Z`
-- Step: `CASE4INSPECTRGBEXACT`
-- Status: `SUCCESS`
-- Exit code: `0`
-- Verdict: `CASE4_CSHARP_RGB_RULES_RECOVERED`
-- Next gate: `PATCH_CASE4_CANONICAL_COLOR_CLASSIFICATION`
+- Published UTC: `2026-09-22T00:59:07.509036+00:00`
+- Run ID: `20260922T005859Z`
+- Step: `CASE4COLORPATCH`
+- Status: `FAIL`
+- Exit code: `1`
+- Verdict: `CASE4_COLOR_FIXED_REMAINING_MISMATCH`
+- Next gate: `DIAGNOSE_CASE4_REMAINING_MISMATCH`
 
 ## Facts
 
+- `BAR_COUNT`: `525600`
+- `CANON_LONG`: `171730`
+- `CANON_SHORT`: `173143`
 - `DASHBOARD_RESTART`: `NO`
+- `EXACT_PARITY`: `NO`
+- `EXTRA_LONG`: `10513`
+- `EXTRA_SHORT`: `10515`
+- `FIRST_MISMATCH`: `1`
 - `HEAD`: `939755327f6d`
-- `L106`: `EMPTY`
-- `L107`: `if(Series.TryGetValue(name,out var a))`
-- `L108`: `return a[index];`
-- `L109`: `EMPTY`
-- `L110`: `if(name.StartsWith(&quot;color.&quot;,StringComparison.Ordinal))`
-- `L111`: `{`
-- `L112`: `string n name.Substring(6).ToLowerInvariant();`
-- `L113`: `EMPTY`
-- `L114`: `if(n.Contains(&quot;green&quot;)    n.Contains(&quot;lime&quot;)    n.Contains(&quot;teal&quot;))`
-- `L115`: `return V.Color(&quot;GREEN&quot;);`
-- `L116`: `EMPTY`
-- `L117`: `if(n.Contains(&quot;red&quot;)    n.Contains(&quot;maroon&quot;))`
-- `L118`: `return V.Color(&quot;RED&quot;);`
-- `L119`: `EMPTY`
-- `L120`: `return V.Color(&quot;OTHER&quot;);`
-- `L121`: `}`
-- `L122`: `EMPTY`
-- `L289`: `static V ColorRgb(double rd,double gd,double bd)`
-- `L290`: `{`
-- `L291`: `int r (int)Math.Round(rd);`
-- `L292`: `int g (int)Math.Round(gd);`
-- `L293`: `int b (int)Math.Round(bd);`
-- `L294`: `EMPTY`
-- `L295`: `if(g&gt;r &amp;&amp; g&gt;b)`
-- `L296`: `return V.Color(&quot;GREEN&quot;);`
-- `L297`: `EMPTY`
-- `L298`: `if(r&gt;g &amp;&amp; r&gt;b)`
-- `L299`: `return V.Color(&quot;RED&quot;);`
-- `L300`: `EMPTY`
-- `L301`: `return V.Color(&quot;OTHER&quot;);`
-- `L302`: `}`
+- `LEAN_COMMIT`: `985ef30ad3ac774218c5ac516b4cb0aa2655730f`
+- `LEAN_LONG`: `182208`
+- `LEAN_SHORT`: `183610`
+- `MATCHING_LONG`: `171695`
+- `MATCHING_SHORT`: `173095`
+- `MISMATCH_PERCENT`: `2.008276255708`
+- `MISSING_LONG`: `35`
+- `MISSING_SHORT`: `48`
+- `PATCHED`: `YES`
 - `PRODUCTION_CODE_WRITES`: `0`
 - `PRODUCTION_DB_WRITES`: `0`
 - `REPO_CLEAN`: `YES`
+- `RGB_RULE`: `DOMINANCE_1P2`
+- `TEXT_RULE`: `GREEN_LIME_RED_MAROON`
