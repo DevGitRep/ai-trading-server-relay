@@ -1,61 +1,49 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-22T10:27:03.989693+00:00`
-- Run ID: `20260922T102701Z`
-- Step: `CASE4ACTUALRUNPREFLIGHT`
+- Published UTC: `2026-09-22T10:28:18.773545+00:00`
+- Run ID: `20260922T102816Z`
+- Step: `CASE4DIRECTRESINHOST`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `CASE4_ACTUAL_RUN_PREFLIGHT_RECOVERED`
-- Next gate: `FINALIZE_CASE4_OR_INSPECT_DIRECT_RESIN_HOST`
+- Verdict: `CASE4_DIRECT_RESIN_HOST_CALL_RECOVERED`
+- Next gate: `FINALIZE_CASE4_OR_INSPECT_SINGLE_LOCAL_EVALUATOR`
 
 ## Facts
 
 - `DASHBOARD_RESTART`: `NO`
-- `END_LINE`: `696`
-- `F1`: `def run_preflight(source, candles, return_artifact False, parameter_overrides None):`
-- `F10`: `NONE`
-- `F11`: `Existing classification stays unchanged.`
-- `F12`: `NONE`
-- `F13`: `Native Resin viz is transported using the same`
-- `F14`: `file-based JSON pattern as Resin&#x27;s shipped CLI.`
-- `F15`: `&quot;&quot;&quot;`
-- `F16`: `import json as _json`
-- `F17`: `import math as _math`
-- `F18`: `import subprocess as _subprocess`
-- `F19`: `import tempfile as _tempfile`
-- `F2`: `from atb_quant_engine.pine_parameter_overrides import apply_numeric_pine_overrides`
-- `F20`: `from pathlib import Path as _Path`
-- `F21`: `NONE`
-- `F22`: `def _return(`
-- `F23`: `status,`
-- `F24`: `detail,`
-- `F25`: `artifact,`
-- `F26`: `):`
-- `F27`: `if return_artifact:`
-- `F28`: `return (`
-- `F29`: `status,`
-- `F3`: `NONE`
-- `F30`: `detail,`
-- `F31`: `artifact,`
-- `F32`: `)`
-- `F33`: `NONE`
-- `F34`: `return (`
-- `F35`: `status,`
-- `F36`: `detail,`
-- `F37`: `)`
-- `F38`: `NONE`
-- `F39`: `_dash   (`
-- `F4`: `source   apply_numeric_pine_overrides(`
-- `F40`: `_Path(__file__)`
-- `F5`: `source,`
-- `F6`: `parameter_overrides,`
-- `F7`: `)`
-- `F8`: `&quot;&quot;&quot;`
-- `F9`: `Canonical thin Resin host.`
+- `F1`: `1:def run_preflight(source, candles, return_artifact False, parameter_overrides None):`
+- `F10`: `31: artifact,`
+- `F11`: `49: / &quot;resin_pine_adapter.mjs&quot;`
+- `F12`: `55: / &quot;resin_v0_2_2&quot;`
+- `F13`: `56: / &quot;node_modules&quot;`
+- `F14`: `58: / &quot;resin&quot;`
+- `F15`: `61: _node   (`
+- `F16`: `64: / &quot;nodejs&quot;`
+- `F17`: `67: / &quot;node&quot;`
+- `F18`: `70: with _tempfile.TemporaryDirectory(`
+- `F19`: `71: prefix &quot;resin_preflight_&quot;`
+- `F2`: `9: Canonical thin Resin host.`
+- `F20`: `82: / &quot;candles.json&quot;`
+- `F21`: `85: _viz   (`
+- `F22`: `87: / &quot;viz.json&quot;`
+- `F23`: `96: _json.dumps(`
+- `F24`: `104: _proc   _subprocess.run(`
+- `F25`: `106: str(_node),`
+- `F26`: `111: str(_viz),`
+- `F27`: `113: stdout _subprocess.PIPE,`
+- `F28`: `114: stderr _subprocess.PIPE,`
+- `F29`: `121: &quot;RESIN_RUNTIME_FAILED&quot;,`
+- `F3`: `13: Native Resin viz is transported using the same`
+- `F30`: `124: &quot;kind&quot;: &quot;host_error&quot;,`
+- `F4`: `14: file-based JSON pattern as Resin&#x27;s shipped CLI.`
+- `F5`: `16: import json as _json`
+- `F6`: `18: import subprocess as _subprocess`
+- `F7`: `19: import tempfile as _tempfile`
+- `F8`: `25: artifact,`
+- `F9`: `27: if return_artifact:`
 - `HEAD`: `939755327f6d`
-- `LINE_COUNT`: `452`
+- `MATCH_COUNT`: `66`
 - `PRODUCTION_CODE_WRITES`: `0`
 - `PRODUCTION_DB_WRITES`: `0`
 - `REPO_CLEAN`: `YES`
-- `START_LINE`: `173`
