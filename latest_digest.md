@@ -1,45 +1,81 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-22T07:57:41.640394+00:00`
-- Run ID: `20260922T075739Z`
-- Step: `CASE4S3NUMERICINSPECT`
+- Published UTC: `2026-09-22T07:58:27.571730+00:00`
+- Run ID: `20260922T075825Z`
+- Step: `CASE4S3EXACTNUMERIC`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `CASE4_S3_NUMERIC_SEMANTICS_INSPECTED`
+- Verdict: `CASE4_S3_EXACT_NUMERIC_RULES_RECOVERED`
 - Next gate: `COMPARE_CASE4_S3_NUMERIC_TRACE`
 
 ## Facts
 
+- `B64_L372`: `ICAgICAgICAgICAgfQo=`
+- `B64_L373`: `Cg==`
+- `B64_L374`: `ICAgICAgICAgICAgcmV0dXJuIFYuTnVtKGVtYSk7Cg==`
+- `B64_L375`: `ICAgICAgICB9Cg==`
+- `B64_L376`: `Cg==`
+- `B64_L377`: `ICAgICAgICBpZihuYW1lPT0idGEuc21hIikK`
+- `B64_L378`: `ICAgICAgICB7Cg==`
+- `B64_L379`: `ICAgICAgICAgICAgZG91YmxlIHNyYz1hcmdzWzBdLkV2YWwoYykuQXNOdW0oKTsK`
+- `B64_L380`: `ICAgICAgICAgICAgaW50IGxlbj0oaW50KU1hdGguUm91bmQoYXJnc1sxXS5FdmFsKGMpLkFzTnVtKCkpOwo=`
+- `B64_L381`: `Cg==`
+- `B64_L382`: `ICAgICAgICAgICAgaWYobGVuPD0wKSByZXR1cm4gVi5OQTsK`
+- `B64_L383`: `Cg==`
+- `B64_L384`: `ICAgICAgICAgICAgaWYoIWRvdWJsZS5Jc05hTihzcmMpKQo=`
+- `B64_L385`: `ICAgICAgICAgICAgewo=`
+- `B64_L386`: `ICAgICAgICAgICAgICAgIHNtYVEuRW5xdWV1ZShzcmMpOwo=`
+- `B64_L387`: `ICAgICAgICAgICAgICAgIHNtYVN1bSs9c3JjOwo=`
+- `B64_L388`: `Cg==`
+- `B64_L389`: `ICAgICAgICAgICAgICAgIHdoaWxlKHNtYVEuQ291bnQ+bGVuKQo=`
+- `B64_L390`: `ICAgICAgICAgICAgICAgICAgICBzbWFTdW0tPXNtYVEuRGVxdWV1ZSgpOwo=`
+- `B64_L391`: `ICAgICAgICAgICAgfQo=`
+- `B64_L392`: `Cg==`
+- `B64_L393`: `ICAgICAgICAgICAgaWYoc21hUS5Db3VudDxsZW4pCg==`
+- `B64_L394`: `ICAgICAgICAgICAgICAgIHJldHVybiBWLk5BOwo=`
+- `B64_L395`: `Cg==`
+- `B64_L396`: `ICAgICAgICAgICAgcmV0dXJuIFYuTnVtKHNtYVN1bS9sZW4pOwo=`
+- `B64_L397`: `ICAgICAgICB9Cg==`
+- `B64_L398`: `Cg==`
+- `B64_L399`: `ICAgICAgICBpZihuYW1lPT0idGEucnNpIikK`
+- `B64_L400`: `ICAgICAgICB7Cg==`
+- `B64_L401`: `ICAgICAgICAgICAgZG91YmxlIHNyYz1hcmdzWzBdLkV2YWwoYykuQXNOdW0oKTsK`
+- `B64_L402`: `ICAgICAgICAgICAgaW50IGxlbj0oaW50KU1hdGguUm91bmQoYXJnc1sxXS5FdmFsKGMpLkFzTnVtKCkpOwo=`
+- `B64_L403`: `Cg==`
+- `B64_L404`: `ICAgICAgICAgICAgaWYoZG91YmxlLklzTmFOKHNyYykgfHwgbGVuPD0wKQo=`
+- `B64_L405`: `ICAgICAgICAgICAgICAgIHJldHVybiBWLk5BOwo=`
+- `B64_L406`: `Cg==`
+- `B64_L407`: `ICAgICAgICAgICAgaWYoIXJzaVByZXZTZXQpCg==`
+- `B64_L408`: `ICAgICAgICAgICAgewo=`
+- `B64_L409`: `ICAgICAgICAgICAgICAgIHJzaVByZXY9c3JjOwo=`
+- `B64_L410`: `ICAgICAgICAgICAgICAgIHJzaVByZXZTZXQ9dHJ1ZTsK`
+- `B64_L742`: `ICAgIE5vZGUgQ29tcGFyZSgpCg==`
+- `B64_L743`: `ICAgIHsK`
+- `B64_L744`: `ICAgICAgICB2YXIgbj1BZGQoKTsK`
+- `B64_L745`: `Cg==`
+- `B64_L746`: `ICAgICAgICB3aGlsZSgK`
+- `B64_L747`: `ICAgICAgICAgICAgQ3VyLlQ9PVRULkdUCg==`
+- `B64_L748`: `ICAgICAgICAgICAgfHwgQ3VyLlQ9PVRULkxUCg==`
+- `B64_L749`: `ICAgICAgICAgICAgfHwgQ3VyLlQ9PVRULkdFCg==`
+- `B64_L750`: `ICAgICAgICAgICAgfHwgQ3VyLlQ9PVRULkxFCg==`
+- `B64_L751`: `ICAgICAgICApCg==`
+- `B64_L752`: `ICAgICAgICB7Cg==`
+- `B64_L753`: `ICAgICAgICAgICAgc3RyaW5nIG9wPUN1ci5TOwo=`
+- `B64_L754`: `ICAgICAgICAgICAgcCsrOwo=`
+- `B64_L755`: `ICAgICAgICAgICAgbj1uZXcgQmluTm9kZShvcCxuLEFkZCgpKTsK`
+- `B64_L756`: `ICAgICAgICB9Cg==`
+- `B64_L757`: `Cg==`
+- `B64_L758`: `ICAgICAgICByZXR1cm4gbjsK`
+- `B64_L759`: `ICAgIH0K`
+- `B64_L760`: `Cg==`
+- `B64_L761`: `ICAgIE5vZGUgQWRkKCkK`
+- `B64_L762`: `ICAgIHsK`
+- `B64_L763`: `ICAgICAgICB2YXIgbj1NdWwoKTsK`
+- `B64_L764`: `Cg==`
+- `B64_L765`: `ICAgICAgICB3aGlsZShDdXIuVD09VFQuUGx1cyB8fCBDdXIuVD09VFQuTWludXMpCg==`
+- `B64_L766`: `ICAgICAgICB7Cg==`
 - `DASHBOARD_RESTART`: `NO`
-- `F1`: `SMA IMPLEMENTATION`
-- `F10`: `402: int len (int)Math.Round(args[1].Eval(c).AsNum());`
-- `F11`: `1007: string marketPath args[1];`
-- `F12`: `COMPARISON OPERATORS`
-- `F13`: `53: new(StringComparer.Ordinal);`
-- `F14`: `56: new(StringComparer.Ordinal);`
-- `F15`: `59: new(StringComparer.Ordinal);`
-- `F16`: `730: var n Compare();`
-- `F17`: `736: n new BinNode(op,n,Compare());`
-- `F18`: `742: Node Compare()`
-- `F19`: `961: using var br new BinaryReader(File.OpenRead(path));`
-- `F2`: `377: if(name  &quot;ta.sma&quot;)`
-- `F20`: `1160: using(var bw   new BinaryWriter(File.Create(Path.Combine(outDir,$&quot;case4_cs_source{s+1}_long_i32.bin&quot;))))`
-- `F21`: `1162: using(var bw   new BinaryWriter(File.Create(Path.Combine(outDir,$&quot;case4_cs_source{s+1}_short_i32.bin&quot;))))`
-- `F22`: `NONE`
-- `F23`: `NONE`
-- `F24`: `NONE`
-- `F25`: `NONE`
-- `F26`: `NONE`
-- `F27`: `NONE`
-- `F28`: `NONE`
-- `F3`: `HISTORY INDEXING`
-- `F4`: `318: args[1].Eval(c).AsNum(),`
-- `F5`: `327: args[1].Eval(c).AsNum()`
-- `F6`: `335: args[1].Eval(c).AsNum()`
-- `F7`: `351: args[1].Eval(c).AsNum()`
-- `F8`: `357: int len (int)Math.Round(args[1].Eval(c).AsNum());`
-- `F9`: `380: int len (int)Math.Round(args[1].Eval(c).AsNum());`
 - `HEAD`: `939755327f6d`
 - `PRODUCTION_CODE_WRITES`: `0`
 - `PRODUCTION_DB_WRITES`: `0`
