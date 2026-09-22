@@ -1,40 +1,39 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-22T09:30:16.001843+00:00`
-- Run ID: `20260922T093002Z`
-- Step: `CASE4S3SUMORDER`
+- Published UTC: `2026-09-22T09:38:25.549424+00:00`
+- Run ID: `20260922T093822Z`
+- Step: `CASE4FINDRESINSMA`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `CASE4_S3_NO_EXACT_STANDARD_SUMMATION`
+- Verdict: `CASE4_RESIN_SMA_IMPLEMENTATION_SEARCHED`
 - Next gate: `INSPECT_RESIN_TA_SMA_IMPLEMENTATION`
 
 ## Facts
 
-- `BEST_METHOD`: `FSUM`
-- `BEST_STATE_DIFF`: `170`
 - `DASHBOARD_RESTART`: `NO`
-- `FSUM_EXACT_VALUES`: `1860`
-- `FSUM_MAE`: `2.383413220227172e-12`
-- `FSUM_MAXERR`: `4.4764192352886312e-12`
-- `FSUM_STATE_DIFF`: `170`
+- `F1`: `EXACT TA.SMA IMPLEMENTATION CANDIDATES`
+- `F10`: `PROD/.venv/lib/python3.12/site-packages/scipy/interpolate/tests/test_polyint.py:849: def test_small_dx(self):`
+- `F11`: `PROD/.venv/lib/python3.12/site-packages/scipy/interpolate/tests/test_fitpack2.py:675: def test_rerun_lwrk2_too_small(self):`
+- `F12`: `PROD/.venv/lib/python3.12/site-packages/scipy/interpolate/tests/test_bsplines.py:3469: def test_s_too_small(self):`
+- `F13`: `PROD/.venv/lib/python3.12/site-packages/scipy/interpolate/tests/test_bsplines.py:3665: def test_s_too_small(self):`
+- `F14`: `PROD/.venv/lib/python3.12/site-packages/scipy/interpolate/tests/test_bsplines.py:3927: def test_s_too_small(self):`
+- `F15`: `PROD/.venv/lib/python3.12/site-packages/scipy/fft/_duccfft/tests/test_basic.py:474: def test_size_accuracy_small(self, size):`
+- `F16`: `PROD/.venv/lib/python3.12/site-packages/scipy/fft/_duccfft/tests/test_basic.py:503: def test_float16_input_small(self, size):`
+- `F17`: `PROD/.venv/lib/python3.12/site-packages/scipy/fft/tests/test_helper.py:78: def testnext_fast_len_small(self):`
+- `F18`: `PROD/.venv/lib/python3.12/site-packages/scipy/fft/tests/test_helper.py:156: def testprev_fast_len_small(self):`
+- `F19`: `PROD/.venv/lib/python3.12/site-packages/scipy/signal/tests/test_czt.py:188:def test_CZT_size_mismatch(cls, args):`
+- `F2`: `PROD/.venv/lib/python3.12/site-packages/websocket/tests/test_handshake_large_response.py:112: def test_handshake_normal_small_response(self):`
+- `F20`: `PROD/.venv/lib/python3.12/site-packages/scipy/signal/tests/test_peak_finding.py:590: def test_mismatching_prominence_data(self):`
+- `F3`: `PROD/.venv/lib/python3.12/site-packages/joblib/numpy_pickle_utils.py:51:def _is_numpy_array_byte_order_mismatch(array):`
+- `F4`: `PROD/.venv/lib/python3.12/site-packages/joblib/test/test_memmapping.py:981:def test_memmapping_on_too_small_dev_shm(factory):`
+- `F5`: `PROD/.venv/lib/python3.12/site-packages/joblib/test/test_numpy_pickle.py:544:def test_numpy_array_byte_order_mismatch_detection():`
+- `F6`: `PROD/.venv/lib/python3.12/site-packages/scipy/io/tests/test_paths.py:32: def test_whosmat(self):`
+- `F7`: `PROD/.venv/lib/python3.12/site-packages/scipy/io/matlab/_mio5.py:550: def write_smalldata_element(self, arr, mdtype, byte_count):`
+- `F8`: `PROD/.venv/lib/python3.12/site-packages/scipy/io/matlab/tests/test_mio.py:542:def test_use_small_element():`
+- `F9`: `PROD/.venv/lib/python3.12/site-packages/scipy/io/matlab/_mio.py:343:def whosmat(file_name, appendmat True, **kwargs):`
 - `HEAD`: `939755327f6d`
-- `LEFT_EXACT_VALUES`: `1972`
-- `LEFT_MAE`: `2.3835042449072854e-12`
-- `LEFT_MAXERR`: `4.4622083805734292e-12`
-- `LEFT_STATE_DIFF`: `2771`
-- `NPMEAN_EXACT_VALUES`: `1967`
-- `NPMEAN_MAE`: `2.3834026076660716e-12`
-- `NPMEAN_MAXERR`: `4.4764192352886312e-12`
-- `NPMEAN_STATE_DIFF`: `2837`
-- `NPSUM_EXACT_VALUES`: `1967`
-- `NPSUM_MAE`: `2.3834026076660716e-12`
-- `NPSUM_MAXERR`: `4.4764192352886312e-12`
-- `NPSUM_STATE_DIFF`: `2837`
+- `MATCH_LINES`: `82`
 - `PRODUCTION_CODE_WRITES`: `0`
 - `PRODUCTION_DB_WRITES`: `0`
 - `REPO_CLEAN`: `YES`
-- `RIGHT_EXACT_VALUES`: `1855`
-- `RIGHT_MAE`: `2.3835345549225557e-12`
-- `RIGHT_MAXERR`: `4.4764192352886312e-12`
-- `RIGHT_STATE_DIFF`: `2778`
