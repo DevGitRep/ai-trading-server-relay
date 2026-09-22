@@ -1,36 +1,30 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-22T01:00:20.485369+00:00`
-- Run ID: `20260922T010018Z`
-- Step: `CASE4SOURCEOUTPUTINSPECT`
+- Published UTC: `2026-09-22T01:01:30.710207+00:00`
+- Run ID: `20260922T010116Z`
+- Step: `CASE4PERSOURCECOMPARE`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `CASE4_PER_SOURCE_OUTPUT_PATH_INSPECTED`
-- Next gate: `COMPARE_CASE4_PER_SOURCE_CANONICAL_STATES`
+- Verdict: `CASE4_PER_SOURCE_CANONICAL_COUNTS_COMPARED`
+- Next gate: `DIAGNOSE_CASE4_DIVERGENT_SOURCE`
 
 ## Facts
 
 - `DASHBOARD_RESTART`: `NO`
-- `F1`: `1081: // CASE4_PER_SOURCE_DIAGNOSTIC_V1`
-- `F10`: `NONE`
-- `F11`: `NONE`
-- `F12`: `NONE`
-- `F13`: `NONE`
-- `F14`: `NONE`
-- `F15`: `NONE`
-- `F16`: `NONE`
-- `F17`: `NONE`
-- `F18`: `NONE`
-- `F2`: `1082: var sourceLongBars   Enumerable`
-- `F3`: `1087: var sourceShortBars   Enumerable`
-- `F4`: `1126: sourceLongBars[s].Add(i);`
-- `F5`: `1132: sourceShortBars[s].Add(i);`
-- `F6`: `1146: $&quot;SOURCE{s+1}_COUNTS {sourceLongBars[s].Count}/{sourceShortBars[s].Count}&quot;`
-- `F7`: `1150: $&quot;SOURCE{s+1}_TRACE {string.Join(&quot;,&quot;,earlyTrace[s])}&quot;`
-- `F8`: `NONE`
-- `F9`: `NONE`
 - `HEAD`: `939755327f6d`
 - `PRODUCTION_CODE_WRITES`: `0`
 - `PRODUCTION_DB_WRITES`: `0`
 - `REPO_CLEAN`: `YES`
+- `S1_CANON`: `58273/58273`
+- `S1_CS`: `NA`
+- `S2_CANON`: `36885/36885`
+- `S2_CS`: `NA`
+- `S3_CANON`: `28449/28486`
+- `S3_CS`: `NA`
+- `S4_CANON`: `133450/133046`
+- `S4_CS`: `NA`
+- `S5_CANON`: `4352/20762`
+- `S5_CS`: `NA`
+- `S6_CANON`: `6743/6419`
+- `S6_CS`: `NA`
