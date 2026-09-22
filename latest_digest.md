@@ -1,74 +1,40 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-22T10:33:08.872129+00:00`
-- Run ID: `20260922T103306Z`
-- Step: `CASE4PACKAGEROOTFULL`
+- Published UTC: `2026-09-22T10:40:43.737002+00:00`
+- Run ID: `20260922T104040Z`
+- Step: `CASE4GLOBALRESINSMA`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `CASE4_RESIN_PACKAGE_ROOT_FULLY_RECOVERED`
-- Next gate: `INSPECT_CASE4_EXACT_RESIN_SMA_OR_FINALIZE`
+- Verdict: `CASE4_GLOBAL_RESIN_SOURCE_NOT_FOUND`
+- Next gate: `FINALIZE_CASE4_NUMERIC_RUNTIME_EXCEPTION`
 
 ## Facts
 
-- `B64_L110`: `Y29uc3QgcmVzaW4gPSBhd2FpdCBpbXBvcnQoCg==`
-- `B64_L111`: `ICAgIHBhdGhUb0ZpbGVVUkwoCg==`
-- `B64_L112`: `ICAgICAgICBwYXRoLmpvaW4oCg==`
-- `B64_L113`: `ICAgICAgICAgICAgcGFja2FnZVJvb3QsCg==`
-- `B64_L114`: `ICAgICAgICAgICAgInNyYyIsCg==`
-- `B64_L115`: `ICAgICAgICAgICAgImluZGV4LnRzIiwK`
-- `B64_L116`: `ICAgICAgICApCg==`
-- `B64_L117`: `ICAgICkuaHJlZgo=`
-- `B64_L118`: `KTsK`
-- `B64_L119`: `Cg==`
-- `B64_L120`: `Y29uc3Qgewo=`
-- `B64_L121`: `ICAgIFZFUlNJT04sCg==`
-- `B64_L122`: `ICAgIHRyYW5zcGlsZSwK`
-- `B64_L123`: `ICAgIHJ1biwK`
-- `B64_L124`: `ICAgIGNvbXBpbGUsCg==`
-- `B64_L125`: `ICAgIENvbnRleHQsCg==`
-- `B64_L40`: `Cg==`
-- `B64_L41`: `ICAgIGF3YWl0IG5ldyBQcm9taXNlKChyZXNvbHZlLCByZWplY3QpID0+IHsK`
-- `B64_L42`: `ICAgICAgICBjb25zdCBvbkVycm9yID0gZXJyb3IgPT4gewo=`
-- `B64_L43`: `ICAgICAgICAgICAgcHJvY2Vzcy5zdGRvdXQub2ZmKCJlcnJvciIsIG9uRXJyb3IpOwo=`
-- `B64_L44`: `ICAgICAgICAgICAgcmVqZWN0KGVycm9yKTsK`
-- `B64_L45`: `ICAgICAgICB9Owo=`
-- `B64_L46`: `Cg==`
-- `B64_L47`: `ICAgICAgICBwcm9jZXNzLnN0ZG91dC5vbmNlKCJlcnJvciIsIG9uRXJyb3IpOwo=`
-- `B64_L48`: `ICAgICAgICBwcm9jZXNzLnN0ZG91dC5lbmQob3V0cHV0LCAoKSA9PiB7Cg==`
-- `B64_L49`: `ICAgICAgICAgICAgcHJvY2Vzcy5zdGRvdXQub2ZmKCJlcnJvciIsIG9uRXJyb3IpOwo=`
-- `B64_L50`: `ICAgICAgICAgICAgcmVzb2x2ZSgpOwo=`
-- `B64_L51`: `ICAgICAgICB9KTsK`
-- `B64_L52`: `ICAgIH0pOwo=`
-- `B64_L53`: `fQo=`
-- `B64_L54`: `Cg==`
-- `B64_L55`: `ZnVuY3Rpb24gd3JpdGVWaXoodml6KSB7Cg==`
-- `B64_L56`: `ICAgIGlmICghdml6UGF0aCkgewo=`
-- `B64_L57`: `ICAgICAgICByZXR1cm47Cg==`
-- `B64_L58`: `ICAgIH0K`
-- `B64_L59`: `Cg==`
-- `B64_L60`: `ICAgIC8qCg==`
-- `B64_L61`: `ICAgICAqIFNhbWUgc2VyaWFsaXphdGlvbiBtZWNoYW5pc20gdXNlZCBieQo=`
-- `B64_L62`: `ICAgICAqIFJlc2luJ3Mgc2hpcHBlZCBiaW4vcmVzaW4ubWpzIC0tdml6Lgo=`
-- `B64_L63`: `ICAgICAqLwo=`
-- `B64_L64`: `ICAgIGZzLndyaXRlRmlsZVN5bmMoCg==`
-- `B64_L65`: `ICAgICAgICB2aXpQYXRoLAo=`
-- `B64_L66`: `ICAgICAgICBKU09OLnN0cmluZ2lmeSgK`
-- `B64_L67`: `ICAgICAgICAgICAgdml6LAo=`
-- `B64_L68`: `ICAgICAgICAgICAgbnVsbCwK`
-- `B64_L69`: `ICAgICAgICAgICAgMSwK`
-- `B64_L70`: `ICAgICAgICApCg==`
-- `B64_L71`: `ICAgICk7Cg==`
-- `B64_L72`: `fQo=`
-- `B64_L73`: `Cg==`
-- `B64_L74`: `YXN5bmMgZnVuY3Rpb24gZmFpbCgK`
-- `B64_L75`: `ICAgIHN0YWdlLAo=`
-- `B64_L76`: `ICAgIGRldGFpbCA9IG51bGwsCg==`
-- `B64_L77`: `ICAgIHJlc2luVmVyc2lvbiA9IG51bGwsCg==`
-- `B64_L78`: `KSB7Cg==`
-- `B64_L79`: `ICAgIGF3YWl0IGVtaXQoewo=`
+- `B1`: `NONE`
+- `B10`: `NONE`
+- `B11`: `NONE`
+- `B12`: `NONE`
+- `B13`: `NONE`
+- `B14`: `NONE`
+- `B15`: `NONE`
+- `B16`: `NONE`
+- `B2`: `NONE`
+- `B3`: `NONE`
+- `B4`: `NONE`
+- `B5`: `NONE`
+- `B6`: `NONE`
+- `B7`: `NONE`
+- `B8`: `NONE`
+- `B9`: `NONE`
 - `DASHBOARD_RESTART`: `NO`
 - `HEAD`: `939755327f6d`
 - `PRODUCTION_CODE_WRITES`: `0`
 - `PRODUCTION_DB_WRITES`: `0`
 - `REPO_CLEAN`: `YES`
+- `RESIN_FOUND`: `NO`
+- `RESIN_ROOT`: `NONE`
+- `RESIN_VERSION`: `UNKNOWN`
+- `SMA_FILE`: `NONE`
+- `SMA_LINE`: `0`
+- `SMA_MATCH_COUNT`: `0`
