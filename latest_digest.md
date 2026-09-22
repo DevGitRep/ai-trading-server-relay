@@ -1,39 +1,43 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-22T09:38:25.549424+00:00`
-- Run ID: `20260922T093822Z`
-- Step: `CASE4FINDRESINSMA`
+- Published UTC: `2026-09-22T09:41:16.445933+00:00`
+- Run ID: `20260922T094114Z`
+- Step: `CASE4REFINEDRESINSEARCH`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `CASE4_RESIN_SMA_IMPLEMENTATION_SEARCHED`
-- Next gate: `INSPECT_RESIN_TA_SMA_IMPLEMENTATION`
+- Verdict: `CASE4_RESIN_RUNTIME_SEARCH_REFINED`
+- Next gate: `INSPECT_CASE4_RESIN_SMA_CANDIDATE`
 
 ## Facts
 
 - `DASHBOARD_RESTART`: `NO`
-- `F1`: `EXACT TA.SMA IMPLEMENTATION CANDIDATES`
-- `F10`: `PROD/.venv/lib/python3.12/site-packages/scipy/interpolate/tests/test_polyint.py:849: def test_small_dx(self):`
-- `F11`: `PROD/.venv/lib/python3.12/site-packages/scipy/interpolate/tests/test_fitpack2.py:675: def test_rerun_lwrk2_too_small(self):`
-- `F12`: `PROD/.venv/lib/python3.12/site-packages/scipy/interpolate/tests/test_bsplines.py:3469: def test_s_too_small(self):`
-- `F13`: `PROD/.venv/lib/python3.12/site-packages/scipy/interpolate/tests/test_bsplines.py:3665: def test_s_too_small(self):`
-- `F14`: `PROD/.venv/lib/python3.12/site-packages/scipy/interpolate/tests/test_bsplines.py:3927: def test_s_too_small(self):`
-- `F15`: `PROD/.venv/lib/python3.12/site-packages/scipy/fft/_duccfft/tests/test_basic.py:474: def test_size_accuracy_small(self, size):`
-- `F16`: `PROD/.venv/lib/python3.12/site-packages/scipy/fft/_duccfft/tests/test_basic.py:503: def test_float16_input_small(self, size):`
-- `F17`: `PROD/.venv/lib/python3.12/site-packages/scipy/fft/tests/test_helper.py:78: def testnext_fast_len_small(self):`
-- `F18`: `PROD/.venv/lib/python3.12/site-packages/scipy/fft/tests/test_helper.py:156: def testprev_fast_len_small(self):`
-- `F19`: `PROD/.venv/lib/python3.12/site-packages/scipy/signal/tests/test_czt.py:188:def test_CZT_size_mismatch(cls, args):`
-- `F2`: `PROD/.venv/lib/python3.12/site-packages/websocket/tests/test_handshake_large_response.py:112: def test_handshake_normal_small_response(self):`
-- `F20`: `PROD/.venv/lib/python3.12/site-packages/scipy/signal/tests/test_peak_finding.py:590: def test_mismatching_prominence_data(self):`
-- `F3`: `PROD/.venv/lib/python3.12/site-packages/joblib/numpy_pickle_utils.py:51:def _is_numpy_array_byte_order_mismatch(array):`
-- `F4`: `PROD/.venv/lib/python3.12/site-packages/joblib/test/test_memmapping.py:981:def test_memmapping_on_too_small_dev_shm(factory):`
-- `F5`: `PROD/.venv/lib/python3.12/site-packages/joblib/test/test_numpy_pickle.py:544:def test_numpy_array_byte_order_mismatch_detection():`
-- `F6`: `PROD/.venv/lib/python3.12/site-packages/scipy/io/tests/test_paths.py:32: def test_whosmat(self):`
-- `F7`: `PROD/.venv/lib/python3.12/site-packages/scipy/io/matlab/_mio5.py:550: def write_smalldata_element(self, arr, mdtype, byte_count):`
-- `F8`: `PROD/.venv/lib/python3.12/site-packages/scipy/io/matlab/tests/test_mio.py:542:def test_use_small_element():`
-- `F9`: `PROD/.venv/lib/python3.12/site-packages/scipy/io/matlab/_mio.py:343:def whosmat(file_name, appendmat True, **kwargs):`
+- `F1`: `PROD/test_your_script_v1.py:321: if status    &#x27;RESIN_RUNTIME_FAILED&#x27;:`
+- `F10`: `PROD/data/benchtest_native_artifacts_v1/b577ee5771839c9aea350659027c8ff45e0af93eabb349b1d1266818857339fc/95cbcf016035e4a02d43dbe9e2c330e176599b5d253c68fd6c43b1947914d43b.1eee59b639dfc1602a64`
+- `F11`: `PROD/data/benchtest_native_artifacts_v1/b577ee5771839c9aea350659027c8ff45e0af93eabb349b1d1266818857339fc/95cbcf016035e4a02d43dbe9e2c330e176599b5d253c68fd6c43b1947914d43b.1eee59b639dfc1602a64`
+- `F12`: `PROD/data/benchtest_native_artifacts_v1/b577ee5771839c9aea350659027c8ff45e0af93eabb349b1d1266818857339fc/95cbcf016035e4a02d43dbe9e2c330e176599b5d253c68fd6c43b1947914d43b.1eee59b639dfc1602a64`
+- `F13`: `PROD/data/benchtest_native_artifacts_v1/b577ee5771839c9aea350659027c8ff45e0af93eabb349b1d1266818857339fc/c06554407583489d6a624c4d3f3b1faaf3ef65592bfa1d2269ffe8781d542ddb.f91f03521905ee87df70`
+- `F14`: `PROD/data/benchtest_native_artifacts_v1/b577ee5771839c9aea350659027c8ff45e0af93eabb349b1d1266818857339fc/c06554407583489d6a624c4d3f3b1faaf3ef65592bfa1d2269ffe8781d542ddb.f91f03521905ee87df70`
+- `F15`: `PROD/data/benchtest_native_artifacts_v1/b577ee5771839c9aea350659027c8ff45e0af93eabb349b1d1266818857339fc/c06554407583489d6a624c4d3f3b1faaf3ef65592bfa1d2269ffe8781d542ddb.f91f03521905ee87df70`
+- `F16`: `PROD/data/benchtest_native_artifacts_v1/b577ee5771839c9aea350659027c8ff45e0af93eabb349b1d1266818857339fc/c06554407583489d6a624c4d3f3b1faaf3ef65592bfa1d2269ffe8781d542ddb.f91f03521905ee87df70`
+- `F17`: `PROD/data/benchtest_native_artifacts_v1/b577ee5771839c9aea350659027c8ff45e0af93eabb349b1d1266818857339fc/c06554407583489d6a624c4d3f3b1faaf3ef65592bfa1d2269ffe8781d542ddb.f91f03521905ee87df70`
+- `F18`: `PROD/data/benchtest_native_artifacts_v1/b577ee5771839c9aea350659027c8ff45e0af93eabb349b1d1266818857339fc/c06554407583489d6a624c4d3f3b1faaf3ef65592bfa1d2269ffe8781d542ddb.f91f03521905ee87df70`
+- `F19`: `PROD/data/benchtest_native_artifacts_v1/b577ee5771839c9aea350659027c8ff45e0af93eabb349b1d1266818857339fc/00e317019a392ee2e868388cfe57eb3b4ecf6a210e03fc6a21985505b5d05255.81baf0e3fdb0a1e4e7f9`
+- `F2`: `PROD/test_your_script_v1.py:514: # TYS_PIPELINE_RESIN_PASS_STATUS_MAPPING_V1`
+- `F20`: `PROD/data/benchtest_native_artifacts_v1/b577ee5771839c9aea350659027c8ff45e0af93eabb349b1d1266818857339fc/00e317019a392ee2e868388cfe57eb3b4ecf6a210e03fc6a21985505b5d05255.81baf0e3fdb0a1e4e7f9`
+- `F21`: `PROD/data/benchtest_native_artifacts_v1/b577ee5771839c9aea350659027c8ff45e0af93eabb349b1d1266818857339fc/00e317019a392ee2e868388cfe57eb3b4ecf6a210e03fc6a21985505b5d05255.81baf0e3fdb0a1e4e7f9`
+- `F22`: `PROD/data/benchtest_native_artifacts_v1/b577ee5771839c9aea350659027c8ff45e0af93eabb349b1d1266818857339fc/00e317019a392ee2e868388cfe57eb3b4ecf6a210e03fc6a21985505b5d05255.81baf0e3fdb0a1e4e7f9`
+- `F23`: `PROD/data/benchtest_native_artifacts_v1/b577ee5771839c9aea350659027c8ff45e0af93eabb349b1d1266818857339fc/00e317019a392ee2e868388cfe57eb3b4ecf6a210e03fc6a21985505b5d05255.81baf0e3fdb0a1e4e7f9`
+- `F24`: `PROD/data/benchtest_native_artifacts_v1/b577ee5771839c9aea350659027c8ff45e0af93eabb349b1d1266818857339fc/00e317019a392ee2e868388cfe57eb3b4ecf6a210e03fc6a21985505b5d05255.81baf0e3fdb0a1e4e7f9`
+- `F3`: `PROD/test_your_script_v1.py:521: _tys_resin_status   str(`
+- `F4`: `PROD/test_your_script_v1.py:522: _tys_result.get(&quot;resin_status&quot;) or &quot;&quot;`
+- `F5`: `PROD/test_your_script_v1.py:528: _tys_resin_status    &quot;PASS&quot;`
+- `F6`: `PROD/indicator_lab_ollama_conversion_provider_v2.py:165: raise ValueError(&#x27;Frozen Pine SHA mismatch before local conversion&#x27;)`
+- `F7`: `PROD/data/benchtest_native_artifacts_v1/b577ee5771839c9aea350659027c8ff45e0af93eabb349b1d1266818857339fc/95cbcf016035e4a02d43dbe9e2c330e176599b5d253c68fd6c43b1947914d43b.1eee59b639dfc1602a64`
+- `F8`: `PROD/data/benchtest_native_artifacts_v1/b577ee5771839c9aea350659027c8ff45e0af93eabb349b1d1266818857339fc/95cbcf016035e4a02d43dbe9e2c330e176599b5d253c68fd6c43b1947914d43b.1eee59b639dfc1602a64`
+- `F9`: `PROD/data/benchtest_native_artifacts_v1/b577ee5771839c9aea350659027c8ff45e0af93eabb349b1d1266818857339fc/95cbcf016035e4a02d43dbe9e2c330e176599b5d253c68fd6c43b1947914d43b.1eee59b639dfc1602a64`
 - `HEAD`: `939755327f6d`
-- `MATCH_LINES`: `82`
+- `MATCH_COUNT`: `120`
 - `PRODUCTION_CODE_WRITES`: `0`
 - `PRODUCTION_DB_WRITES`: `0`
 - `REPO_CLEAN`: `YES`
