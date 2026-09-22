@@ -1,41 +1,45 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-22T07:56:29.514423+00:00`
-- Run ID: `20260922T075627Z`
-- Step: `CASE4S3INSPECT`
+- Published UTC: `2026-09-22T07:57:41.640394+00:00`
+- Run ID: `20260922T075739Z`
+- Step: `CASE4S3NUMERICINSPECT`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `CASE4_S3_IMPLEMENTATION_INSPECTED`
-- Next gate: `DIAGNOSE_CASE4_S3_SEMANTIC_DIFFERENCE`
+- Verdict: `CASE4_S3_NUMERIC_SEMANTICS_INSPECTED`
+- Next gate: `COMPARE_CASE4_S3_NUMERIC_TRACE`
 
 ## Facts
 
 - `DASHBOARD_RESTART`: `NO`
-- `F1`: `CSHARP S3 REFERENCES`
-- `F10`: `184: &quot;expr&quot;: &quot;sma20 &gt; sma20[1]&quot;`
-- `F11`: `187: &quot;name&quot;: &quot;sma20Down&quot;,`
-- `F12`: `189: &quot;expr&quot;: &quot;sma20 &lt; sma20[1]&quot;`
-- `F13`: `192: &quot;name&quot;: &quot;sma20DownCount&quot;,`
-- `F14`: `194: &quot;expr&quot;: &quot;sma20DownCount + 1&quot;`
-- `F15`: `197: &quot;name&quot;: &quot;sma20UpCount&quot;,`
-- `F16`: `202: &quot;name&quot;: &quot;sma20Intensity&quot;,`
-- `F17`: `204: &quot;expr&quot;: &quot;sma20Up ? math.min(100, (sma20UpCount / intensityBars) * 100) : sma20Down ? math.min(100, (sma20DownCount / intensityBars) * 100) : 0&quot;`
-- `F18`: `207: &quot;name&quot;: &quot;sma20Color&quot;,`
-- `F19`: `209: &quot;expr&quot;: &quot;sma20Up ? color.new(colSMA20Up, 90 - (sma20Intensity * 0.7)) : sma20Down ? color.new(colSMA20Down, 90 - (sma20Intensity * 0.7)) : color.gray&quot;`
-- `F2`: `RUNTIME SPEC S3`
-- `F20`: `234: &quot;expr&quot;: &quot;rsiUp ? math.min(100, (rsiUpCount / intensityBars) * 100) : rsiDown ? math.min(100, (rsiDownCount / intensityBars) * 100) : 0&quot;`
-- `F21`: `244: &quot;expr&quot;: &quot;close &gt; sma20 and sma20 &gt; vwap and ema8 &gt; ema21 and sma20 &gt; sma20[1]&quot;`
-- `F22`: `249: &quot;expr&quot;: &quot;close &lt; sma20 and sma20 &lt; vwap and ema8 &lt; ema21 and sma20 &lt; sma20[1]&quot;`
-- `F23`: `278: &quot;expr&quot;: &quot;sma20Color&quot;`
-- `F24`: `PINE S3 REFERENCES`
-- `F3`: `17: &quot;name&quot;: &quot;intensityBars&quot;,`
-- `F4`: `53: &quot;name&quot;: &quot;colSMA20Up&quot;,`
-- `F5`: `59: &quot;name&quot;: &quot;colSMA20Down&quot;,`
-- `F6`: `97: &quot;name&quot;: &quot;sma20&quot;,`
-- `F7`: `144: &quot;expr&quot;: &quot;ema8Up ? math.min(100, (ema8UpCount / intensityBars) * 100) : ema8Down ? math.min(100, (ema8DownCount / intensityBars) * 100) : 0&quot;`
-- `F8`: `174: &quot;expr&quot;: &quot;ema21Up ? math.min(100, (ema21UpCount / intensityBars) * 100) : ema21Down ? math.min(100, (ema21DownCount / intensityBars) * 100) : 0&quot;`
-- `F9`: `182: &quot;name&quot;: &quot;sma20Up&quot;,`
+- `F1`: `SMA IMPLEMENTATION`
+- `F10`: `402: int len (int)Math.Round(args[1].Eval(c).AsNum());`
+- `F11`: `1007: string marketPath args[1];`
+- `F12`: `COMPARISON OPERATORS`
+- `F13`: `53: new(StringComparer.Ordinal);`
+- `F14`: `56: new(StringComparer.Ordinal);`
+- `F15`: `59: new(StringComparer.Ordinal);`
+- `F16`: `730: var n Compare();`
+- `F17`: `736: n new BinNode(op,n,Compare());`
+- `F18`: `742: Node Compare()`
+- `F19`: `961: using var br new BinaryReader(File.OpenRead(path));`
+- `F2`: `377: if(name  &quot;ta.sma&quot;)`
+- `F20`: `1160: using(var bw   new BinaryWriter(File.Create(Path.Combine(outDir,$&quot;case4_cs_source{s+1}_long_i32.bin&quot;))))`
+- `F21`: `1162: using(var bw   new BinaryWriter(File.Create(Path.Combine(outDir,$&quot;case4_cs_source{s+1}_short_i32.bin&quot;))))`
+- `F22`: `NONE`
+- `F23`: `NONE`
+- `F24`: `NONE`
+- `F25`: `NONE`
+- `F26`: `NONE`
+- `F27`: `NONE`
+- `F28`: `NONE`
+- `F3`: `HISTORY INDEXING`
+- `F4`: `318: args[1].Eval(c).AsNum(),`
+- `F5`: `327: args[1].Eval(c).AsNum()`
+- `F6`: `335: args[1].Eval(c).AsNum()`
+- `F7`: `351: args[1].Eval(c).AsNum()`
+- `F8`: `357: int len (int)Math.Round(args[1].Eval(c).AsNum());`
+- `F9`: `380: int len (int)Math.Round(args[1].Eval(c).AsNum());`
 - `HEAD`: `939755327f6d`
 - `PRODUCTION_CODE_WRITES`: `0`
 - `PRODUCTION_DB_WRITES`: `0`
