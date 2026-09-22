@@ -1,49 +1,49 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-22T09:51:26.026563+00:00`
-- Run ID: `20260922T095123Z`
-- Step: `CASE4FINALCALLTRACE`
+- Published UTC: `2026-09-22T09:52:54.363677+00:00`
+- Run ID: `20260922T095252Z`
+- Step: `CASE4RUNPREFLIGHTFINAL`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `CASE4_FINAL_RESIN_CALL_TRACE_RECOVERED`
-- Next gate: `FINALIZE_CASE4_OR_INSPECT_SINGLE_EVALUATOR`
+- Verdict: `CASE4_RUN_PREFLIGHT_FINAL_BOUNDARY_INSPECTED`
+- Next gate: `FINALIZE_CASE4`
 
 ## Facts
 
 - `DASHBOARD_RESTART`: `NO`
-- `F1`: `PREFLIGHT EXECUTION BLOCK`
-- `F10`: `parameter_overrides,`
-- `F11`: `)`
-- `F12`: `&quot;&quot;&quot;`
-- `F13`: `Canonical thin Resin host.`
+- `F1`: `RUN PREFLIGHT FUNCTION`
+- `F10`: `import tempfile`
+- `F11`: `import time`
+- `F12`: `from pathlib import Path`
+- `F13`: `NONE`
 - `F14`: `NONE`
-- `F15`: `Existing classification stays unchanged.`
-- `F16`: `NONE`
-- `F17`: `Native Resin viz is transported using the same`
-- `F18`: `file-based JSON pattern as Resin&#x27;s shipped CLI.`
-- `F19`: `&quot;&quot;&quot;`
-- `F2`: `except Exception:`
-- `F20`: `import json as _json`
-- `F21`: `import math as _math`
-- `F22`: `import subprocess as _subprocess`
-- `F23`: `import tempfile as _tempfile`
-- `F24`: `from pathlib import Path as _Path`
-- `F25`: `NONE`
-- `F26`: `def _return(`
-- `F27`: `status,`
-- `F28`: `detail,`
-- `F29`: `artifact,`
-- `F3`: `return (&#x27;PASS&#x27;, &#x27;RUNTIME_PASS_QUANT_RESULT_PARSE_FAILED&#x27;)`
-- `F30`: `):`
-- `F4`: `NONE`
-- `F5`: `def run_preflight(source, candles, return_artifact False, parameter_overrides None):`
-- `F6`: `from atb_quant_engine.pine_parameter_overrides import apply_numeric_pine_overrides`
-- `F7`: `NONE`
-- `F8`: `source   apply_numeric_pine_overrides(`
-- `F9`: `source,`
+- `F15`: `DASH   Path(`
+- `F16`: `&quot;ROOT/&quot;`
+- `F17`: `&quot;user_data/orderflow_dashboard&quot;`
+- `F18`: `)`
+- `F19`: `NONE`
+- `F2`: `#!/usr/bin/env python3`
+- `F20`: `DB   DASH / &quot;data/manual_support/indicator_challenger_lab_v1.db&quot;`
+- `F21`: `NONE`
+- `F22`: `PYTHON   Path(&#x27;ROOT/freqtrade-venv/bin/python&#x27;)`
+- `F23`: `NONE`
+- `F24`: `RUNNERS   [`
+- `F25`: `DASH / &quot;tools/testpine-preflight&quot;,`
+- `F26`: `DASH / &quot;testpine-preflight&quot;,`
+- `F27`: `]`
+- `F28`: `NONE`
+- `F29`: `ATTEMPT   &quot;TESTPINE_BASELINE_V1_ATTEMPTED &quot;`
+- `F3`: `NONE`
+- `F30`: `NONE`
+- `F4`: `import hashlib`
+- `F5`: `import json`
+- `F6`: `import os`
+- `F7`: `import sqlite3`
+- `F8`: `import subprocess`
+- `F9`: `import sys`
 - `HEAD`: `939755327f6d`
-- `MATCH_COUNT`: `121`
+- `MATCH_COUNT`: `162`
 - `PRODUCTION_CODE_WRITES`: `0`
 - `PRODUCTION_DB_WRITES`: `0`
 - `REPO_CLEAN`: `YES`
