@@ -1,49 +1,25 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-22T00:52:59.504504+00:00`
-- Run ID: `20260922T005257Z`
-- Step: `CASE4COLORCLASS`
+- Published UTC: `2026-09-22T00:53:59.998619+00:00`
+- Run ID: `20260922T005357Z`
+- Step: `CASE4COLORWALK`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `CASE4_CANONICAL_COLOR_CLASSIFICATION_RECOVERED`
+- Verdict: `CASE4_CANONICAL_WALK_COLORS_RECOVERED`
 - Next gate: `PATCH_CASE4_CANONICAL_COLOR_CLASSIFICATION`
 
 ## Facts
 
-- `CLASS1`: `666 color_state   False`
-- `CLASS10`: `NONE`
-- `CLASS11`: `NONE`
-- `CLASS12`: `NONE`
-- `CLASS2`: `668 if source_green_red_semantics(`
-- `CLASS3`: `672 def walk_colors(`
-- `CLASS4`: `676 nonlocal color_state`
-- `CLASS5`: `703 &quot;GREEN&quot;`
-- `CLASS6`: `706 &quot;RED&quot;`
-- `CLASS7`: `710 green   np.array(`
-- `CLASS8`: `712 x    &quot;GREEN&quot;`
-- `CLASS9`: `NONE`
+- `B668_673`: `if source_green_red_semantics(~source~):~~def walk_colors(~obj,~`
+- `B674_679`: `path,~):~nonlocal color_state~~if isinstance(obj, dict):~~`
+- `B680_685`: `for key, value in obj.items():~~child   (~path~+ &quot;.&quot;~+ str(key)~`
+- `B686_691`: `)~~if (~isinstance(~value,~list,~`
+- `B692_697`: `)~and len(value)~   BARS~):~~families   [~`
+- `B698_703`: `color_family(x)~for x in value~]~~if (~&quot;GREEN&quot;~`
+- `B704_708`: `in families~and~&quot;RED&quot;~in families~):~`
+- `B709_713`: `~green   np.array(~[~x    &quot;GREEN&quot;~for x in families~`
 - `DASHBOARD_RESTART`: `NO`
-- `H259`: `def source_green_red_semantics(source):`
-- `H260`: `source   str(`
-- `H261`: `source or &quot;&quot;`
-- `H262`: `).lower()`
-- `H263`: ``
-- `H264`: `green   bool(`
-- `H265`: `re.search(`
-- `H266`: `r&quot;(bull long buy uptrend trendup)&quot;`
-- `H267`: `r&quot;.{0,180}&quot;`
-- `H268`: `r&quot;color\.(green lime)&quot;,`
-- `H269`: `source,`
-- `H270`: `re.S,`
-- `H271`: `)`
-- `H272`: `or re.search(`
-- `H273`: `r&quot;color\.(green lime)&quot;`
-- `H274`: `r&quot;.{0,180}&quot;`
-- `H275`: `r&quot;(bull long buy uptrend trendup)&quot;,`
-- `H276`: `source,`
-- `H277`: `re.S,`
-- `H278`: `)`
 - `HEAD`: `939755327f6d`
 - `PRODUCTION_CODE_WRITES`: `0`
 - `PRODUCTION_DB_WRITES`: `0`
