@@ -1,36 +1,36 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-22T00:59:07.509036+00:00`
-- Run ID: `20260922T005859Z`
-- Step: `CASE4COLORPATCH`
-- Status: `FAIL`
-- Exit code: `1`
-- Verdict: `CASE4_COLOR_FIXED_REMAINING_MISMATCH`
-- Next gate: `DIAGNOSE_CASE4_REMAINING_MISMATCH`
+- Published UTC: `2026-09-22T01:00:20.485369+00:00`
+- Run ID: `20260922T010018Z`
+- Step: `CASE4SOURCEOUTPUTINSPECT`
+- Status: `SUCCESS`
+- Exit code: `0`
+- Verdict: `CASE4_PER_SOURCE_OUTPUT_PATH_INSPECTED`
+- Next gate: `COMPARE_CASE4_PER_SOURCE_CANONICAL_STATES`
 
 ## Facts
 
-- `BAR_COUNT`: `525600`
-- `CANON_LONG`: `171730`
-- `CANON_SHORT`: `173143`
 - `DASHBOARD_RESTART`: `NO`
-- `EXACT_PARITY`: `NO`
-- `EXTRA_LONG`: `10513`
-- `EXTRA_SHORT`: `10515`
-- `FIRST_MISMATCH`: `1`
+- `F1`: `1081: // CASE4_PER_SOURCE_DIAGNOSTIC_V1`
+- `F10`: `NONE`
+- `F11`: `NONE`
+- `F12`: `NONE`
+- `F13`: `NONE`
+- `F14`: `NONE`
+- `F15`: `NONE`
+- `F16`: `NONE`
+- `F17`: `NONE`
+- `F18`: `NONE`
+- `F2`: `1082: var sourceLongBars   Enumerable`
+- `F3`: `1087: var sourceShortBars   Enumerable`
+- `F4`: `1126: sourceLongBars[s].Add(i);`
+- `F5`: `1132: sourceShortBars[s].Add(i);`
+- `F6`: `1146: $&quot;SOURCE{s+1}_COUNTS {sourceLongBars[s].Count}/{sourceShortBars[s].Count}&quot;`
+- `F7`: `1150: $&quot;SOURCE{s+1}_TRACE {string.Join(&quot;,&quot;,earlyTrace[s])}&quot;`
+- `F8`: `NONE`
+- `F9`: `NONE`
 - `HEAD`: `939755327f6d`
-- `LEAN_COMMIT`: `985ef30ad3ac774218c5ac516b4cb0aa2655730f`
-- `LEAN_LONG`: `182208`
-- `LEAN_SHORT`: `183610`
-- `MATCHING_LONG`: `171695`
-- `MATCHING_SHORT`: `173095`
-- `MISMATCH_PERCENT`: `2.008276255708`
-- `MISSING_LONG`: `35`
-- `MISSING_SHORT`: `48`
-- `PATCHED`: `YES`
 - `PRODUCTION_CODE_WRITES`: `0`
 - `PRODUCTION_DB_WRITES`: `0`
 - `REPO_CLEAN`: `YES`
-- `RGB_RULE`: `DOMINANCE_1P2`
-- `TEXT_RULE`: `GREEN_LIME_RED_MAROON`
