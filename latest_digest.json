@@ -1,23 +1,16 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-22T17:21:26.996649+00:00",
-  "run_id": "20260922T172124Z",
-  "step": "BACKENDCOPYREFERENCECHECK",
-  "status": "SUCCESS",
-  "exit_code": 0,
-  "verdict": "BACKEND_COPY_REFERENCE_IDENTIFIED",
-  "next_gate": "REMOVE_LEGACY_BACKEND_COPY_IF_HANDOFF_ONLY",
+  "published_at_utc": "2026-09-22T17:22:45.248848+00:00",
+  "run_id": "20260922T172243Z",
+  "step": "REMOVELEGACYBACKENDCOPY",
+  "status": "FAIL",
+  "exit_code": 1,
+  "verdict": "UNEXPECTED_REPO_CHANGE_DETECTED",
+  "next_gate": "INSPECT_REPO_CHANGES",
   "facts": {
-    "BACKEND_COPY_REFERENCE_FILES": "1",
-    "BACKEND_COPY_REFERENCE_HANDOFF_ONLY": "YES",
+    "AI_BRAIN_WRITES": "0",
     "DASHBOARD_RESTART": "NO",
     "EMAIL_SENDS": "0",
-    "FILE_DELETES": "0",
-    "GIT_COMMITS": "0",
-    "GIT_PUSHES": "0",
-    "HEAD": "5f5ce7a15c66",
-    "PRODUCTION_CODE_WRITES": "0",
-    "PRODUCTION_DB_WRITES": "0",
-    "REPO_CLEAN": "YES"
+    "PRODUCTION_DB_WRITES": "0"
   }
 }
