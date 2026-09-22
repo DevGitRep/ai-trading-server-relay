@@ -1,18 +1,18 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-22T12:18:35.927142+00:00`
-- Run ID: `20260922T121833Z`
-- Step: `CASE5EXACTEVENTS`
-- Status: `FAIL`
-- Exit code: `1`
-- Verdict: `CASE5_EXACT_EVENT_SPEC_RECOVERY_FAILED`
-- Next gate: `DIAGNOSE_CASE5_EVENT_SPEC`
+- Published UTC: `2026-09-22T12:23:06.489415+00:00`
+- Run ID: `20260922T122301Z`
+- Step: `CASE5EVENTRECOVERY`
+- Status: `SUCCESS`
+- Exit code: `0`
+- Verdict: `CASE5_EXACT_SIGNAL_SPEC_RECOVERED`
+- Next gate: `BUILD_CASE5_INDEPENDENT_CSHARP_REFERENCE`
 
 ## Facts
 
 - `DASHBOARD_RESTART`: `NO`
-- `EVENT_PATH_COUNT`: ``
+- `EVENT_PATH_COUNT`: `0`
 - `EV_B64_1`: ``
 - `EV_B64_2`: ``
 - `EV_B64_3`: ``
@@ -22,20 +22,24 @@
 - `EV_B64_7`: ``
 - `EV_B64_8`: ``
 - `HEAD`: `939755327f6d`
-- `MATCH_COUNT`: ``
+- `NATIVE_FOUND`: `YES`
 - `PRODUCTION_CODE_WRITES`: `0`
 - `PRODUCTION_DB_WRITES`: `0`
+- `PY_ERROR_MSG`: ``
+- `PY_ERROR_TYPE`: ``
 - `REPO_CLEAN`: `YES`
-- `SOURCE_LINES`: ``
-- `SRC_B64_1`: ``
-- `SRC_B64_10`: ``
-- `SRC_B64_11`: ``
-- `SRC_B64_12`: ``
-- `SRC_B64_2`: ``
-- `SRC_B64_3`: ``
-- `SRC_B64_4`: ``
-- `SRC_B64_5`: ``
-- `SRC_B64_6`: ``
-- `SRC_B64_7`: ``
-- `SRC_B64_8`: ``
-- `SRC_B64_9`: ``
+- `SIGNAL_LINE_COUNT`: `26`
+- `SOURCE_COL`: `pine_source`
+- `SOURCE_FOUND`: `YES`
+- `SOURCE_LINES`: `173`
+- `SOURCE_TABLE`: `candidates`
+- `SRC_B64_1`: `MTI0OmJvb2wgbG9uZ1NpZ25hbFN0b2NoID0gZmFsc2U=`
+- `SRC_B64_10`: `MTQ0OmJvb2wgc2hvcnRTaWduYWxNQUNEID0gZmFsc2U=`
+- `SRC_B64_2`: `MTI1OmJvb2wgc2hvcnRTaWduYWxTdG9jaCA9IGZhbHNl`
+- `SRC_B64_3`: `MTI4OiAgICBsb25nU2lnbmFsU3RvY2ggOj0gdHJ1ZQ==`
+- `SRC_B64_4`: `MTMxOiAgICBzaG9ydFNpZ25hbFN0b2NoIDo9IHRydWU=`
+- `SRC_B64_5`: `MTMzOmJvb2wgbG9uZ1NpZ25hbFJTSSA9IGZhbHNl`
+- `SRC_B64_6`: `MTM0OmJvb2wgc2hvcnRTaWduYWxSU0kgPSBmYWxzZQ==`
+- `SRC_B64_7`: `MTM3OiAgICBsb25nU2lnbmFsUlNJIDo9IHRydWU=`
+- `SRC_B64_8`: `MTQwOiAgICBzaG9ydFNpZ25hbFJTSSA6PSB0cnVl`
+- `SRC_B64_9`: `MTQzOmJvb2wgbG9uZ1NpZ25hbE1BQ0QgPSBmYWxzZQ==`
