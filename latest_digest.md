@@ -1,8 +1,8 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-22T17:18:36.645033+00:00`
-- Run ID: `20260922T171834Z`
+- Published UTC: `2026-09-22T17:20:05.390102+00:00`
+- Run ID: `20260922T172003Z`
 - Step: `BACKENDCOPYREMOVALSAFETYCHECK`
 - Status: `SUCCESS`
 - Exit code: `0`
