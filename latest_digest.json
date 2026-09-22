@@ -1,8 +1,8 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-22T14:24:03.667879+00:00",
-  "run_id": "20260922T142359Z",
-  "step": "CASE5BAR42158",
+  "published_at_utc": "2026-09-22T14:27:21.484481+00:00",
+  "run_id": "20260922T142717Z",
+  "step": "CASE5BAR42158TRACEFIX",
   "status": "FAIL",
   "exit_code": 1,
   "verdict": "CASE5_TRACE_BUILD_FAILED",
