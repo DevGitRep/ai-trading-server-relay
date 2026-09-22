@@ -1,24 +1,28 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-22T00:30:27.652946+00:00`
-- Run ID: `20260922T003025Z`
-- Step: `CASE4RUNTIMECTX`
+- Published UTC: `2026-09-22T00:32:40.826689+00:00`
+- Run ID: `20260922T003213Z`
+- Step: `CASE4FULLRUNTIME`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `CASE4_CANONICAL_RUNTIME_CONTEXT_RECOVERED`
-- Next gate: `RUN_CASE4_CANONICAL_EXTRACT_WITH_FULL_RUNTIME_CONTEXT`
+- Verdict: `CASE4_CANONICAL_FULL_RUNTIME_CALL_COMPLETED`
+- Next gate: `EXTRACT_CASE4_CANONICAL_EVENT_BARS`
 
 ## Facts
 
-- `BARS_CALLER_RULE`: `L717:had_bars  EQ  hasattr( ;; L754:if had_bars: ;; L755:base.BARS  EQ  len(candles) ;; L757:signals  EQ  base.extract_signals( ;; L780:if had_bars: ;; L781:base.BARS  EQ  old_bars`
-- `BARS_DEFAULT`: `L57:BARS  EQ  500`
+- `BARS_EFFECTIVE`: `525600`
+- `CANON_MODE`: `VIZ_STATE_TRANSITIONS`
+- `CANON_STATUS`: `PASS`
 - `DASHBOARD_RESTART`: `NO`
 - `HEAD`: `939755327f6d`
-- `NO_OBJECTIVE_RULE`: `L829:&quot;NO_OBJECTIVE_DIRECTION&quot;,`
+- `LONG_SHAPE`: `(525600,)`
+- `LONG_TRUE`: `171730`
+- `PLOTS_PRESENT`: `YES`
 - `PRODUCTION_CODE_WRITES`: `0`
 - `PRODUCTION_DB_WRITES`: `0`
 - `REPO_CLEAN`: `YES`
-- `SOURCE_RULE`: `L668:if source_green_red_semantics( ;; L777:&quot;SOURCE_PROVEN_GREEN_RED_STATE&quot;,`
-- `STRATEGY_RULE`: ``
-- `TRANSITION_GATE`: `L748:long_transition  EQ  ( ;; L753:short_transition  EQ  ( ;; L759:long_transition.any() ;; L761:short_transition.any() ;; L765:long_transition`
+- `SHORT_SHAPE`: `(525600,)`
+- `SHORT_TRUE`: `173143`
+- `STRATEGY_PRESENT`: `NO`
+- `VIZ_PRESENT`: `YES`
