@@ -1,28 +1,29 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-22T00:49:29.228665+00:00`
-- Run ID: `20260922T004927Z`
-- Step: `CASE4STATEFACTS`
+- Published UTC: `2026-09-22T00:50:31.766536+00:00`
+- Run ID: `20260922T005029Z`
+- Step: `CASE4TRANSITIONEXACT`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `CASE4_EXACT_STATE_CONDITIONS_RECOVERED`
-- Next gate: `PATCH_CASE4_CANONICAL_STATE_SEMANTICS`
+- Verdict: `CASE4_EXACT_TRANSITION_EXPRESSION_RECOVERED`
+- Next gate: `PATCH_CASE4_CANONICAL_TRANSITION_SEMANTICS`
 
 ## Facts
 
 - `DASHBOARD_RESTART`: `NO`
-- `GREENPREV_724_728`: `)~~green_prev   (~np.concatenate(~(~`
-- `GREENPREV_729_732`: `np.array(~[False]~),~green[:-1],~`
 - `HEAD`: `939755327f6d`
-- `HELPER_259_261`: `def source_green_red_semantics(source):~source   str(~source or &quot;&quot;~`
-- `HELPER_262_264`: `).lower()~~green   bool(~`
-- `HELPER_265_267`: `re.search(~r&quot;(bull long buy uptrend trendup)&quot;~r&quot;.{0,180}&quot;~`
-- `HELPER_268_271`: `r&quot;color\.(green lime)&quot;,~source,~re.S,~)~`
-- `LONGSHORT_746_750`: `)~~long_transition   (~green~&amp; ~green_prev~`
-- `LONGSHORT_751_756`: `)~~short_transition   (~red~&amp; ~red_prev~)~`
+- `L746`: `)`
+- `L747`: ``
+- `L748`: `long_transition   (`
+- `L749`: `green`
+- `L750`: `&amp; ~green_prev`
+- `L751`: `)`
+- `L752`: ``
+- `L753`: `short_transition   (`
+- `L754`: `red`
+- `L755`: `&amp; ~red_prev`
+- `L756`: `)`
 - `PRODUCTION_CODE_WRITES`: `0`
 - `PRODUCTION_DB_WRITES`: `0`
-- `REDPREV_735_739`: `)~~red_prev   (~np.concatenate(~(~`
-- `REDPREV_740_743`: `np.array(~[False]~),~red[:-1],~`
 - `REPO_CLEAN`: `YES`
