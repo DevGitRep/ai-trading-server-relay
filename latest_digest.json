@@ -1,15 +1,30 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-22T15:08:07.010001+00:00",
-  "run_id": "20260922T150804Z",
-  "step": "CASE5ZERORANGEPATCH",
-  "status": "FAIL",
-  "exit_code": 1,
-  "verdict": "CASE5_REFERENCE_NOT_AVAILABLE",
-  "next_gate": "DIAGNOSE_CASE5_REFERENCE_FILES",
+  "published_at_utc": "2026-09-22T15:08:48.498888+00:00",
+  "run_id": "20260922T150846Z",
+  "step": "CASE5REFERENCEFILES",
+  "status": "SUCCESS",
+  "exit_code": 0,
+  "verdict": "CASE5_REFERENCE_FILES_INSPECTED",
+  "next_gate": "RESTORE_AND_RERUN_CASE5_REFERENCE",
   "facts": {
+    "CASE4_DIR": "YES",
+    "CASE4_PROGRAM": "YES",
+    "CASE4_PROJECT": "YES",
+    "CASE4_PROJECT_NAME": "Case4LeanParity.csproj",
+    "CASE5_DIR": "YES",
+    "CASE5_FILES": "case5_expected_short_canonical_i32.bin,Case5LeanParity.csproj,case5_parity_result.txt,case5_hlc_f64.bin,case5_expected_long_canonical_i32.bin,Program.cs",
+    "CASE5_FINAL": "NO",
+    "CASE5_HLC": "YES",
+    "CASE5_LONG": "YES",
+    "CASE5_PROGRAM": "YES",
+    "CASE5_PROJECT": "YES",
+    "CASE5_RESULT": "YES",
+    "CASE5_SHORT": "YES",
     "DASHBOARD_RESTART": "NO",
+    "HEAD": "939755327f6d",
     "PRODUCTION_CODE_WRITES": "0",
-    "PRODUCTION_DB_WRITES": "0"
+    "PRODUCTION_DB_WRITES": "0",
+    "REPO_CLEAN": "YES"
   }
 }
