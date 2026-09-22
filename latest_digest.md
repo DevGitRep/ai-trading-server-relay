@@ -1,43 +1,49 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-22T09:50:22.624354+00:00`
-- Run ID: `20260922T095020Z`
-- Step: `CASE4LOADTESTPINE`
+- Published UTC: `2026-09-22T09:51:26.026563+00:00`
+- Run ID: `20260922T095123Z`
+- Step: `CASE4FINALCALLTRACE`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `CASE4_CANONICAL_TESTPINE_TARGET_RECOVERED`
-- Next gate: `FINALIZE_CASE4_OR_INSPECT_CANONICAL_TESTPINE`
+- Verdict: `CASE4_FINAL_RESIN_CALL_TRACE_RECOVERED`
+- Next gate: `FINALIZE_CASE4_OR_INSPECT_SINGLE_EVALUATOR`
 
 ## Facts
 
 - `DASHBOARD_RESTART`: `NO`
-- `F1`: `LOAD TESTPINE BLOCK`
-- `F10`: `mod   importlib.util.module_from_spec(spec)`
-- `F11`: `loader.exec_module(mod)`
-- `F12`: `return mod`
-- `F13`: `NONE`
+- `F1`: `PREFLIGHT EXECUTION BLOCK`
+- `F10`: `parameter_overrides,`
+- `F11`: `)`
+- `F12`: `&quot;&quot;&quot;`
+- `F13`: `Canonical thin Resin host.`
 - `F14`: `NONE`
-- `F15`: `def candidate_columns(conn):`
-- `F16`: `return {`
-- `F17`: `r[1]`
-- `F18`: `for r in conn.execute(&quot;PRAGMA table_info(candidates)&quot;)`
-- `F19`: `TESTPINE MODULE CALLS`
-- `F2`: `NONE`
-- `F20`: `18:TESTPINE   DASH / &quot;tools/testpine&quot;`
-- `F21`: `23:PREFLIGHT_MARKER   &quot;TESTPINE_PREFLIGHT_V1:&quot;`
-- `F22`: `24:PREFLIGHT_AT   &quot;TESTPINE_PREFLIGHT_V1_AT &quot;`
-- `F23`: `25:PREFLIGHT_DETAIL   &quot;TESTPINE_PREFLIGHT_V1_DETAIL &quot;`
-- `F24`: `28:def load_testpine():`
-- `F3`: `NONE`
-- `F4`: `def load_testpine():`
-- `F5`: `loader   importlib.machinery.SourceFileLoader(`
-- `F6`: `&quot;_canonical_testpine&quot;,`
-- `F7`: `str(TESTPINE),`
-- `F8`: `)`
-- `F9`: `spec   importlib.util.spec_from_loader(loader.name, loader)`
+- `F15`: `Existing classification stays unchanged.`
+- `F16`: `NONE`
+- `F17`: `Native Resin viz is transported using the same`
+- `F18`: `file-based JSON pattern as Resin&#x27;s shipped CLI.`
+- `F19`: `&quot;&quot;&quot;`
+- `F2`: `except Exception:`
+- `F20`: `import json as _json`
+- `F21`: `import math as _math`
+- `F22`: `import subprocess as _subprocess`
+- `F23`: `import tempfile as _tempfile`
+- `F24`: `from pathlib import Path as _Path`
+- `F25`: `NONE`
+- `F26`: `def _return(`
+- `F27`: `status,`
+- `F28`: `detail,`
+- `F29`: `artifact,`
+- `F3`: `return (&#x27;PASS&#x27;, &#x27;RUNTIME_PASS_QUANT_RESULT_PARSE_FAILED&#x27;)`
+- `F30`: `):`
+- `F4`: `NONE`
+- `F5`: `def run_preflight(source, candles, return_artifact False, parameter_overrides None):`
+- `F6`: `from atb_quant_engine.pine_parameter_overrides import apply_numeric_pine_overrides`
+- `F7`: `NONE`
+- `F8`: `source   apply_numeric_pine_overrides(`
+- `F9`: `source,`
 - `HEAD`: `939755327f6d`
-- `MATCH_COUNT`: `76`
+- `MATCH_COUNT`: `121`
 - `PRODUCTION_CODE_WRITES`: `0`
 - `PRODUCTION_DB_WRITES`: `0`
 - `REPO_CLEAN`: `YES`
