@@ -1,49 +1,41 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-22T10:45:20.875478+00:00`
-- Run ID: `20260922T104500Z`
-- Step: `CASE5SOURCEMAPPING`
-- Status: `SUCCESS`
-- Exit code: `0`
-- Verdict: `CASE5_SOURCE_AND_RESIN_MAPPING_INSPECTED`
-- Next gate: `BUILD_CASE5_INDEPENDENT_CSHARP_REFERENCE`
+- Published UTC: `2026-09-22T12:18:35.927142+00:00`
+- Run ID: `20260922T121833Z`
+- Step: `CASE5EXACTEVENTS`
+- Status: `FAIL`
+- Exit code: `1`
+- Verdict: `CASE5_EXACT_EVENT_SPEC_RECOVERY_FAILED`
+- Next gate: `DIAGNOSE_CASE5_EVENT_SPEC`
 
 ## Facts
 
-- `BARS`: `525600`
-- `BGCOLOR_COUNT`: `0`
 - `DASHBOARD_RESTART`: `NO`
-- `EXTRACT_MODE`: `EXPLICIT_RESIN_EVENTS`
-- `EXTRACT_STATUS`: `PASS`
+- `EVENT_PATH_COUNT`: ``
+- `EV_B64_1`: ``
+- `EV_B64_2`: ``
+- `EV_B64_3`: ``
+- `EV_B64_4`: ``
+- `EV_B64_5`: ``
+- `EV_B64_6`: ``
+- `EV_B64_7`: ``
+- `EV_B64_8`: ``
 - `HEAD`: `939755327f6d`
-- `LONG_COUNT`: `6`
-- `LONG_FIRST`: `354481`
-- `NATIVE_FOUND`: `YES`
-- `P1`: `Stoch K:VY:CN`
-- `P2`: `Stoch D:VY:CN`
-- `P3`: `RSI:VY:CY`
-- `P4`: `MACD Histogram:VY:CY`
-- `P5`: `MACD:VY:CY`
-- `P6`: `MACD Signal:VY:CY`
-- `PLOT_COUNT`: `6`
+- `MATCH_COUNT`: ``
 - `PRODUCTION_CODE_WRITES`: `0`
 - `PRODUCTION_DB_WRITES`: `0`
 - `REPO_CLEAN`: `YES`
-- `SHORT_COUNT`: `7`
-- `SHORT_FIRST`: `18103`
-- `SOURCE_COL`: `pine_source`
-- `SOURCE_FOUND`: `YES`
-- `SOURCE_LINES`: `173`
-- `SOURCE_TABLE`: `candidates`
-- `SRC_B64_1`: `MTovL0B2ZXJzaW9uPTU=`
-- `SRC_B64_2`: `MjppbmRpY2F0b3IoIkRhdGEgVHJhZGVyIFN0b2NoIHwgUlNJIHwgTUFDRCBTdHJhdGVneSBJbmRpY2F0b3IiLCAiU3RvY2ggfCBSU0kgfCBNQUNEIiwgZm9ybWF0PWZvcm1hdC5wcmljZSwgcHJlY2lzaW9uPTIsIHRpbWVmcmFtZT0iIiwgdGltZWZyYW1lX2dhcHM9dHJ1ZSk=`
-- `SRC_B64_3`: `NDovLyBWZXJzaW9ucw==`
-- `SRC_B64_4`: `NzovLyAxLjIgLSBtb3ZlIHNob3cgc3RvY2ggLyBSU0kgLyBNQUNEIG9wdGlvbnMgdG8gdGhlIHRvcA==`
-- `SRC_B64_5`: `OTovLyBJbXBsZW1lbnRhdGlvbiBvZiBEYXRhIFRyYWRlcidzIHN0cmF0ZWd5LCBkZXNjcmliZWQgaW4gdGhlIHlvdXR1YmUgdmlkZW8sICJIaWdobHkgUHJvZml0YWJsZSBTdG9jaGFzdGljICsgUlNJICsgTUFDRCBUcmFkaW5nIFN0cmF0ZWd5IChQcm92ZW4gMTAweCki`
-- `SRC_B64_6`: `MTA6Ly8gQWxzbyBzZWUgQWxnb3ZpYmVzIHZpZGVvLCAiSGlnaGx5IFByb2ZpdGFibGUgU3RvY2hhc3RpYyArIFJTSSArIE1BQ0QgVHJhZGluZyBTdHJhdGVneT8gVGVzdGluZyBEYXRhIFRyYWRlcnMgc3RyYXRlZ3kgaW4gUHl0aG9uIg==`
-- `SRC_B64_7`: `MTc6Ly8gIyBMb25nIFNpZ25hbHMgIw==`
-- `SRC_B64_8`: `MTg6Ly8gU3RvY2ggSyBhbmQgRCBhcmUgb3ZlcnNvbGQ=`
-- `SRC_MATCH_COUNT`: `94`
-- `STRATEGY_PRESENT`: `NO`
-- `TOP_KEYS`: `kind,plots,resinVersion,viz`
+- `SOURCE_LINES`: ``
+- `SRC_B64_1`: ``
+- `SRC_B64_10`: ``
+- `SRC_B64_11`: ``
+- `SRC_B64_12`: ``
+- `SRC_B64_2`: ``
+- `SRC_B64_3`: ``
+- `SRC_B64_4`: ``
+- `SRC_B64_5`: ``
+- `SRC_B64_6`: ``
+- `SRC_B64_7`: ``
+- `SRC_B64_8`: ``
+- `SRC_B64_9`: ``
