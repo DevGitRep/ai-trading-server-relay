@@ -1,34 +1,25 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-22T00:37:35.510461+00:00`
-- Run ID: `20260922T003729Z`
-- Step: `CASE4CANONPARITY`
-- Status: `FAIL`
-- Exit code: `1`
-- Verdict: `CASE4_CANONICAL_SIGNAL_GENERATION_MISMATCH`
-- Next gate: `DIAGNOSE_CASE4_CANONICAL_FIRST_MISMATCH`
+- Published UTC: `2026-09-22T00:43:03.903838+00:00`
+- Run ID: `20260922T004301Z`
+- Step: `CASE4STATESEM`
+- Status: `SUCCESS`
+- Exit code: `0`
+- Verdict: `CASE4_CANONICAL_STATE_SEMANTICS_RECOVERED`
+- Next gate: `PATCH_CASE4_CANONICAL_STATE_SEMANTICS`
 
 ## Facts
 
-- `BAR_COUNT`: `525600`
-- `CANON_LONG`: `171730`
-- `CANON_SHORT`: `173143`
 - `DASHBOARD_RESTART`: `NO`
-- `EXACT_PARITY`: `NO`
-- `EXTRA_LONG`: `8060`
-- `EXTRA_SHORT`: `7715`
-- `FIRST_MISMATCH`: `4`
+- `GREEN_PREV`: `L726:green_prev  EQ  ( ; L750:&amp; ~green_prev`
 - `HEAD`: `939755327f6d`
-- `LEAN_COMMIT`: `985ef30ad3ac774218c5ac516b4cb0aa2655730f`
-- `LEAN_LONG`: `171619`
-- `LEAN_REFERENCE_LOADED`: `YES`
-- `LEAN_SHORT`: `170735`
-- `MATCHING_LONG`: `163559`
-- `MATCHING_SHORT`: `163020`
-- `MISMATCH_PERCENT`: `3.240962709285`
-- `MISSING_LONG`: `8171`
-- `MISSING_SHORT`: `10123`
+- `HELPER_RETURN`: `green and red`
+- `HELPER_SIG`: `source_green_red_semantics(source)`
+- `LONG_EXPR`: `L748:long_transition  EQ  ( ; L759:long_transition.any() ; L765:long_transition`
 - `PRODUCTION_CODE_WRITES`: `0`
 - `PRODUCTION_DB_WRITES`: `0`
+- `RED_PREV`: `L737:red_prev  EQ  ( ; L755:&amp; ~red_prev`
 - `REPO_CLEAN`: `YES`
+- `SHORT_EXPR`: `L753:short_transition  EQ  ( ; L761:short_transition.any() ; L769:short_transition`
+- `STATE_UPDATE`: ``
