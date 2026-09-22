@@ -1,8 +1,8 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-22T14:27:21.484481+00:00`
-- Run ID: `20260922T142717Z`
+- Published UTC: `2026-09-22T14:30:49.003866+00:00`
+- Run ID: `20260922T143040Z`
 - Step: `CASE5BAR42158TRACEFIX`
 - Status: `FAIL`
 - Exit code: `1`
