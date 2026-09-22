@@ -1,23 +1,31 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-22T00:06:49.907636+00:00`
-- Run ID: `20260922T000646Z`
-- Step: `CASE4CALLSITESIMPLE`
-- Status: `SUCCESS`
-- Exit code: `0`
-- Verdict: `CASE4_SIMPLE_CALLSITE_FOUND`
-- Next gate: `REBUILD_CASE4_EXPECTED_EVENTS_WITH_CANONICAL_CALL`
+- Published UTC: `2026-09-22T00:22:46.260679+00:00`
+- Run ID: `20260922T002231Z`
+- Step: `CASE4CANONEVENTS`
+- Status: `FAIL`
+- Exit code: `1`
+- Verdict: `CASE4_CANONICAL_EVENT_EXTRACTION_FAILED`
+- Next gate: `DIAGNOSE_CASE4_CANONICAL_SIGNAL_VALUES`
 
 ## Facts
 
-- `CALL1_FILE`: `tools/atb_quant_engine/large_parameter_sweep.py`
-- `CALL1_LINE`: `757`
-- `CALL1_TEXT`: `signals = base.extract_signals(`
-- `CALL_COUNT`: `3`
-- `CONTEXT_FILE`: `/tmp/case4_callsite_context_20260922T000646Z.txt`
+- `CANON_LONG`: `0`
+- `CANON_MODE`: `NONE`
+- `CANON_SHORT`: `0`
+- `CANON_STATUS`: `NONE`
 - `DASHBOARD_RESTART`: `NO`
+- `FIRST_LONG`: `NONE`
+- `FIRST_SHORT`: `NONE`
 - `HEAD`: `939755327f6d`
+- `LONG_DELTA`: `NA`
+- `LONG_TYPE`: `NONE`
+- `OLD_LONG`: `148602`
+- `OLD_SHORT`: `148151`
 - `PRODUCTION_CODE_WRITES`: `0`
 - `PRODUCTION_DB_WRITES`: `0`
+- `REPORT_SHA`: `NONE`
 - `REPO_CLEAN`: `YES`
+- `SHORT_DELTA`: `NA`
+- `SHORT_TYPE`: `NONE`
