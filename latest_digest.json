@@ -1,25 +1,25 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-23T20:44:42.923161+00:00",
-  "run_id": "20260923T204440Z",
-  "step": "READREPORTMETRICSBINDING",
+  "published_at_utc": "2026-09-23T20:46:36.695461+00:00",
+  "run_id": "20260923T204633Z",
+  "step": "RESOLVEREPORTCANDIDATEMAPPING",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "REPORT_METRICS_MAPPING_READY",
-  "next_gate": "RESOLVE_VALID_REPORT_CANDIDATE",
+  "verdict": "REPORT_CANDIDATE_MAPPING_INSPECTED",
+  "next_gate": "VERIFY_VALID_REPORT_CANDIDATE",
   "facts": {
-    "BACKEND_CALL_LINE": "0",
-    "BIND_LINE": "2542",
     "DASHBOARD_RESTART": "NO",
+    "DIRECT_MAPPING_COUNT": "0",
     "FILE_DELETES": "0",
     "GIT_COMMITS": "0",
     "GIT_PUSHES": "0",
     "HEAD": "21ba6c2a65a3",
-    "LOAD_REPORT_START": "1434",
     "PRODUCTION_CODE_WRITES": "0",
     "PRODUCTION_DB_WRITES": "0",
-    "REGISTER_ARG_COUNT": "1",
-    "REGISTER_START": "787",
-    "REPO_CLEAN": "YES"
+    "REPO_CLEAN": "YES",
+    "SAMPLE_CANDIDATE": "NONE",
+    "SAMPLE_INDICATOR": "NONE",
+    "SAMPLE_TABLE": "NONE",
+    "SAMPLE_TIER": "NONE"
   }
 }
