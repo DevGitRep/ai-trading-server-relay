@@ -1,26 +1,26 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-23T22:14:10.592879+00:00",
-  "run_id": "20260923T221408Z",
-  "step": "EXTRACTREPORTIDSEMANTICS",
+  "published_at_utc": "2026-09-23T22:24:12.864800+00:00",
+  "run_id": "20260923T222410Z",
+  "step": "READREPORTIDRESOLVERSEMANTICS",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "REPORT_ID_SEMANTICS_EXTRACTED",
+  "verdict": "REPORT_ID_RESOLVER_SEMANTICS_READ",
   "next_gate": "RESOLVE_VALID_REPORT_ID",
   "facts": {
-    "CANDIDATE_IDS_START": "44",
+    "CANDIDATE_IDS_ARGS": "conn,source_sha256,chart_url",
+    "CANDIDATE_IDS_ARG_COUNT": "3",
+    "CANDIDATE_IDS_REQUIRED_COUNT": "3",
     "DASHBOARD_RESTART": "NO",
-    "EXAMPLE_FULL_ID": "ERROR:TypeError",
-    "EXAMPLE_SHORT_ID": "ERROR:TypeError",
     "FILE_DELETES": "0",
     "GIT_COMMITS": "0",
     "GIT_PUSHES": "0",
     "HEAD": "21ba6c2a65a3",
-    "LOAD_REPORT_START": "1434",
+    "LOAD_REPORT_ARGS": "script_id_part,effective_tier",
+    "LOAD_REPORT_ARG_COUNT": "2",
     "PRODUCTION_CODE_WRITES": "0",
     "PRODUCTION_DB_WRITES": "0",
-    "REPORT_METRICS_ASSIGN_COUNT": "0",
-    "REPORT_METRICS_BINDING": "NONE",
-    "REPO_CLEAN": "YES"
+    "REPO_CLEAN": "YES",
+    "RESOLVER_CALLSITE_COUNT": "1"
   }
 }
