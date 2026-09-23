@@ -1,30 +1,33 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-23T17:28:01.917816+00:00`
-- Run ID: `20260923T172759Z`
-- Step: `READREALCHARTBLOCK`
+- Published UTC: `2026-09-23T17:29:12.421498+00:00`
+- Run ID: `20260923T172910Z`
+- Step: `INSPECTWINDOWCAPABILITY`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `REAL_CHART_BLOCK_EXTRACTED`
-- Next gate: `PATCH_1M_DISPLAY_AND_WINDOW`
+- Verdict: `BENCH_CHART_WINDOW_CAPABILITY_INSPECTED`
+- Next gate: `IMPLEMENT_1M_15DAY_WINDOW`
 
 ## Facts
 
-- `AGG_LINES`: `NONE`
-- `BUCKET_LINES`: `NONE`
-- `CANDLE_LINES`: `2266,2287`
+- `CANDLE_LINES`: `1927,2109,2115,2116,2117,2123,2124,2130,2131,2133,2137,2145,2156,2161,2190,2195,2201,2204,2208,2266,2268,2274,2280,2285,2286,2287,2288,2308,2313`
 - `DASHBOARD_RESTART`: `NO`
-- `DISPLAY_TF_LINES`: `2279,2281`
 - `FILE_DELETES`: `0`
+- `FUNC_END`: `2326`
+- `FUNC_START`: `1904`
 - `GIT_COMMITS`: `0`
 - `GIT_PUSHES`: `0`
 - `HEAD`: `ccfd9899eb3f`
-- `LINE2283`: `or &quot;4h&quot;`
-- `OWNER`: `indicator_lab_report_bench_chart_data_v28c`
-- `OWNER_END`: `2326`
-- `OWNER_START`: `1904`
+- `JSON_KEYS`: `NONE`
+- `L2266`: `&quot;mode&quot;: &quot;candles&quot;,`
+- `L2279`: `&quot;display_timeframe&quot;: (`
+- `L2281`: `&quot;display_timeframe&quot;`
+- `L2283`: `or &quot;4h&quot;`
+- `L2287`: `&quot;candles&quot;: _candles,`
 - `PRODUCTION_CODE_WRITES`: `0`
 - `PRODUCTION_DB_WRITES`: `0`
 - `REPO_CLEAN`: `YES`
-- `RESAMPLE_LINES`: `NONE`
+- `REQUEST_ARG_LINES`: `NONE`
+- `SLICE_LINES`: `NONE`
+- `WINDOW_HINT_LINES`: `2005`
