@@ -1,30 +1,25 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-23T18:02:18.515132+00:00`
-- Run ID: `20260923T180027Z`
-- Step: `LOCATEFOURHOURCACHEWRITER`
+- Published UTC: `2026-09-23T18:04:16.896234+00:00`
+- Run ID: `20260923T180414Z`
+- Step: `READFOURHOURCACHEWRITERBLOCK`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `FOUR_HOUR_CANDLE_CACHE_WRITER_INSPECTED`
-- Next gate: `IMPLEMENT_1M_15DAY_CHUNK_CACHE`
+- Verdict: `EXACT_FOUR_HOUR_CACHE_WRITER_BLOCK_READ`
+- Next gate: `PATCH_1M_15DAY_CHUNK_CACHE`
 
 ## Facts
 
-- `1M_SOURCE_FILE`: `data/benchtest_market_data_v1/SOL_USDT_USDT-1m-futures-20250731_20260730.feather`
-- `CACHE_CANDLES`: `2190`
-- `CACHE_DISPLAY_TF`: `4h`
-- `CACHE_SOURCE_TF`: `1m`
+- `CACHE_NAME_LINES`: `1927`
 - `DASHBOARD_RESTART`: `NO`
 - `FILE_DELETES`: `0`
+- `FOURH_NEAR_LINES`: `NONE`
 - `GIT_COMMITS`: `0`
 - `GIT_PUSHES`: `0`
 - `HEAD`: `ccfd9899eb3f`
+- `OWNER`: `indicator_lab_report_bench_chart_data_v28c`
 - `PRODUCTION_CODE_WRITES`: `0`
 - `PRODUCTION_DB_WRITES`: `0`
 - `REPO_CLEAN`: `YES`
-- `WRITER_CANDIDATE_COUNT`: `32`
-- `WRITER_FILE`: `indicator_lab_v1.py`
-- `WRITER_FLAGS`: `CACHE_NAME,DISPLAY_TF,SOURCE_TF,JSON_WRITE,FOUR_H,ONE_M`
-- `WRITER_FUNC`: `register_indicator_lab_routes`
-- `WRITER_START`: `787`
+- `WRITE_NEAR_LINES`: `1732,1765`

@@ -1,29 +1,24 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-23T18:02:18.515132+00:00",
-  "run_id": "20260923T180027Z",
-  "step": "LOCATEFOURHOURCACHEWRITER",
+  "published_at_utc": "2026-09-23T18:04:16.896234+00:00",
+  "run_id": "20260923T180414Z",
+  "step": "READFOURHOURCACHEWRITERBLOCK",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "FOUR_HOUR_CANDLE_CACHE_WRITER_INSPECTED",
-  "next_gate": "IMPLEMENT_1M_15DAY_CHUNK_CACHE",
+  "verdict": "EXACT_FOUR_HOUR_CACHE_WRITER_BLOCK_READ",
+  "next_gate": "PATCH_1M_15DAY_CHUNK_CACHE",
   "facts": {
-    "1M_SOURCE_FILE": "data/benchtest_market_data_v1/SOL_USDT_USDT-1m-futures-20250731_20260730.feather",
-    "CACHE_CANDLES": "2190",
-    "CACHE_DISPLAY_TF": "4h",
-    "CACHE_SOURCE_TF": "1m",
+    "CACHE_NAME_LINES": "1927",
     "DASHBOARD_RESTART": "NO",
     "FILE_DELETES": "0",
+    "FOURH_NEAR_LINES": "NONE",
     "GIT_COMMITS": "0",
     "GIT_PUSHES": "0",
     "HEAD": "ccfd9899eb3f",
+    "OWNER": "indicator_lab_report_bench_chart_data_v28c",
     "PRODUCTION_CODE_WRITES": "0",
     "PRODUCTION_DB_WRITES": "0",
     "REPO_CLEAN": "YES",
-    "WRITER_CANDIDATE_COUNT": "32",
-    "WRITER_FILE": "indicator_lab_v1.py",
-    "WRITER_FLAGS": "CACHE_NAME,DISPLAY_TF,SOURCE_TF,JSON_WRITE,FOUR_H,ONE_M",
-    "WRITER_FUNC": "register_indicator_lab_routes",
-    "WRITER_START": "787"
+    "WRITE_NEAR_LINES": "1732,1765"
   }
 }
