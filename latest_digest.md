@@ -1,29 +1,27 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-23T20:39:55.376613+00:00`
-- Run ID: `20260923T203953Z`
-- Step: `TRACEBENCHTESTLOOKUPCHAIN`
+- Published UTC: `2026-09-23T20:43:42.193077+00:00`
+- Run ID: `20260923T204339Z`
+- Step: `TRACEREPORTMETRICSBINDING`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `BENCHTEST_CANDIDATE_LOOKUP_CHAIN_TRACED`
-- Next gate: `QUERY_EXACT_BENCHTEST_SOURCE`
+- Verdict: `REPORT_METRICS_BINDING_TRACED`
+- Next gate: `RESOLVE_VALID_REPORT_CANDIDATE`
 
 ## Facts
 
-- `ARTIFACT_RUN_RHS`: `_payload.get(&#x27;run_id&#x27;)`
 - `DASHBOARD_RESTART`: `NO`
 - `FILE_DELETES`: `0`
 - `GIT_COMMITS`: `0`
 - `GIT_PUSHES`: `0`
 - `HEAD`: `21ba6c2a65a3`
-- `INDICATOR_RHS`: `str(_metrics.get(&#x27;candidate_id&#x27;) or &#x27;&#x27;).strip()`
-- `LOCAL_HELPERS`: `0`
-- `LOOKUP_ASSIGNMENTS`: `4`
-- `METRICS_LINE`: `1931`
-- `METRICS_RHS`: `_report_metrics(candidate_id, &#x27;PRO&#x27;)`
+- `LOAD_REPORT_ARG_COUNT`: `2`
+- `LOAD_REPORT_START`: `1434`
+- `PARENT_ARG_COUNT`: `1`
+- `PARENT_FUNCTION`: `register_indicator_lab_routes`
 - `PRODUCTION_CODE_WRITES`: `0`
 - `PRODUCTION_DB_WRITES`: `0`
+- `REGISTRATION_FILE`: `backend.py`
+- `REGISTRATION_LINE`: `14873`
 - `REPO_CLEAN`: `YES`
-- `ROUTE_CALLS`: `26`
-- `RUN_RHS`: `_con.execute(f&#x27;n SELECTn primary_benchmark_mode,n primary_trade_count,n &quot;{_raw_columns[0]}&quot; AS payloadn FROM pipeline_benchtest_runsn WHERE indicator_id=?n AND is_current=1n LIMIT 1n &#x27;, (_indicator_id,)).fetchone()`
