@@ -1,20 +1,22 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-23T06:45:59.066928+00:00",
-  "run_id": "20260923T064556Z",
-  "step": "BENCHTESTCOHORTANDDBTRACE",
+  "published_at_utc": "2026-09-23T06:49:37.064352+00:00",
+  "run_id": "20260923T064932Z",
+  "step": "FIXBENCHTESTCOHORT",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "BENCHTEST_COHORT_HISTORY_AND_DB_WRITE_PATH_INSPECTED",
-  "next_gate": "DECIDE_MINIMAL_FIX_AND_RERUN_NECESSITY",
+  "verdict": "UNDEFINED_COHORT_SUMMARY_REMOVED_AND_PUSHED",
+  "next_gate": "OPTIONAL_FUTURE_BENCHTEST_RUN",
   "facts": {
+    "COHORT_REFERENCES": "0",
     "DASHBOARD_RESTART": "NO",
-    "FILE_DELETES": "0",
-    "GIT_COMMITS": "0",
-    "GIT_PUSHES": "0",
-    "HEAD": "5ce0ec67c6be",
-    "PRODUCTION_CODE_WRITES": "0",
+    "GIT_COMMIT": "24306700de0980e16bb07dda9e02acb25cb74ee6",
+    "GIT_PUSH": "SUCCESS",
+    "NEW_SHA": "68d7521ca0ee0b6a2510e301d14dbb3ff1f303cf1b4d5ec96652824744518d77",
+    "OLD_SHA": "d3bbd4bb84e80a5a59d5ddabd279b6ab6942d5b82aeaec9182da902860c3c6a8",
     "PRODUCTION_DB_WRITES": "0",
-    "REPO_CLEAN": "YES"
+    "PY_COMPILE": "PASS",
+    "REPO_CLEAN": "YES",
+    "RERUN_500_PERFORMED": "NO"
   }
 }
