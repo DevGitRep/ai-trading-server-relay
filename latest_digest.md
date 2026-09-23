@@ -1,25 +1,33 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-23T18:04:16.896234+00:00`
-- Run ID: `20260923T180414Z`
-- Step: `READFOURHOURCACHEWRITERBLOCK`
+- Published UTC: `2026-09-23T18:09:00.961430+00:00`
+- Run ID: `20260923T180858Z`
+- Step: `TRACEFOURHOURCACHEWRITER`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `EXACT_FOUR_HOUR_CACHE_WRITER_BLOCK_READ`
-- Next gate: `PATCH_1M_15DAY_CHUNK_CACHE`
+- Verdict: `FOUR_HOUR_CACHE_WRITER_TRACED`
+- Next gate: `IMPLEMENT_1M_15DAY_CHUNK_CACHE`
 
 ## Facts
 
-- `CACHE_NAME_LINES`: `1927`
 - `DASHBOARD_RESTART`: `NO`
 - `FILE_DELETES`: `0`
-- `FOURH_NEAR_LINES`: `NONE`
 - `GIT_COMMITS`: `0`
 - `GIT_PUSHES`: `0`
 - `HEAD`: `ccfd9899eb3f`
-- `OWNER`: `indicator_lab_report_bench_chart_data_v28c`
 - `PRODUCTION_CODE_WRITES`: `0`
 - `PRODUCTION_DB_WRITES`: `0`
 - `REPO_CLEAN`: `YES`
-- `WRITE_NEAR_LINES`: `1732,1765`
+- `WRITER1_4H_LINES`: `NONE`
+- `WRITER1_CANDLE_LINES`: `NONE`
+- `WRITER1_DISPLAY_LINES`: `NONE`
+- `WRITER1_END`: `1780`
+- `WRITER1_OWNER`: `_pine_library_tier_project_existing_catalog_response`
+- `WRITER1_START`: `1641`
+- `WRITER1_WRITE_LINES`: `1732,1765`
+- `WRITER2_4H_LINES`: `NONE`
+- `WRITER2_CANDLE_LINES`: `NONE`
+- `WRITER2_DISPLAY_LINES`: `NONE`
+- `WRITER2_OWNER`: `_pine_library_tier_project_existing_catalog_response`
+- `WRITER2_WRITE_LINES`: `1732,1765`
