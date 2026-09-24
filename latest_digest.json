@@ -1,21 +1,30 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-24T09:29:45.016465+00:00",
-  "run_id": "20260924T092942Z",
-  "step": "LOCATEMASTERHANDOFF",
+  "published_at_utc": "2026-09-24T10:17:26.937323+00:00",
+  "run_id": "20260924T101131Z",
+  "step": "DIAGNOSEUPTRICKCHARTUX",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "MASTER_HANDOFF_LOCATED_AND_STYLE_READ",
-  "next_gate": "APPEND_EXPLAINED_BENCHTEST_STATUS_AND_PUSH",
+  "verdict": "EXACT_UPTRICK_CHART_PATH_DIAGNOSED",
+  "next_gate": "PATCH_WINDOW_RERENDER_AND_MARKERS",
   "facts": {
     "DASHBOARD_RESTART": "NO",
-    "FILE_DELETES": "0",
     "GIT_COMMITS": "0",
     "GIT_PUSHES": "0",
-    "HANDOFF": "data/manual_support/AI_TRADING_SYSTEM_HANDOFF.md",
     "HEAD": "2ad8ec283431",
+    "HTTP0": "000",
+    "HTTP1": "000",
+    "NONCANDLE_ARRAY_FIELDS": "0",
     "PRODUCTION_CODE_WRITES": "0",
     "PRODUCTION_DB_WRITES": "0",
-    "REPO_CLEAN": "YES"
+    "REPORT_ID": "NONE",
+    "REPO_CLEAN": "YES",
+    "SEED_COUNT": "1",
+    "SQLITE_TITLE_MATCHES": "10",
+    "WINDOW0_INDEX": "NONE",
+    "WINDOW0_ROWS": "0",
+    "WINDOW1_INDEX": "NONE",
+    "WINDOW1_ROWS": "0",
+    "WINDOW_COUNT": "NONE"
   }
 }
