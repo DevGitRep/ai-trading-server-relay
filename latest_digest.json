@@ -1,21 +1,25 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-24T11:56:54.758598+00:00",
-  "run_id": "20260924T115652Z",
-  "step": "TRACEBENCHDATACAP",
+  "published_at_utc": "2026-09-24T11:58:59.469937+00:00",
+  "run_id": "20260924T115857Z",
+  "step": "READLITERAL120CONTEXT",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "BENCHTEST_RENDER_DATA_CAP_TRACED",
-  "next_gate": "REMOVE_OR_BYPASS_1M_RENDER_CAP",
+  "verdict": "LITERAL_120_CONTEXT_READ",
+  "next_gate": "PATCH_EXACT_1M_RENDER_CAP",
   "facts": {
+    "120_ASSIGNMENT": "NONE",
+    "120_LINE": "1470",
+    "CONTEXT_HAS_CANDLE": "YES",
+    "CONTEXT_HAS_CHART": "YES",
+    "CONTEXT_HAS_LIMIT": "YES",
+    "CONTEXT_HAS_RANGE": "YES",
     "DASHBOARD_RESTART": "NO",
     "GIT_COMMITS": "0",
     "GIT_PUSHES": "0",
     "HEAD": "cd6582631ef3",
-    "LITERAL_120_COUNT": "1",
     "PRODUCTION_CODE_WRITES": "0",
     "PRODUCTION_DB_WRITES": "0",
-    "REPO_CLEAN": "YES",
-    "SLICE_COUNT": "0"
+    "REPO_CLEAN": "YES"
   }
 }
