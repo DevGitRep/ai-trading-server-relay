@@ -1,17 +1,27 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-24T11:43:10.338306+00:00",
-  "run_id": "20260924T114308Z",
-  "step": "PATCHUPTRICKWINDOWUX",
+  "published_at_utc": "2026-09-24T11:44:59.293246+00:00",
+  "run_id": "20260924T114457Z",
+  "step": "READEXACTBENCHFRONTEND",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "RANGE_PATCH_MISSING_ROLLED_BACK",
-  "next_gate": "REVIEW_PATCH",
+  "verdict": "EXACT_FRONTEND_PATCH_ANCHORS_READ",
+  "next_gate": "PATCH_EXACT_LINES_AND_VERIFY",
   "facts": {
+    "CREATE_CHART_LINE": "0",
+    "CREATE_MARKERS_LINE": "0",
     "DASHBOARD_RESTART": "NO",
+    "FIRST_SETDATA_LINE": "0",
     "GIT_COMMITS": "0",
     "GIT_PUSHES": "0",
+    "HEAD": "2ad8ec283431",
+    "NAV_LINE": "1159",
+    "PRODUCTION_CODE_WRITES": "0",
     "PRODUCTION_DB_WRITES": "0",
-    "SOURCE_RESTORED": "YES"
+    "REMOVE_LINES": "4457,4521",
+    "REPLACE_LINES": "1393",
+    "REPO_CLEAN": "YES",
+    "SET_MARKERS_LINE": "0",
+    "START_LINES": "1394"
   }
 }
