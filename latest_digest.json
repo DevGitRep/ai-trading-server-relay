@@ -1,29 +1,21 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-24T09:21:40.810162+00:00",
-  "run_id": "20260924T092138Z",
-  "step": "VERIFYCHARTMARKERWINDOWS",
+  "published_at_utc": "2026-09-24T09:27:00.237875+00:00",
+  "run_id": "20260924T092658Z",
+  "step": "LOCATEMASTERHANDOFF",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "PASS",
-  "next_gate": "FINALIZE_OR_FILTER_MARKERS",
+  "verdict": "MASTER_HANDOFF_LOCATED_AND_STYLE_READ",
+  "next_gate": "APPEND_EXPLAINED_BENCHTEST_STATUS_AND_PUSH",
   "facts": {
     "DASHBOARD_RESTART": "NO",
-    "FRONTEND_MARKER_REFS": "20",
+    "FILE_DELETES": "0",
     "GIT_COMMITS": "0",
     "GIT_PUSHES": "0",
+    "HANDOFF": "data/manual_support/AI_TRADING_SYSTEM_HANDOFF.md",
     "HEAD": "2ad8ec283431",
-    "HTTP0": "200",
-    "HTTP24": "200",
-    "MARKER_FIELD_COUNT": "1",
     "PRODUCTION_CODE_WRITES": "0",
     "PRODUCTION_DB_WRITES": "0",
-    "REPO_CLEAN": "YES",
-    "WINDOW0_FIELDS_OUTSIDE": "0",
-    "WINDOW0_MARKER_ITEMS": "0",
-    "WINDOW0_OUTSIDE_VALUES": "0",
-    "WINDOW24_FIELDS_OUTSIDE": "0",
-    "WINDOW24_MARKER_ITEMS": "0",
-    "WINDOW24_OUTSIDE_VALUES": "0"
+    "REPO_CLEAN": "YES"
   }
 }
