@@ -1,18 +1,23 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-09-24T11:39:13.894470+00:00",
-  "run_id": "20260924T113910Z",
-  "step": "FIXBENCHWINDOWRERENDER",
+  "published_at_utc": "2026-09-24T11:41:22.078729+00:00",
+  "run_id": "20260924T114119Z",
+  "step": "READFINALUPTRICKMARKERSHAPE",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "VISIBLE_WINDOW_PATCH_COUNT_INVALID",
-  "next_gate": "REVIEW_PATCH",
+  "verdict": "FINAL_MARKER_AND_RERENDER_SHAPE_READ",
+  "next_gate": "PATCH_AND_VERIFY_UPTRICK_CHART",
   "facts": {
     "DASHBOARD_RESTART": "NO",
+    "FRONTEND_RANGE_API_COUNT": "0",
+    "FRONTEND_REMOVE_COUNT": "2",
+    "FRONTEND_REPLACE_COUNT": "4",
     "GIT_COMMITS": "0",
     "GIT_PUSHES": "0",
+    "HEAD": "2ad8ec283431",
     "PRODUCTION_CODE_WRITES": "0",
     "PRODUCTION_DB_WRITES": "0",
-    "SOURCE_RESTORED": "YES"
+    "REPORT_ID": "PUB;5f9195622b86435a9c9e860bfa9e704e",
+    "REPO_CLEAN": "YES"
   }
 }
