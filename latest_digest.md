@@ -1,8 +1,8 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-24T13:31:33.422921+00:00`
-- Run ID: `20260924T133121Z`
+- Published UTC: `2026-09-24T13:53:26.089491+00:00`
+- Run ID: `20260924T135323Z`
 - Step: `VERIFY_EXACT_1M_RENDER_DIFF`
 - Status: `SUCCESS`
 - Exit code: `0`
