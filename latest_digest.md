@@ -1,20 +1,27 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-24T13:08:57.701831+00:00`
-- Run ID: `20260924T130855Z`
+- Published UTC: `2026-09-24T13:30:01.996003+00:00`
+- Run ID: `20260924T132959Z`
 - Step: `PATCH_EXACT_1M_RENDER_CAP`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `ABORT_PREFLIGHT_EXCEPTION`
-- Next gate: `STOP`
+- Verdict: `DEFAULT_WINDOW_NOW_FULL_CANDLE_SET`
+- Next gate: `VERIFY_DIFF_THEN_RUNTIME_15D`
 
 ## Facts
 
+- `CHANGED_FILES`: `static/indicator_library_ui_v2.js`
+- `CHANGED_FILE_COUNT`: `1`
 - `DASHBOARD_RESTART`: `NO`
-- `ERROR_TYPE`: `CalledProcessError`
 - `GIT_COMMITS`: `0`
 - `GIT_PUSHES`: `0`
-- `PATCH_APPLIED`: `NO`
+- `HEAD`: `cd6582631ef3`
+- `NEW_MATCH_COUNT`: `1`
+- `OLD_BLOCK_MATCH_COUNT`: `1`
+- `OLD_BLOCK_MATCH_COUNT_AFTER`: `0`
+- `PATCH_APPLIED`: `YES`
 - `PRODUCTION_DB_WRITES`: `0`
+- `REPO_CLEAN_BEFORE`: `YES`
 - `ROLLBACK`: `NO`
+- `TARGET_EXISTS`: `YES`
