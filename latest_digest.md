@@ -1,50 +1,31 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-29T20:01:58.783597+00:00`
-- Run ID: `20260929T200156Z`
-- Step: `DIAGNOSE_IMPORTPINE_SEARCH_RESPONSE`
+- Published UTC: `2026-09-29T20:03:55.173726+00:00`
+- Run ID: `20260929T200353Z`
+- Step: `PATCH_IMPORTPINE_UNAVAILABLE_TOPIC_HANDLING`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `SEARCH_RESPONSE_SHAPE_CAPTURED`
-- Next gate: `PATCH_IMPORTPINE_EMPTY_SEARCH_HANDLING`
+- Verdict: `UNAVAILABLE_TOPIC_NOW_SKIPS_AND_VALID_TOPIC_STILL_WORKS`
+- Next gate: `COMMIT_IMPORTPINE_TOPIC_SKIP_FIX`
 
 ## Facts
 
 - `APP_DB_UNCHANGED`: `YES`
-- `APP_SCRIPTS_AFTER`: `12576`
-- `APP_SCRIPTS_BEFORE`: `12576`
-- `APP_SOURCES_AFTER`: `12598`
-- `APP_SOURCES_BEFORE`: `12598`
 - `DASHBOARD_RESTART`: `NO`
-- `FILE_WRITES`: `0`
+- `DIFF_CHECK_RC`: `0`
+- `DIRTY_FILE_COUNT`: `1`
 - `GIT_COMMITS`: `0`
 - `GIT_PUSHES`: `0`
-- `HULL_CONTENT_COUNT`: `1`
-- `HULL_ERROR_TEXT`: `Error: No TradingView topic page for &quot;hull-ma&quot;. Topic slugs are hyphenated single concepts, for example &quot;trend-following&quot;, &quot;scalping&quot;, &quot;order-blocks&quot;. Try a broader or differently`
-- `HULL_HAS_MORE`: ``
-- `HULL_INNER_KEYS`: `content,isError`
-- `HULL_INNER_TYPE`: `dict`
-- `HULL_ITEMS_COUNT`: ``
-- `HULL_ITEMS_TYPE`: `NoneType`
-- `HULL_OUTER_KEYS`: `content,isError`
-- `HULL_OUTER_TYPE`: `dict`
-- `HULL_RC`: `0`
-- `HULL_RESULT_KEYS`: `content,isError`
-- `HULL_RESULT_TYPE`: `dict`
-- `HULL_STDERR_BYTES`: `0`
-- `HULL_STDOUT_BYTES`: `256`
-- `RSI_CONTENT_COUNT`: `1`
-- `RSI_ERROR_TEXT`: ``
+- `HEAD`: `2122ab73b7f1`
+- `HULL_HAS_MORE`: `False`
+- `HULL_ITEMS`: `0`
+- `IMPORTPINE_ONLY_DIRTY`: `YES`
+- `MAX_PAGES_50`: `YES`
+- `NEW_ONLY_PRESERVED`: `YES`
+- `PATCH_APPLIED`: `YES`
+- `PRODUCTION_DB_WRITES`: `0`
+- `PYTHON_SYNTAX_RC`: `0`
 - `RSI_HAS_MORE`: `True`
-- `RSI_INNER_KEYS`: `from_cache,has_more,items,note,page,query,returned,topic,total_available`
-- `RSI_INNER_TYPE`: `dict`
-- `RSI_ITEMS_COUNT`: `24`
-- `RSI_ITEMS_TYPE`: `list`
-- `RSI_OUTER_KEYS`: `content`
-- `RSI_OUTER_TYPE`: `dict`
-- `RSI_RC`: `0`
-- `RSI_RESULT_KEYS`: `content`
-- `RSI_RESULT_TYPE`: `dict`
-- `RSI_STDERR_BYTES`: `0`
-- `RSI_STDOUT_BYTES`: `21038`
+- `RSI_ITEMS`: `24`
+- `WORKTREE_CLEAN_BEFORE`: `YES`
