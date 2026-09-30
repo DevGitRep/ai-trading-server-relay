@@ -1,19 +1,42 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-09-30T13:08:15.233397+00:00`
-- Run ID: `20260930T130813Z`
-- Step: `UPDATE_MASTER_FOR_EQUAL_5592_BENCHTEST_MODEL`
-- Status: `FAIL`
-- Exit code: `1`
-- Verdict: `MASTER_EQUAL_COUNT_CLOSEOUT_FAILED`
-- Next gate: `STOP`
+- Published UTC: `2026-09-30T13:16:33.318523+00:00`
+- Run ID: `20260930T131631Z`
+- Step: `RECONCILE_NEW_HEAD_AFTER_JURIK_FIX`
+- Status: `SUCCESS`
+- Exit code: `0`
+- Verdict: `NEWER_HEAD_IS_CLEAN_DESCENDANT_AND_JURIK_FIX_SURVIVED`
+- Next gate: `VERIFY_MASTER_ALREADY_COMPLETE`
 
 ## Facts
 
+- `BENCHTEST_CHANGED_SINCE_FC44`: `NO`
 - `BRANCH`: `main`
+- `CHANGED_FILES_SAMPLE`: `data/manual_support/AI_TRADING_SYSTEM_MASTER.md`
+- `CURRENT_HEAD`: `48b466387f80`
 - `DASHBOARD_RESTART`: `NO`
-- `ERROR_CODE`: `HEAD_CHANGED`
-- `ERROR_TYPE`: `RuntimeError`
-- `HEAD_BEFORE`: `48b466387f80`
+- `FC44_IS_ANCESTOR`: `YES`
+- `FETCH_RC`: `0`
+- `FILES_CHANGED_SINCE_FC44`: `1`
+- `FILE_WRITES`: `0`
+- `GIT_COMMITS`: `0`
+- `GIT_PUSHES`: `0`
+- `JURIK_OLD_SELECTOR_EXCLUSION_PRESENT`: `NO`
+- `JURIK_TERMINAL_CODE_PRESENT`: `YES`
+- `MASTER_CHANGED_SINCE_FC44`: `YES`
+- `MASTER_HAS_5591_OLD_STATE`: `YES`
+- `MASTER_HAS_5592_FINAL_STATE`: `YES`
+- `MASTER_HAS_EQUAL_COUNT_INVARIANT`: `YES`
+- `MASTER_HAS_FC44_COMMIT`: `YES`
+- `MASTER_HAS_REFERENCE_EXCLUDED`: `YES`
+- `ORIGIN_MAIN`: `48b466387f80`
 - `PRODUCTION_DB_WRITES`: `0`
+- `RECENT_COMMIT_1`: `48b4663 (HEAD -&gt; main, origin/main) docs: align BenchTest completion counts`
+- `RECENT_COMMIT_2`: `fc44cfe fix: close Jurik reference in BenchTest pipeline`
+- `RECENT_COMMIT_3`: `f33ad86 docs: close out Piner Resin preflight reconciliation`
+- `RECENT_COMMIT_4`: `3ffb629 fix: require Resin runtime for Piner preflight pass`
+- `RECENT_COMMIT_5`: `b74a64a docs: record ImportPine unavailable topic handling`
+- `RECENT_COMMIT_6`: `50304ec fix: skip unavailable TradingView topic feeds`
+- `REMOTE_MATCHES_LOCAL`: `YES`
+- `WORKTREE_CLEAN`: `YES`
