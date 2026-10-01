@@ -1,13 +1,14 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-10-01T20:34:44.483945+00:00",
-  "run_id": "20261001T203442Z",
-  "step": "BOEK_VOOR_BOEK_AUDIO_ALIGNMENT_RECOVERY",
+  "published_at_utc": "2026-10-01T20:35:51.748209+00:00",
+  "run_id": "20261001T203549Z",
+  "step": "LOCATE_BOEK_VOOR_BOEK_AUDIO",
   "status": "BLOCKED",
   "exit_code": 0,
-  "verdict": "AUDIO_NOT_FOUND",
-  "next_gate": "LOCATE_AUDIO",
+  "verdict": "AUDIO_NOT_PRESENT_UNDER_HOME",
+  "next_gate": "UPLOAD_AUDIO_TO_SERVER",
   "facts": {
-    "AUDIO_FOUND": "NO"
+    "AUDIO_FOUND": "NO",
+    "SERVER_WRITES": "0"
   }
 }
