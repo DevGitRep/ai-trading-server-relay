@@ -1,26 +1,18 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-10-01T08:04:37.356980+00:00`
-- Run ID: `20261001T080435Z`
-- Step: `SAFE_DISK_CLEANUP`
+- Published UTC: `2026-10-01T08:36:22.283430+00:00`
+- Run ID: `20261001T083620Z`
+- Step: `LIVE_DB_SIZE_BREAKDOWN`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `SAFE_CLEANUP_COMPLETE`
-- Next gate: `INSTALL_CONTENT_FACTORY`
+- Verdict: `LIVE_DB_STORAGE_BREAKDOWN_READY`
+- Next gate: `ASSESS_DATABASE_BLOAT_OR_EXPECTED_PAYLOAD`
 
 ## Facts
 
-- `ATB_REPO_TOUCHED`: `NO`
-- `BACKUPS_DELETED`: `3`
-- `BACKUP_DELETE_GB`: `54.23`
-- `BACKUP_RETAINED`: `YES`
+- `DB_SIZE_GB`: `155`
 - `DB_WRITES`: `0`
-- `FREE_AFTER_GB`: `110`
-- `FREE_BEFORE_GB`: `54`
-- `JOURNAL`: `SKIPPED_NO_PASSWORDLESS_SUDO`
-- `KEEP_DB_EXISTS`: `YES`
-- `LIVE_DB_EXISTS`: `YES`
-- `PIP_CACHE_BEFORE`: `1.3G`
-- `RETAINED_BACKUPS_TOTAL`: `19G`
-- `SPACE_GAIN_GB`: `56`
+- `DELETIONS`: `0`
+- `FILE_WRITES`: `0`
+- `TOP_OBJECTS`: `benchtest_trades_v1:147.5G;sqlite_autoindex_benchtest_trades_v1_1:2.5G;idx_benchtest_trades_candidate:1.7G;resin_native_outputs:1.2G;candidates:0.2G;pine_library_trade_ledger:0.2G`
