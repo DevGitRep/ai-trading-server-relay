@@ -1,28 +1,13 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-10-01T20:25:46.993437+00:00",
-  "run_id": "20261001T202545Z",
-  "step": "BOEK_VOOR_BOEK_PIPELINE",
-  "status": "SUCCESS",
+  "published_at_utc": "2026-10-01T20:34:44.483945+00:00",
+  "run_id": "20261001T203442Z",
+  "step": "BOEK_VOOR_BOEK_AUDIO_ALIGNMENT_RECOVERY",
+  "status": "BLOCKED",
   "exit_code": 0,
-  "verdict": "BOEK_VOOR_BOEK_RENDER_PIPELINE_READY",
-  "next_gate": "ADD_AUDIO_AND_START_FULL_RENDER",
+  "verdict": "AUDIO_NOT_FOUND",
+  "next_gate": "LOCATE_AUDIO",
   "facts": {
-    "AI_TRADER_WRITES": "0",
-    "AUDIO_PRESENT": "NO",
-    "BENCHMARK_SECONDS": "91",
-    "CHARACTER_AGES": "8_TO_10",
-    "CHARACTER_COUNT": "5",
-    "DURATION_SECONDS": "133.056",
-    "EST_FULL_RENDER_MIN": "67.3",
-    "FREE_GB": "90",
-    "MALEACHI": "CORRECT",
-    "MPT_VENDOR_DIRTY": "NO",
-    "PREVIEW_BYTES": "322179",
-    "RENDER_FPS": "12",
-    "RENDER_PROFILE": "WORKBENCH_720P",
-    "SCENES": "39",
-    "STORYBOARD_TIMECODES": "NONE",
-    "TRUE_3D": "YES"
+    "AUDIO_FOUND": "NO"
   }
 }
