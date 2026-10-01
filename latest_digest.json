@@ -1,17 +1,17 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-10-01T08:36:22.283430+00:00",
-  "run_id": "20261001T083620Z",
-  "step": "LIVE_DB_SIZE_BREAKDOWN",
+  "published_at_utc": "2026-10-01T08:40:26.300938+00:00",
+  "run_id": "20261001T084024Z",
+  "step": "BENCHTEST_TRADES_RETENTION_AUDIT",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "LIVE_DB_STORAGE_BREAKDOWN_READY",
-  "next_gate": "ASSESS_DATABASE_BLOAT_OR_EXPECTED_PAYLOAD",
+  "verdict": "BENCHTEST_TRADES_DOMINATES_DATABASE",
+  "next_gate": "DECIDE_DETAIL_RETENTION_AND_COMPACTION",
   "facts": {
-    "DB_SIZE_GB": "155",
+    "BENCHTEST_TRADES_GB": "147.5",
     "DB_WRITES": "0",
     "DELETIONS": "0",
     "FILE_WRITES": "0",
-    "TOP_OBJECTS": "benchtest_trades_v1:147.5G;sqlite_autoindex_benchtest_trades_v1_1:2.5G;idx_benchtest_trades_candidate:1.7G;resin_native_outputs:1.2G;candidates:0.2G;pine_library_trade_ledger:0.2G"
+    "HTTP_STATUS": "200"
   }
 }
