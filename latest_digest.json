@@ -1,20 +1,19 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-10-01T20:54:09.671523+00:00",
-  "run_id": "20261001T205407Z",
-  "step": "BOEK_VOOR_BOEK_RENDER_PROGRESS",
+  "published_at_utc": "2026-10-01T20:56:00.623155+00:00",
+  "run_id": "20261001T205557Z",
+  "step": "BOEK_VOOR_BOEK_COMPLETION_WATCHER",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "FULL_3D_RENDER_STILL_RUNNING",
-  "next_gate": "CHECK_RENDER_PROGRESS",
+  "verdict": "RENDER_AND_WATCHER_RUNNING",
+  "next_gate": "FINAL_VIDEO_READY",
   "facts": {
+    "AI_TRADER_WRITES": "0",
+    "AUTO_COPY_TO_DOWNLOADS": "YES",
     "COMPLETE_SCENES": "1",
-    "FINAL_BYTES": "0",
     "FINAL_READY": "NO",
-    "PROGRESS_PCT": "2.6",
-    "RENDERED_CLIPS": "1",
     "RENDER_ACTIVE": "YES",
-    "RENDER_STATUS": "RENDERING",
-    "TOTAL_SCENES": "39"
+    "TOTAL_SCENES": "39",
+    "WATCHER_ACTIVE": "YES"
   }
 }
