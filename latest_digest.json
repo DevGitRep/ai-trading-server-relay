@@ -1,17 +1,18 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-10-01T08:40:26.300938+00:00",
-  "run_id": "20261001T084024Z",
-  "step": "BENCHTEST_TRADES_RETENTION_AUDIT",
+  "published_at_utc": "2026-10-01T10:59:53.970252+00:00",
+  "run_id": "20261001T105952Z",
+  "step": "BENCHTEST_TRADE_ACTIVE_READ_PATH_AUDIT",
   "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "BENCHTEST_TRADES_DOMINATES_DATABASE",
-  "next_gate": "DECIDE_DETAIL_RETENTION_AND_COMPACTION",
+  "verdict": "ACTIVE_TRADE_READ_PATHS_MAPPED",
+  "next_gate": "DETERMINE_CHART_DATA_MINIMUM",
   "facts": {
-    "BENCHTEST_TRADES_GB": "147.5",
+    "DB_READS": "0",
     "DB_WRITES": "0",
     "DELETIONS": "0",
     "FILE_WRITES": "0",
-    "HTTP_STATUS": "200"
+    "READ_FUNCTION_COUNT": "2",
+    "WRITE_FUNCTION_COUNT": "3"
   }
 }
