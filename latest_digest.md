@@ -1,22 +1,18 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-10-01T08:02:29.936027+00:00`
-- Run ID: `20261001T080227Z`
-- Step: `DISK_CLEANUP_TARGET_AUDIT`
+- Published UTC: `2026-10-01T08:03:16.345675+00:00`
+- Run ID: `20261001T080314Z`
+- Step: `ATB_BACKUP_RETENTION_AUDIT`
 - Status: `SUCCESS`
 - Exit code: `0`
-- Verdict: `CLEANUP_TARGETS_READY_FOR_REVIEW`
-- Next gate: `SAFE_DELETE_OR_COMPRESS_REDUNDANT_DATA`
+- Verdict: `READY_FOR_SAFE_RETENTION_CLEANUP`
+- Next gate: `DELETE_REDUNDANT_BACKUPS_AND_CACHES`
 
 ## Facts
 
-- `BACKUPS_OVER_10GB`: `4`
-- `BACKUPS_TOTAL`: `73G`
 - `CURRENT_FREE_GB`: `55`
 - `DB_WRITES`: `0`
 - `DELETIONS`: `0`
-- `FILE_WRITES`: `0`
-- `MANUAL_SUPPORT_TOTAL`: `157G`
-- `PIP_CACHE`: `1.3G`
-- `SERVICES_CHANGED`: `0`
+- `LARGE_BACKUPS`: `0919:indicator_challenger_lab_v:18.1G;0920:indicator_challenger_lab_v:18.1G;0920:indicator_challenger_lab_v:18.1G;0920:indicator_challenger_lab_v:18.1G`
+- `SQLITE_SPACE`: `154.1G_alloc,0.0G_free,0.0%`
