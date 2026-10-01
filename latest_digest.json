@@ -1,14 +1,28 @@
 {
   "relay_version": "SERVER_RELAY_V0B",
-  "published_at_utc": "2026-10-01T20:35:51.748209+00:00",
-  "run_id": "20261001T203549Z",
-  "step": "LOCATE_BOEK_VOOR_BOEK_AUDIO",
-  "status": "BLOCKED",
+  "published_at_utc": "2026-10-01T20:51:23.404456+00:00",
+  "run_id": "20261001T205121Z",
+  "step": "BOEK_VOOR_BOEK_FULL_RENDER_START",
+  "status": "SUCCESS",
   "exit_code": 0,
-  "verdict": "AUDIO_NOT_PRESENT_UNDER_HOME",
-  "next_gate": "UPLOAD_AUDIO_TO_SERVER",
+  "verdict": "FULL_3D_RENDER_RUNNING",
+  "next_gate": "CHECK_RENDER_PROGRESS",
   "facts": {
-    "AUDIO_FOUND": "NO",
-    "SERVER_WRITES": "0"
+    "AI_TRADER_WRITES": "0",
+    "ALIGNED_PLAN": "YES",
+    "ALIGNMENT_COVERAGE": "0.9020",
+    "ALIGNMENT_GATE": "PASS",
+    "ANIMATION_FPS": "12",
+    "AUDIO_DURATION": "133.060",
+    "DELIVERY_FPS": "24",
+    "FREE_GB": "89",
+    "MALEACHI": "CORRECT",
+    "MPT_VENDOR_DIRTY": "NO",
+    "PROGRESS": "STATUS=RENDERING,COMPLETE=0,TOTAL=39",
+    "RENDER_ACTIVE": "YES",
+    "RENDER_SESSION": "boekrender",
+    "RESOLUTION": "1280x720",
+    "SCENES": "39",
+    "SCENES_WITH_HITS": "37"
   }
 }
