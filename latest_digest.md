@@ -1,24 +1,19 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-10-02T00:05:57.545331+00:00`
-- Run ID: `20261002T000555Z`
-- Step: `BOEK_VOOR_BOEK_RENDER_CHECK`
-- Status: `SUCCESS`
-- Exit code: `0`
-- Verdict: `FINAL_VIDEO_READY`
-- Next gate: `DOWNLOAD_TO_MAC`
+- Published UTC: `2026-10-05T11:25:28.334359+00:00`
+- Run ID: `20261005T112526Z`
+- Step: `START_AUTHOR_10K_EXPANSION`
+- Status: `FAIL`
+- Exit code: `1`
+- Verdict: `AUTHOR_10K_EXPANSION_LAUNCH_FAILED`
+- Next gate: `STOP`
 
 ## Facts
 
-- `COMPLETE_SCENES`: `39`
-- `DOWNLOAD_COPY`: `YES`
-- `FINAL_BYTES`: `20188436`
-- `FINAL_READY`: `YES`
-- `PROGRESS_PCT`: `100.0`
-- `READY_MARKER`: `YES`
-- `RENDERED_CLIPS`: `39`
-- `RENDER_ACTIVE`: `NO`
-- `RENDER_STATUS`: `COMPLETE`
-- `TOTAL_SCENES`: `39`
-- `WATCHER_ACTIVE`: `NO`
+- `DASHBOARD_RESTART`: `NO`
+- `ERROR_CODE`: `HEAD_CHANGED`
+- `ERROR_TYPE`: `RuntimeError`
+- `GIT_COMMITS`: `0`
+- `GIT_PUSHES`: `0`
+- `HEAD`: `368c20980595`
