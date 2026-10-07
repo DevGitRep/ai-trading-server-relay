@@ -1,8 +1,8 @@
 # Latest sanitized server digest
 
 - Relay version: `SERVER_RELAY_V0B`
-- Published UTC: `2026-10-07T10:41:13.736598+00:00`
-- Run ID: `20261007T104111Z`
+- Published UTC: `2026-10-07T10:46:52.400365+00:00`
+- Run ID: `20261007T104650Z`
 - Step: `START_AUTHOR_10K_EXPANSION`
 - Status: `FAIL`
 - Exit code: `1`
